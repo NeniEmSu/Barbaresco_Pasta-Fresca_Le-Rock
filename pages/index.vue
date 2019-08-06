@@ -58,7 +58,7 @@ export default {
           details:
             'Відкриваємо суперздібності від смаку нашої пасти Приходьте та спробуйте самі',
           instaLink: '#',
-          facebLink: 'https://www.facebook.com/barbarescocitycafe/'
+          facebLink: '#'
         },
         {
           name: 'Le rock',
@@ -69,7 +69,7 @@ export default {
           siteLink: '#',
           details:
             'Компанія друзів, смачне меню і відмінна атмосфера - тільки в Le Rock!',
-          instaLink: '#',
+          instaLink: 'https://www.instagram.com/lera_galich/?hl=uk',
           facebLink: 'https://www.facebook.com/barbarescocitycafe/'
         },
         {
@@ -82,7 +82,7 @@ export default {
           details:
             'Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас',
           instaLink: '#',
-          facebLink: 'https://www.facebook.com/barbarescocitycafe/'
+          facebLink: '#'
         }
       ]
     }
@@ -101,7 +101,7 @@ export default {
   background-size: cover;
 
   opacity: 0.9;
-  // filter: blur(5px);
+  filter: blur(0.5px);
 
   height: 100vh;
   width: 100vw;

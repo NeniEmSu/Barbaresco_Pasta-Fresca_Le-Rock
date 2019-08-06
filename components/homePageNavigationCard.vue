@@ -5,7 +5,7 @@
       :img-alt="showcasealt"
       img-top
       tag="article"
-      style="max-width: 350px;"
+      style="max-width: 350px; min-width: 350px;"
       class="mb-2 homeNavCard"
     >
       <div class="cardContent">
@@ -39,6 +39,7 @@
           >
             <b-img-lazy
               class="inButtonImg "
+              target="_blank"
               src="~assets/img/facebook.svg"
               alt="facebook text"
             ></b-img-lazy>
