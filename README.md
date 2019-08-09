@@ -1,6 +1,6 @@
 # barbaresco
 
-> All top restaurants in ternopil in one place
+> My splendiferous Nuxt.js project
 
 ## Build Setup
 
