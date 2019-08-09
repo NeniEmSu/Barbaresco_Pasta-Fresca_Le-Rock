@@ -6,15 +6,15 @@
       img-top
       tag="article"
       style="max-width: 350px; min-width: 350px;"
-      class="mb-2 homeNavCard"
+      class="mb-2  homeNavCard"
     >
       <div class="cardContent">
         <div class="card-log mx-auto text-center">
-          <b-img-lazy
+          <b-img
             class="mx-auto"
             :src="require(`~/assets/img/${logo + '.svg'}`)"
             :alt="logoalt"
-          ></b-img-lazy>
+          ></b-img>
         </div>
         <b-card-text class="cardDescription">
           {{ details }}
@@ -26,23 +26,23 @@
         </div>
         <div class="text-center ">
           <b-button class="socialButtons instagram mx-auto" :href="instalink">
-            <b-img-lazy
+            <b-img
               class="inButtonImg "
               src="~assets/img/instagram.svg"
               alt="instagram text"
-            ></b-img-lazy>
+            ></b-img>
           </b-button>
           <b-button
             class="socialButtons facebook mx-auto"
             target="_blank"
             :href="faceblink"
           >
-            <b-img-lazy
+            <b-img
               class="inButtonImg "
               target="_blank"
               src="~assets/img/facebook.svg"
               alt="facebook text"
-            ></b-img-lazy>
+            ></b-img>
           </b-button>
         </div>
       </div>
@@ -104,14 +104,16 @@ export default {
   padding: 35px 15px;
 }
 
-.card-log {
+.card-log,
+.card-log img {
   height: 80px;
   width: 160px;
   margin-bottom: 35px;
 }
 
 .cardDescription {
-  font-family: Roboto;
+  height: 94px;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -127,14 +129,21 @@ export default {
 
 .goToSiteBtn {
   border: 2px solid #ffffff;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
   border-radius: 0;
   box-sizing: border-box;
 
   background-color: transparent;
 
-  padding: 14px 55px;
+  padding: 14px 50px;
 
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -143,6 +152,13 @@ export default {
   color: #ffffff;
 
   &:hover {
+    border: 3px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+
     background: #ffffff;
     color: #000000;
   }
@@ -155,37 +171,53 @@ export default {
 
   background-color: transparent;
 
-  padding: 14px 25px;
-
   &.instagram {
     margin: 10px auto;
+    padding: 10px 25px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+
+    .inButtonImg {
+      width: 80px;
+      height: 28px;
+    }
   }
 
   &.instagram:hover {
-    background: -moz-linear-gradient(
+    background-image: -moz-linear-gradient(
       69.74deg,
       #fdd276 -7.77%,
       #e1585f 55.36%,
       #a741b6 106.84%
     );
-    background: -webkit-linear-gradient(
+    background-image: -webkit-linear-gradient(
       69.74deg,
       #fdd276 -7.77%,
       #e1585f 55.36%,
       #a741b6 106.84%
     );
-    background: linear-gradient(
+    background-image: linear-gradient(
       69.74deg,
       #fdd276 -7.77%,
       #e1585f 55.36%,
       #a741b6 106.84%
     );
-
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   }
 
   &.facebook {
     margin: 10px auto;
+    padding: 12px 25px;
+    -webkit-transition: background-color 500ms ease-out;
+    -moz-transition: background-color 500ms ease-out;
+    -o-transition: background-color 500ms ease-out;
+    transition: background-color 500ms ease-out;
+
+    .inButtonImg {
+      width: 80px;
+      height: 20px;
+    }
   }
 
   &.facebook:hover {
@@ -194,7 +226,7 @@ export default {
 }
 
 .inButtonImg {
-  width: auto;
+  width: 80px;
   height: 20px;
 }
 </style>

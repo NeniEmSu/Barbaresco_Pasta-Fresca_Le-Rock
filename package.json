@@ -19,7 +19,13 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "node-sass": "^4.12.0",
     "nuxt": "^2.0.0",
-    "sass-loader": "^7.2.0"
+    "sass-loader": "^7.2.0",
+    "v-owl-carousel": "^1.0.8",
+    "vue-currency-filter": "^3.4.2",
+    "vue-page-transition": "^0.2.2",
+    "vue2-google-maps": "^0.10.7",
+    "vuelidate": "^0.7.4",
+    "vuex-persist": "^2.0.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

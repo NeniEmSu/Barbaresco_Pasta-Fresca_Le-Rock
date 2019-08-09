@@ -1,27 +1,63 @@
 <template>
   <div id="homePage">
-    <div class="mx-auto">
+    <div class="mx-auto ">
       <h1 class="homePageHeading">Оберіть заклад</h1>
 
-      <div class="col-10 offset-1">
-        :
-        <div class="row">
-          <homePageNavigationCard
-            v-for="variant in variants"
-            :key="variant.name"
-            class="col-3 mx-auto"
-            :name="variant.name"
-            :imageshowcase="variant.imageShowcase"
-            :showcasealt="variant.showcaseAlt"
-            :logo="variant.logo"
-            :logoalt="variant.logoAlt"
-            :sitelink="variant.siteLink"
-            :details="variant.details"
-            :instalink="variant.instaLink"
-            :faceblink="variant.facebLink"
-          ></homePageNavigationCard>
+      <no-ssr>
+        <!-- important to add no-ssr-->
+        <div class="mx-auto">
+          <carousel
+            :nav="true"
+            :items="4"
+            :loop="false"
+            :mouseDrag="true"
+            :touchDrag="true"
+            :autoplay="false"
+            :rewind="false"
+            :stagePadding="40"
+            :autoWidth="350"
+            :responsive="{
+              0: { items: 4, center: true },
+              768: { items: 4, center: false, margin: 0 },
+              1200: { items: 3, center: false, margin: 0 },
+              1440: { items: 3, center: false,  margin: 0 },
+              1800: { items: 4, center: false,  margin: 90}
+            }"
+          >
+            <homePageNavigationCard
+              v-for="variant in variants"
+              :key="variant.name"
+              class="col-3 ml-4"
+              :name="variant.name"
+              :imageshowcase="variant.imageShowcase"
+              :showcasealt="variant.showcaseAlt"
+              :logo="variant.logo"
+              :logoalt="variant.logoAlt"
+              :sitelink="variant.siteLink"
+              :details="variant.details"
+              :instalink="variant.instaLink"
+              :faceblink="variant.facebLink"
+            ></homePageNavigationCard>
+          </carousel>
         </div>
-      </div>
+      </no-ssr>
+
+      <!-- <div class="row mx-auto">
+        <homePageNavigationCard
+          v-for="variant in variants"
+          :key="variant.name"
+          class="mx-auto"
+          :name="variant.name"
+          :imageshowcase="variant.imageShowcase"
+          :showcasealt="variant.showcaseAlt"
+          :logo="variant.logo"
+          :logoalt="variant.logoAlt"
+          :sitelink="variant.siteLink"
+          :details="variant.details"
+          :instalink="variant.instaLink"
+          :faceblink="variant.facebLink"
+        ></homePageNavigationCard>
+      </div> -->
     </div>
   </div>
 </template>
@@ -33,7 +69,7 @@ export default {
   components: {
     homePageNavigationCard
   },
-  data() {
+  data () {
     return {
       variants: [
         {
@@ -92,9 +128,8 @@ export default {
 
 <style lang="scss" scoped>
 #homePage {
-  position: absolute;
-  z-index: -3;
-  background-image: url('~assets/img/home-page-bg.png');
+  position: fixed;
+  background-image: url("~assets/img/home-page-bg.png");
   background-color: #000000;
   background-repeat: no-repeat;
   background-position: center;
