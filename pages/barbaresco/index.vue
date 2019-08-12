@@ -46,7 +46,7 @@ export default {
 
 <style lang="scss" scoped>
 #barbaresco {
-  background-image: url("~assets/img/Texture Beton.png");
+  background-image: url("~assets/img/textureBeton.png");
   background-repeat: no-repeat;
   background-position: center;
 
