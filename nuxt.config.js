@@ -152,12 +152,7 @@ export default {
         symbolSpacing: true
       }
     ],
-    [
-      "@nuxtjs/google-analytics",
-      {
-        id: "UA-62479125-9"
-      }
-    ],
+    
     [
       "@nuxtjs/google-analytics",
       {
