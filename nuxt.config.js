@@ -1,6 +1,7 @@
 export default {
   mode: 'universal',
 
+
   head: {
     title: process.env.npm_package_name || '',
     htmlAttrs: {
@@ -38,57 +39,57 @@ export default {
     start_url: '/',
     dir: 'auto',
     lang: 'uk',
-    // icons: [{
-    //     type: "image/png",
-    //     size: "32x32",
-    //     src: "/favicon-32x32.png"
-    //   },
-    //   {
-    //     type: "image/png",
-    //     size: "16x16",
-    //     src: "/favicon-16x16.png"
-    //   },
-    //   {
-    //     src: "/icon-72x72.png",
-    //     sizes: "72x72",
-    //     type: "image/png"
-    //   },
-    //   {
-    //     src: "/icon-96x96.png",
-    //     sizes: "96x96",
-    //     type: "image/png"
-    //   },
-    //   {
-    //     src: "/icon-128x128.png",
-    //     sizes: "128x128",
-    //     type: "image/png"
-    //   },
-    //   {
-    //     src: "/icon-144x144.png",
-    //     sizes: "144x144",
-    //     type: "image/png"
-    //   },
-    //   {
-    //     src: "/icon-152x152.png",
-    //     sizes: "152x152",
-    //     type: "image/png"
-    //   },
-    //   {
-    //     src: "/icon-192x192.png",
-    //     sizes: "192x192",
-    //     type: "image/png"
-    //   },
-    //   {
-    //     src: "/icon-384x384.png",
-    //     sizes: "384x384",
-    //     type: "image/png"
-    //   },
-    //   {
-    //     src: "/icon-512x512.png",
-    //     sizes: "512x512",
-    //     type: "image/png"
-    //   }
-    // ],
+    icons: [{
+        type: "image/png",
+        size: "32x32",
+        src: "/favicon-32x32.png"
+      },
+      {
+        type: "image/png",
+        size: "16x16",
+        src: "/favicon-16x16.png"
+      },
+      {
+        src: "/icon-72x72.png",
+        sizes: "72x72",
+        type: "image/png"
+      },
+      {
+        src: "/icon-96x96.png",
+        sizes: "96x96",
+        type: "image/png"
+      },
+      {
+        src: "/icon-128x128.png",
+        sizes: "128x128",
+        type: "image/png"
+      },
+      {
+        src: "/icon-144x144.png",
+        sizes: "144x144",
+        type: "image/png"
+      },
+      {
+        src: "/icon-152x152.png",
+        sizes: "152x152",
+        type: "image/png"
+      },
+      {
+        src: "/icon-192x192.png",
+        sizes: "192x192",
+        type: "image/png"
+      },
+      {
+        src: "/icon-384x384.png",
+        sizes: "384x384",
+        type: "image/png"
+      },
+      {
+        src: "/icon-512x512.png",
+        sizes: "512x512",
+        type: "image/png"
+      }
+    ],
     categories: ['business', 'shopping']
   },
 
@@ -108,10 +109,10 @@ export default {
       src: '~/plugins/v-owl-carousel',
       ssr: false
     },
-    // {
-    //   src: '~/plugins/google-maps',
-    //   ssr: true
-    // },
+    {
+      src: '~/plugins/google-maps',
+      ssr: true
+    },
     {
       src: '~/plugins/components',
       ssr: true
@@ -120,6 +121,10 @@ export default {
     {
       src: '~/plugins/vuex-persist',
       ssr: false
+    },
+    {
+      src: '~/plugins/vue-scroll-reveal',
+      ssr: false
     }
   ],
 
@@ -127,12 +132,14 @@ export default {
     middleware: ['animation']
   },
 
-  // devModules: ['@nuxtjs/eslint-module'],
 
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
+    '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
+    '@nuxtjs/netlify-files',
+    '@nuxtjs/style-resources',
     [
       'vue-currency-filter/nuxt',
       {
@@ -144,12 +151,76 @@ export default {
         symbolPosition: 'front',
         symbolSpacing: true
       }
+    ],
+    [
+      "@nuxtjs/google-analytics",
+      {
+        id: "UA-62479125-9"
+      }
+    ],
+    [
+      "@nuxtjs/google-analytics",
+      {
+        id: "UA-62479125-9"
+      }
     ]
   ],
+
+
+  proxy: {
+    '/.netlify/functions/': {
+      target: 'http://localhost:8000'
+    }
+  },
+
+  styleResources: {
+    scss: ["~/assets/scss/config.scss"]
+  },
+
+
+  purgeCSS: {
+    mode: 'postcss',
+    content: [
+      './pages/**/*.vue',
+      './layouts/**/*.vue',
+      './components/**/*.vue'
+    ],
+    whitelist: ['html', 'body'],
+    whitelistPatterns: [/cookie-consent/]
+  },
+
 
   axios: {},
 
   build: {
-    extend(config, ctx) {}
+    transpile: [/^vue2-google-maps($|\/)/],
+    extractCSS: true,
+
+    extend(config, {
+      isDev,
+      isClient
+    }) {
+      config.module.rules.forEach(rule => {
+        if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+          rule.use.push({
+            loader: "image-webpack-loader",
+            options: {
+              svgo: {
+                plugins: [{
+                    removeViewBox: false
+                  },
+                  {
+                    removeDimensions: true
+                  }
+                ]
+              }
+            }
+          })
+        }
+      })
+    },
+
   }
+
+
 }

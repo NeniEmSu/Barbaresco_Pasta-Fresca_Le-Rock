@@ -78,7 +78,7 @@ export default {
           showcaseAlt: 'Image of barbaresco',
           logo: 'logo-barbaresco',
           logoAlt: 'barbaresco logo',
-          siteLink: '#',
+          siteLink: '/barbaresco',
           details:
             'Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас',
           instaLink: '#',

@@ -1,7 +1,7 @@
 {
-  "name": "barbaresco",
+  "name": "Barbaresco",
   "version": "1.0.0",
-  "description": "My splendiferous Nuxt.js project",
+  "description": "My awe-inspiring Nuxt.js project",
   "author": "w-start",
   "private": true,
   "scripts": {
@@ -9,36 +9,39 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/netlify-files": "^1.0.0",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/style-resources": "^1.0.0",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0-rc.11",
     "node-sass": "^4.12.0",
     "nuxt": "^2.0.0",
+    "nuxt-purgecss": "^0.2.1",
+    "postcss-nested": "^4.1.2",
     "sass-loader": "^7.2.0",
     "v-owl-carousel": "^1.0.8",
+    "vue-analytics": "^5.17.0",
+    "vue-cookieconsent-component": "^1.2.0",
     "vue-currency-filter": "^3.4.2",
+    "vue-if-bot": "^1.2.0",
+    "vue-next-level-scroll": "^1.2.0",
     "vue-page-transition": "^0.2.2",
+    "vue-scroll-reveal": "^1.0.11",
     "vue2-google-maps": "^0.10.7",
     "vuelidate": "^0.7.4",
     "vuex-persist": "^2.0.1"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.4",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
-    "vue-jest": "^4.0.0-0"
+    "vue-jest": "^4.0.0-0",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "nuxt-purgecss": "^0.2.1"
   }
 }

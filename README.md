@@ -1,6 +1,6 @@
-# barbaresco
+# Barbaresco
 
-> My splendiferous Nuxt.js project
+> My awe-inspiring Nuxt.js project
 
 ## Build Setup
 

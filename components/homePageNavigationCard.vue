@@ -20,12 +20,16 @@
           {{ details }}
         </b-card-text>
         <div class="text-center goTosite">
-          <b-button class="mx-auto goToSiteBtn" :to="sitelink"
-            >Перейти до закладу</b-button
-          >
+          <b-button
+            class="mx-auto goToSiteBtn"
+            :to="sitelink"
+          >Перейти до закладу</b-button>
         </div>
         <div class="text-center ">
-          <b-button class="socialButtons instagram mx-auto" :href="instalink">
+          <b-button
+            class="socialButtons instagram mx-auto"
+            :href="instalink"
+          >
             <b-img
               class="inButtonImg "
               src="~assets/img/instagram.svg"
@@ -113,7 +117,7 @@ export default {
 
 .cardDescription {
   height: 94px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -143,7 +147,7 @@ export default {
 
   padding: 14px 50px;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -174,10 +178,7 @@ export default {
   &.instagram {
     margin: 10px auto;
     padding: 10px 25px;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -o-transition: 500ms;
-    transition: 500ms;
+    transition: 500ms ease-in-out;
 
     .inButtonImg {
       width: 80px;
