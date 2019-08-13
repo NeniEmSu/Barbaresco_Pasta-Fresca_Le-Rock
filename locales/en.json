@@ -1,0 +1,39 @@
+{
+  "language": "Language",
+  "links": {
+    "home": "Home",
+    "menu": "Menu",
+    "order": "Food delivery",
+    "reserveAPlace": "Reservation of place",
+    "reservation": "Reservation",
+    "aboutUs": "About us",
+    "atmosphere": "Atmosphere",
+    "vacancy": "Vacancies",
+    "contact": "Contacts",
+    "english": "English",
+    "ukrainian": "Ukrainian",
+    "russian": "Russian"
+  },
+  "home": {
+    "title": "SELECT AN INSTITUTION",
+    "siteButtonTxt": "Go to the institution",
+    "descriptions": [
+      {
+        "details": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
+      },
+      {
+        "details": "Unlock the taste of our pasta Come and try for yourself"
+      },
+      {
+        "details": "Company of friends, delicious menu and great atmosphere - only in Le Rock!"
+      },
+      {
+        "details": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "introduction": "This page is made to give you more informations."
+  }
+}

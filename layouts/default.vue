@@ -1,5 +1,19 @@
 <template>
   <div>
+    <div class="fixed-top text-right language">
+
+      <b-dropdown
+        id="dropdown-1"
+        :text="$t('language')"
+        class="m-md-2 "
+      >
+        <b-dropdown-item to="/en">{{$t('links.english')}}</b-dropdown-item>
+        <b-dropdown-item to="/uk">{{$t('links.ukrainian')}}</b-dropdown-item>
+        <b-dropdown-item to="/ru">{{$t('links.russian')}}</b-dropdown-item>
+
+      </b-dropdown>
+
+    </div>
     <vue-page-transition :name="$store.state.animation">
       <nuxt />
     </vue-page-transition>
@@ -18,6 +32,46 @@ body {
   overflow-x: hidden;
 
   line-height: 1.5;
+}
+
+.language {
+  .langBtn,
+  .dropdown-toggle {
+    border: 2px solid $lightColor;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+    border-radius: 0;
+    box-sizing: border-box;
+
+    background-color: transparent;
+
+    padding: 14px 50px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: $lightColor;
+
+    &:hover {
+      border: 3px solid;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.2);
+      outline-color: rgba(255, 255, 255, 0);
+      outline-offset: 15px;
+      text-shadow: 1px 1px 2px #427388;
+
+      background: $lightColor;
+      color: #000000;
+    }
+  }
 }
 
 img {

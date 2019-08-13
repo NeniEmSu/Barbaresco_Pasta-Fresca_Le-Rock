@@ -5,7 +5,7 @@
       :img-alt="showcasealt"
       img-top
       tag="article"
-      style="max-width: 350px; min-width: 350px;"
+      style=""
       class="mb-2  homeNavCard"
     >
       <div class="cardContent">
@@ -22,8 +22,8 @@
         <div class="text-center goTosite">
           <b-button
             class="mx-auto goToSiteBtn"
-            :to="sitelink"
-          >Перейти до закладу</b-button>
+            :to="'/' + $i18n.locale + sitelink"
+          >{{ $t('home.siteButtonTxt') }}</b-button>
         </div>
         <div class="text-center ">
           <b-button
@@ -104,6 +104,12 @@ export default {
   border: 0;
 }
 
+.card {
+  max-width: 350px;
+  width: 100%;
+  min-width: 350px;
+}
+
 .cardContent {
   padding: 35px 15px;
 }
@@ -124,7 +130,7 @@ export default {
   line-height: 21px;
   text-align: center;
 
-  color: #ffffff;
+  color: $lightColor;
 }
 
 .goTosite {
@@ -132,7 +138,7 @@ export default {
 }
 
 .goToSiteBtn {
-  border: 2px solid #ffffff;
+  border: 2px solid $lightColor;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
   outline-color: rgba(255, 255, 255, 0.5);
@@ -153,7 +159,7 @@ export default {
   font-size: 18px;
   line-height: 21px;
 
-  color: #ffffff;
+  color: $lightColor;
 
   &:hover {
     border: 3px solid;
@@ -163,13 +169,13 @@ export default {
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
 
-    background: #ffffff;
+    background: $lightColor;
     color: #000000;
   }
 }
 
 .socialButtons {
-  border: 2px solid #ffffff;
+  border: 2px solid $lightColor;
   border-radius: 0;
   box-sizing: border-box;
 
@@ -229,5 +235,25 @@ export default {
 .inButtonImg {
   width: 80px;
   height: 20px;
+}
+
+@include mediaMenu {
+  .card {
+    max-width: 275px;
+    width: 100%;
+    min-width: 275px;
+  }
+
+  .cardDescription {
+    height: 60px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .cardContent {
+    padding: 16px 10px;
+  }
 }
 </style>

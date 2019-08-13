@@ -1,86 +1,53 @@
 <template>
   <div id="image-Navigation">
-    <div class="row">
+    <section>
       <nuxt-link
-        to="#"
-        class="navHome"
+        to="/"
+        class="column navHome"
       >
-        <b-img-lazy
-          class="col-3p-0"
-          src="~/assets/img/navHome.png"
-          alt="nav home images"
-        ></b-img-lazy>
-        <div class="centered">Головна</div>
+        <div class="centered">{{$t('links.home')}}</div>
 
       </nuxt-link>
+
+      <nuxt-link
+        to="/barbaresco"
+        class="column navMenu"
+      >
+        <div class="centered">{{$t('links.menu')}}</div>
+
+      </nuxt-link>
+
       <nuxt-link
         to="#"
-        class="navMenu"
+        class="column navOrder"
       >
-        <b-img-lazy
-          class="col-3p-0"
-          src="~/assets/img/navMenu.png"
-          alt="nav Menu images"
-        ></b-img-lazy>
-        <div class="centered">Меню</div>
+        <div class="centered">{{$t('links.order')}}</div>
+
       </nuxt-link>
+
       <nuxt-link
         to="#"
-        class="navOrder"
+        class="column navAboutUs"
       >
-        <b-img-lazy
-          class="col-3p-0"
-          src="~/assets/img/navOrder.png"
-          alt="nav Order images"
-        ></b-img-lazy>
-        <div class="centered">Доставка їжі</div>
+        <div class="centered">{{$t('links.aboutUs')}}</div>
       </nuxt-link>
+
       <nuxt-link
         to="#"
-        class="navReservation"
+        class="column navAtmosphere"
       >
-        <b-img-lazy
-          class="col-3p-0"
-          src="~/assets/img/navReservation.png"
-          alt="nav Reservation images"
-        ></b-img-lazy>
-        <div class="centered">Резервація</div>
+        <div class="centered">{{$t('links.atmosphere')}}</div>
       </nuxt-link>
-    </div>
-    <div class="row">
+
       <nuxt-link
         to="#"
-        class="navAboutUs"
+        class="column navContact"
       >
-        <b-img-lazy
-          class="col-3p-0"
-          src="~/assets/img/navAboutUs.png"
-          alt="nav AboutUs images"
-        ></b-img-lazy>
-        <div class="centered">Резервація</div>
+        <div class="centered">{{$t('links.contact')}}</div>
       </nuxt-link>
-      <nuxt-link to="#">
-        <b-img-lazy
-          class="col-3p-0"
-          src="~/assets/img/navOurs.png"
-          alt="nav Ours images"
-        ></b-img-lazy>
-      </nuxt-link>
-      <nuxt-link to="#">
-        <b-img-lazy
-          class="col-3p-0"
-          src="~/assets/img/navContact.png"
-          alt="nav Contact images"
-        ></b-img-lazy>
-      </nuxt-link>
-      <nuxt-link to="#">
-        <b-img-lazy
-          class="col-3p-0"
-          src="~/assets/img/navAtmosphere.png"
-          alt="nav Atmosphere images"
-        ></b-img-lazy>
-      </nuxt-link>
-    </div>
+
+    </section>
+
   </div>
 </template>
 
@@ -95,7 +62,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a {
+#image-Navigation a {
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -104,21 +71,59 @@ a {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $lightColor;
 
   opacity: 0.5;
   transition: 500ms ease-in-out;
 
   &:hover {
     opacity: 1;
-    color: #ffffff;
+    .centered {
+      top: 50%;
+    }
   }
+}
+
+a.nuxt-link-exact-active {
+  .centered {
+    top: 50%;
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a.nuxt-link-exact-active {
+  opacity: 0.9 !important;
+}
+
+section {
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  box-sizing: border-box;
+  width: calc(100% / 3);
+  height: 100%;
+  min-height: 150px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
 }
 
 .navHome {
   background-image: url("~assets/img/navHome.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: relative;
   text-align: center;
 }
@@ -127,6 +132,7 @@ a {
   background-image: url("~assets/img/navMenu.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: relative;
   text-align: center;
 }
@@ -135,6 +141,7 @@ a {
   background-image: url("~assets/img/navOrder.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: relative;
   text-align: center;
 }
@@ -143,6 +150,7 @@ a {
   background-image: url("~assets/img/navReservation.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: relative;
   text-align: center;
 }
@@ -151,13 +159,44 @@ a {
   background-image: url("~assets/img/navAboutUs.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: relative;
   text-align: center;
 }
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.navAtmosphere {
+  background-image: url("~assets/img/navAtmosphere.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.navContact {
+  background-image: url("~assets/img/navContact.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .column {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 400px) {
+  .column {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 375px) {
+  .column {
+    width: calc(100% / 2);
+  }
 }
 </style>

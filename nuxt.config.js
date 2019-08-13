@@ -101,6 +101,8 @@ export default {
 
   plugins: [
     '~/plugins/vuelidate.js',
+    '~/plugins/i18n.js',
+    "~/plugins/vue-scrollto.js",
     {
       src: '~/plugins/vue-page-transition',
       ssr: true
@@ -108,10 +110,6 @@ export default {
     {
       src: '~/plugins/v-owl-carousel',
       ssr: false
-    },
-    {
-      src: '~/plugins/google-maps',
-      ssr: true
     },
     {
       src: '~/plugins/components',
@@ -129,17 +127,19 @@ export default {
   ],
 
   router: {
-    middleware: ['animation']
+    middleware: ['animation', 'i18n']
   },
 
 
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
-    '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
+    ['nuxt-gmaps', {
+      key: 'AIzaSyDKJciVrAvST8C9SJzwkjmHFnoPM8FwooY'
+    }],
     [
       'vue-currency-filter/nuxt',
       {
@@ -150,13 +150,6 @@ export default {
         fractionSeparator: '.',
         symbolPosition: 'front',
         symbolSpacing: true
-      }
-    ],
-    
-    [
-      "@nuxtjs/google-analytics",
-      {
-        id: "UA-62479125-9"
       }
     ]
   ],
@@ -188,7 +181,6 @@ export default {
   axios: {},
 
   build: {
-    transpile: [/^vue2-google-maps($|\/)/],
     extractCSS: true,
 
     extend(config, {

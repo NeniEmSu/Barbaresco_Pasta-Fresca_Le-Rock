@@ -12,7 +12,7 @@
       </div>
       <b-navbar-brand
         class=" theHeader-nav-brand"
-        href="/barbaresco"
+        :to="'/' + $i18n.locale + '/barbaresco'"
       >
         <b-img-lazy
           class=""
@@ -27,7 +27,7 @@
           target="nav-collapse-2"
           class="border-0 theHead-nav-toggle"
         >
-          <b-button variant="outline-light">Резервація</b-button>
+          <b-button variant="outline-light">{{$t('links.reservation')}}</b-button>
         </b-navbar-toggle>
 
         <b-navbar-toggle
@@ -59,11 +59,25 @@
         is-nav
       >
         <b-navbar-nav>
-          <b-nav-item href="#">Link</b-nav-item>
-          <b-nav-item
-            href="#"
-            disabled
-          >Disabled</b-nav-item>
+          <b-nav-item :to="'/' + $i18n.locale">{{$t('links.home')}}</b-nav-item>
+          <b-nav-item :to="'/' + $i18n.locale + '/barbaresco'">{{$t('links.menu')}}</b-nav-item>
+          <b-nav-item to="#">{{$t('links.order')}}</b-nav-item>
+          <b-nav-item to="#">{{$t('links.reserveAPlace')}}</b-nav-item>
+          <b-nav-item :to="'/' + $i18n.locale + '/barbaresco/about-us'">{{$t('links.aboutUs')}}</b-nav-item>
+          <b-nav-item to="#">{{$t('links.vacancy')}}</b-nav-item>
+          <b-nav-item :to="'/' + $i18n.locale + '/barbaresco/contacts'">{{$t('links.contact')}}</b-nav-item>
+
+          <b-nav-item-dropdown
+            :text="$t('language')"
+            class="m-md-2 "
+            right
+          >
+            <b-dropdown-item to="/en">{{$t('links.english')}}</b-dropdown-item>
+            <b-dropdown-item to="/uk">{{$t('links.ukrainian')}}</b-dropdown-item>
+            <b-dropdown-item to="/ru">{{$t('links.russian')}}</b-dropdown-item>
+
+          </b-nav-item-dropdown>
+
         </b-navbar-nav>
 
       </b-collapse>
@@ -73,11 +87,15 @@
         is-nav
       >
         <b-navbar-nav class="text-right">
-          <b-nav-item href="#">Link2</b-nav-item>
           <b-nav-item
-            href="#"
-            disabled
-          >Disabled2</b-nav-item>
+            v-if="$i18n.locale === 'uk'"
+            to="/en"
+          >English</b-nav-item>
+          <b-nav-item
+            v-if="$i18n.locale === 'en'"
+            to="/uk"
+          >Ukrianian</b-nav-item>
+
         </b-navbar-nav>
 
       </b-collapse>
