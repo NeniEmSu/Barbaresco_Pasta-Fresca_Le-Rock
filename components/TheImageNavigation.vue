@@ -10,7 +10,7 @@
       </nuxt-link>
 
       <nuxt-link
-        to="/barbaresco"
+        :to="'/' + $i18n.locale + '/barbaresco'"
         class="column navMenu"
       >
         <div class="centered">{{$t('links.menu')}}</div>
@@ -18,29 +18,29 @@
       </nuxt-link>
 
       <nuxt-link
-        to="#"
-        class="column navOrder"
+        :to="'/' + $i18n.locale + '/barbaresco/delivery'"
+        class="column navDelivery"
       >
-        <div class="centered">{{$t('links.order')}}</div>
+        <div class="centered">{{$t('links.delivery')}}</div>
 
       </nuxt-link>
 
       <nuxt-link
-        to="#"
+        :to="'/' + $i18n.locale + '/barbaresco/about-us'"
         class="column navAboutUs"
       >
         <div class="centered">{{$t('links.aboutUs')}}</div>
       </nuxt-link>
 
       <nuxt-link
-        to="#"
+        :to="'/' + $i18n.locale + '/barbaresco/atmosphere'"
         class="column navAtmosphere"
       >
         <div class="centered">{{$t('links.atmosphere')}}</div>
       </nuxt-link>
 
       <nuxt-link
-        to="#"
+        :to="'/' + $i18n.locale + '/barbaresco/contacts'"
         class="column navContact"
       >
         <div class="centered">{{$t('links.contact')}}</div>
@@ -63,7 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 #image-Navigation a {
-  font-family: Segoe UI;
+  font-family: $primaryFont;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -137,8 +137,8 @@ section {
   text-align: center;
 }
 
-.navOrder {
-  background-image: url("~assets/img/navOrder.png");
+.navDelivery {
+  background-image: url("~assets/img/navDelivery.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

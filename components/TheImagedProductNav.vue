@@ -3,7 +3,7 @@
 
     <section class="container text-center">
       <nuxt-link
-        to="/#"
+        to="#"
         class="column text-center "
       >
         <div class="nav-image navOne text-center"></div>
@@ -13,7 +13,7 @@
 
       <nuxt-link
         to="#"
-        class="column "
+        class="column nuxt-link-exact-active"
       >
         <div class="nav-image navTwo"></div>
         <div class="text-center nav-text">Бургери</div>
@@ -113,16 +113,19 @@ export default {
   background-color: $darkColor;
 }
 
-#imageed-Products-Navigation a {
+#imageed-Products-Navigation a .nav-image {
   mix-blend-mode: luminosity;
   transition: 500ms ease-in-out;
   text-decoration: none;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
 
   &:hover {
     mix-blend-mode: normal;
-    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
-    color: $lightColor;
   }
+}
+
+#imageed-Products-Navigation a.nuxt-link-exact-active .nav-image {
+  mix-blend-mode: normal;
 }
 
 section {
@@ -210,7 +213,7 @@ section {
 }
 
 .navTen {
-  background-image: url("~assets/img/barbaredcoAlcohol.png");
+  background-image: url("~assets/img/barbarescoAlcohol.png");
 }
 
 @media (max-width: 750px) {

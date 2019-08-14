@@ -1,10 +1,14 @@
 <template>
-  <div>
+  <div id="BarbarescoLayout">
     <Header />
     <TheTopContact />
-    <vue-page-transition :name="$store.state.animation">
-      <nuxt />
-    </vue-page-transition>
+    <div class="content">
+      <vue-page-transition :name="$store.state.animation">
+        <nuxt />
+      </vue-page-transition>
+
+    </div>
+
     <TheFooter />
   </div>
 </template>
@@ -14,12 +18,23 @@ import Header from '~/components/TheHeader'
 import TheTopContact from '~/components/TheTopContact'
 import TheFooter from "@/components/TheFooter.vue";
 export default {
+  name: "BarbarescoLayout",
   components: {
     Header,
     TheFooter,
     TheTopContact
-  }
+  },
+
+  meta: {
+    animation: "overlay-up-full"
+  },
 
 }
 </script>
+
+<style lang="scss" scoped>
+.content {
+  min-height: calc(100vh - 120px);
+}
+</style>
 

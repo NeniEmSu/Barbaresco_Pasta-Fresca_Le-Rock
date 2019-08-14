@@ -3,7 +3,7 @@
   "links": {
     "home": "Home",
     "menu": "Menu",
-    "order": "Food delivery",
+    "delivery": "Food delivery",
     "reserveAPlace": "Reservation of place",
     "reservation": "Reservation",
     "aboutUs": "About us",

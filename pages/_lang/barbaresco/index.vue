@@ -4,6 +4,7 @@
     <TheImagedProductNav />
 
     <TheBugers />
+    <TheBottomCarousel />
 
     <TheMapComponent />
   </div>
@@ -14,6 +15,7 @@ import TheImageNavigation from '~/components/TheImageNavigation'
 import TheImagedProductNav from '~/components/TheImagedProductNav'
 import TheMapComponent from '~/components/TheMapComponent'
 import TheBugers from '~/components/TheBugers'
+import TheBottomCarousel from '~/components/TheBottomCarousel'
 export default {
   name: 'barbaresco',
   layout: 'barbaresco',
@@ -21,10 +23,11 @@ export default {
     TheImageNavigation,
     TheImagedProductNav,
     TheMapComponent,
-    TheBugers
+    TheBugers,
+    TheBottomCarousel
   },
   meta: {
-    animation: "fade-in-right"
+    animation: "overlay-down-full"
   },
   head () {
     return {

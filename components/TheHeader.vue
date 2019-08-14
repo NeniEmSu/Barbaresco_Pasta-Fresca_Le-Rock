@@ -61,7 +61,7 @@
         <b-navbar-nav>
           <b-nav-item :to="'/' + $i18n.locale">{{$t('links.home')}}</b-nav-item>
           <b-nav-item :to="'/' + $i18n.locale + '/barbaresco'">{{$t('links.menu')}}</b-nav-item>
-          <b-nav-item to="#">{{$t('links.order')}}</b-nav-item>
+          <b-nav-item :to="'/' + $i18n.locale + '/barbaresco/delivery'">{{$t('links.delivery')}}</b-nav-item>
           <b-nav-item to="#">{{$t('links.reserveAPlace')}}</b-nav-item>
           <b-nav-item :to="'/' + $i18n.locale + '/barbaresco/about-us'">{{$t('links.aboutUs')}}</b-nav-item>
           <b-nav-item to="#">{{$t('links.vacancy')}}</b-nav-item>

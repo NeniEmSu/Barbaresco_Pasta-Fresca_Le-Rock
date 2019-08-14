@@ -34,6 +34,16 @@ body {
   line-height: 1.5;
 }
 
+.overlay-left,
+.overlay-right,
+.overlay-top,
+.overlay-bottom,
+.overlay-down-full {
+  background: $darkColor !important;
+  transition-duration: 350ms !important;
+  animation-duration: 400ms;
+}
+
 .language {
   .langBtn,
   .dropdown-toggle {

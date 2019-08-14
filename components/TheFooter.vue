@@ -59,6 +59,8 @@
 
         </a>
 
+        |
+
         <a
           href="https://www.instagram.com/virusdetailing/"
           target="_blank"
@@ -83,22 +85,18 @@ export default {};
 
 <style lang="scss" scoped>
 #the-footer {
-  width: 100%;
+  background: $darkColor;
+  width: 100% !important;
+  padding: 0;
   max-height: 200px;
   min-height: 200px;
   height: 100%;
+  bottom: 0;
 }
 
 .footer-inner {
-  background: $darkColor;
-  top: 70px;
-
   padding: 70px 0;
-
-  top: 0;
-  left: 0;
   display: flex;
-  margin-top: auto;
 }
 
 .footerLogocontainer img {
@@ -127,7 +125,7 @@ export default {};
 .address a {
   margin: auto;
 
-  font-family: Segoe UI;
+  font-family: $primaryFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

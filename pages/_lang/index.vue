@@ -143,7 +143,7 @@ export default {
   margin-top: 70px;
   margin-bottom: 70px;
 
-  font-family: Segoe UI;
+  font-family: $primaryFont;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
