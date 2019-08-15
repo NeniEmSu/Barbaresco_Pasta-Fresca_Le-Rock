@@ -1,11 +1,6 @@
 <template>
   <div id="barbaresco">
-    <button
-      type="button"
-      class=" btmRight"
-    >
-      My Contacts <span class="caret"></span>
-    </button>
+
     <TheImageNavigation />
     <div id="imageed-Products-Navigation">
 
@@ -123,7 +118,10 @@
           @click.prevent="currentStepNumber = 10"
           class="column "
         >
-          <div class="nav-image navTen"></div>
+          <div
+            class="nav-image navTen"
+            :class="{ active: currentStepNumber === 10}"
+          ></div>
           <div class="text-center nav-text">Алкоголь</div>
 
         </button>
@@ -225,16 +223,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.btmRight {
-  position: absolute;
-  right: 20px;
-  top: calc(100% - 600px);
-}
-
 #barbaresco {
-  background-image: url("~assets/img/textureBeton.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("~assets/img/textureBeton.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #imageed-Products-Navigation {
