@@ -25,9 +25,14 @@
       <div>
         <b-navbar-toggle
           target="nav-collapse-2"
-          class="border-0 theHead-nav-toggle"
+          class="border-0 theHead-nav-toggle reservation"
         >
-          <b-button variant="outline-light">{{$t('links.reservation')}}</b-button>
+
+          <a
+            href="#"
+            class="btn reservation-btn"
+            variant="outline-primary"
+          >{{$t('links.reservation')}}</a>
         </b-navbar-toggle>
 
         <b-navbar-toggle
@@ -67,17 +72,6 @@
           <b-nav-item to="#">{{$t('links.vacancy')}}</b-nav-item>
           <b-nav-item :to="'/' + $i18n.locale + '/barbaresco/contacts'">{{$t('links.contact')}}</b-nav-item>
 
-          <b-nav-item-dropdown
-            :text="$t('language')"
-            class="m-md-2 "
-            right
-          >
-            <b-dropdown-item to="/en">{{$t('links.english')}}</b-dropdown-item>
-            <b-dropdown-item to="/uk">{{$t('links.ukrainian')}}</b-dropdown-item>
-            <b-dropdown-item to="/ru">{{$t('links.russian')}}</b-dropdown-item>
-
-          </b-nav-item-dropdown>
-
         </b-navbar-nav>
 
       </b-collapse>
@@ -97,6 +91,17 @@
           >Ukrianian</b-nav-item>
 
         </b-navbar-nav>
+
+        <b-nav-item-dropdown
+          :text="$t('language')"
+          class="m-md-2 text-right"
+          right
+        >
+          <b-dropdown-item to="/en">{{$t('links.english')}}</b-dropdown-item>
+          <b-dropdown-item to="/uk">{{$t('links.ukrainian')}}</b-dropdown-item>
+          <b-dropdown-item to="/ru">{{$t('links.russian')}}</b-dropdown-item>
+
+        </b-nav-item-dropdown>
 
       </b-collapse>
 
@@ -133,6 +138,22 @@ export default {
 <style lang="scss" scoped>
 .theHeader-navbar {
   background-color: $darkColor;
+}
+
+.reservati0n-btn,
+.reservation .btn {
+  border: 1px solid $lightColor;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 8px 30px;
+
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: $lightColor;
 }
 
 .theHeader-nav-brand img {

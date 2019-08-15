@@ -15,17 +15,22 @@
 
           <img
             class="card-img-top mx-auto"
-            src="~/assets/img/barbarescoChickenBuger.png"
+            src="~/assets/img/barbarescoAlcohol.png"
             alt="Card image cap"
           >
           <div class="card-body">
-            <h5 class="card-title mx-auto text-center">Бургер з куркою</h5>
-            <p class="card-text text-left">Булка, курка, помідор, мікс салат,
-              соус, гриль &nbsp; &nbsp; &nbsp; &nbsp; <span class="card-text">300г</span></p>
+            <div class="row">
+              <div class="col-8 my-auto">
+                <h5 class="card-title mx-auto text-left">Wiskey</h5>
+              </div>
+              <div class="col-4  my-auto">
+                <p><span class="card-text quantity">0.25л</span></p>
+              </div>
+            </div>
 
             <div class="row">
               <div class="col-4 pr-0 my-auto">
-                <p class="card-text cost my-auto">75,00</p>
+                <p class="card-text cost my-auto">35,00</p>
               </div>
               <div class="col-8  my-auto">
                 <a

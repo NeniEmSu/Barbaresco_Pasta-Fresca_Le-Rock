@@ -58,7 +58,7 @@ export default {
 .image-container {
   height: calc(100vh - 120px);
   background-image: url("~assets/img/barbarescoDelivery.png");
-  background-position: center;
+  background-position: bottom center;
   background-repeat: no-repeat;
 }
 

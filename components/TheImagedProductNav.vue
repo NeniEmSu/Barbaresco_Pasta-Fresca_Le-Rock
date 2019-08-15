@@ -13,6 +13,7 @@
 
       <nuxt-link
         to="#"
+        @click="currentStepNumber = 2"
         class="column nuxt-link-exact-active"
       >
         <div class="nav-image navTwo"></div>
@@ -77,6 +78,7 @@
 
       <nuxt-link
         to="#"
+        @click.prevent="setNewProducts"
         class="column "
       >
         <div class="nav-image navNine"></div>
@@ -86,6 +88,7 @@
 
       <nuxt-link
         to="#"
+        @click.prevent="currentStepNumber = 10"
         class="column "
       >
         <div class="nav-image navTen"></div>
@@ -100,11 +103,13 @@
 
 <script>
 export default {
+
   data () {
     return {
+      currentStepNumber: 2,
 
     }
-  },
+  }
 }
 </script>
 
