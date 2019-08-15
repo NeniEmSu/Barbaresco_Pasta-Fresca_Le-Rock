@@ -197,6 +197,8 @@ hr {
     height: 150px;
     width: 100%;
     max-height: 150px;
+
+    margin-bottom: 5px;
   }
 }
 

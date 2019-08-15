@@ -12,7 +12,8 @@
       </div>
       <b-navbar-brand
         class=" theHeader-nav-brand"
-        :to="'/' + $i18n.locale + '/barbaresco'"
+        :to="$i18n.path('barbaresco')"
+        exact
       >
         <b-img-lazy
           class=""

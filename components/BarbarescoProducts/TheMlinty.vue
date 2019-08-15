@@ -15,22 +15,17 @@
 
           <img
             class="card-img-top mx-auto"
-            src="~/assets/img/barbarescoAlcohol.png"
+            src="~/assets/img/barbarescoMlinty.png"
             alt="Card image cap"
           >
           <div class="card-body">
-            <div class="row">
-              <div class="col-8 my-auto">
-                <h5 class="card-title mx-auto text-left">Wiskey</h5>
-              </div>
-              <div class="col-4  my-auto">
-                <p><span class="card-text quantity">0.25л</span></p>
-              </div>
-            </div>
+            <h5 class="card-title mx-auto text-center">Млинці</h5>
+            <p class="card-text text-left">Булка, курка, помідор, мікс салат,
+              соус, гриль &nbsp; &nbsp; &nbsp; &nbsp; <span class="card-text">400г</span></p>
 
             <div class="row">
               <div class="col-4 pr-0 my-auto">
-                <p class="card-text cost my-auto">35,00</p>
+                <p class="card-text cost my-auto">80,00</p>
               </div>
               <div class="col-8  my-auto">
                 <a
@@ -90,6 +85,8 @@ export default {
     height: 150px;
     width: 100%;
     max-height: 150px;
+
+    margin-bottom: 5px;
   }
 }
 

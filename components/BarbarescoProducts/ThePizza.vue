@@ -15,17 +15,17 @@
 
           <img
             class="card-img-top mx-auto"
-            src="~/assets/img/barbarescoSushi.png"
+            src="~/assets/img/barbarescoPizza.png"
             alt="Card image cap"
           >
           <div class="card-body">
-            <h5 class="card-title mx-auto text-center">Sushi</h5>
+            <h5 class="card-title mx-auto text-center">Vedgy Pizza</h5>
             <p class="card-text text-left">Булка, курка, помідор, мікс салат,
-              соус, гриль &nbsp; &nbsp; &nbsp; &nbsp; <span class="card-text">400г</span></p>
+              соус, гриль &nbsp; &nbsp; &nbsp; &nbsp; <span class="card-text">350г</span></p>
 
             <div class="row">
               <div class="col-4 pr-0 my-auto">
-                <p class="card-text cost my-auto">80,00</p>
+                <p class="card-text cost my-auto">90,00</p>
               </div>
               <div class="col-8  my-auto">
                 <a
@@ -85,6 +85,8 @@ export default {
     height: 150px;
     width: 100%;
     max-height: 150px;
+
+    margin-bottom: 5px;
   }
 }
 

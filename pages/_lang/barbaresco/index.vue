@@ -1,5 +1,11 @@
 <template>
   <div id="barbaresco">
+    <button
+      type="button"
+      class=" btmRight"
+    >
+      My Contacts <span class="caret"></span>
+    </button>
     <TheImageNavigation />
     <div id="imageed-Products-Navigation">
 
@@ -148,16 +154,16 @@
 import TheImageNavigation from '~/components/TheImageNavigation'
 import TheImagedProductNav from '~/components/TheImagedProductNav'
 import TheMapComponent from '~/components/TheMapComponent'
-import TheBugers from '~/components/TheBugers'
-import ThePizza from '~/components/ThePizza'
-import TheSushi from '~/components/TheSushi'
-import TheDrinks from '~/components/TheDrinks'
-import TheMlinty from '~/components/TheMlinty'
-import TheDesert from '~/components/TheDesert'
-import TheSalad from '~/components/TheSalad'
-import TheFirstCourse from '~/components/TheFirstCourse'
-import TheHits from '~/components/TheHits'
-import TheAlcohol from '~/components/TheAlcohol'
+import TheBugers from '~/components/BarbarescoProducts/TheBugers'
+import ThePizza from '~/components/BarbarescoProducts/ThePizza'
+import TheSushi from '~/components/BarbarescoProducts/TheSushi'
+import TheDrinks from '~/components/BarbarescoProducts/TheDrinks'
+import TheMlinty from '~/components/BarbarescoProducts/TheMlinty'
+import TheDesert from '~/components/BarbarescoProducts/TheDesert'
+import TheSalad from '~/components/BarbarescoProducts/TheSalad'
+import TheFirstCourse from '~/components/BarbarescoProducts/TheFirstCourse'
+import TheHits from '~/components/BarbarescoProducts/TheHits'
+import TheAlcohol from '~/components/BarbarescoProducts/TheAlcohol'
 import TheBottomCarousel from '~/components/TheBottomCarousel'
 export default {
   name: 'barbaresco',
@@ -219,6 +225,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.btmRight {
+  position: absolute;
+  right: 20px;
+  top: calc(100% - 600px);
+}
+
 #barbaresco {
   background-image: url("~assets/img/textureBeton.png");
   background-repeat: no-repeat;

@@ -15,11 +15,11 @@
 
           <img
             class="card-img-top mx-auto"
-            src="~/assets/img/barbarescoSushi.png"
+            src="~/assets/img/barbarescoDesert.png"
             alt="Card image cap"
           >
           <div class="card-body">
-            <h5 class="card-title mx-auto text-center">Sushi</h5>
+            <h5 class="card-title mx-auto text-center">Десерти</h5>
             <p class="card-text text-left">Булка, курка, помідор, мікс салат,
               соус, гриль &nbsp; &nbsp; &nbsp; &nbsp; <span class="card-text">400г</span></p>
 
@@ -85,6 +85,8 @@ export default {
     height: 150px;
     width: 100%;
     max-height: 150px;
+
+    margin-bottom: 5px;
   }
 }
 
