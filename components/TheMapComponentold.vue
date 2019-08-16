@@ -1,34 +1,32 @@
 <template>
   <div>
     <style>
-    .vue-map-container {
-      max-height: 300px;
-      height: 100%;
-      width: 100vw !important;
+    .GMap__Wrapper {
+      width: 100%;
+      height: 300px;
     }
     </style>
-    <GmapMap
+    <GMap
+      id="map"
       :cluster="{options: {styles: clusterStyle}}"
       :center="{lat: locations[0].lat, lng: locations[0].lng}"
-      :zoom="18"
-      map-type-id="terrain"
       :options="{fullscreenControl: true, streetViewControl: true, mapTypeControl: true, zoomControl: true, gestureHandling: 'cooperative', styles: mapStyle}"
-      style="width: 500px; height: 300px"
+      :zoom="18"
     >
-      <GmapMarker
+      <GMapMarker
         v-for="location in locations"
         :key="location.id"
         :position="{lat: location.lat, lng: location.lng}"
         :options="{icon: location === currentLocation ? pins.selected : pins.notSelected}"
         @click="currentLocation = location"
       >
-        <GmapInfoWindow>
+        <GMapInfoWindow>
           <code>
             {{location.name}}
           </code>
-        </GmapInfoWindow>
-      </GmapMarker>
-    </GmapMap>
+        </GMapInfoWindow>
+      </GMapMarker>
+    </GMap>
   </div>
 </template>
 
@@ -349,6 +347,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#map {
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.35);
+}
+
 code {
   font-size: 18px;
   color: #0a0a0a;

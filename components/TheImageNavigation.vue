@@ -4,7 +4,7 @@
       <div class="grid">
 
         <nuxt-link
-          :to="$i18n.path('')"
+          :to="localePath({name: 'index'},$i18n.locale)"
           exact
         >
 
@@ -21,7 +21,7 @@
         </nuxt-link>
 
         <nuxt-link
-          :to="$i18n.path('barbaresco')"
+          to="barbaresco"
           exact
         >
           <figure class="saddleEffect">
@@ -37,7 +37,7 @@
         </nuxt-link>
 
         <nuxt-link
-          :to="$i18n.path('barbaresco/delivery')"
+          to="barbaresco/delivery"
           exact
         >
 
@@ -54,7 +54,7 @@
         </nuxt-link>
 
         <nuxt-link
-          :to="$i18n.path('barbaresco/about-us')"
+          to="barbaresco/about-us"
           exact
         >
 
@@ -72,7 +72,7 @@
         </nuxt-link>
 
         <nuxt-link
-          :to="$i18n.path('barbaresco/atmosphere')"
+          to="barbaresco/atmosphere"
           exact
         >
           <figure class="saddleEffect">
@@ -88,7 +88,7 @@
         </nuxt-link>
 
         <nuxt-link
-          :to="$i18n.path('barbaresco/contacts')"
+          to="barbaresco/contacts"
           exact
         >
 

@@ -1,5 +1,20 @@
+<i18n>
+{
+  "uk": {
+    "language": "Мова"
+  },
+  "en": {
+   "language": "Language"
+  },
+  "ru": {
+    "language": "язык"
+  }
+}
+</i18n>
+
 <template>
   <div>
+
     <div class="fixed-top text-right language">
 
       <b-dropdown
@@ -7,18 +22,34 @@
         :text="$t('language')"
         class="m-md-2 "
       >
-        <b-dropdown-item to="/en">{{$t('links.english')}}</b-dropdown-item>
-        <b-dropdown-item to="/uk">{{$t('links.ukrainian')}}</b-dropdown-item>
-        <b-dropdown-item to="/ru">{{$t('links.russian')}}</b-dropdown-item>
+        <b-dropdown-item
+          v-if="$i18n.locale !== 'en'"
+          :to="switchLocalePath('en')"
+        >English</b-dropdown-item>
+        <b-dropdown-item
+          v-if="$i18n.locale !== 'uk'"
+          :to="switchLocalePath('uk')"
+        >Українська</b-dropdown-item>
+        <b-dropdown-item
+          v-if="$i18n.locale !== 'ru'"
+          :to="switchLocalePath('ru')"
+        >русский</b-dropdown-item>
 
       </b-dropdown>
 
     </div>
+
     <vue-page-transition :name="$store.state.animation">
       <nuxt />
     </vue-page-transition>
   </div>
 </template>
+
+<script>
+export default {
+
+}
+</script>
 
 <style lang="scss">
 @charset "UTF-8";
@@ -32,16 +63,6 @@ body {
   overflow-x: hidden;
 
   line-height: 1.5;
-}
-
-.overlay-left,
-.overlay-right,
-.overlay-top,
-.overlay-bottom,
-.overlay-down-full {
-  background: $darkColor !important;
-  transition-duration: 350ms !important;
-  animation-duration: 400ms;
 }
 
 .language {
@@ -82,6 +103,16 @@ body {
       color: #000000;
     }
   }
+}
+
+.overlay-left,
+.overlay-right,
+.overlay-top,
+.overlay-bottom,
+.overlay-down-full {
+  background: $darkColor !important;
+  transition-duration: 350ms !important;
+  animation-duration: 400ms;
 }
 
 img {
@@ -256,6 +287,16 @@ main {
     min-height: 80vh;
     height: 100%;
   }
+
+  .language {
+    .langBtn,
+    .dropdown-toggle {
+      padding: 10px 25px;
+
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 }
 
 @include mediaXSm {
@@ -280,6 +321,16 @@ main {
   .breadcrumb-item + .breadcrumb-item::before {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .language {
+    .langBtn,
+    .dropdown-toggle {
+      padding: 5px 15px;
+
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
 

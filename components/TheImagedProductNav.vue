@@ -1,100 +1,167 @@
+<i18n>
+{
+  "uk": {
+    "pizza": "Піца",
+    "burgera": "Бургери",
+    "sushi": "Суші",
+    "panCakes": "Млинці",
+    "deserts": "Десерти",
+    "salads": "Салати",
+    "firstCourse": "Перші страви",
+    "hits": "Хіти",
+    "drinks": "напої",
+    "alcohol":"Алкоголь"
+  },
+  "en": {
+   "pizza": "Pizzas",
+   "burgers": "Burgers",
+    "sushi": "Sushi",
+    "panCakes": "PanCakes",
+    "deserts": "Deserts",
+    "salads": "Salads",
+    "firstCourse": "First Course",
+    "hits": "Hits",
+    "drinks": "Drinks",
+    "alcohol":"Alcohol"
+  },
+  "ru": {
+    "pizza": "пицца",
+    "burgers": "Бургери",
+    "sushi": "Суші",
+    "panCakes": "Млинці",
+    "deserts": "Десерти",
+    "salads": "Салати",
+    "firstCourse": "Перші страви",
+    "hits": "Хіти",
+    "drinks": "напої",
+    "alcohol":"Алкоголь"
+  }
+}
+</i18n>
+
 <template>
   <div id="imageed-Products-Navigation">
 
     <section class="container text-center">
-      <nuxt-link
-        to="#"
+      <button
         class="column text-center "
+        @click="Show1"
       >
-        <div class="nav-image navOne text-center"></div>
-        <div class="text-center nav-text">Піца</div>
+        <div
+          class="nav-image navOne text-center"
+          :class="{ active: currentProductsDisplayed === 1}"
+        ></div>
+        <div class="text-center nav-text">{{$t('pizza')}}</div>
 
-      </nuxt-link>
+      </button>
 
-      <nuxt-link
-        to="#"
-        @click="currentStepNumber = 2"
-        class="column nuxt-link-exact-active"
+      <button
+        @click="Show2"
+        class="column"
       >
-        <div class="nav-image navTwo"></div>
-        <div class="text-center nav-text">Бургери</div>
+        <div
+          class="nav-image navTwo"
+          :class="{ active: currentProductsDisplayed === 2}"
+        ></div>
+        <div class="text-center nav-text">{{$t('burgers')}}</div>
 
-      </nuxt-link>
+      </button>
 
-      <nuxt-link
-        to="#"
+      <button
+        class="column "
+        @click="Show3"
+      >
+        <div
+          class="nav-image navThree"
+          :class="{ active: currentProductsDisplayed === 3}"
+        ></div>
+        <div class="text-center nav-text">{{$t('sushi')}}</div>
+
+      </button>
+
+      <button
+        class="column "
+        @click="Show4"
+      >
+        <div
+          class="nav-image navFour"
+          :class="{ active: currentProductsDisplayed === 4}"
+        ></div>
+        <div class="text-center nav-text">{{$t('panCakes')}}</div>
+
+      </button>
+
+      <button
+        class="column "
+        @click="Show5"
+      >
+        <div
+          class="nav-image navFive"
+          :class="{ active: currentProductsDisplayed === 5}"
+        ></div>
+        <div class="text-center nav-text">{{$t('deserts')}}</div>
+
+      </button>
+
+      <button
+        class="column "
+        @click="Show6"
+      >
+        <div
+          class="nav-image navSix"
+          :class="{ active: currentProductsDisplayed === 6}"
+        ></div>
+        <div class="text-center nav-text">{{$t('salads')}}</div>
+
+      </button>
+
+      <button
+        class="column "
+        @click="Show7"
+      >
+        <div
+          class="nav-image navSeven"
+          :class="{ active: currentProductsDisplayed === 7}"
+        ></div>
+        <div class="text-center nav-text">{{$t('firstCourse')}}</div>
+
+      </button>
+
+      <button
+        class="column "
+        @click="Show8"
+      >
+        <div
+          class="nav-image navEight"
+          :class="{ active: currentProductsDisplayed === 8}"
+        ></div>
+        <div class="text-center nav-text">{{$t('hits')}}</div>
+
+      </button>
+
+      <button
+        @click.prevent="Show9"
+        class="column"
+      >
+        <div
+          class="nav-image navNine "
+          :class="{ active: currentProductsDisplayed === 9}"
+        ></div>
+        <div class="text-center nav-text">{{$t('drinks')}}</div>
+
+      </button>
+
+      <button
+        @click.prevent="Show10"
         class="column "
       >
-        <div class="nav-image navThree"></div>
-        <div class="text-center nav-text">Суші</div>
+        <div
+          class="nav-image navTen"
+          :class="{ active: currentProductsDisplayed === 10}"
+        ></div>
+        <div class="text-center nav-text">{{$t('alcohol')}}</div>
 
-      </nuxt-link>
-
-      <nuxt-link
-        to="#"
-        class="column "
-      >
-        <div class="nav-image navFour"></div>
-        <div class="text-center nav-text">Млинці</div>
-
-      </nuxt-link>
-
-      <nuxt-link
-        to="#"
-        class="column "
-      >
-        <div class="nav-image navFive"></div>
-        <div class="text-center nav-text">Десерти</div>
-
-      </nuxt-link>
-
-      <nuxt-link
-        to="#"
-        class="column "
-      >
-        <div class="nav-image navSix"></div>
-        <div class="text-center nav-text">Салати</div>
-
-      </nuxt-link>
-
-      <nuxt-link
-        to="#"
-        class="column "
-      >
-        <div class="nav-image navSeven"></div>
-        <div class="text-center nav-text">Перші
-          страви</div>
-
-      </nuxt-link>
-
-      <nuxt-link
-        to="#"
-        class="column "
-      >
-        <div class="nav-image navEight"></div>
-        <div class="text-center nav-text">Хіти</div>
-
-      </nuxt-link>
-
-      <nuxt-link
-        to="#"
-        @click.prevent="setNewProducts"
-        class="column "
-      >
-        <div class="nav-image navNine"></div>
-        <div class="text-center nav-text">Гарячі напої</div>
-
-      </nuxt-link>
-
-      <nuxt-link
-        to="#"
-        @click.prevent="currentStepNumber = 10"
-        class="column "
-      >
-        <div class="nav-image navTen"></div>
-        <div class="text-center nav-text">Алкоголь</div>
-
-      </nuxt-link>
+      </button>
 
     </section>
 
@@ -103,11 +170,49 @@
 
 <script>
 export default {
+  props: {
+    currentProductsDisplayed: {
+      type: Number,
+      default: 1,
+      required: true
+    }
+  },
 
   data () {
     return {
-      currentStepNumber: 2,
 
+    }
+  },
+  methods: {
+    Show1 () {
+      this.$emit('changedView', 1)
+    },
+    Show2 () {
+      this.$emit('changedView', 2)
+    },
+    Show3 () {
+      this.$emit('changedView', 3)
+    },
+    Show4 () {
+      this.$emit('changedView', 4)
+    },
+    Show5 () {
+      this.$emit('changedView', 5)
+    },
+    Show6 () {
+      this.$emit('changedView', 6)
+    },
+    Show7 () {
+      this.$emit('changedView', 7)
+    },
+    Show8 () {
+      this.$emit('changedView', 8)
+    },
+    Show9 () {
+      this.$emit('changedView', 9)
+    },
+    Show10 () {
+      this.$emit('changedView', 10)
     }
   }
 }
@@ -118,18 +223,7 @@ export default {
   background-color: $darkColor;
 }
 
-#imageed-Products-Navigation a .nav-image {
-  mix-blend-mode: luminosity;
-  transition: 500ms ease-in-out;
-  text-decoration: none;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
-
-  &:hover {
-    mix-blend-mode: normal;
-  }
-}
-
-#imageed-Products-Navigation a.nuxt-link-exact-active .nav-image {
+.active {
   mix-blend-mode: normal;
 }
 
@@ -143,13 +237,30 @@ section {
   width: calc(100% / 10);
   height: 100%;
   min-height: 150px;
-
+  border: 0;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   text-align: center;
   margin: 22px auto 22px auto;
+
+  transition: 500ms ease-in-out;
+  text-decoration: none;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
+}
+
+.column .nav-image {
+  mix-blend-mode: luminosity;
+
+  &:hover {
+    mix-blend-mode: normal;
+  }
+
+  &.active {
+    mix-blend-mode: normal;
+  }
 }
 
 .nav-text {

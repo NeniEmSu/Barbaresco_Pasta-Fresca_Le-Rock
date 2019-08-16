@@ -1,3 +1,14 @@
+<i18n>
+{
+  "uk": {"home": {"siteButtonTxt": "Перейти до закладу"}  },
+
+  "en": {"home": {"siteButtonTxt": "Go to the institution"} },
+
+  "ru": {"home": {"siteButtonTxt": "Перейти до закладу"} }
+}
+
+</i18n>
+
 <template>
   <div>
     <b-card
@@ -22,7 +33,7 @@
         <div class="text-center goTosite">
           <b-button
             class="mx-auto goToSiteBtn"
-            :to="'/' + $i18n.locale + sitelink"
+            :to="localePath({name: 'barbaresco'},$i18n.locale)"
           >{{ $t('home.siteButtonTxt') }}</b-button>
         </div>
         <div class="text-center ">
@@ -111,7 +122,11 @@ export default {
 }
 
 .cardContent {
-  padding: 35px 15px;
+  padding: 15px 5px;
+}
+
+.card-body {
+  padding: 0;
 }
 
 .card-log,
@@ -119,6 +134,7 @@ export default {
   height: 80px;
   width: 160px;
   margin-bottom: 35px;
+  object-fit: scale-down;
 }
 
 .cardDescription {
@@ -237,11 +253,22 @@ export default {
   height: 20px;
 }
 
-@include mediaMenu {
+@media (max-width: 1440px) {
   .card {
     max-width: 275px;
     width: 100%;
     min-width: 275px;
+  }
+
+  .card-image-top {
+    height: 150px;
+  }
+
+  .card-log,
+  .card-log img {
+    height: 50px;
+    width: 100px;
+    margin-bottom: 35px;
   }
 
   .cardDescription {
@@ -254,6 +281,38 @@ export default {
 
   .cardContent {
     padding: 16px 10px;
+  }
+
+  .goTosite {
+    margin-bottom: 10px;
+  }
+
+  .goToSiteBtn {
+    padding: 14px 25px;
+  }
+
+  .socialButtons {
+    &.instagram {
+      padding: 10px 18px;
+
+      .inButtonImg {
+        width: 70px;
+        height: 24px;
+      }
+    }
+
+    &.facebook {
+      padding: 12px 15px;
+
+      .inButtonImg {
+        width: 70px;
+        height: 14.82px;
+      }
+    }
+  }
+
+  .inButtonImg {
+    width: 70px;
   }
 }
 </style>

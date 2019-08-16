@@ -13,7 +13,7 @@
       </div>
       <div class="footerLogocontainer m-auto">
         <nuxt-link
-          :to="'/' + $i18n.locale + '/barbaresco'"
+          to="barbaresco"
           class="m-auto"
         >
 

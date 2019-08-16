@@ -1,3 +1,17 @@
+<i18n>
+{
+  "uk": {
+    "language": "Мова"
+  },
+  "en": {
+   "language": "Language"
+  },
+  "ru": {
+    "language": "язык"
+  }
+}
+</i18n>
+
 <template>
   <div class="container ">
     <b-carousel

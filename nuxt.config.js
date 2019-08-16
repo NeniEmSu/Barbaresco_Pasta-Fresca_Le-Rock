@@ -123,11 +123,18 @@ export default {
     {
       src: '~/plugins/vue-scroll-reveal',
       ssr: false
+    },
+    {
+      src: "~/plugins/google-maps",
+      ssr: true
     }
   ],
 
   router: {
-    middleware: ['animation', 'i18n']
+    middleware: [
+      'animation',
+      'i18n'
+    ]
   },
 
 
@@ -137,8 +144,20 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
-    ['nuxt-gmaps', {
-      key: 'AIzaSyDKJciVrAvST8C9SJzwkjmHFnoPM8FwooY'
+    ['nuxt-i18n', {
+      locales: [{
+          iso: 'uk-Uk',
+          code: 'uk'
+        },
+        {
+          iso: 'en-US',
+          code: 'en'
+        },
+        {
+          iso: 'ru-RU',
+          code: 'ru'
+        }
+      ]
     }],
     [
       'vue-currency-filter/nuxt',
@@ -154,6 +173,75 @@ export default {
     ]
   ],
 
+  i18n: {
+    locales: ['uk', 'en', 'ru'],
+    defaultLocale: 'uk',
+    vueI18nLoader: true,
+    lazy: false,
+    langDir: null,
+    seo: false,
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      alwaysRedirect: false,
+      fallbackLocale: null
+    },
+    vueI18n: {
+      fallbackLocale: 'uk',
+      messages: {
+        uk: {
+          "links": {
+            "home": "Головна",
+            "menu": "Меню",
+            "delivery": "Доставка їжі",
+            "reserveAPlace": "Резервація місця",
+            "reservation": "Резервація",
+            "aboutUs": "Про нас",
+            "atmosphere": "Атмосфера",
+            "vacancy": "Ваканції",
+            "contact": "Контакти",
+          },
+          ukrainian: "Українська",
+          english: "English",
+          russian: "русский",
+        },
+        en: {
+          "links": {
+            home: "Home",
+            "menu": "Menu",
+            "delivery": "Food delivery",
+            "reserveAPlace": "Reservation of place",
+            "reservation": "Reservation",
+            "aboutUs": "About us",
+            "atmosphere": "Atmosphere",
+            "vacancy": "Vacancies",
+            "contact": "Contacts"
+          },
+          ukrainian: "Українська",
+          english: "English",
+          russian: "русский"
+        },
+        ru: {
+          "links": {
+            "home": "Головна",
+            "menu": "Меню",
+            "delivery": "Доставка їжі",
+            "reserveAPlace": "Резервація місця",
+            "reservation": "Резервація",
+            "aboutUs": "Про нас",
+            "atmosphere": "Атмосфера",
+            "vacancy": "Ваканції",
+            "contact": "Контакти"
+          },
+          ukrainian: "Українська",
+          english: "English",
+          russian: "русский"
+        }
+
+      }
+    }
+  },
 
   proxy: {
     '/.netlify/functions/': {
@@ -181,6 +269,7 @@ export default {
   axios: {},
 
   build: {
+    transpile: [/^vue2-google-maps($|\/)/],
     extractCSS: true,
 
     extend(config, {
