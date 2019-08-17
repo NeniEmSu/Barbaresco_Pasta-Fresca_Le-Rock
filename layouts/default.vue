@@ -40,7 +40,6 @@
     </div>
 
     <vue-page-transition :name="$store.state.animation">
-    <div v-if="$nuxt.isOffline">You are offline</div>
       <nuxt />
     </vue-page-transition>
   </div>
@@ -158,8 +157,17 @@ figure {
   opacity: 0;
 }
 
-button {
+button,
+.btn {
   cursor: pointer;
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  box-sizing: border-box;
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-track {

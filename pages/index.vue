@@ -69,10 +69,16 @@
       <h1 class="homePageHeading">{{ $t('home.title') }}</h1>
 
       <no-ssr>
-        <!-- important to add no-ssr-->
-        <div class="">
+
+        <div>
+
+          <style>
+
+          </style>
+
           <carousel
-            :nav="true"
+            :nav="false"
+            :dots="false"
             :items="4"
             :loop="false"
             :mouseDrag="true"
@@ -82,44 +88,47 @@
             :stagePadding="40"
             :autoWidth="350"
             :responsive="{
-              0: { items: 4, center: true },
-              768: { items: 4, center: false, margin: 0 },
-              1200: { items: 3, center: false, margin: 0 },
-              1440: { items: 3, center: false,  margin: 0 },
+              0: { items: 1, center: true, dots: true },
+              600: { items: 1, center: false, margin: 0 },
+              1440: { items: 4, center: false,  margin: 60},
               1800: { items: 4, center: false,  margin: 90}
             }"
           >
 
-            <div class="col-3">
+            <div
+              v-for="(variant, index) in variants"
+              :key="index"
+              class=" col-3"
+            >
               <b-card
-                :img-src="require(`~/assets/img/${variants[0].imageShowcase + '.png'}`)"
-                :img-alt="variants[0].showcaseAlt"
+                :img-src="require(`~/assets/img/${variant.imageShowcase + '.png'}`)"
+                :img-alt="variant.showcaseAlt"
                 img-top
                 tag="article"
                 style=""
-                class="mb-2 mx-auto homeNavCard"
+                class="mb-2 ml-md-4 mx-auto homeNavCard"
               >
                 <div class="cardContent">
                   <div class="card-log mx-auto text-center">
                     <b-img
                       class="mx-auto"
-                      :src="require(`~/assets/img/${variants[0].logo + '.svg'}`)"
-                      :alt="variants[0].logoAlt"
+                      :src="require(`~/assets/img/${variant.logo + '.svg'}`)"
+                      :alt="variant.logoAlt"
                     ></b-img>
                   </div>
                   <b-card-text class="cardDescription">
-                    {{ variants[0].details }}
+                    {{ variant.details }}
                   </b-card-text>
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: 'barbaresco'},$i18n.locale)"
+                      :to="localePath({name: variant.siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
                     <b-button
                       class="socialButtons instagram mx-auto"
-                      :href="variants[0].instaLink"
+                      :href="variant.instaLink"
                     >
                       <b-img
                         class="inButtonImg "
@@ -130,7 +139,7 @@
                     <b-button
                       class="socialButtons facebook mx-auto"
                       target="_blank"
-                      :href="variants[0].facebLink"
+                      :href="variant.facebLink"
                     >
                       <b-img
                         class="inButtonImg "
@@ -144,7 +153,7 @@
               </b-card>
             </div>
 
-            <div class="col-3">
+            <!-- <div class="col-3">
               <b-card
                 :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.png'}`)"
                 :img-alt="variants[1].showcaseAlt"
@@ -167,7 +176,7 @@
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: 'barbaresco'},$i18n.locale)"
+                      :to="localePath({name: siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
@@ -304,7 +313,7 @@
                   </div>
                 </div>
               </b-card>
-            </div>
+            </div> -->
 
           </carousel>
         </div>
@@ -320,6 +329,7 @@ import homePageNavigationCard from '~/components/homePageNavigationCard'
 
 
 export default {
+  name: 'index',
   components: {
 
     homePageNavigationCard
@@ -344,7 +354,7 @@ export default {
           showcaseAlt: 'Image of Pasta Fresca',
           logo: 'logo-pasta',
           logoAlt: 'pasta-fresca-logo',
-          siteLink: '#',
+          siteLink: 'pasta-fresca',
           details:
             this.$t('home.descriptions[1].details'),
           instaLink: '#',
@@ -367,7 +377,7 @@ export default {
           showcaseAlt: 'Image of Piazza white',
           logo: 'logo-piazza-white',
           logoAlt: 'Piazza white logo',
-          siteLink: '#',
+          siteLink: 'piazza',
           details: this.$t('home.descriptions[3].details'),
           instaLink: '#',
           facebLink: '#'
@@ -377,6 +387,46 @@ export default {
   }
 }
 </script>
+
+<style lang="css">
+.owl-theme .owl-dots .owl-dot span {
+  min-width: 60px;
+  max-width: 60px;
+  width: 100%;
+  min-height: 60px;
+  max-height: 60px;
+  height: 100%;
+  background-color: black !important;
+}
+
+.owl-theme .owl-dots button:nth-child(1) span {
+  background-image: url("~assets/img/logo-barbaresco.svg") !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.owl-theme .owl-dots button:nth-child(2) span {
+  background-image: url("~assets/img/logo-pasta.svg") !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.owl-theme .owl-dots button:nth-child(3) span {
+  background-image: url("~assets/img/logo-le-rock.svg") !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.owl-theme .owl-dots button:nth-child(4) span {
+  background-image: url("~assets/img/logo-piazza-white.svg") !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+</style>
 
 <style lang="scss" scoped>
 #homePage {
@@ -389,9 +439,6 @@ export default {
   position: fixed;
 
   background-color: #000000;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
 
   opacity: 0.9;
   filter: blur(0.5px);
@@ -402,8 +449,8 @@ export default {
 
 .homePageHeading {
   text-align: center;
-  margin-top: 4.5%;
-  margin-bottom: 4.5%;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
 
   font-family: $primaryFont;
   font-style: normal;
@@ -440,10 +487,10 @@ export default {
 
 .card-log,
 .card-log img {
-  height: 80px;
-  width: 160px;
+  min-height: 80px;
+  min-width: 160px;
   margin-bottom: 35px;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .cardDescription {
@@ -476,7 +523,7 @@ export default {
 
   background-color: transparent;
 
-  padding: 14px 50px;
+  padding: 12px 50px;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -513,7 +560,7 @@ export default {
 
     .inButtonImg {
       width: 80px;
-      height: 28px;
+      height: 27px;
     }
   }
 
@@ -557,12 +604,12 @@ export default {
   }
 }
 
-.inButtonImg {
-  width: 80px;
-  height: 20px;
-}
-
 @media (max-width: 1440px) {
+  .homePageHeading {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
   .card {
     max-width: 275px;
     width: 100%;
@@ -589,7 +636,7 @@ export default {
   }
 
   .cardContent {
-    padding: 16px 10px;
+    padding: 20px 20px;
   }
 
   .goTosite {
@@ -597,12 +644,12 @@ export default {
   }
 
   .goToSiteBtn {
-    padding: 14px 25px;
+    padding: 12px 25px;
   }
 
   .socialButtons {
     &.instagram {
-      padding: 10px 18px;
+      padding: 7.5px 18px;
 
       .inButtonImg {
         width: 70px;
@@ -611,7 +658,7 @@ export default {
     }
 
     &.facebook {
-      padding: 12px 15px;
+      padding: 12px 18px;
 
       .inButtonImg {
         width: 70px;
@@ -627,6 +674,8 @@ export default {
 
 @include mediaMenu {
   .homePageHeading {
+    margin-top: 3%;
+    margin-bottom: 3%;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;

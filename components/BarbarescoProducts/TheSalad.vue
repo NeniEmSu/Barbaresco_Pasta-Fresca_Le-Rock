@@ -1,7 +1,7 @@
 <template>
   <div
     class="container "
-    id="burgers"
+    id="theSalads"
   >
 
     <div class="content">
@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: 'burgers',
+  name: 'TheSalads',
   data () {
     return {
 
@@ -57,9 +57,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#burger {
-}
-
 .content {
   margin: 20px auto;
 }

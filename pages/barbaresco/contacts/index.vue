@@ -40,7 +40,7 @@
 import TheContactMap from '~/components/TheContactMap'
 
 export default {
-  name: 'about-us',
+  name: 'barbaresco-contacts',
   layout: 'barbaresco',
   components: {
     TheContactMap

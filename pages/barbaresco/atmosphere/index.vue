@@ -1,14 +1,14 @@
 <template>
-  <div id="delivary">
+  <div id="atmosphere">
     <div class="row">
       <div class="col-md-6 p-0 image-container">
 
       </div>
       <div class="col-md-6 m-auto p-5">
-        <h1>Доставка</h1>
-        <p>Якщо ви не йдете до нас , тоді ми їдемо до вас!
-          Економте свій час з нами, адже феєрію смаку ви можете відчути і залишаючись вдома.
-          Насолодіться улюбленими стравами невідволікаючись від важливих справ, а ми приготуємо та відправимо все швидкою доставкою. Вартість доставки – 30грн. При замовленні від 301 грн - доставка безкоштовна. Чекаємо на ваші дзвінки з 10:00 до 23:00 год.</p>
+        <h1>Інтер'єр</h1>
+        <p>Виразний індустріальний стиль лофт.
+          Приміщення згідно обраного стилю оформлено в холодних відтінках.
+          Просторий зал поєднує у собі декілька відпочинкових зон: столики з панорамними вікнами, м’які дивани, барна стійка та балкон. У закладі є дитяча кімната для наших найменших гостей.</p>
       </div>
     </div>
 
@@ -18,7 +18,7 @@
 <script>
 
 export default {
-  name: 'Delivery',
+  name: 'barbaresco-atmosphere',
   layout: 'barbaresco',
   components: {
 
@@ -28,7 +28,7 @@ export default {
   },
   head () {
     return {
-      title: "Barbaresco - Delivery".slice(
+      title: "Barbaresco - Atmosphere".slice(
         0,
         60
       ),
@@ -36,7 +36,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Barbaresco - Delivery.".slice(
+          content: "Barbaresco - Atmosphere.".slice(
             0,
             320
           )
@@ -57,8 +57,8 @@ export default {
 <style lang="scss" scoped>
 .image-container {
   height: calc(100vh - 120px);
-  background-image: url("~assets/img/barbarescoDelivery.png");
-  background-position: bottom center;
+  background-image: url("~assets/img/barbarescoAtmosphere.png");
+  background-position: center;
   background-repeat: no-repeat;
 }
 

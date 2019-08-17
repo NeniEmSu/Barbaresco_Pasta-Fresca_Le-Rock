@@ -1,13 +1,13 @@
 <i18n>
 {
   "uk": {
-    "language": "Мова"
+    "whilsky": "Віскі"
   },
   "en": {
-   "language": "Language"
+   "whilsky": "Whilsky"
   },
   "ru": {
-    "language": "язык"
+    "whilsky": "Виски"
   }
 }
 </i18n>
@@ -15,7 +15,7 @@
 <template>
   <div
     class="container "
-    id="burgers"
+    id="theAlcohol"
   >
 
     <div class="content">
@@ -35,7 +35,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-8 my-auto">
-                <h5 class="card-title mx-auto text-left">Wiskey</h5>
+                <h5 class="card-title mx-auto text-left">{{ $t('whilsky')}}</h5>
               </div>
               <div class="col-4  my-auto">
                 <p><span class="card-text quantity">0.25л</span></p>
@@ -66,7 +66,7 @@
 
 <script>
 export default {
-  name: 'burgers',
+  name: 'TheAlcohol',
   data () {
     return {
 
@@ -76,9 +76,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#burger {
-}
-
 .content {
   margin: 20px auto;
 }
@@ -159,5 +156,6 @@ export default {
 
   border: 2px solid #000000;
   box-sizing: border-box;
+  border-radius: 0;
 }
 </style>

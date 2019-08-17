@@ -16,7 +16,7 @@
 <script>
 
 export default {
-  name: 'about-us',
+  name: 'barbaresco-about-us',
   layout: 'barbaresco',
   components: {
 

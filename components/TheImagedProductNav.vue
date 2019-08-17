@@ -2,14 +2,14 @@
 {
   "uk": {
     "pizza": "Піца",
-    "burgera": "Бургери",
+    "burgers": "Бургери",
     "sushi": "Суші",
     "panCakes": "Млинці",
     "deserts": "Десерти",
     "salads": "Салати",
     "firstCourse": "Перші страви",
     "hits": "Хіти",
-    "drinks": "напої",
+    "drinks": "Напої",
     "alcohol":"Алкоголь"
   },
   "en": {
@@ -25,15 +25,15 @@
     "alcohol":"Alcohol"
   },
   "ru": {
-    "pizza": "пицца",
-    "burgers": "Бургери",
-    "sushi": "Суші",
-    "panCakes": "Млинці",
-    "deserts": "Десерти",
-    "salads": "Салати",
-    "firstCourse": "Перші страви",
-    "hits": "Хіти",
-    "drinks": "напої",
+    "pizza": "Пицца",
+    "burgers": "Бургеры",
+    "sushi": "Суши",
+    "panCakes": "Блины",
+    "deserts": "Десерты",
+    "salads": "Салаты",
+    "firstCourse": "Первые блюда",
+    "hits": "Хиты",
+    "drinks": "Напитки",
     "alcohol":"Алкоголь"
   }
 }

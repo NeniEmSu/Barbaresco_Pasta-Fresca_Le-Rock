@@ -1,3 +1,19 @@
+<i18n>
+{
+  "uk": {
+    "location": "м. Тернопіль, вулиця Князя Острозького, 14"
+    
+  },
+  "en": {
+   "location": "Ternopil City, 14th Ostrozkoho Street"
+
+  },
+  "ru": {
+    "location": "г.. Тернополь, улица Князя Острожского, 14"
+  }
+}
+</i18n>
+
 <template>
   <div id="the-footer">
     <div class="container footer-inner mx-auto">
@@ -7,7 +23,7 @@
           v-scroll-to="{el: '#map-top', duration: 500, offset: -60 }"
           class="m-auto"
         >
-          м. Тернопіль, вулиця Князя Острозького, 14
+          {{$t('location')}}
         </nuxt-link>
 
       </div>

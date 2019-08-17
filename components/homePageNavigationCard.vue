@@ -10,59 +10,58 @@
 </i18n>
 
 <template>
-  <div>
-    <b-card
-      :img-src="require(`~/assets/img/${imageshowcase + '.png'}`)"
-      :img-alt="showcasealt"
-      img-top
-      tag="article"
-      style=""
-      class="mb-2  homeNavCard"
-    >
-      <div class="cardContent">
-        <div class="card-log mx-auto text-center">
-          <b-img
-            class="mx-auto"
-            :src="require(`~/assets/img/${logo + '.svg'}`)"
-            :alt="logoalt"
-          ></b-img>
-        </div>
-        <b-card-text class="cardDescription">
-          {{ details }}
-        </b-card-text>
-        <div class="text-center goTosite">
-          <b-button
-            class="mx-auto goToSiteBtn"
-            :to="localePath({name: 'barbaresco'},$i18n.locale)"
-          >{{ $t('home.siteButtonTxt') }}</b-button>
-        </div>
-        <div class="text-center ">
-          <b-button
-            class="socialButtons instagram mx-auto"
-            :href="instalink"
-          >
-            <b-img
-              class="inButtonImg "
-              src="~assets/img/instagram.svg"
-              alt="instagram text"
-            ></b-img>
-          </b-button>
-          <b-button
-            class="socialButtons facebook mx-auto"
-            target="_blank"
-            :href="faceblink"
-          >
-            <b-img
-              class="inButtonImg "
-              target="_blank"
-              src="~assets/img/facebook.svg"
-              alt="facebook text"
-            ></b-img>
-          </b-button>
-        </div>
+
+  <b-card
+    :img-src="require(`~/assets/img/${imageshowcase + '.png'}`)"
+    :img-alt="showcasealt"
+    img-top
+    tag="article"
+    style=""
+    class="mb-2 ml-md-4 mx-auto homeNavCard"
+  >
+    <div class="cardContent">
+      <div class="card-log mx-auto text-center">
+        <b-img
+          class="mx-auto"
+          :src="require(`~/assets/img/${logo + '.svg'}`)"
+          :alt="logoalt"
+        ></b-img>
       </div>
-    </b-card>
-  </div>
+      <b-card-text class="cardDescription">
+        {{ details }}
+      </b-card-text>
+      <div class="text-center goTosite">
+        <b-button
+          class="mx-auto goToSiteBtn"
+          :to="localePath({name: sitelink},$i18n.locale)"
+        >{{ $t('home.siteButtonTxt') }}</b-button>
+      </div>
+      <div class="text-center ">
+        <b-button
+          class="socialButtons instagram mx-auto"
+          :href="instalink"
+        >
+          <b-img
+            class="inButtonImg "
+            src="~assets/img/instagram.svg"
+            alt="instagram text"
+          ></b-img>
+        </b-button>
+        <b-button
+          class="socialButtons facebook mx-auto"
+          target="_blank"
+          :href="faceblink"
+        >
+          <b-img
+            class="inButtonImg "
+            target="_blank"
+            src="~assets/img/facebook.svg"
+            alt="facebook text"
+          ></b-img>
+        </b-button>
+      </div>
+    </div>
+  </b-card>
 </template>
 
 <script>
@@ -92,7 +91,7 @@ export default {
       type: String,
       required: true
     },
-    sitelink: {
+    siteLink: {
       type: String,
       required: true
     },

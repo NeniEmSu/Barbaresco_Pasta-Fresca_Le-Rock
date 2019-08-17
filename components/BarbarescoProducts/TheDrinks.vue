@@ -156,7 +156,7 @@
 
 <script>
 export default {
-  name: 'drinks',
+  name: 'TheDrinks',
   data () {
     return {
 
@@ -166,9 +166,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#drinks {
-}
-
 hr {
   border: 1px solid #000000;
 }

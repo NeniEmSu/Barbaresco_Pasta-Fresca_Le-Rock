@@ -1,3 +1,19 @@
+<i18n>
+{
+  "uk": {
+    "location": "Barbaresco: м. Тернопіль, вулиця Князя Острозького, 14"
+    
+  },
+  "en": {
+   "location": "Barbaresco: C. Ternopil, 14 Ostrozhsky Street"
+
+  },
+  "ru": {
+    "location": "Barbaresco г.. Тернополь, улица Князя Острожского, 14"
+  }
+}
+</i18n>
+
 <template>
   <div>
     <style>
@@ -41,7 +57,7 @@ export default {
         {
           lat: 49.549199,
           lng: 25.594941,
-          name: 'Barbaresco: м. Тернопіль, вулиця Князя Острозького, 14'
+          name: this.$t('location')
         },
         // {
         //   lat: 49.551815,

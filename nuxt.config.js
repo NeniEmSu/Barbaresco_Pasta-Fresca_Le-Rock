@@ -147,15 +147,18 @@ export default {
     ['nuxt-i18n', {
       locales: [{
           iso: 'uk-Uk',
-          code: 'uk'
+          code: 'uk',
+          name: 'Українська'
         },
         {
           iso: 'en-US',
-          code: 'en'
+          code: 'en',
+          name: 'English'
         },
         {
           iso: 'ru-RU',
-          code: 'ru'
+          code: 'ru',
+          name: 'русский'
         }
       ]
     }],
