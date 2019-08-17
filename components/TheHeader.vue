@@ -72,7 +72,7 @@
           <b-nav-item to="#">{{$t('links.reserveAPlace')}}</b-nav-item>
           <b-nav-item :to="localePath({name: 'barbaresco' path: '/about-us'},$i18n.locale)">{{$t('links.aboutUs')}}</b-nav-item>
           <b-nav-item to="#">{{$t('links.vacancy')}}</b-nav-item>
-          <b-nav-item :to="localePath({name: 'barbaresco-contacts' path: '/contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
+          <b-nav-item :to="localePath({name: 'barbaresco' path: 'barbaresco/contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
 
         </b-navbar-nav>
 
