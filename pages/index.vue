@@ -738,7 +738,7 @@ export default {
     min-width: 250px;
 
     img {
-      height: 100px;
+      height: 120px;
       max-width: 100%;
       object-fit: cover;
     }
@@ -754,6 +754,83 @@ export default {
     min-height: 40px !important;
     max-width: 80px !important;
     min-width: 80px !important;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+
+  .cardDescription {
+    height: 60px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .cardContent {
+    padding: 10px 10px;
+  }
+
+  .goTosite {
+    margin-bottom: 10px;
+  }
+
+  .goToSiteBtn {
+    padding: 12px 25px;
+  }
+
+  .socialButtons {
+    &.instagram {
+      padding: 7.5px 18px;
+
+      .inButtonImg {
+        width: 70px;
+        height: 24px;
+      }
+    }
+
+    &.facebook {
+      padding: 12px 18px;
+
+      .inButtonImg {
+        width: 70px;
+        height: 14.82px;
+      }
+    }
+  }
+
+  .inButtonImg {
+    width: 70px;
+  }
+}
+
+@media screen and (height: 400px) {
+  .homePageHeading {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .card {
+    max-width: 250px;
+    width: 100%;
+    min-width: 250px;
+
+    img {
+      height: 100px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-image-top {
+    height: 100px;
+  }
+
+  .card-log,
+  .card-log img {
+    max-height: 50px !important;
+    min-height: 50px !important;
+    max-width: 90px !important;
+    min-width: 90px !important;
     margin-bottom: 10px;
     object-fit: contain;
   }
