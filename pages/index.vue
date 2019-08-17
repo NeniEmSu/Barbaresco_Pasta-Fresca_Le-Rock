@@ -726,7 +726,7 @@ export default {
   }
 }
 
-@include mediaXXXSm {
+@include mediaXXSm {
   .homePageHeading {
     margin-top: 3%;
     margin-bottom: 3%;
