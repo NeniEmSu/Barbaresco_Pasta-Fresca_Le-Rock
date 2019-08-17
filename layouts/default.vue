@@ -40,6 +40,7 @@
     </div>
 
     <vue-page-transition :name="$store.state.animation">
+    <div v-if="$nuxt.isOffline">You are offline</div>
       <nuxt />
     </vue-page-transition>
   </div>
