@@ -389,12 +389,15 @@ export default {
 </script>
 
 <style lang="css">
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: -5px !important;
+}
 .owl-theme .owl-dots .owl-dot span {
-  min-width: 60px;
-  max-width: 60px;
+  min-width: 50px;
+  max-width: 50px;
   width: 100%;
-  min-height: 60px;
-  max-height: 60px;
+  min-height: 50px;
+  max-height: 50px;
   height: 100%;
   background-color: black !important;
 }
@@ -674,14 +677,129 @@ export default {
 
 @include mediaMenu {
   .homePageHeading {
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 7%;
+    margin-bottom: 7%;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
 
     letter-spacing: 0.2em;
+  }
+}
+
+@include mediaSm {
+  .homePageHeading {
+    margin-top: 6.5%;
+    margin-bottom: 6.5%;
+    font-size: px;
+    line-height: 24px;
+  }
+
+  .card {
+    max-width: 275px;
+    width: 100%;
+    min-width: 275px;
+  }
+
+  .card-image-top {
+    height: 140px;
+  }
+
+  .card-log,
+  .card-log img {
+    height: 50px;
+    width: 100px;
+    margin-bottom: 15px;
+  }
+
+  .cardDescription {
+    height: 50px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .cardContent {
+    padding: 20px 20px;
+  }
+}
+
+@include mediaXXXSm {
+  .homePageHeading {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .card {
+    max-width: 250px;
+    width: 100%;
+    min-width: 250px;
+
+    img {
+      height: 100px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-image-top {
+    height: 100px;
+  }
+
+  .card-log,
+  .card-log img {
+    max-height: 40px !important;
+    min-height: 40px !important;
+    max-width: 80px !important;
+    min-width: 80px !important;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+
+  .cardDescription {
+    height: 60px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .cardContent {
+    padding: 10px 10px;
+  }
+
+  .goTosite {
+    margin-bottom: 10px;
+  }
+
+  .goToSiteBtn {
+    padding: 12px 25px;
+  }
+
+  .socialButtons {
+    &.instagram {
+      padding: 7.5px 18px;
+
+      .inButtonImg {
+        width: 70px;
+        height: 24px;
+      }
+    }
+
+    &.facebook {
+      padding: 12px 18px;
+
+      .inButtonImg {
+        width: 70px;
+        height: 14.82px;
+      }
+    }
+  }
+
+  .inButtonImg {
+    width: 70px;
   }
 }
 </style>
