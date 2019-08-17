@@ -68,11 +68,11 @@
         <b-navbar-nav>
           <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">{{$t('links.home')}}</b-nav-item>
           <b-nav-item :to="localePath({name: 'barbaresco'},$i18n.locale)">{{$t('links.menu')}}</b-nav-item>
-          <b-nav-item :to="localePath({path: 'barbaresco/delivery'},$i18n.locale)>{{$t('links.delivery')}}</b-nav-item>
+          <b-nav-item :to="localePath({path: '/barbaresco/delivery'},$i18n.locale)">{{$t('links.delivery')}}</b-nav-item>
           <b-nav-item to="#">{{$t('links.reserveAPlace')}}</b-nav-item>
-          <b-nav-item :to="localePath({path: 'barbaresco/about-us' },$i18n.locale)">{{$t('links.aboutUs')}}</b-nav-item>
+          <b-nav-item :to="localePath({path: '/barbaresco/about-us' },$i18n.locale)">{{$t('links.aboutUs')}}</b-nav-item>
           <b-nav-item to="#">{{$t('links.vacancy')}}</b-nav-item>
-          <b-nav-item :to="localePath({path: 'barbaresco/contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
+          <b-nav-item :to="localePath({path: '/barbaresco/contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
 
         </b-navbar-nav>
 
