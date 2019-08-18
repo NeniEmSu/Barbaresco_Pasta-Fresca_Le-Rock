@@ -3,25 +3,23 @@
     class="top-contacts"
     id="top-contact"
   >
+
     <div class="">
-      <ul>
+      <ul class="text-right contacts">
 
-        <li class="facebook">
-          <a
-            href="https://www.facebook.com/virus.te.ua/"
-            target="_blank"
-            rel="noopener"
-          >
-
-            <img
-              src="~/assets/img/facebookSocialLogo.png"
-              alt="icons facebook filled"
-            />
-
+        <li class="contact">
+          <a href="tel:+380506700400">
+            <span>+38 050 6 700 400</span>
           </a>
         </li>
 
-        <li class="instagram">
+        <li class="contact">
+          <a href="tel:+380506700400">
+            <span>+38 050 6 700 400</span>
+          </a>
+        </li>
+
+        <li class="instagram contact">
           <a
             href="https://www.instagram.com/virusdetailing/"
             target="_blank"
@@ -36,14 +34,18 @@
           </a>
         </li>
 
-        <li>
-          <a href="tel:+380506700400">
-            <span>+38 050 6 700 400</span>
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380506700400">
-            <span>+38 050 6 700 400</span>
+        <li class="facebook contact">
+          <a
+            href="https://www.facebook.com/virus.te.ua/"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <img
+              src="~/assets/img/facebookSocialLogo.png"
+              alt="icons facebook filled"
+            />
+
           </a>
         </li>
       </ul>
@@ -52,7 +54,27 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    items: [
+      {
+        text: 'Dashboard',
+        disabled: false,
+        href: 'breadcrumbs_dashboard',
+      },
+      {
+        text: 'Link 1',
+        disabled: false,
+        href: 'breadcrumbs_link_1',
+      },
+      {
+        text: 'Link 2',
+        disabled: true,
+        href: 'breadcrumbs_link_2',
+      },
+    ],
+  }),
+}
 </script>
 
 <style lang="scss" scoped>
@@ -60,12 +82,12 @@ export default {};
   background: $darkColor;
   width: 100%;
   height: 50px;
-  margin: 80px 0 0 0;
+  margin: 100px 0 0 0;
   padding: 0;
   top: 0;
   left: 0;
 
-  ul {
+  ul.contacts {
     list-style: none;
     overflow: hidden;
     padding: 0;
@@ -73,19 +95,21 @@ export default {};
     margin: 0;
     height: 40px;
     line-height: 40px;
+    margin-right: 50px;
   }
 
-  ul li {
+  ul.contacts li.contact {
     display: inline-block;
     padding: 0 20px;
     margin: 0;
     height: 40px;
     line-height: 40px;
+    right: 0;
 
-    float: right;
+    text-align: right;
   }
 
-  ul li a,
+  ul.contacts li.contact a,
   img {
     padding: 0;
     margin: 0;
@@ -106,7 +130,5 @@ export default {};
 }
 
 @include mediaMenu {
-  .top-contacts {
-  }
 }
 </style>

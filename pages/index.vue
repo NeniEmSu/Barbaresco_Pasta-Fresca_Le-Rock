@@ -325,14 +325,14 @@
 </template>
 
 <script>
-import homePageNavigationCard from '~/components/homePageNavigationCard'
+// import homePageNavigationCard from '~/components/homePageNavigationCard'
 
 
 export default {
   name: 'index',
   components: {
 
-    homePageNavigationCard
+    // homePageNavigationCard
   },
   data () {
     return {

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Header from '~/components/TheHeader'
+import Header from '~/components/TheHeaderVuetify'
 import TheTopContact from '~/components/TheTopContact'
 import TheFooter from "@/components/TheFooter.vue";
 export default {

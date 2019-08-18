@@ -1,7 +1,8 @@
 export const state = () => ({
   animation: 'fade-in-up',
   locales: ['en', 'uk', 'ru'],
-  locale: 'uk'
+  locale: 'uk',
+  sidebar: false
 })
 
 export const getters = {}
@@ -16,6 +17,9 @@ export const mutations = {
     if (state.locales.includes(locale)) {
       state.locale = locale
     }
+  },
+  toggleSidebar(state) {
+    state.sidebar = !state.sidebar
   }
 
 }
