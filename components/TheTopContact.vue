@@ -3,8 +3,8 @@
     class="top-contacts"
     id="top-contact"
   >
+    <div class="text-right">
 
-    <div class="">
       <ul class="text-right contacts">
 
         <li class="contact">

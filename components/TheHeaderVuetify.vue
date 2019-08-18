@@ -233,79 +233,8 @@
       right
     >
 
-      <v-list>
-        <v-list-tile
-          router
-          :to="localePath({name: 'index'},$i18n.locale)"
-        >
-          <v-list-tile-content>
-            <v-list-tile-title>{{$t('links.home')}}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-      <v-list>
-        <v-list-tile
-          router
-          :to="localePath({name: 'barbaresco'},$i18n.locale)"
-        >
-          <v-list-tile-content>
-            <v-list-tile-title>{{$t('links.menu')}}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-      <v-list>
-        <v-list-tile
-          router
-          :to="localePath({name: 'barbaresco-delivery'},$i18n.locale)"
-        >
-          <v-list-tile-content>
-            <v-list-tile-title>{{$t('links.delivery')}}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-      <v-list>
-        <v-list-tile
-          router
-          to="#"
-        >
-          <v-list-tile-content>
-            <v-list-tile-title>{{$t('links.reserveAPlace')}}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
+      <v-date-picker v-model="picker"></v-date-picker>
 
-      <v-list>
-        <v-list-tile
-          router
-          :to="localePath({name: 'barbaresco-about-us'},$i18n.locale)"
-        >
-          <v-list-tile-content>
-            <v-list-tile-title>{{$t('links.aboutUs')}}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-
-      <v-list>
-        <v-list-tile
-          router
-          to="#"
-        >
-          <v-list-tile-content>
-            <v-list-tile-title>{{$t('links.vacancy')}}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-
-      <v-list>
-        <v-list-tile
-          router
-          :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
-        >
-          <v-list-tile-content>
-            <v-list-tile-title>{{$t('links.contact')}}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
     </v-navigation-drawer>
   </nav>
 </template>
@@ -318,8 +247,8 @@ export default {
       drawer: false,
       drawer2: false,
       drawer3: false,
-      cartSize: 0
-
+      cartSize: 0,
+      picker: new Date().toISOString().substr(0, 10),
     };
   }
 };
