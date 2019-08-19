@@ -252,6 +252,7 @@ section {
 }
 
 .column .nav-image {
+  margin: auto;
   mix-blend-mode: luminosity;
 
   &:hover {
@@ -264,6 +265,7 @@ section {
 }
 
 .nav-text {
+  margin: 10px auto 0 auto;
   font-family: $mainFont;
   font-style: normal;
   font-weight: normal;
@@ -332,13 +334,13 @@ section {
   background-image: url("~assets/img/barbarescoAlcohol.png");
 }
 
-@media (max-width: 750px) {
+@media (max-width: 995px) {
   .column {
     width: calc(100% / 5);
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .column {
     width: calc(100% / 3);
   }

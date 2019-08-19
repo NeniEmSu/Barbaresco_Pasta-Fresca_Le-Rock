@@ -1,9 +1,13 @@
 <template>
   <div
     class="top-contacts"
-    id="top-contact"
+    id="top-contact "
   >
-    <div class="text-right">
+    <div class=" p-0 b-crumbs">
+      <b-breadcrumb :items="items"></b-breadcrumb>
+    </div>
+
+    <div class="text-right ml-auto">
 
       <ul class="text-right contacts">
 
@@ -55,37 +59,39 @@
 
 <script>
 export default {
-  data: () => ({
-    items: [
-      {
-        text: 'Dashboard',
-        disabled: false,
-        href: 'breadcrumbs_dashboard',
-      },
-      {
-        text: 'Link 1',
-        disabled: false,
-        href: 'breadcrumbs_link_1',
-      },
-      {
-        text: 'Link 2',
-        disabled: true,
-        href: 'breadcrumbs_link_2',
-      },
-    ],
-  }),
+  data () {
+    return {
+      items: [
+        {
+          text: this.$t('links.home'),
+          href: this.localePath({ name: 'index' }, this.$i18n.locale)
+        },
+        {
+          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          active: true
+        }
+      ]
+    }
+  },
+  watch: {
+    $route () {
+      this.items[1].text = this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1);
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .top-contacts {
   background: $darkColor;
-  width: 100%;
+
   height: 50px;
   margin: 100px 0 0 0;
   padding: 0;
   top: 0;
   left: 0;
+
+  display: flex;
 
   ul.contacts {
     list-style: none;
@@ -95,14 +101,13 @@ export default {
     margin: 0;
     height: 40px;
     line-height: 40px;
-    margin-right: 50px;
+    margin-right: 60px;
   }
 
   ul.contacts li.contact {
-    display: inline-block;
-    padding: 0 20px;
+    display: inline;
+    padding: 0 10px;
     margin: 0;
-    height: 40px;
     line-height: 40px;
     right: 0;
 
@@ -127,6 +132,10 @@ export default {
     -ms-transition: all ease-in-out 300ms;
     -o-transition: all ease-in-out 300ms;
   }
+}
+
+.b-crumbs {
+  margin-left: 40px;
 }
 
 @include mediaMenu {

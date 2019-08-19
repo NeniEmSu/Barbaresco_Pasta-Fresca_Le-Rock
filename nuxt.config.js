@@ -1,6 +1,3 @@
-const nodeExternals = require('webpack-node-externals')
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
-
 export default {
   mode: 'universal',
 
@@ -103,7 +100,6 @@ export default {
   css: ['~/assets/scss/config.scss', '~/assets/fonts/fonts.css'],
 
   plugins: [
-    '~/plugins/vuetify.js',
     '~/plugins/vuelidate.js',
     '~/plugins/i18n.js',
     "~/plugins/vue-scrollto.js",
@@ -286,63 +282,37 @@ export default {
 
   build: {
 
-    transpile: [/^vue2-google-maps($|\/)/, /^vuetify/],
-    plugins: [
-      new VuetifyLoaderPlugin()
-    ],
+    transpile: [/^vue2-google-maps($|\/)/],
+    build: {
+      transpile: [/^vue2-google-maps($|\/)/],
+      extractCSS: true,
 
-    extractCSS: true,
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-
-      if (process.server) {
-        config.externals = [
-          nodeExternals({
-            whitelist: [/^vuetify/]
-          })
-        ]
-      }
+      extend(config, {
+        isDev,
+        isClient
+      }) {
+        config.module.rules.forEach(rule => {
+          if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+            rule.use.push({
+              loader: "image-webpack-loader",
+              options: {
+                svgo: {
+                  plugins: [{
+                      removeViewBox: false
+                    },
+                    {
+                      removeDimensions: true
+                    }
+                  ]
+                }
+              }
+            });
+          }
+        });
+      },
 
     }
+
+
   }
-
-  // build: {
-  //   transpile: [/^vue2-google-maps($|\/)/],
-  //   extractCSS: true,
-
-  //   extend(config, {
-  //     isDev,
-  //     isClient
-  //   }) {
-  //     config.module.rules.forEach(rule => {
-  //       if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
-  //         rule.use.push({
-  //           loader: "image-webpack-loader",
-  //           options: {
-  //             svgo: {
-  //               plugins: [{
-  //                   removeViewBox: false
-  //                 },
-  //                 {
-  //                   removeDimensions: true
-  //                 }
-  //               ]
-  //             }
-  //           }
-  //         });
-  //       }
-  //     });
-  //   },
-
-  // }
-
-
-};
+}

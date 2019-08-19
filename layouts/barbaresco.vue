@@ -1,6 +1,7 @@
 <template>
   <div id="BarbarescoLayout">
     <Header />
+
     <TheTopContact />
     <div class="content">
       <vue-page-transition :name="$store.state.animation">
@@ -14,14 +15,16 @@
 </template>
 
 <script>
-import Header from '~/components/TheHeaderVuetify'
+import Header from '~/components/TheHeader'
 import TheTopContact from '~/components/TheTopContact'
-import TheFooter from "@/components/TheFooter.vue";
+import TheFooter from "@/components/TheFooter.vue"
+
 export default {
   name: "BarbarescoLayout",
   components: {
     Header,
     TheFooter,
+
     TheTopContact
   },
 

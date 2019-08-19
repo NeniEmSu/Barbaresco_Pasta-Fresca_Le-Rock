@@ -121,9 +121,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.grid {
-}
-
 .grid figure {
   position: relative;
   float: left;
@@ -161,7 +158,7 @@ export default {
 }
 
 .grid figure figcaption > span {
-  z-index: 1000;
+  z-index: 9;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
@@ -264,8 +261,20 @@ section {
 }
 
 @media (max-width: 750px) {
-  .column {
-    width: calc(100% / 2);
+  .grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: calc(100vw / 2);
+
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .grid figure img {
+    position: relative;
+    display: block;
+    width: calc(100vw / 2);
   }
 }
 

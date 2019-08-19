@@ -95,9 +95,9 @@ export default {
 </script>
 
 <style lang="scss">
-.carousel-control-prev {
-  margin-left: -100px;
-}
+// .carousel-control-prev {
+//   margin-left: -100px;
+// }
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
@@ -107,7 +107,7 @@ export default {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-.carousel-control-next {
-  margin-right: -100px;
-}
+// .carousel-control-next {
+//   margin-right: -100px;
+// }
 </style>
