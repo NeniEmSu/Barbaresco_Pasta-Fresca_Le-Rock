@@ -2,7 +2,6 @@
   <div id="theHeader">
     <header
       class="header"
-      :class="{ 'header--hidden': !showHeader }"
       id="header"
       v-click-outside="closeMobileNavbar"
       v-handle-scroll="closeMobileNavbar"
@@ -37,7 +36,7 @@
         >
 
           <button
-            @click="mobileNavOpen = !mobileNavOpen"
+            @click="reservationOpen = !reservationOpen"
             class="btn reservation-btn"
             variant="outline-primary"
           >{{$t('links.reservation')}}</button>
@@ -115,7 +114,7 @@
             <h3>Замовлення</h3>
             <div
               class="cart-item"
-              v-for="n in 3"
+              v-for="n in 10"
               :key="n"
             >
               <div class="row my-auto">
@@ -187,6 +186,85 @@
           </div>
         </div>
 
+        <div
+          class="navbar-right"
+          :class="{'navbar-open': reservationOpen}"
+        >
+          <div
+            class="close-hamburger text-right text-black p-2"
+            style="font-size: 30px; cursor: pointer; color: black;"
+            @click.stop="hideReservation"
+          >&times;</div>
+
+          <div>
+            <h5>Оберіть час та кількість осіб</h5>
+            <form action="post">
+              <select
+                name="time"
+                id="time"
+                class="w-100"
+                v-model="time"
+              >
+                <option value="null">Час</option>
+                <option value="morning">Ранок</option>
+                <option value="breakfast">Сніданок</option>
+                <option value="afternoon">Вдень</option>
+                <option value="lunch">Обід</option>
+                <option value="night">Ніч</option>
+                <option value="dinner">Вечеря</option>
+              </select>
+
+              <select
+                v-model="noOfPeople"
+                name="number-of-people"
+                id="number-of-people"
+                class="w-100"
+              >
+                <option value="null">Кількість осіб</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="10">10</option>
+              </select>
+
+              <h5>Обрати дату</h5>
+              <div>
+                <no-ssr>
+                  <datepicker
+                    v-model="date"
+                    :value="date"
+                    name="date"
+                    :inline="true"
+                    :disabled-dates="disabledDates"
+                  ></datepicker>
+                </no-ssr>
+
+              </div>
+
+              <input
+                v-model="name"
+                type="text"
+                placeholder="Ім’я"
+                class="w-100"
+              >
+
+              <input
+                v-model="phone"
+                type="text"
+                placeholder="Телефон"
+                class="w-100"
+              >
+              <div class="form-group mx-auto text-center">
+
+                <button class="order mt-2">Замовити</button>
+
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
       </div>
     </header>
   </div>
@@ -195,21 +273,59 @@
 <script>
 import clickOutside from "@/directives/click-outside";
 import handleScroll from "@/directives/handle-scroll";
-import AppLinks from "~/components/appLinks"
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '/' + dd + '/' + yyyy;
+
+var currentDate = new Date();
+var state = {
+  disabledDates: {
+    to: new Date(currentDate.setDate(currentDate.getDate() - 1)), // Disable all dates up to specific date
+    // days: [6, 0], // Disable Saturday's and Sunday's
+    // daysOfMonth: [29, 30, 31], // Disable 29th, 30th and 31st of each month
+    dates: [ // Disable an array of dates
+      new Date(2019, 9, 16),
+      new Date(2019, 8, 17),
+      new Date(2019, 8, 18)
+    ],
+
+    ranges: [{ // Disable dates in given ranges (exclusive).
+      from: new Date(2019, 0, 0),
+      to: new Date(currentDate.setDate(currentDate.getDate() - 1))
+    }],
+
+  }
+}
 export default {
-  components: {},
+  components: {
+
+  },
   directives: {
     clickOutside,
-    handleScroll
+    handleScroll,
+
   },
   data () {
     return {
       userDropdownOpen: false,
       mobileNavOpen: false,
       cartOpen: false,
+      reservationOpen: false,
       showHeader: true,
       lastScrollPosition: 0,
-      cartSize: 0
+      cartSize: 3,
+      date: today,
+      phone: null,
+      name: null,
+      time: null,
+      noOfPeople: null,
+      disabledDates: state.disabledDates
+
+
     };
   },
   computed: {},
@@ -222,6 +338,10 @@ export default {
     },
     hide () {
       this.mobileNavOpen = false;
+    },
+
+    hideReservation () {
+      this.reservationOpen = false;
     },
 
     closecart () {
@@ -257,10 +377,85 @@ export default {
 };
 </script>
 
+<style lang="css">
+.vdp-datepicker__calendar {
+  margin: auto;
+  border: 0 !important;
+}
+
+.vdp-datepicker__calendar .cell.selected:hover,
+.vdp-datepicker__calendar .cell.day:hover {
+  background: #000000 !important;
+  color: white;
+  border: 1px solid black !important;
+}
+
+.vdp-datepicker__calendar .cell.blank:hover,
+.vdp-datepicker__calendar .cell.disabled:hover {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.vdp-datepicker__calendar .cell.selected {
+  background: #000000 !important;
+  color: white;
+}
+</style>
+
 <style lang="scss" scoped>
 .header.header--hidden {
   box-shadow: none;
   transform: translate3d(0, -100%, 0);
+}
+
+select {
+  text-align: center;
+  text-align-last: center;
+  /* webkit*/
+}
+option {
+  text-align: left;
+  /* reset to left*/
+}
+
+select {
+  background: transparent;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  padding: 14px 48px;
+
+  &#time {
+    padding: 14px 10px;
+    margin: 10px auto;
+  }
+  &#number-of-people {
+    padding: 14px 10px;
+    margin: 10px auto;
+  }
+}
+
+input {
+  background: transparent;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  padding: 14px 20px;
+  margin: 10px auto;
 }
 
 .order {
@@ -345,11 +540,15 @@ header {
   background-size: cover;
   background-color: $darkColor;
   width: 100vw;
-  height: 100px;
+  min-height: 100px;
+  height: 100%;
+  max-height: 100px;
+  right: 0;
   left: 0px;
   top: 0px;
   position: fixed;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+  padding: 20px 50px;
+  // box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
   transform: translate3d(0, 0, 0);
   transition: 0.1s all ease-out;
   z-index: 1000;
@@ -390,29 +589,30 @@ header {
   line-height: 21px;
 
   color: $lightColor;
+
+  margin: auto 60px auto 0;
 }
 
 .theHeader-nav-brand img {
   left: 50%;
+  position: absolute;
 
-  transform: translateX(-120%);
-  margin: auto;
+  transform: translateX(-50%);
 
   min-height: 60px;
   max-height: 60px;
   height: 100%;
-  margin-top: 20px;
 }
 
 .theHead-nav-toggle {
-  margin-top: 20px;
+  margin: auto 0;
   outline: 0;
   text-decoration: none;
 
   &.cart {
-    margin-top: 32px;
-    margin-right: 60px;
-    margin-left: 40px;
+    display: inline-block;
+    margin: auto 0;
+    margin-top: 10px;
   }
 }
 
@@ -443,7 +643,7 @@ header {
   display: none;
   position: absolute;
   padding: 30px 10px 10px 50px;
-  transition: all 6s ease;
+  transition: all 3s ease;
   background: $lightColor;
   width: 430px;
   left: 0;
@@ -454,15 +654,18 @@ header {
   display: none;
   position: absolute;
   padding: 30px 50px;
-  transition: all 6s ease;
+  transition: all 3s ease;
   background: $lightColor;
   width: 430px;
   right: 0;
   top: 0px;
+  bottom: 0;
+  overflow-y: scroll;
 }
 
 .btn-hamburger {
-  margin: 20px auto auto 50px;
+  margin: auto 0;
+  cursor: pointer;
 }
 
 .drawer-toggle {
@@ -474,11 +677,49 @@ header {
   transition: all 6s ease;
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.35);
   border-radius: 0;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
+  overflow-y: scroll;
 }
 
 .close-hamburger {
   display: block;
+}
+
+@include mediaXSm {
+  .navbar {
+    display: none;
+    position: absolute;
+    padding: 30px 10px 10px 50px;
+    transition: all 3s ease;
+    background: $lightColor;
+    width: 100vw;
+    left: 0;
+    top: 0px;
+  }
+
+  .navbar-right {
+    display: none;
+    position: absolute;
+    padding: 30px 50px;
+    transition: all 3s ease;
+    background: $lightColor;
+    width: 100vw;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+
+  .navbar-open {
+    display: block;
+    transition: all 3s ease;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 0;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: scroll;
+  }
 }
 </style>
 

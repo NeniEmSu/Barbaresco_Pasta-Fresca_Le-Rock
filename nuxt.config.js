@@ -106,6 +106,9 @@ export default {
     {
       src: '~/plugins/vue-page-transition',
       ssr: true
+    }, {
+      src: '~/plugins/Datepicker',
+      ssr: false
     },
     {
       src: '~/plugins/v-owl-carousel',

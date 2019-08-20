@@ -313,25 +313,6 @@ main {
     scrollbar-width: none;
   }
 
-  .breadcrumb {
-    padding: 12px 0;
-
-    li {
-      font-size: 16px;
-      line-height: 18px;
-    }
-
-    a {
-      font-size: 16px;
-      line-height: 18px;
-    }
-  }
-
-  .breadcrumb-item + .breadcrumb-item::before {
-    font-size: 16px;
-    line-height: 16px;
-  }
-
   .language {
     .langBtn,
     .dropdown-toggle {
@@ -340,27 +321,6 @@ main {
       font-size: 14px;
       line-height: 16px;
     }
-  }
-}
-
-@include mediaXSm {
-  .breadcrumb {
-    padding: 12px 0;
-
-    li {
-      font-size: 13px;
-      line-height: 14px;
-    }
-
-    a {
-      font-size: 13px;
-      line-height: 14px;
-    }
-  }
-
-  .breadcrumb-item + .breadcrumb-item::before {
-    font-size: 13px;
-    line-height: 13px;
   }
 }
 </style>

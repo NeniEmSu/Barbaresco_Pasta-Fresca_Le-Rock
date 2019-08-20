@@ -62,8 +62,8 @@ export default {
 }
 
 .card {
-  max-width: 180px;
-  min-width: 180px;
+  max-width: 200px;
+  min-width: 200px;
   width: 100%;
   height: 262px;
   padding: 0;

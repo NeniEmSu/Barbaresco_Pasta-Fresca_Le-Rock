@@ -1,8 +1,8 @@
 <template>
   <div id="BarbarescoLayout">
-    <Header />
+    <Header class="d-block" />
 
-    <TheTopContact />
+    <TheTopContact class="d-none d-md-flex w-100" />
     <div class="content">
       <vue-page-transition :name="$store.state.animation">
         <nuxt />

@@ -87,11 +87,11 @@ export default {
 
   height: 50px;
   margin: 100px 0 0 0;
-  padding: 0;
+  padding: 0 30px;
   top: 0;
   left: 0;
 
-  display: flex;
+  display: inline-block;
 
   ul.contacts {
     list-style: none;
@@ -101,7 +101,6 @@ export default {
     margin: 0;
     height: 40px;
     line-height: 40px;
-    margin-right: 60px;
   }
 
   ul.contacts li.contact {
@@ -135,7 +134,7 @@ export default {
 }
 
 .b-crumbs {
-  margin-left: 40px;
+  // margin-left: 40px;
 }
 
 @include mediaMenu {
