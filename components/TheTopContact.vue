@@ -83,15 +83,16 @@ export default {
 
 <style lang="scss" scoped>
 .top-contacts {
-  background: $darkColor;
+  background: #000000;
 
   height: 50px;
-  margin: 100px 0 0 0;
+  margin: 99px 0 0 0;
   padding: 0 30px;
   top: 0;
   left: 0;
+  box-shadow: none;
 
-  display: inline-block;
+  border: 0;
 
   ul.contacts {
     list-style: none;

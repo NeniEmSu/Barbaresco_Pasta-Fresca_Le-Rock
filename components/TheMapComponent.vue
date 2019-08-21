@@ -2,10 +2,10 @@
 {
   "uk": {
     "location": "Barbaresco: м. Тернопіль, вулиця Князя Острозького, 14"
-    
+
   },
   "en": {
-   "location": "Barbaresco: C. Ternopil, 14 Ostrozhsky Street"
+   "location": "Barbaresco: C. Ternopil, 14 Ostrozkoho Street"
 
   },
   "ru": {

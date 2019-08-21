@@ -43,7 +43,7 @@
         class="img-fluid w-100 d-block"
         img-src="~/assets/img/pizzaBaner.png"
       >
-        <h2 class="text-left col-6 p-0">{{ $t('promotionTitle1') }}</h2>
+        <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle1') }}</h2>
         <p class="text-left">
           {{ $t('promotionDescription') }}
         </p>
@@ -53,7 +53,7 @@
         class="img-fluid w-100 d-block"
         img-src="~/assets/img/pizzaBaner.png"
       >
-        <h2 class="text-left col-6 p-0">{{ $t('promotionTitle2') }}</h2>
+        <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle2') }}</h2>
         <p class="text-left">
           {{ $t('promotionDescription') }}
         </p>
@@ -63,7 +63,7 @@
         class="img-fluid w-100 d-block"
         img-src="~/assets/img/pizzaBaner.png"
       >
-        <h2 class="text-left col-6 p-0">{{ $t('promotionTitle3') }}</h2>
+        <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle3') }}</h2>
         <p class="text-left">
           {{ $t('promotionDescription') }}
         </p>
@@ -95,19 +95,110 @@ export default {
 </script>
 
 <style lang="scss">
-// .carousel-control-prev {
-//   margin-left: -100px;
-// }
+@media screen and (min-width: 1246px) {
+  .carousel-control-prev {
+    margin-left: -100px;
+  }
 
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+  }
+
+  .carousel-control-next {
+    margin-right: -100px;
+  }
 }
 
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+@media (max-width: 992px) {
+  h2 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+
+  p {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #ffffff;
+
+    margin-bottom: 0;
+  }
 }
 
-// .carousel-control-next {
-//   margin-right: -100px;
-// }
+@media (max-width: 500px) {
+  h2 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #ffffff;
+  }
+
+  p {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #ffffff;
+
+    margin-bottom: 0;
+  }
+
+  .carousel-caption {
+    padding: 0;
+  }
+
+  .carousel ol {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  h2 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #ffffff;
+  }
+
+  p {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #ffffff;
+
+    margin-bottom: -10px;
+  }
+
+  .carousel-caption {
+    padding: 0;
+  }
+
+  .carousel ol {
+    margin-bottom: 0;
+    margin-bottom: -5px;
+  }
+}
 </style>

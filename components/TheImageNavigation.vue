@@ -1,5 +1,8 @@
 <template>
-  <div id="image-Navigation">
+  <div
+    id="image-Navigation"
+    class="image-Navigation mt-md-0"
+  >
     <section>
       <div class="grid">
 
@@ -135,6 +138,7 @@ export default {
   position: relative;
   display: block;
   width: calc(100vw / 3);
+  height: 150px;
 }
 
 .grid figure figcaption {
@@ -246,7 +250,7 @@ figure.saddleEffect:hover h2,
   opacity: 1;
 
   -webkit-transform: translate3d(0, -80%, 0) translate3d(0, -40px, 0);
-  transform: translate3d(0, -80%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(0, -60%, 0) translate3d(0, -40px, 0);
 }
 
 figure.saddleEffect:hover figcaption::before,
@@ -258,6 +262,64 @@ figure.saddleEffect:hover figcaption::before,
 
 section {
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .image-Navigation {
+    margin-top: 99px;
+  }
+
+  .grid figure {
+    height: 66px;
+  }
+
+  figure.saddleEffect h2 {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    opacity: 1;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+  }
+
+  figure.saddleEffect:hover h2,
+  .nuxt-link-exact-active figure.saddleEffect h2 {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    opacity: 1;
+
+    position: absolute;
+
+    -webkit-transform: translate3d(0, 90%, 0) translate3d(0, -50px, 0);
+    transform: translate3d(0, 90%, 0) translate3d(0, -30px, 0);
+  }
+
+  .grid figure figcaption > span {
+    z-index: 9;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    background: #000000;
+    opacity: 0.25;
+  }
 }
 
 @media (max-width: 750px) {
@@ -278,9 +340,57 @@ section {
   }
 }
 
-@media (max-width: 400px) {
-  .column {
-    width: calc(100% / 2);
+@media (max-width: 1024px) {
+  .grid figure {
+    height: 100px;
+  }
+
+  figure.saddleEffect h2 {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    opacity: 0.8;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+  }
+
+  figure.saddleEffect:hover h2,
+  .nuxt-link-exact-active figure.saddleEffect h2 {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    opacity: 1;
+
+    position: absolute;
+
+    -webkit-transform: translate3d(0, 90%, 0) translate3d(0, -50px, 0);
+    transform: translate3d(0, 90%, 0) translate3d(0, -30px, 0);
+  }
+
+  .grid figure figcaption > span {
+    z-index: 9;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    background: #000000;
+    opacity: 0.25;
   }
 }
 

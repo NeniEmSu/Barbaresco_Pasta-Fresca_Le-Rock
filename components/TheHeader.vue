@@ -71,7 +71,7 @@
           :class="{'navbar-open': mobileNavOpen}"
         >
           <div
-            class="close-hamburger text-left text-black p-2"
+            class="close-navbar-hamburger text-left text-black p-2"
             style="font-size: 30px; cursor: pointer; color: black;"
             @click.stop="hide"
           >&times;</div>
@@ -79,9 +79,22 @@
             <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">{{$t('links.home')}}</b-nav-item>
             <b-nav-item :to="localePath({name: 'barbaresco'},$i18n.locale)">{{$t('links.menu')}}</b-nav-item>
             <b-nav-item :to="localePath({name: 'barbaresco-delivery'},$i18n.locale)">{{$t('links.delivery')}}</b-nav-item>
-            <b-nav-item to="#">{{$t('links.reserveAPlace')}}</b-nav-item>
+            <b-nav-item
+              tag="button"
+              @click.stop="reservationOpen = !reservationOpen"
+            >{{$t('links.reserveAPlace')}}</b-nav-item>
             <b-nav-item :to="localePath({name: 'barbaresco-about-us'},$i18n.locale)">{{$t('links.aboutUs')}}</b-nav-item>
-            <b-nav-item to="#">{{$t('links.vacancy')}}</b-nav-item>
+            <b-nav-item
+              tag="button"
+              v-b-modal.modal-1
+            >{{$t('links.vacancy')}}</b-nav-item>
+            <b-modal
+              hide-footer
+              id="modal-1"
+              :title="$t('links.vacancy')"
+            >
+              <p class="my-4">Наразі вакансій у нас немає!</p>
+            </b-modal>
             <b-nav-item :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
             <b-nav-item
               v-if="$i18n.locale !== 'en'"
@@ -101,8 +114,8 @@
         </nav>
 
         <div
-          class="navbar-right"
-          :class="{'navbar-open': cartOpen}"
+          class="navbar-right "
+          :class="{'navbar-right-open': cartOpen}"
         >
           <div
             class="close-hamburger text-right text-black p-2"
@@ -114,7 +127,7 @@
             <h3>Замовлення</h3>
             <div
               class="cart-item"
-              v-for="n in 10"
+              v-for="n in 3"
               :key="n"
             >
               <div class="row my-auto">
@@ -147,18 +160,20 @@
                 <div class="col-4 p-0">
                   <div class="col-12 m-auto p-0">
                     <div class="row m-auto">
-                      <div class="cost col-12 m-auto ">
-                        <p
-                          id="cart-item-price"
-                          class="cart-item-price text-right py-2 card-text"
-                        >{{50 | currency}}</p>
-                      </div>
+
                       <div class="remove-from-chart col-12 m-auto text-right">
                         <span
                           @click="deleteFromCart(product.id)"
                           class="close text-right"
                         >&times;
                         </span>
+                      </div>
+
+                      <div class="cost col-12 m-auto ">
+                        <p
+                          id="cart-item-price"
+                          class="cart-item-price text-right py-2 card-text"
+                        >{{50 | currency}}</p>
                       </div>
                     </div>
                   </div>
@@ -188,7 +203,7 @@
 
         <div
           class="navbar-right"
-          :class="{'navbar-open': reservationOpen}"
+          :class="{'navbar-right-open': reservationOpen}"
         >
           <div
             class="close-hamburger text-right text-black p-2"
@@ -224,7 +239,10 @@
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
                 <option value="10">10</option>
+                <option value="20">20</option>
               </select>
 
               <h5>Обрати дату</h5>
@@ -378,6 +396,10 @@ export default {
 </script>
 
 <style lang="css">
+.modal-content {
+  border-radius: 0;
+}
+
 .vdp-datepicker__calendar {
   margin: auto;
   border: 0 !important;
@@ -489,13 +511,11 @@ input {
 }
 
 .toggle-quantity {
-  border: 1px solid #e5e5e5;
   box-sizing: border-box;
-  border-radius: 50px;
   width: 100%;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   button {
     border: 0;
@@ -521,6 +541,12 @@ input {
 
     margin: auto 2px;
     text-decoration: none;
+  }
+
+  p {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 0 5px;
   }
 }
 
@@ -548,7 +574,7 @@ header {
   top: 0px;
   position: fixed;
   padding: 20px 50px;
-  // box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+  box-shadow: none;
   transform: translate3d(0, 0, 0);
   transition: 0.1s all ease-out;
   z-index: 1000;
@@ -640,27 +666,39 @@ header {
 }
 
 .navbar {
-  display: none;
-  position: absolute;
-  padding: 30px 10px 10px 50px;
-  transition: all 3s ease;
+  position: fixed;
+  top: 0;
+  display: block;
+
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-100%);
+
+  padding: 30px 50px;
   background: $lightColor;
+
+  height: 100vh;
   width: 430px;
   left: 0;
   top: 0px;
 }
 
 .navbar-right {
-  display: none;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  transition: all 0.3s ease-in-out;
+  transform: translateX(100%);
+
   padding: 30px 50px;
-  transition: all 3s ease;
   background: $lightColor;
+
+  overflow-y: scroll;
+  height: 100vh;
   width: 430px;
   right: 0;
   top: 0px;
   bottom: 0;
-  overflow-y: scroll;
 }
 
 .btn-hamburger {
@@ -672,54 +710,137 @@ header {
   font-size: 18px;
 }
 
+.navbar-right-open {
+  transform: translateX(0);
+}
+
 .navbar-open {
-  display: block;
-  transition: all 6s ease;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.35);
-  border-radius: 0;
-  height: auto;
-  min-height: 100vh;
-  overflow-y: scroll;
+  transform: translateX(0);
 }
 
 .close-hamburger {
   display: block;
 }
 
+.close-navbar-hamburger {
+  display: block;
+}
+
 @include mediaXSm {
+  header {
+    background-size: cover;
+    background-color: $darkColor;
+    width: 100vw;
+    min-height: 60px;
+    height: 60%;
+    max-height: 100px;
+    right: 0;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    padding: 20px 20px;
+    transform: translate3d(0, 0, 0);
+    transition: 0.1s all ease-out;
+    z-index: 1000;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
   .navbar {
-    display: none;
-    position: absolute;
-    padding: 30px 10px 10px 50px;
-    transition: all 3s ease;
+    position: fixed;
+    top: 0;
+    display: block;
+
+    transition: all 0.3s linear;
+    transform: translateX(-100%);
+
+    padding: 15px 20px;
     background: $lightColor;
+
+    height: 100vh;
     width: 100vw;
     left: 0;
     top: 0px;
+    bottom: 0;
   }
 
   .navbar-right {
-    display: none;
-    position: absolute;
-    padding: 30px 50px;
-    transition: all 3s ease;
-    background: $lightColor;
-    width: 100vw;
+    position: fixed;
+    top: 0;
     right: 0;
-    top: 0px;
-    bottom: 0;
+
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100%);
+
+    padding: 15px 20px;
+    background: $lightColor;
+
     overflow-y: scroll;
+    height: 100vh;
+    width: 430px;
+    right: 0;
+    width: 100vw;
+    bottom: 0;
+  }
+
+  .navbar-right-open {
+    transform: translateX(0);
   }
 
   .navbar-open {
-    display: block;
-    transition: all 3s ease;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.35);
-    border-radius: 0;
-    height: auto;
-    min-height: 100vh;
-    overflow-y: scroll;
+    transform: translateX(0);
   }
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+  background: rgba(240, 157, 81, 0.5);
+  z-index: 2;
+  visibility: hidden;
+}
+.cart-body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 3;
+  background: rgb(231, 226, 221);
+  padding: 1.5rem;
+  transition: all 0.3s linear;
+  transform: translateX(100%);
+}
+.showCart {
+  transform: translateX(0);
+}
+.transparentBcg {
+  visibility: visible;
+}
+@media screen and (min-width: 768px) {
+  .cart-body {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.close-cart {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.cart-body h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
 }
 </style>
 

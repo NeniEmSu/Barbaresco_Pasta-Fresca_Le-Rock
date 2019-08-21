@@ -1,12 +1,32 @@
+<i18n>
+{
+  "uk": {
+    "title": "Про нас",
+    "description": "Barbaresco City Cafe затишний та світлий заклад, розташоване неподалік від центру міста. Відкритий з 2016 року. Щодня нас відвідує понад тисяча гостей, яких ми радо зустрічаємо та даруємо можливість відволіктись від міської метушні, насолодитись смачними стравами та освіжаючими напоями. Заклад пропонує страви європейської та японської кухні за доступними цінами. Привітний та обізнаний персонал завжди швидко та влучно допоможе обрати страви, які будуть вам до смаку."
+
+  },
+  "en": {
+   "title": "About Us",
+   "description": "Barbaresco City Cafe is a cozy and bright establishment located near the city center. Opened since 2016. We are visited by over a thousand guests every day, whom we welcome and give the opportunity to get away from the bustle of the city, enjoy delicious meals and refreshing drinks. The establishment offers European and Japanese cuisine at affordable prices. The friendly and knowledgeable staff will always help you quickly and accurately select the dishes you like."
+
+  },
+  "ru": {
+    "title": "О нас",
+    "description": "Barbaresco City Cafe уютный и светлый заведение, расположенное недалеко от центра города. Открыт с 2016 года. Ежедневно нас посещает более тысячи гостей, которых мы с радостью встречаем и дарим возможность отвлечься от городской суеты, насладиться вкусными блюдами и освежающими напитками. Заведение предлагает блюда европейской и японской кухни по доступным ценам. Приветливый и знаком персонал всегда быстро и точно поможет выбрать блюда, которые будут вам по вкусу."
+  }
+}
+</i18n>
 <template>
   <div id="about-us">
     <div class="row">
-      <div class="col-md-6 p-0 image-container">
-
-      </div>
+      <img
+        src="~/assets/img/barbarescoAboutUs.png"
+        class="col-md-6 p-0 image-container"
+        alt="Barbaresco About Us page image"
+      >
       <div class="col-md-6 m-auto p-5">
-        <h1>Про нас</h1>
-        <p>Barbaresco City Cafe затишний та світлий заклад, розташоване неподалік від центру міста. Відкритий з 2016 року. Щодня нас відвідує понад тисяча гостей, яких ми радо зустрічаємо та даруємо можливість відволіктись від міської метушні, насолодитись смачними стравами та освіжаючими напоями. Заклад пропонує страви європейської та японської кухні за доступними цінами. Привітний та обізнаний персонал завжди швидко та влучно допоможе обрати страви, які будуть вам до смаку.</p>
+        <h1>{{$t('title')}}</h1>
+        <p>{{$t('description')}}</p>
       </div>
     </div>
 
@@ -55,9 +75,9 @@ export default {
 <style lang="scss" scoped>
 .image-container {
   height: calc(100vh - 120px);
-  background-image: url("~assets/img/barbarescoAboutUs.png");
-  background-position: center;
-  background-repeat: no-repeat;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 h1 {

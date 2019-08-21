@@ -231,6 +231,11 @@ section {
   overflow: hidden;
 }
 
+section {
+  border-bottom: 1px solid #000000;
+  opacity: 0.8;
+}
+
 .column {
   float: left;
   box-sizing: border-box;
@@ -238,7 +243,7 @@ section {
   height: 100%;
   min-height: 150px;
   border: 0;
-  background-color: transparent;
+  background-color: $darkColor;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -248,7 +253,6 @@ section {
 
   transition: 500ms ease-in-out;
   text-decoration: none;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
 }
 
 .column .nav-image {
@@ -335,20 +339,61 @@ section {
 }
 
 @media (max-width: 995px) {
+  #imageed-Products-Navigation {
+    background-color: transparent;
+  }
+
   .column {
+    background-color: transparent;
     width: calc(100% / 5);
+    margin: auto;
+    min-height: 110px;
+  }
+
+  .nav-text {
+    color: $darkColor;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  section {
+    padding: 5px;
+  }
+
+  .column .nav-image {
+    margin: auto;
+    mix-blend-mode: luminosity;
+    opacity: 0.8;
+
+    &:hover {
+      mix-blend-mode: normal;
+      opacity: 1;
+    }
+
+    &.active {
+      mix-blend-mode: normal;
+      opacity: 1;
+    }
+  }
+
+  .nav-image {
+    width: 100%;
+    min-width: 60px;
+    max-width: 60px;
+    height: 100%;
+    min-height: 60px;
+    max-height: 60px;
   }
 }
 
-@media (max-width: 500px) {
-  .column {
-    width: calc(100% / 3);
-  }
-}
+// @media (max-width: 500px) {
+//   .column {
+//     width: calc(100% / 3);
+//   }
+// }
 
-@media (max-width: 375px) {
-  .column {
-    width: calc(100% / 2);
-  }
-}
+// @media (max-width: 375px) {
+//   .column {
+//     width: calc(100% / 2);
+//   }
+// }
 </style>

@@ -1,14 +1,33 @@
+<i18n>
+{
+  "uk": {
+    "title": "Інтер'єр",
+    "description": "Виразний індустріальний стиль лофт. Приміщення згідно обраного стилю оформлено в холодних відтінках. Просторий зал поєднує у собі декілька відпочинкових зон: столики з панорамними вікнами, м’які дивани, барна стійка та балкон. У закладі є дитяча кімната для наших найменших гостей."
+
+  },
+  "en": {
+   "title": "Interior",
+   "description": "Expressive industrial style loft. The room according to the chosen style is decorated in cool shades. The spacious hall combines several seating areas: tables with panoramic windows, soft sofas, a bar counter and a balcony. The facility has a children's room for our youngest guests."
+
+  },
+  "ru": {
+    "title": "Интерьер",
+    "description": "Выразительный индустриальный стиль лофт. Помещения согласно выбранного стиля оформлено в холодных оттенках. Просторный зал сочетает в себе несколько зон отдыха: столики с панорамными окнами, мягкие диваны, барная стойка и балкон. В заведении есть детская комната для наших маленьких гостей."
+  }
+}
+</i18n>
+
 <template>
   <div id="atmosphere">
     <div class="row">
-      <div class="col-md-6 p-0 image-container">
-
-      </div>
+      <img
+        src="~/assets/img/barbarescoAtmosphere.png"
+        class="col-md-6 p-0 image-container"
+        alt="Barbaresco Atmosphere page image"
+      >
       <div class="col-md-6 m-auto p-5">
-        <h1>Інтер'єр</h1>
-        <p>Виразний індустріальний стиль лофт.
-          Приміщення згідно обраного стилю оформлено в холодних відтінках.
-          Просторий зал поєднує у собі декілька відпочинкових зон: столики з панорамними вікнами, м’які дивани, барна стійка та балкон. У закладі є дитяча кімната для наших найменших гостей.</p>
+        <h1>{{$t('title')}}</h1>
+        <p>{{$t('description')}}</p>
       </div>
     </div>
 
@@ -57,9 +76,9 @@ export default {
 <style lang="scss" scoped>
 .image-container {
   height: calc(100vh - 120px);
-  background-image: url("~assets/img/barbarescoAtmosphere.png");
-  background-position: center;
-  background-repeat: no-repeat;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 h1 {
