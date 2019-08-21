@@ -24,7 +24,7 @@
         >
           <b-img-lazy
             class=""
-            src="~/assets/img/logo-barbaresco.svg"
+            src="~/assets/img/barbaresco-logo.svg"
             alt="logo barbaresco"
           >
           </b-img-lazy>

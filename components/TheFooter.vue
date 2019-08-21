@@ -2,7 +2,7 @@
 {
   "uk": {
     "location": "м. Тернопіль, вулиця Князя Острозького, 14"
-    
+
   },
   "en": {
    "location": "Ternopil City, 14th Ostrozkoho Street"
@@ -35,7 +35,7 @@
 
           <b-img-lazy
             class="mx-auto"
-            src="~/assets/img/logo-barbaresco.svg"
+            src="~/assets/img/barbaresco-logo.svg"
             alt="logo barbaresco"
           >
           </b-img-lazy>

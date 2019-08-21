@@ -341,7 +341,7 @@ export default {
           name: 'Barbaresco',
           imageShowcase: 'home-page-barbaresco',
           showcaseAlt: 'Image of barbaresco',
-          logo: 'logo-barbaresco',
+          logo: 'barbaresco-logo',
           logoAlt: 'barbaresco logo',
           siteLink: 'barbaresco',
           details: this.$t('home.descriptions[0].details'),
@@ -352,7 +352,7 @@ export default {
           name: 'Pasta Fresca',
           imageShowcase: 'home-page-pasta-fresca',
           showcaseAlt: 'Image of Pasta Fresca',
-          logo: 'logo-pasta',
+          logo: 'pasta-fresca-logo',
           logoAlt: 'pasta-fresca-logo',
           siteLink: 'pasta-fresca',
           details:
@@ -364,7 +364,7 @@ export default {
           name: 'Le rock',
           imageShowcase: 'home-page-le-rock',
           showcaseAlt: 'Image of Le rock',
-          logo: 'logo-le-rock',
+          logo: 'le-rock-logo',
           logoAlt: 'Le rock logo',
           siteLink: 'le-rock',
           details: this.$t('home.descriptions[2].details'),
@@ -375,7 +375,7 @@ export default {
           name: 'Piazza white',
           imageShowcase: 'home-page-piazza-white',
           showcaseAlt: 'Image of Piazza white',
-          logo: 'logo-piazza-white',
+          logo: 'piazza-white-logo',
           logoAlt: 'Piazza white logo',
           siteLink: 'piazza',
           details: this.$t('home.descriptions[3].details'),
@@ -403,28 +403,28 @@ export default {
 }
 
 .owl-theme .owl-dots button:nth-child(1) span {
-  background-image: url("~assets/img/logo-barbaresco.svg") !important;
+  background-image: url("~assets/img/barbaresco-logo.svg") !important;
   background-size: contain !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
 
 .owl-theme .owl-dots button:nth-child(2) span {
-  background-image: url("~assets/img/logo-pasta.svg") !important;
+  background-image: url("~assets/img/pasta-fresca-logo.svg") !important;
   background-size: contain !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
 
 .owl-theme .owl-dots button:nth-child(3) span {
-  background-image: url("~assets/img/logo-le-rock.svg") !important;
+  background-image: url("~assets/img/le-rock-logo.svg") !important;
   background-size: contain !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
 
 .owl-theme .owl-dots button:nth-child(4) span {
-  background-image: url("~assets/img/logo-piazza-white.svg") !important;
+  background-image: url("~assets/img/piazza-white-logo.svg") !important;
   background-size: contain !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
