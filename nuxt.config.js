@@ -215,13 +215,13 @@ export default {
             "vacancy": "Ваканції",
             "contact": "Контакти",
           },
-          ukrainian: "Українська",
-          english: "English",
-          russian: "Русский"
+          "ukrainian": "Українська",
+          "english": "English",
+          "russian": "Русский"
         },
         en: {
           "links": {
-            home: "Home",
+            "home": "Home",
             "menu": "Menu",
             "delivery": "Food delivery",
             "reserveAPlace": "Reservation of place",
@@ -231,9 +231,9 @@ export default {
             "vacancy": "Vacancies",
             "contact": "Contacts"
           },
-          ukrainian: "Українська",
-          english: "English",
-          russian: "Русский"
+          "ukrainian": "Українська",
+          "english": "English",
+          "russian": "Русский"
         },
         ru: {
           "links": {
@@ -247,9 +247,9 @@ export default {
             "vacancy": "Вакансии",
             "contact": "Контакты"
           },
-          ukrainian: "Українська",
-          english: "English",
-          russian: "Русский"
+          "ukrainian": "Українська",
+          "english": "English",
+          "russian": "Русский"
         }
 
       }

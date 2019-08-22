@@ -316,7 +316,7 @@ main {
   .language {
     .langBtn,
     .dropdown-toggle {
-      padding: 5px 15px;
+      padding: 1px 15px;
 
       font-size: 14px;
       line-height: 16px;

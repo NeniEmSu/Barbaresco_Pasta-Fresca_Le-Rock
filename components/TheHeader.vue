@@ -1,3 +1,109 @@
+<i18n>
+{
+  "uk": {
+    "vacancyNotice": "Наразі вакансій у нас немає!",
+    "reservation":{
+      "heading": "Оберіть час та кількість осіб",
+      "time": "Час",
+      "noOfPeople": "Кількість осіб",
+      "dateTitle": "Обрати дату",
+      "name": "Ім’я",
+      "phone": "Телефон",
+      "order": "Замовити"
+      },
+    "cart":{
+      "heading": "Замовлення",
+      "emptyCart": "Ви ще нічого не додали до замовлення",
+      "total": "Сума",
+      "order": "Замовити",
+      "clear": "Очистити все"
+      },
+      "links": {
+        "home": "Головна",
+        "menu": "Меню",
+        "delivery": "Доставка їжі",
+        "reserveAPlace": "Резервація місця",
+        "reservation": "Резервація",
+        "aboutUs": "Про нас",
+        "atmosphere": "Атмосфера",
+        "vacancy": "Ваканції",
+        "contact": "Контакти"
+      },
+      "ukrainian": "Українська",
+      "english": "English",
+      "russian": "Русский"
+  },
+  "en": {
+   "vacancyNotice": "We don't have any vacancies right now!",
+   "reservation":{
+      "heading": "Choose the time and number of people",
+      "time": "Time",
+      "noOfPeople": "Number of people",
+      "dateTitle": "Choose a date",
+      "name": "Name",
+      "phone": "Phone",
+      "order": "Order"
+      },
+    "cart":{
+      "heading": "Order",
+      "emptyCart": "You haven't added anything to your order yet",
+      "total": "Sum",
+      "order": "Order",
+      "clear": "Clear everything"
+      },
+      "links": {
+        "home": "Home",
+        "menu": "Menu",
+        "delivery": "Food delivery",
+        "reserveAPlace": "Reservation of place",
+        "reservation": "Reservation",
+        "aboutUs": "About us",
+        "atmosphere": "Atmosphere",
+        "vacancy": "Vacancies",
+        "contact": "Contacts"
+      },
+      "ukrainian": "Українська",
+      "english": "English",
+      "russian": "Русский"
+
+  },
+  "ru": {
+    "vacancyNotice": "Сейчас вакансий у нас нет!",
+    "reservation":{
+      "heading": "Выберите время и количество человек",
+      "time": "Время",
+      "noOfPeople": "Количество человек",
+      "dateTitle": "Выбрать дату",
+      "name": "Имя",
+      "phone": "Телефон",
+      "order": "Заказать"
+      },
+    "cart":{
+      "heading": "Заказ",
+      "emptyCart": "Вы еще ничего не добавили к заказу",
+      "total": "Сумма",
+      "order": "Заказать",
+      "clear": "Очистить все"
+      },
+      "links": {
+        "home": "Главная",
+        "menu": "Меню",
+        "delivery": "Доставка еды",
+        "reserveAPlace": "Резервация места",
+        "reservation": "Резервация",
+        "aboutUs": "О нас",
+        "atmosphere": "Атмосфера",
+        "vacancy": "Вакансии",
+        "contact": "Контакты"
+      },
+      "ukrainian": "Українська",
+      "english": "English",
+      "russian": "Русский"
+  }
+}
+</i18n>
+
+
 <template>
   <div id="theHeader">
     <header
@@ -93,7 +199,8 @@
               id="modal-1"
               :title="$t('links.vacancy')"
             >
-              <p class="my-4">Наразі вакансій у нас немає!</p>
+
+              <b>{{$t('vacancyNotice')}}</b>
             </b-modal>
             <b-nav-item :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
             <b-nav-item
@@ -123,11 +230,13 @@
             @click.stop="hideCart"
           >&times;</div>
 
+          <p v-if="!cartSize">{{$t('cart.emptyCart')}}</p>
+
           <div>
-            <h3>Замовлення</h3>
+            <h3>{{$t('cart.heading')}}</h3>
             <div
               class="cart-item"
-              v-for="n in 3"
+              v-for="n in cartSize"
               :key="n"
             >
               <div class="row my-auto">
@@ -186,17 +295,24 @@
               <hr>
               <div class="row">
                 <div class="col-4">
-                  <small class="col-12">Сума:</small>
-                  <strong class="col-12">155,00</strong>
+                  <small class="col-12">{{$t('cart.total')}}:</small>
+                  <strong
+                    v-if="cartSize === 3"
+                    class="col-12"
+                  >155,00</strong>
+                  <strong
+                    v-else
+                    class="col-12"
+                  >0,00</strong>
                 </div>
                 <div class="col-8 mx-auto text-right">
-                  <button class="order">Замовити</button>
+                  <button class="order">{{$t('cart.order')}}</button>
                 </div>
               </div>
             </div>
 
             <div class="seeAll mt-5 text-center">
-              <button>Очистити все</button>
+              <button @click="cartSize = 0">{{$t('cart.clear')}}</button>
             </div>
           </div>
         </div>
@@ -212,7 +328,7 @@
           >&times;</div>
 
           <div>
-            <h5>Оберіть час та кількість осіб</h5>
+            <h5>{{$t('reservation.heading')}}</h5>
             <form action="post">
               <select
                 name="time"
@@ -220,7 +336,7 @@
                 class="w-100"
                 v-model="time"
               >
-                <option value="null">Час</option>
+                <option value="null">{{$t('reservation.time')}}</option>
                 <option value="morning">Ранок</option>
                 <option value="breakfast">Сніданок</option>
                 <option value="afternoon">Вдень</option>
@@ -235,7 +351,7 @@
                 id="number-of-people"
                 class="w-100"
               >
-                <option value="null">Кількість осіб</option>
+                <option value="null">{{$t('reservation.noOfPeople')}}</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="4">4</option>
@@ -245,7 +361,7 @@
                 <option value="20">20</option>
               </select>
 
-              <h5>Обрати дату</h5>
+              <h5>{{$t('reservation.dateTitle')}}</h5>
               <div>
                 <no-ssr>
                   <datepicker
@@ -262,19 +378,19 @@
               <input
                 v-model="name"
                 type="text"
-                placeholder="Ім’я"
+                :placeholder="$t('reservation.name')"
                 class="w-100"
               >
 
               <input
                 v-model="phone"
                 type="text"
-                placeholder="Телефон"
+                :placeholder="$t('reservation.phone')"
                 class="w-100"
               >
               <div class="form-group mx-auto text-center">
 
-                <button class="order mt-2">Замовити</button>
+                <button class="order mt-2">{{$t('reservation.order')}}</button>
 
               </div>
 
@@ -694,11 +810,31 @@ header {
   background: $lightColor;
 
   overflow-y: scroll;
+  scrollbar-width: none;
   height: 100vh;
   width: 430px;
   right: 0;
   top: 0px;
   bottom: 0;
+
+  ::-webkit-scrollbar-track {
+    box-shadow: none;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    background-color: $backgroudColor;
+  }
+
+  ::-webkit-scrollbar {
+    border-radius: 50px;
+    width: 0;
+    background-color: $backgroudColor;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    box-shadow: none;
+    background-color: rgb(149, 150, 150);
+  }
 }
 
 .btn-hamburger {
@@ -726,7 +862,78 @@ header {
   display: block;
 }
 
-@include mediaXSm {
+@include mediaSm {
+  header {
+    background-size: cover;
+    background-color: $darkColor;
+    width: 100vw;
+    min-height: 60px;
+    height: 60%;
+    max-height: 100px;
+    right: 0;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    padding: 20px 20px;
+    transform: translate3d(0, 0, 0);
+    transition: 0.1s all ease-out;
+    z-index: 1000;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    display: block;
+
+    transition: all 0.3s linear;
+    transform: translateX(-100%);
+
+    padding: 15px 20px;
+    background: $lightColor;
+
+    height: 100vh;
+    width: 430px;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+  }
+
+  .navbar-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100%);
+
+    padding: 15px 15px;
+    background: $lightColor;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 430px;
+    right: 0;
+
+    bottom: 0;
+  }
+
+  .navbar-right-open {
+    transform: translateX(0);
+  }
+
+  .navbar-open {
+    transform: translateX(0);
+  }
+}
+
+@include mediaSm {
   header {
     background-size: cover;
     background-color: $darkColor;
@@ -771,16 +978,18 @@ header {
     position: fixed;
     top: 0;
     right: 0;
+    left: 0;
 
     transition: all 0.3s ease-in-out;
     transform: translateX(100%);
 
-    padding: 15px 20px;
+    padding: 15px 15px;
     background: $lightColor;
 
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 100vh;
-    width: 430px;
+
     right: 0;
     width: 100vw;
     bottom: 0;
@@ -793,54 +1002,6 @@ header {
   .navbar-open {
     transform: translateX(0);
   }
-}
-
-.cart-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s linear;
-  background: rgba(240, 157, 81, 0.5);
-  z-index: 2;
-  visibility: hidden;
-}
-.cart-body {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: scroll;
-  z-index: 3;
-  background: rgb(231, 226, 221);
-  padding: 1.5rem;
-  transition: all 0.3s linear;
-  transform: translateX(100%);
-}
-.showCart {
-  transform: translateX(0);
-}
-.transparentBcg {
-  visibility: visible;
-}
-@media screen and (min-width: 768px) {
-  .cart-body {
-    width: 30vw;
-    min-width: 450px;
-  }
-}
-
-.close-cart {
-  font-size: 1.7rem;
-  cursor: pointer;
-}
-.cart-body h2 {
-  text-transform: capitalize;
-  text-align: center;
-  letter-spacing: 0.1rem;
-  margin-bottom: 2rem;
 }
 </style>
 

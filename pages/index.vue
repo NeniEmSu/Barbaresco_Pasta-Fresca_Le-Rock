@@ -429,6 +429,24 @@ export default {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
+
+@media screen and (max-height: 480px) {
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: -13px !important;
+  }
+}
+
+@media screen and (min-height: 537px) and (max-height: 560px) {
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 10px !important;
+  }
+}
+
+@media screen and (min-height: 560px) and (max-height: 640px) {
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 12% !important;
+  }
+}
 </style>
 
 <style lang="scss" scoped>
@@ -802,6 +820,27 @@ export default {
 
   .inButtonImg {
     width: 70px;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .homePageHeading {
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+}
+
+@media screen and (min-height: 481px) and (max-height: 519px) {
+  .homePageHeading {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+}
+
+@media screen and (min-height: 520px) and (max-height: 640px) {
+  .homePageHeading {
+    margin-top: 12%;
+    margin-bottom: 12%;
   }
 }
 </style>

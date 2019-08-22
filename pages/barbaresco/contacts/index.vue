@@ -31,10 +31,10 @@
     <div class="row">
       <img
         src="~/assets/img/barbarescoContact.png"
-        class="col-md-6 p-0 image-container"
+        class="col-lg-6 p-0 image-container"
         alt="Barbaresco Contact page image"
       >
-      <div class="col-md-6 m-auto p-0 text-center">
+      <div class="col-lg-6 m-auto p-0 text-center">
         <div class="inner-text px-5">
           <h1>{{$t('title')}}</h1>
           <div class="text-center">
@@ -108,9 +108,7 @@ export default {
 
 <style lang="scss" scoped>
 .image-container {
-  min-height: calc(100vh - 120px);
-  max-height: 100%;
-  height: 100%;
+  height: calc(100vh - 120px);
 
   object-fit: cover;
   object-position: center;
@@ -128,7 +126,8 @@ h1 {
   color: #000000;
 }
 
-p {
+p,
+span {
   font-family: $mainFont;
   font-style: normal;
   font-weight: normal;
@@ -144,7 +143,8 @@ p {
     line-height: 80px;
   }
 
-  p {
+  p,
+  span {
     font-size: 24px;
   }
 }
@@ -163,7 +163,8 @@ p {
     line-height: 80px;
   }
 
-  p {
+  p,
+  span {
     font-size: 24px;
   }
 }
@@ -183,9 +184,11 @@ p {
     line-height: 53px;
   }
 
-  p {
+  p,
+  span {
     font-size: 18px;
     line-height: 140.4%;
+    padding-bottom: 20px;
   }
 }
 </style>

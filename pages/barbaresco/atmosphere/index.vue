@@ -75,9 +75,7 @@ export default {
 
 <style lang="scss" scoped>
 .image-container {
-  min-height: calc(100vh - 120px);
-  max-height: 100%;
-  height: 100%;
+  height: calc(100vh - 120px);
 
   object-fit: cover;
   object-position: center;
