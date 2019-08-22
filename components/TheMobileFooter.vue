@@ -17,16 +17,7 @@
 <template>
   <div id="the-footer">
     <div class="container footer-inner mx-auto">
-      <div class="address my-auto">
-        <nuxt-link
-          :to="'/' + $i18n.locale + '/contact'"
-          v-scroll-to="{el: '#map-top', duration: 500, offset: -60 }"
-          class="m-auto"
-        >
-          {{$t('location')}}
-        </nuxt-link>
 
-      </div>
       <div class="footerLogocontainer m-auto">
         <nuxt-link
           to="barbaresco"
@@ -42,15 +33,18 @@
 
         </nuxt-link>
       </div>
-
-      <div class="phone my-auto row">
-
-        <a
-          href="tel:+380506700400"
-          class="col-12 m-auto"
+      <div class="address">
+        <nuxt-link
+          :to="'/' + $i18n.locale + '/contact'"
+          v-scroll-to="{el: '#map-top', duration: 500, offset: -60 }"
+          class="m-auto"
         >
-          <span>+38 050 6 700 400</span>
-        </a>
+          {{$t('location')}}
+        </nuxt-link>
+
+      </div>
+
+      <div class="phone">
 
         <a
           href="tel:+380506700400"
@@ -60,7 +54,7 @@
         </a>
       </div>
 
-      <div class="socials my-auto">
+      <div class="socials">
 
         <a
           href="https://www.facebook.com/virus.te.ua/"
@@ -102,7 +96,7 @@ export default {};
 <style lang="scss" scoped>
 #the-footer {
   background: $darkColor;
-  width: 100vw !important;
+  width: 100% !important;
   padding: 0;
   max-height: 200px;
   min-height: 200px;
@@ -111,44 +105,104 @@ export default {};
 }
 
 .footer-inner {
-  padding: 70px 0;
-  display: flex;
+  padding: 10px 0;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 .footerLogocontainer img {
   min-height: 60px;
   max-height: 60px;
   height: 100%;
+  margin: 10px;
 }
 
-.phone a {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+.phone {
+  margin: 5px auto;
+  a {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 
-  color: $lightColor;
+    color: $lightColor;
+  }
 }
-
 .socials a {
   margin: auto;
   img {
-    margin-right: 20px;
+    margin: auto;
   }
 }
 
-.address a {
-  margin: auto;
+.address {
+  margin: 5px auto;
+  a {
+    margin: auto;
 
-  font-family: $primaryFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
 
-  text-align: center;
+    text-align: center;
 
-  color: $lightColor;
+    color: $lightColor;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-inner {
+    padding: 10px 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .footerLogocontainer img {
+    min-height: 60px;
+    max-height: 60px;
+    height: 100%;
+    margin: 10px;
+  }
+
+  .phone {
+    margin: 5px auto;
+    a {
+      font-family: $mainFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+
+      color: $lightColor;
+    }
+  }
+  .socials a {
+    margin: auto;
+    img {
+      margin: auto;
+    }
+  }
+
+  .address {
+    margin: 5px auto;
+    a {
+      margin: auto;
+
+      font-family: $primaryFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+
+      text-align: center;
+
+      color: $lightColor;
+    }
+  }
 }
 </style>

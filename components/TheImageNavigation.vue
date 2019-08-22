@@ -270,7 +270,22 @@ section {
   }
 
   .grid figure {
-    height: 66px;
+    max-height: 66px;
+  }
+
+  figure.saddleEffect figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+    opacity: 0;
+    content: "";
+
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
   }
 
   figure.saddleEffect h2 {
@@ -391,12 +406,6 @@ section {
     font-size: 0;
     background: #000000;
     opacity: 0.25;
-  }
-}
-
-@media (max-width: 375px) {
-  .column {
-    width: calc(100% / 2);
   }
 }
 </style>

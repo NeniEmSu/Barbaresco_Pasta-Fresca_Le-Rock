@@ -108,7 +108,9 @@ export default {
 
 <style lang="scss" scoped>
 .image-container {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
+  max-height: 100%;
+  height: 100%;
 
   object-fit: cover;
   object-position: center;
@@ -136,13 +138,54 @@ p {
   color: #000000;
 }
 
-a {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 140.4%;
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
 
-  color: #000000;
+  p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 993px) {
+  .image-container {
+    min-height: 200px;
+    max-height: 200px;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-container {
+    min-height: 200px;
+    max-height: 200px;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 140.4%;
+  }
 }
 </style>

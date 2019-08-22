@@ -75,6 +75,7 @@ export default {
   },
   watch: {
     $route () {
+      this.items[0].text = this.$t('links.home');
       this.items[1].text = this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1);
     }
   }
@@ -126,16 +127,8 @@ export default {
     font-size: 16px;
     line-height: normal;
     text-align: center;
-    transition: all ease-in-out 300ms;
-    -webkit-transition: all ease-in-out 300ms;
-    -moz-transition: all ease-in-out 300ms;
-    -ms-transition: all ease-in-out 300ms;
-    -o-transition: all ease-in-out 300ms;
+    @include easeOut;
   }
-}
-
-.b-crumbs {
-  // margin-left: 40px;
 }
 
 @include mediaMenu {

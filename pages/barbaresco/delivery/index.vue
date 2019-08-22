@@ -23,11 +23,11 @@
 
       <img
         src="~/assets/img/barbarescoDelivery.png"
-        class="col-md-6 p-0 image-container"
+        class="col-lg-6 p-0 image-container"
         alt="Barbaresco Delivery"
       >
 
-      <div class="col-md-6 m-auto p-5">
+      <div class="col-lg-6 m-auto p-5">
         <h1>{{$t('title')}}</h1>
         <p>{{$t('description')}}</p>
       </div>
@@ -78,9 +78,6 @@ export default {
 <style lang="scss" scoped>
 .image-container {
   height: calc(100vh - 120px);
-  // background-image: url("~assets/img/barbarescoDelivery.png");
-  // background-position: bottom center;
-  // background-repeat: no-repeat;
   object-fit: cover;
   object-position: bottom center;
 }
@@ -105,5 +102,56 @@ p {
   line-height: 140.4%;
 
   color: #000000;
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 993px) {
+  .image-container {
+    min-height: 200px;
+    max-height: 200px;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: bottom center;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-container {
+    min-height: 200px;
+    max-height: 200px;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: bottom center;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 140.4%;
+  }
 }
 </style>

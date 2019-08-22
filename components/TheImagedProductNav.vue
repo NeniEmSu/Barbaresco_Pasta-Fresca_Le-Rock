@@ -46,11 +46,9 @@
       <button
         class="column text-center "
         @click="Show1"
+        :class="{ active: currentProductsDisplayed === 1}"
       >
-        <div
-          class="nav-image navOne text-center"
-          :class="{ active: currentProductsDisplayed === 1}"
-        ></div>
+        <div class="nav-image navOne text-center"></div>
         <div class="text-center nav-text">{{$t('pizza')}}</div>
 
       </button>
@@ -58,11 +56,9 @@
       <button
         @click="Show2"
         class="column"
+        :class="{ active: currentProductsDisplayed === 2}"
       >
-        <div
-          class="nav-image navTwo"
-          :class="{ active: currentProductsDisplayed === 2}"
-        ></div>
+        <div class="nav-image navTwo"></div>
         <div class="text-center nav-text">{{$t('burgers')}}</div>
 
       </button>
@@ -70,11 +66,9 @@
       <button
         class="column "
         @click="Show3"
+        :class="{ active: currentProductsDisplayed === 3}"
       >
-        <div
-          class="nav-image navThree"
-          :class="{ active: currentProductsDisplayed === 3}"
-        ></div>
+        <div class="nav-image navThree"></div>
         <div class="text-center nav-text">{{$t('sushi')}}</div>
 
       </button>
@@ -82,11 +76,9 @@
       <button
         class="column "
         @click="Show4"
+        :class="{ active: currentProductsDisplayed === 4}"
       >
-        <div
-          class="nav-image navFour"
-          :class="{ active: currentProductsDisplayed === 4}"
-        ></div>
+        <div class="nav-image navFour"></div>
         <div class="text-center nav-text">{{$t('panCakes')}}</div>
 
       </button>
@@ -94,11 +86,9 @@
       <button
         class="column "
         @click="Show5"
+        :class="{ active: currentProductsDisplayed === 5}"
       >
-        <div
-          class="nav-image navFive"
-          :class="{ active: currentProductsDisplayed === 5}"
-        ></div>
+        <div class="nav-image navFive"></div>
         <div class="text-center nav-text">{{$t('deserts')}}</div>
 
       </button>
@@ -106,11 +96,9 @@
       <button
         class="column "
         @click="Show6"
+        :class="{ active: currentProductsDisplayed === 6}"
       >
-        <div
-          class="nav-image navSix"
-          :class="{ active: currentProductsDisplayed === 6}"
-        ></div>
+        <div class="nav-image navSix"></div>
         <div class="text-center nav-text">{{$t('salads')}}</div>
 
       </button>
@@ -118,11 +106,9 @@
       <button
         class="column "
         @click="Show7"
+        :class="{ active: currentProductsDisplayed === 7}"
       >
-        <div
-          class="nav-image navSeven"
-          :class="{ active: currentProductsDisplayed === 7}"
-        ></div>
+        <div class="nav-image navSeven"></div>
         <div class="text-center nav-text">{{$t('firstCourse')}}</div>
 
       </button>
@@ -130,11 +116,9 @@
       <button
         class="column "
         @click="Show8"
+        :class="{ active: currentProductsDisplayed === 8}"
       >
-        <div
-          class="nav-image navEight"
-          :class="{ active: currentProductsDisplayed === 8}"
-        ></div>
+        <div class="nav-image navEight"></div>
         <div class="text-center nav-text">{{$t('hits')}}</div>
 
       </button>
@@ -142,11 +126,9 @@
       <button
         @click.prevent="Show9"
         class="column"
+        :class="{ active: currentProductsDisplayed === 9}"
       >
-        <div
-          class="nav-image navNine "
-          :class="{ active: currentProductsDisplayed === 9}"
-        ></div>
+        <div class="nav-image navNine "></div>
         <div class="text-center nav-text">{{$t('drinks')}}</div>
 
       </button>
@@ -154,11 +136,9 @@
       <button
         @click.prevent="Show10"
         class="column "
+        :class="{ active: currentProductsDisplayed === 10}"
       >
-        <div
-          class="nav-image navTen"
-          :class="{ active: currentProductsDisplayed === 10}"
-        ></div>
+        <div class="nav-image navTen"></div>
         <div class="text-center nav-text">{{$t('alcohol')}}</div>
 
       </button>
@@ -228,12 +208,9 @@ export default {
 }
 
 section {
+  border-bottom: 1px solid $blackColor;
+  opacity: 1;
   overflow: hidden;
-}
-
-section {
-  border-bottom: 1px solid #000000;
-  opacity: 0.8;
 }
 
 .column {
@@ -251,21 +228,31 @@ section {
   text-align: center;
   margin: 22px auto 22px auto;
 
-  transition: 500ms ease-in-out;
+  @include easeOut;
   text-decoration: none;
+
+  &:hover {
+    .nav-text {
+      font-weight: bold;
+    }
+    .nav-image {
+      mix-blend-mode: normal;
+    }
+  }
+
+  &.active {
+    .nav-text {
+      font-weight: bold;
+    }
+    .nav-image {
+      mix-blend-mode: normal;
+    }
+  }
 }
 
 .column .nav-image {
   margin: auto;
   mix-blend-mode: luminosity;
-
-  &:hover {
-    mix-blend-mode: normal;
-  }
-
-  &.active {
-    mix-blend-mode: normal;
-  }
 }
 
 .nav-text {
@@ -279,6 +266,8 @@ section {
 
   color: $lightColor;
   margin-top: 10px;
+
+  @include easeOut;
 }
 
 .nav-image {
@@ -296,6 +285,9 @@ section {
 
   border-radius: 50%;
   background-color: $darkColor;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
+
+  @include easeOut;
 }
 
 .navOne {
@@ -343,17 +335,52 @@ section {
     background-color: transparent;
   }
 
+  section {
+    border-bottom: 1px solid $blackColor;
+
+    opacity: 1;
+    overflow: hidden;
+  }
+
   .column {
     background-color: transparent;
     width: calc(100% / 5);
     margin: auto;
     min-height: 110px;
+    opacity: 1;
+
+    &:hover {
+      .nav-image {
+        mix-blend-mode: normal;
+        opacity: 1;
+        border: 2px solid $goldColor;
+        box-sizing: border-box;
+      }
+
+      .nav-text {
+        font-weight: bold;
+      }
+    }
+
+    &.active {
+      .nav-image {
+        mix-blend-mode: normal;
+        opacity: 1;
+        border: 2px solid $goldColor;
+        box-sizing: border-box;
+      }
+
+      .nav-text {
+        font-weight: bold;
+      }
+    }
   }
 
   .nav-text {
     color: $darkColor;
     font-size: 14px;
     line-height: 16px;
+    @include easeOut;
   }
   section {
     padding: 5px;
@@ -361,18 +388,10 @@ section {
 
   .column .nav-image {
     margin: auto;
-    mix-blend-mode: luminosity;
-    opacity: 0.8;
-
-    &:hover {
-      mix-blend-mode: normal;
-      opacity: 1;
-    }
-
-    &.active {
-      mix-blend-mode: normal;
-      opacity: 1;
-    }
+    mix-blend-mode: normal;
+    opacity: 1;
+    @include easeOut;
+    box-sizing: border-box;
   }
 
   .nav-image {
@@ -384,16 +403,4 @@ section {
     max-height: 60px;
   }
 }
-
-// @media (max-width: 500px) {
-//   .column {
-//     width: calc(100% / 3);
-//   }
-// }
-
-// @media (max-width: 375px) {
-//   .column {
-//     width: calc(100% / 2);
-//   }
-// }
 </style>

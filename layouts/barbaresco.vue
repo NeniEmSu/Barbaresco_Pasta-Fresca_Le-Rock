@@ -10,7 +10,9 @@
 
     </div>
 
-    <TheFooter />
+    <TheFooter class="d-none d-lg-block" />
+
+    <TheMobileFooter class="d-block d-lg-none" />
   </div>
 </template>
 
@@ -18,13 +20,14 @@
 import Header from '~/components/TheHeader'
 import TheTopContact from '~/components/TheTopContact'
 import TheFooter from "@/components/TheFooter.vue"
+import TheMobileFooter from "@/components/TheMobileFooter.vue"
 
 export default {
   name: "BarbarescoLayout",
   components: {
     Header,
     TheFooter,
-
+    TheMobileFooter,
     TheTopContact
   },
 

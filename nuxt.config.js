@@ -3,7 +3,7 @@ export default {
 
 
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Barbaresco',
     htmlAttrs: {
       class: 'has-navbar-fixed-top',
       lang: 'uk',
@@ -19,7 +19,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: "My awe-inspiring Nuxt.js project"
       }
     ],
     link: [{
@@ -147,6 +147,8 @@ export default {
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
     ['nuxt-i18n', {
+      seo: false,
+      baseUrl: 'https://barbaresco.netlify.com',
       locales: [{
           iso: 'uk-Uk',
           code: 'uk',
@@ -160,7 +162,7 @@ export default {
         {
           iso: 'ru-RU',
           code: 'ru',
-          name: 'русский'
+          name: 'Русский'
         }
       ]
     }],
@@ -188,15 +190,15 @@ export default {
     locales: ['uk', 'en', 'ru'],
     defaultLocale: 'uk',
     vueI18nLoader: true,
+    seo: false,
     lazy: false,
     langDir: null,
-    seo: false,
     strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       alwaysRedirect: false,
-      fallbackLocale: null
+      fallbackLocale: 'uk'
     },
     vueI18n: {
       fallbackLocale: 'uk',
@@ -215,7 +217,7 @@ export default {
           },
           ukrainian: "Українська",
           english: "English",
-          russian: "русский",
+          russian: "Русский"
         },
         en: {
           "links": {
@@ -231,23 +233,23 @@ export default {
           },
           ukrainian: "Українська",
           english: "English",
-          russian: "русский"
+          russian: "Русский"
         },
         ru: {
           "links": {
-            "home": "Головна",
+            "home": "Главная",
             "menu": "Меню",
-            "delivery": "Доставка їжі",
-            "reserveAPlace": "Резервація місця",
-            "reservation": "Резервація",
-            "aboutUs": "Про нас",
+            "delivery": "Доставка еды",
+            "reserveAPlace": "Резервация места",
+            "reservation": "Резервация",
+            "aboutUs": "О нас",
             "atmosphere": "Атмосфера",
-            "vacancy": "Ваканції",
-            "contact": "Контакти"
+            "vacancy": "Вакансии",
+            "contact": "Контакты"
           },
           ukrainian: "Українська",
           english: "English",
-          russian: "русский"
+          russian: "Русский"
         }
 
       }

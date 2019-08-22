@@ -201,4 +201,39 @@ export default {
     margin-bottom: -5px;
   }
 }
+
+@media (max-width: 320px) {
+  h2 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #ffffff;
+
+    margin-bottom: 0;
+  }
+
+  p {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #ffffff;
+
+    margin-bottom: -10px;
+  }
+
+  .carousel-caption {
+    padding: 0;
+  }
+
+  .carousel ol {
+    margin-bottom: 0;
+    margin-bottom: -5px;
+  }
+}
 </style>
