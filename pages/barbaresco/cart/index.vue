@@ -433,6 +433,7 @@ textarea.form-control {
   background: transparent;
   border: 1px solid #000000;
   box-sizing: border-box;
+  border-radius: 0;
 
   font-family: $mainFont;
   font-style: normal;
