@@ -20,7 +20,7 @@
   <div id="about-us">
     <div class="row">
       <img
-        src="~/assets/img/barbarescoAboutUs.png"
+        src="~/assets/img/barbarescoAboutUs.jpg"
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco About Us page image"
       >
@@ -74,10 +74,10 @@ export default {
 
 <style lang="scss" scoped>
 .image-container {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
 
   object-fit: cover;
-  object-position: center;
+  object-position: left center;
 }
 
 h1 {

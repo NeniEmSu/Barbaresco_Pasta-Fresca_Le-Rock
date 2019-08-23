@@ -21,7 +21,7 @@
   <div id="atmosphere">
     <div class="row">
       <img
-        src="~/assets/img/barbarescoAtmosphere.png"
+        src="~/assets/img/barbarescoAtmosphere.jpg"
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco Atmosphere page image"
       >
@@ -75,7 +75,7 @@ export default {
 
 <style lang="scss" scoped>
 .image-container {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
 
   object-fit: cover;
   object-position: center;

@@ -12,7 +12,7 @@
 <template>
 
   <b-card
-    :img-src="require(`~/assets/img/${imageshowcase + '.png'}`)"
+    :img-src="require(`~/assets/img/${imageshowcase + '.jpg'}`)"
     :img-alt="showcasealt"
     img-top
     tag="article"

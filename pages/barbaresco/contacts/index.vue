@@ -30,7 +30,7 @@
   <div id="about-us">
     <div class="row">
       <img
-        src="~/assets/img/barbarescoContact.png"
+        src="~/assets/img/barbarescoContact.jpg"
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco Contact page image"
       >
@@ -53,12 +53,6 @@
             <p>{{$t('workHours')}}<b>10:00-01:00</b> ({{$t('days')}})</p>
           </div>
         </div>
-        <style>
-        .GMap__Wrapper {
-          width: 100%;
-          height: calc(100vh - 500px);
-        }
-        </style>
         <TheContactMap />
       </div>
     </div>
@@ -108,7 +102,7 @@ export default {
 
 <style lang="scss" scoped>
 .image-container {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
 
   object-fit: cover;
   object-position: center;

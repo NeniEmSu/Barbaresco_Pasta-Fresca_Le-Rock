@@ -13,7 +13,7 @@
 
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navHome.png"
+              src="~assets/img/navHome.jpg"
               alt="img02"
             >
             <figcaption>
@@ -29,7 +29,7 @@
         >
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navMenu.png"
+              src="~assets/img/navMenu.jpg"
               alt="img14"
             >
             <figcaption>
@@ -46,7 +46,7 @@
 
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navDelivery.png"
+              src="~assets/img/navDelivery.jpg"
               alt="img02"
             >
             <figcaption>
@@ -63,7 +63,7 @@
 
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navAboutUs.png"
+              src="~assets/img/navAboutUs.jpg"
               alt="img02"
             >
             <figcaption>
@@ -80,7 +80,7 @@
         >
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navAboutUs.png"
+              src="~assets/img/navAboutUs.jpg"
               alt="img14"
             >
             <figcaption>
@@ -97,7 +97,7 @@
 
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navContact.png"
+              src="~assets/img/navContact.jpg"
               alt="img02"
             >
             <figcaption>

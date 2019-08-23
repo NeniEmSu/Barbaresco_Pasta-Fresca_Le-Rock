@@ -101,7 +101,7 @@
               class=" col-3"
             >
               <b-card
-                :img-src="require(`~/assets/img/${variant.imageShowcase + '.png'}`)"
+                :img-src="require(`~/assets/img/${variant.imageShowcase + '.jpg'}`)"
                 :img-alt="variant.showcaseAlt"
                 img-top
                 tag="article"
@@ -155,7 +155,7 @@
 
             <!-- <div class="col-3">
               <b-card
-                :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.png'}`)"
+                :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[1].showcaseAlt"
                 img-top
                 tag="article"
@@ -209,7 +209,7 @@
 
             <div class="col-3">
               <b-card
-                :img-src="require(`~/assets/img/${variants[2].imageShowcase + '.png'}`)"
+                :img-src="require(`~/assets/img/${variants[2].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[2].showcaseAlt"
                 img-top
                 tag="article"
@@ -263,7 +263,7 @@
 
             <div class="col-3">
               <b-card
-                :img-src="require(`~/assets/img/${variants[3].imageShowcase + '.png'}`)"
+                :img-src="require(`~/assets/img/${variants[3].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[3].showcaseAlt"
                 img-top
                 tag="article"
@@ -452,7 +452,7 @@ export default {
 <style lang="scss" scoped>
 #homePage {
   top: 0;
-  background: url("~assets/img/home-page-bg.png") no-repeat center center fixed;
+  background: url("~assets/img/home-page-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

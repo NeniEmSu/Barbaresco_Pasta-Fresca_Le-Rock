@@ -117,7 +117,7 @@ export default {
 
 <style lang="scss" scoped>
 #barbaresco {
-  background: url("~assets/img/textureBeton.png") no-repeat center center fixed;
+  background: url("~assets/img/textureBeton.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

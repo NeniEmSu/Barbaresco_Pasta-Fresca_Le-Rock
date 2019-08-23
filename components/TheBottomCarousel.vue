@@ -41,7 +41,7 @@
 
       <b-carousel-slide
         class="img-fluid w-100 d-block"
-        img-src="~/assets/img/pizzaBaner.png"
+        img-src="~/assets/img/pizzaBaner.jpg"
       >
         <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle1') }}</h2>
         <p class="text-left">
@@ -51,7 +51,7 @@
 
       <b-carousel-slide
         class="img-fluid w-100 d-block"
-        img-src="~/assets/img/pizzaBaner.png"
+        img-src="~/assets/img/pizzaBaner.jpg"
       >
         <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle2') }}</h2>
         <p class="text-left">
@@ -61,7 +61,7 @@
 
       <b-carousel-slide
         class="img-fluid w-100 d-block"
-        img-src="~/assets/img/pizzaBaner.png"
+        img-src="~/assets/img/pizzaBaner.jpg"
       >
         <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle3') }}</h2>
         <p class="text-left">

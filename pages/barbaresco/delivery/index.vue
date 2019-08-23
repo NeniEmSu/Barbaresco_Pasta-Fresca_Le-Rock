@@ -22,7 +22,7 @@
     <div class="row">
 
       <img
-        src="~/assets/img/barbarescoDelivery.png"
+        src="~/assets/img/barbarescoDelivery.jpg"
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco Delivery"
       >
@@ -77,7 +77,7 @@ export default {
 
 <style lang="scss" scoped>
 .image-container {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   object-fit: cover;
   object-position: bottom center;
 }
