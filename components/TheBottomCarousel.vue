@@ -7,9 +7,9 @@
     "promotionDescription": "розрахунок лише готівкою!"
   },
   "en": {
-   "promotionTitle1": "Free shipping from 301 UAH",
-"promotionTitle2": "Free shipping from 500 UAH",
-"promotionTitle3": "Free shipping from 1000 UAH",
+   "promotionTitle1": "Free delivery from 301 UAH",
+"promotionTitle2": "Free delivery from 500 UAH",
+"promotionTitle3": "Free delivery from 1000 UAH",
    "promotionDescription": "cash only!"
   },
   "ru": {

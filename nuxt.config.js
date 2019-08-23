@@ -33,7 +33,7 @@ export default {
     short_name: 'Barbaresco',
     description: 'Top restaurants in ternopil in one place.',
     theme_color: '#000000',
-    background_color: '#000000',
+    background_color: '#0A0A0A',
     display: 'standalone',
     start_url: '/',
     dir: 'auto',
@@ -93,7 +93,7 @@ export default {
   },
 
   loading: {
-    color: '#fff'
+    color: '#E0A671'
   },
 
   css: ['~/assets/scss/config.scss', '~/assets/fonts/fonts.css'],

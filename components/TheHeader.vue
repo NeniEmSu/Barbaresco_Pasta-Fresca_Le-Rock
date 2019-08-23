@@ -310,7 +310,10 @@
                   >0,00</strong>
                 </div>
                 <div class="col-8 mx-auto text-right">
-                  <button class="order">{{$t('cart.order')}}</button>
+                  <b-button
+                    :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
+                    class="order"
+                  >{{$t('cart.order')}}</b-button>
                 </div>
               </div>
             </div>

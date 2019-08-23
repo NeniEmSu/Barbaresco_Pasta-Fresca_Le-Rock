@@ -2,16 +2,19 @@
 {
   "uk": {
     "title": "Меню",
+    "tooltip": "Передзвонимо за 1 хв.",
     "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас"
 
   },
   "en": {
    "title": "Menu",
+   "tooltip": "Call back in 1 minute",
    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
 
   },
   "ru": {
     "title": "Меню",
+    "tooltip": "Перезвоним за 1 мин.",
     "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас"
   }
 }
@@ -26,6 +29,24 @@
       v-on:changedView="updateView($event)"
       :currentProductsDisplayed="currentProductsDisplayed"
     />
+
+    <b-img-lazy
+      class="feedBack d-none d-md-block"
+      id="feedBack"
+      src="~/assets/img/feedBack.png"
+      alt="feedback Icon"
+    >
+
+    </b-img-lazy>
+    <b-tooltip
+      target="feedBack"
+      placement="topleft"
+      variant="light"
+    >
+      <strong>
+        <h6> {{$t('tooltip')}}</h6>
+      </strong>
+    </b-tooltip>
 
     <vue-page-transition name="fade">
 
@@ -139,5 +160,16 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
+}
+
+.feedBack {
+  border: none;
+  border-radius: 50%;
+  background: none;
+  position: absolute;
+  bottom: 23.5%;
+  right: 50px;
+  cursor: pointer;
 }
 </style>
