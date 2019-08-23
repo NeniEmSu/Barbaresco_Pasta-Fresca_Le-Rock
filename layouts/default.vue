@@ -103,7 +103,7 @@ body {
       text-shadow: 1px 1px 2px #427388;
 
       background: $lightColor;
-      color: #000000;
+      color: $darkColor;
     }
   }
 }
@@ -146,6 +146,10 @@ figcaption {
 
 figure {
   margin: 0;
+}
+
+hr {
+  border: 1px solid $darkColor;
 }
 
 .fade-enter-active,

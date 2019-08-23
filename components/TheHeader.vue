@@ -288,14 +288,13 @@
                   </div>
                 </div>
               </div>
-              <hr style="border: 1px solid black;">
+              <hr>
             </div>
 
             <div>
               <hr
                 v-if="!cartSize"
                 class="mt-5"
-                style="border: 1px solid black;"
               >
               <div class="row">
                 <div class="col-4">
