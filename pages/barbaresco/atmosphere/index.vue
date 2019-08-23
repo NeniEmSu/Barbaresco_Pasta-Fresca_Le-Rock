@@ -47,7 +47,7 @@ export default {
   },
   head () {
     return {
-      title: "Barbaresco - Atmosphere".slice(
+      title: ("Barbaresco - " + this.$t('title')).slice(
         0,
         60
       ),
@@ -55,7 +55,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Barbaresco - Atmosphere.".slice(
+          content: ("Barbaresco -" + this.$t('description')).slice(
             0,
             320
           )

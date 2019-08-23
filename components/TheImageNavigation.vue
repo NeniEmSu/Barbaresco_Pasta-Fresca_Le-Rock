@@ -255,6 +255,7 @@ figure.saddleEffect:hover h2,
 
 figure.saddleEffect:hover figcaption::before,
 .nuxt-link-exact-active figure.saddleEffect figcaption::before {
+  background: linear-gradient(180deg, #000000 0%, #e0a671 100%);
   opacity: 0.55;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -269,6 +270,10 @@ section {
     margin-top: 99px;
   }
 
+  .grid figure h2 {
+    opacity: 1 !important;
+  }
+
   .grid figure {
     max-height: 66px;
   }
@@ -280,12 +285,13 @@ section {
     width: 100%;
     height: 100%;
 
-    background: transparent;
-    opacity: 0;
+    background: linear-gradient(180deg, $blackColor 0%, $blackColor 100%);
+
+    opacity: 0.35;
     content: "";
 
-    -webkit-transform: translate3d(0, 50%, 0);
-    transform: translate3d(0, 50%, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   figure.saddleEffect h2 {
@@ -333,7 +339,7 @@ section {
     white-space: nowrap;
     font-size: 0;
     background: #000000;
-    opacity: 0.25;
+    opacity: 0;
   }
 }
 

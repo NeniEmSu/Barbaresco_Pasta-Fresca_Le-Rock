@@ -1,3 +1,22 @@
+<i18n>
+{
+  "uk": {
+    "title": "Меню",
+    "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас"
+
+  },
+  "en": {
+   "title": "Menu",
+   "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
+
+  },
+  "ru": {
+    "title": "Меню",
+    "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас"
+  }
+}
+</i18n>
+
 <template>
   <div id="barbaresco">
 
@@ -81,7 +100,7 @@ export default {
   },
   head () {
     return {
-      title: "Barbaresco".slice(
+      title: ("Barbaresco - " + this.$t('title')).slice(
         0,
         60
       ),
@@ -89,7 +108,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Barbaresco.".slice(
+          content: ("Barbaresco -" + this.$t('description')).slice(
             0,
             320
           )

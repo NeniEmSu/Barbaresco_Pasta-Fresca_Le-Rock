@@ -6,7 +6,6 @@ export default {
     title: 'Barbaresco',
     htmlAttrs: {
       class: 'has-navbar-fixed-top',
-      lang: 'uk',
       amp: true
     },
     meta: [{
@@ -147,7 +146,7 @@ export default {
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
     ['nuxt-i18n', {
-      seo: false,
+      seo: true,
       baseUrl: 'https://barbaresco.netlify.com',
       locales: [{
           iso: 'uk-Uk',
@@ -187,10 +186,8 @@ export default {
   ],
 
   i18n: {
-    locales: ['uk', 'en', 'ru'],
     defaultLocale: 'uk',
     vueI18nLoader: true,
-    seo: false,
     lazy: false,
     langDir: null,
     strategy: 'prefix_except_default',

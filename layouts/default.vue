@@ -33,7 +33,7 @@
         <b-dropdown-item
           v-if="$i18n.locale !== 'ru'"
           :to="switchLocalePath('ru')"
-        >русский</b-dropdown-item>
+        >Русский</b-dropdown-item>
 
       </b-dropdown>
 
@@ -47,6 +47,9 @@
 
 <script>
 export default {
+  head () {
+    return this.$nuxtI18nSeo()
+  }
 
 }
 </script>

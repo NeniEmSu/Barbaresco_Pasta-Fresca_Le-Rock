@@ -230,10 +230,10 @@
             @click.stop="hideCart"
           >&times;</div>
 
-          <p v-if="!cartSize">{{$t('cart.emptyCart')}}</p>
+          <font v-if="!cartSize">{{$t('cart.emptyCart')}}</font>
 
           <div>
-            <h3>{{$t('cart.heading')}}</h3>
+            <h3 v-if="cartSize">{{$t('cart.heading')}}</h3>
             <div
               class="cart-item"
               v-for="n in cartSize"
@@ -292,7 +292,11 @@
             </div>
 
             <div>
-              <hr>
+              <hr
+                v-if="!cartSize"
+                class="mt-5"
+                style="border: 1px solid black;"
+              >
               <div class="row">
                 <div class="col-4">
                   <small class="col-12">{{$t('cart.total')}}:</small>
@@ -983,7 +987,7 @@ header {
     transition: all 0.3s ease-in-out;
     transform: translateX(100%);
 
-    padding: 15px 15px;
+    padding: 15px 15px 40px 15px;
     background: $lightColor;
 
     overflow-y: scroll;
