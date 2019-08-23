@@ -91,7 +91,7 @@
         </div>
 
       </div>
-      <hr style="border: 1px solid #000000;">
+      <hr style="border: 1px solid $blackColor;">
 
       <div class="row">
         <div class="col-6">
@@ -362,8 +362,8 @@ h3 {
 }
 
 .order {
-  background: #000000;
-  border: 1px solid #000000;
+  background: $blackColor;
+  border: 1px solid $blackColor;
   box-sizing: border-box;
 
   font-family: $mainFont;
@@ -410,7 +410,7 @@ h3 {
   }
 
   p {
-    border: 1px solid #000000;
+    border: 1px solid $blackColor;
     box-sizing: border-box;
     padding: 0 5px;
   }
@@ -431,7 +431,7 @@ h3 {
 input.form-control,
 textarea.form-control {
   background: transparent;
-  border: 1px solid #000000;
+  border: 1px solid $blackColor;
   box-sizing: border-box;
   border-radius: 0;
 
@@ -441,7 +441,7 @@ textarea.form-control {
   font-size: 18px;
   line-height: 21px;
 
-  color: #000000;
+  color: $blackColor;
   width: 100%;
 }
 </style>
