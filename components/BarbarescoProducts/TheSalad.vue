@@ -9,8 +9,8 @@
       <div class="row">
         <div
           class="card"
-          v-for="n in 10"
-          :key="n"
+          v-for="salad in salads.salad"
+          :key="salad.id"
         >
 
           <img
@@ -19,13 +19,12 @@
             alt="Card image cap"
           >
           <div class="card-body">
-            <h5 class="card-title mx-auto text-center">салат</h5>
-            <p class="card-text text-left">Булка, курка, помідор, мікс салат,
-              соус, гриль &nbsp; &nbsp; &nbsp; &nbsp; <span class="card-text">250г</span></p>
+            <h5 class="card-title mx-auto text-center">{{salad.name}}</h5>
+            <p class="card-text text-left">{{salad.summary}} <span class="card-text">{{salad.quantity}}</span></p>
 
             <div class="row">
               <div class="col-4 pr-0 my-auto">
-                <p class="card-text cost my-auto">65,00</p>
+                <p class="card-text cost my-auto">{{salad.price}}</p>
               </div>
               <div class="col-8  my-auto">
                 <a
@@ -46,11 +45,12 @@
 </template>
 
 <script>
+import salads from "~/api/barbaresco.json"
 export default {
   name: 'TheSalads',
   data () {
     return {
-
+      salads
     }
   },
 }
