@@ -9,6 +9,36 @@
       "total": "Сума",
       "order": "Замовити",
       "clear": "Очистити все"
+      },
+    "orderProcess": {
+      "heading": "Як відбувається замовлення",
+      "title1": "Оформлення замовлення",
+      "desc1": "Ви можете замовити різні страви з доставкою по Тернополі щодня з 10-00 до 23-00 через наш сайт або за телефоном.",
+      "desc1-b": " Великі замовлення оформляте завчасу, будемо щиро вдячні.",
+      "title2": "Оплата замовлення",
+      "desc2a": "Ваше замовлення можна оплатити ",
+      "desc2-b1": "картою на сайті ",
+       "desc2b": "або ",
+      "desc2-b2": "готівкою - кур’єру ",
+      "desc2c": "при отриманні.",
+      "title3": "Приготування страв",
+      "desc3": "Всі страви починають готуватися лише після вашого замовлення.",
+      "title4": "Доставка за адресою",
+      "desc4a": "Ми стараємося доставити Ваше замовлення",
+      "desc4-b": "протягом 60 хв. після його оформлення.",
+      "desc4b": "Час доставки також залежить від Вашого району і часу дня, пробки на дорозі ніхто не відміняв :)"
+    },
+    "form":{
+      "name": "Ваше ім’я",
+      "phone": "Ваш телефон",
+      "city": "Місто/село",
+      "street": "Вулиця",
+      "house": "Буд",
+      "code": "Код",
+      "apartment": "Кв./офіс",
+      "comment": "Коментар до замовлення",
+      "pay-carrier": "Оплата кур’єру готівкою",
+      "pay-card": "Оплата на карту"
       }
 
   },
@@ -21,6 +51,36 @@
       "total": "Sum",
       "order": "Order",
       "clear": "Clear everything"
+      },
+    "orderProcess": {
+      "heading": "How the order is made",
+      "title1": "Checkout",
+      "desc1": "You can order different dishes with delivery to Ternopil every day from 10-00 to 23-00 via our website or by phone.",
+      "desc1-b": " Large orders will be issued in advance, we will be truly grateful.",
+      "title2": "Payment for the order",
+      "desc2a": "Your order can be paid with a ",
+      "desc2-b1": "card on the site, ",
+       "desc2b": "or ",
+      "desc2-b2": "in cash - by courier ",
+      "desc2c": "upon receipt",
+      "title3": "Cooking",
+      "desc3": "All dishes start cooking only after your order.",
+      "title4": "Delivery to Address",
+      "desc4a": "We try to deliver your order",
+      "desc4-b": "60 minutes. after its registration. ",
+      "desc4b": "Delivery time also depends on your area and time of day, no traffic jams were canceled :)"
+    },
+  "form":{
+      "name": "Your name",
+      "phone": "Your phone",
+      "city": "City/Village",
+      "street": "Street",
+      "house": "Building",
+      "code": "Code",
+      "apartment": "Apt./Office",
+      "comment": "Order comment",
+      "pay-carrier": "Payment by courier in cash",
+      "pay-card": "Payment on card"
       }
 
   },
@@ -33,15 +93,45 @@
       "total": "Сумма",
       "order": "Заказать",
       "clear": "Очистить все"
+      },
+       "orderProcess": {
+      "heading": "Как происходит заказ",
+      "title1": "Оформления заказа",
+      "desc1": "Вы можете заказать различные блюда с доставкой по Тернополе ежедневно с 10-00 до 23-00 через наш сайт или по телефону.",
+      "desc1-b": " Крупные заказы оформляют заранее, будем благодарны.",
+      "title2": "Оплата заказа",
+      "desc2a": "Ваш заказ можно оплатить ",
+      "desc2-b1": "картой на сайте ",
+       "desc2b": "или ",
+      "desc2-b2": "наличными - курьеру ",
+      "desc2c": "при получении.",
+      "title3": "Приготовление блюд",
+      "desc3": "Все блюда начинают готовиться только после вашего заказа.",
+      "title4": "Доставка по адресу",
+      "desc4a": "Мы стараемся доставить Ваш заказ",
+      "desc4-b": "в течение 60 мин. после его оформления.",
+      "desc4b": "Время доставки также зависит от Вашего района и времени дня, пробки на дороге никто не отменял :)"
+    },
+    "form":{
+      "name": "Ваше имя",
+      "phone": "Ваш телефон",
+      "city": "Город/село",
+      "street": "Улица",
+      "house": "Буд",
+      "code": "Код",
+      "apartment": "Кв./Офис",
+      "comment": "Комментарий к заказу",
+      "pay-carrier": "Оплата курьеру наличными",
+      "pay-card": "Оплата на карту"
       }
   }
 }
 </i18n>
 
 <template>
-  <div class="cart">
+  <div id="cart">
     <div class="container">
-      <h1 class="text-center mb-4">Як відбувається замовлення</h1>
+      <h1 class="text-center mb-4">{{$t('orderProcess.heading')}}</h1>
 
       <div class="row">
 
@@ -51,20 +141,20 @@
             alt="Order Online"
           >
 
-          <h3 class="row mt-3 text-center mx-auto"> <span class="number col-3 p-0 text-right">1</span>
-            <span class="text col-9 p-0 text-left my-auto"> Оформлення <br> замовлення </span></h3>
+          <h3 class="row mt-3 text-center mx-auto px-3"> <span class="number col-3 p-0 text-right">1</span>
+            <span class="text col-9 p-0 text-left my-auto"> {{$t('orderProcess.title1')}} </span></h3>
 
-          <p>Ви можете замовити різні страви з доставкою по Тернополі щодня з 10-00 до 23-00 через наш сайт або за телефоном. <b>
-              Великі замовлення оформляте завчасу, будемо щиро вдячні.</b></p>
+          <p>{{$t('orderProcess.desc1')}} <b>
+              {{$t('orderProcess.desc1-b')}}</b></p>
         </div>
         <div class="col-3 mx-auto text-center"><img
             src="~/assets/img/orderPayment.png"
             alt="Order Payment"
           >
-          <h3 class="row mt-3 text-center mx-auto"> <span class="number col-3 p-0 text-right">2</span>
-            <span class="text col-9 p-0 text-left my-auto"> Оплата <br> замовлення </span></h3>
+          <h3 class="row mt-3 text-center mx-auto px-3"> <span class="number col-3 p-0 text-right">2</span>
+            <span class="text col-9 p-0 text-left my-auto"> {{$t('orderProcess.title2')}} </span></h3>
 
-          <p>Ваше замовлення можна оплатити <b>картою на сайті,</b> або <b>готівкою - кур’єру</b> при отриманні.</p>
+          <p>{{$t('orderProcess.desc2a')}} <b>{{$t('orderProcess.desc2-b1')}}</b>{{$t('orderProcess.desc2b')}}<b>{{$t('orderProcess.desc2-b2')}}</b> {{$t('orderProcess.desc2c')}} </p>
 
         </div>
         <div class="col-3 mx-auto text-center"><img
@@ -72,21 +162,21 @@
             alt="Order Preparation"
           >
 
-          <h3 class="row mt-3 text-center mx-auto"> <span class="number col-3 p-0 text-right">3</span>
-            <span class="text col-9 p-0 text-left my-auto"> Приготування <br> страв </span></h3>
+          <h3 class="row mt-3 text-center mx-auto px-3"> <span class="number col-3 p-0 text-right">3</span>
+            <span class="text col-9 p-0 text-left my-auto"> {{$t('orderProcess.title3')}} </span></h3>
 
-          <p>Всі страви починають готуватися лише після вашого замовлення.</p>
+          <p>{{$t('orderProcess.desc3')}}</p>
 
         </div>
         <div class="col-3 mx-auto text-center"><img
             src="~/assets/img/orderDelivery.png"
             alt="Order Delivery"
           >
-          <h3 class="row mt-3 text-center mx-auto"> <span class="number col-3 p-0 text-right">4</span>
-            <span class="text col-9 p-0 text-left my-auto"> Доставка <br> за адресою </span></h3>
+          <h3 class="row mt-3 text-center mx-auto px-3"> <span class="number col-3 p-0 text-right">4</span>
+            <span class="text col-9 p-0 text-left my-auto"> {{$t('orderProcess.title4')}} </span></h3>
 
-          <p>Ми стараємося доставити Ваше замовлення <b>протягом 60 хв. після його оформлення.</b>
-            Час доставки також залежить від Вашого району і часу дня, пробки на дорозі ніхто не відміняв :)</p>
+          <p>{{$t('orderProcess.desc4a')}} <b>{{$t('orderProcess.desc4-b')}}</b>
+            {{$t('orderProcess.desc4b')}}</p>
 
         </div>
 
@@ -98,7 +188,7 @@
           <form class="col-12">
             <div class="row">
               <div class="col-6">
-                <label for="name">Ваше ім’я
+                <label for="name">{{$t('form.name')}}
                   <input
                     class="form-control"
                     type="text"
@@ -107,7 +197,7 @@
                   >
                 </label></div>
               <div class="col-6">
-                <label for="phone">Ваш телефон
+                <label for="phone">{{$t('form.phone')}}
                   <input
                     class="form-control"
                     type="text"
@@ -118,7 +208,7 @@
 
             <div class="row">
               <div class="col-6">
-                <label for="city">Місто/село
+                <label for="city">{{$t('form.city')}}
                   <input
                     class="form-control"
                     type="text"
@@ -126,7 +216,7 @@
                     placeholder="..."
                   ></label> </div>
               <div class="col-6">
-                <label for="street">Вулиця
+                <label for="street">{{$t('form.street')}}
                   <input
                     class="form-control"
                     type="text"
@@ -137,20 +227,20 @@
 
             <div class="row">
               <div class="col-4">
-                <label for="house">Буд
+                <label for="house">{{$t('form.house')}}
                   <input
                     class="form-control"
                     type="text"
                     name="house"
                     placeholder="..."
                   > </label></div>
-              <div class="col-4"><label for="code">Код <input
+              <div class="col-4"><label for="code">{{$t('form.code')}} <input
                     class="form-control"
                     type="text"
                     name="code"
                     placeholder="..."
                   > </label></div>
-              <div class="col-4"><label for="appartment">Кв./офіс <input
+              <div class="col-4"><label for="appartment">{{$t('form.apartment')}} <input
                     class="form-control"
                     type="text"
                     name="appartment"
@@ -158,7 +248,7 @@
                   > </label></div>
             </div>
 
-            <label for="comment">Коментар до замовлення</label>
+            <label for="comment">{{$t('form.comment')}}</label>
             <textarea
               class="form-control"
               name="comment"
@@ -178,7 +268,7 @@
                   class="form-check-label"
                   for="exampleRadios2"
                 >
-                  Оплата кур’єру готівкою
+                  {{$t('form.pay-carrier')}}
                 </label>
               </div>
               <div class="form-check text-center mx-auto">
@@ -193,7 +283,7 @@
                   class="form-check-label"
                   for="exampleRadios2"
                 >
-                  Оплата на карту
+                  {{$t('form.pay-card')}}
                 </label>
               </div>
             </div>
@@ -202,66 +292,67 @@
         </div>
         <div class="col-6">
           <div>
+            <h3 v-if="cartSize">{{$t('cart.heading')}}</h3>
+            <div class="cart-items">
+              <div
+                class="cart-item"
+                v-for="(n, index) in cartSize"
+                :key="n"
+              >
+                <div class="row my-auto">
+                  <p class="col-1 my-auto">{{index+=1}}</p>
+                  <img
+                    style="border-radius: 50%;   "
+                    src="~/assets/img/barbarescoBurger.png"
+                    alt=""
+                    class="col-2 m-auto"
+                  >
+                  <div class="col-5 p-0">
+                    <div class="col-12 p-0 m-auto">
+                      <div class="row m-auto">
+                        <h6
+                          id="cart-item-title"
+                          class="col-12 m-auto text-center py-2 crop"
+                        >Бургер з куркою</h6>
+                        <div class="toggle-quantity col-12 m-auto ">
+                          <button @click="removeFromCart(product.id)">
+                            &minus;
+                          </button>
+                          <p>1</p>
+                          <button @click="addToCart(product.id)">
+                            &plus;
+                          </button>
 
-            <div
-              class="cart-item"
-              v-for="(n, index) in cartSize"
-              :key="n"
-            >
-              <div class="row my-auto">
-                <p class="col-1 my-auto">{{index+=1}}</p>
-                <img
-                  style="border-radius: 50%;   "
-                  src="~/assets/img/barbarescoBurger.png"
-                  alt=""
-                  class="col-2 m-auto"
-                >
-                <div class="col-5 p-0">
-                  <div class="col-12 p-0 m-auto">
-                    <div class="row m-auto">
-                      <h6
-                        id="cart-item-title"
-                        class="col-12 m-auto text-center py-2 crop"
-                      >Бургер з куркою</h6>
-                      <div class="toggle-quantity col-12 m-auto ">
-                        <button @click="removeFromCart(product.id)">
-                          &minus;
-                        </button>
-                        <p>1</p>
-                        <button @click="addToCart(product.id)">
-                          &plus;
-                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 p-0">
+                    <div class="col-12 m-auto p-0">
+                      <div class="row m-auto">
 
+                        <div class="remove-from-chart col-12 m-auto text-right">
+                          <span
+                            @click="deleteFromCart(product.id)"
+                            class="close text-right"
+                          >&times;
+                          </span>
+                        </div>
+
+                        <div class="cost col-12 m-auto ">
+                          <p
+                            id="cart-item-price"
+                            class="cart-item-price text-right py-2 card-text"
+                          >{{50 | currency}}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-4 p-0">
-                  <div class="col-12 m-auto p-0">
-                    <div class="row m-auto">
-
-                      <div class="remove-from-chart col-12 m-auto text-right">
-                        <span
-                          @click="deleteFromCart(product.id)"
-                          class="close text-right"
-                        >&times;
-                        </span>
-                      </div>
-
-                      <div class="cost col-12 m-auto ">
-                        <p
-                          id="cart-item-price"
-                          class="cart-item-price text-right py-2 card-text"
-                        >{{50 | currency}}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <hr>
               </div>
-              <hr>
             </div>
-
-            <div>
+            <div class="submition">
               <hr
                 v-if="!cartSize"
                 class="mt-5"
@@ -328,7 +419,7 @@ export default {
 
     return {
       currentProductsDisplayed: 1,
-      cartSize: 2
+      cartSize: 10
     }
   },
 
@@ -343,6 +434,10 @@ export default {
 
 
 <style lang="scss" scoped>
+#cart {
+  margin-bottom: 110px;
+}
+
 h3 {
   font-family: $mainFont;
   font-style: normal;
@@ -373,6 +468,13 @@ h3 {
 
   color: #ffffff;
   padding: 14px 48px;
+}
+
+.cart-items {
+  max-height: 285px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0 10px;
 }
 
 .toggle-quantity {
@@ -427,10 +529,20 @@ h3 {
   }
 }
 
+label {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: $blackColor;
+}
+
 input.form-control,
 textarea.form-control {
   background: transparent;
-  border: 1px solid $blackColor;
+  border: 2px solid $blackColor;
   box-sizing: border-box;
   border-radius: 0;
 
@@ -442,5 +554,11 @@ textarea.form-control {
 
   color: $blackColor;
   width: 100%;
+
+  margin: 5px auto 10px auto;
+}
+
+textarea.form-control {
+  height: 100px;
 }
 </style>

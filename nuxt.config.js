@@ -96,7 +96,7 @@ export default {
     color: '#E0A671'
   },
 
-  css: ['~/assets/scss/config.scss', '~/assets/fonts/fonts.css'],
+  css: ['~/assets/css/normalize.css', '~/assets/scss/config.scss', '~/assets/fonts/fonts.css'],
 
   plugins: [
     '~/plugins/vuelidate.js',
