@@ -9,18 +9,28 @@
       <div class="row">
         <div
           class="card"
-          v-for="pizza in pizzas.pizza"
+          v-for="pizza in pizzas.pizzas"
           :key="pizza.id"
         >
 
           <img
             class="card-img-top mx-auto"
-            src="~/assets/img/barbarescoPizza.png"
-            alt="Card image cap"
+            :src="require(`~/assets/img/${pizza.image + '.png'}`)"
+            :alt="pizza.name"
           >
           <div class="card-body">
-            <h5 class="card-title mx-auto text-center">{{pizza.name}}</h5>
-            <p class="card-text text-left">{{pizza.summary}} &nbsp; &nbsp; &nbsp; &nbsp; <span class="card-text">{{pizza.quantity}}</span></p>
+            <h5
+              class="card-title mx-auto text-center crop"
+              style="cursor:context-menu"
+              v-b-tooltip.hover
+              :title="pizza.name"
+            >{{pizza.name}}</h5>
+            <p
+              class="card-text text-left"
+              style="cursor: context-menu;"
+              v-b-tooltip.hover
+              :title="pizza.summary"
+            >{{(pizza.summary).slice(0, 42)}}... <span class="card-text quantity">{{pizza.quantity}}</span></p>
 
             <div class="row">
               <div class="col-4 pr-0 my-auto">
@@ -65,7 +75,7 @@ export default {
   max-width: 200px;
   min-width: 200px;
   width: 100%;
-  height: 262px;
+  height: auto;
   padding: 0;
   margin: 20px auto;
 
@@ -122,6 +132,17 @@ export default {
     font-size: 20px;
     line-height: 23px;
   }
+}
+
+.quantity {
+  float: right;
+  margin-right: 15px;
+}
+
+.crop {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .btn {

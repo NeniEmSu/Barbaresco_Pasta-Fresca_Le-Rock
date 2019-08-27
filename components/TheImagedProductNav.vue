@@ -315,7 +315,7 @@ section {
 }
 
 .navSeven {
-  background-image: url("~assets/img/barbarescoFirstCorse.png");
+  background-image: url("~assets/img/barbarescoFirstCourse.png");
 }
 
 .navEight {

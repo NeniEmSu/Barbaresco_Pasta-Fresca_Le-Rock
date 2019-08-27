@@ -369,7 +369,7 @@
 
               <h5>{{$t('reservation.dateTitle')}}</h5>
               <div>
-                <no-ssr>
+                <client-only>
                   <datepicker
                     v-model="date"
                     :value="date"
@@ -377,7 +377,7 @@
                     :inline="true"
                     :disabled-dates="disabledDates"
                   ></datepicker>
-                </no-ssr>
+                </client-only>
 
               </div>
 

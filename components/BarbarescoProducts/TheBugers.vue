@@ -9,18 +9,28 @@
       <div class="row">
         <div
           class="card"
-          v-for="burger in burgers.burger"
+          v-for="burger in burgers.burgers"
           :key="burger.id"
         >
 
           <img
             class="card-img-top mx-auto"
-            src="~/assets/img/barbarescoChickenBuger.png"
-            alt="Card image cap"
+            :src="require(`~/assets/img/${burger.image + '.png'}`)"
+            :alt="burger.name"
           >
           <div class="card-body">
-            <h5 class="card-title mx-auto text-center">{{burger.name}}</h5>
-            <p class="card-text text-left">{{burger.summary}} &nbsp; &nbsp; &nbsp; &nbsp; <span class="card-text">{{burger.quantity}}</span></p>
+            <h5
+              class="card-title mx-auto text-center crop"
+              style="cursor:context-menu"
+              v-b-tooltip.hover
+              :title="burger.name"
+            >{{burger.name}}</h5>
+            <p
+              class="card-text text-left"
+              style="cursor: context-menu;"
+              v-b-tooltip.hover
+              :title="burger.summary"
+            >{{(burger.summary).slice(0, 39)}}... <span class="card-text quantity">{{burger.quantity}}</span></p>
 
             <div class="row">
               <div class="col-4 pr-0 my-auto">
@@ -57,6 +67,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.crop {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .content {
   margin: 20px auto;
 }
@@ -65,7 +81,7 @@ export default {
   max-width: 200px;
   min-width: 200px;
   width: 100%;
-  height: 262px;
+  height: auto;
   padding: 0;
   margin: 20px auto;
 
@@ -122,6 +138,11 @@ export default {
     font-size: 20px;
     line-height: 23px;
   }
+}
+
+.quantity {
+  float: right;
+  margin-right: 15px;
 }
 
 .btn {

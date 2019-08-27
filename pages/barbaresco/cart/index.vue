@@ -419,7 +419,7 @@ export default {
 
     return {
       currentProductsDisplayed: 1,
-      cartSize: 10
+      cartSize: 2
     }
   },
 
@@ -472,7 +472,7 @@ h3 {
 
 .cart-items {
   max-height: 285px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   padding: 0 10px;
 }

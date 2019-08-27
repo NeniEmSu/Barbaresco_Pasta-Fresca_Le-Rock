@@ -107,11 +107,11 @@ export default {
       ssr: true
     }, {
       src: '~/plugins/Datepicker',
-      ssr: false
+      mode: 'client'
     },
     {
       src: '~/plugins/v-owl-carousel',
-      ssr: false
+      mode: 'client'
     },
     {
       src: '~/plugins/components',
@@ -120,11 +120,11 @@ export default {
 
     {
       src: '~/plugins/vuex-persist',
-      ssr: false
+      mode: 'client'
     },
     {
       src: '~/plugins/vue-scroll-reveal',
-      ssr: false
+      mode: 'client'
     },
     {
       src: "~/plugins/google-maps",

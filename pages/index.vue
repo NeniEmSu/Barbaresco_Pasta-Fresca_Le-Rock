@@ -68,7 +68,7 @@
     <div class="mx-auto ">
       <h1 class="homePageHeading">{{ $t('home.title') }}</h1>
 
-      <no-ssr>
+      <client-only>
 
         <div>
 
@@ -317,7 +317,7 @@
 
           </carousel>
         </div>
-      </no-ssr>
+      </client-only>
 
     </div>
 
