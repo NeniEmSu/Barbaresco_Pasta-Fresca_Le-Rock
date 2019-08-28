@@ -330,5 +330,47 @@
       "image": "barbarescoFirstCourse",
       "summary": "Сирний суп, на рибному бульйоні з креветками"
     }
+  ],
+  "mainMeals": [
+    {
+      "name": "КУРКА СТІР ФРАЙ",
+      "id": 1,
+      "price": "65,00",
+      "quantity": "300г",
+      "image": "barbarescoFirstCourse",
+      "summary": "Філе курки, цукіні, морква, перець болгарський, броколі, кунжут, зелена цибуля, соус териякі"
+    },
+    {
+      "name": "ПЕЧЕНА БУЖЕНИНА З РОКФОРНИМ ПЮРЕ",
+      "id": 2,
+      "price": "100,00",
+      "quantity": "350г",
+      "image": "barbarescoFirstCourse",
+      "summary": "Печена свинна шия подається з картопляно-рокфорним пюре"
+    },
+    {
+      "name": "Лосось теріякі",
+      "id": 3,
+      "price": "120,00",
+      "quantity": "250г",
+      "image": "barbarescoFirstCourse",
+      "summary": "Філе лосося, квасоля спаржева, морква, перець болгарський, кабачок, печериці, соус теріякі"
+    },
+    {
+      "name": "телятина ПІД СОУСОМ ДЕМІГЛАС",
+      "id": 4,
+      "price": "100,00",
+      "quantity": "400г",
+      "image": "barbarescoFirstCourse",
+      "summary": "Подається з рисом із овочами-гриль"
+    },
+    {
+      "name": "ХРУСТКА КУРКА З ПЕЧЕНОЮ КАРТОПЛЕЮ",
+      "id": 5,
+      "price": "65,00",
+      "quantity": "300г",
+      "image": "barbarescoFirstCourse",
+      "summary": ""
+    }
   ]
 }

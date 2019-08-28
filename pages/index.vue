@@ -72,10 +72,6 @@
 
         <div>
 
-          <style>
-
-          </style>
-
           <carousel
             :nav="false"
             :dots="false"

@@ -70,6 +70,8 @@
 
       <TheAlcohol v-if="currentProductsDisplayed === 10" />
 
+      <TheMainMeal v-if="currentProductsDisplayed === 11" />
+
     </vue-page-transition>
 
     <TheBottomCarousel />
@@ -94,6 +96,7 @@ import TheSalad from '~/components/BarbarescoProducts/TheSalad'
 import TheFirstCourse from '~/components/BarbarescoProducts/TheFirstCourse'
 import TheHits from '~/components/BarbarescoProducts/TheHits'
 import TheAlcohol from '~/components/BarbarescoProducts/TheAlcohol'
+import TheMainMeal from '~/components/BarbarescoProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/TheBottomCarousel'
 
 export default {
@@ -113,6 +116,7 @@ export default {
     TheHits,
     TheDrinks,
     TheAlcohol,
+    TheMainMeal,
     TheBottomCarousel
   },
 
@@ -141,7 +145,8 @@ export default {
   data () {
 
     return {
-      currentProductsDisplayed: 1,
+      currentProductsDisplayed: //Math.floor((Math.random() * 10) + 1)
+        1
     }
   },
 
@@ -149,7 +154,9 @@ export default {
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView
     }
-  }
+
+  },
+
 }
 </script>
 

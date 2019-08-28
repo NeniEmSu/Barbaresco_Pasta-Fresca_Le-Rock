@@ -10,7 +10,8 @@
     "firstCourse": "Перші страви",
     "hits": "Хіти",
     "drinks": "Напої",
-    "alcohol":"Алкоголь"
+    "alcohol":"Алкоголь",
+    "mainMeal": "Основні страви"
   },
   "en": {
    "pizza": "Pizzas",
@@ -22,7 +23,8 @@
     "firstCourse": "First Course",
     "hits": "Hits",
     "drinks": "Drinks",
-    "alcohol":"Alcohol"
+    "alcohol":"Alcohol",
+    "mainMeal": "Main dishes"
   },
   "ru": {
     "pizza": "Пицца",
@@ -34,7 +36,8 @@
     "firstCourse": "Первые блюда",
     "hits": "Хиты",
     "drinks": "Напитки",
-    "alcohol":"Алкоголь"
+    "alcohol":"Алкоголь",
+    "mainMeal": "Основні страви"
   }
 }
 </i18n>
@@ -43,6 +46,37 @@
   <div id="imageed-Products-Navigation">
 
     <section class="container text-center">
+
+      <button
+        class="column "
+        @click="Show6"
+        :class="{ active: currentProductsDisplayed === 6}"
+      >
+        <div class="nav-image navSix"></div>
+        <div class="text-center nav-text">{{$t('salads')}}</div>
+
+      </button>
+
+      <button
+        class="column "
+        @click="Show7"
+        :class="{ active: currentProductsDisplayed === 7}"
+      >
+        <div class="nav-image navSeven"></div>
+        <div class="text-center nav-text">{{$t('firstCourse')}}</div>
+
+      </button>
+
+      <button
+        @click.prevent="Show11"
+        class="column "
+        :class="{ active: currentProductsDisplayed === 11}"
+      >
+        <div class="nav-image navSeven"></div>
+        <div class="text-center nav-text">{{$t('mainMeal')}}</div>
+
+      </button>
+
       <button
         class="column text-center "
         @click="Show1"
@@ -60,16 +94,6 @@
       >
         <div class="nav-image navTwo"></div>
         <div class="text-center nav-text">{{$t('burgers')}}</div>
-
-      </button>
-
-      <button
-        class="column "
-        @click="Show3"
-        :class="{ active: currentProductsDisplayed === 3}"
-      >
-        <div class="nav-image navThree"></div>
-        <div class="text-center nav-text">{{$t('sushi')}}</div>
 
       </button>
 
@@ -95,21 +119,11 @@
 
       <button
         class="column "
-        @click="Show6"
-        :class="{ active: currentProductsDisplayed === 6}"
+        @click="Show3"
+        :class="{ active: currentProductsDisplayed === 3}"
       >
-        <div class="nav-image navSix"></div>
-        <div class="text-center nav-text">{{$t('salads')}}</div>
-
-      </button>
-
-      <button
-        class="column "
-        @click="Show7"
-        :class="{ active: currentProductsDisplayed === 7}"
-      >
-        <div class="nav-image navSeven"></div>
-        <div class="text-center nav-text">{{$t('firstCourse')}}</div>
+        <div class="nav-image navThree"></div>
+        <div class="text-center nav-text">{{$t('sushi')}}</div>
 
       </button>
 
@@ -193,6 +207,9 @@ export default {
     },
     Show10 () {
       this.$emit('changedView', 10)
+    },
+    Show11 () {
+      this.$emit('changedView', 11)
     }
   }
 }
@@ -216,7 +233,7 @@ section {
 .column {
   float: left;
   box-sizing: border-box;
-  width: calc(100% / 10);
+  width: calc(100% / 11);
   height: 100%;
   min-height: 150px;
   border: 0;

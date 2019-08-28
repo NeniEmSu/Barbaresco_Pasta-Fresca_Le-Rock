@@ -31,7 +31,7 @@
       fade
       controls
       indicators
-      background="#ababab"
+      background="#000000"
       img-width="1024"
       img-height="250"
       style="text-shadow: 1px 1px 2px #333;"
@@ -51,7 +51,7 @@
 
       <b-carousel-slide
         class="img-fluid w-100 d-block"
-        img-src="~/assets/img/pizzaBaner.jpg"
+        img-src="~/assets/img/pizzaBaner1.jpg"
       >
         <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle2') }}</h2>
         <p class="text-left">
@@ -89,6 +89,7 @@ export default {
     },
     onSlideEnd () {
       this.sliding = false
+
     }
   }
 }
