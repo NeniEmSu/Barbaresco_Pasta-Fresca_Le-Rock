@@ -6,7 +6,7 @@
 
     <div class="content">
 
-      <div class="row">
+      <div class="row d-flex justify-content-around">
         <div
           class="card"
           v-for="burger in burgers.burgers"
@@ -74,16 +74,14 @@ export default {
 }
 
 .content {
-  margin: 20px auto;
+  margin: 20px 0;
 }
 
 .card {
-  max-width: 200px;
-  min-width: 200px;
-  width: 100%;
+  width: calc(100% / 6);
   height: auto;
   padding: 0;
-  margin: 20px auto;
+  margin: 20px 10px;
 
   border: 0;
 
@@ -100,6 +98,27 @@ export default {
     max-height: 150px;
 
     margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: calc(100% / 5);
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .card {
+    width: calc(100% / 4);
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    width: calc(100% / 3);
+    margin: 20px auto;
   }
 }
 

@@ -294,11 +294,11 @@ section {
   position: relative;
   text-align: center;
   width: 100%;
-  min-width: 100px;
-  max-width: 100px;
+  min-width: 90px;
+  max-width: 90px;
   height: 100%;
-  min-height: 100px;
-  max-height: 100px;
+  min-height: 90px;
+  max-height: 90px;
 
   border-radius: 50%;
   background-color: $darkColor;
