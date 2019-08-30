@@ -177,10 +177,12 @@
           :class="{'navbar-open': mobileNavOpen}"
         >
           <div
-            class="close-navbar-hamburger text-left text-black p-2"
-            style="font-size: 30px; cursor: pointer; color: black;"
+            class="close-navbar-hamburger text-left text-black "
             @click.stop="hide"
-          >&times;</div>
+          ><img
+              src="~/assets/img/exit.svg"
+              alt="close icon"
+            ></div>
           <b-navbar-nav>
             <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">{{$t('links.home')}}</b-nav-item>
             <b-nav-item :to="localePath({name: 'barbaresco'},$i18n.locale)">{{$t('links.menu')}}</b-nav-item>
@@ -221,14 +223,16 @@
         </nav>
 
         <div
-          class="navbar-right "
+          class="navbar-right cart-body"
           :class="{'navbar-right-open': cartOpen}"
         >
           <div
-            class="close-hamburger text-right text-black p-2"
-            style="font-size: 30px; cursor: pointer; color: black;"
+            class="close-hamburger text-right "
             @click.stop="hideCart"
-          >&times;</div>
+          ><img
+              src="~/assets/img/exit.svg"
+              alt="close icon"
+            ></div>
 
           <font v-if="!cartSize">{{$t('cart.emptyCart')}}</font>
 
@@ -324,18 +328,20 @@
         </div>
 
         <div
-          class="navbar-right"
+          class="navbar-right reservation-body"
           :class="{'navbar-right-open': reservationOpen}"
         >
           <div
-            class="close-hamburger text-right text-black p-2"
-            style="font-size: 30px; cursor: pointer; color: black;"
+            class="close-hamburger text-right "
             @click.stop="hideReservation"
-          >&times;</div>
+          ><img
+              src="~/assets/img/exit.svg"
+              alt="close icon"
+            ></div>
 
           <div>
             <h5>{{$t('reservation.heading')}}</h5>
-            <form action="post">
+            <form @submit.prevent="sendMessage">
               <select
                 name="time"
                 id="time"
@@ -396,7 +402,12 @@
               >
               <div class="form-group mx-auto text-center">
 
-                <button class="order mt-2">{{$t('reservation.order')}}</button>
+                <button
+                  class="order mt-2"
+                  type="submit"
+                  name="submit"
+                  id="submit"
+                >{{$t('reservation.order')}}</button>
 
               </div>
 
@@ -411,6 +422,7 @@
 </template>
 
 <script>
+import axios from "axios"
 import clickOutside from "@/directives/click-outside";
 import handleScroll from "@/directives/handle-scroll";
 
@@ -451,6 +463,7 @@ export default {
   },
   data () {
     return {
+      success: false,
       userDropdownOpen: false,
       mobileNavOpen: false,
       cartOpen: false,
@@ -501,7 +514,15 @@ export default {
       }
       this.showHeader = currentScrollPosition < this.lastScrollPosition;
       this.lastScrollPosition = currentScrollPosition;
-    }
+    },
+
+    sendMessage () {
+      axios
+        .post(`https://api.telegram.org/bot971666849:AAEPhgDVYttaZZxm35uC5IFU-YO3MdH8nh0/sendMessage?chat_id=-1001231729418&text=Name: ${this.name}, Number: ${this.phone}, Date: ${this.date}, Time: ${this.time}, No of People: ${this.noOfPeople}`)
+      this.name = this.email = this.phone = this.time = this.noOfPeople = null;
+      this.date = today;
+      this.success = true;
+    },
   },
   mounted () {
     window.addEventListener("scroll", this.onScroll);
@@ -523,7 +544,7 @@ export default {
 }
 
 .vdp-datepicker__calendar {
-  margin: auto;
+  margin: auto auto 20px auto;
   border: 0 !important;
 }
 
@@ -586,6 +607,29 @@ select {
   }
 }
 
+select {
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-image: url("~assets/img/select.png");
+  background-position: 72% center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  &.active,
+  &:focus {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+  }
+}
+select option {
+  background-color: $lightColor;
+  color: $darkColor;
+  text-align: center;
+  white-space: pre-line;
+  font-weight: 400;
+}
+
 input {
   background: transparent;
   border: 1px solid #000000;
@@ -630,6 +674,37 @@ input {
 
   color: #000000;
   padding: 14px 48px;
+}
+
+.close-hamburger,
+.close-navbar-hamburger {
+  margin-bottom: 50px;
+}
+
+.cart-body {
+  h3 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: $blackColor;
+  }
+}
+
+.reservation-body {
+  h5 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    letter-spacing: 0.05em;
+
+    color: $blackColor;
+  }
 }
 
 .toggle-quantity {
@@ -766,7 +841,7 @@ header {
 
 #show-total {
   span {
-    padding: 0.5px 5px;
+    padding: 0px 5px;
     background-color: $goldColor;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -779,10 +854,10 @@ header {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 21px;
     text-decoration: none !important;
 
-    color: $lightColor;
+    color: $darkColor;
     text-align: center;
   }
 }
@@ -846,10 +921,11 @@ header {
 .btn-hamburger {
   margin: auto 0;
   cursor: pointer;
-}
 
-.drawer-toggle {
-  font-size: 18px;
+  img {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .navbar-right-open {
@@ -880,10 +956,48 @@ header {
     left: 0px;
     top: 0px;
     position: fixed;
-    padding: 20px 20px;
+    padding: 20px 40px;
     transform: translate3d(0, 0, 0);
     transition: 0.1s all ease-out;
     z-index: 1000;
+  }
+
+  .btn-hamburger {
+    margin: auto 0;
+    cursor: pointer;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .theHead-nav-toggle {
+    &.cart {
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  #show-total {
+    span {
+      padding: 0.5px 5px;
+      background-color: $goldColor;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      position: relative;
+
+      font-size: 12px;
+      line-height: 15px;
+
+      color: $darkColor;
+      text-align: center;
+    }
   }
 
   .nav-link {
@@ -909,75 +1023,9 @@ header {
     bottom: 0;
   }
 
-  .navbar-right {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-
-    transition: all 0.3s ease-in-out;
-    transform: translateX(100%);
-
-    padding: 15px 15px;
-    background: $lightColor;
-
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100vh;
-    width: 430px;
-    right: 0;
-
-    bottom: 0;
-  }
-
-  .navbar-right-open {
-    transform: translateX(0);
-  }
-
-  .navbar-open {
-    transform: translateX(0);
-  }
-}
-
-@include mediaSm {
-  header {
-    background-size: cover;
-    background-color: $darkColor;
-    width: 100vw;
-    min-height: 60px;
-    height: 60%;
-    max-height: 100px;
-    right: 0;
-    left: 0px;
-    top: 0px;
-    position: fixed;
-    padding: 20px 20px;
-    transform: translate3d(0, 0, 0);
-    transition: 0.1s all ease-out;
-    z-index: 1000;
-  }
-
-  .nav-link {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    display: block;
-
-    transition: all 0.3s linear;
-    transform: translateX(-100%);
-
-    padding: 15px 20px;
-    background: $lightColor;
-
-    height: 100vh;
-    width: 100vw;
-    left: 0;
-    top: 0px;
-    bottom: 0;
+  .theHeader-nav-brand img {
+    min-height: 50px;
+    max-height: 50px;
   }
 
   .navbar-right {

@@ -30,7 +30,7 @@
       :currentProductsDisplayed="currentProductsDisplayed"
     />
 
-    <b-img-lazy
+    <!-- <b-img-lazy
       class="feedBack d-none d-md-block"
       id="feedBack"
       src="~/assets/img/feedBack.png"
@@ -38,7 +38,7 @@
     >
 
     </b-img-lazy>
-    <b-tooltip
+     <b-tooltip
       target="feedBack"
       placement="topleft"
       variant="light"
@@ -46,7 +46,7 @@
       <strong>
         <h6> {{$t('tooltip')}}</h6>
       </strong>
-    </b-tooltip>
+    </b-tooltip> -->
 
     <vue-page-transition name="fade">
 

@@ -265,6 +265,60 @@ section {
   overflow: hidden;
 }
 
+@media (max-width: 1024px) {
+  .grid figure {
+    height: 100px;
+  }
+
+  figure.saddleEffect h2 {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    opacity: 0.8;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+  }
+
+  figure.saddleEffect:hover h2,
+  .nuxt-link-exact-active figure.saddleEffect h2 {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    opacity: 1;
+
+    position: absolute;
+
+    -webkit-transform: translate3d(0, 90%, 0) translate3d(0, -50px, 0);
+    transform: translate3d(0, 90%, 0) translate3d(0, -30px, 0);
+  }
+
+  .grid figure figcaption > span {
+    z-index: 9;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    background: #000000;
+    opacity: 0.25;
+  }
+}
+
 @media (max-width: 767px) {
   .image-Navigation {
     margin-top: 99px;
@@ -358,60 +412,6 @@ section {
     position: relative;
     display: block;
     width: calc(100vw / 2);
-  }
-}
-
-@media (max-width: 1024px) {
-  .grid figure {
-    height: 100px;
-  }
-
-  figure.saddleEffect h2 {
-    font-family: $primaryFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-
-    color: #ffffff;
-
-    opacity: 0.8;
-
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-  }
-
-  figure.saddleEffect:hover h2,
-  .nuxt-link-exact-active figure.saddleEffect h2 {
-    font-family: $primaryFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-
-    color: #ffffff;
-
-    opacity: 1;
-
-    position: absolute;
-
-    -webkit-transform: translate3d(0, 90%, 0) translate3d(0, -50px, 0);
-    transform: translate3d(0, 90%, 0) translate3d(0, -30px, 0);
-  }
-
-  .grid figure figcaption > span {
-    z-index: 9;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    background: #000000;
-    opacity: 0.25;
   }
 }
 </style>
