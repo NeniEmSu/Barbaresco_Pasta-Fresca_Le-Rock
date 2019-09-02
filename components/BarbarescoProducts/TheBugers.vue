@@ -6,7 +6,7 @@
 
     <div class="content">
 
-      <div class="row d-flex justify-content-around">
+      <div class="row d-flex justify-content-start ">
         <div
           class="card"
           v-for="burger in burgers.burgers"
@@ -26,17 +26,17 @@
               :title="burger.name"
             >{{burger.name}}</h5>
             <p
-              class="card-text text-left"
+              class="card-text text-left d-none d-sm-block"
               style="cursor: context-menu;"
               v-b-tooltip.hover
               :title="burger.summary"
             >{{(burger.summary).slice(0, 39)}}... <span class="card-text quantity">{{burger.quantity}}</span></p>
 
             <div class="row">
-              <div class="col-4 pr-0 my-auto">
-                <p class="card-text cost my-auto">{{burger.price}}</p>
+              <div class="col-sm-4 pr-0 my-auto">
+                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{burger.quantity}}</span> {{burger.price}}</p>
               </div>
-              <div class="col-8  my-auto">
+              <div class="col-sm-8  my-auto text-center">
                 <a
                   href="#"
                   class="btn my-auto mr-auto"
@@ -67,115 +67,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.crop {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content {
-  margin: 20px 0;
-}
-
-.card {
-  width: calc(100% / 6);
-  height: auto;
-  padding: 0;
-  margin: 20px 10px;
-
-  border: 0;
-
-  background-color: transparent;
-
-  .card-img-top {
-    background-color: $darkColor;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.45);
-    border-radius: 50%;
-    max-width: 150px;
-    min-width: 150px;
-    height: 150px;
-    width: 100%;
-    max-height: 150px;
-
-    margin-bottom: 5px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .card {
-    width: calc(100% / 5);
-    margin: 20px auto;
-  }
-}
-
-@media screen and (max-width: 994px) {
-  .card {
-    width: calc(100% / 4);
-    margin: 20px auto;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .card {
-    width: calc(100% / 3);
-    margin: 20px auto;
-  }
-}
-
-.card-body {
-  padding: 0;
-}
-
-.card-title {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-
-  text-transform: uppercase;
-
-  color: #000000;
-
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.card-text {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: #000000;
-
-  margin-bottom: 10px;
-
-  &.cost {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-  }
-}
-
-.quantity {
-  float: right;
-  margin-right: 15px;
-}
-
-.btn {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #000000;
-
-  padding: 5px 8px;
-
-  border: 2px solid #000000;
-  box-sizing: border-box;
-}
+@import "~assets/scss/productCards.scss";
 </style>

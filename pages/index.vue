@@ -384,7 +384,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: -5px !important;
 }

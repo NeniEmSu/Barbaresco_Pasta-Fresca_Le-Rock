@@ -372,5 +372,269 @@
       "image": "barbarescoFirstCourse",
       "summary": ""
     }
+  ],
+  "coffee": [
+    {
+      "name": "ЕСПРЕССО",
+      "id": 1,
+      "price": "20,00",
+      "quantity": "",
+      "image": "barbarescoDrinksCoffe",
+      "summary": ""
+    },
+    {
+      "name": "АМЕРИКАНО",
+      "id": 2,
+      "price": "20,00",
+      "quantity": "",
+      "image": "barbarescoDrinksCoffe",
+      "summary": ""
+    },
+    {
+      "name": "КАПУЧІНО",
+      "id": 3,
+      "price": "35,00",
+      "quantity": "",
+      "image": "barbarescoDrinksCoffe",
+      "summary": ""
+    },
+    {
+      "name": "ФЛЕТ ВАЙТ",
+      "id": 4,
+      "price": "35,00",
+      "quantity": "",
+      "image": "barbarescoDrinksCoffe",
+      "summary": ""
+    },
+    {
+      "name": "ЛАТЕ",
+      "id": 5,
+      "price": "30,00",
+      "quantity": "300г",
+      "image": "barbarescoDrinksCoffe",
+      "summary": ""
+    },
+    {
+      "name": "ФРАПЕ",
+      "id": 6,
+      "price": "35,00",
+      "quantity": "300г",
+      "image": "barbarescoDrinksCoffe",
+      "summary": ""
+    },
+    {
+      "name": "МОЛОКО",
+      "id": 7,
+      "price": "5,00",
+      "quantity": "",
+      "image": "barbarescoDrinksCoffe",
+      "summary": ""
+    }
+  ],
+  "tea": [
+    {
+      "name": "ЧОРНИЙ",
+      "id": 1,
+      "price": "30,00",
+      "quantity": "0,6л",
+      "image": "barbarescoDrinksTea",
+      "summary": "асам середньо листовий пряний з медовими нотками"
+    },
+    {
+      "name": "ЗЕЛЕНИЙ",
+      "id": 2,
+      "price": "30,00",
+      "quantity": "0,6л",
+      "image": "barbarescoDrinksTea",
+      "summary": "класичний китайський чай"
+    },
+    {
+      "name": "ФРУКТОВИЙ",
+      "id": 3,
+      "price": "30,00",
+      "quantity": "0,6л",
+      "image": "barbarescoDrinksTea",
+      "summary": "суміш з шматочків папаї, манго, ананаса та квітів гібіскуса"
+    },
+    {
+      "name": "ТРАВ'ЯНИЙ",
+      "id": 4,
+      "price": "30,00",
+      "quantity": "0,6л",
+      "image": "barbarescoDrinksTea",
+      "summary": "суміш лимонної трави, меліси, м’яти, ромашки та цедри апельсина"
+    }
+  ],
+  "hotDrinks": [
+    {
+      "name": "ОБЛІПИХОВИЙ чай З МАРАКУЄЮ",
+      "id": 1,
+      "price": "30,00",
+      "quantity": "0,30л",
+      "image": "barbarescoDrinksTea",
+      "summary": ""
+    },
+    {
+      "name": "ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ",
+      "id": 2,
+      "price": "30,00",
+      "quantity": "0,30л",
+      "image": "barbarescoDrinksTea",
+      "summary": ""
+    }
+  ],
+  "fresh": [
+    {
+      "name": "АПЕЛЬСИНОВИЙ",
+      "id": 1,
+      "price": "60,00",
+      "quantity": "0,25л",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    },
+    {
+      "name": "ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ",
+      "id": 2,
+      "price": "60,00",
+      "quantity": "0,25л",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    }
+  ],
+  "lemonade": [
+    {
+      "name": "ЯБЛУКО-БАЗИЛІК",
+      "id": 1,
+      "price": "35,00",
+      "quantity": "300мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": "сік яблука та сироп, базилік, імбир, лимонний фреш, содова"
+    },
+    {
+      "name": "АНАНАСОВО-ІМБИРНИЙ",
+      "id": 2,
+      "price": "35,00",
+      "quantity": "300мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": "ананасовий сік, імбирний сироп, лимонний фреш і содова"
+    },
+    {
+      "name": "З ТЕМНИМ КВАСОМ",
+      "id": 3,
+      "price": "35,00",
+      "quantity": "300мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": "темний квас, сироп кориця-карамель, лимонний фреш"
+    },
+    {
+      "name": "ГРЕЙПФРУТ ",
+      "id": 4,
+      "price": "35,00",
+      "quantity": "300мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": "грейпфрутовий сік та сироп, лимонний фреш, содова"
+    },
+    {
+      "name": "ЗЕЛЕНИЙ БАНАН-КІВІ",
+      "id": 5,
+      "price": "35,00",
+      "quantity": "300мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": "сироп зелений банан, ківі, лимонний фреш, содова"
+    }
+  ],
+  "smoothy": [
+    {
+      "name": "ДИНЯ-МАРАКУЙЯ",
+      "id": 1,
+      "price": "40,00",
+      "quantity": "250мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": "пюре дині, маракуйї та персика"
+    },
+    {
+      "name": "ШПИНАТНИЙ",
+      "id": 2,
+      "price": "40,00",
+      "quantity": "250мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": "шпинат, банан, сік яблука, пюре маракуйї"
+    }
+  ],
+  "milkshake": [
+    {
+      "name": "БАНАНОВИЙ",
+      "id": 1,
+      "price": "40,00",
+      "quantity": "300мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    },
+    {
+      "name": "ШОКОЛАДНИЙ",
+      "id": 2,
+      "price": "40,00",
+      "quantity": "300мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    },
+    {
+      "name": "ЧОРНИЧНИЙ",
+      "id": 3,
+      "price": "40,00",
+      "quantity": "300мл",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "name": "МОРС З ЖУРАВЛИНИ",
+      "id": 1,
+      "price": "16,00",
+      "quantity": "0,25л",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    },
+    {
+      "name": "СІК В АСОРТИМЕНТІ",
+      "id": 2,
+      "price": "18,00",
+      "quantity": "0,25л",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    },
+    {
+      "name": "ПЕПСІ / 7UP / МІРІНДА",
+      "id": 3,
+      "price": "15,00",
+      "quantity": "0,25л",
+      "image": "barbarescoDrinksFresh",
+      "summary": "розлив"
+    },
+    {
+      "name": "ТОНІК",
+      "id": 4,
+      "price": "25,00",
+      "quantity": "0,5л",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    },
+    {
+      "name": "БОРЖОМІ",
+      "id": 5,
+      "price": "40,00",
+      "quantity": "0,5л",
+      "image": "barbarescoDrinksFresh",
+      "summary": ""
+    },
+    {
+      "name": "ДЕВАЙТІС",
+      "id": 5,
+      "price": "27,00",
+      "quantity": "0,5л",
+      "image": "barbarescoDrinksFresh",
+      "summary": "слабогаз./негаз"
+    }
   ]
 }

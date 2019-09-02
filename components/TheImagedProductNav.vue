@@ -273,7 +273,7 @@ section {
 }
 
 .nav-text {
-  margin: 10px auto 0 auto;
+  margin: 10px auto auto auto;
   font-family: $mainFont;
   font-style: normal;
   font-weight: normal;
@@ -303,6 +303,7 @@ section {
   border-radius: 50%;
   background-color: $darkColor;
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
+  margin-bottom: 10px;
 
   @include easeOut;
 }

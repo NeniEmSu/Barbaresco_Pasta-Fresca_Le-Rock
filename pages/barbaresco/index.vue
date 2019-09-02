@@ -97,7 +97,7 @@ import TheFirstCourse from '~/components/BarbarescoProducts/TheFirstCourse'
 import TheHits from '~/components/BarbarescoProducts/TheHits'
 import TheAlcohol from '~/components/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/BarbarescoProducts/TheMainMeal'
-import TheBottomCarousel from '~/components/TheBottomCarousel'
+import TheBottomCarousel from '~/components/TheBottomCarouselOwl'
 
 export default {
   name: 'barbaresco',
