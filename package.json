@@ -26,11 +26,11 @@
     "nuxt-i18n": "^6.1.1",
     "nuxt-purgecss": "^0.2.1",
     "postcss-nested": "^4.1.2",
-    "sass-loader": "^7.3.1",
+    "sass-loader": "^8.0.0",
     "v-owl-carousel": "^1.0.8",
     "vue-analytics": "^5.17.2",
     "vue-cookieconsent-component": "^1.2.0",
-    "vue-currency-filter": "^3.4.2",
+    "vue-currency-filter": "^3.4.3",
     "vue-if-bot": "^1.2.0",
     "vue-next-level-scroll": "^1.2.0",
     "vue-page-transition": "^0.2.2",
@@ -39,7 +39,7 @@
     "vue2-google-maps": "^0.10.7",
     "vuejs-datepicker": "^1.6.2",
     "vuelidate": "^0.7.4",
-    "vuex-persist": "^2.0.1"
+    "vuex-persist": "^2.1.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
@@ -47,7 +47,7 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-plugin-transform-imports": "^2.0.0",
-    "eslint": "^6.2.2",
+    "eslint": "^6.3.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-loader": "^3.0.0",
     "eslint-plugin-html": "^6.0.0",
