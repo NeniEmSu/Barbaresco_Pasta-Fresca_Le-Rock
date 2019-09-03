@@ -34,11 +34,9 @@
         :touchDrag="true"
         :autoplay="true"
         :rewind="false"
+        :autoplayHoverPause="true"
       >
-        <div
-          v-for="n in 3"
-          :key="n"
-        >
+        <div>
           <b-card
             overlay
             img-src="~/assets/img/pizzaBaner.jpg"
@@ -48,6 +46,36 @@
             <b-card-text class="p-lg-5 p-sm-2">
               <h4 class="card-title">
                 {{ $t('promotionTitle1')}}
+              </h4>
+              {{ $t('promotionDescription') }}
+            </b-card-text>
+          </b-card>
+        </div>
+        <div>
+          <b-card
+            overlay
+            img-src="~/assets/img/pizzaBaner.jpg"
+            img-alt="Card Image"
+            text-variant="white"
+          >
+            <b-card-text class="p-lg-5 p-sm-2">
+              <h4 class="card-title">
+                {{ $t('promotionTitle2')}}
+              </h4>
+              {{ $t('promotionDescription') }}
+            </b-card-text>
+          </b-card>
+        </div>
+        <div>
+          <b-card
+            overlay
+            img-src="~/assets/img/pizzaBaner.jpg"
+            img-alt="Card Image"
+            text-variant="white"
+          >
+            <b-card-text class="p-lg-5 p-sm-2">
+              <h4 class="card-title">
+                {{ $t('promotionTitle3')}}
               </h4>
               {{ $t('promotionDescription') }}
             </b-card-text>

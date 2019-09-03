@@ -30,17 +30,14 @@
               style="cursor: context-menu;"
               v-b-tooltip.hover
               :title="salad.summary"
-            >{{(salad.summary).slice(0, 39)}}...<span class="card-text quantity">{{salad.quantity}}</span></p>
+            >{{(salad.summary).slice(0, 35)}}...<span class="card-text quantity">{{salad.quantity}}</span></p>
 
             <div class="row">
               <div class="col-sm-4 pr-0 my-auto">
                 <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{salad.quantity}}</span> {{salad.price}}</p>
               </div>
               <div class="col-sm-8 text-center my-auto">
-                <a
-                  href="#"
-                  class="btn my-auto mr-auto"
-                >Замовити</a></div>
+                <button class="btn my-auto mr-auto">Замовити</button></div>
             </div>
 
           </div>

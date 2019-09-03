@@ -37,10 +37,7 @@
                 <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{pancake.quantity}}</span> {{pancake.price}}</p>
               </div>
               <div class="col-sm-8 text-center my-auto">
-                <a
-                  href="#"
-                  class="btn my-auto mr-auto"
-                >Замовити</a></div>
+                <button class="btn my-auto mr-auto">Замовити</button></div>
             </div>
 
           </div>

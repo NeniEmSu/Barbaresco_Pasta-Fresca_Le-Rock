@@ -20,7 +20,7 @@
       <div class="address my-auto">
         <nuxt-link
           :to="'/' + $i18n.locale + '/contact'"
-          v-scroll-to="{el: '#map-top', duration: 500, offset: -60 }"
+          v-scroll-to="{el: '#map', duration: 500, offset: -60 }"
           class="m-auto"
         >
           {{$t('location')}}

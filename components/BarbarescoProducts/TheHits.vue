@@ -28,10 +28,7 @@
                 <p class="card-text cost my-auto">80,00</p>
               </div>
               <div class="col-8  my-auto">
-                <a
-                  href="#"
-                  class="btn my-auto mr-auto"
-                >Замовити</a></div>
+                <button class="btn my-auto mr-auto">Замовити</button></div>
             </div>
 
           </div>

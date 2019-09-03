@@ -9,12 +9,20 @@
       <div class="row">
 
         <div class="col-sm-3">
-          <div class="card card-cat">
+          <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
-              <h2 class="text-center">Кава</h2>
+              <img
+                src="~/assets/img/barbarescoDrinksCoffeIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block"> Кава</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksCoffeIcon.png"
-                class="m-auto"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
               ></b-img-lazy>
             </div>
           </div>
@@ -53,10 +61,7 @@
 
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <a
-                      href="#"
-                      class="btn my-auto mr-auto"
-                    >Замовити</a></div>
+                    <button class="btn my-auto mr-auto">Замовити</button></div>
                 </div>
 
               </div>
@@ -73,7 +78,25 @@
 
         <div class="col-sm-3">
 
-          <div class="card card-cat">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">Чай</h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              ></b-img-lazy>
+            </div>
+          </div>
+
+          <!-- <div class="card card-cat">
             <div class="m-auto text-center">
               <h2 class="text-center">Чай</h2>
               <b-img-lazy
@@ -81,7 +104,7 @@
                 class="m-auto"
               ></b-img-lazy>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="col-sm-9">
           <div class="row">
@@ -115,10 +138,7 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{tea.quantity}}</span> {{tea.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <a
-                      href="#"
-                      class="btn my-auto mr-auto"
-                    >Замовити</a></div>
+                    <button class="btn my-auto mr-auto">Замовити</button></div>
                 </div>
 
               </div>
@@ -134,15 +154,24 @@
       <div class="row">
 
         <div class="col-sm-3">
-          <div class="card card-cat">
+          <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
-              <h2 class="text-center">Холодні напої</h2>
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">Холодні напої</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
-                class="m-auto"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
               ></b-img-lazy>
             </div>
           </div>
+
         </div>
 
         <div class="col-sm-9">
@@ -177,10 +206,7 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{fresh.quantity}}</span> {{fresh.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <a
-                      href="#"
-                      class="btn my-auto mr-auto"
-                    >Замовити</a></div>
+                    <button class="btn my-auto mr-auto">Замовити</button></div>
                 </div>
 
               </div>
@@ -196,15 +222,25 @@
       <div class="row">
 
         <div class="col-sm-3">
-          <div class="card card-cat">
+
+          <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
-              <h2 class="text-center">ЛИМОНАДИ</h2>
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">ЛИМОНАДИ</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
-                class="m-auto"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
               ></b-img-lazy>
             </div>
           </div>
+
         </div>
 
         <div class="col-sm-9">
@@ -239,10 +275,7 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{lemonade.quantity}}</span> {{lemonade.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <a
-                      href="#"
-                      class="btn my-auto mr-auto"
-                    >Замовити</a></div>
+                    <button class="btn my-auto mr-auto">Замовити</button></div>
                 </div>
 
               </div>
@@ -258,15 +291,24 @@
       <div class="row">
 
         <div class="col-sm-3">
-          <div class="card card-cat">
+          <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
-              <h2 class="text-center">СМУЗІ</h2>
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">СМУЗІ</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
-                class="m-auto"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
               ></b-img-lazy>
             </div>
           </div>
+
         </div>
 
         <div class="col-sm-9">
@@ -301,10 +343,7 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{smoothy.quantity}}</span> {{smoothy.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <a
-                      href="#"
-                      class="btn my-auto mr-auto"
-                    >Замовити</a></div>
+                    <button class="btn my-auto mr-auto">Замовити</button></div>
                 </div>
 
               </div>
@@ -320,15 +359,24 @@
       <div class="row">
 
         <div class="col-sm-3">
-          <div class="card card-cat">
+          <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
-              <h2 class="text-center">МІЛКШЕЙКИ</h2>
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">МІЛКШЕЙКИ</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
-                class="m-auto"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
               ></b-img-lazy>
             </div>
           </div>
+
         </div>
 
         <div class="col-sm-9">
@@ -363,10 +411,7 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{milkshake.quantity}}</span> {{milkshake.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <a
-                      href="#"
-                      class="btn my-auto mr-auto"
-                    >Замовити</a></div>
+                    <button class="btn my-auto mr-auto">Замовити</button></div>
                 </div>
 
               </div>
@@ -382,15 +427,25 @@
       <div class="row">
 
         <div class="col-sm-3">
-          <div class="card card-cat">
+
+          <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
-              <h2 class="text-center">БЕЗАЛКОГОЛЬНІ НАПОЇ</h2>
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">БЕЗАЛКОГОЛЬНІ НАПОЇ</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
-                class="m-auto"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
               ></b-img-lazy>
             </div>
           </div>
+
         </div>
 
         <div class="col-sm-9">
@@ -425,10 +480,7 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{nonAlcoholicDrinks.quantity}}</span> {{nonAlcoholicDrinks.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <a
-                      href="#"
-                      class="btn my-auto mr-auto"
-                    >Замовити</a></div>
+                    <button class="btn my-auto mr-auto">Замовити</button></div>
                 </div>
 
               </div>

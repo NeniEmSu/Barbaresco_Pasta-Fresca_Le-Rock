@@ -13,6 +13,11 @@ hr {
   border: 1px solid #000000;
 }
 
+img.d-sm-block.d-none {
+  height: 60px;
+  width: 60px;
+}
+
 .ingredients {
   height: 32px;
 }
@@ -213,4 +218,17 @@ hr {
 
   border: 2px solid #000000;
   box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 500px) {
+  .card.card-cat {
+    height: 25px;
+
+    h2 {
+      height: 25px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 }

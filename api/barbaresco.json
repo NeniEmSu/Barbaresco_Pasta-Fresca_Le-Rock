@@ -2,7 +2,7 @@
   "salads": [
     {
       "name": "САЛАТ З КАЛЬМАРАМИ",
-      "id": 1,
+      "id": 59,
       "price": "60,00",
       "quantity": "190г",
       "image": "barbarescoSalad",
@@ -10,7 +10,7 @@
     },
     {
       "name": "ЦЕЗАР З КУРКОЮ",
-      "id": 2,
+      "id": 60,
       "price": "60,00",
       "quantity": "240г",
       "image": "barbarescoSalad",
@@ -18,7 +18,7 @@
     },
     {
       "name": "ЛАЙТ ЛАЙФ",
-      "id": 3,
+      "id": 61,
       "price": "50,00",
       "quantity": "250г",
       "image": "barbarescoSalad",
@@ -26,7 +26,7 @@
     },
     {
       "name": "ГРИЛЬ САЛАТ З ТЕЛЯТИНОЮ",
-      "id": 4,
+      "id": 62,
       "price": "65,00",
       "quantity": "280г",
       "image": "barbarescoSalad",
@@ -34,7 +34,7 @@
     },
     {
       "name": "САЛАТ З ІНДИЧКОЮ",
-      "id": 5,
+      "id": 63,
       "price": "80,00",
       "quantity": "250г",
       "image": "barbarescoSalad",
@@ -42,7 +42,7 @@
     },
     {
       "name": "CHICK BASILIK",
-      "id": 6,
+      "id": 64,
       "price": "65,00",
       "quantity": "300г",
       "image": "barbarescoSalad",
@@ -52,7 +52,7 @@
   "pizzas": [
     {
       "name": "ГАВАЙСЬКА",
-      "id": 1,
+      "id": 65,
       "price": "70,00",
       "quantity": "500г",
       "image": "barbarescoPizza",
@@ -60,7 +60,7 @@
     },
     {
       "name": "ГГГГОСТРА",
-      "id": 2,
+      "id": 66,
       "price": "70,00",
       "quantity": "400г",
       "image": "barbarescoPizza",
@@ -68,7 +68,7 @@
     },
     {
       "name": "КАПРІЧОЗА",
-      "id": 3,
+      "id": 67,
       "price": "70,00",
       "quantity": "480г",
       "image": "barbarescoPizza",
@@ -76,7 +76,7 @@
     },
     {
       "name": "МАРГАРІТА",
-      "id": 4,
+      "id": 68,
       "price": "70,00",
       "quantity": "380г",
       "image": "barbarescoPizza",
@@ -84,7 +84,7 @@
     },
     {
       "name": "САЛЯМІ",
-      "id": 5,
+      "id": 69,
       "price": "70,00",
       "quantity": "420г",
       "image": "barbarescoPizza",
@@ -92,7 +92,7 @@
     },
     {
       "name": "ЧОТИРИ СЕЗОНИ",
-      "id": 6,
+      "id": 70,
       "price": "70,00",
       "quantity": "520г",
       "image": "barbarescoPizza",
@@ -100,7 +100,7 @@
     },
     {
       "name": "QUATTRO FORMAGGI",
-      "id": 7,
+      "id": 71,
       "price": "70,00",
       "quantity": "400г",
       "image": "barbarescoPizza",
@@ -108,7 +108,7 @@
     },
     {
       "name": "Al Tonno",
-      "id": 8,
+      "id": 72,
       "price": "70,00",
       "quantity": "460г",
       "image": "barbarescoPizza",
@@ -116,7 +116,7 @@
     },
     {
       "name": "Цезаріо",
-      "id": 9,
+      "id": 73,
       "price": "70,00",
       "quantity": "470г",
       "image": "barbarescoPizza",
@@ -126,7 +126,7 @@
   "burgers": [
     {
       "name": "БУРГЕР З КУРКОЮ",
-      "id": 1,
+      "id": 74,
       "price": "75,00",
       "quantity": "380г",
       "image": "barbarescoChickenBuger",
@@ -134,7 +134,7 @@
     },
     {
       "name": "БУРГЕР З БУЖЕНИНОЮ",
-      "id": 2,
+      "id": 75,
       "price": "75,00",
       "quantity": "380г",
       "image": "barbarescoChickenBuger",
@@ -142,7 +142,7 @@
     },
     {
       "name": "НЬЮ-ЙОРК БУРГЕР З ТЕЛЯТИНОЮ",
-      "id": 3,
+      "id": 76,
       "price": "75,00",
       "quantity": "380г",
       "image": "barbarescoChickenBuger",
@@ -150,7 +150,7 @@
     },
     {
       "name": "ЧІЗБУРГЕР З СВИНИНОЮ",
-      "id": 4,
+      "id": 77,
       "price": "75,00",
       "quantity": "380г",
       "image": "barbarescoChickenBuger",
@@ -158,7 +158,7 @@
     },
     {
       "name": "ЧІЗБУРГЕР З ТЕЛЯТИНОЮ",
-      "id": 5,
+      "id": 78,
       "price": "75,00",
       "quantity": "380г",
       "image": "barbarescoChickenBuger",
@@ -166,7 +166,7 @@
     },
     {
       "name": "CHICKEN DRON",
-      "id": 6,
+      "id": 79,
       "price": "75,00",
       "quantity": "380г",
       "image": "barbarescoChickenBuger",
@@ -176,7 +176,7 @@
   "pancakes": [
     {
       "name": "З ШИНКОЮ І СИРОМ",
-      "id": 1,
+      "id": 80,
       "price": "50,00",
       "quantity": "260г",
       "image": "barbarescoMlinty",
@@ -184,7 +184,7 @@
     },
     {
       "name": "З ШПИНАТОМ І СИРОМ",
-      "id": 2,
+      "id": 81,
       "price": "50,00",
       "quantity": "260г",
       "image": "barbarescoMlinty",
@@ -192,7 +192,7 @@
     },
     {
       "name": "ПОМІДОРАМИ ТА МОЦАРЕЛОЮ",
-      "id": 3,
+      "id": 82,
       "price": "50,00",
       "quantity": "235г",
       "image": "barbarescoMlinty",
@@ -200,7 +200,7 @@
     },
     {
       "name": "З ШОКОЛАДНО-ГОРІХОВОЮ",
-      "id": 4,
+      "id": 83,
       "price": "50,00",
       "quantity": "235г",
       "image": "barbarescoMlinty",
@@ -208,7 +208,7 @@
     },
     {
       "name": "ПАСТОЮ ТА МАРШМЕЛЛОУ",
-      "id": 5,
+      "id": 84,
       "price": "50,00",
       "quantity": "250г",
       "image": "barbarescoMlinty",
@@ -216,7 +216,7 @@
     },
     {
       "name": "З ЯБЛУКАМИ",
-      "id": 6,
+      "id": 85,
       "price": "50,00",
       "quantity": "250г",
       "image": "barbarescoMlinty",
@@ -224,7 +224,7 @@
     },
     {
       "name": "ТА ВАНІЛЬНИМ СОУСОМ",
-      "id": 7,
+      "id": 86,
       "price": "50,00",
       "quantity": "300г",
       "image": "barbarescoMlinty",
@@ -232,7 +232,7 @@
     },
     {
       "name": "ГРИЛЬ САЛАТ З ТЕЛЯТИНОЮ",
-      "id": 8,
+      "id": 87,
       "price": "65,00",
       "quantity": "280г",
       "image": "barbarescoMlinty",
@@ -240,7 +240,7 @@
     },
     {
       "name": "СЕЗОННО-ЯГІДНІ",
-      "id": 9,
+      "id": 88,
       "price": "50,00",
       "quantity": "250г",
       "image": "barbarescoMlinty",
@@ -248,7 +248,7 @@
     },
     {
       "name": "З ТИХООКЕАНСЬКИМ ЛОСОСЕМ ТА ЛИСТЯМ ШПИНАТУ",
-      "id": 10,
+      "id": 89,
       "price": "65,00",
       "quantity": "270г",
       "image": "barbarescoMlinty",
@@ -258,7 +258,7 @@
   "deserts": [
     {
       "name": "НАПОЛЕОН",
-      "id": 1,
+      "id": 90,
       "price": "45,00",
       "quantity": "150/40г",
       "image": "barbarescoDesert",
@@ -266,7 +266,7 @@
     },
     {
       "name": "ЧІЗКЕЙК",
-      "id": 2,
+      "id": 91,
       "price": "50,00",
       "quantity": "150г",
       "image": "barbarescoDesert",
@@ -274,7 +274,7 @@
     },
     {
       "name": "МОРОЗИВО З СОУСОМ НА ВИБІР",
-      "id": 3,
+      "id": 92,
       "price": "40,00",
       "quantity": "150г",
       "image": "barbarescoDesert",
@@ -282,7 +282,7 @@
     },
     {
       "name": "ТОФФІ ПУДИНГ",
-      "id": 4,
+      "id": 93,
       "price": "40,00",
       "quantity": "170г",
       "image": "barbarescoDesert",
@@ -290,7 +290,7 @@
     },
     {
       "name": "Трюфельний торт",
-      "id": 5,
+      "id": 94,
       "price": "45,00",
       "quantity": "170г",
       "image": "barbarescoDesert",
@@ -300,7 +300,7 @@
   "firstCourses": [
     {
       "name": "КУРЯЧИЙ БУЛЬЙОН",
-      "id": 1,
+      "id": 95,
       "price": "33,00",
       "quantity": "300г",
       "image": "barbarescoFirstCourse",
@@ -308,7 +308,7 @@
     },
     {
       "name": "ЛАГМАН",
-      "id": 2,
+      "id": 96,
       "price": "35,00",
       "quantity": "350г",
       "image": "barbarescoFirstCourse",
@@ -316,7 +316,7 @@
     },
     {
       "name": "СУП-ПЮРЕ З ПЕЧЕРИЦЬ",
-      "id": 3,
+      "id": 97,
       "price": "35,00",
       "quantity": "300г",
       "image": "barbarescoFirstCourse",
@@ -324,7 +324,7 @@
     },
     {
       "name": "КРЕМ-СУП ЧАУДЕР",
-      "id": 4,
+      "id": 98,
       "price": "50,00",
       "quantity": "300г",
       "image": "barbarescoFirstCourse",
@@ -334,7 +334,7 @@
   "mainMeals": [
     {
       "name": "КУРКА СТІР ФРАЙ",
-      "id": 1,
+      "id": 99,
       "price": "65,00",
       "quantity": "300г",
       "image": "barbarescoFirstCourse",
@@ -342,31 +342,31 @@
     },
     {
       "name": "ПЕЧЕНА БУЖЕНИНА З РОКФОРНИМ ПЮРЕ",
-      "id": 2,
-      "price": "100,00",
+      "id": 100,
+      "price": "100,0",
       "quantity": "350г",
       "image": "barbarescoFirstCourse",
       "summary": "Печена свинна шия подається з картопляно-рокфорним пюре"
     },
     {
       "name": "Лосось теріякі",
-      "id": 3,
-      "price": "120,00",
+      "id": 101,
+      "price": "120,0",
       "quantity": "250г",
       "image": "barbarescoFirstCourse",
       "summary": "Філе лосося, квасоля спаржева, морква, перець болгарський, кабачок, печериці, соус теріякі"
     },
     {
       "name": "телятина ПІД СОУСОМ ДЕМІГЛАС",
-      "id": 4,
-      "price": "100,00",
+      "id": 102,
+      "price": "100,0",
       "quantity": "400г",
       "image": "barbarescoFirstCourse",
       "summary": "Подається з рисом із овочами-гриль"
     },
     {
       "name": "ХРУСТКА КУРКА З ПЕЧЕНОЮ КАРТОПЛЕЮ",
-      "id": 5,
+      "id": 103,
       "price": "65,00",
       "quantity": "300г",
       "image": "barbarescoFirstCourse",
@@ -434,7 +434,7 @@
   "tea": [
     {
       "name": "ЧОРНИЙ",
-      "id": 1,
+      "id": 8,
       "price": "30,00",
       "quantity": "0,6л",
       "image": "barbarescoDrinksTea",
@@ -442,7 +442,7 @@
     },
     {
       "name": "ЗЕЛЕНИЙ",
-      "id": 2,
+      "id": 9,
       "price": "30,00",
       "quantity": "0,6л",
       "image": "barbarescoDrinksTea",
@@ -450,7 +450,7 @@
     },
     {
       "name": "ФРУКТОВИЙ",
-      "id": 3,
+      "id": 10,
       "price": "30,00",
       "quantity": "0,6л",
       "image": "barbarescoDrinksTea",
@@ -458,7 +458,7 @@
     },
     {
       "name": "ТРАВ'ЯНИЙ",
-      "id": 4,
+      "id": 11,
       "price": "30,00",
       "quantity": "0,6л",
       "image": "barbarescoDrinksTea",
@@ -468,7 +468,7 @@
   "hotDrinks": [
     {
       "name": "ОБЛІПИХОВИЙ чай З МАРАКУЄЮ",
-      "id": 1,
+      "id": 12,
       "price": "30,00",
       "quantity": "0,30л",
       "image": "barbarescoDrinksTea",
@@ -476,7 +476,7 @@
     },
     {
       "name": "ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ",
-      "id": 2,
+      "id": 13,
       "price": "30,00",
       "quantity": "0,30л",
       "image": "barbarescoDrinksTea",
@@ -486,7 +486,7 @@
   "fresh": [
     {
       "name": "АПЕЛЬСИНОВИЙ",
-      "id": 1,
+      "id": 14,
       "price": "60,00",
       "quantity": "0,25л",
       "image": "barbarescoDrinksFresh",
@@ -494,7 +494,7 @@
     },
     {
       "name": "ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ",
-      "id": 2,
+      "id": 15,
       "price": "60,00",
       "quantity": "0,25л",
       "image": "barbarescoDrinksFresh",
@@ -504,7 +504,7 @@
   "lemonade": [
     {
       "name": "ЯБЛУКО-БАЗИЛІК",
-      "id": 1,
+      "id": 16,
       "price": "35,00",
       "quantity": "300мл",
       "image": "barbarescoDrinksFresh",
@@ -512,7 +512,7 @@
     },
     {
       "name": "АНАНАСОВО-ІМБИРНИЙ",
-      "id": 2,
+      "id": 17,
       "price": "35,00",
       "quantity": "300мл",
       "image": "barbarescoDrinksFresh",
@@ -520,7 +520,7 @@
     },
     {
       "name": "З ТЕМНИМ КВАСОМ",
-      "id": 3,
+      "id": 18,
       "price": "35,00",
       "quantity": "300мл",
       "image": "barbarescoDrinksFresh",
@@ -528,7 +528,7 @@
     },
     {
       "name": "ГРЕЙПФРУТ ",
-      "id": 4,
+      "id": 19,
       "price": "35,00",
       "quantity": "300мл",
       "image": "barbarescoDrinksFresh",
@@ -536,7 +536,7 @@
     },
     {
       "name": "ЗЕЛЕНИЙ БАНАН-КІВІ",
-      "id": 5,
+      "id": 20,
       "price": "35,00",
       "quantity": "300мл",
       "image": "barbarescoDrinksFresh",
@@ -546,7 +546,7 @@
   "smoothy": [
     {
       "name": "ДИНЯ-МАРАКУЙЯ",
-      "id": 1,
+      "id": 21,
       "price": "40,00",
       "quantity": "250мл",
       "image": "barbarescoDrinksFresh",
@@ -554,7 +554,7 @@
     },
     {
       "name": "ШПИНАТНИЙ",
-      "id": 2,
+      "id": 22,
       "price": "40,00",
       "quantity": "250мл",
       "image": "barbarescoDrinksFresh",
@@ -564,7 +564,7 @@
   "milkshake": [
     {
       "name": "БАНАНОВИЙ",
-      "id": 1,
+      "id": 23,
       "price": "40,00",
       "quantity": "300мл",
       "image": "barbarescoDrinksFresh",
@@ -572,7 +572,7 @@
     },
     {
       "name": "ШОКОЛАДНИЙ",
-      "id": 2,
+      "id": 24,
       "price": "40,00",
       "quantity": "300мл",
       "image": "barbarescoDrinksFresh",
@@ -580,7 +580,7 @@
     },
     {
       "name": "ЧОРНИЧНИЙ",
-      "id": 3,
+      "id": 25,
       "price": "40,00",
       "quantity": "300мл",
       "image": "barbarescoDrinksFresh",
@@ -590,7 +590,7 @@
   "nonAlcoholicDrinks": [
     {
       "name": "МОРС З ЖУРАВЛИНИ",
-      "id": 1,
+      "id": 26,
       "price": "16,00",
       "quantity": "0,25л",
       "image": "barbarescoDrinksFresh",
@@ -598,7 +598,7 @@
     },
     {
       "name": "СІК В АСОРТИМЕНТІ",
-      "id": 2,
+      "id": 27,
       "price": "18,00",
       "quantity": "0,25л",
       "image": "barbarescoDrinksFresh",
@@ -606,7 +606,7 @@
     },
     {
       "name": "ПЕПСІ / 7UP / МІРІНДА",
-      "id": 3,
+      "id": 28,
       "price": "15,00",
       "quantity": "0,25л",
       "image": "barbarescoDrinksFresh",
@@ -614,7 +614,7 @@
     },
     {
       "name": "ТОНІК",
-      "id": 4,
+      "id": 29,
       "price": "25,00",
       "quantity": "0,5л",
       "image": "barbarescoDrinksFresh",
@@ -622,7 +622,7 @@
     },
     {
       "name": "БОРЖОМІ",
-      "id": 5,
+      "id": 30,
       "price": "40,00",
       "quantity": "0,5л",
       "image": "barbarescoDrinksFresh",
@@ -630,11 +630,421 @@
     },
     {
       "name": "ДЕВАЙТІС",
-      "id": 5,
+      "id": 31,
       "price": "27,00",
       "quantity": "0,5л",
       "image": "barbarescoDrinksFresh",
       "summary": "слабогаз./негаз"
+    }
+  ],
+  "makiRoll": [
+    {
+      "name": "СЯКЕ МАКІ",
+      "id": 32,
+      "price": "55,00",
+      "quantity": "120/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "філе лосося, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "СЯКЕ-КУНСЕЙ МАКІ",
+      "id": 33,
+      "price": "60,00",
+      "quantity": "120/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "лосось копчений, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "ЧУКА МАКІ",
+      "id": 34,
+      "price": "40,00",
+      "quantity": "130/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "салат чука, горіховий соус, кунжут, водорості норі, рис, васабі, імбир"
+    }
+  ],
+  "photoMakiRoll": [
+    {
+      "name": "СЯКЕ ФУТОМАКІ",
+      "id": 35,
+      "price": "70,00",
+      "quantity": "190/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "філе лосося, сир філадельфія, зелена цибуля, японський омлет, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "ОВОЧЕВИЙ ФУТОМАКІ",
+      "id": 36,
+      "price": "50,00",
+      "quantity": "195/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "сир фета, помідор, перець болгарський, огірок, кунжут, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "МУРУКАЇ ФУТОМАКІ",
+      "id": 37,
+      "price": "60,00",
+      "quantity": "130/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "м’ясо мідії, сир філадельфія, сир тостерний, салат чука, водорості норі, рис, васабі, імбир"
+    }
+  ],
+  "originalRoll": [
+    {
+      "name": "ХАКО СУШІ З ЛОСОСЕМ",
+      "id": 38,
+      "price": "80,00",
+      "quantity": "200/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "філе лосося, яблуко, рис, сир філадельфія, водорості норі, соєвий папір, васабі, імбир"
+    },
+    {
+      "name": "РОЛ АКАУРО",
+      "id": 39,
+      "price": "80,00",
+      "quantity": "220/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "морський окунь, чука, ікра тобіко, чорний кунжут, сир тостерний, рис, сир філадельфія, водорості норі, васабі, імбир"
+    },
+    {
+      "name": "СИРНИЙ",
+      "id": 40,
+      "price": "60,00",
+      "quantity": "200/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "сир філадельфія, сир тостерний, сир пармезан, кунжут, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "ФІРМОВИЙ",
+      "id": 41,
+      "price": "80,00",
+      "quantity": "210/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "окунь-унагі, філе лосося, майонез японський, огірок, ікра тобіко, водорості норі, рис, васабі, соус унагі, кунжут, імбир"
+    },
+    {
+      "name": "З ОКУНЕМ-УНАГІ В КУНЖУТІ",
+      "id": 42,
+      "price": "70,00",
+      "quantity": "205/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "окунь-унагі, авокадо, огірок, сир філадельфія, кунжут, соус унагі, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "ЛОСОСЬ ФЛАМБЕ",
+      "id": 43,
+      "price": "110,0",
+      "quantity": "235/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "філе лососся, сир філадельфія, салат чука, окунь темпура, соус Тонкатцу, молекулярна ікра, водорості норі, рис, імбир, васабі"
+    },
+    {
+      "name": "ГРІН РОЛ З КРЕВЕТКОЮ ТЕМПУРА",
+      "id": 44,
+      "price": "75,00",
+      "quantity": "220/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "креветка темпура, омлет томаго, сир філадельфія, японський майонез, ікра тобіко, шпинат свіжий, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "Урамакі",
+      "id": 45,
+      "price": "135,0",
+      "quantity": "255/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "тунець, сир філадельфія. креветка темпура, ікра тобіко, авокадо, кунжут білий та чорний, соус Тонкатцу, горіховий соус, молекулярна ікра, водорості норі, рис, імбир, васабі"
+    },
+    {
+      "name": "Рол Унагі",
+      "id": 46,
+      "price": "135,0",
+      "quantity": "240/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "вугор, омлет томаго, сир філадельфія, соус унагі, кунжут, харчове золото, молекулярна ікра, водорості норі, рис, імбир, васабі"
+    }
+  ],
+  "californiaRoll": [
+    {
+      "name": "З ЛОСОСЕМ",
+      "id": 47,
+      "price": "90,00",
+      "quantity": "210/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "філе лосося, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "З КОПЧЕНИМ ЛОСОСЕМ",
+      "id": 48,
+      "price": "90,00",
+      "quantity": "210/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "лосось копчений, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "З ТУНЦЕМ",
+      "id": 49,
+      "price": "95,00",
+      "quantity": "210/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "тунець, авокадо, огірок, майонез японський, ікра тобіко, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "УНАГІ",
+      "id": 50,
+      "price": "95,00",
+      "quantity": "220/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "вугор, окунь унагі, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, соус унагі, кунжут, імбир"
+    }
+  ],
+  "PhiladelphiaRoll": [
+    {
+      "name": "З ЛОСОСЕМ",
+      "id": 51,
+      "price": "100,0",
+      "quantity": "220/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "філе лосося, сир філадельфія, зелена цибуля, огірок, водорості норі,рис, васабі, імбир"
+    },
+    {
+      "name": "З КОПЧЕНИМ ЛОСОСЕМ",
+      "id": 52,
+      "price": "100,0",
+      "quantity": "220/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "лосось копчений, сир філадельфія, зелена цибуля, огірок, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "З ТУНЦЕМ",
+      "id": 53,
+      "price": "100,0",
+      "quantity": "210/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "тунець, сир філадельфія, авокадо, огірок, ікра тобіко, водорості норі, рис, васабі, імбир"
+    },
+    {
+      "name": "УНАГІ",
+      "id": 54,
+      "price": "100,0",
+      "quantity": "220/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "вугор, окунь-унагі, сир філадельфія, авокадо, огірок, ікра тобіко, водорості норі, рис, васабі, соус унагі, кунжут, імбир"
+    },
+    {
+      "name": "КРЕВЕТКА ФЛАМБЕ",
+      "id": 55,
+      "price": "95,00",
+      "quantity": "220/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "сир філадельфія, авокадо, ікра тобіко, креветка, молекулярна ікра, водорості норі, рис, імбир, васабі"
+    }
+  ],
+  "drakoniRoll": [
+    {
+      "name": "ЗЕЛЕНИЙ ДРАКОН",
+      "id": 56,
+      "price": "110,0",
+      "quantity": "235/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "філе лосося, авокадо, огірок, сир філадельфія, кунжут, соус унагі, ікра тобіко, молекулярна ікра, водорості норі, рис, імбир, васабі"
+    },
+    {
+      "name": "ЗОЛОТИЙ ДРАКОН",
+      "id": 57,
+      "price": "140,0",
+      "quantity": "245/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "вугор, окунь-унагі. огірок, майонез японський, ікра тобіко, соус унагі, кунжут, харчове золото, молекулярна ікра, водорості норі, рис, імбир, васабі"
+    },
+    {
+      "name": "ЧЕРВОНИЙ ДРАКОН",
+      "id": 58,
+      "price": "140,0",
+      "quantity": "235/7/15г",
+      "image": "barbarescoSushi",
+      "summary": "філе лосося, вугор, окунь-унагі, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир"
+    }
+  ],
+  "alcoholicCocktail": [
+    {
+      "name": "BLOODY MARY (N.A) ",
+      "id": 104,
+      "price": "40,00",
+      "quantity": "250мл",
+      "image": "barbarescoAlcohol",
+      "summary": "горілка, соуси тобаско та ворчестер, мікс спецій, лимонний фреш, цукровий сироп, томатний сік"
+    },
+    {
+      "name": "BLOODY MARY (ALC) ",
+      "id": 105,
+      "price": "70,00",
+      "quantity": "250мл",
+      "image": "barbarescoAlcohol",
+      "summary": "горілка, соуси тобаско та ворчестер, мікс спецій, лимонний фреш, цукровий сироп, томатний сік"
+    },
+    {
+      "name": "LONG ISLAND ICE TEA",
+      "id": 106,
+      "price": "70,00",
+      "quantity": "250мл",
+      "image": "barbarescoAlcohol",
+      "summary": "горілка, джин, текіла, ром, апельсиновий лікер, лимонний фреш, пепсі"
+    },
+    {
+      "name": "APEROL SPRITZ",
+      "id": 107,
+      "price": "65,00",
+      "quantity": "250мл",
+      "image": "barbarescoAlcohol",
+      "summary": "апероль, ігристе вино, содова, апельсин, оливки"
+    },
+    {
+      "name": "APEROL berry",
+      "id": 108,
+      "price": "70,00",
+      "quantity": "250мл",
+      "image": "barbarescoAlcohol",
+      "summary": "апероль, пюре Monin смородини і чорниці, ігристе вино, содова"
+    },
+    {
+      "name": "green aplle MOJITO",
+      "id": 109,
+      "price": "60,00",
+      "quantity": "300мл",
+      "image": "barbarescoAlcohol",
+      "summary": "м’ята, лайм, пюре зелене яблуко Monin, содова, тростинний цукор"
+    },
+    {
+      "name": "aplle grape sangria",
+      "id": 110,
+      "price": "60,00",
+      "quantity": "300мл",
+      "image": "barbarescoAlcohol",
+      "summary": "біле сухе вино, винограндний сік, пюре зелене яблуко Monin, розмарин"
+    },
+    {
+      "name": "grapefruit whiskey sour",
+      "id": 111,
+      "price": "80,00",
+      "quantity": "150мл",
+      "image": "barbarescoAlcohol",
+      "summary": "віскі, лимонний фреш, грейпфрутовий лікер, білок"
+    },
+    {
+      "name": "MAI TAI",
+      "id": 112,
+      "price": "70,00",
+      "quantity": "300мл",
+      "image": "barbarescoAlcohol",
+      "summary": "пряний ром, апельсиновий лікер, мигдальний сироп, лимонний фреш, пюре маракуйя, апельсиновий сік"
+    },
+    {
+      "name": "PASSION FRUIT COLADA",
+      "id": 113,
+      "price": "70,00",
+      "quantity": "300мл",
+      "image": "barbarescoAlcohol",
+      "summary": "пряний ром, ананасовий сік, кокосове молоко, пюре маракуя"
+    },
+    {
+      "name": "MOJITO (N.A)",
+      "id": 114,
+      "price": "35,00",
+      "quantity": "250мл",
+      "image": "barbarescoAlcohol",
+      "summary": "темний та золотий ром, м’ята, лайм, содова, тростинний цукор"
+    },
+    {
+      "name": "MOJITO (ALC)",
+      "id": 115,
+      "price": "70,00",
+      "quantity": "250мл",
+      "image": "barbarescoAlcohol",
+      "summary": "темний та золотий ром, м’ята, лайм, содова, тростинний цукор"
+    },
+    {
+      "name": "Blueberry Gin Tonic",
+      "id": 116,
+      "price": "65,00",
+      "quantity": "300мл",
+      "image": "barbarescoAlcohol",
+      "summary": "джин, тонік, лимонний фреш, сиропи чорниця та бузина, ягоди"
+    },
+    {
+      "name": "TIKI TIKI",
+      "id": 117,
+      "price": "70,00",
+      "quantity": "300мл",
+      "image": "barbarescoAlcohol",
+      "summary": "горілка, біттер, кокосове пюре, сік ананаса, фреш лимонний"
+    }
+  ],
+  "alcoholicSet": [
+    {
+      "name": "ІМБИРНИЙ",
+      "id": 118,
+      "price": "60,00",
+      "quantity": "210мл",
+      "image": "barbarescoAlcohol",
+      "summary": ""
+    },
+    {
+      "name": "МАЛИНОВИЙ",
+      "id": 119,
+      "price": "60,00",
+      "quantity": "210мл",
+      "image": "barbarescoAlcohol",
+      "summary": ""
+    },
+    {
+      "name": "МАНГО",
+      "id": 120,
+      "price": "60,00",
+      "quantity": "210мл",
+      "image": "barbarescoAlcohol",
+      "summary": ""
+    },
+    {
+      "name": "ЦИТРУСОВО-М’ЯТНИЙ",
+      "id": 121,
+      "price": "60,00",
+      "quantity": "210мл",
+      "image": "barbarescoAlcohol",
+      "summary": ""
+    }
+  ],
+  "wine": [
+    {
+      "name": "ІМБИРНИЙ",
+      "id": 118,
+      "price": "60,00",
+      "quantity": "210мл",
+      "image": "barbarescoAlcohol",
+      "summary": ""
+    },
+    {
+      "name": "МАЛИНОВИЙ",
+      "id": 119,
+      "price": "60,00",
+      "quantity": "210мл",
+      "image": "barbarescoAlcohol",
+      "summary": ""
+    },
+    {
+      "name": "МАНГО",
+      "id": 120,
+      "price": "60,00",
+      "quantity": "210мл",
+      "image": "barbarescoAlcohol",
+      "summary": ""
+    },
+    {
+      "name": "ЦИТРУСОВО-М’ЯТНИЙ",
+      "id": 121,
+      "price": "60,00",
+      "quantity": "210мл",
+      "image": "barbarescoAlcohol",
+      "summary": ""
     }
   ]
 }

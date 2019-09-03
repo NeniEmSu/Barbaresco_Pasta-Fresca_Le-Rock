@@ -33,7 +33,7 @@
               alt="img14"
             >
             <figcaption>
-              <h2>{{$t('links.menu')}}</h2>
+              <h1>{{$t('links.menu')}}</h1>
               <span></span>
             </figcaption>
           </figure>
@@ -170,7 +170,8 @@ export default {
   opacity: 0.35;
 }
 
-.grid figure h2 {
+.grid figure h2,
+.grid figure h1 {
   font-family: $primaryFont;
   font-style: normal;
   font-weight: bold;
@@ -185,7 +186,8 @@ export default {
   opacity: 0.5;
 }
 
-.grid figure h2 {
+.grid figure h2,
+.grid figure h1 {
   margin: 0;
 }
 
@@ -204,7 +206,8 @@ figure.saddleEffect figcaption::before {
   transform: translate3d(0, 50%, 0);
 }
 
-figure.saddleEffect h2 {
+figure.saddleEffect h2,
+figure.saddleEffect h1 {
   font-family: $primaryFont;
   font-style: normal;
   font-weight: bold;
@@ -235,7 +238,9 @@ figure.saddleEffect figcaption::before {
 }
 
 figure.saddleEffect:hover h2,
-.nuxt-link-exact-active figure.saddleEffect h2 {
+.nuxt-link-exact-active figure.saddleEffect h2,
+figure.saddleEffect:hover h1,
+.nuxt-link-exact-active figure.saddleEffect h1 {
   font-family: $primaryFont;
   font-style: normal;
   font-weight: bold;
@@ -270,7 +275,8 @@ section {
     height: 100px;
   }
 
-  figure.saddleEffect h2 {
+  figure.saddleEffect h2,
+  figure.saddleEffect h1 {
     font-family: $primaryFont;
     font-style: normal;
     font-weight: bold;
@@ -290,7 +296,9 @@ section {
   }
 
   figure.saddleEffect:hover h2,
-  .nuxt-link-exact-active figure.saddleEffect h2 {
+  .nuxt-link-exact-active figure.saddleEffect h2,
+  figure.saddleEffect:hover h1,
+  .nuxt-link-exact-active figure.saddleEffect h1 {
     font-family: $primaryFont;
     font-style: normal;
     font-weight: bold;
@@ -324,7 +332,8 @@ section {
     margin-top: 99px;
   }
 
-  .grid figure h2 {
+  .grid figure h2,
+  .grid figure h1 {
     opacity: 1 !important;
   }
 
@@ -348,7 +357,8 @@ section {
     transform: translate3d(0, 0, 0);
   }
 
-  figure.saddleEffect h2 {
+  figure.saddleEffect h2,
+  figure.saddleEffect h1 {
     font-family: $primaryFont;
     font-style: normal;
     font-weight: bold;
@@ -368,7 +378,9 @@ section {
   }
 
   figure.saddleEffect:hover h2,
-  .nuxt-link-exact-active figure.saddleEffect h2 {
+  .nuxt-link-exact-active figure.saddleEffect h2,
+  figure.saddleEffect:hover h1,
+  .nuxt-link-exact-active figure.saddleEffect h1 {
     font-family: $primaryFont;
     font-style: normal;
     font-weight: bold;
