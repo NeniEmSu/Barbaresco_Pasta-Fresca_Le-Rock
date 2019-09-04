@@ -183,32 +183,32 @@
           <div class="row">
             <div
               class="card"
-              v-for="originalRoll in originalRoll.originalRoll"
-              :key="originalRoll.id"
+              v-for="wine in wine.wine"
+              :key="wine.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${originalRoll.image + '.png'}`)"
-                :alt="originalRoll.name"
+                :src="require(`~/assets/img/${wine.image + '.png'}`)"
+                :alt="wine.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="originalRoll.name"
-                >{{originalRoll.name}}</h5>
+                  :title="wine.name"
+                >{{wine.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="originalRoll.summary"
-                >{{(originalRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{originalRoll.quantity}}</span></p>
+                  :title="wine.summary"
+                >{{(wine.summary).slice(0, 25)}}...<span class="card-text quantity">{{wine.quantity}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{originalRoll.quantity}}</span> {{originalRoll.price}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{wine.quantity}}</span> {{wine.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
                     <button class="btn my-auto mr-auto">Замовити</button></div>
@@ -252,32 +252,32 @@
           <div class="row">
             <div
               class="card"
-              v-for="californiaRoll in californiaRoll.californiaRoll"
-              :key="californiaRoll.id"
+              v-for="sparklingWine in sparklingWine.sparklingWine"
+              :key="sparklingWine.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${californiaRoll.image + '.png'}`)"
-                :alt="californiaRoll.name"
+                :src="require(`~/assets/img/${sparklingWine.image + '.png'}`)"
+                :alt="sparklingWine.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="californiaRoll.name"
-                >{{californiaRoll.name}}</h5>
+                  :title="sparklingWine.name"
+                >{{sparklingWine.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="californiaRoll.summary"
-                >{{(californiaRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{californiaRoll.quantity}}</span></p>
+                  :title="sparklingWine.summary"
+                >{{(sparklingWine.summary).slice(0, 25)}}...<span class="card-text quantity">{{sparklingWine.quantity}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{californiaRoll.quantity}}</span> {{californiaRoll.price}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{sparklingWine.quantity}}</span> {{sparklingWine.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
                     <button class="btn my-auto mr-auto">Замовити</button></div>
@@ -320,32 +320,32 @@
           <div class="row">
             <div
               class="card"
-              v-for="PhiladelphiaRoll in PhiladelphiaRoll.PhiladelphiaRoll"
-              :key="PhiladelphiaRoll.id"
+              v-for="alcoholicDrinks in alcoholicDrinks.alcoholicDrinks"
+              :key="alcoholicDrinks.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${PhiladelphiaRoll.image + '.png'}`)"
-                :alt="PhiladelphiaRoll.name"
+                :src="require(`~/assets/img/${alcoholicDrinks.image + '.png'}`)"
+                :alt="alcoholicDrinks.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="PhiladelphiaRoll.name"
-                >{{PhiladelphiaRoll.name}}</h5>
+                  :title="alcoholicDrinks.name"
+                >{{alcoholicDrinks.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="PhiladelphiaRoll.summary"
-                >{{(PhiladelphiaRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{PhiladelphiaRoll.quantity}}</span></p>
+                  :title="alcoholicDrinks.summary"
+                >{{(alcoholicDrinks.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicDrinks.quantity}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{PhiladelphiaRoll.quantity}}</span> {{PhiladelphiaRoll.price}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicDrinks.quantity}}</span> {{alcoholicDrinks.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
                     <button class="btn my-auto mr-auto">Замовити</button></div>
@@ -388,32 +388,32 @@
           <div class="row">
             <div
               class="card"
-              v-for="drakoniRoll in drakoniRoll.drakoniRoll"
-              :key="drakoniRoll.id"
+              v-for="bear in bear.bear"
+              :key="bear.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${drakoniRoll.image + '.png'}`)"
-                :alt="drakoniRoll.name"
+                :src="require(`~/assets/img/${bear.image + '.png'}`)"
+                :alt="bear.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="drakoniRoll.name"
-                >{{drakoniRoll.name}}</h5>
+                  :title="bear.name"
+                >{{bear.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="drakoniRoll.summary"
-                >{{(drakoniRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{drakoniRoll.quantity}}</span></p>
+                  :title="bear.summary"
+                >{{(bear.summary).slice(0, 25)}}...<span class="card-text quantity">{{bear.quantity}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{drakoniRoll.quantity}}</span> {{drakoniRoll.price}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{bear.quantity}}</span> {{bear.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
                     <button class="btn my-auto mr-auto">Замовити</button></div>
@@ -433,12 +433,7 @@
 </template>
 
 <script>
-import alcoholicCocktail from "~/api/barbaresco.json"
-import alcoholicSet from "~/api/barbaresco.json"
-import originalRoll from "~/api/barbaresco.json"
-import californiaRoll from "~/api/barbaresco.json"
-import PhiladelphiaRoll from "~/api/barbaresco.json"
-import drakoniRoll from "~/api/barbaresco.json"
+import { alcoholicCocktail, alcoholicSet, wine, sparklingWine, alcoholicDrinks, bear } from '~/api/index.js';
 
 export default {
   name: 'TheAlcohol',
@@ -446,10 +441,10 @@ export default {
     return {
       alcoholicCocktail,
       alcoholicSet,
-      originalRoll,
-      californiaRoll,
-      PhiladelphiaRoll,
-      drakoniRoll
+      wine,
+      sparklingWine,
+      alcoholicDrinks,
+      bear
 
     }
   },

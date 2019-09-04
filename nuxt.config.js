@@ -282,39 +282,37 @@ export default {
 
   axios: {},
 
+
   build: {
-
     transpile: [/^vue2-google-maps($|\/)/],
-    build: {
-      transpile: [/^vue2-google-maps($|\/)/],
-      extractCSS: true,
+    extractCSS: true,
 
-      extend(config, {
-        isDev,
-        isClient
-      }) {
-        config.module.rules.forEach(rule => {
-          if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
-            rule.use.push({
-              loader: "image-webpack-loader",
-              options: {
-                svgo: {
-                  plugins: [{
-                      removeViewBox: false
-                    },
-                    {
-                      removeDimensions: true
-                    }
-                  ]
-                }
+    extend(config, {
+      isDev,
+      isClient
+    }) {
+      config.module.rules.forEach(rule => {
+        if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+          rule.use.push({
+            loader: "image-webpack-loader",
+            options: {
+              svgo: {
+                plugins: [{
+                    removeViewBox: false
+                  },
+                  {
+                    removeDimensions: true
+                  }
+                ]
               }
-            });
-          }
-        });
-      },
-
-    }
-
+            }
+          });
+        }
+      });
+    },
 
   }
+
+
+
 }

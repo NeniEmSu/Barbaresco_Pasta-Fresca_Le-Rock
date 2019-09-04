@@ -497,14 +497,7 @@
 </template>
 
 <script>
-
-import coffee from "~/api/barbaresco.json"
-import tea from "~/api/barbaresco.json"
-import fresh from "~/api/barbaresco.json"
-import lemonade from "~/api/barbaresco.json"
-import smoothy from "~/api/barbaresco.json"
-import milkshake from "~/api/barbaresco.json"
-import nonAlcoholicDrinks from "~/api/barbaresco.json"
+import { coffee, tea, fresh, lemonade, smoothy, milkshake, nonAlcoholicDrinks } from '~/api/index.js';
 export default {
   name: 'TheDrinks',
   data () {
@@ -516,7 +509,6 @@ export default {
       smoothy,
       milkshake,
       nonAlcoholicDrinks
-
     }
   },
 }

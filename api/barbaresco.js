@@ -1,6 +1,5 @@
-{
-  "salads": [
-    {
+export default [{
+  "salads": [{
       "name": "САЛАТ З КАЛЬМАРАМИ",
       "id": 59,
       "price": "60,00",
@@ -49,8 +48,7 @@
       "summary": "Курка sous vide, спаржева квасоля, міні-моцарела, помідори чері, смажена цвітна капуста та картопля, заправляється базиліковим соусом"
     }
   ],
-  "pizzas": [
-    {
+  "pizzas": [{
       "name": "ГАВАЙСЬКА",
       "id": 65,
       "price": "70,00",
@@ -123,8 +121,7 @@
       "summary": "Моцарела, філе курки, бекон, помідори чері, пармезан, мікс-салат, вершковий соус"
     }
   ],
-  "burgers": [
-    {
+  "burgers": [{
       "name": "БУРГЕР З КУРКОЮ",
       "id": 74,
       "price": "75,00",
@@ -173,8 +170,7 @@
       "summary": "Булка, куряча філе, овочі гриль, мікс салат, сир Філадельфія, тостерний сир, соус big tasty"
     }
   ],
-  "pancakes": [
-    {
+  "pancakes": [{
       "name": "З ШИНКОЮ І СИРОМ",
       "id": 80,
       "price": "50,00",
@@ -255,8 +251,7 @@
       "summary": ""
     }
   ],
-  "deserts": [
-    {
+  "deserts": [{
       "name": "НАПОЛЕОН",
       "id": 90,
       "price": "45,00",
@@ -297,8 +292,7 @@
       "summary": ""
     }
   ],
-  "firstCourses": [
-    {
+  "firstCourses": [{
       "name": "КУРЯЧИЙ БУЛЬЙОН",
       "id": 95,
       "price": "33,00",
@@ -331,8 +325,7 @@
       "summary": "Сирний суп, на рибному бульйоні з креветками"
     }
   ],
-  "mainMeals": [
-    {
+  "mainMeals": [{
       "name": "КУРКА СТІР ФРАЙ",
       "id": 99,
       "price": "65,00",
@@ -373,8 +366,7 @@
       "summary": ""
     }
   ],
-  "coffee": [
-    {
+  "coffee": [{
       "name": "ЕСПРЕССО",
       "id": 1,
       "price": "20,00",
@@ -431,8 +423,7 @@
       "summary": ""
     }
   ],
-  "tea": [
-    {
+  "tea": [{
       "name": "ЧОРНИЙ",
       "id": 8,
       "price": "30,00",
@@ -465,8 +456,7 @@
       "summary": "суміш лимонної трави, меліси, м’яти, ромашки та цедри апельсина"
     }
   ],
-  "hotDrinks": [
-    {
+  "hotDrinks": [{
       "name": "ОБЛІПИХОВИЙ чай З МАРАКУЄЮ",
       "id": 12,
       "price": "30,00",
@@ -483,8 +473,7 @@
       "summary": ""
     }
   ],
-  "fresh": [
-    {
+  "fresh": [{
       "name": "АПЕЛЬСИНОВИЙ",
       "id": 14,
       "price": "60,00",
@@ -501,8 +490,7 @@
       "summary": ""
     }
   ],
-  "lemonade": [
-    {
+  "lemonade": [{
       "name": "ЯБЛУКО-БАЗИЛІК",
       "id": 16,
       "price": "35,00",
@@ -543,8 +531,7 @@
       "summary": "сироп зелений банан, ківі, лимонний фреш, содова"
     }
   ],
-  "smoothy": [
-    {
+  "smoothy": [{
       "name": "ДИНЯ-МАРАКУЙЯ",
       "id": 21,
       "price": "40,00",
@@ -561,8 +548,7 @@
       "summary": "шпинат, банан, сік яблука, пюре маракуйї"
     }
   ],
-  "milkshake": [
-    {
+  "milkshake": [{
       "name": "БАНАНОВИЙ",
       "id": 23,
       "price": "40,00",
@@ -587,8 +573,7 @@
       "summary": ""
     }
   ],
-  "nonAlcoholicDrinks": [
-    {
+  "nonAlcoholicDrinks": [{
       "name": "МОРС З ЖУРАВЛИНИ",
       "id": 26,
       "price": "16,00",
@@ -637,8 +622,7 @@
       "summary": "слабогаз./негаз"
     }
   ],
-  "makiRoll": [
-    {
+  "makiRoll": [{
       "name": "СЯКЕ МАКІ",
       "id": 32,
       "price": "55,00",
@@ -663,8 +647,7 @@
       "summary": "салат чука, горіховий соус, кунжут, водорості норі, рис, васабі, імбир"
     }
   ],
-  "photoMakiRoll": [
-    {
+  "photoMakiRoll": [{
       "name": "СЯКЕ ФУТОМАКІ",
       "id": 35,
       "price": "70,00",
@@ -689,8 +672,7 @@
       "summary": "м’ясо мідії, сир філадельфія, сир тостерний, салат чука, водорості норі, рис, васабі, імбир"
     }
   ],
-  "originalRoll": [
-    {
+  "originalRoll": [{
       "name": "ХАКО СУШІ З ЛОСОСЕМ",
       "id": 38,
       "price": "80,00",
@@ -763,8 +745,7 @@
       "summary": "вугор, омлет томаго, сир філадельфія, соус унагі, кунжут, харчове золото, молекулярна ікра, водорості норі, рис, імбир, васабі"
     }
   ],
-  "californiaRoll": [
-    {
+  "californiaRoll": [{
       "name": "З ЛОСОСЕМ",
       "id": 47,
       "price": "90,00",
@@ -797,8 +778,7 @@
       "summary": "вугор, окунь унагі, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, соус унагі, кунжут, імбир"
     }
   ],
-  "PhiladelphiaRoll": [
-    {
+  "PhiladelphiaRoll": [{
       "name": "З ЛОСОСЕМ",
       "id": 51,
       "price": "100,0",
@@ -839,8 +819,7 @@
       "summary": "сир філадельфія, авокадо, ікра тобіко, креветка, молекулярна ікра, водорості норі, рис, імбир, васабі"
     }
   ],
-  "drakoniRoll": [
-    {
+  "drakoniRoll": [{
       "name": "ЗЕЛЕНИЙ ДРАКОН",
       "id": 56,
       "price": "110,0",
@@ -865,8 +844,7 @@
       "summary": "філе лосося, вугор, окунь-унагі, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир"
     }
   ],
-  "alcoholicCocktail": [
-    {
+  "alcoholicCocktail": [{
       "name": "BLOODY MARY (N.A) ",
       "id": 104,
       "price": "40,00",
@@ -979,8 +957,7 @@
       "summary": "горілка, біттер, кокосове пюре, сік ананаса, фреш лимонний"
     }
   ],
-  "alcoholicSet": [
-    {
+  "alcoholicSet": [{
       "name": "ІМБИРНИЙ",
       "id": 118,
       "price": "60,00",
@@ -1013,228 +990,37 @@
       "summary": ""
     }
   ],
-  "wine": [
-    {
-      "name": "Cavaleria Bianco",
-      "id": 122,
-      "price": "28,00/210,00",
-      "quantity": "100/750мл",
-      "image": "barbarescoAlcohol",
-      "summary": "біле сухе"
-    },
-    {
-      "name": "Cavaleria Bianco",
-      "id": 123,
-      "price": "28,00/210,00",
-      "quantity": "100/750мл",
-      "image": "barbarescoAlcohol",
-      "summary": "н/сол біле"
-    },
-    {
-      "name": "Cavaleria Rosso",
-      "id": 124,
-      "price": "28,00/210,00",
-      "quantity": "100/750мл",
-      "image": "barbarescoAlcohol",
-      "summary": "сухе червОНЕ"
-    },
-    {
-      "name": "Cavaleria Rosso",
-      "id": 125,
-      "price": "28,00/210,00",
-      "quantity": "100/750мл",
-      "image": "barbarescoAlcohol",
-      "summary": "н/с червОНЕ"
-    },
-    {
-      "name": "Casa Verde Merlot",
-      "id": 126,
-      "price": "44,00/330,00",
-      "quantity": "100/375мл",
-      "image": "barbarescoAlcohol",
-      "summary": "червоне сухе/біле сухе"
-    },
-    {
-      "name": "Casa Verde Merlot",
-      "id": 127,
-      "price": "24,00/90,00",
-      "quantity": "100/375мл",
-      "image": "barbarescoAlcohol",
-      "summary": "СЛИВОВЕ СОЛ/РОЖ/БІЛ"
-    }
-  ],
-  "sparklingWine": [
-    {
-      "name": "МАРТІНІ АСТІ",
-      "id": 128,
-      "price": "400,00",
-      "quantity": "750мл",
-      "image": "barbarescoAlcohol",
-      "summary": "СОЛОДКЕ"
-    },
-    {
-      "name": "ЗЕБО",
-      "id": 129,
-      "price": "350,00",
-      "quantity": "750мл",
-      "image": "barbarescoAlcohol",
-      "summary": "СОЛОДКЕ"
-    },
-    {
-      "name": "коктебель",
-      "id": 130,
-      "price": "130,00",
-      "quantity": "750мл",
-      "image": "barbarescoAlcohol",
-      "summary": "БРЮТ\\напівСОЛОДКЕ\\рожеве"
-    }
-  ],
-  "alcoholicDrinks": [
-    {
-      "name": "CINZANO",
-      "id": 131,
-      "price": "20,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": "БІЛИЙ, ЧЕРВОНИЙ"
-    },
-    {
-      "name": "BECHEROVKA",
-      "id": 132,
-      "price": "35,00",
-      "quantity": "50мл",
+  "wine": [{
+      "name": "ІМБИРНИЙ",
+      "id": 118,
+      "price": "60,00",
+      "quantity": "210мл",
       "image": "barbarescoAlcohol",
       "summary": ""
     },
     {
-      "name": "JAGERMEISTER",
-      "id": 133,
-      "price": "45,00",
-      "quantity": "50мл",
+      "name": "МАЛИНОВИЙ",
+      "id": 119,
+      "price": "60,00",
+      "quantity": "210мл",
       "image": "barbarescoAlcohol",
       "summary": ""
     },
     {
-      "name": "AZNAURI 5*",
-      "id": 134,
-      "price": "35,00",
-      "quantity": "50мл",
+      "name": "МАНГО",
+      "id": 120,
+      "price": "60,00",
+      "quantity": "210мл",
       "image": "barbarescoAlcohol",
       "summary": ""
     },
     {
-      "name": "REMY MARTIN VS",
-      "id": 135,
-      "price": "110,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "ЗУБРІВКА",
-      "id": 136,
-      "price": "25,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "ФІНЛЯНДІЯ",
-      "id": 137,
-      "price": "40,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "Козацька рада",
-      "id": 138,
-      "price": "20,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "ESPOLON",
-      "id": 139,
-      "price": "50,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "CAPTAIN MORGAN",
-      "id": 140,
-      "price": "50,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": "ЗОЛОТИЙ, ТЕМНИЙ"
-    },
-    {
-      "name": "WILD TURKEY",
-      "id": 141,
-      "price": "70,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": "RYE, 101, 81"
-    },
-    {
-      "name": "ДЖЕМЕСОН",
-      "id": 142,
-      "price": "70,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "ДЖЕК ДЕНІЕЛС ОЛД №7",
-      "id": 143,
-      "price": "70,00",
-      "quantity": "50мл",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    }
-  ],
-  "bear": [
-    {
-      "name": "ЧЕРНІГІВСЬКЕ СВІТЛЕ",
-      "id": 144,
-      "price": "30,00",
-      "quantity": "0,5л",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "БАД Б/А",
-      "id": 145,
-      "price": "35,00",
-      "quantity": "0,5л",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "ХУГАРДЕН",
-      "id": 146,
-      "price": "70,00/45,00",
-      "quantity": "0,5л/0,3л",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "БІЛА НІЧ",
-      "id": 147,
-      "price": "35,00/23,00",
-      "quantity": "0,5л/0,3л",
-      "image": "barbarescoAlcohol",
-      "summary": ""
-    },
-    {
-      "name": "ХМЕЛЕВУС",
-      "id": 148,
-      "price": "40,00/26,00",
-      "quantity": "0,5л/0,3л",
+      "name": "ЦИТРУСОВО-М’ЯТНИЙ",
+      "id": 121,
+      "price": "60,00",
+      "quantity": "210мл",
       "image": "barbarescoAlcohol",
       "summary": ""
     }
   ]
-}
+}]

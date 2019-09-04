@@ -108,7 +108,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .owl-theme .owl-dots .owl-dot span {
   width: 15px;
   height: 15px;
