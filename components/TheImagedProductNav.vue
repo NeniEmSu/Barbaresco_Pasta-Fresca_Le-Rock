@@ -48,36 +48,6 @@
     <section class="container text-center">
 
       <button
-        class="column "
-        @click="Show6"
-        :class="{ active: currentProductsDisplayed === 6}"
-      >
-        <div class="nav-image navSix"></div>
-        <div class="text-center nav-text">{{$t('salads')}}</div>
-
-      </button>
-
-      <button
-        class="column "
-        @click="Show7"
-        :class="{ active: currentProductsDisplayed === 7}"
-      >
-        <div class="nav-image navSeven"></div>
-        <div class="text-center nav-text">{{$t('firstCourse')}}</div>
-
-      </button>
-
-      <button
-        @click.prevent="Show11"
-        class="column "
-        :class="{ active: currentProductsDisplayed === 11}"
-      >
-        <div class="nav-image navSeven"></div>
-        <div class="text-center nav-text">{{$t('mainMeal')}}</div>
-
-      </button>
-
-      <button
         class="column text-center "
         @click="Show1"
         :class="{ active: currentProductsDisplayed === 1}"
@@ -97,6 +67,15 @@
 
       </button>
 
+      <button
+        class="column "
+        @click="Show3"
+        :class="{ active: currentProductsDisplayed === 3}"
+      >
+        <div class="nav-image navThree"></div>
+        <div class="text-center nav-text">{{$t('sushi')}}</div>
+
+      </button>
       <button
         class="column "
         @click="Show4"
@@ -119,11 +98,21 @@
 
       <button
         class="column "
-        @click="Show3"
-        :class="{ active: currentProductsDisplayed === 3}"
+        @click="Show6"
+        :class="{ active: currentProductsDisplayed === 6}"
       >
-        <div class="nav-image navThree"></div>
-        <div class="text-center nav-text">{{$t('sushi')}}</div>
+        <div class="nav-image navSix"></div>
+        <div class="text-center nav-text">{{$t('salads')}}</div>
+
+      </button>
+
+      <button
+        class="column "
+        @click="Show7"
+        :class="{ active: currentProductsDisplayed === 7}"
+      >
+        <div class="nav-image navSeven"></div>
+        <div class="text-center nav-text">{{$t('firstCourse')}}</div>
 
       </button>
 
@@ -154,6 +143,16 @@
       >
         <div class="nav-image navTen"></div>
         <div class="text-center nav-text">{{$t('alcohol')}}</div>
+
+      </button>
+
+      <button
+        @click.prevent="Show11"
+        class="column "
+        :class="{ active: currentProductsDisplayed === 11}"
+      >
+        <div class="nav-image navSeven"></div>
+        <div class="text-center nav-text">{{$t('mainMeal')}}</div>
 
       </button>
 

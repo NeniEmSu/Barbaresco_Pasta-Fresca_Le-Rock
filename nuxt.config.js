@@ -287,10 +287,7 @@ export default {
     transpile: [/^vue2-google-maps($|\/)/],
     extractCSS: true,
 
-    extend(config, {
-      isDev,
-      isClient
-    }) {
+    extend(config) {
       config.module.rules.forEach(rule => {
         if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
           rule.use.push({
@@ -315,4 +312,4 @@ export default {
 
 
 
-}
+};

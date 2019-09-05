@@ -146,7 +146,9 @@ export default {
 
     return {
       currentProductsDisplayed: //Math.floor((Math.random() * 10) + 1)
-        1
+        1,
+      loading: false,
+
     }
   },
 
@@ -156,6 +158,11 @@ export default {
     }
 
   },
+
+  created () {
+    this.loading = true;
+    this.$store.dispatch("fetchProducts").then(() => (this.loading = false));
+  }
 
 }
 </script>
