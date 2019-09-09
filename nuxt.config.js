@@ -191,6 +191,7 @@ export default {
     lazy: false,
     langDir: null,
     strategy: 'prefix_except_default',
+    parsePages: true,
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -287,10 +288,7 @@ export default {
     transpile: [/^vue2-google-maps($|\/)/],
     extractCSS: true,
 
-    extend(config, {
-      isDev,
-      isClient
-    }) {
+    extend(config) {
       config.module.rules.forEach(rule => {
         if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
           rule.use.push({
@@ -315,4 +313,4 @@ export default {
 
 
 
-}
+};
