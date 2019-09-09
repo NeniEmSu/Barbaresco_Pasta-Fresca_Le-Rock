@@ -191,6 +191,7 @@ export default {
     lazy: false,
     langDir: null,
     strategy: 'prefix_except_default',
+    parsePages: true,
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
