@@ -240,13 +240,13 @@
             <h3 v-if="cartSize">{{$t('cart.heading')}}</h3>
             <div
               class="cart-item"
-              v-for="n in cartSize"
-              :key="n"
+              v-for="product in cart"
+              :key="product.id"
             >
               <div class="row my-auto">
                 <img
                   style="border-radius: 50%;   "
-                  src="~/assets/img/barbarescoBurger.png"
+                  :src="require(`~/assets/img/${product.image + '.png'}`)"
                   alt=""
                   class="col-2 m-auto"
                 >
@@ -256,13 +256,19 @@
                       <h6
                         id="cart-item-title"
                         class="col-12 m-auto text-center py-2 crop"
-                      >Бургер з куркою</h6>
+                      >{{product.name}}</h6>
                       <div class="toggle-quantity col-12 m-auto ">
-                        <button @click="removeFromCart(product.id)">
+                        <button
+                          @click="removeFromCart(product.id)"
+                          :disabled="product.quantity === 1"
+                        >
                           &minus;
                         </button>
-                        <p>1</p>
-                        <button @click="addToCart(product.id)">
+                        <p>{{product.quantity}}</p>
+                        <button
+                          @click="addToCart(product.id)"
+                          :disabled="product.quantity === product.stock"
+                        >
                           &plus;
                         </button>
 
@@ -286,7 +292,7 @@
                         <p
                           id="cart-item-price"
                           class="cart-item-price text-right py-2 card-text"
-                        >{{50 | currency}}</p>
+                        >{{product.quantity* product.price | currency}}</p>
                       </div>
                     </div>
                   </div>
@@ -303,14 +309,8 @@
               <div class="row">
                 <div class="col-4">
                   <small class="col-12">{{$t('cart.total')}}:</small>
-                  <strong
-                    v-if="cartSize === 3"
-                    class="col-12"
-                  >155,00</strong>
-                  <strong
-                    v-else
-                    class="col-12"
-                  >0,00</strong>
+                  <strong class="col-12">{{cartTotalAmount | currency}}</strong>
+
                 </div>
                 <div class="col-8 mx-auto text-right">
                   <b-button
@@ -322,7 +322,7 @@
             </div>
 
             <div class="seeAll mt-5 text-center">
-              <button @click="cartSize = 0">{{$t('cart.clear')}}</button>
+              <button @click="emptycart()">{{$t('cart.clear')}}</button>
             </div>
           </div>
         </div>
@@ -425,6 +425,7 @@
 import axios from "axios"
 import clickOutside from "@/directives/click-outside";
 import handleScroll from "@/directives/handle-scroll";
+import { mapGetters, mapState } from "vuex";
 
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
@@ -470,7 +471,7 @@ export default {
       reservationOpen: false,
       showHeader: true,
       lastScrollPosition: 0,
-      cartSize: 3,
+
       date: today,
       phone: null,
       name: null,
@@ -481,8 +482,33 @@ export default {
 
     };
   },
-  computed: {},
+  computed: {
+    ...mapState([
+      "cart"
+    ]),
+    ...mapGetters([
+      "cartSize",
+      "cartTotalAmount"
+    ])
+  },
+
   methods: {
+    addToCart (id) {
+      this.$store.dispatch("addToCart", id);
+    },
+
+    removeFromCart (id) {
+      this.$store.dispatch("removeFromCart", id);
+    },
+
+    deleteFromCart (id) {
+      this.$store.dispatch("deleteFromCart", id);
+    },
+
+    emptycart () {
+      this.$store.commit("emptyCart");
+    },
+
     closeUserDropdown () {
       this.userDropdownOpen = false;
     },

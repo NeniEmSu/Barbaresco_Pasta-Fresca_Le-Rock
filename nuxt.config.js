@@ -175,12 +175,12 @@ export default {
       'vue-currency-filter/nuxt',
       {
         name: 'currency',
-        symbol: '₴',
-        thousandsSeparator: ',',
+        symbol: '',
+        thousandsSeparator: '.',
         fractionCount: 2,
-        fractionSeparator: '.',
+        fractionSeparator: ',',
         symbolPosition: 'front',
-        symbolSpacing: true
+        symbolSpacing: false
       }
     ]
   ],

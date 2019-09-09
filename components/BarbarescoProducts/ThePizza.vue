@@ -10,7 +10,7 @@
 
         <div
           class="card"
-          v-for="product in pizzas"
+          v-for="product in products"
           :key="product.id"
         >
 
@@ -36,7 +36,7 @@
             <div class="row">
               <div class="col-sm-4 pr-0 my-auto">
 
-                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price}}</p>
+                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
               </div>
               <div class="col-sm-8 text-center my-auto">
                 <button
@@ -64,6 +64,7 @@ export default {
   data () {
     return {
       loading: false,
+      toastCount: 0
 
     }
   },
@@ -77,8 +78,13 @@ export default {
     },
   },
   methods: {
-    addToCart (id) {
+    addToCart (id, append = false) {
       this.$store.dispatch("addToCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 5000,
+        appendToast: append
+      })
     }
   }
 }

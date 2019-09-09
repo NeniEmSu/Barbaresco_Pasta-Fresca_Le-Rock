@@ -159,9 +159,14 @@ export default {
 
   },
 
-  created () {
+  created (append = false) {
     this.loading = true;
     this.$store.dispatch("fetchProducts").then(() => (this.loading = false));
+    this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+      title: "Увага!",
+      autoHideDelay: 5000,
+      appendToast: append
+    })
   }
 
 }
