@@ -25,6 +25,199 @@
   <div class="container ">
 
     <client-only>
+      <style>
+      .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .owl-theme .owl-dots .owl-dot span {
+        width: 15px !important;
+        height: 15px !important;
+        margin: 5px 7px !important;
+        background: #545454 !important;
+        opacity: 0.8 !important;
+        display: block;
+        backface-visibility: visible;
+        -webkit-backface-visibility: visible;
+        transition: opacity 200ms ease;
+        border-radius: 30px !important;
+      }
+
+      .owl-theme .owl-dots .owl-dot.active span,
+      .owl-theme .owl-dots .owl-dot:hover span {
+        background: #ffffff !important;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.55) !important;
+        width: 20px !important;
+        height: 20px !important;
+      }
+
+      @media screen and (min-width: 1246px) {
+
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel .owl-nav button.owl-next {
+          background: none;
+          color: inherit;
+          border: none;
+          padding: 0 !important;
+          font-size: 50px !important;
+          position: absolute;
+          top: 25%;
+        }
+
+        .owl-carousel .owl-nav button.owl-prev {
+          left: -2rem;
+        }
+
+        .owl-carousel .owl-nav button.owl-next {
+          right: -2rem;
+        }
+      }
+
+      @media (max-width: 992px) {
+        h4 {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 22px;
+
+          color: #ffffff !important;
+        }
+
+        p {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+
+          color: #ffffff;
+
+          margin-bottom: 0;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .card {
+          height: 120px;
+
+          img {
+            height: 120px;
+            width: auto;
+            object-fit: cover;
+          }
+        }
+
+        h4 {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+
+          color: #ffffff;
+        }
+
+        p {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+
+          color: #ffffff;
+
+          margin-bottom: 0;
+        }
+
+        .carousel-caption {
+          padding: 0;
+        }
+
+        .carousel ol {
+          margin-bottom: 0;
+        }
+
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel .owl-nav button.owl-next {
+          background: none;
+          color: inherit;
+          border: none;
+          padding: 0 !important;
+          font-size: 50px !important;
+          position: absolute;
+          top: 10%;
+        }
+
+        .owl-carousel .owl-nav button.owl-prev {
+          left: -1.3rem;
+        }
+
+        .owl-carousel .owl-nav button.owl-next {
+          right: -1.3rem;
+        }
+      }
+
+      @media (max-width: 375px) {
+        h4 {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+
+          color: #ffffff;
+        }
+
+        p {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+
+          color: #ffffff;
+
+          margin-bottom: -10px;
+        }
+      }
+
+      @media (max-width: 320px) {
+        h4 {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+
+          color: #ffffff;
+
+          margin-bottom: 0;
+        }
+
+        p {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+
+          color: #ffffff;
+
+          margin-bottom: -10px;
+        }
+      }
+      </style>
       <carousel
         :nav="true"
         :dots="true"
@@ -36,6 +229,7 @@
         :rewind="false"
         :autoplayHoverPause="true"
       >
+
         <div>
           <b-card
             overlay
@@ -43,7 +237,7 @@
             img-alt="Card Image"
             text-variant="white"
           >
-            <b-card-text class="p-lg-5 p-sm-2">
+            <b-card-text class="card-img-overlay h-100 d-flex flex-column justify-content-center text-left">
               <h4 class="card-title">
                 {{ $t('promotionTitle1')}}
               </h4>
@@ -58,7 +252,7 @@
             img-alt="Card Image"
             text-variant="white"
           >
-            <b-card-text class="p-lg-5 p-sm-2">
+            <b-card-text class="card-img-overlay h-100 d-flex flex-column justify-content-center text-left">
               <h4 class="card-title">
                 {{ $t('promotionTitle2')}}
               </h4>
@@ -73,7 +267,7 @@
             img-alt="Card Image"
             text-variant="white"
           >
-            <b-card-text class="p-lg-5 p-sm-2">
+            <b-card-text class="card-img-overlay h-100 d-flex flex-column justify-content-center text-left">
               <h4 class="card-title">
                 {{ $t('promotionTitle3')}}
               </h4>
@@ -109,180 +303,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.owl-theme .owl-dots .owl-dot span {
-  width: 15px;
-  height: 15px;
-  margin: 5px 7px;
-  background: #545454;
-  opacity: 0.8;
-  display: block;
-  backface-visibility: visible;
-  -webkit-backface-visibility: visible;
-  transition: opacity 200ms ease;
-  border-radius: 30px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #ffffff;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.55);
-  width: 20px;
-  height: 20px;
-}
-
-@media screen and (min-width: 1246px) {
-  .owl-carousel .owl-nav button.owl-prev,
-  .owl-carousel .owl-nav button.owl-next {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0 !important;
-    font-size: 50px;
-    position: absolute;
-    top: 25%;
-  }
-
-  .owl-carousel .owl-nav button.owl-prev {
-    left: -2rem;
-  }
-
-  .owl-carousel .owl-nav button.owl-next {
-    right: -2rem;
-  }
-}
-
-@media (max-width: 992px) {
-  h4 {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 22px;
-
-    color: #ffffff;
-  }
-
-  p {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #ffffff;
-
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .card {
-    height: 120px;
-
-    img {
-      height: 120px;
-      width: auto;
-      object-fit: cover;
-    }
-  }
-
-  h4 {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-
-    color: #ffffff;
-  }
-
-  p {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-
-    color: #ffffff;
-
-    margin-bottom: 0;
-  }
-
-  .carousel-caption {
-    padding: 0;
-  }
-
-  .carousel ol {
-    margin-bottom: 0;
-  }
-
-  .owl-carousel .owl-nav button.owl-prev,
-  .owl-carousel .owl-nav button.owl-next {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0 !important;
-    font-size: 50px;
-    position: absolute;
-    top: 10%;
-  }
-
-  .owl-carousel .owl-nav button.owl-prev {
-    left: -1.3rem;
-  }
-
-  .owl-carousel .owl-nav button.owl-next {
-    right: -1.3rem;
-  }
-}
-
-@media (max-width: 375px) {
-  h4 {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #ffffff;
-  }
-
-  p {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-
-    color: #ffffff;
-
-    margin-bottom: -10px;
-  }
-}
-
-@media (max-width: 320px) {
-  h4 {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #ffffff;
-
-    margin-bottom: 0;
-  }
-
-  p {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-
-    color: #ffffff;
-
-    margin-bottom: -10px;
+.card {
+  background-color: transparent;
+  border: none;
+  img {
+    object-fit: scale-down;
   }
 }
 </style>

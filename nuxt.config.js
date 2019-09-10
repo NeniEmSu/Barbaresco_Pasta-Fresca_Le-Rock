@@ -96,12 +96,17 @@ export default {
     color: '#E0A671'
   },
 
-  css: ['~/assets/css/normalize.css', '~/assets/scss/config.scss', '~/assets/fonts/fonts.css'],
+  css: ['normalize.css/normalize.css', '~/assets/scss/config.scss', '~/assets/fonts/fonts.css'],
 
   plugins: [
     '~/plugins/vuelidate.js',
     '~/plugins/i18n.js',
     "~/plugins/vue-scrollto.js",
+    "~/plugins/vue-lazyload.js",
+    {
+      src: "@/plugins/aos",
+      mode: 'client'
+    },
     {
       src: '~/plugins/vue-page-transition',
       ssr: true

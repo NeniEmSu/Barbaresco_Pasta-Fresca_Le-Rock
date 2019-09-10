@@ -7,18 +7,31 @@
     <div class="content">
 
       <div class="row">
+        <div v-if="products=null">
+          loading
+        </div>
 
         <div
+          v-else
           class="card"
-          v-for="product in products"
+          v-for="product in extracted"
           :key="product.id"
         >
 
-          <img
+          <ImageResponsive
+            :imageURL="`${product.image + '.png'}`"
+            :classes="' '"
+            :width="'150'"
+            :height="'150'"
+            :alt="product.name"
+            class=" card-img-top mx-auto"
+          />
+
+          <!-- <img
             class="card-img-top mx-auto"
             :src="require(`~/assets/img/${product.image + '.png'}`)"
             :alt="product.name"
-          >
+          > -->
           <div class="card-body">
             <h5
               class="card-title mx-auto text-center crop"
@@ -57,7 +70,7 @@
 </template>
 
 <script>
-import { mapGetters, mapState } from "vuex"
+import { mapGetters, mapState, mapActions } from "vuex"
 
 export default {
   name: 'ThePizza',
@@ -71,11 +84,22 @@ export default {
   computed: {
     ...mapGetters(["pizzas"]),
     ...mapState(["products"]),
+    ...mapActions(["fetchProducts"]),
 
 
     toast () {
       return this.$store.getters.toast
     },
+    extracted () {
+      this.fetchProducts
+      return this.products.filter(el => el.category === "pizzas")
+    }
+  },
+
+  created () {
+
+    this.$store.dispatch("fetchProducts").then(() => (this.$store.store.products.filter(el => el.category === "pizzas")));
+
   },
   methods: {
     addToCart (id, append = false) {

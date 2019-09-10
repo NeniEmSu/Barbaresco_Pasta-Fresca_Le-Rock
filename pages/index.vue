@@ -68,7 +68,10 @@
     <div class="mx-auto ">
       <h1 class="homePageHeading">{{ $t('home.title') }}</h1>
 
-      <client-only>
+      <client-only
+        aria-placeholder="Loading.."
+        placeholder="Loading..."
+      >
 
         <div>
 
@@ -86,19 +89,20 @@
             :responsive="{
               0: { items: 1, center: true, dots: true },
               600: { items: 1, center: false, margin: 0 },
-              1440: { items: 4, center: false,  margin: 60},
-              1800: { items: 4, center: false,  margin: 90}
+              1440: { items: 4, center: false,  margin: 0},
+              1800: { items: 4, center: false,  margin: 0}
             }"
           >
-
             <div
-              v-for="(variant, index) in variants"
-              :key="index"
-              class=" col-3"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="500"
+              data-aos-duration="750"
+              class=" col-3 mx-md-auto"
             >
               <b-card
-                :img-src="require(`~/assets/img/${variant.imageShowcase + '.jpg'}`)"
-                :img-alt="variant.showcaseAlt"
+                :img-src="require(`~/assets/img/${variants[0].imageShowcase + '.jpg'}`)"
+                :img-alt="variants[0].showcaseAlt"
                 img-top
                 tag="article"
                 style=""
@@ -108,23 +112,23 @@
                   <div class="card-log mx-auto text-center">
                     <b-img
                       class="mx-auto"
-                      :src="require(`~/assets/img/${variant.logo + '.svg'}`)"
-                      :alt="variant.logoAlt"
+                      :src="require(`~/assets/img/${variants[0].logo + '.svg'}`)"
+                      :alt="variants[0].logoAlt"
                     ></b-img>
                   </div>
                   <b-card-text class="cardDescription">
-                    {{ variant.details }}
+                    {{ variants[0].details }}
                   </b-card-text>
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: variant.siteLink},$i18n.locale)"
+                      :to="localePath({name: variants[0].siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
                     <b-button
                       class="socialButtons instagram mx-auto"
-                      :href="variant.instaLink"
+                      :href="variants[0].instaLink"
                     >
                       <b-img
                         class="inButtonImg "
@@ -135,7 +139,7 @@
                     <b-button
                       class="socialButtons facebook mx-auto"
                       target="_blank"
-                      :href="variant.facebLink"
+                      :href="variants[0].facebLink"
                     >
                       <b-img
                         class="inButtonImg "
@@ -149,14 +153,20 @@
               </b-card>
             </div>
 
-            <!-- <div class="col-3">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="1000"
+              data-aos-duration="750"
+              class=" col-3 mx-md-auto"
+            >
               <b-card
                 :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[1].showcaseAlt"
                 img-top
                 tag="article"
                 style=""
-                class="mb-2 mx-auto homeNavCard"
+                class="mb-2 ml-md-4 mx-auto homeNavCard"
               >
                 <div class="cardContent">
                   <div class="card-log mx-auto text-center">
@@ -172,7 +182,7 @@
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: siteLink},$i18n.locale)"
+                      :to="localePath({name: variants[1].siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
@@ -203,14 +213,20 @@
               </b-card>
             </div>
 
-            <div class="col-3">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="1500"
+              data-aos-duration="750"
+              class=" col-3 mx-md-auto"
+            >
               <b-card
                 :img-src="require(`~/assets/img/${variants[2].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[2].showcaseAlt"
                 img-top
                 tag="article"
                 style=""
-                class="mb-2 mx-auto homeNavCard"
+                class="mb-2 ml-md-4 mx-auto homeNavCard"
               >
                 <div class="cardContent">
                   <div class="card-log mx-auto text-center">
@@ -226,7 +242,7 @@
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: 'barbaresco'},$i18n.locale)"
+                      :to="localePath({name: variants[2].siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
@@ -257,14 +273,20 @@
               </b-card>
             </div>
 
-            <div class="col-3">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-delay="2000"
+              data-aos-duration="750"
+              class=" col-3 mx-md-auto"
+            >
               <b-card
                 :img-src="require(`~/assets/img/${variants[3].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[3].showcaseAlt"
                 img-top
                 tag="article"
                 style=""
-                class="mb-2 mx-auto homeNavCard"
+                class="mb-2 ml-md-4 mx-auto homeNavCard"
               >
                 <div class="cardContent">
                   <div class="card-log mx-auto text-center">
@@ -280,7 +302,7 @@
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: 'barbaresco'},$i18n.locale)"
+                      :to="localePath({name: variants[3].siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
@@ -309,10 +331,11 @@
                   </div>
                 </div>
               </b-card>
-            </div> -->
+            </div>
 
           </carousel>
         </div>
+
       </client-only>
 
     </div>
@@ -384,46 +407,48 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: -5px !important;
-}
-.owl-theme .owl-dots .owl-dot span {
-  min-width: 50px;
-  max-width: 50px;
-  width: 100%;
-  min-height: 50px;
-  max-height: 50px;
-  height: 100%;
-  background-color: black !important;
-}
+<style lang="css" >
+@media screen and (max-width: 600px) {
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: -5px !important;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    min-width: 50px;
+    max-width: 50px;
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+    height: 100%;
+    background-color: black !important;
+  }
 
-.owl-theme .owl-dots button:nth-child(1) span {
-  background-image: url("~assets/img/barbaresco-logo.svg") !important;
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
+  .owl-theme .owl-dots button:nth-child(1) span {
+    background-image: url("~assets/img/barbaresco-logo.svg") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
 
-.owl-theme .owl-dots button:nth-child(2) span {
-  background-image: url("~assets/img/pasta-fresca-logo.svg") !important;
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
+  .owl-theme .owl-dots button:nth-child(2) span {
+    background-image: url("~assets/img/pasta-fresca-logo.svg") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
 
-.owl-theme .owl-dots button:nth-child(3) span {
-  background-image: url("~assets/img/le-rock-logo.svg") !important;
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
+  .owl-theme .owl-dots button:nth-child(3) span {
+    background-image: url("~assets/img/le-rock-logo.svg") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
 
-.owl-theme .owl-dots button:nth-child(4) span {
-  background-image: url("~assets/img/piazza-white-logo.svg") !important;
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
+  .owl-theme .owl-dots button:nth-child(4) span {
+    background-image: url("~assets/img/piazza-white-logo.svg") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
 }
 
 @media screen and (max-height: 480px) {

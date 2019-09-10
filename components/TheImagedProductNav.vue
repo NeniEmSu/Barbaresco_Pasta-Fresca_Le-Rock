@@ -45,7 +45,10 @@
 <template>
   <div id="imageed-Products-Navigation">
 
-    <section class="container text-center">
+    <section
+      class="container text-center "
+      v-lazy-container="{ selector: 'button' }"
+    >
 
       <button
         class="column text-center "

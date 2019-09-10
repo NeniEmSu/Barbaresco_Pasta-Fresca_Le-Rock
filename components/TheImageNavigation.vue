@@ -12,10 +12,11 @@
         >
 
           <figure class="saddleEffect">
-            <img
+            <b-img-lazy
               src="~assets/img/navHome.jpg"
-              alt="img02"
+              :alt="$t('links.home')"
             >
+            </b-img-lazy>
             <figcaption>
               <h2>{{$t('links.home')}} </h2>
               <span></span>
@@ -28,10 +29,11 @@
           exact
         >
           <figure class="saddleEffect">
-            <img
+            <b-img-lazy
               src="~assets/img/navMenu.jpg"
               alt="img14"
             >
+            </b-img-lazy>
             <figcaption>
               <h1>{{$t('links.menu')}}</h1>
               <span></span>
@@ -45,10 +47,10 @@
         >
 
           <figure class="saddleEffect">
-            <img
+            <b-img-lazy
               src="~assets/img/navDelivery.jpg"
               alt="img02"
-            >
+            ></b-img-lazy>
             <figcaption>
               <h2>{{$t('links.delivery')}}</h2>
               <span></span>
@@ -62,10 +64,10 @@
         >
 
           <figure class="saddleEffect">
-            <img
+            <b-img-lazy
               src="~assets/img/navAboutUs.jpg"
               alt="img02"
-            >
+            ></b-img-lazy>
             <figcaption>
               <h2>{{$t('links.aboutUs')}}</h2>
               <span></span>
@@ -79,10 +81,11 @@
           exact
         >
           <figure class="saddleEffect">
-            <img
+            <b-img-lazy
               src="~assets/img/navAboutUs.jpg"
               alt="img14"
             >
+            </b-img-lazy>
             <figcaption>
               <h2>{{$t('links.atmosphere')}}</h2>
               <span></span>
@@ -96,10 +99,10 @@
         >
 
           <figure class="saddleEffect">
-            <img
+            <b-img-lazy
               src="~assets/img/navContact.jpg"
               alt="img02"
-            >
+            ></b-img-lazy>
             <figcaption>
               <h2>{{$t('links.contact')}}</h2>
               <span></span>
