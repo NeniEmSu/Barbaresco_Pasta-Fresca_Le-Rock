@@ -7,12 +7,8 @@
     <div class="content">
 
       <div class="row">
-        <div v-if="products=null">
-          loading
-        </div>
 
         <div
-          v-else
           class="card"
           v-for="product in products"
           :key="product.id"
