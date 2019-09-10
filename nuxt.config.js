@@ -150,6 +150,9 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
+    ['nuxt-gmaps', {
+      key: 'AIzaSyDKJciVrAvST8C9SJzwkjmHFnoPM8FwooY'
+    }],
     ['nuxt-i18n', {
       seo: true,
       baseUrl: 'https://barbaresco.netlify.com',
