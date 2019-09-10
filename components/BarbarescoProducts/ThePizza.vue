@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import { mapGetters, mapState, mapActions } from "vuex"
+import { mapGetters, mapState } from "vuex"
 
 export default {
   name: 'ThePizza',
@@ -84,23 +84,16 @@ export default {
   computed: {
     ...mapGetters(["pizzas"]),
     ...mapState(["products"]),
-    ...mapActions(["fetchProducts"]),
+
 
 
     toast () {
       return this.$store.getters.toast
     },
-    extracted () {
-      this.fetchProducts
-      return this.products.filter(el => el.category === "pizzas")
-    }
-  },
-
-  created () {
-
-    this.$store.dispatch("fetchProducts").then(() => (this.$store.store.products.filter(el => el.category === "pizzas")));
 
   },
+
+
   methods: {
     addToCart (id, append = false) {
       this.$store.dispatch("addToCart", id);
