@@ -17,6 +17,7 @@
 <template>
   <div id="map">
     <GmapMap
+      ref="map"
       :cluster="{options: {styles: clusterStyle}}"
       :center="{lat: locations[0].lat, lng: locations[0].lng}"
       :zoom="18"
@@ -41,7 +42,9 @@
 </template>
 
 <script>
+import GmapMap from 'vue2-google-maps/dist/components/map'
 export default {
+  components: { GmapMap },
   data () {
     return {
       currentLocation: {},
