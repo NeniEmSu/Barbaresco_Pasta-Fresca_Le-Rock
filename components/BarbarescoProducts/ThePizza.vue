@@ -10,7 +10,7 @@
 
         <div
           class="card"
-          v-for="product in extracted"
+          v-for="product in products"
           :key="product.id"
         >
 
