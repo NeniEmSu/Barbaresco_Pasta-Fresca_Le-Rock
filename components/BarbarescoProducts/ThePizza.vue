@@ -10,7 +10,7 @@
 
         <div
           class="card"
-          v-for="product in products"
+          v-for="product in extracted"
           :key="product.id"
         >
 
@@ -86,6 +86,10 @@ export default {
     toast () {
       return this.$store.getters.toast
     },
+
+    extracted () {
+      return this.$store.state.products.filter(el => el.category === "pizzas")
+    }
 
   },
 
