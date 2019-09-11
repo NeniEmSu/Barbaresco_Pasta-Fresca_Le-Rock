@@ -194,6 +194,7 @@
                     type="text"
                     name="name"
                     placeholder="..."
+                    v-model="name"
                   >
                 </label></div>
               <div class="col-6">
@@ -203,6 +204,7 @@
                     type="text"
                     name="phone"
                     placeholder="+380..."
+                    v-model.number="phone"
                   > </label></div>
             </div>
 
@@ -214,6 +216,7 @@
                     type="text"
                     name="city"
                     placeholder="..."
+                    v-model="city"
                   ></label> </div>
               <div class="col-6">
                 <label for="street">{{$t('form.street')}}
@@ -222,6 +225,7 @@
                     type="text"
                     name="streeet"
                     placeholder="..."
+                    v-model="street"
                   ></label> </div>
             </div>
 
@@ -233,18 +237,21 @@
                     type="text"
                     name="house"
                     placeholder="..."
+                    v-model="house"
                   > </label></div>
               <div class="col-4"><label for="code">{{$t('form.code')}} <input
                     class="form-control"
                     type="text"
                     name="code"
                     placeholder="..."
+                    v-model="code"
                   > </label></div>
               <div class="col-4"><label for="appartment">{{$t('form.apartment')}} <input
                     class="form-control"
                     type="text"
                     name="appartment"
                     placeholder="..."
+                    v-model="apartment"
                   > </label></div>
             </div>
 
@@ -253,6 +260,7 @@
               class="form-control"
               name="comment"
               id="comment"
+              v-model="comment"
             ></textarea>
 
             <div class="row text-center mx-auto mt-2">
@@ -261,12 +269,13 @@
                   class="form-check-input"
                   type="radio"
                   name="exampleRadios"
-                  id="exampleRadios2"
-                  value="option2"
+                  id="exampleRadios1"
+                  :value="$t('form.pay-carrier')"
+                  v-model="modeOfPayment"
                 >
                 <label
                   class="form-check-label"
-                  for="exampleRadios2"
+                  for="exampleRadios1"
                 >
                   {{$t('form.pay-carrier')}}
                 </label>
@@ -277,7 +286,8 @@
                   type="radio"
                   name="exampleRadios"
                   id="exampleRadios2"
-                  value="option2"
+                  :value="$t('form.pay-card')"
+                  v-model="modeOfPayment"
                 >
                 <label
                   class="form-check-label"
@@ -291,19 +301,27 @@
           </form>
         </div>
         <div class="col-6">
-          <div>
-            <h3 v-if="cartSize">{{$t('cart.heading')}}</h3>
+
+          <div class="text-center">
+            <font
+              class="text-center mx-auto"
+              v-if="!cartSize"
+            >{{$t('cart.emptyCart')}}</font>
+            <h3
+              class="text-left"
+              v-if="cartSize"
+            >{{$t('cart.heading')}}</h3>
             <div class="cart-items">
               <div
                 class="cart-item"
-                v-for="(n, index) in cartSize"
-                :key="n"
+                v-for="(product, index) in cart"
+                :key="product.id"
               >
                 <div class="row my-auto">
                   <p class="col-1 my-auto">{{index+=1}}</p>
                   <img
                     style="border-radius: 50%;   "
-                    src="~/assets/img/barbarescoBurger.png"
+                    :src="require(`~/assets/img/${product.image + '.png'}`)"
                     alt=""
                     class="col-2 m-auto"
                   >
@@ -313,13 +331,19 @@
                         <h6
                           id="cart-item-title"
                           class="col-12 m-auto text-center py-2 crop"
-                        >Бургер з куркою</h6>
+                        >{{product.name}}</h6>
                         <div class="toggle-quantity col-12 m-auto ">
-                          <button @click="removeFromCart(product.id)">
+                          <button
+                            @click="removeFromCart(product.id)"
+                            :disabled="product.quantity === 1"
+                          >
                             &minus;
                           </button>
-                          <p>1</p>
-                          <button @click="addToCart(product.id)">
+                          <p>{{product.quantity}}</p>
+                          <button
+                            @click="addToCart(product.id)"
+                            :disabled="product.quantity === product.stock"
+                          >
                             &plus;
                           </button>
 
@@ -343,7 +367,7 @@
                           <p
                             id="cart-item-price"
                             class="cart-item-price text-right py-2 card-text"
-                          >{{50 | currency}}</p>
+                          >{{product.quantity* product.price | currency}}</p>
                         </div>
                       </div>
                     </div>
@@ -358,21 +382,16 @@
                 class="mt-5"
               >
               <div class="row mt-5">
-                <div class="col-4">
+                <div class="col-4 text-left">
                   <small class="col-12">{{$t('cart.total')}}:</small> <br>
-                  <strong
-                    v-if="cartSize > 0"
-                    class="col-12"
-                  >155,00</strong>
-                  <strong
-                    v-else
-                    class="col-12"
-                  >0,00</strong>
+                  <strong class="col-12">{{cartTotalAmount | currency}}</strong>
+
                 </div>
                 <div class="col-8 mx-auto text-right">
                   <b-button
                     :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                     class="order"
+                    @click.prevent="sendOrder"
                   >{{$t('cart.order')}}</b-button>
                 </div>
               </div>
@@ -387,6 +406,8 @@
 
 
 <script>
+import axios from "axios"
+import { mapGetters, mapState } from "vuex"
 export default {
   name: 'cart',
   layout: 'barbaresco',
@@ -419,15 +440,94 @@ export default {
 
     return {
       currentProductsDisplayed: 1,
-      cartSize: 2
+      name: "",
+      phone: "",
+      city: "",
+      street: "",
+      house: "",
+      code: "",
+      apartment: "",
+      comment: "",
+      modeOfPayment: ""
     }
   },
 
+  computed: {
+    ...mapState([
+      "cart"
+    ]),
+    ...mapGetters([
+      "cartSize",
+      "cartTotalAmount"
+    ])
+  },
+
   methods: {
+
+    addToCart (id, append = false) {
+      this.$store.dispatch("addToCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        toaster: "b-toaster-bottom-right",
+        autoHideDelay: 500,
+        appendToast: append
+      })
+    },
+
+
+    removeFromCart (id, append = false) {
+      this.$store.dispatch("removeFromCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
+    },
+
+    deleteFromCart (id, append = false) {
+      this.$store.dispatch("deleteFromCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
+    },
+
+    emptycart (append = false) {
+      this.$store.commit("emptyCart");
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
+    },
+
+    sendOrder (append = false) {
+      let orderedProducts = JSON.stringify(this.cart)
+
+      axios
+        .post(`https://api.telegram.org/bot971666849:AAEPhgDVYttaZZxm35uC5IFU-YO3MdH8nh0/sendMessage?chat_id=-1001231729418&text=${this.$t('form.name')}: ${this.name}, ${this.$t('form.phone')}: ${this.phone}, ${this.$t('form.city')}: ${this.city}, ${this.$t('form.street')}: ${this.street}, ${this.$t('form.house')}: ${this.house}, ${this.$t('form.code')}: ${this.code}, ${this.$t('form.apartment')}: ${this.apartment}, ${this.$t('form.comment')}: ${this.comment},   ${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, : ${this.noOfPeople}, cartTotalAmount: ${this.cartTotalAmount}, ${this.$t('cart.heading')}: ${orderedProducts}, `)
+      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null;
+      this.$store.commit("emptyCart");
+      this.success = true;
+      this.$bvToast.toast(`Your Order has been recieved!`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        variant: "success",
+        toaster: "b-toaster-top-center",
+        appendToast: append
+      })
+    },
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView
     }
-  }
+  },
+
+
+
 }
 
 </script>

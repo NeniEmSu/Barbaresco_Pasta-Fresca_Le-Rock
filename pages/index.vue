@@ -98,7 +98,7 @@
               data-aos-easing="ease"
               data-aos-delay="500"
               data-aos-duration="750"
-              class=" col-3 mx-md-auto"
+              class=" col-3 mx-lg-auto"
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[0].imageShowcase + '.jpg'}`)"
@@ -158,7 +158,7 @@
               data-aos-easing="ease"
               data-aos-delay="1000"
               data-aos-duration="750"
-              class=" col-3 mx-md-auto"
+              class=" col-3 mx-lg-auto"
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.jpg'}`)"
@@ -218,7 +218,7 @@
               data-aos-easing="ease"
               data-aos-delay="1500"
               data-aos-duration="750"
-              class=" col-3 mx-md-auto"
+              class=" col-3 mx-lg-auto"
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[2].imageShowcase + '.jpg'}`)"
@@ -278,7 +278,7 @@
               data-aos-easing="ease"
               data-aos-delay="2000"
               data-aos-duration="750"
-              class=" col-3 mx-md-auto"
+              class=" col-3 mx-lg-auto"
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[3].imageShowcase + '.jpg'}`)"

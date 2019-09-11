@@ -321,7 +321,7 @@
               </div>
             </div>
 
-            <div class="seeAll mt-5 text-center">
+            <div class="seeAll mt-5 mx-auto text-center">
               <button @click="emptycart()">{{$t('cart.clear')}}</button>
             </div>
           </div>
@@ -499,6 +499,7 @@ export default {
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
         appendToast: append
       })
     },
@@ -584,6 +585,8 @@ export default {
   watch: {
     $route () {
       this.mobileNavOpen = false;
+      this.cartOpen = false;
+      this.reservationOpen = false;
     }
   }
 };
