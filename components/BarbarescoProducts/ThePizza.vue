@@ -10,24 +10,24 @@
 
         <div
           class="card"
-          v-for="product in products"
+          v-for="product in pizzas"
           :key="product.id"
         >
 
-          <ImageResponsive
+          <!-- <ImageResponsive
             :imageURL="`${product.image + '.png'}`"
             :classes="' '"
             :width="'150'"
             :height="'150'"
             :alt="product.name"
             class=" card-img-top mx-auto"
-          />
+          /> -->
 
-          <!-- <img
+          <img
             class="card-img-top mx-auto"
             :src="require(`~/assets/img/${product.image + '.png'}`)"
             :alt="product.name"
-          > -->
+          >
           <div class="card-body">
             <h5
               class="card-title mx-auto text-center crop"
@@ -45,7 +45,7 @@
             <div class="row">
               <div class="col-sm-4 pr-0 my-auto">
 
-                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
+                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency }}</p>
               </div>
               <div class="col-sm-8 text-center my-auto">
                 <button
@@ -66,40 +66,28 @@
 </template>
 
 <script>
-import { mapGetters, mapState } from "vuex"
+import { mapGetters } from "vuex"
 
 export default {
   name: 'ThePizza',
   data () {
     return {
       loading: false,
-      toastCount: 0
-
     }
   },
   computed: {
     ...mapGetters(["pizzas"]),
-    ...mapState(["products"]),
-
-
-
-    toast () {
-      return this.$store.getters.toast
-    },
-
-    extracted () {
-      return this.$store.state.products.filter(el => el.category === "pizzas")
-    }
-
   },
 
 
   methods: {
-    addToCart (id, append = false) {
+    addToCart (id, toaster, append = false) {
       this.$store.dispatch("addToCart", id);
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
-        autoHideDelay: 5000,
+        autoHideDelay: 500,
+        // variant: "info",
+        toaster: "b-toaster-bottom-right",
         appendToast: append
       })
     }

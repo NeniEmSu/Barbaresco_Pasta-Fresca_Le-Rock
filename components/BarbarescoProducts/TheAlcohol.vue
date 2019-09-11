@@ -75,7 +75,10 @@
 
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(alcoholicCocktail.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -143,7 +146,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicSet.quantity}}</span> {{alcoholicSet.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(alcoholicSet.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -211,7 +217,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{wine.quantity}}</span> {{wine.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(wine.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -280,7 +289,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{sparklingWine.quantity}}</span> {{sparklingWine.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(sparklingWine.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -348,7 +360,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicDrinks.quantity}}</span> {{alcoholicDrinks.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(alcoholicDrinks.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -416,7 +431,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{bear.quantity}}</span> {{bear.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(bear.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -448,6 +466,18 @@ export default {
 
     }
   },
+
+  methods: {
+    addToCart (id, append = false) {
+      this.$store.dispatch("addToCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
+    }
+  }
 }
 </script>
 

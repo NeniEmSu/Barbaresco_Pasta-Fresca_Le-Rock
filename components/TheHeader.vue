@@ -493,20 +493,45 @@ export default {
   },
 
   methods: {
-    addToCart (id) {
+
+    addToCart (id, append = false) {
       this.$store.dispatch("addToCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        appendToast: append
+      })
     },
 
-    removeFromCart (id) {
+
+    removeFromCart (id, append = false) {
       this.$store.dispatch("removeFromCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
     },
 
-    deleteFromCart (id) {
+    deleteFromCart (id, append = false) {
       this.$store.dispatch("deleteFromCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
     },
 
-    emptycart () {
+    emptycart (append = false) {
       this.$store.commit("emptyCart");
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
     },
 
     closeUserDropdown () {
@@ -705,6 +730,7 @@ input {
 .close-hamburger,
 .close-navbar-hamburger {
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .cart-body {

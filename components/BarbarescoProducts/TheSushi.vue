@@ -61,7 +61,10 @@
 
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(makiRoll.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -129,7 +132,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{photoMakiRoll.quantity}}</span> {{photoMakiRoll.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(photoMakiRoll.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -197,7 +203,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{originalRoll.quantity}}</span> {{originalRoll.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(originalRoll.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -266,7 +275,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{californiaRoll.quantity}}</span> {{californiaRoll.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(californiaRoll.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -334,7 +346,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{PhiladelphiaRoll.quantity}}</span> {{PhiladelphiaRoll.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(PhiladelphiaRoll.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -402,7 +417,10 @@
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{drakoniRoll.quantity}}</span> {{drakoniRoll.price}}</p>
                   </div>
                   <div class="col-sm-8 text-center  my-auto">
-                    <button class="btn my-auto mr-auto">Замовити</button></div>
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(drakoniRoll.id)"
+                    >Замовити</button></div>
                 </div>
 
               </div>
@@ -439,6 +457,18 @@ export default {
 
     }
   },
+
+  methods: {
+    addToCart (id, append = false) {
+      this.$store.dispatch("addToCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
+    }
+  }
 }
 </script>
 

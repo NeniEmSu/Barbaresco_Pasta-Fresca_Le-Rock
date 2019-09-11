@@ -165,6 +165,7 @@ export default {
     this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
       title: "Увага!",
       autoHideDelay: 5000,
+      toaster: "b-toaster-bottom-right",
       appendToast: append
     })
   }

@@ -17,6 +17,7 @@ export const state = () => ({
 export const getters = {
   pizzas: state => state.arrayedStoreData.filter(el => el.category === "pizzas"),
   salads: state => state.arrayedStoreData.filter(el => el.category === "salads"),
+  burgers: state => state.arrayedStoreData.filter(el => el.category === "burgers"),
 
   cartSize(state) {
     return state.cart.length;

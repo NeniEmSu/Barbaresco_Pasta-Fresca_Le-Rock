@@ -119,7 +119,7 @@
 
       </button>
 
-      <button
+      <!-- <button
         class="column "
         @click="Show8"
         :class="{ active: currentProductsDisplayed === 8}"
@@ -127,7 +127,7 @@
         <div class="nav-image navEight"></div>
         <div class="text-center nav-text">{{$t('hits')}}</div>
 
-      </button>
+      </button> -->
 
       <button
         @click.prevent="Show9"
@@ -235,7 +235,7 @@ section {
 .column {
   float: left;
   box-sizing: border-box;
-  width: calc(100% / 11);
+  width: calc(100% / 10);
   height: 100%;
   min-height: 150px;
   border: 0;

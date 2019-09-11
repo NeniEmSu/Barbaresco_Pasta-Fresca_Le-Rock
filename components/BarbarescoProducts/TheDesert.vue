@@ -38,7 +38,10 @@
 
               </div>
               <div class="col-sm-8 text-center  my-auto">
-                <button class="btn my-auto mr-auto">Замовити</button></div>
+                <button
+                  class="btn my-auto mr-auto"
+                  @click.prevent="addToCart(desert.id)"
+                >Замовити</button></div>
             </div>
 
           </div>
@@ -61,6 +64,17 @@ export default {
       deserts
     }
   },
+  methods: {
+    addToCart (id, append = false) {
+      this.$store.dispatch("addToCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
+    }
+  }
 }
 </script>
 

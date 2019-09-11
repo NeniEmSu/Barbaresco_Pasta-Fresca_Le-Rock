@@ -37,7 +37,10 @@
                 <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{mainMeal.quantity}}</span> {{mainMeal.price}}</p>
               </div>
               <div class="col-sm-8 text-center  my-auto">
-                <button class="btn my-auto mr-auto">Замовити</button></div>
+                <button
+                  class="btn my-auto mr-auto"
+                  @click.prevent="addToCart(mainMeal.id)"
+                >Замовити</button></div>
             </div>
 
           </div>
@@ -60,6 +63,18 @@ export default {
       mainMeals
     }
   },
+
+  methods: {
+    addToCart (id, append = false) {
+      this.$store.dispatch("addToCart", id);
+      this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+        title: 'Увага!',
+        autoHideDelay: 500,
+        toaster: "b-toaster-bottom-right",
+        appendToast: append
+      })
+    }
+  }
 }
 </script>
 

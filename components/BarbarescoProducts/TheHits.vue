@@ -28,7 +28,10 @@
                 <p class="card-text cost my-auto">80,00</p>
               </div>
               <div class="col-8  my-auto">
-                <button class="btn my-auto mr-auto">Замовити</button></div>
+                <button
+                  class="btn my-auto mr-auto"
+                  @click.prevent="addToCart(desert.id)"
+                >Замовити</button></div>
             </div>
 
           </div>
