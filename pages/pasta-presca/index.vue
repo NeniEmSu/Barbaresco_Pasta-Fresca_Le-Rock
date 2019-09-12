@@ -1,18 +1,21 @@
 <i18n>
 {
   "uk": {
+    "name": "Паста фреска",
     "title": "Меню",
     "tooltip": "Передзвонимо за 1 хв.",
     "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас"
 
   },
   "en": {
+    "name": "Pasta Fresca",
    "title": "Menu",
    "tooltip": "Call back in 1 minute",
    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
 
   },
   "ru": {
+    "name": "Паста фреска",
     "title": "Меню",
     "tooltip": "Перезвоним за 1 мин.",
     "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас"
@@ -83,9 +86,9 @@
 
 <script>
 
-import TheImageNavigation from '~/components/TheImageNavigation'
+import TheImageNavigation from '~/components/TheImageNavigationPastaPresca'
 import TheImagedProductNav from '~/components/TheImagedProductNav'
-import TheMapComponent from '~/components/TheMapComponent'
+import TheMapComponent from '~/components/TheMapComponentPastaPresca'
 import TheBugers from '~/components/BarbarescoProducts/TheBugers'
 import ThePizza from '~/components/BarbarescoProducts/ThePizza'
 import TheSushi from '~/components/BarbarescoProducts/TheSushi'
@@ -100,8 +103,8 @@ import TheMainMeal from '~/components/BarbarescoProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/TheBottomCarouselOwl'
 
 export default {
-  name: 'barbaresco',
-  layout: 'barbaresco',
+  name: 'pasta-presca',
+  layout: 'pasta-presca',
   components: {
     TheImageNavigation,
     TheImagedProductNav,
@@ -125,7 +128,7 @@ export default {
   },
   head () {
     return {
-      title: ("Barbaresco - " + this.$t('title')).slice(
+      title: (this.$t('name') + " - " + this.$t('title')).slice(
         0,
         60
       ),
@@ -133,7 +136,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: ("Barbaresco -" + this.$t('description')).slice(
+          content: (this.$t('name') + " - " + this.$t('description')).slice(
             0,
             320
           )
@@ -175,12 +178,14 @@ export default {
 
 <style lang="scss" scoped>
 #pasta-presca {
-  background: url("~assets/img/textureBeton.jpg") no-repeat center center fixed;
+  background: url("~assets/img/pasta-presca-background.jpg") no-repeat center
+    center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  background-color: #4c4240;
 }
 
 .feedBack {

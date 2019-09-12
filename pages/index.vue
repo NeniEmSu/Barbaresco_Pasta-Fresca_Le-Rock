@@ -349,6 +349,7 @@
 
 export default {
   name: 'index',
+  layout: "default",
   components: {
 
     // homePageNavigationCard
@@ -373,7 +374,7 @@ export default {
           showcaseAlt: 'Image of Pasta Fresca',
           logo: 'pasta-fresca-logo',
           logoAlt: 'pasta-fresca-logo',
-          siteLink: 'pasta-fresca',
+          siteLink: 'pasta-presca',
           details:
             this.$t('home.descriptions[1].details'),
           instaLink: '#',

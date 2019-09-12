@@ -126,12 +126,12 @@
 
         <b-navbar-brand
           class=" theHeader-nav-brand mx-auto"
-          :to="localePath({name:'barbaresco'},$i18n.locale)"
+          :to="localePath({name:'pasta-presca'},$i18n.locale)"
         >
           <b-img-lazy
             class=""
-            src="~/assets/img/barbaresco-logo.svg"
-            alt="logo barbaresco"
+            src="~/assets/img/pasta-fresca-logo.svg"
+            alt="logo pasta-presca"
           >
           </b-img-lazy>
         </b-navbar-brand>
@@ -185,7 +185,7 @@
             ></div>
           <b-navbar-nav>
             <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">{{$t('links.home')}}</b-nav-item>
-            <b-nav-item :to="localePath({name: 'barbaresco'},$i18n.locale)">{{$t('links.menu')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'pasta-presca'},$i18n.locale)">{{$t('links.menu')}}</b-nav-item>
             <b-nav-item :to="localePath({name: 'barbaresco-delivery'},$i18n.locale)">{{$t('links.delivery')}}</b-nav-item>
             <b-nav-item
               tag="button"

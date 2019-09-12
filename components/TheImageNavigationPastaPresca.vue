@@ -25,12 +25,12 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco"
+          to="pasta-presca"
           exact
         >
           <figure class="saddleEffect">
             <b-img-lazy
-              src="~assets/img/navMenu.jpg"
+              src="~assets/img/pasta-presca-menu.jpg"
               alt="img14"
             >
             </b-img-lazy>
@@ -65,7 +65,7 @@
 
           <figure class="saddleEffect">
             <b-img-lazy
-              src="~assets/img/navAboutUs.jpg"
+              src="~assets/img/pasta-presca-about-us.jpg"
               alt="img02"
             ></b-img-lazy>
             <figcaption>
@@ -100,7 +100,7 @@
 
           <figure class="saddleEffect">
             <b-img-lazy
-              src="~assets/img/navContact.jpg"
+              src="~assets/img/pasta-presca-contact.jpg"
               alt="img02"
             ></b-img-lazy>
             <figcaption>

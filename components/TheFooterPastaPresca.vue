@@ -1,15 +1,15 @@
 <i18n>
 {
   "uk": {
-    "location": "м. Тернопіль, вулиця Князя Острозького, 14"
+    "location": "м. Тернопіль, бул. Т. Шевченка 23"
 
   },
   "en": {
-   "location": "Ternopil City, 14th Ostrozkoho Street"
+   "location": "Ternopil City, 23rd Shevchenka Street"
 
   },
   "ru": {
-    "location": "г.. Тернополь, улица Князя Острожского, 14"
+    "location": "г.. Тернополь, улица Князя Шевченко, 23"
   }
 }
 </i18n>
@@ -26,7 +26,7 @@
         </nuxt-link>
 
       </div>
-      <div class="footerLogocontainer m-auto">
+      <div class="footerLogocontainer my-auto ml-auto">
         <nuxt-link
           :to="localePath({name:'barbaresco'},$i18n.locale)"
           class="m-auto"
@@ -34,7 +34,7 @@
 
           <b-img-lazy
             class="mx-auto"
-            src="~/assets/img/barbaresco-logo.svg"
+            src="~/assets/img/pasta-fresca-logo.svg"
             alt="logo barbaresco"
           >
           </b-img-lazy>
@@ -42,27 +42,20 @@
         </nuxt-link>
       </div>
 
-      <div class="phone my-auto row">
+      <div class="phone m-auto mr-auto">
 
         <a
-          href="tel:+380506700400"
-          class="col-12 m-auto"
+          href="tel:+380963022082"
+          class=" m-auto"
         >
-          <span>+38 050 6 700 400</span>
-        </a>
-
-        <a
-          href="tel:+380506700400"
-          class="col-12 m-auto"
-        >
-          <span>+38 050 6 700 400</span>
+          <span>+38 (096) 302 20 82</span>
         </a>
       </div>
 
       <div class="socials my-auto">
 
         <a
-          href="https://www.facebook.com/virus.te.ua/"
+          href="#"
           target="_blank"
           rel="noopener"
         >
@@ -77,7 +70,7 @@
         |
 
         <a
-          href="https://www.instagram.com/virusdetailing/"
+          href="#"
           target="_blank"
           rel="noopener"
         >
