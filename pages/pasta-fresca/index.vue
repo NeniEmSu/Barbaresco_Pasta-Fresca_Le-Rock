@@ -77,7 +77,7 @@
 
     </vue-page-transition>
 
-    <TheBottomCarousel />
+    <TheBottomCarousel class="elaboraSpacing" />
 
     <TheMapComponent />
 
@@ -196,5 +196,9 @@ export default {
   bottom: 23.5%;
   right: 50px;
   cursor: pointer;
+}
+
+.elaboraSpacing {
+  margin-top: 190px;
 }
 </style>
