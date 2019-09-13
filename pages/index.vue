@@ -89,7 +89,7 @@
             :responsive="{
               0: { items: 1, center: true, dots: true },
               600: { items: 1, center: false, margin: 0 },
-              1440: { items: 4, center: false,  margin: 0},
+              1440: { items: 4, center: false,  margin: 60},
               1800: { items: 4, center: false,  margin: 0}
             }"
           >
@@ -98,7 +98,7 @@
               data-aos-easing="ease"
               data-aos-delay="500"
               data-aos-duration="750"
-              class=" col-3 mx-lg-auto"
+              class=" col-3 "
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[0].imageShowcase + '.jpg'}`)"
@@ -158,7 +158,7 @@
               data-aos-easing="ease"
               data-aos-delay="1000"
               data-aos-duration="750"
-              class=" col-3 mx-lg-auto"
+              class=" col-3 "
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.jpg'}`)"
@@ -218,7 +218,7 @@
               data-aos-easing="ease"
               data-aos-delay="1500"
               data-aos-duration="750"
-              class=" col-3 mx-lg-auto"
+              class=" col-3 "
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[2].imageShowcase + '.jpg'}`)"
@@ -278,7 +278,7 @@
               data-aos-easing="ease"
               data-aos-delay="2000"
               data-aos-duration="750"
-              class=" col-3 mx-lg-auto"
+              class=" col-3 "
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[3].imageShowcase + '.jpg'}`)"
@@ -863,6 +863,12 @@ export default {
   .homePageHeading {
     margin-top: 12%;
     margin-bottom: 12%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .col-3 {
+    margin: auto;
   }
 }
 </style>
