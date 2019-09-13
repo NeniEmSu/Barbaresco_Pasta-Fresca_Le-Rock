@@ -1,5 +1,30 @@
+<i18n>
+{
+  "uk": {
+    "name": "Ле Рок",
+    "title": "Меню",
+    "tooltip": "Передзвонимо за 1 хв.",
+    "description": "Компанія друзів, смачне меню і відмінна атмосфера - тільки в Le Rock!"
+
+  },
+  "en": {
+    "name": "Le Rock",
+   "title": "Menu",
+   "tooltip": "Call back in 1 minute",
+   "description": "Company of friends, delicious menu and great atmosphere - only in Le Rock!"
+
+  },
+  "ru": {
+    "name": "Ле Рок",
+    "title": "Меню",
+    "tooltip": "Перезвоним за 1 мин.",
+    "description": "Компания друзей, вкусное меню и отличная атмосфера - только в Le Rock!"
+  }
+}
+</i18n>
+
 <template>
-  <div id="barbaresco">
+  <div id="pasta-fresca">
 
     <TheImageNavigation />
 
@@ -8,7 +33,23 @@
       :currentProductsDisplayed="currentProductsDisplayed"
     />
 
-    <div v-if="$route.path === '/barbaresco'"> barbaresco route true</div>
+    <!-- <b-img-lazy
+      class="feedBack d-none d-md-block"
+      id="feedBack"
+      src="~/assets/img/feedBack.png"
+      alt="feedback Icon"
+    >
+
+    </b-img-lazy>
+     <b-tooltip
+      target="feedBack"
+      placement="topleft"
+      variant="light"
+    >
+      <strong>
+        <h6> {{$t('tooltip')}}</h6>
+      </strong>
+    </b-tooltip> -->
 
     <vue-page-transition name="fade">
 
@@ -32,9 +73,11 @@
 
       <TheAlcohol v-if="currentProductsDisplayed === 10" />
 
+      <TheMainMeal v-if="currentProductsDisplayed === 11" />
+
     </vue-page-transition>
 
-    <TheBottomCarousel />
+    <TheBottomCarousel class="elaboraSpacing" />
 
     <TheMapComponent />
 
@@ -43,10 +86,10 @@
 
 <script>
 
-import TheImageNavigation from '~/components/TheImageNavigation'
+import TheImageNavigation from '~/components/TheImageNavigationLeRock'
 import TheImagedProductNav from '~/components/TheImagedProductNav'
 import TheMapComponent from '~/components/TheMapComponent'
-import TheBugers from '~/components/BarbarescoProducts/TheBugers'
+import TheBugers from '~/components/BarbarescoProducts/TheBugersLeRock'
 import ThePizza from '~/components/BarbarescoProducts/ThePizza'
 import TheSushi from '~/components/BarbarescoProducts/TheSushi'
 import TheDrinks from '~/components/BarbarescoProducts/TheDrinks'
@@ -56,11 +99,12 @@ import TheSalad from '~/components/BarbarescoProducts/TheSalad'
 import TheFirstCourse from '~/components/BarbarescoProducts/TheFirstCourse'
 import TheHits from '~/components/BarbarescoProducts/TheHits'
 import TheAlcohol from '~/components/BarbarescoProducts/TheAlcohol'
-import TheBottomCarousel from '~/components/TheBottomCarousel'
+import TheMainMeal from '~/components/BarbarescoProducts/TheMainMeal'
+import TheBottomCarousel from '~/components/TheBottomCarouselOwl'
 
 export default {
   name: 'le-rock',
-  layout: 'barbaresco',
+  layout: 'le-rock',
   components: {
     TheImageNavigation,
     TheImagedProductNav,
@@ -75,6 +119,7 @@ export default {
     TheHits,
     TheDrinks,
     TheAlcohol,
+    TheMainMeal,
     TheBottomCarousel
   },
 
@@ -83,7 +128,7 @@ export default {
   },
   head () {
     return {
-      title: "Le Rock".slice(
+      title: (this.$t('name') + " - " + this.$t('title')).slice(
         0,
         60
       ),
@@ -91,7 +136,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Le Rock.".slice(
+          content: (this.$t('name') + " - " + this.$t('description')).slice(
             0,
             320
           )
@@ -103,7 +148,10 @@ export default {
   data () {
 
     return {
-      currentProductsDisplayed: 1,
+      currentProductsDisplayed: //Math.floor((Math.random() * 10) + 1)
+        2,
+      loading: false,
+
     }
   },
 
@@ -111,147 +159,57 @@ export default {
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView
     }
+
+  },
+
+  created (append = false) {
+    this.loading = true;
+    this.$store.dispatch("fetchProducts").then(() => (this.loading = false));
+    this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+      title: "Увага!",
+      autoHideDelay: 5000,
+      toaster: "b-toaster-bottom-right",
+      appendToast: append
+    })
   }
+
 }
 </script>
 
 <style lang="scss" scoped>
-#barbaresco {
-  background: url("~assets/img/textureBeton.jpg") no-repeat center center fixed;
+#pasta-fresca {
+  background: url("~assets/img/le-rock-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-#imageed-Products-Navigation {
-  background-color: $darkColor;
-}
-
-.active {
-  mix-blend-mode: normal;
-}
-
-section {
-  overflow: hidden;
-}
-
-.column {
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% / 10);
-  height: 100%;
-  min-height: 150px;
-  border: 0;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   position: relative;
-  text-align: center;
-  margin: 22px auto 22px auto;
+  background-color: $headingsFontColor;
 
-  transition: 500ms ease-in-out;
-  text-decoration: none;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
-}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-.column .nav-image {
-  mix-blend-mode: luminosity;
-
-  &:hover {
-    mix-blend-mode: normal;
-  }
-
-  &.active {
-    mix-blend-mode: normal;
+    background-image: linear-gradient(to bottom right, #000000, #000000);
+    opacity: 0.4;
   }
 }
 
-.nav-text {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  text-decoration: none;
-
-  color: $lightColor;
-  margin-top: 10px;
-}
-
-.nav-image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  min-width: 100px;
-  max-width: 100px;
-  height: 100%;
-  min-height: 100px;
-  max-height: 100px;
-
+.feedBack {
+  border: none;
   border-radius: 50%;
-  background-color: $darkColor;
+  background: none;
+  position: absolute;
+  bottom: 23.5%;
+  right: 50px;
+  cursor: pointer;
 }
 
-.navOne {
-  background-image: url("~assets/img/barbarescoPizza.png");
-}
-
-.navTwo {
-  background-image: url("~assets/img/barbarescoBurger.png");
-}
-
-.navThree {
-  background-image: url("~assets/img/barbarescoSushi.png");
-}
-
-.navFour {
-  background-image: url("~assets/img/barbarescoMlinty.png");
-}
-
-.navFive {
-  background-image: url("~assets/img/barbarescoDesert.png");
-}
-
-.navSix {
-  background-image: url("~assets/img/barbarescoSalad.png");
-}
-
-.navSeven {
-  background-image: url("~assets/img/barbarescoFirstCourse.png");
-}
-
-.navEight {
-  background-image: url("~assets/img/barbarescoHits.png");
-}
-
-.navNine {
-  background-image: url("~assets/img/barbarescoHotDrinks.png");
-}
-
-.navTen {
-  background-image: url("~assets/img/barbarescoAlcohol.png");
-}
-
-@media (max-width: 750px) {
-  .column {
-    width: calc(100% / 5);
-  }
-}
-
-@media (max-width: 400px) {
-  .column {
-    width: calc(100% / 3);
-  }
-}
-
-@media (max-width: 375px) {
-  .column {
-    width: calc(100% / 2);
-  }
+.elaboraSpacing {
+  margin-top: 190px;
 }
 </style>

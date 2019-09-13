@@ -2,31 +2,26 @@
 {
   "uk": {
     "title": "Контакти",
-    "location": "Вул. Бульвар Шевченка 23",
+    "location": "Вул. О.Кульчицькоі 2а ",
     "call": "Тел",
     "workHours": "Заклад працює для Вас",
-    "days1": "Пн-Ср",
-    "days2": "Чт-Сб",
-    "days3": "Нд"
+    "days": "Пн-Нд"
+
   },
   "en": {
    "title": "Contacts",
-   "location": "Ternopil City, 23rd Shevchenka Street",
+   "location": "Ternopil City, 2a O.Kulchitskoy Street",
    "call": "Tel",
    "workHours": "The institution works from",
-   "days1": "Mon-Wed",
-   "days2": "Thu-Sat",
-"days3": "Sun"
- 
+   "days": "Mon-Sun"
+
   },
   "ru": {
     "title": "Контакты",
-    "location": "г.. Тернополь, улица Князя Шевченко, 23",
+    "location": "г.. Тернополь, улица Князя О.Кульчицькоі, 2а",
     "call": "Тел",
     "workHours": "Заведение работает для Вас",
-    "days1": "Пн-Вс",
-    "days2": "Чт-Сб",
-    "days3": "Вс"
+    "days": "Пн-Вс"
   }
 }
 </i18n>
@@ -35,7 +30,7 @@
   <div id="about-us">
     <div class="row">
       <img
-        src="~/assets/img/pasta-fresca-contact.jpg"
+        src="~/assets/img/le-rock-contact.jpg"
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco Contact page image"
       >
@@ -45,13 +40,13 @@
           <div class="text-center">
             <p>{{$t('location')}}</p>
             <p>{{$t('call')}}.: <a
-                href="tel:+380963022082"
+                href="tel:+38671154515"
                 class="col-12 m-auto"
               >
-                <span>+38 096 302 20 82</span>
+                <span>+38 67 115 45 15</span>
               </a></p>
             <p>{{$t('workHours')}}</p>
-            <p>{{$t('days1')}}.: 10:00-00:00 | {{$t('days2')}}.: 10:00-01:00 | {{$t('days3')}}.: 11:00-00:00</p>
+            <p>{{$t('days')}}.: <b>11:00-01:00</b> </p>
           </div>
         </div>
         <TheContactMap />
@@ -62,11 +57,11 @@
 </template>
 
 <script>
-import TheContactMap from '~/components/TheMapComponentPastaFresca'
+import TheContactMap from '~/components/TheMapComponent'
 
 export default {
-  name: 'barbaresco-contacts',
-  layout: 'pasta-fresca',
+  name: 'le-rock-contacts',
+  layout: 'le-rock',
   components: {
     TheContactMap
   },
@@ -75,7 +70,7 @@ export default {
   },
   head () {
     return {
-      title: ("Barbaresco - " + this.$t('title')).slice(
+      title: ("Le Rock - " + this.$t('title')).slice(
         0,
         60
       ),
@@ -83,7 +78,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: ("Barbaresco -" + this.$t('description')).slice(
+          content: ("Le Rock -" + this.$t('description')).slice(
             0,
             320
           )
