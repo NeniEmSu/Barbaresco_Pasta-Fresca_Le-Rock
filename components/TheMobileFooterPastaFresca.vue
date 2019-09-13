@@ -21,14 +21,14 @@
 
       <div class="footerLogocontainer m-auto">
         <nuxt-link
-          :to="localePath({name:'pasta-presca'},$i18n.locale)"
+          :to="localePath({name:'pasta-fresca'},$i18n.locale)"
           class="m-auto"
         >
 
           <b-img-lazy
             class="mx-auto"
             src="~/assets/img/pasta-fresca-logo.svg"
-            alt="logo pasta-presca"
+            alt="logo pasta-fresca"
           >
           </b-img-lazy>
 

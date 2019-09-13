@@ -23,7 +23,7 @@
       :zoom="18"
       map-type-id="terrain"
       :options="{fullscreenControl: true, streetViewControl: true, mapTypeControl: true, zoomControl: true, gestureHandling: 'cooperative', styles: mapStyle}"
-      style="width: 100vw; height: 300px"
+      style="width: 100%; height: 300px"
     >
       <GmapMarker
         v-for="location in locations"
@@ -56,7 +56,7 @@ export default {
         // {
         //   lat: 49.551815,
         //   lng: 25.594149,
-        //   name: 'Pasta Presca: м. Тернопіль, бул. Т. Шевченка 23'
+        //   name: 'Pasta Fresca: м. Тернопіль, бул. Т. Шевченка 23'
         // },
         // {
         //   lat: 49.552314,

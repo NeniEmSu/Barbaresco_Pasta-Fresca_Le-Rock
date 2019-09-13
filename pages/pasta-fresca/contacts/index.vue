@@ -2,26 +2,31 @@
 {
   "uk": {
     "title": "Контакти",
-    "location": "м. Тернопіль, вулиця Князя Острозького, 14",
+    "location": "Вул. Бульвар Шевченка 23",
     "call": "Тел",
     "workHours": "Заклад працює для Вас",
-    "days": "Пн-Нд"
-
+    "days1": "Пн-Ср",
+    "days2": "Чт-Сб",
+    "days3": "Нд"
   },
   "en": {
    "title": "Contacts",
-   "location": "Ternopil City, 14th Ostrozkoho Street",
+   "location": "Ternopil City, 23rd Shevchenka Street",
    "call": "Tel",
    "workHours": "The institution works from",
-   "days": "Mon-Sun"
-
+   "days1": "Mon-Wed",
+   "days2": "Thu-Sat",
+"days3": "Sun"
+ 
   },
   "ru": {
     "title": "Контакты",
-    "location": "г.. Тернополь, улица Князя Острожского, 14",
+    "location": "г.. Тернополь, улица Князя Шевченко, 23",
     "call": "Тел",
     "workHours": "Заведение работает для Вас",
-    "days": "Пн-Вс"
+    "days1": "Пн-Вс",
+    "days2": "Чт-Сб",
+    "days3": "Вс"
   }
 }
 </i18n>
@@ -30,7 +35,7 @@
   <div id="about-us">
     <div class="row">
       <img
-        src="~/assets/img/barbarescoContact.jpg"
+        src="~/assets/img/pasta-fresca-contact.jpg"
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco Contact page image"
       >
@@ -43,14 +48,10 @@
                 href="tel:+380506700400"
                 class="col-12 m-auto"
               >
-                <span>+38 050 6 700 400</span>
-              </a><a
-                href="tel:+380506700400"
-                class="col-12 m-auto"
-              >
-                <span>+38 050 6 700 400</span>
+                <span>+38 096 302 20 82</span>
               </a></p>
-            <p>{{$t('workHours')}}<b>10:00-01:00</b> ({{$t('days')}})</p>
+            <p>{{$t('workHours')}}</p>
+            <p>{{$t('days1')}}.: 10:00-00:00 | {{$t('days2')}}.: 10:00-01:00 | {{$t('days3')}}.: 11:00-00:00</p>
           </div>
         </div>
         <TheContactMap />
@@ -61,11 +62,11 @@
 </template>
 
 <script>
-import TheContactMap from '~/components/TheMapComponent'
+import TheContactMap from '~/components/TheMapComponentPastaFresca'
 
 export default {
   name: 'barbaresco-contacts',
-  layout: 'barbaresco',
+  layout: 'pasta-fresca',
   components: {
     TheContactMap
   },

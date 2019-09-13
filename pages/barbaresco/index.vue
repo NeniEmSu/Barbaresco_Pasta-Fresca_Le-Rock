@@ -21,7 +21,7 @@
 </i18n>
 
 <template>
-  <div id="pasta-presca">
+  <div id="pasta-fresca">
 
     <TheImageNavigation />
 
@@ -174,7 +174,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#pasta-presca {
+#pasta-fresca {
   background: url("~assets/img/textureBeton.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

@@ -34,10 +34,10 @@
 </template>
 
 <script>
-import Header from '~/components/TheHeaderPastaPresca'
-import TheTopContact from '~/components/TheTopContactPastaPresca'
-import TheFooter from "@/components/TheFooterPastaPresca.vue"
-import TheMobileFooter from "@/components/TheMobileFooterPastaPresca.vue"
+import Header from '~/components/TheHeaderPastaFresca'
+import TheTopContact from '~/components/TheTopContactPastaFresca'
+import TheFooter from "@/components/TheFooterPastaFresca.vue"
+import TheMobileFooter from "@/components/TheMobileFooterPastaFresca.vue"
 
 export default {
   name: "PastaFrescaLayout",

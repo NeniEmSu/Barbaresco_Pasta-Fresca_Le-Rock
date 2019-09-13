@@ -24,7 +24,7 @@
 </i18n>
 
 <template>
-  <div id="pasta-presca">
+  <div id="pasta-fresca">
 
     <TheImageNavigation />
 
@@ -86,11 +86,11 @@
 
 <script>
 
-import TheImageNavigation from '~/components/TheImageNavigationPastaPresca'
-import TheImagedProductNav from '~/components/TheImagedProductNav'
-import TheMapComponent from '~/components/TheMapComponentPastaPresca'
+import TheImageNavigation from '~/components/TheImageNavigationPastaFresca'
+import TheImagedProductNav from '~/components/TheImagedProductNavPastaFresca'
+import TheMapComponent from '~/components/TheMapComponentPastaFresca'
 import TheBugers from '~/components/BarbarescoProducts/TheBugers'
-import ThePizza from '~/components/BarbarescoProducts/ThePizzaPastaPresca'
+import ThePizza from '~/components/BarbarescoProducts/ThePizzaPastaFresca'
 import TheSushi from '~/components/BarbarescoProducts/TheSushi'
 import TheDrinks from '~/components/BarbarescoProducts/TheDrinks'
 import TheMlinty from '~/components/BarbarescoProducts/TheMlinty'
@@ -103,8 +103,8 @@ import TheMainMeal from '~/components/BarbarescoProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/TheBottomCarouselOwl'
 
 export default {
-  name: 'pasta-presca',
-  layout: 'pasta-presca',
+  name: 'pasta-fresca',
+  layout: 'pasta-fresca',
   components: {
     TheImageNavigation,
     TheImagedProductNav,
@@ -177,8 +177,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#pasta-presca {
-  background: url("~assets/img/pasta-presca-background.jpg") no-repeat center
+#pasta-fresca {
+  background: url("~assets/img/pasta-fresca-background.jpg") no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

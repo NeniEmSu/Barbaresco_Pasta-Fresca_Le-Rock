@@ -25,12 +25,12 @@
         </nuxt-link>
 
         <nuxt-link
-          to="pasta-presca"
+          to="pasta-fresca"
           exact
         >
           <figure class="saddleEffect">
             <b-img-lazy
-              src="~assets/img/pasta-presca-menu.jpg"
+              src="~assets/img/pasta-fresca-menu.jpg"
               alt="img14"
             >
             </b-img-lazy>
@@ -42,7 +42,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco/delivery"
+          to="pasta-fresca/delivery"
           exact
         >
 
@@ -59,13 +59,13 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco/about-us"
+          to="pasta-fresca/about-us"
           exact
         >
 
           <figure class="saddleEffect">
             <b-img-lazy
-              src="~assets/img/pasta-presca-about-us.jpg"
+              src="~assets/img/pasta-fresca-about-us.jpg"
               alt="img02"
             ></b-img-lazy>
             <figcaption>
@@ -77,7 +77,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco/atmosphere"
+          to="pasta-fresca/atmosphere"
           exact
         >
           <figure class="saddleEffect">
@@ -94,13 +94,13 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco/contacts"
+          to="pasta-fresca/contacts"
           exact
         >
 
           <figure class="saddleEffect">
             <b-img-lazy
-              src="~assets/img/pasta-presca-contact.jpg"
+              src="~assets/img/pasta-fresca-nav-contact.jpg"
               alt="img02"
             ></b-img-lazy>
             <figcaption>

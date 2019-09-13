@@ -27,7 +27,8 @@
         "aboutUs": "Про нас",
         "atmosphere": "Атмосфера",
         "vacancy": "Ваканції",
-        "contact": "Контакти"
+        "contact": "Контакти",
+        "kitchen": "Кухня"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -60,7 +61,8 @@
         "aboutUs": "About us",
         "atmosphere": "Atmosphere",
         "vacancy": "Vacancies",
-        "contact": "Contacts"
+        "contact": "Contacts",
+        "kitchen": "Kitchen"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -94,7 +96,8 @@
         "aboutUs": "О нас",
         "atmosphere": "Атмосфера",
         "vacancy": "Вакансии",
-        "contact": "Контакты"
+        "contact": "Контакты",
+        "kitchen": "Кухня"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -126,12 +129,12 @@
 
         <b-navbar-brand
           class=" theHeader-nav-brand mx-auto"
-          :to="localePath({name:'pasta-presca'},$i18n.locale)"
+          :to="localePath({name:'pasta-fresca'},$i18n.locale)"
         >
           <b-img-lazy
             class=""
             src="~/assets/img/pasta-fresca-logo.svg"
-            alt="logo pasta-presca"
+            alt="logo pasta-fresca"
           >
           </b-img-lazy>
         </b-navbar-brand>
@@ -185,13 +188,14 @@
             ></div>
           <b-navbar-nav>
             <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">{{$t('links.home')}}</b-nav-item>
-            <b-nav-item :to="localePath({name: 'pasta-presca'},$i18n.locale)">{{$t('links.menu')}}</b-nav-item>
-            <b-nav-item :to="localePath({name: 'barbaresco-delivery'},$i18n.locale)">{{$t('links.delivery')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'pasta-fresca'},$i18n.locale)">{{$t('links.menu')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'pasta-fresca-delivery'},$i18n.locale)">{{$t('links.delivery')}}</b-nav-item>
             <b-nav-item
               tag="button"
               @click.stop="reservationOpen = !reservationOpen"
             >{{$t('links.reserveAPlace')}}</b-nav-item>
-            <b-nav-item :to="localePath({name: 'barbaresco-about-us'},$i18n.locale)">{{$t('links.aboutUs')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'pasta-fresca-about-us'},$i18n.locale)">{{$t('links.aboutUs')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'pasta-fresca-kitchen'},$i18n.locale)">{{$t('links.kitchen')}}</b-nav-item>
             <b-nav-item
               tag="button"
               v-b-modal.modal-1
@@ -204,7 +208,7 @@
 
               <b>{{$t('vacancyNotice')}}</b>
             </b-modal>
-            <b-nav-item :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'pasta-fresca-contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
             <b-nav-item
               v-if="$i18n.locale !== 'en'"
               :to="switchLocalePath('en')"
@@ -315,7 +319,7 @@
                 </div>
                 <div class="col-8 mx-auto text-right">
                   <b-button
-                    :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
+                    :to="localePath({name: 'pasta-fresca-cart'},$i18n.locale)"
                     class="order"
                   >{{$t('cart.order')}}</b-button>
                 </div>

@@ -374,7 +374,7 @@ export default {
           showcaseAlt: 'Image of Pasta Fresca',
           logo: 'pasta-fresca-logo',
           logoAlt: 'pasta-fresca-logo',
-          siteLink: 'pasta-presca',
+          siteLink: 'pasta-fresca',
           details:
             this.$t('home.descriptions[1].details'),
           instaLink: '#',

@@ -11,7 +11,7 @@ export const state = () => ({
     text: "",
     show: false
   },
-  products: null
+  products: ""
 });
 
 export const getters = {
@@ -89,6 +89,8 @@ export const actions = {
 };
 
 export const mutations = {
+  pizzasAction: state => state.products.filter(el => el.category === "pizzas"),
+
   setUpProducts(state, productsPayload) {
     state.products = productsPayload;
   },
