@@ -1,15 +1,15 @@
 <i18n>
 {
   "uk": {
-    "location": "м. Тернопіль, бул. Т. Шевченка 23"
+    "location": "Вул. О.Кульчицькоі 2а"
 
   },
   "en": {
-   "location": "Ternopil City, 23rd Shevchenka Street"
+   "location": "Ternopil City, 2a O.Kulchitskoi Street"
 
   },
   "ru": {
-    "location": "г.. Тернополь, улица Князя Шевченко, 23"
+    "location": "г.. Тернополь, улица Князя О.Кульчицькоі, 2a"
   }
 }
 </i18n>
@@ -20,14 +20,14 @@
     <div class="container">
       <div class="footerLogocontainer my-auto">
         <nuxt-link
-          :to="localePath({name:'barbaresco'},$i18n.locale)"
+          :to="localePath({name:'le-rock'},$i18n.locale)"
           class="m-auto"
         >
 
           <b-img-lazy
             class="mx-auto"
-            src="~/assets/img/pasta-fresca-logo.svg"
-            alt="logo barbaresco"
+            src="~/assets/img/le-rock-logo.svg"
+            alt="logo le-rock"
           >
           </b-img-lazy>
 
@@ -37,7 +37,7 @@
 
         <div class="address my-auto">
           <nuxt-link
-            :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
+            :to="localePath({name: 'le-rock-contacts'},$i18n.locale)"
             class="m-auto"
           >
             {{$t('location')}}
@@ -49,10 +49,10 @@
           <div class="phone my-auto ">
 
             <a
-              href="tel:+380963022082"
+              href="tel:+380671154515"
               class=" m-auto"
             >
-              <span>+38 (096) 302 20 82</span>
+              <span>+380 67 115 45 15</span>
             </a>
           </div>
 

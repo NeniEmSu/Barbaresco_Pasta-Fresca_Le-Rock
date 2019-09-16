@@ -21,7 +21,7 @@
 </i18n>
 
 <template>
-  <div id="atmosphere">
+  <div id="le-rock-kitchen">
     <div class="row">
       <img
         src="~/assets/img/pasta-fresca-kitchen.jpg"
@@ -40,8 +40,15 @@
 <script>
 
 export default {
-  name: 'le-rock-atmosphere',
+  name: 'le-rock-kitchen',
   layout: 'le-rock',
+  nuxtI18n: {
+    paths: {
+      en: '/le-rock/kitchen',
+      uk: '/le-rock/kuhnja',
+      ru: '/le-rock/kuhnja'
+    }
+  },
   components: {
 
   },

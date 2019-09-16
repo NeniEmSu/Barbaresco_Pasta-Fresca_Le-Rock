@@ -150,7 +150,7 @@ export const mutations = {
   },
 
   emptyCart(state) {
-    state.cart = []
+    state.cart = [];
     state.cartCount = 0;
   },
 

@@ -25,7 +25,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco"
+          :to="localePath({name: 'barbaresco'},$i18n.locale)"
           exact
         >
           <figure class="saddleEffect">
@@ -42,7 +42,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco/delivery"
+          :to="localePath({name: 'barbaresco-delivery'},$i18n.locale)"
           exact
         >
 
@@ -59,7 +59,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco/about-us"
+          :to="localePath({name: 'barbaresco-about-us'},$i18n.locale)"
           exact
         >
 
@@ -77,7 +77,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco/atmosphere"
+          :to="localePath({name: 'barbaresco-atmosphere'},$i18n.locale)"
           exact
         >
           <figure class="saddleEffect">
@@ -94,7 +94,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="barbaresco/contacts"
+          :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
           exact
         >
 

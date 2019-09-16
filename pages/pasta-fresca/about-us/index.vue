@@ -41,6 +41,13 @@
 export default {
   name: 'pasta-fresca-about-us',
   layout: 'pasta-fresca',
+  nuxtI18n: {
+    paths: {
+      en: '/pasta-fresca/about-us',
+      uk: '/pasta-fresca/pro-nas',
+      ru: '/pasta-fresca/o-nas'
+    }
+  },
   components: {
 
   },

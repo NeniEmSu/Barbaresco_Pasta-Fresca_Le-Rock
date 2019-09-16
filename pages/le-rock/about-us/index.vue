@@ -38,6 +38,13 @@
 export default {
   name: 'le-rock-about-us',
   layout: 'le-rock',
+  nuxtI18n: {
+    paths: {
+      en: '/le-rock/about-us',
+      uk: '/le-rock/pro-nas',
+      ru: '/le-rock/o-nas'
+    }
+  },
   components: {
 
   },

@@ -42,6 +42,13 @@
 export default {
   name: 'pasta-fresca-atmosphere',
   layout: 'pasta-fresca',
+  nuxtI18n: {
+    paths: {
+      en: '/pasta-fresca/atmosphere',
+      uk: '/pasta-fresca/atmosfera',
+      ru: '/pasta-fresca/atmosfera'
+    }
+  },
   components: {
 
   },

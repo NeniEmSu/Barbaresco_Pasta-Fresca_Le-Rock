@@ -39,8 +39,15 @@
 <script>
 
 export default {
-  name: 'barbaresco-delivery',
+  name: 'pasta-fresca-delivery',
   layout: 'pasta-fresca',
+  nuxtI18n: {
+    paths: {
+      en: '/pasta-fresca/delivery',
+      uk: '/pasta-fresca/dostavka',
+      ru: '/pasta-fresca/dostavka'
+    }
+  },
   components: {
 
   },

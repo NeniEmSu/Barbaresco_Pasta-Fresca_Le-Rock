@@ -411,6 +411,13 @@ import { mapGetters, mapState } from "vuex"
 export default {
   name: 'cart',
   layout: 'le-rock',
+  nuxtI18n: {
+    paths: {
+      en: '/pasta-fresca/cart',
+      uk: '/pasta-fresca/koshik',
+      ru: '/pasta-fresca/korzina'
+    }
+  },
   components: {
   },
 

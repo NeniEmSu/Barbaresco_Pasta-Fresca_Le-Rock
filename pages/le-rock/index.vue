@@ -24,7 +24,7 @@
 </i18n>
 
 <template>
-  <div id="pasta-fresca">
+  <div id="le-rock">
 
     <TheImageNavigation />
 
@@ -87,7 +87,7 @@
 <script>
 
 import TheImageNavigation from '~/components/TheImageNavigationLeRock'
-import TheImagedProductNav from '~/components/TheImagedProductNav'
+import TheImagedProductNav from '~/components/TheImagedProductNavLeRock'
 import TheMapComponent from '~/components/TheMapComponent'
 import TheBugers from '~/components/BarbarescoProducts/TheBugersLeRock'
 import ThePizza from '~/components/BarbarescoProducts/ThePizza'
@@ -177,7 +177,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#pasta-fresca {
+#le-rock {
   background: url("~assets/img/le-rock-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

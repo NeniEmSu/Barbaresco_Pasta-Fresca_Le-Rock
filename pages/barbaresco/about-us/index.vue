@@ -38,6 +38,13 @@
 export default {
   name: 'barbaresco-about-us',
   layout: 'barbaresco',
+  nuxtI18n: {
+    paths: {
+      en: '/barbaresco/about-us',
+      uk: '/barbaresco/pro-nas',
+      ru: '/barbaresco/o-nas'
+    }
+  },
   components: {
 
   },

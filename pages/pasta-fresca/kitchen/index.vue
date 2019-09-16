@@ -21,7 +21,7 @@
 </i18n>
 
 <template>
-  <div id="atmosphere">
+  <div id="pasta-fresca-kitchen">
     <div class="row">
       <img
         src="~/assets/img/pasta-fresca-kitchen.jpg"
@@ -40,8 +40,15 @@
 <script>
 
 export default {
-  name: 'pasta-fresca-atmosphere',
+  name: 'pasta-fresca-kitchen',
   layout: 'pasta-fresca',
+  nuxtI18n: {
+    paths: {
+      en: '/pasta-fresca/kitchen',
+      uk: '/pasta-fresca/kuhnja',
+      ru: '/pasta-fresca/kuhnja'
+    }
+  },
   components: {
 
   },

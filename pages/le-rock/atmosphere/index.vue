@@ -39,6 +39,13 @@
 export default {
   name: 'le-rock-atmosphere',
   layout: 'le-rock',
+  nuxtI18n: {
+    paths: {
+      en: '/le-rock/atmosphere',
+      uk: '/le-rock/atmosfera',
+      ru: '/le-rock/atmosfera'
+    }
+  },
   components: {
 
   },

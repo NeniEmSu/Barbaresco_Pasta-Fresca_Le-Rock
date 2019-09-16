@@ -41,6 +41,13 @@
 export default {
   name: 'barbaresco-delivery',
   layout: 'barbaresco',
+  nuxtI18n: {
+    paths: {
+      en: '/barbaresco/delivery',
+      uk: '/barbaresco/dostavka',
+      ru: '/barbaresco/dostavka'
+    }
+  },
   components: {
 
   },

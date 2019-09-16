@@ -39,6 +39,13 @@
 export default {
   name: 'barbaresco-atmosphere',
   layout: 'barbaresco',
+  nuxtI18n: {
+    paths: {
+      en: '/barbaresco/atmosphere',
+      uk: '/barbaresco/atmosfera',
+      ru: '/barbaresco/atmosfera'
+    }
+  },
   components: {
 
   },

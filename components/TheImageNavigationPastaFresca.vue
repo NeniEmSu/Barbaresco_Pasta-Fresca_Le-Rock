@@ -25,7 +25,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="pasta-fresca"
+          :to="localePath({name: 'pasta-fresca'},$i18n.locale)"
           exact
         >
           <figure class="saddleEffect">
@@ -42,7 +42,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="pasta-fresca/delivery"
+          :to="localePath({name: 'pasta-fresca-delivery'},$i18n.locale)"
           exact
         >
 
@@ -59,7 +59,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="pasta-fresca/about-us"
+          :to="localePath({name: 'pasta-fresca-about-us'},$i18n.locale)"
           exact
         >
 
@@ -77,7 +77,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="pasta-fresca/atmosphere"
+          :to="localePath({name: 'pasta-fresca-atmosphere'},$i18n.locale)"
           exact
         >
           <figure class="saddleEffect">
@@ -94,7 +94,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="pasta-fresca/contacts"
+          :to="localePath({name: 'pasta-fresca-contacts'},$i18n.locale)"
           exact
         >
 

@@ -411,6 +411,13 @@ import { mapGetters, mapState } from "vuex"
 export default {
   name: 'cart',
   layout: 'barbaresco',
+  nuxtI18n: {
+    paths: {
+      en: '/barbaresco/cart',
+      uk: '/barbaresco/koshik',
+      ru: '/barbaresco/korzina'
+    }
+  },
   components: {
   },
 

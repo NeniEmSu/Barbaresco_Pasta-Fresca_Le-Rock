@@ -25,7 +25,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="le-rock"
+          :to="localePath({name: 'le-rock'},$i18n.locale)"
           exact
         >
           <figure class="saddleEffect">
@@ -42,7 +42,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="le-rock/delivery"
+          :to="localePath({name: 'le-rock-delivery'},$i18n.locale)"
           exact
         >
 
@@ -59,7 +59,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="le-rock/about-us"
+          :to="localePath({name: 'le-rock-about-us'},$i18n.locale)"
           exact
         >
 
@@ -77,7 +77,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="le-rock/atmosphere"
+          :to="localePath({name: 'le-rock-atmosphere'},$i18n.locale)"
           exact
         >
           <figure class="saddleEffect">
@@ -94,7 +94,7 @@
         </nuxt-link>
 
         <nuxt-link
-          to="le-rock/contacts"
+          :to="localePath({name: 'le-rock-contacts'},$i18n.locale)"
           exact
         >
 

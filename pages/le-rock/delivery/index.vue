@@ -41,6 +41,13 @@
 export default {
   name: 'le-rock-delivery',
   layout: 'le-rock',
+  nuxtI18n: {
+    paths: {
+      en: '/le-rock/delivery',
+      uk: '/le-rock/dostavka',
+      ru: '/le-rock/dostavka'
+    }
+  },
   components: {
 
   },

@@ -32,7 +32,7 @@
 </i18n>
 
 <template>
-  <div id="about-us">
+  <div id="contact">
     <div class="row">
       <img
         src="~/assets/img/pasta-fresca-contact.jpg"
@@ -65,8 +65,15 @@
 import TheContactMap from '~/components/TheMapComponentPastaFresca'
 
 export default {
-  name: 'barbaresco-contacts',
+  name: 'pasta-fresca-contacts',
   layout: 'pasta-fresca',
+  nuxtI18n: {
+    paths: {
+      en: '/pasta-fresca/contacts',
+      uk: '/pasta-fresca/kontakti',
+      ru: '/pasta-fresca/kontakty'
+    }
+  },
   components: {
     TheContactMap
   },

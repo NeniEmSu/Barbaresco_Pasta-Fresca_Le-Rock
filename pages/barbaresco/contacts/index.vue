@@ -66,6 +66,13 @@ import TheContactMap from '~/components/TheMapComponent'
 export default {
   name: 'barbaresco-contacts',
   layout: 'barbaresco',
+  nuxtI18n: {
+    paths: {
+      en: '/barbaresco/contacts',
+      uk: '/barbaresco/kontakti',
+      ru: '/barbaresco/kontakty'
+    }
+  },
   components: {
     TheContactMap
   },

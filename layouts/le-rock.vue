@@ -36,7 +36,7 @@
 <script>
 import Header from '~/components/TheHeaderLeRock'
 import TheTopContact from '~/components/TheTopContact'
-import TheFooter from "@/components/TheFooter.vue"
+import TheFooter from "@/components/TheFooterLeRock"
 import TheMobileFooter from "@/components/TheMobileFooter.vue"
 
 export default {

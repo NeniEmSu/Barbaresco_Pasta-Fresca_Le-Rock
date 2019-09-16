@@ -62,6 +62,13 @@ import TheContactMap from '~/components/TheMapComponent'
 export default {
   name: 'le-rock-contacts',
   layout: 'le-rock',
+  nuxtI18n: {
+    paths: {
+      en: '/le-rock/contacts',
+      uk: '/le-rock/kontakti',
+      ru: '/le-rock/kontakty'
+    }
+  },
   components: {
     TheContactMap
   },
