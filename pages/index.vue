@@ -121,8 +121,9 @@
                   </b-card-text>
                   <div class="text-center goTosite">
                     <b-button
+                      size="lg"
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: variants[0].siteLink},$i18n.locale)"
+                      :href="localePath({name: variants[0].siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
@@ -182,7 +183,7 @@
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: variants[1].siteLink},$i18n.locale)"
+                      :href="localePath({name: variants[1].siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
@@ -242,7 +243,7 @@
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: variants[2].siteLink},$i18n.locale)"
+                      :href="localePath({name: variants[2].siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
@@ -302,7 +303,7 @@
                   <div class="text-center goTosite">
                     <b-button
                       class="mx-auto goToSiteBtn"
-                      :to="localePath({name: variants[3].siteLink},$i18n.locale)"
+                      :href="localePath({name: variants[3].siteLink},$i18n.locale)"
                     >{{ $t('home.siteButtonTxt') }}</b-button>
                   </div>
                   <div class="text-center ">
