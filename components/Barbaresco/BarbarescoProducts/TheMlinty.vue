@@ -1,7 +1,7 @@
 <template>
   <div
     class="container "
-    id="theFirsteCourse"
+    id="theMlinty"
   >
 
     <div class="content">
@@ -9,37 +9,37 @@
       <div class="row">
         <div
           class="card"
-          v-for="firstCourse in firstCourses.firstCourses"
-          :key="firstCourse.id"
+          v-for="pancake in extractedProductPancakes"
+          :key="pancake.id"
         >
 
           <img
             class="card-img-top mx-auto"
-            :src="require(`~/assets/img/${firstCourse.image + '.png'}`)"
-            :alt="firstCourse.name"
+            :src="require(`~/assets/img/${pancake.image + '.png'}`)"
+            :alt="pancake.name"
           >
           <div class="card-body">
             <h5
               class="card-title mx-auto text-center crop"
               style="cursor:context-menu"
               v-b-tooltip.hover
-              :title="firstCourse.name"
-            >{{firstCourse.name}}</h5>
+              :title="pancake.name"
+            >{{pancake.name}}</h5>
             <p
-              class="card-text text-left d-none d-sm-block ingredients"
+              class="card-text d-none d-sm-block text-left"
               style="cursor: context-menu;"
               v-b-tooltip.hover
-              :title="firstCourse.summary"
-            >{{(firstCourse.summary).slice(0, 35)}}...<span class="card-text quantity">{{firstCourse.quantity}}</span></p>
+              :title="pancake.summary"
+            >{{(pancake.summary).slice(0, 39)}}...<span class="card-text quantity">{{pancake.volume}}</span></p>
 
             <div class="row">
-              <div class="col-sm-4 pr-0 my-auto">
-                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{firstCourse.quantity}}</span> {{firstCourse.price}}</p>
+              <div class="col-sm-5 pr-0 my-auto">
+                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{pancake.volume}}</span> {{pancake.price | currency}}</p>
               </div>
-              <div class="col-sm-8 text-center  my-auto">
+              <div class="col-sm-7 pl-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto"
-                  @click.prevent="addToCart(firstCourse.id)"
+                  @click.prevent="addToCart(pancake.id)"
                 >Замовити</button></div>
             </div>
 
@@ -55,12 +55,19 @@
 </template>
 
 <script>
-import firstCourses from "~/api/barbaresco.json"
+import productData from "~/plugins/api/products.js"
+
 export default {
-  name: 'theFirstCourse',
+  name: 'TheMlinty',
   data () {
     return {
-      firstCourses
+
+    }
+  },
+
+  computed: {
+    extractedProductPancakes () {
+      return productData.filter(el => el.category === "pancakes")
     }
   },
 

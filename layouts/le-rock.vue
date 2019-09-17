@@ -34,10 +34,10 @@
 </template>
 
 <script>
-import Header from '~/components/TheHeaderLeRock'
-import TheTopContact from '~/components/TheTopContact'
-import TheFooter from "@/components/TheFooterLeRock"
-import TheMobileFooter from "@/components/TheMobileFooter.vue"
+import Header from '~/components/LeRock/TheHeaderLeRock'
+import TheTopContact from '~/components/Barbaresco/TheTopContact'
+import TheFooter from "@/components/LeRock/TheFooterLeRock"
+import TheMobileFooter from "@/components/Barbaresco/TheMobileFooter.vue"
 
 export default {
   name: "BarbarescoLayout",

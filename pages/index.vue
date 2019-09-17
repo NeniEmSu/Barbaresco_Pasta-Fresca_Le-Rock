@@ -345,7 +345,7 @@
 </template>
 
 <script>
-// import homePageNavigationCard from '~/components/homePageNavigationCard'
+
 
 
 export default {
@@ -353,7 +353,7 @@ export default {
   layout: "default",
   components: {
 
-    // homePageNavigationCard
+
   },
   data () {
     return {

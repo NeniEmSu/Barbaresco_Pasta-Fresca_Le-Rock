@@ -89,21 +89,21 @@
 
 <script>
 
-import TheImageNavigation from '~/components/TheImageNavigation'
-import TheImagedProductNav from '~/components/TheImagedProductNav'
-import TheMapComponent from '~/components/TheMapComponent'
-import TheBugers from '~/components/BarbarescoProducts/TheBugers'
-import ThePizza from '~/components/BarbarescoProducts/ThePizza'
-import TheSushi from '~/components/BarbarescoProducts/TheSushi'
-import TheDrinks from '~/components/BarbarescoProducts/TheDrinks'
-import TheMlinty from '~/components/BarbarescoProducts/TheMlinty'
-import TheDesert from '~/components/BarbarescoProducts/TheDesert'
-import TheSalad from '~/components/BarbarescoProducts/TheSalad'
-import TheFirstCourse from '~/components/BarbarescoProducts/TheFirstCourse'
-import TheHits from '~/components/BarbarescoProducts/TheHits'
-import TheAlcohol from '~/components/BarbarescoProducts/TheAlcohol'
-import TheMainMeal from '~/components/BarbarescoProducts/TheMainMeal'
-import TheBottomCarousel from '~/components/TheBottomCarouselOwl'
+import TheImageNavigation from '~/components/Barbaresco/TheImageNavigation'
+import TheImagedProductNav from '~/components/Barbaresco/TheImagedProductNav'
+import TheMapComponent from '~/components/Barbaresco/TheMapComponent'
+import TheBugers from '~/components/Barbaresco/BarbarescoProducts/TheBugers'
+import ThePizza from '~/components/Barbaresco/BarbarescoProducts/ThePizza'
+import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
+import TheDrinks from '~/components/Barbaresco/BarbarescoProducts/TheDrinks'
+import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
+import TheDesert from '~/components/Barbaresco/BarbarescoProducts/TheDesert'
+import TheSalad from '~/components/Barbaresco/BarbarescoProducts/TheSalad'
+import TheFirstCourse from '~/components/Barbaresco/BarbarescoProducts/TheFirstCourse'
+import TheHits from '~/components/Barbaresco/BarbarescoProducts/TheHits'
+import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
+import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
+import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 
 export default {
   name: 'barbaresco',

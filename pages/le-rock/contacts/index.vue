@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import TheContactMap from '~/components/TheMapComponent'
+import TheContactMap from '~/components/Barbaresco/TheMapComponent'
 
 export default {
   name: 'le-rock-contacts',

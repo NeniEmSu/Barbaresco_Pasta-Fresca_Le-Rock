@@ -1,7 +1,36 @@
+<i18n>
+{
+  "uk": {
+    "cocktail": "АЛКОГОЛЬНІ КОКТЕЙЛІ",
+    "sets": "АЛКОГОЛЬНІ СЕТИ",
+    "wine": "ВИНА",
+    "sparklingWine": "ІГРИСТІ ВИНА",
+    "alcoholicDrinks": "Алкогольні напої",
+    "bear": "ПИВО"
+  },
+  "en": {
+   "cocktail": "ALCOHOLIC COCKTAILS",
+   "sets": "ALCOHOLIC SETS",
+   "wine": "Wine",
+   "sparklingWine": "SPARKLING WINES",
+   "alcoholicDrinks": "Alcoholic Drinks",
+    "bear": "Bear"
+  },
+  "ru": {
+    "cocktail": "Алкогольные Коктейли",
+    "sets": "АЛКОГОЛЬНЫЕ СЕТИ",
+    "wine": "ВИНА",
+    "sparklingWine": "игристые вина",
+    "alcoholicDrinks": "Алкогольные напитки",
+    "bear": "ПИВО"
+  }
+}
+</i18n>
+
 <template>
   <div
     class="container "
-    id="theSushi"
+    id="theAlcohol"
   >
 
     <div class="content">
@@ -12,15 +41,15 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block"> РОЛИ МАКІ</h2>
+              <h2 class="text-center m-auto d-inline-block"> {{$t('cocktail')}}</h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               ></b-img-lazy>
@@ -32,38 +61,38 @@
           <div class="row">
             <div
               class="card"
-              v-for="makiRoll in makiRoll.makiRoll"
-              :key="makiRoll.id"
+              v-for="alcoholicCocktail in extractedProductsAlcoholicCocktail"
+              :key="alcoholicCocktail.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${makiRoll.image + '.png'}`)"
-                :alt="makiRoll.name"
+                :src="require(`~/assets/img/${alcoholicCocktail.image + '.png'}`)"
+                :alt="alcoholicCocktail.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="makiRoll.name"
-                >{{makiRoll.name}}</h5>
+                  :title="alcoholicCocktail.name"
+                >{{alcoholicCocktail.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-sm-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="makiRoll.summary"
-                >{{(makiRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{makiRoll.quantity}}</span></p>
+                  :title="alcoholicCocktail.summary"
+                >{{(alcoholicCocktail.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicCocktail.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{makiRoll.quantity}}</span> {{makiRoll.price}}</p>
+                  <div class="col-sm-5 pr-0 my-auto">
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicCocktail.volume}}</span> {{alcoholicCocktail.price | currency}}</p>
 
                   </div>
-                  <div class="col-sm-8 text-center  my-auto">
+                  <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(makiRoll.id)"
+                      @click.prevent="addToCart(alcoholicCocktail.id)"
                     >Замовити</button></div>
                 </div>
 
@@ -84,15 +113,15 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">РОЛИ ФУТОМАКІ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('sets')}}</h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               ></b-img-lazy>
@@ -104,37 +133,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="photoMakiRoll in photoMakiRoll.photoMakiRoll"
-              :key="photoMakiRoll.id"
+              v-for="alcoholicSet in extractedProductsAlcoholicSet"
+              :key="alcoholicSet.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${photoMakiRoll.image + '.png'}`)"
-                :alt="photoMakiRoll.name"
+                :src="require(`~/assets/img/${alcoholicSet.image + '.png'}`)"
+                :alt="alcoholicSet.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="photoMakiRoll.name"
-                >{{photoMakiRoll.name}}</h5>
+                  :title="alcoholicSet.name"
+                >{{alcoholicSet.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="photoMakiRoll.summary"
-                >{{(photoMakiRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{photoMakiRoll.quantity}}</span></p>
+                  :title="alcoholicSet.summary"
+                >{{(alcoholicSet.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicSet.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{photoMakiRoll.quantity}}</span> {{photoMakiRoll.price}}</p>
+                  <div class="col-sm-5 pr-0 my-auto">
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicSet.volume}}</span> {{alcoholicSet.price | currency}}</p>
                   </div>
-                  <div class="col-sm-8 text-center  my-auto">
+                  <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(photoMakiRoll.id)"
+                      @click.prevent="addToCart(alcoholicSet.id)"
                     >Замовити</button></div>
                 </div>
 
@@ -154,15 +183,15 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">ОРИГІНАЛЬНІ РОЛИ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('wine')}}</h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               ></b-img-lazy>
@@ -175,37 +204,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="originalRoll in originalRoll.originalRoll"
-              :key="originalRoll.id"
+              v-for="wine in extractedProductsWine"
+              :key="wine.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${originalRoll.image + '.png'}`)"
-                :alt="originalRoll.name"
+                :src="require(`~/assets/img/${wine.image + '.png'}`)"
+                :alt="wine.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="originalRoll.name"
-                >{{originalRoll.name}}</h5>
+                  :title="wine.name"
+                >{{wine.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="originalRoll.summary"
-                >{{(originalRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{originalRoll.quantity}}</span></p>
+                  :title="wine.summary"
+                >{{(wine.summary).slice(0, 25)}}...<span class="card-text quantity">{{wine.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{originalRoll.quantity}}</span> {{originalRoll.price}}</p>
+                  <div class="col-sm-5 pr-0 my-auto">
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{wine.volume}}</span> {{wine.price | currency}}</p>
                   </div>
-                  <div class="col-sm-8 text-center  my-auto">
+                  <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(originalRoll.id)"
+                      @click.prevent="addToCart(wine.id)"
                     >Замовити</button></div>
                 </div>
 
@@ -226,15 +255,15 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">РОЛИ КАЛІФОРНІЯ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('sparklingWine')}}</h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               ></b-img-lazy>
@@ -247,37 +276,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="californiaRoll in californiaRoll.californiaRoll"
-              :key="californiaRoll.id"
+              v-for="sparklingWine in extractedProductsSparklingWine"
+              :key="sparklingWine.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${californiaRoll.image + '.png'}`)"
-                :alt="californiaRoll.name"
+                :src="require(`~/assets/img/${sparklingWine.image + '.png'}`)"
+                :alt="sparklingWine.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="californiaRoll.name"
-                >{{californiaRoll.name}}</h5>
+                  :title="sparklingWine.name"
+                >{{sparklingWine.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="californiaRoll.summary"
-                >{{(californiaRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{californiaRoll.quantity}}</span></p>
+                  :title="sparklingWine.summary"
+                >{{(sparklingWine.summary).slice(0, 25)}}...<span class="card-text quantity">{{sparklingWine.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{californiaRoll.quantity}}</span> {{californiaRoll.price}}</p>
+                  <div class="col-sm-5 pr-0 my-auto">
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{sparklingWine.volume}}</span> {{sparklingWine.price | currency}}</p>
                   </div>
-                  <div class="col-sm-8 text-center  my-auto">
+                  <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(californiaRoll.id)"
+                      @click.prevent="addToCart(sparklingWine.id)"
                     >Замовити</button></div>
                 </div>
 
@@ -297,15 +326,15 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">РОЛИ ФІЛАДЕЛЬФІЯ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('alcoholicDrinks')}}</h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               ></b-img-lazy>
@@ -318,37 +347,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="PhiladelphiaRoll in PhiladelphiaRoll.PhiladelphiaRoll"
-              :key="PhiladelphiaRoll.id"
+              v-for="alcoholicDrinks in extractedProductsAlcoholicDrinks"
+              :key="alcoholicDrinks.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${PhiladelphiaRoll.image + '.png'}`)"
-                :alt="PhiladelphiaRoll.name"
+                :src="require(`~/assets/img/${alcoholicDrinks.image + '.png'}`)"
+                :alt="alcoholicDrinks.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="PhiladelphiaRoll.name"
-                >{{PhiladelphiaRoll.name}}</h5>
+                  :title="alcoholicDrinks.name"
+                >{{alcoholicDrinks.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="PhiladelphiaRoll.summary"
-                >{{(PhiladelphiaRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{PhiladelphiaRoll.quantity}}</span></p>
+                  :title="alcoholicDrinks.summary"
+                >{{(alcoholicDrinks.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicDrinks.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{PhiladelphiaRoll.quantity}}</span> {{PhiladelphiaRoll.price}}</p>
+                  <div class="col-sm-5 pr-0 my-auto">
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicDrinks.volume}}</span> {{alcoholicDrinks.price | currency}}</p>
                   </div>
-                  <div class="col-sm-8 text-center  my-auto">
+                  <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(PhiladelphiaRoll.id)"
+                      @click.prevent="addToCart(alcoholicDrinks.id)"
                     >Замовити</button></div>
                 </div>
 
@@ -368,15 +397,15 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">РОЛИ ДРАКОНИ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('bear')}}</h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoSushiIcon.svg"
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               ></b-img-lazy>
@@ -389,37 +418,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="drakoniRoll in drakoniRoll.drakoniRoll"
-              :key="drakoniRoll.id"
+              v-for="bear in extractedProductsBear"
+              :key="bear.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${drakoniRoll.image + '.png'}`)"
-                :alt="drakoniRoll.name"
+                :src="require(`~/assets/img/${bear.image + '.png'}`)"
+                :alt="bear.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="drakoniRoll.name"
-                >{{drakoniRoll.name}}</h5>
+                  :title="bear.name"
+                >{{bear.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="drakoniRoll.summary"
-                >{{(drakoniRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{drakoniRoll.quantity}}</span></p>
+                  :title="bear.summary"
+                >{{(bear.summary).slice(0, 25)}}...<span class="card-text quantity">{{bear.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-4 pr-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{drakoniRoll.quantity}}</span> {{drakoniRoll.price}}</p>
+                  <div class="col-sm-5 pr-0 my-auto">
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{bear.volume}}</span> {{bear.price | currency}}</p>
                   </div>
-                  <div class="col-sm-8 text-center  my-auto">
+                  <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(drakoniRoll.id)"
+                      @click.prevent="addToCart(bear.id)"
                     >Замовити</button></div>
                 </div>
 
@@ -437,24 +466,35 @@
 </template>
 
 <script>
-import makiRoll from "~/api/barbaresco.json"
-import photoMakiRoll from "~/api/barbaresco.json"
-import originalRoll from "~/api/barbaresco.json"
-import californiaRoll from "~/api/barbaresco.json"
-import PhiladelphiaRoll from "~/api/barbaresco.json"
-import drakoniRoll from "~/api/barbaresco.json"
+import productData from "~/plugins/api/products.js"
 
 export default {
-  name: 'TheSushi',
+  name: 'TheAlcohol',
   data () {
     return {
-      makiRoll,
-      photoMakiRoll,
-      originalRoll,
-      californiaRoll,
-      PhiladelphiaRoll,
-      drakoniRoll
 
+
+    }
+  },
+
+  computed: {
+    extractedProductsAlcoholicCocktail () {
+      return productData.filter(el => el.category === "alcoholicCocktail")
+    },
+    extractedProductsAlcoholicSet () {
+      return productData.filter(el => el.category === "alcoholicSet")
+    },
+    extractedProductsWine () {
+      return productData.filter(el => el.category === "wine")
+    },
+    extractedProductsSparklingWine () {
+      return productData.filter(el => el.category === "sparklingWine")
+    },
+    extractedProductsAlcoholicDrinks () {
+      return productData.filter(el => el.category === "alcoholicDrinks")
+    },
+    extractedProductsBear () {
+      return productData.filter(el => el.category === "bear")
     }
   },
 

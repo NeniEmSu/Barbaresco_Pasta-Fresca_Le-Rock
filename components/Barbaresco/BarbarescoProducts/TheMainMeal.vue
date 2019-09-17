@@ -1,45 +1,45 @@
 <template>
   <div
     class="container "
-    id="theBurgers"
+    id="theFirsteCourse"
   >
 
     <div class="content">
 
-      <div class="row d-flex justify-content-start ">
+      <div class="row">
         <div
           class="card"
-          v-for="product in burgers"
-          :key="product.id"
+          v-for="mainMeal in extractedProductMainMeals"
+          :key="mainMeal.id"
         >
 
           <img
             class="card-img-top mx-auto"
-            :src="require(`~/assets/img/${product.image + '.png'}`)"
-            :alt="product.name"
+            :src="require(`~/assets/img/${mainMeal.image + '.png'}`)"
+            :alt="mainMeal.name"
           >
           <div class="card-body">
             <h5
               class="card-title mx-auto text-center crop"
               style="cursor:context-menu"
               v-b-tooltip.hover
-              :title="product.name"
-            >{{product.name}}</h5>
+              :title="mainMeal.name"
+            >{{mainMeal.name}}</h5>
             <p
-              class="card-text text-left d-none d-sm-block"
+              class="card-text text-left d-none d-sm-block ingredients"
               style="cursor: context-menu;"
               v-b-tooltip.hover
-              :title="product.summary"
-            >{{(product.summary).slice(0, 39)}}... <span class="card-text quantity">{{product.volume}}</span></p>
+              :title="mainMeal.summary"
+            >{{(mainMeal.summary).slice(0, 35)}}...<span class="card-text quantity">{{mainMeal.volume}}</span></p>
 
             <div class="row">
-              <div class="col-sm-4 pr-0 my-auto">
-                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency }}</p>
+              <div class="col-sm-5 pr-0 my-auto">
+                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{mainMeal.volume}}</span> {{mainMeal.price | currency}}</p>
               </div>
-              <div class="col-sm-8  my-auto text-center">
+              <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
                   class="btn my-auto mr-auto"
-                  @click.prevent="addToCart(product.id)"
+                  @click.prevent="addToCart(mainMeal.id)"
                 >Замовити</button></div>
             </div>
 
@@ -55,19 +55,20 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex"
+import productData from "~/plugins/api/products.js"
 export default {
-  name: 'TheBurgers',
+  name: 'themainMeal',
   data () {
     return {
-      loading: false,
+
     }
   },
 
   computed: {
-    ...mapGetters(["burgers"]),
+    extractedProductMainMeals () {
+      return productData.filter(el => el.category === "mainMeals")
+    }
   },
-
 
   methods: {
     addToCart (id, append = false) {
