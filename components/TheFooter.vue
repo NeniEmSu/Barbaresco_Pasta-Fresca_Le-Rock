@@ -16,17 +16,9 @@
 
 <template>
   <div id="the-footer">
-    <div class="container footer-inner mx-auto">
-      <div class="address my-auto">
-        <nuxt-link
-          :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
-          class="m-auto"
-        >
-          {{$t('location')}}
-        </nuxt-link>
 
-      </div>
-      <div class="footerLogocontainer m-auto">
+    <div class="container">
+      <div class="footerLogocontainer my-auto">
         <nuxt-link
           :to="localePath({name:'barbaresco'},$i18n.locale)"
           class="m-auto"
@@ -41,56 +33,65 @@
 
         </nuxt-link>
       </div>
+      <div class=" footer-inner mx-auto">
 
-      <div class="phone my-auto row">
+        <div class="address my-auto">
+          <nuxt-link
+            :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
+            class="m-auto"
+          >
+            {{$t('location')}}
+          </nuxt-link>
 
-        <a
-          href="tel:+380506700400"
-          class="col-12 m-auto"
-        >
-          <span>+38 050 6 700 400</span>
-        </a>
+        </div>
 
-        <a
-          href="tel:+380506700400"
-          class="col-12 m-auto"
-        >
-          <span>+38 050 6 700 400</span>
-        </a>
+        <div class="ml-auto d-flex">
+          <div class="phone my-auto ">
+
+            <a
+              href="tel:+380506700400"
+              class=" m-auto"
+            >
+              <span>+38 050 6 700 400</span>
+            </a>
+          </div>
+
+          <div class="socials my-auto">
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+
+              <img
+                src="~/assets/img/facebookSocialLogo.png"
+                alt="icons facebook filled"
+              />
+
+            </a>
+
+            |
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+
+              <img
+                src="~/assets/img/instagramSocialLogo.png"
+                alt="icons instagram filled"
+              />
+
+            </a>
+          </div>
+
+        </div>
+
       </div>
-
-      <div class="socials my-auto">
-
-        <a
-          href="https://www.facebook.com/virus.te.ua/"
-          target="_blank"
-          rel="noopener"
-        >
-
-          <img
-            src="~/assets/img/facebookSocialLogo.png"
-            alt="icons facebook filled"
-          />
-
-        </a>
-
-        |
-
-        <a
-          href="https://www.instagram.com/virusdetailing/"
-          target="_blank"
-          rel="noopener"
-        >
-
-          <img
-            src="~/assets/img/instagramSocialLogo.png"
-            alt="icons instagram filled"
-          />
-
-        </a>
-      </div>
-
     </div>
+
   </div>
 </template>
 
@@ -110,26 +111,35 @@ export default {};
 }
 
 .footer-inner {
-  padding: 70px 0;
+  padding: 88px 0 0 0;
   display: flex;
 }
 
-.footerLogocontainer img {
-  min-height: 60px;
-  max-height: 60px;
-  height: 100%;
+.footerLogocontainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 70px 0 0 0;
+
+  img {
+    min-height: 60px;
+    max-height: 60px;
+    height: 100%;
+  }
 }
 
-.phone a {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+.phone {
+  margin-right: 40px;
+  a {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 
-  color: $lightColor;
+    color: $lightColor;
+  }
 }
-
 .socials a {
   margin: auto;
   img {
@@ -137,17 +147,19 @@ export default {};
   }
 }
 
-.address a {
-  margin: auto;
+.address {
+  a {
+    margin: auto;
 
-  font-family: $primaryFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
 
-  text-align: center;
+    text-align: center;
 
-  color: $lightColor;
+    color: $lightColor;
+  }
 }
 </style>

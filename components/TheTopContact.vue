@@ -17,12 +17,6 @@
           </a>
         </li>
 
-        <li class="contact">
-          <a href="tel:+380506700400">
-            <span>+38 050 6 700 400</span>
-          </a>
-        </li>
-
         <li class="instagram contact">
           <a
             href="https://www.instagram.com/virusdetailing/"

@@ -24,7 +24,13 @@
 </i18n>
 
 <template>
-  <div id="le-rock">
+  <div
+    id="le-rock"
+    data-aos="fade-up"
+    data-aos-easing="ease"
+    data-aos-delay="250"
+    data-aos-duration="500"
+  >
 
     <TheImageNavigation />
 

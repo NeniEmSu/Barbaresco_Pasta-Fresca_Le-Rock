@@ -10,7 +10,7 @@
 
         <div
           class="card"
-          v-for="product in pizzas"
+          v-for="product in extractedPizzas"
           :key="product.id"
         >
 
@@ -34,7 +34,7 @@
               style="cursor:context-menu"
               v-b-tooltip.hover
               :title="product.name"
-            >{{product.name}}</h5>
+            >{{product.name }}</h5>
             <p
               class="card-text text-left d-none d-sm-block"
               style="cursor: context-menu;"
@@ -67,16 +67,21 @@
 
 <script>
 import { mapGetters } from "vuex"
+import productData from "~/plugins/api/products.js"
 
 export default {
   name: 'ThePizza',
   data () {
     return {
       loading: false,
+
     }
   },
   computed: {
     ...mapGetters(["pizzas"]),
+    extractedPizzas () {
+      return productData.filter(el => el.category === "pizzas")
+    }
   },
 
 

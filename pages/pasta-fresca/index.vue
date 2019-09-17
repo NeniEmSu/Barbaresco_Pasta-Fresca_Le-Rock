@@ -23,7 +23,13 @@
 </i18n>
 
 <template>
-  <div id="pasta-fresca">
+  <div
+    id="pasta-fresca"
+    data-aos="fade-up"
+    data-aos-easing="ease"
+    data-aos-delay="250"
+    data-aos-duration="500"
+  >
 
     <TheImageNavigation />
 

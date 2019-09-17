@@ -21,7 +21,13 @@
 </i18n>
 
 <template>
-  <div id="pasta-fresca">
+  <div
+    id="barbaresco"
+    data-aos="fade-up"
+    data-aos-easing="ease"
+    data-aos-delay="250"
+    data-aos-duration="500"
+  >
 
     <TheImageNavigation />
 
@@ -174,7 +180,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#pasta-fresca {
+#barbaresco {
   background: url("~assets/img/textureBeton.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

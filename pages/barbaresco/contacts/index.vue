@@ -34,7 +34,13 @@
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco Contact page image"
       >
-      <div class="col-lg-6 m-auto p-0 text-center">
+      <div
+        class="col-lg-6 m-auto p-0 text-center"
+        data-aos="fade-left"
+        data-aos-easing="ease"
+        data-aos-delay="1000"
+        data-aos-duration="500"
+      >
         <div class="inner-text px-5">
           <h1>{{$t('title')}}</h1>
           <div class="text-center">
@@ -44,13 +50,9 @@
                 class="col-12 m-auto"
               >
                 <span>+38 050 6 700 400</span>
-              </a><a
-                href="tel:+380506700400"
-                class="col-12 m-auto"
-              >
-                <span>+38 050 6 700 400</span>
               </a></p>
-            <p>{{$t('workHours')}}<b>10:00-01:00</b> ({{$t('days')}})</p>
+            <p>{{$t('workHours')}}</p>
+            <p><b>10:00-01:00</b> ({{$t('days')}})</p>
           </div>
         </div>
         <TheContactMap />

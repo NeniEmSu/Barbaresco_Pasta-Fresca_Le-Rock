@@ -24,7 +24,13 @@
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco About Us page image"
       >
-      <div class="col-lg-6 m-auto p-5">
+      <div
+        class="col-lg-6 m-auto p-5"
+        data-aos="fade-left"
+        data-aos-easing="ease"
+        data-aos-delay="1000"
+        data-aos-duration="500"
+      >
         <h1>{{$t('title')}}</h1>
         <p>{{$t('description')}}</p>
       </div>

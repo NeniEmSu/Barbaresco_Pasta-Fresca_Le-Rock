@@ -1,7 +1,7 @@
 export default [{
     category: "salads",
     name: "САЛАТ З КАЛЬМАРАМИ",
-    id: 59,
+    id: 'b-sal-1',
     price: 60,
     quantity: Infinity,
     volume: "190г",
@@ -11,7 +11,7 @@ export default [{
   {
     category: "salads",
     name: "ЦЕЗАР З КУРКОЮ",
-    id: 60,
+    id: 'b-sal-2',
     price: 60,
     quantity: Infinity,
     volume: "240г",
@@ -21,7 +21,7 @@ export default [{
   {
     category: "salads",
     name: "ЛАЙТ ЛАЙФ",
-    id: 61,
+    id: 'b-sal-3',
     price: 50,
     quantity: Infinity,
     volume: "250г",
@@ -31,7 +31,7 @@ export default [{
   {
     category: "salads",
     name: "ГРИЛЬ САЛАТ З ТЕЛЯТИНОЮ",
-    id: 62,
+    id: 'b-sal-4',
     price: 65,
     quantity: Infinity,
     volume: "280г",
@@ -41,7 +41,7 @@ export default [{
   {
     category: "salads",
     name: "САЛАТ З ІНДИЧКОЮ",
-    id: 63,
+    id: 'b-sal-5',
     price: 80,
     quantity: Infinity,
     volume: "250г",
@@ -51,7 +51,7 @@ export default [{
   {
     category: "salads",
     name: "CHICK BASILIK",
-    id: 64,
+    id: 'b-sal-6',
     price: 65,
     quantity: Infinity,
     volume: "300г",
@@ -61,7 +61,7 @@ export default [{
   {
     category: "pizzas",
     name: "ГАВАЙСЬКА",
-    id: 65,
+    id: 'b-p-1',
     price: 70,
     quantity: Infinity,
     volume: "500г",
@@ -71,7 +71,7 @@ export default [{
   {
     category: "pizzas",
     name: "ГГГГОСТРА",
-    id: 66,
+    id: 'b-p-2',
     price: 70,
     quantity: Infinity,
     volume: "400г",
@@ -81,7 +81,7 @@ export default [{
   {
     category: "pizzas",
     name: "КАПРІЧОЗА",
-    id: 67,
+    id: 'b-p-3',
     price: 70,
     quantity: Infinity,
     volume: "480г",
@@ -91,7 +91,7 @@ export default [{
   {
     category: "pizzas",
     name: "МАРГАРІТА",
-    id: 68,
+    id: 'b-p-4',
     price: 70,
     quantity: Infinity,
     volume: "380г",
@@ -101,7 +101,7 @@ export default [{
   {
     category: "pizzas",
     name: "САЛЯМІ",
-    id: 69,
+    id: 'b-p-5',
     price: 70,
     quantity: Infinity,
     volume: "420г",
@@ -111,7 +111,7 @@ export default [{
   {
     category: "pizzas",
     name: "ЧОТИРИ СЕЗОНИ",
-    id: 70,
+    id: 'b-p-6',
     price: 70,
     quantity: Infinity,
     volume: "520г",
@@ -121,7 +121,7 @@ export default [{
   {
     category: "pizzas",
     name: "QUATTRO FORMAGGI",
-    id: 71,
+    id: 'b-p-7',
     price: 70,
     quantity: Infinity,
     volume: "400г",
@@ -131,7 +131,7 @@ export default [{
   {
     category: "pizzas",
     name: "Al Tonno",
-    id: 72,
+    id: 'b-p-8',
     price: 70,
     quantity: Infinity,
     volume: "460г",
@@ -141,7 +141,7 @@ export default [{
   {
     category: "pizzas",
     name: "Цезаріо",
-    id: 73,
+    id: 'b-p-9',
     price: 70,
     quantity: Infinity,
     volume: "470г",
@@ -151,7 +151,7 @@ export default [{
   {
     category: "burgers",
     name: "БУРГЕР З КУРКОЮ",
-    id: 74,
+    id: 'b-b-1',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -161,7 +161,7 @@ export default [{
   {
     category: "burgers",
     name: "БУРГЕР З БУЖЕНИНОЮ",
-    id: 75,
+    id: 'b-b-2',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -171,7 +171,7 @@ export default [{
   {
     category: "burgers",
     name: "НЬЮ-ЙОРК БУРГЕР З ТЕЛЯТИНОЮ",
-    id: 76,
+    id: 'b-b-2',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -181,7 +181,7 @@ export default [{
   {
     category: "burgers",
     name: "ЧІЗБУРГЕР З СВИНИНОЮ",
-    id: 77,
+    id: 'b-b-3',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -191,7 +191,7 @@ export default [{
   {
     category: "burgers",
     name: "ЧІЗБУРГЕР З ТЕЛЯТИНОЮ",
-    id: 78,
+    id: 'b-b-4',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -201,7 +201,7 @@ export default [{
   {
     category: "burgers",
     name: "CHICKEN DRON",
-    id: 79,
+    id: 'b-b-5',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -211,7 +211,7 @@ export default [{
   {
     category: "pancakes",
     name: "З ШИНКОЮ І СИРОМ",
-    id: 80,
+    id: 'b-pc-1',
     price: 50,
     quantity: Infinity,
     volume: "260г",
@@ -221,7 +221,7 @@ export default [{
   {
     category: "pancakes",
     name: "З ШПИНАТОМ І СИРОМ",
-    id: 81,
+    id: 'b-pc-2',
     price: 50,
     quantity: Infinity,
     volume: "260г",
@@ -231,7 +231,7 @@ export default [{
   {
     category: "pancakes",
     name: "ПОМІДОРАМИ ТА МОЦАРЕЛОЮ",
-    id: 82,
+    id: 'b-pc-3',
     price: 50,
     quantity: Infinity,
     volume: "235г",
@@ -241,7 +241,7 @@ export default [{
   {
     category: "pancakes",
     name: "З ШОКОЛАДНО-ГОРІХОВОЮ",
-    id: 83,
+    id: 'b-pc-4',
     price: 50,
     quantity: Infinity,
     volume: "235г",
@@ -251,7 +251,7 @@ export default [{
   {
     category: "pancakes",
     name: "ПАСТОЮ ТА МАРШМЕЛЛОУ",
-    id: 84,
+    id: 'b-pc-5',
     price: 50,
     quantity: Infinity,
     volume: "250г",
@@ -261,7 +261,7 @@ export default [{
   {
     category: "pancakes",
     name: "З ЯБЛУКАМИ",
-    id: 85,
+    id: 'b-pc-6',
     price: 50,
     quantity: Infinity,
     volume: "250г",
@@ -271,7 +271,7 @@ export default [{
   {
     category: "pancakes",
     name: "ТА ВАНІЛЬНИМ СОУСОМ",
-    id: 86,
+    id: 'b-pc-7',
     price: 50,
     quantity: Infinity,
     volume: "300г",
@@ -281,7 +281,7 @@ export default [{
   {
     category: "pancakes",
     name: "ГРИЛЬ САЛАТ З ТЕЛЯТИНОЮ",
-    id: 87,
+    id: 'b-pc-8',
     price: 65,
     quantity: Infinity,
     volume: "280г",
@@ -291,7 +291,7 @@ export default [{
   {
     category: "pancakes",
     name: "СЕЗОННО-ЯГІДНІ",
-    id: 88,
+    id: 'b-pc-9',
     price: 50,
     quantity: Infinity,
     volume: "250г",
@@ -301,7 +301,7 @@ export default [{
   {
     category: "pancakes",
     name: "З ТИХООКЕАНСЬКИМ ЛОСОСЕМ ТА ЛИСТЯМ ШПИНАТУ",
-    id: 89,
+    id: 'b-pc-10',
     price: 65,
     quantity: Infinity,
     volume: "270г",
@@ -311,7 +311,7 @@ export default [{
   {
     category: "deserts",
     name: "НАПОЛЕОН",
-    id: 90,
+    id: 'b-d-1',
     price: 45,
     quantity: Infinity,
     volume: "150/40г",
@@ -321,7 +321,7 @@ export default [{
   {
     category: "deserts",
     name: "ЧІЗКЕЙК",
-    id: 91,
+    id: 'b-d-2',
     price: 50,
     quantity: Infinity,
     volume: "150г",
@@ -331,7 +331,7 @@ export default [{
   {
     category: "deserts",
     name: "МОРОЗИВО З СОУСОМ НА ВИБІР",
-    id: 92,
+    id: 'b-d-3',
     price: 40,
     quantity: Infinity,
     volume: "150г",
@@ -341,7 +341,7 @@ export default [{
   {
     category: "deserts",
     name: "ТОФФІ ПУДИНГ",
-    id: 93,
+    id: 'b-d-4',
     price: 40,
     quantity: Infinity,
     volume: "170г",
@@ -351,7 +351,7 @@ export default [{
   {
     category: "deserts",
     name: "Трюфельний торт",
-    id: 94,
+    id: 'b-d-5',
     price: 45,
     quantity: Infinity,
     volume: "170г",
@@ -361,7 +361,7 @@ export default [{
   {
     category: "firstCourses",
     name: "КУРЯЧИЙ БУЛЬЙОН",
-    id: 95,
+    id: 'b-fc-1',
     price: 33,
     quantity: Infinity,
     volume: "300г",
@@ -371,7 +371,7 @@ export default [{
   {
     category: "firstCourses",
     name: "ЛАГМАН",
-    id: 96,
+    id: 'b-fc-2',
     price: 35,
     quantity: Infinity,
     volume: "350г",
@@ -381,7 +381,7 @@ export default [{
   {
     category: "firstCourses",
     name: "СУП-ПЮРЕ З ПЕЧЕРИЦЬ",
-    id: 97,
+    id: 'b-fc-3',
     price: 35,
     quantity: Infinity,
     volume: "300г",
@@ -391,7 +391,7 @@ export default [{
   {
     category: "firstCourses",
     name: "КРЕМ-СУП ЧАУДЕР",
-    id: 98,
+    id: 'b-fc-4',
     price: 50,
     quantity: Infinity,
     volume: "300г",
@@ -401,7 +401,7 @@ export default [{
   {
     category: "mainMeals",
     name: "КУРКА СТІР ФРАЙ",
-    id: 99,
+    id: 'b-mm-1',
     price: 65,
     quantity: Infinity,
     volume: "300г",
@@ -411,7 +411,7 @@ export default [{
   {
     category: "mainMeals",
     name: "ПЕЧЕНА БУЖЕНИНА З РОКФОРНИМ ПЮРЕ",
-    id: 100,
+    id: 'b-mm-2',
     price: 100,
     quantity: Infinity,
     volume: "350г",
@@ -421,7 +421,7 @@ export default [{
   {
     category: "mainMeals",
     name: "Лосось теріякі",
-    id: 101,
+    id: 'b-mm-3',
     price: 120,
     quantity: Infinity,
     volume: "250г",
@@ -431,7 +431,7 @@ export default [{
   {
     category: "mainMeals",
     name: "телятина ПІД СОУСОМ ДЕМІГЛАС",
-    id: 102,
+    id: 'b-mm-4',
     price: 100,
     quantity: Infinity,
     volume: "400г",
@@ -441,7 +441,7 @@ export default [{
   {
     category: "mainMeals",
     name: "ХРУСТКА КУРКА З ПЕЧЕНОЮ КАРТОПЛЕЮ",
-    id: 103,
+    id: 'b-mm-5',
     price: 65,
     quantity: Infinity,
     volume: "300г",
@@ -451,7 +451,7 @@ export default [{
   {
     category: "coffee",
     name: "ЕСПРЕССО",
-    id: 1,
+    id: 'b-c-1',
     price: 20,
     quantity: Infinity,
     volume: "",
@@ -461,7 +461,7 @@ export default [{
   {
     category: "coffee",
     name: "АМЕРИКАНО",
-    id: 2,
+    id: 'b-c-2',
     price: 20,
     quantity: Infinity,
     volume: "",
@@ -471,7 +471,7 @@ export default [{
   {
     category: "coffee",
     name: "КАПУЧІНО",
-    id: 3,
+    id: 'b-c-3',
     price: 35,
     quantity: Infinity,
     volume: "",
@@ -481,7 +481,7 @@ export default [{
   {
     category: "coffee",
     name: "ФЛЕТ ВАЙТ",
-    id: 4,
+    id: 'b-c-4',
     price: 35,
     quantity: Infinity,
     volume: "",
@@ -491,7 +491,7 @@ export default [{
   {
     category: "coffee",
     name: "ЛАТЕ",
-    id: 5,
+    id: 'b-c-5',
     price: 30,
     quantity: Infinity,
     volume: "300г",
@@ -501,7 +501,7 @@ export default [{
   {
     category: "coffee",
     name: "ФРАПЕ",
-    id: 6,
+    id: 'b-c-6',
     price: 35,
     quantity: Infinity,
     volume: "300г",
@@ -511,7 +511,7 @@ export default [{
   {
     category: "coffee",
     name: "МОЛОКО",
-    id: 7,
+    id: 'b-c-7',
     price: 5,
     quantity: Infinity,
     volume: "",
@@ -521,7 +521,7 @@ export default [{
   {
     category: "tea",
     name: "ЧОРНИЙ",
-    id: 8,
+    id: 'b-tea-1',
     price: 30,
     quantity: Infinity,
     volume: "0,6л",
@@ -531,7 +531,7 @@ export default [{
   {
     category: "tea",
     name: "ЗЕЛЕНИЙ",
-    id: 9,
+    id: 'b-tea-2',
     price: 30,
     quantity: Infinity,
     volume: "0,6л",
@@ -541,7 +541,7 @@ export default [{
   {
     category: "tea",
     name: "ФРУКТОВИЙ",
-    id: 10,
+    id: 'b-tea-3',
     price: 30,
     quantity: Infinity,
     volume: "0,6л",
@@ -551,7 +551,7 @@ export default [{
   {
     category: "tea",
     name: "ТРАВ'ЯНИЙ",
-    id: 11,
+    id: 'b-tea-4',
     price: 30,
     quantity: Infinity,
     volume: "0,6л",
@@ -561,7 +561,7 @@ export default [{
   {
     category: "hotDrinks",
     name: "ОБЛІПИХОВИЙ чай З МАРАКУЄЮ",
-    id: 12,
+    id: 'b-hd-1',
     price: 30,
     quantity: Infinity,
     volume: "0,30л",
@@ -571,7 +571,7 @@ export default [{
   {
     category: "hotDrinks",
     name: "ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ",
-    id: 13,
+    id: 'b-hd-2',
     price: 30,
     quantity: Infinity,
     volume: "0,30л",
@@ -581,7 +581,7 @@ export default [{
   {
     category: "fresh",
     name: "АПЕЛЬСИНОВИЙ",
-    id: 14,
+    id: 'b-fre-1',
     price: 60,
     quantity: Infinity,
     volume: "0,25л",
@@ -591,7 +591,7 @@ export default [{
   {
     category: "fresh",
     name: "ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ",
-    id: 15,
+    id: 'b-fre-2',
     price: 60,
     quantity: Infinity,
     volume: "0,25л",
@@ -601,7 +601,7 @@ export default [{
   {
     category: "lemonade",
     name: "ЯБЛУКО-БАЗИЛІК",
-    id: 16,
+    id: 'b-lem-1',
     price: 35,
     quantity: Infinity,
     volume: "300мл",
@@ -611,7 +611,7 @@ export default [{
   {
     category: "lemonade",
     name: "АНАНАСОВО-ІМБИРНИЙ",
-    id: 17,
+    id: 'b-lem-2',
     price: 35,
     quantity: Infinity,
     volume: "300мл",
@@ -621,7 +621,7 @@ export default [{
   {
     category: "lemonade",
     name: "З ТЕМНИМ КВАСОМ",
-    id: 18,
+    id: 'b-lem-3',
     price: 35,
     quantity: Infinity,
     volume: "300мл",
@@ -631,7 +631,7 @@ export default [{
   {
     category: "lemonade",
     name: "ГРЕЙПФРУТ ",
-    id: 19,
+    id: 'b-lem-4',
     price: 35,
     quantity: Infinity,
     volume: "300мл",
@@ -641,7 +641,7 @@ export default [{
   {
     category: "lemonade",
     name: "ЗЕЛЕНИЙ БАНАН-КІВІ",
-    id: 20,
+    id: 'b-lem-5',
     price: 35,
     quantity: Infinity,
     volume: "300мл",
@@ -651,7 +651,7 @@ export default [{
   {
     category: "smoothy",
     name: "ДИНЯ-МАРАКУЙЯ",
-    id: 21,
+    id: 'b-smo-1',
     price: 40,
     quantity: Infinity,
     volume: "250мл",
@@ -661,7 +661,7 @@ export default [{
   {
     category: "smoothy",
     name: "ШПИНАТНИЙ",
-    id: 22,
+    id: 'b-smo-2',
     price: 40,
     quantity: Infinity,
     volume: "250мл",
@@ -671,7 +671,7 @@ export default [{
   {
     category: "milkshake",
     name: "БАНАНОВИЙ",
-    id: 23,
+    id: 'b-ms-1',
     price: 40,
     quantity: Infinity,
     volume: "300мл",
@@ -681,7 +681,7 @@ export default [{
   {
     category: "milkshake",
     name: "ШОКОЛАДНИЙ",
-    id: 24,
+    id: 'b-ms-2',
     price: 40,
     quantity: Infinity,
     volume: "300мл",
@@ -691,7 +691,7 @@ export default [{
   {
     category: "milkshake",
     name: "ЧОРНИЧНИЙ",
-    id: 25,
+    id: 'b-ms-3',
     price: 40,
     quantity: Infinity,
     volume: "300мл",
@@ -701,7 +701,7 @@ export default [{
   {
     category: "nonAlcoholicDrinks",
     name: "МОРС З ЖУРАВЛИНИ",
-    id: 26,
+    id: 'b-nad-1',
     price: 16,
     quantity: Infinity,
     volume: "0,25л",
@@ -711,7 +711,7 @@ export default [{
   {
     category: "nonAlcoholicDrinks",
     name: "СІК В АСОРТИМЕНТІ",
-    id: 27,
+    id: 'b-nad-2',
     price: 18,
     quantity: Infinity,
     volume: "0,25л",
@@ -721,7 +721,7 @@ export default [{
   {
     category: "nonAlcoholicDrinks",
     name: "ПЕПСІ / 7UP / МІРІНДА",
-    id: 28,
+    id: 'b-nad-3',
     price: 15,
     quantity: Infinity,
     volume: "0,25л",
@@ -731,7 +731,7 @@ export default [{
   {
     category: "nonAlcoholicDrinks",
     name: "ТОНІК",
-    id: 29,
+    id: 'b-nad-4',
     price: 25,
     quantity: Infinity,
     volume: "0,5л",
@@ -741,7 +741,7 @@ export default [{
   {
     category: "nonAlcoholicDrinks",
     name: "БОРЖОМІ",
-    id: 30,
+    id: 'b-nad-5',
     price: 40,
     quantity: Infinity,
     volume: "0,5л",
@@ -751,7 +751,7 @@ export default [{
   {
     category: "nonAlcoholicDrinks",
     name: "ДЕВАЙТІС",
-    id: 31,
+    id: 'b-nad-6',
     price: 27,
     quantity: Infinity,
     volume: "0,5л",
@@ -761,7 +761,7 @@ export default [{
   {
     category: "makiRoll",
     name: "СЯКЕ МАКІ",
-    id: 32,
+    id: 'b-mr-1',
     price: 55,
     quantity: Infinity,
     volume: "120/7/15г",
@@ -771,7 +771,7 @@ export default [{
   {
     category: "makiRoll",
     name: "СЯКЕ-КУНСЕЙ МАКІ",
-    id: 33,
+    id: 'b-mr-2',
     price: 60,
     quantity: Infinity,
     volume: "120/7/15г",
@@ -781,7 +781,7 @@ export default [{
   {
     category: "makiRoll",
     name: "ЧУКА МАКІ",
-    id: 34,
+    id: 'b-mr-3',
     price: 40,
     quantity: Infinity,
     volume: "130/7/15г",
@@ -791,7 +791,7 @@ export default [{
   {
     category: "photoMakiRoll",
     name: "СЯКЕ ФУТОМАКІ",
-    id: 35,
+    id: 'b-pmr-1',
     price: 70,
     quantity: Infinity,
     volume: "190/7/15г",
@@ -801,7 +801,7 @@ export default [{
   {
     category: "photoMakiRoll",
     name: "ОВОЧЕВИЙ ФУТОМАКІ",
-    id: 36,
+    id: 'b-pmr-2',
     price: 50,
     quantity: Infinity,
     volume: "195/7/15г",
@@ -811,7 +811,7 @@ export default [{
   {
     category: "photoMakiRoll",
     name: "МУРУКАЇ ФУТОМАКІ",
-    id: 37,
+    id: 'b-pmr-3',
     price: 60,
     quantity: Infinity,
     volume: "130/7/15г",
@@ -821,7 +821,7 @@ export default [{
   {
     category: "originalRoll",
     name: "ХАКО СУШІ З ЛОСОСЕМ",
-    id: 38,
+    id: 'b-or-1',
     price: 80,
     quantity: Infinity,
     volume: "200/7/15г",
@@ -831,7 +831,7 @@ export default [{
   {
     category: "originalRoll",
     name: "РОЛ АКАУРО",
-    id: 39,
+    id: 'b-or-2',
     price: 80,
     quantity: Infinity,
     volume: "220/7/15г",
@@ -841,7 +841,7 @@ export default [{
   {
     category: "originalRoll",
     name: "СИРНИЙ",
-    id: 40,
+    id: 'b-or-3',
     price: 60,
     quantity: Infinity,
     volume: "200/7/15г",
@@ -851,7 +851,7 @@ export default [{
   {
     category: "originalRoll",
     name: "ФІРМОВИЙ",
-    id: 41,
+    id: 'b-or-4',
     price: 80,
     quantity: Infinity,
     volume: "210/7/15г",
@@ -861,7 +861,7 @@ export default [{
   {
     category: "originalRoll",
     name: "З ОКУНЕМ-УНАГІ В КУНЖУТІ",
-    id: 42,
+    id: 'b-or-5',
     price: 70,
     quantity: Infinity,
     volume: "205/7/15г",
@@ -871,7 +871,7 @@ export default [{
   {
     category: "originalRoll",
     name: "ЛОСОСЬ ФЛАМБЕ",
-    id: 43,
+    id: 'b-or-6',
     price: 110,
     quantity: Infinity,
     volume: "235/7/15г",
@@ -881,7 +881,7 @@ export default [{
   {
     category: "originalRoll",
     name: "ГРІН РОЛ З КРЕВЕТКОЮ ТЕМПУРА",
-    id: 44,
+    id: 'b-or-7',
     price: 75,
     quantity: Infinity,
     volume: "220/7/15г",
@@ -891,7 +891,7 @@ export default [{
   {
     category: "originalRoll",
     name: "Урамакі",
-    id: 45,
+    id: 'b-or-8',
     price: 135,
     quantity: Infinity,
     volume: "255/7/15г",
@@ -901,7 +901,7 @@ export default [{
   {
     category: "originalRoll",
     name: "Рол Унагі",
-    id: 46,
+    id: 'b-or-9',
     price: 135,
     quantity: Infinity,
     volume: "240/7/15г",
@@ -911,7 +911,7 @@ export default [{
   {
     category: "californiaRoll",
     name: "З ЛОСОСЕМ",
-    id: 47,
+    id: 'b-cr-1',
     price: 90,
     quantity: Infinity,
     volume: "210/7/15г",
@@ -921,7 +921,7 @@ export default [{
   {
     category: "californiaRoll",
     name: "З КОПЧЕНИМ ЛОСОСЕМ",
-    id: 48,
+    id: 'b-cr-2',
     price: 90,
     quantity: Infinity,
     volume: "210/7/15г",
@@ -931,7 +931,7 @@ export default [{
   {
     category: "californiaRoll",
     name: "З ТУНЦЕМ",
-    id: 49,
+    id: 'b-cr-3',
     price: 95,
     quantity: Infinity,
     volume: "210/7/15г",
@@ -941,7 +941,7 @@ export default [{
   {
     category: "californiaRoll",
     name: "УНАГІ",
-    id: 50,
+    id: 'b-cr-4',
     price: 95,
     quantity: Infinity,
     volume: "220/7/15г",
@@ -951,7 +951,7 @@ export default [{
   {
     category: "PhiladelphiaRoll",
     name: "З ЛОСОСЕМ",
-    id: 51,
+    id: 'b-phir-1',
     price: 100,
     quantity: Infinity,
     volume: "220/7/15г",
@@ -961,7 +961,7 @@ export default [{
   {
     category: "PhiladelphiaRoll",
     name: "З КОПЧЕНИМ ЛОСОСЕМ",
-    id: 52,
+    id: 'b-phir-2',
     price: 100,
     quantity: Infinity,
     volume: "220/7/15г",
@@ -971,7 +971,7 @@ export default [{
   {
     category: "PhiladelphiaRoll",
     name: "З ТУНЦЕМ",
-    id: 53,
+    id: 'b-phir-3',
     price: 100,
     quantity: Infinity,
     volume: "210/7/15г",
@@ -981,7 +981,7 @@ export default [{
   {
     category: "PhiladelphiaRoll",
     name: "УНАГІ",
-    id: 54,
+    id: 'b-phir-4',
     price: 100,
     quantity: Infinity,
     volume: "220/7/15г",
@@ -991,7 +991,7 @@ export default [{
   {
     category: "PhiladelphiaRoll",
     name: "КРЕВЕТКА ФЛАМБЕ",
-    id: 55,
+    id: 'b-phir-5',
     price: 95,
     quantity: Infinity,
     volume: "220/7/15г",
@@ -1001,7 +1001,7 @@ export default [{
   {
     category: "drakoniRoll",
     name: "ЗЕЛЕНИЙ ДРАКОН",
-    id: 56,
+    id: 'b-drr-1',
     price: 110,
     quantity: Infinity,
     volume: "235/7/15г",
@@ -1011,7 +1011,7 @@ export default [{
   {
     category: "drakoniRoll",
     name: "ЗОЛОТИЙ ДРАКОН",
-    id: 57,
+    id: 'b-drr-2',
     price: 140,
     quantity: Infinity,
     volume: "245/7/15г",
@@ -1021,7 +1021,7 @@ export default [{
   {
     category: "drakoniRoll",
     name: "ЧЕРВОНИЙ ДРАКОН",
-    id: 58,
+    id: 'b-drr-3',
     price: 140,
     quantity: Infinity,
     volume: "235/7/15г",
@@ -1031,7 +1031,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "BLOODY MARY (N.A) ",
-    id: 104,
+    id: 'b-alcc-1',
     price: 40,
     quantity: Infinity,
     volume: "250мл",
@@ -1041,7 +1041,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "BLOODY MARY (ALC) ",
-    id: 105,
+    id: 'b-alcc-2',
     price: 70,
     quantity: Infinity,
     volume: "250мл",
@@ -1051,7 +1051,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "LONG ISLAND ICE TEA",
-    id: 106,
+    id: 'b-alcc-3',
     price: 70,
     quantity: Infinity,
     volume: "250мл",
@@ -1061,7 +1061,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "APEROL SPRITZ",
-    id: 107,
+    id: 'b-alcc-4',
     price: 65,
     quantity: Infinity,
     volume: "250мл",
@@ -1071,7 +1071,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "APEROL berry",
-    id: 108,
+    id: 'b-alcc-5',
     price: 70,
     quantity: Infinity,
     volume: "250мл",
@@ -1081,7 +1081,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "green aplle MOJITO",
-    id: 109,
+    id: 'b-alcc-6',
     price: 60,
     quantity: Infinity,
     volume: "300мл",
@@ -1091,7 +1091,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "aplle grape sangria",
-    id: 110,
+    id: 'b-alcc-7',
     price: 60,
     quantity: Infinity,
     volume: "300мл",
@@ -1101,7 +1101,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "grapefruit whiskey sour",
-    id: 111,
+    id: 'b-alcc-8',
     price: 80,
     quantity: Infinity,
     volume: "150мл",
@@ -1111,7 +1111,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "MAI TAI",
-    id: 112,
+    id: 'b-alcc-9',
     price: 70,
     quantity: Infinity,
     volume: "300мл",
@@ -1121,7 +1121,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "PASSION FRUIT COLADA",
-    id: 113,
+    id: 'b-alcc-10',
     price: 70,
     quantity: Infinity,
     volume: "300мл",
@@ -1131,7 +1131,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "MOJITO (N.A)",
-    id: 114,
+    id: 'b-alcc-11',
     price: 35,
     quantity: Infinity,
     volume: "250мл",
@@ -1141,7 +1141,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "MOJITO (ALC)",
-    id: 115,
+    id: 'b-alcc-12',
     price: 70,
     quantity: Infinity,
     volume: "250мл",
@@ -1151,7 +1151,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "Blueberry Gin Tonic",
-    id: 116,
+    id: 'b-alcc-13',
     price: 65,
     quantity: Infinity,
     volume: "300мл",
@@ -1161,7 +1161,7 @@ export default [{
   {
     category: "alcoholicCocktail",
     name: "TIKI TIKI",
-    id: 117,
+    id: 'b-alcc-14',
     price: 70,
     quantity: Infinity,
     volume: "300мл",
@@ -1171,7 +1171,7 @@ export default [{
   {
     category: "alcoholicSet",
     name: "ІМБИРНИЙ",
-    id: 118,
+    id: 'b-als-1',
     price: 60,
     quantity: Infinity,
     volume: "210мл",
@@ -1181,7 +1181,7 @@ export default [{
   {
     category: "alcoholicSet",
     name: "МАЛИНОВИЙ",
-    id: 119,
+    id: 'b-als-2',
     price: 60,
     quantity: Infinity,
     volume: "210мл",
@@ -1191,7 +1191,7 @@ export default [{
   {
     category: "alcoholicSet",
     name: "МАНГО",
-    id: 120,
+    id: 'b-als-3',
     price: 60,
     quantity: Infinity,
     volume: "210мл",
@@ -1201,7 +1201,7 @@ export default [{
   {
     category: "alcoholicSet",
     name: "ЦИТРУСОВО-М’ЯТНИЙ",
-    id: 121,
+    id: 'b-als-4',
     price: 60,
     quantity: Infinity,
     volume: "210мл",
@@ -1211,7 +1211,7 @@ export default [{
   {
     category: "wine",
     name: "Cavaleria Bianco",
-    id: 122,
+    id: 'b-wine-1',
     price: 28 / 210,
     quantity: Infinity,
     volume: "100/750мл",
@@ -1221,7 +1221,7 @@ export default [{
   {
     category: "wine",
     name: "Cavaleria Bianco",
-    id: 123,
+    id: 'b-wine-2',
     price: 28 / 210,
     quantity: Infinity,
     volume: "100/750мл",
@@ -1231,7 +1231,7 @@ export default [{
   {
     category: "wine",
     name: "Cavaleria Rosso",
-    id: 124,
+    id: 'b-wine-3',
     price: 28 / 210,
     quantity: Infinity,
     volume: "100/750мл",
@@ -1241,7 +1241,7 @@ export default [{
   {
     category: "wine",
     name: "Cavaleria Rosso",
-    id: 125,
+    id: 'b-wine-4',
     price: 28 / 210,
     quantity: Infinity,
     volume: "100/750мл",
@@ -1251,7 +1251,7 @@ export default [{
   {
     category: "wine",
     name: "Casa Verde Merlot",
-    id: 126,
+    id: 'b-wine-5',
     price: 44 / 330,
     quantity: Infinity,
     volume: "100/375мл",
@@ -1261,7 +1261,7 @@ export default [{
   {
     category: "wine",
     name: "Casa Verde Merlot",
-    id: 127,
+    id: 'b-wine-6',
     price: 24 / 90,
     quantity: Infinity,
     volume: "100/375мл",
@@ -1271,7 +1271,7 @@ export default [{
   {
     category: "sparklingWine",
     name: "МАРТІНІ АСТІ",
-    id: 128,
+    id: 'b-swine-1',
     price: 400,
     quantity: Infinity,
     volume: "750мл",
@@ -1281,7 +1281,7 @@ export default [{
   {
     category: "sparklingWine",
     name: "ЗЕБО",
-    id: 129,
+    id: 'b-swine-2',
     price: 350,
     quantity: Infinity,
     volume: "750мл",
@@ -1291,7 +1291,7 @@ export default [{
   {
     category: "sparklingWine",
     name: "коктебель",
-    id: 130,
+    id: 'b-swine-3',
     price: 130,
     quantity: Infinity,
     volume: "750мл",
@@ -1301,7 +1301,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "CINZANO",
-    id: 131,
+    id: 'b-aldr-1',
     price: 20,
     quantity: Infinity,
     volume: "50мл",
@@ -1311,7 +1311,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "BECHEROVKA",
-    id: 132,
+    id: 'b-aldr-2',
     price: 35,
     quantity: Infinity,
     volume: "50мл",
@@ -1321,7 +1321,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "JAGERMEISTER",
-    id: 133,
+    id: 'b-aldr-3',
     price: 45,
     quantity: Infinity,
     volume: "50мл",
@@ -1331,7 +1331,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "AZNAURI 5*",
-    id: 134,
+    id: 'b-aldr-4',
     price: 35,
     quantity: Infinity,
     volume: "50мл",
@@ -1341,7 +1341,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "REMY MARTIN VS",
-    id: 135,
+    id: 'b-aldr-5',
     price: "110",
     quantity: Infinity,
     volume: "50мл",
@@ -1351,7 +1351,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "ЗУБРІВКА",
-    id: 136,
+    id: 'b-aldr-6',
     price: "25",
     quantity: Infinity,
     volume: "50мл",
@@ -1361,7 +1361,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "ФІНЛЯНДІЯ",
-    id: 137,
+    id: 'b-aldr-7',
     price: 40,
     quantity: Infinity,
     volume: "50мл",
@@ -1371,7 +1371,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "Козацька рада",
-    id: 138,
+    id: 'b-aldr-8',
     price: 20,
     quantity: Infinity,
     volume: "50мл",
@@ -1381,7 +1381,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "ESPOLON",
-    id: 139,
+    id: 'b-aldr-9',
     price: 50,
     quantity: Infinity,
     volume: "50мл",
@@ -1391,7 +1391,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "CAPTAIN MORGAN",
-    id: 140,
+    id: 'b-aldr-10',
     price: 50,
     quantity: Infinity,
     volume: "50мл",
@@ -1401,7 +1401,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "WILD TURKEY",
-    id: 141,
+    id: 'b-aldr-11',
     price: 70,
     quantity: Infinity,
     volume: "50мл",
@@ -1411,7 +1411,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "ДЖЕМЕСОН",
-    id: 142,
+    id: 'b-aldr-12',
     price: 70,
     quantity: Infinity,
     volume: "50мл",
@@ -1421,7 +1421,7 @@ export default [{
   {
     category: "alcoholicDrinks",
     name: "ДЖЕК ДЕНІЕЛС ОЛД №7",
-    id: 143,
+    id: 'b-aldr-13',
     price: 70,
     quantity: Infinity,
     volume: "50мл",
@@ -1431,7 +1431,7 @@ export default [{
   {
     category: "bear",
     name: "ЧЕРНІГІВСЬКЕ СВІТЛЕ",
-    id: 144,
+    id: 'b-bear-1',
     price: 30,
     quantity: Infinity,
     volume: "0,5л",
@@ -1441,7 +1441,7 @@ export default [{
   {
     category: "bear",
     name: "БАД Б/А",
-    id: 145,
+    id: 'b-bear-2',
     price: 35,
     quantity: Infinity,
     volume: "0,5л",
@@ -1451,7 +1451,7 @@ export default [{
   {
     category: "bear",
     name: "ХУГАРДЕН",
-    id: 146,
+    id: 'b-bear-3',
     price: "70/45",
     quantity: Infinity,
     volume: "0,5л/0,3л",
@@ -1461,7 +1461,7 @@ export default [{
   {
     category: "bear",
     name: "БІЛА НІЧ",
-    id: 147,
+    id: 'b-bear-4',
     price: "35/23",
     quantity: Infinity,
     volume: "0,5л/0,3л",
@@ -1471,7 +1471,7 @@ export default [{
   {
     category: "bear",
     name: "ХМЕЛЕВУС",
-    id: 148,
+    id: 'b-bear-5',
     price: "40/26",
     quantity: Infinity,
     volume: "0,5л/0,3л",
