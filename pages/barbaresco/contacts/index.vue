@@ -30,6 +30,7 @@
   <div id="about-us">
     <div class="row">
       <img
+        loading="lazy"
         src="~/assets/img/barbarescoContact.jpg"
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco Contact page image"
@@ -91,7 +92,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: ("Barbaresco -" + this.$t('description')).slice(
+          content: ("Barbaresco -" + this.$t('location')).slice(
             0,
             320
           )

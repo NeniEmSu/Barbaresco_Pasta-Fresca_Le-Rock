@@ -1,0 +1,92 @@
+.image-container {
+    min-height: calc(100vh - 120px);
+
+    object-fit: cover;
+    object-position: left center;
+}
+
+h1 {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 106px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+p {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 140.4%;
+
+    color: #000000;
+}
+
+@media (min-width: 1280px) {
+    .content-text {
+        width: 90%;
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .content-text {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 993px) {
+    .image-container {
+        min-height: 200px;
+        max-height: 200px;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .image-container {
+        min-height: 200px;
+        max-height: 200px;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 140.4%;
+    }
+}
