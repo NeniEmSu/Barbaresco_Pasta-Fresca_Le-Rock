@@ -9,7 +9,7 @@
       <div class="row d-flex justify-content-start ">
         <div
           class="card"
-          v-for="product in burgers"
+          v-for="product in extractedProductsBurgers"
           :key="product.id"
         >
 
@@ -33,10 +33,10 @@
             >{{(product.summary).slice(0, 39)}}... <span class="card-text quantity">{{product.volume}}</span></p>
 
             <div class="row">
-              <div class="col-sm-4 pr-0 my-auto">
+              <div class="col-sm-5 pr-0 my-auto">
                 <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency }}</p>
               </div>
-              <div class="col-sm-8  my-auto text-center">
+              <div class="col-sm-7 pl-0  my-auto text-center">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
@@ -55,19 +55,20 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex"
+import productData from "~/plugins/api/products.js"
 export default {
   name: 'TheBurgers',
   data () {
     return {
-      loading: false,
+
     }
   },
 
   computed: {
-    ...mapGetters(["burgers"]),
+    extractedProductsBurgers () {
+      return productData.filter(el => el.category === "burgers")
+    }
   },
-
 
   methods: {
     addToCart (id, append = false) {

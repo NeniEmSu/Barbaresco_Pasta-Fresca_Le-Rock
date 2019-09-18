@@ -60,7 +60,7 @@
 
       <ThePizza v-if="currentProductsDisplayed === 1" />
 
-      <TheBugers v-if="currentProductsDisplayed === 2" />
+      <TheRockDogs v-if="currentProductsDisplayed === 2" />
 
       <TheSushi v-if="currentProductsDisplayed === 3" />
 
@@ -94,8 +94,8 @@
 import TheImageNavigation from '~/components/TheImageNavigationPastaFresca'
 import TheImagedProductNav from '~/components/TheImagedProductNavPastaFresca'
 import TheMapComponent from '~/components/TheMapComponentPastaFresca'
-import TheBugers from '~/components/Barbaresco/BarbarescoProducts/TheBugers'
-import ThePizza from '~/components/Barbaresco/BarbarescoProducts/ThePizzaPastaFresca'
+import TheRockDogs from '~/components/Barbaresco/BarbarescoProducts/TheBugers'
+import ThePizza from '~/components/PastaFresca/PastaFrescaProducts/TheRockDogsPastaFresca'
 import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
 import TheDrinks from '~/components/Barbaresco/BarbarescoProducts/TheDrinks'
 import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
@@ -114,7 +114,7 @@ export default {
     TheImageNavigation,
     TheImagedProductNav,
     TheMapComponent,
-    TheBugers,
+    TheRockDogs,
     ThePizza,
     TheSushi,
     TheMlinty,
