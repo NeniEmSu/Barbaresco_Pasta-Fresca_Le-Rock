@@ -221,6 +221,7 @@ export default {
             "vacancy": "Ваканції",
             "contact": "Контакти",
           },
+          "order": "Замовити",
           "ukrainian": "Українська",
           "english": "English",
           "russian": "Русский"
@@ -235,13 +236,16 @@ export default {
             "aboutUs": "About us",
             "atmosphere": "Atmosphere",
             "vacancy": "Vacancies",
-            "contact": "Contacts"
+            "contact": "Contacts",
+            "kitchen": "Kitchen"
           },
           "ukrainian": "Українська",
           "english": "English",
-          "russian": "Русский"
+          "russian": "Русский",
+          "order": "Order"
         },
         ru: {
+
           "links": {
             "home": "Главная",
             "menu": "Меню",
@@ -251,11 +255,13 @@ export default {
             "aboutUs": "О нас",
             "atmosphere": "Атмосфера",
             "vacancy": "Вакансии",
-            "contact": "Контакты"
+            "contact": "Контакты",
+            "kitchen": "Кухня"
           },
           "ukrainian": "Українська",
           "english": "English",
-          "russian": "Русский"
+          "russian": "Русский",
+          "order": "Заказать"
         }
 
       }

@@ -33,14 +33,14 @@
             >{{(pancake.summary).slice(0, 39)}}...<span class="card-text quantity">{{pancake.volume}}</span></p>
 
             <div class="row">
-              <div class="col-sm-5 pr-0 my-auto">
+              <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                 <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{pancake.volume}}</span> {{pancake.price | currency}}</p>
               </div>
               <div class="col-sm-7 pl-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(pancake.id)"
-                >Замовити</button></div>
+                >{{$t('order')}}</button></div>
             </div>
 
           </div>

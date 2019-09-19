@@ -31,7 +31,7 @@
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(desert.id)"
-                >Замовити</button></div>
+                >{{$t('order')}}</button></div>
             </div>
 
           </div>

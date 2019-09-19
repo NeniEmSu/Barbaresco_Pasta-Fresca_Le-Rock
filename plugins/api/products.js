@@ -171,7 +171,7 @@ export default [{
   {
     category: "burgers",
     name: "НЬЮ-ЙОРК БУРГЕР З ТЕЛЯТИНОЮ",
-    id: 'b-b-2',
+    id: 'b-b-3',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -181,7 +181,7 @@ export default [{
   {
     category: "burgers",
     name: "ЧІЗБУРГЕР З СВИНИНОЮ",
-    id: 'b-b-3',
+    id: 'b-b-4',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -191,7 +191,7 @@ export default [{
   {
     category: "burgers",
     name: "ЧІЗБУРГЕР З ТЕЛЯТИНОЮ",
-    id: 'b-b-4',
+    id: 'b-b-5',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -201,7 +201,7 @@ export default [{
   {
     category: "burgers",
     name: "CHICKEN DRON",
-    id: 'b-b-5',
+    id: 'b-b-6',
     price: 75,
     quantity: Infinity,
     volume: "380г",
@@ -405,7 +405,7 @@ export default [{
     price: 65,
     quantity: Infinity,
     volume: "300г",
-    image: "barbarescoFirstCourse",
+    image: "barbarescoHits",
     summary: "Філе курки, цукіні, морква, перець болгарський, броколі, кунжут, зелена цибуля, соус териякі"
   },
   {
@@ -415,7 +415,7 @@ export default [{
     price: 100,
     quantity: Infinity,
     volume: "350г",
-    image: "barbarescoFirstCourse",
+    image: "barbarescoHits",
     summary: "Печена свинна шия подається з картопляно-рокфорним пюре"
   },
   {
@@ -425,7 +425,7 @@ export default [{
     price: 120,
     quantity: Infinity,
     volume: "250г",
-    image: "barbarescoFirstCourse",
+    image: "barbarescoHits",
     summary: "Філе лосося, квасоля спаржева, морква, перець болгарський, кабачок, печериці, соус теріякі"
   },
   {
@@ -435,7 +435,7 @@ export default [{
     price: 100,
     quantity: Infinity,
     volume: "400г",
-    image: "barbarescoFirstCourse",
+    image: "barbarescoHits",
     summary: "Подається з рисом із овочами-гриль"
   },
   {
@@ -445,7 +445,7 @@ export default [{
     price: 65,
     quantity: Infinity,
     volume: "300г",
-    image: "barbarescoFirstCourse",
+    image: "barbarescoHits",
     summary: ""
   },
   {
@@ -1567,6 +1567,100 @@ export default [{
     quantity: Infinity,
     volume: "0,5л",
     image: "barbarescoAlcohol",
+    summary: ""
+  },
+  {
+    category: "appetizers",
+    name: "ТАРІЛКА «ПІД ВИНО»",
+    id: 'b-app-1',
+    price: 120,
+    quantity: Infinity,
+    volume: "220г",
+    image: "pasta-presca-appetizer",
+    summary: "Багет, італійська сиров’ялена ковбаса, сир Брі, сир Дор Блю, сир Едем, маслини, палички BBQ з рокфорним соусом та медом"
+  },
+  {
+    category: "appetizers",
+    name: "ПИВНИЙ СЕТ",
+    id: 'b-app-2',
+    price: 80,
+    quantity: Infinity,
+    volume: "300г",
+    image: "pasta-presca-appetizer",
+    summary: "курка янтарна, бастурма, чіпси картопляні, сир фрі, пікантні ковбаски, соус тар-тар"
+  },
+  {
+    category: "appetizers",
+    name: "КУРЯЧІ КРИЛА BBQ",
+    id: 'b-app-3',
+    price: 60,
+    quantity: Infinity,
+    volume: "300г",
+    image: "pasta-presca-appetizer",
+    summary: "Приготовлені в пікантному соусі та подаються з соусом тар-тар"
+  },
+  {
+    category: "garnishes",
+    name: "ОВОЧІ-ГРИЛЬ",
+    id: 'b-gar-1',
+    price: 55,
+    quantity: Infinity,
+    volume: "250г",
+    image: "le-rock-side-dishes",
+    summary: ""
+  }, {
+    category: "garnishes",
+    name: "РИС З ОВОЧАМИ-ГРИЛЬ",
+    id: 'b-gar-2',
+    price: 30,
+    quantity: Infinity,
+    volume: "220г",
+    image: "le-rock-side-dishes",
+    summary: ""
+  }, {
+    category: "garnishes",
+    name: "КАРТОПЛЯ ПО-СЕЛЯНСЬКИ",
+    id: 'b-gar-3',
+    price: 30,
+    quantity: Infinity,
+    volume: "250г",
+    image: "le-rock-side-dishes",
+    summary: "З розмарином і беконом"
+  }, {
+    category: "garnishes",
+    name: "КАРТОПЛЯ ФРІ",
+    id: 'b-gar-4',
+    price: 35,
+    quantity: Infinity,
+    volume: "	150/30г",
+    image: "le-rock-side-dishes",
+    summary: ""
+  }, {
+    category: "garnishes",
+    name: "КАРТОПЛЯНЕ ПЮРЕ",
+    id: 'b-gar-5',
+    price: 20,
+    quantity: Infinity,
+    volume: "200г",
+    image: "le-rock-side-dishes",
+    summary: ""
+  }, {
+    category: "garnishes",
+    name: "ХЛІБ БІЛИЙ",
+    id: 'b-gar-6-1',
+    price: 3,
+    quantity: Infinity,
+    volume: "1 шматочок",
+    image: "le-rock-side-dishes",
+    summary: ""
+  }, {
+    category: "garnishes",
+    name: "ХЛІБ СІРИЙ",
+    id: 'b-gar-6-2',
+    price: 3,
+    quantity: Infinity,
+    volume: "1 шматочок",
+    image: "le-rock-side-dishes",
     summary: ""
   }
 ]

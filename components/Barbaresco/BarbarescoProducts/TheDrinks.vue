@@ -56,7 +56,7 @@
                 >{{(coffee.summary).slice(0, 30)}}...<span class="card-text quantity">{{coffee.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{coffee.volume}}</span> {{coffee.price | currency}}</p>
 
                   </div>
@@ -64,7 +64,7 @@
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(coffee.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -137,14 +137,14 @@
                 >{{(tea.summary).slice(0, 30)}}...<span class="card-text quantity">{{tea.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{tea.volume}}</span> {{tea.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(tea.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -208,14 +208,14 @@
                 >{{(fresh.summary).slice(0, 30)}}...<span class="card-text quantity">{{fresh.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{fresh.volume}}</span> {{fresh.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(fresh.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -280,14 +280,14 @@
                 >{{(lemonade.summary).slice(0, 30)}}...<span class="card-text quantity">{{lemonade.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{lemonade.volume}}</span> {{lemonade.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(lemonade.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -351,14 +351,14 @@
                 >{{(smoothy.summary).slice(0, 30)}}...<span class="card-text quantity">{{smoothy.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{smoothy.volume}}</span> {{smoothy.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(smoothy.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -422,14 +422,14 @@
                 >{{(milkshake.summary).slice(0, 30)}}...<span class="card-text quantity">{{milkshake.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{milkshake.volume}}</span> {{milkshake.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(milkshake.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -494,14 +494,14 @@
                 >{{(nonAlcoholicDrinks.summary).slice(0, 30)}}...<span class="card-text quantity">{{nonAlcoholicDrinks.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{nonAlcoholicDrinks.volume}}</span> {{nonAlcoholicDrinks.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(nonAlcoholicDrinks.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>

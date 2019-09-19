@@ -70,13 +70,15 @@
 
       <TheFirstCourse v-if="currentProductsDisplayed === 7" />
 
-      <TheHits v-if="currentProductsDisplayed === 8" />
+      <TheAppetizers v-if="currentProductsDisplayed === 8" />
 
       <TheDrinks v-if="currentProductsDisplayed === 9" />
 
       <TheAlcohol v-if="currentProductsDisplayed === 10" />
 
       <TheMainMeal v-if="currentProductsDisplayed === 11" />
+
+      <TheGarnishes v-if="currentProductsDisplayed === 12" />
 
     </vue-page-transition>
 
@@ -100,7 +102,8 @@ import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
 import TheDesert from '~/components/Barbaresco/BarbarescoProducts/TheDesert'
 import TheSalad from '~/components/Barbaresco/BarbarescoProducts/TheSalad'
 import TheFirstCourse from '~/components/Barbaresco/BarbarescoProducts/TheFirstCourse'
-import TheHits from '~/components/Barbaresco/BarbarescoProducts/TheHits'
+import TheAppetizers from '~/components/Barbaresco/BarbarescoProducts/TheAppetizers'
+import TheGarnishes from '~/components/Barbaresco/BarbarescoProducts/TheGarnishes'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
@@ -119,7 +122,8 @@ export default {
     TheDesert,
     TheSalad,
     TheFirstCourse,
-    TheHits,
+    TheAppetizers,
+    TheGarnishes,
     TheDrinks,
     TheAlcohol,
     TheMainMeal,

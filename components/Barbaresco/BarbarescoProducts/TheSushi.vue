@@ -1,3 +1,32 @@
+<i18n>
+{
+  "uk": {
+    "makiRoll": "РОЛИ МАКІ",
+    "photoMakiRoll": "РОЛИ ФУТОМАКІ",
+    "originalRolls": "ОРИГІНАЛЬНІ РОЛИ",
+    "californiaRolls": "РОЛИ КАЛІФОРНІЯ",
+    "philiRolls": "РОЛИ ФІЛАДЕЛЬФІЯ",
+    "drakonRolls": "РОЛИ ДРАКОНИ"
+  },
+  "en": {
+   "makiRoll": "Maki Rolls",
+   "photoMakiRoll": "FUTOMAKI Rolls",
+   "originalRolls": "ORIGINAL ROLls",
+   "californiaRolls": "CALIFORNIA ROLLS",
+   "philiRolls": "PHILADELPHIA ROLLS",
+    "drakonRolls": "DRAGONS ROLLs"
+  },
+  "ru": {
+    "makiRoll": "РОЛЛЫ МАКИ",
+    "photoMakiRoll": "РОЛЛЫ Футомаки",
+    "originalRolls": "ОРИГИНАЛЬНЫЕ РОЛЛЫ",
+    "californiaRolls": "Роллы Калифорния",
+    "philiRolls": "РОЛЛЫ ФИЛАДЕЛЬФИЯ",
+    "drakonRolls": "Рулонные драконы"
+  }
+}
+</i18n>
+
 <template>
   <div
     class="container "
@@ -18,7 +47,7 @@
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block"> РОЛИ МАКІ</h2>
+              <h2 class="text-center m-auto d-inline-block"> {{$t('makiRoll')}}</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoSushiIcon.svg"
                 alt="icon"
@@ -56,7 +85,7 @@
                 >{{(makiRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{makiRoll.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{makiRoll.volume}}</span> {{makiRoll.price | currency}}</p>
 
                   </div>
@@ -64,7 +93,7 @@
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(makiRoll.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -90,7 +119,7 @@
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">РОЛИ ФУТОМАКІ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('photoMakiRoll')}}</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoSushiIcon.svg"
                 alt="icon"
@@ -128,14 +157,14 @@
                 >{{(photoMakiRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{photoMakiRoll.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{photoMakiRoll.volume}}</span> {{photoMakiRoll.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(photoMakiRoll.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -160,7 +189,7 @@
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">ОРИГІНАЛЬНІ РОЛИ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('originalRolls')}}</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoSushiIcon.svg"
                 alt="icon"
@@ -199,14 +228,14 @@
                 >{{(originalRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{originalRoll.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{originalRoll.volume}}</span> {{originalRoll.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(originalRoll.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -232,7 +261,7 @@
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">РОЛИ КАЛІФОРНІЯ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('californiaRolls')}}</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoSushiIcon.svg"
                 alt="icon"
@@ -271,14 +300,14 @@
                 >{{(californiaRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{californiaRoll.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{californiaRoll.volume}}</span> {{californiaRoll.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(californiaRoll.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -303,7 +332,7 @@
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">РОЛИ ФІЛАДЕЛЬФІЯ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('philiRolls')}}</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoSushiIcon.svg"
                 alt="icon"
@@ -342,14 +371,14 @@
                 >{{(PhiladelphiaRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{PhiladelphiaRoll.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{PhiladelphiaRoll.volume}}</span> {{PhiladelphiaRoll.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(PhiladelphiaRoll.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -374,7 +403,7 @@
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">РОЛИ ДРАКОНИ</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('drakonRolls')}}</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoSushiIcon.svg"
                 alt="icon"
@@ -413,14 +442,14 @@
                 >{{(drakoniRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{drakoniRoll.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{drakoniRoll.volume}}</span> {{drakoniRoll.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(drakoniRoll.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>

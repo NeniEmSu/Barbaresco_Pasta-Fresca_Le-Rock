@@ -8,7 +8,8 @@
     "deserts": "Десерти",
     "salads": "Салати",
     "firstCourse": "Перші страви",
-    "hits": "Хіти",
+    "appetizers": "Закуски",
+    "garnishes": "Гарніри",
     "drinks": "Напої",
     "alcohol":"Алкоголь",
     "mainMeal": "Основні страви"
@@ -21,7 +22,8 @@
     "deserts": "Deserts",
     "salads": "Salads",
     "firstCourse": "First Course",
-    "hits": "Hits",
+    "appetizers": "Appetizers", 
+    "garnishes": "Garnishes",
     "drinks": "Drinks",
     "alcohol":"Alcohol",
     "mainMeal": "Main dishes"
@@ -34,7 +36,8 @@
     "deserts": "Десерты",
     "salads": "Салаты",
     "firstCourse": "Первые блюда",
-    "hits": "Хиты",
+    "appetizers": "Закуски",
+    "garnishes": "гарниры",
     "drinks": "Напитки",
     "alcohol":"Алкоголь",
     "mainMeal": "Основні страви"
@@ -116,15 +119,15 @@
 
       </button>
 
-      <!-- <button
+      <button
         class="column "
         @click="Show8"
         :class="{ active: currentProductsDisplayed === 8}"
       >
         <div class="nav-image navEight"></div>
-        <div class="text-center nav-text">{{$t('hits')}}</div>
+        <div class="text-center nav-text">{{$t('appetizers')}}</div>
 
-      </button> -->
+      </button>
 
       <button
         @click.prevent="Show9"
@@ -151,8 +154,18 @@
         class="column "
         :class="{ active: currentProductsDisplayed === 11}"
       >
-        <div class="nav-image navSeven"></div>
+        <div class="nav-image navMainMeal"></div>
         <div class="text-center nav-text">{{$t('mainMeal')}}</div>
+
+      </button>
+
+      <button
+        @click.prevent="Show12"
+        class="column "
+        :class="{ active: currentProductsDisplayed === 12}"
+      >
+        <div class="nav-image navGarnishes"></div>
+        <div class="text-center nav-text">{{$t('garnishes')}}</div>
 
       </button>
 
@@ -209,6 +222,9 @@ export default {
     },
     Show11 () {
       this.$emit('changedView', 11)
+    },
+    Show12 () {
+      this.$emit('changedView', 12)
     }
   }
 }
@@ -232,7 +248,7 @@ section {
 .column {
   float: left;
   box-sizing: border-box;
-  width: calc(100% / 10);
+  width: calc(100% / 12);
   height: 100%;
   min-height: 150px;
   border: 0;
@@ -243,6 +259,7 @@ section {
   position: relative;
   text-align: center;
   margin: 22px auto 22px auto;
+  text-transform: capitalize;
 
   @include easeOut;
   text-decoration: none;
@@ -336,7 +353,7 @@ section {
 }
 
 .navEight {
-  background-image: url("~assets/img/barbarescoHits.png");
+  background-image: url("~assets/img/pasta-presca-appetizer.jpg");
 }
 
 .navNine {
@@ -347,6 +364,13 @@ section {
   background-image: url("~assets/img/barbarescoAlcohol.png");
 }
 
+.navMainMeal {
+  background-image: url("~assets/img/barbarescoHits.png");
+}
+
+.navGarnishes {
+  background-image: url("~assets/img/le-rock-side-dishes.jpg");
+}
 @media (max-width: 995px) {
   #imageed-Products-Navigation {
     background-color: transparent;
@@ -361,7 +385,7 @@ section {
 
   .column {
     background-color: transparent;
-    width: calc(100% / 5);
+    width: calc(100% / 6);
     margin: auto;
     min-height: 110px;
     opacity: 1;
@@ -418,6 +442,16 @@ section {
     height: 100%;
     min-height: 60px;
     max-height: 60px;
+  }
+}
+
+@media (max-width: 370px) {
+  .column {
+    background-color: transparent;
+    width: calc(100% / 4);
+    margin: auto;
+    min-height: 110px;
+    opacity: 1;
   }
 }
 </style>

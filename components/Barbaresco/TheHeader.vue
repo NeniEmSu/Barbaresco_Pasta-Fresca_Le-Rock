@@ -27,7 +27,8 @@
         "aboutUs": "Про нас",
         "atmosphere": "Атмосфера",
         "vacancy": "Ваканції",
-        "contact": "Контакти"
+        "contact": "Контакти",
+        "kitchen": "Кухня"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -60,7 +61,8 @@
         "aboutUs": "About us",
         "atmosphere": "Atmosphere",
         "vacancy": "Vacancies",
-        "contact": "Contacts"
+        "contact": "Contacts",
+        "kitchen": "Kitchen"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -94,7 +96,8 @@
         "aboutUs": "О нас",
         "atmosphere": "Атмосфера",
         "vacancy": "Вакансии",
-        "contact": "Контакты"
+        "contact": "Контакты",
+        "kitchen": "Кухня"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -191,6 +194,7 @@
               tag="button"
               @click.stop="reservationOpen = !reservationOpen"
             >{{$t('links.reserveAPlace')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'barbaresco-kitchen'},$i18n.locale)">{{$t('links.kitchen')}}</b-nav-item>
             <b-nav-item :to="localePath({name: 'barbaresco-about-us'},$i18n.locale)">{{$t('links.aboutUs')}}</b-nav-item>
             <b-nav-item
               tag="button"

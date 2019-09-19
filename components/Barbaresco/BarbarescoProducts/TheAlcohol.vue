@@ -85,7 +85,7 @@
                 >{{(alcoholicCocktail.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicCocktail.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicCocktail.volume}}</span> {{alcoholicCocktail.price | currency}}</p>
 
                   </div>
@@ -93,7 +93,7 @@
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(alcoholicCocktail.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -157,14 +157,14 @@
                 >{{(alcoholicSet.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicSet.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicSet.volume}}</span> {{alcoholicSet.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(alcoholicSet.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -228,14 +228,14 @@
                 >{{(wine.summary).slice(0, 25)}}...<span class="card-text quantity">{{wine.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{wine.volume}}</span> {{wine.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(wine.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -300,14 +300,14 @@
                 >{{(sparklingWine.summary).slice(0, 25)}}...<span class="card-text quantity">{{sparklingWine.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{sparklingWine.volume}}</span> {{sparklingWine.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(sparklingWine.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -371,14 +371,14 @@
                 >{{(alcoholicDrinks.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicDrinks.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicDrinks.volume}}</span> {{alcoholicDrinks.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(alcoholicDrinks.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
@@ -442,14 +442,14 @@
                 >{{(bear.summary).slice(0, 25)}}...<span class="card-text quantity">{{bear.volume}}</span></p>
 
                 <div class="row">
-                  <div class="col-sm-5 pr-0 my-auto">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{bear.volume}}</span> {{bear.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
                       @click.prevent="addToCart(bear.id)"
-                    >Замовити</button></div>
+                    >{{$t('order')}}</button></div>
                 </div>
 
               </div>
