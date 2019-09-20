@@ -15,7 +15,7 @@
 
           <img
             class="card-img-top mx-auto"
-            :src="require(`~/assets/img/${product.image + '.png'}`)"
+            :src="require(`~/assets/img/${product.image + '.jpg'}`)"
             :alt="product.name"
           >
           <div class="card-body">
@@ -40,7 +40,7 @@
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
-                >Замовити</button></div>
+                >{{$t('order')}}</button></div>
             </div>
 
           </div>
@@ -66,7 +66,7 @@ export default {
 
   computed: {
     extractedProductsBurgers () {
-      return productData.filter(el => el.category === "burgers")
+      return productData.filter(el => el.category === "barbbaresco-burgers")
     }
   },
 

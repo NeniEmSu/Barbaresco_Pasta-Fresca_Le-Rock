@@ -58,7 +58,7 @@
 
     <vue-page-transition name="fade">
 
-      <ThePizza v-if="currentProductsDisplayed === 1" />
+      <ThePasta v-if="currentProductsDisplayed === 1" />
 
       <TheRockDogs v-if="currentProductsDisplayed === 2" />
 
@@ -72,7 +72,7 @@
 
       <TheFirstCourse v-if="currentProductsDisplayed === 7" />
 
-      <TheHits v-if="currentProductsDisplayed === 8" />
+      <TheGarnishes v-if="currentProductsDisplayed === 8" />
 
       <TheDrinks v-if="currentProductsDisplayed === 9" />
 
@@ -91,18 +91,18 @@
 
 <script>
 
-import TheImageNavigation from '~/components/TheImageNavigationPastaFresca'
-import TheImagedProductNav from '~/components/TheImagedProductNavPastaFresca'
-import TheMapComponent from '~/components/TheMapComponentPastaFresca'
+import TheImageNavigation from '~/components/PastaFresca/TheImageNavigationPastaFresca'
+import TheImagedProductNav from '~/components/PastaFresca/TheImagedProductNavPastaFresca'
+import TheMapComponent from '~/components/PastaFresca/TheMapComponentPastaFresca'
 import TheRockDogs from '~/components/Barbaresco/BarbarescoProducts/TheBugers'
-import ThePizza from '~/components/PastaFresca/PastaFrescaProducts/TheRockDogsPastaFresca'
+import ThePasta from '~/components/PastaFresca/PastaFrescaProducts/ThePasta'
 import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
 import TheDrinks from '~/components/Barbaresco/BarbarescoProducts/TheDrinks'
 import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
-import TheDesert from '~/components/Barbaresco/BarbarescoProducts/TheDesert'
-import TheSalad from '~/components/Barbaresco/BarbarescoProducts/TheSalad'
+import TheDesert from '~/components/PastaFresca/PastaFrescaProducts/TheDesert'
+import TheSalad from '~/components/PastaFresca/PastaFrescaProducts/TheSalad'
 import TheFirstCourse from '~/components/Barbaresco/BarbarescoProducts/TheFirstCourse'
-import TheHits from '~/components/Barbaresco/BarbarescoProducts/TheHits'
+import TheGarnishes from '~/components/PastaFresca/PastaFrescaProducts/TheGarnishes'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
@@ -115,13 +115,13 @@ export default {
     TheImagedProductNav,
     TheMapComponent,
     TheRockDogs,
-    ThePizza,
+    ThePasta,
     TheSushi,
     TheMlinty,
     TheDesert,
     TheSalad,
     TheFirstCourse,
-    TheHits,
+    TheGarnishes,
     TheDrinks,
     TheAlcohol,
     TheMainMeal,

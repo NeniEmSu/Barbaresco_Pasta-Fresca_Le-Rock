@@ -9,37 +9,37 @@
       <div class="row">
         <div
           class="card"
-          v-for="mainMeal in extractedProductMainMeals"
-          :key="mainMeal.id"
+          v-for="product in extractedProductMainMeals"
+          :key="product.id"
         >
 
           <img
             class="card-img-top mx-auto"
-            :src="require(`~/assets/img/${mainMeal.image + '.png'}`)"
-            :alt="mainMeal.name"
+            :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+            :alt="product.name"
           >
           <div class="card-body">
             <h5
               class="card-title mx-auto text-center crop"
               style="cursor:context-menu"
               v-b-tooltip.hover
-              :title="mainMeal.name"
-            >{{mainMeal.name}}</h5>
+              :title="product.name"
+            >{{product.name}}</h5>
             <p
               class="card-text text-left d-none d-sm-block ingredients"
               style="cursor: context-menu;"
               v-b-tooltip.hover
-              :title="mainMeal.summary"
-            >{{(mainMeal.summary).slice(0, 35)}}...<span class="card-text quantity">{{mainMeal.volume}}</span></p>
+              :title="product.summary"
+            >{{(product.summary).slice(0, 35)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
             <div class="row">
               <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{mainMeal.volume}}</span> {{mainMeal.price | currency}}</p>
+                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
               </div>
               <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
                   class="btn my-auto mr-auto"
-                  @click.prevent="addToCart(mainMeal.id)"
+                  @click.prevent="addToCart(product.id)"
                 >{{$t('order')}}</button></div>
             </div>
 
@@ -66,7 +66,7 @@ export default {
 
   computed: {
     extractedProductMainMeals () {
-      return productData.filter(el => el.category === "mainMeals")
+      return productData.filter(el => el.category === "barbbaresco-mainMeals")
     }
   },
 

@@ -38,7 +38,7 @@
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${coffee.image + '.png'}`)"
+                :src="require(`~/assets/img/${coffee.image + '.jpg'}`)"
                 :alt="coffee.name"
               >
               <div class="card-body">
@@ -119,7 +119,7 @@
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${tea.image + '.png'}`)"
+                :src="require(`~/assets/img/${tea.image + '.jpg'}`)"
                 :alt="tea.name"
               >
               <div class="card-body">
@@ -190,7 +190,7 @@
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${fresh.image + '.png'}`)"
+                :src="require(`~/assets/img/${fresh.image + '.jpg'}`)"
                 :alt="fresh.name"
               >
               <div class="card-body">
@@ -262,7 +262,7 @@
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${lemonade.image + '.png'}`)"
+                :src="require(`~/assets/img/${lemonade.image + '.jpg'}`)"
                 :alt="lemonade.name"
               >
               <div class="card-body">
@@ -333,7 +333,7 @@
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${smoothy.image + '.png'}`)"
+                :src="require(`~/assets/img/${smoothy.image + '.jpg'}`)"
                 :alt="smoothy.name"
               >
               <div class="card-body">
@@ -404,7 +404,7 @@
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${milkshake.image + '.png'}`)"
+                :src="require(`~/assets/img/${milkshake.image + '.jpg'}`)"
                 :alt="milkshake.name"
               >
               <div class="card-body">
@@ -470,37 +470,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="nonAlcoholicDrinks in extractedProductsNonAlcoholicDrinks"
-              :key="nonAlcoholicDrinks.id"
+              v-for="product in extractedProductsNonAlcoholicDrinks"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${nonAlcoholicDrinks.image + '.png'}`)"
-                :alt="nonAlcoholicDrinks.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="nonAlcoholicDrinks.name"
-                >{{nonAlcoholicDrinks.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="nonAlcoholicDrinks.summary"
-                >{{(nonAlcoholicDrinks.summary).slice(0, 30)}}...<span class="card-text quantity">{{nonAlcoholicDrinks.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 30)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{nonAlcoholicDrinks.volume}}</span> {{nonAlcoholicDrinks.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(nonAlcoholicDrinks.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -529,25 +529,25 @@ export default {
 
   computed: {
     extractedProductsCoffee () {
-      return productData.filter(el => el.category === "coffee")
+      return productData.filter(el => el.category === "barbbaresco-coffee")
     },
     extractedProductsTea () {
-      return productData.filter(el => el.category === "tea")
+      return productData.filter(el => el.category === "barbbaresco-tea")
     },
     extractedProductsFresh () {
-      return productData.filter(el => el.category === "fresh")
+      return productData.filter(el => el.category === "barbbaresco-fresh")
     },
     extractedProductsLemonade () {
-      return productData.filter(el => el.category === "lemonade")
+      return productData.filter(el => el.category === "barbbaresco-lemonade")
     },
     extractedProductsSmoothy () {
-      return productData.filter(el => el.category === "smoothy")
+      return productData.filter(el => el.category === "barbbaresco-smoothy")
     },
     extractedProductsMilkshake () {
-      return productData.filter(el => el.category === "milkshake")
+      return productData.filter(el => el.category === "barbbaresco-milkshake")
     },
     extractedProductsNonAlcoholicDrinks () {
-      return productData.filter(el => el.category === "nonAlcoholicDrinks")
+      return productData.filter(el => el.category === "barbbaresco-nonAlcoholicDrinks")
     }
   },
 

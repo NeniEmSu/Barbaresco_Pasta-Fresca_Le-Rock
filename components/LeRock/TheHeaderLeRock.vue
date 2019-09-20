@@ -251,7 +251,7 @@
               <div class="row my-auto">
                 <img
                   style="border-radius: 50%;   "
-                  :src="require(`~/assets/img/${product.image + '.png'}`)"
+                  :src="require(`~/assets/img/${product.image + '.jpg'}`)"
                   alt=""
                   class="col-2 m-auto"
                 >

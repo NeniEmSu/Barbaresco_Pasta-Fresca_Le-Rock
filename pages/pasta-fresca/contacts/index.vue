@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import TheContactMap from '~/components/TheMapComponentPastaFresca'
+import TheContactMap from '~/components/PastaFresca/TheMapComponentPastaFresca'
 
 export default {
   name: 'pasta-fresca-contacts',

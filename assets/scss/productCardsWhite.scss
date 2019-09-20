@@ -1,0 +1,168 @@
+.crop {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content {
+  margin: 20px 0;
+}
+
+
+hr {
+  border: 1px solid $lightColor;
+}
+
+.ingredients {
+  height: 32px;
+}
+
+.card {
+  width: calc(100% / 5);
+  float: left;
+  height: auto;
+  padding: 0 10px;
+  margin: 20px 0;
+
+  border: 0;
+
+  background-color: transparent;
+
+  .card-img-top {
+    background-color: $darkColor;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+    max-width: 150px;
+    min-width: 150px;
+    height: 150px;
+    width: 100%;
+    max-height: 150px;
+
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: calc(100% / 4);
+
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .card {
+    width: calc(100% / 3);
+
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .card {
+    width: calc(100% / 2);
+
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: calc(100% / 3);
+
+
+    .card-img-top {
+
+      max-width: 100px;
+      min-width: 100px;
+      height: 100px;
+      width: 100%;
+      max-height: 100px;
+
+
+    }
+  }
+
+  .card-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .card-text {
+
+
+    &.cost {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+    }
+  }
+
+  .btn {
+    font-size: 14px;
+    line-height: 16px;
+
+  }
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-transform: uppercase;
+
+  color: $lightColor;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $lightColor;
+
+  margin-bottom: 10px;
+
+  &.cost {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+
+@media screen and (max-width: 330px) {
+  .card {
+    width: calc(100% / 2);
+
+  }
+}
+
+.quantity {
+  float: right;
+  margin-right: 15px;
+}
+
+.btn {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: $lightColor;
+
+  padding: 5px 8px;
+
+  border: 2px solid $lightColor;
+  box-sizing: border-box;
+}

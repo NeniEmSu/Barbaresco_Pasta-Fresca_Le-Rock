@@ -1,19 +1,20 @@
 <template>
   <div
     class="container "
-    id="theFirsteCourse"
+    id="thePastaPastaFresca"
   >
 
     <div class="content">
 
       <div class="row">
+
         <div
           class="card"
-          v-for="product in extractedProductFirstCourse"
+          v-for="product in extractedProductsPasta"
           :key="product.id"
         >
-
           <img
+            loading="lazy"
             class="card-img-top mx-auto"
             :src="require(`~/assets/img/${product.image + '.jpg'}`)"
             :alt="product.name"
@@ -24,19 +25,20 @@
               style="cursor:context-menu"
               v-b-tooltip.hover
               :title="product.name"
-            >{{product.name}}</h5>
+            >{{product.name }}</h5>
             <p
-              class="card-text text-left d-none d-sm-block ingredients"
+              class="card-text text-left d-none d-sm-block"
               style="cursor: context-menu;"
               v-b-tooltip.hover
               :title="product.summary"
-            >{{(product.summary).slice(0, 35)}}...<span class="card-text quantity">{{product.volume}}</span></p>
+            >{{(product.summary).slice(0, 35)}}... <span class="card-text quantity">{{product.volume}}</span></p>
 
             <div class="row">
               <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
+
+                <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency }}</p>
               </div>
-              <div class="col-sm-7 pl-0 text-center  my-auto">
+              <div class="col-sm-7 pl-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
@@ -56,22 +58,21 @@
 
 <script>
 import productData from "~/plugins/api/products.js"
+
 export default {
-  name: 'theFirstCourse',
+  name: 'ThePastaPastaFresca',
   data () {
     return {
 
     }
   },
-
   computed: {
-    extractedProductFirstCourse () {
-      return productData.filter(el => el.category === "barbbaresco-firstCourses")
+    extractedProductsPasta () {
+      return productData.filter(el => el.category === "pasta-fresca-pasta")
     }
   },
-
   methods: {
-    addToCart (id, append = false) {
+    addToCart (id, toaster, append = false) {
       this.$store.dispatch("addToCart", id);
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
@@ -85,5 +86,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/productCards.scss";
+@import "~assets/scss/productCardsWhite.scss";
 </style>

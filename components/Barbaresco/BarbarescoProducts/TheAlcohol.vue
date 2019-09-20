@@ -61,38 +61,38 @@
           <div class="row">
             <div
               class="card"
-              v-for="alcoholicCocktail in extractedProductsAlcoholicCocktail"
-              :key="alcoholicCocktail.id"
+              v-for="product in extractedProductsAlcoholicCocktail"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${alcoholicCocktail.image + '.png'}`)"
-                :alt="alcoholicCocktail.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="alcoholicCocktail.name"
-                >{{alcoholicCocktail.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-sm-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="alcoholicCocktail.summary"
-                >{{(alcoholicCocktail.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicCocktail.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicCocktail.volume}}</span> {{alcoholicCocktail.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
 
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(alcoholicCocktail.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -133,37 +133,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="alcoholicSet in extractedProductsAlcoholicSet"
-              :key="alcoholicSet.id"
+              v-for="product in extractedProductsAlcoholicSet"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${alcoholicSet.image + '.png'}`)"
-                :alt="alcoholicSet.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="alcoholicSet.name"
-                >{{alcoholicSet.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="alcoholicSet.summary"
-                >{{(alcoholicSet.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicSet.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicSet.volume}}</span> {{alcoholicSet.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(alcoholicSet.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -204,37 +204,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="wine in extractedProductsWine"
-              :key="wine.id"
+              v-for="product in extractedProductsWine"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${wine.image + '.png'}`)"
-                :alt="wine.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="wine.name"
-                >{{wine.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="wine.summary"
-                >{{(wine.summary).slice(0, 25)}}...<span class="card-text quantity">{{wine.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{wine.volume}}</span> {{wine.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(wine.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -276,37 +276,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="sparklingWine in extractedProductsSparklingWine"
-              :key="sparklingWine.id"
+              v-for="product in extractedProductsSparklingWine"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${sparklingWine.image + '.png'}`)"
-                :alt="sparklingWine.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="sparklingWine.name"
-                >{{sparklingWine.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="sparklingWine.summary"
-                >{{(sparklingWine.summary).slice(0, 25)}}...<span class="card-text quantity">{{sparklingWine.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{sparklingWine.volume}}</span> {{sparklingWine.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(sparklingWine.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -347,37 +347,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="alcoholicDrinks in extractedProductsAlcoholicDrinks"
-              :key="alcoholicDrinks.id"
+              v-for="product in extractedProductsAlcoholicDrinks"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${alcoholicDrinks.image + '.png'}`)"
-                :alt="alcoholicDrinks.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="alcoholicDrinks.name"
-                >{{alcoholicDrinks.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="alcoholicDrinks.summary"
-                >{{(alcoholicDrinks.summary).slice(0, 25)}}...<span class="card-text quantity">{{alcoholicDrinks.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{alcoholicDrinks.volume}}</span> {{alcoholicDrinks.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(alcoholicDrinks.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -418,37 +418,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="bear in extractedProductsBear"
-              :key="bear.id"
+              v-for="product in extractedProductsBear"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${bear.image + '.png'}`)"
-                :alt="bear.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="bear.name"
-                >{{bear.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="bear.summary"
-                >{{(bear.summary).slice(0, 25)}}...<span class="card-text quantity">{{bear.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{bear.volume}}</span> {{bear.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(bear.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -479,22 +479,22 @@ export default {
 
   computed: {
     extractedProductsAlcoholicCocktail () {
-      return productData.filter(el => el.category === "alcoholicCocktail")
+      return productData.filter(el => el.category === "barbbaresco-alcoholicCocktail")
     },
     extractedProductsAlcoholicSet () {
-      return productData.filter(el => el.category === "alcoholicSet")
+      return productData.filter(el => el.category === "barbbaresco-alcoholicSet")
     },
     extractedProductsWine () {
-      return productData.filter(el => el.category === "wine")
+      return productData.filter(el => el.category === "barbbaresco-wine")
     },
     extractedProductsSparklingWine () {
-      return productData.filter(el => el.category === "sparklingWine")
+      return productData.filter(el => el.category === "barbbaresco-sparklingWine")
     },
     extractedProductsAlcoholicDrinks () {
-      return productData.filter(el => el.category === "alcoholicDrinks")
+      return productData.filter(el => el.category === "barbbaresco-alcoholicDrinks")
     },
     extractedProductsBear () {
-      return productData.filter(el => el.category === "bear")
+      return productData.filter(el => el.category === "barbbaresco-bear")
     }
   },
 

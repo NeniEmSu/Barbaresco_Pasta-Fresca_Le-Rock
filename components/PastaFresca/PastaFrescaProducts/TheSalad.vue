@@ -1,19 +1,29 @@
 <template>
   <div
     class="container "
-    id="theFirsteCourse"
+    id="theSaladsPastaFresca"
   >
 
     <div class="content">
 
-      <div class="row">
+      <div class="row  justify-content-start">
         <div
           class="card"
-          v-for="product in extractedProductFirstCourse"
+          v-for="product in extractedProductSalads"
           :key="product.id"
         >
 
+          <!-- <ImageResponsive
+            :imageURL="`${product.image + '.jpg'}`"
+            :classes="' '"
+            :width="'150'"
+            :height="'150'"
+            :alt="product.name"
+            class=" card-img-top mx-auto"
+          /> -->
+
           <img
+            loading="lazy"
             class="card-img-top mx-auto"
             :src="require(`~/assets/img/${product.image + '.jpg'}`)"
             :alt="product.name"
@@ -26,7 +36,7 @@
               :title="product.name"
             >{{product.name}}</h5>
             <p
-              class="card-text text-left d-none d-sm-block ingredients"
+              class="card-text d-none d-sm-block text-left"
               style="cursor: context-menu;"
               v-b-tooltip.hover
               :title="product.summary"
@@ -35,6 +45,7 @@
             <div class="row">
               <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                 <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
+
               </div>
               <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
@@ -57,7 +68,7 @@
 <script>
 import productData from "~/plugins/api/products.js"
 export default {
-  name: 'theFirstCourse',
+  name: 'TheSaladsPastaFresca',
   data () {
     return {
 
@@ -65,10 +76,11 @@ export default {
   },
 
   computed: {
-    extractedProductFirstCourse () {
-      return productData.filter(el => el.category === "barbbaresco-firstCourses")
+    extractedProductSalads () {
+      return productData.filter(el => el.category === "pasta-fresca-salads")
     }
   },
+
 
   methods: {
     addToCart (id, append = false) {
@@ -85,5 +97,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/productCards.scss";
+@import "~assets/scss/productCardsWhite.scss";
 </style>
+

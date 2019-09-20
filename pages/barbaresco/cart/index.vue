@@ -321,7 +321,7 @@
                   <p class="col-1 my-auto">{{index+=1}}</p>
                   <img
                     style="border-radius: 50%;   "
-                    :src="require(`~/assets/img/${product.image + '.png'}`)"
+                    :src="require(`~/assets/img/${product.image + '.jpg'}`)"
                     alt=""
                     class="col-2 m-auto"
                   >

@@ -1,7 +1,7 @@
 <template>
   <div
     class="container "
-    id="theFirsteCourse"
+    id="theDesertsPastaFresca"
   >
 
     <div class="content">
@@ -9,7 +9,7 @@
       <div class="row">
         <div
           class="card"
-          v-for="product in extractedProductFirstCourse"
+          v-for="product in extractedProductDesert"
           :key="product.id"
         >
 
@@ -30,11 +30,12 @@
               style="cursor: context-menu;"
               v-b-tooltip.hover
               :title="product.summary"
-            >{{(product.summary).slice(0, 35)}}...<span class="card-text quantity">{{product.volume}}</span></p>
+            >{{(product.summary).slice(0, 30)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
             <div class="row">
               <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                 <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
+
               </div>
               <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
@@ -57,16 +58,17 @@
 <script>
 import productData from "~/plugins/api/products.js"
 export default {
-  name: 'theFirstCourse',
+  name: 'TheDesertsPastaFresca',
   data () {
     return {
 
     }
   },
 
+
   computed: {
-    extractedProductFirstCourse () {
-      return productData.filter(el => el.category === "barbbaresco-firstCourses")
+    extractedProductDesert () {
+      return productData.filter(el => el.category === "pasta-fresca-deserts")
     }
   },
 
@@ -85,5 +87,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/productCards.scss";
+@import "~assets/scss/productCardsWhite.scss";
 </style>

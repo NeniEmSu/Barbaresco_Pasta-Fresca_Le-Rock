@@ -3,7 +3,7 @@
   "uk": {
     "pasta": "Паста",
     "appetizer": "Закуски",
-    
+    "garnishes": "Гарніри",
     
     "deserts": "Десерти",
     "salads": "Салати",
@@ -16,7 +16,7 @@
   "en": {
    "pasta": "Pasta",
    "appetizer": "Appetizer",
-    
+    "garnishes": "Garnishes",
     "deserts": "Deserts",
     "salads": "Salads",
     
@@ -27,7 +27,7 @@
   "ru": {
     "pasta": "Паста",
     "appetizer": "Закуски",
-    
+    "garnishes": "гарниры",
     "deserts": "Десерты",
     "salads": "Салаты",
     
@@ -60,6 +60,16 @@
       >
         <div class="nav-image navOne text-center"></div>
         <div class="text-center nav-text">{{$t('pasta')}}</div>
+
+      </button>
+
+      <button
+        class="column "
+        @click="Show8"
+        :class="{ active: currentProductsDisplayed === 8}"
+      >
+        <div class="nav-image navEight"></div>
+        <div class="text-center nav-text">{{$t('garnishes')}}</div>
 
       </button>
 
@@ -189,7 +199,7 @@ section {
 .column {
   float: left;
   box-sizing: border-box;
-  width: calc(100% / 7);
+  width: calc(100% / 8);
   height: 100%;
   min-height: 150px;
   border: 0;
@@ -282,6 +292,10 @@ section {
 
 .navSeven {
   background-image: url("~assets/img/barbarescoFirstCourse.png");
+}
+
+.navEight {
+  background-image: url("~assets/img/le-rock-side-dishes.jpg");
 }
 
 .navNine {

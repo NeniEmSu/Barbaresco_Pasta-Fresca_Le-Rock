@@ -25,7 +25,7 @@
           <img
             loading="lazy"
             class="card-img-top mx-auto"
-            :src="require(`~/assets/img/${product.image + '.png'}`)"
+            :src="require(`~/assets/img/${product.image + '.jpg'}`)"
             :alt="product.name"
           >
           <div class="card-body">
@@ -77,7 +77,7 @@ export default {
 
   computed: {
     extractedProductSalads () {
-      return productData.filter(el => el.category === "salads")
+      return productData.filter(el => el.category === "barbbaresco-salads")
     }
   },
 

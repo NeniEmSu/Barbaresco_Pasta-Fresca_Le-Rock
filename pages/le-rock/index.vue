@@ -73,7 +73,7 @@
 
       <TheFirstCourse v-if="currentProductsDisplayed === 7" />
 
-      <TheHits v-if="currentProductsDisplayed === 8" />
+      <!-- <TheHits v-if="currentProductsDisplayed === 8" /> -->
 
       <TheDrinks v-if="currentProductsDisplayed === 9" />
 
@@ -103,7 +103,7 @@ import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
 import TheDesert from '~/components/Barbaresco/BarbarescoProducts/TheDesert'
 import TheSalad from '~/components/Barbaresco/BarbarescoProducts/TheSalad'
 import TheFirstCourse from '~/components/Barbaresco/BarbarescoProducts/TheFirstCourse'
-import TheHits from '~/components/Barbaresco/BarbarescoProducts/TheHits'
+// import TheHits from '~/components/Barbaresco/BarbarescoProducts/TheHits'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
@@ -122,7 +122,7 @@ export default {
     TheDesert,
     TheSalad,
     TheFirstCourse,
-    TheHits,
+    // TheHits,
     TheDrinks,
     TheAlcohol,
     TheMainMeal,

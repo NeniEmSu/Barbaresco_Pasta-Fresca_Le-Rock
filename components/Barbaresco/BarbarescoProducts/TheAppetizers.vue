@@ -40,7 +40,7 @@
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
-                >Замовити</button></div>
+                >{{$t('order')}}</button></div>
             </div>
 
           </div>
@@ -66,7 +66,7 @@ export default {
 
   computed: {
     extractedProductsAppetizers () {
-      return productData.filter(el => el.category === "appetizers")
+      return productData.filter(el => el.category === "barbbaresco-appetizers")
     }
   },
 

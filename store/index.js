@@ -1,11 +1,7 @@
-import data from "~/api/barbaresco.json";
-import arrayedData from "~/api/barbarescoArray.json";
 import myApi from "~/plugins/api/myApi.js";
 
 export const state = () => ({
   animation: 'fade-in-up',
-  storeData: data,
-  arrayedStoreData: arrayedData,
   cart: [],
   toast: {
     text: "",
@@ -15,9 +11,7 @@ export const state = () => ({
 });
 
 export const getters = {
-  pizzas: state => state.arrayedStoreData.filter(el => el.category === "pizzas"),
-  salads: state => state.arrayedStoreData.filter(el => el.category === "salads"),
-  burgers: state => state.arrayedStoreData.filter(el => el.category === "burgers"),
+  // pizzas: state => state.arrayedStoreData.filter(el => el.category === "pizzas"),
 
   cartSize(state) {
     return state.cart.length;

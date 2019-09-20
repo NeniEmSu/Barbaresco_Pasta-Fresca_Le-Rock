@@ -2,7 +2,7 @@
 {
   "uk": {
     "makiRoll": "РОЛИ МАКІ",
-    "photoMakiRoll": "РОЛИ ФУТОМАКІ",
+    "futoMakiRoll": "РОЛИ ФУТОМАКІ",
     "originalRolls": "ОРИГІНАЛЬНІ РОЛИ",
     "californiaRolls": "РОЛИ КАЛІФОРНІЯ",
     "philiRolls": "РОЛИ ФІЛАДЕЛЬФІЯ",
@@ -10,7 +10,7 @@
   },
   "en": {
    "makiRoll": "Maki Rolls",
-   "photoMakiRoll": "FUTOMAKI Rolls",
+   "futoMakiRoll": "FUTOMAKI Rolls",
    "originalRolls": "ORIGINAL ROLls",
    "californiaRolls": "CALIFORNIA ROLLS",
    "philiRolls": "PHILADELPHIA ROLLS",
@@ -18,7 +18,7 @@
   },
   "ru": {
     "makiRoll": "РОЛЛЫ МАКИ",
-    "photoMakiRoll": "РОЛЛЫ Футомаки",
+    "futoMakiRoll": "РОЛЛЫ Футомаки",
     "originalRolls": "ОРИГИНАЛЬНЫЕ РОЛЛЫ",
     "californiaRolls": "Роллы Калифорния",
     "philiRolls": "РОЛЛЫ ФИЛАДЕЛЬФИЯ",
@@ -61,38 +61,38 @@
           <div class="row">
             <div
               class="card"
-              v-for="makiRoll in extractedProductsMakiRolls"
-              :key="makiRoll.id"
+              v-for="product in extractedProductsMakiRolls"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${makiRoll.image + '.png'}`)"
-                :alt="makiRoll.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="makiRoll.name"
-                >{{makiRoll.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-sm-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="makiRoll.summary"
-                >{{(makiRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{makiRoll.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{makiRoll.volume}}</span> {{makiRoll.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
 
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(makiRoll.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -119,7 +119,7 @@
                 align="left"
                 style="height:25px;"
               >
-              <h2 class="text-center m-auto d-inline-block">{{$t('photoMakiRoll')}}</h2>
+              <h2 class="text-center m-auto d-inline-block">{{$t('futoMakiRoll')}}</h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoSushiIcon.svg"
                 alt="icon"
@@ -133,37 +133,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="photoMakiRoll in extractedProductsPhotoMakiRolls"
-              :key="photoMakiRoll.id"
+              v-for="product in extractedProductsPhotoMakiRolls"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${photoMakiRoll.image + '.png'}`)"
-                :alt="photoMakiRoll.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="photoMakiRoll.name"
-                >{{photoMakiRoll.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="photoMakiRoll.summary"
-                >{{(photoMakiRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{photoMakiRoll.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{photoMakiRoll.volume}}</span> {{photoMakiRoll.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(photoMakiRoll.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -204,37 +204,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="originalRoll in extractedProductsOriginalRoll"
-              :key="originalRoll.id"
+              v-for="product in extractedProductsOriginalRoll"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${originalRoll.image + '.png'}`)"
-                :alt="originalRoll.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="originalRoll.name"
-                >{{originalRoll.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="originalRoll.summary"
-                >{{(originalRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{originalRoll.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{originalRoll.volume}}</span> {{originalRoll.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(originalRoll.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -276,37 +276,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="californiaRoll in extractedProductsCaliforniaRoll"
-              :key="californiaRoll.id"
+              v-for="product in extractedProductsCaliforniaRoll"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${californiaRoll.image + '.png'}`)"
-                :alt="californiaRoll.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="californiaRoll.name"
-                >{{californiaRoll.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="californiaRoll.summary"
-                >{{(californiaRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{californiaRoll.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{californiaRoll.volume}}</span> {{californiaRoll.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(californiaRoll.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -347,37 +347,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="PhiladelphiaRoll in extractedProductsPhiladelphiaRoll"
-              :key="PhiladelphiaRoll.id"
+              v-for="product in extractedProductsPhiladelphiaRoll"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${PhiladelphiaRoll.image + '.png'}`)"
-                :alt="PhiladelphiaRoll.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="PhiladelphiaRoll.name"
-                >{{PhiladelphiaRoll.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="PhiladelphiaRoll.summary"
-                >{{(PhiladelphiaRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{PhiladelphiaRoll.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{PhiladelphiaRoll.volume}}</span> {{PhiladelphiaRoll.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(PhiladelphiaRoll.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -418,37 +418,37 @@
           <div class="row">
             <div
               class="card"
-              v-for="drakoniRoll in extractedProductsDrakoniRoll"
-              :key="drakoniRoll.id"
+              v-for="product in extractedProductsDrakoniRoll"
+              :key="product.id"
             >
 
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${drakoniRoll.image + '.png'}`)"
-                :alt="drakoniRoll.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
                   v-b-tooltip.hover
-                  :title="drakoniRoll.name"
-                >{{drakoniRoll.name}}</h5>
+                  :title="product.name"
+                >{{product.name}}</h5>
                 <p
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
                   v-b-tooltip.hover
-                  :title="drakoniRoll.summary"
-                >{{(drakoniRoll.summary).slice(0, 25)}}...<span class="card-text quantity">{{drakoniRoll.volume}}</span></p>
+                  :title="product.summary"
+                >{{(product.summary).slice(0, 25)}}...<span class="card-text quantity">{{product.volume}}</span></p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
-                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{drakoniRoll.volume}}</span> {{drakoniRoll.price | currency}}</p>
+                    <p class="card-text cost my-auto"><span class="card-text d-inline d-sm-none">{{product.volume}}</span> {{product.price | currency}}</p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(drakoniRoll.id)"
+                      @click.prevent="addToCart(product.id)"
                     >{{$t('order')}}</button></div>
                 </div>
 
@@ -479,22 +479,22 @@ export default {
 
   computed: {
     extractedProductsMakiRolls () {
-      return productData.filter(el => el.category === "makiRoll")
+      return productData.filter(el => el.category === "barbbaresco-makiRoll")
     },
     extractedProductsPhotoMakiRolls () {
-      return productData.filter(el => el.category === "photoMakiRoll")
+      return productData.filter(el => el.category === "barbbaresco-futoMakiRoll")
     },
     extractedProductsOriginalRoll () {
-      return productData.filter(el => el.category === "originalRoll")
+      return productData.filter(el => el.category === "barbbaresco-originalRoll")
     },
     extractedProductsCaliforniaRoll () {
-      return productData.filter(el => el.category === "californiaRoll")
+      return productData.filter(el => el.category === "barbbaresco-californiaRoll")
     },
     extractedProductsPhiladelphiaRoll () {
-      return productData.filter(el => el.category === "PhiladelphiaRoll")
+      return productData.filter(el => el.category === "barbbaresco-PhiladelphiaRoll")
     },
     extractedProductsDrakoniRoll () {
-      return productData.filter(el => el.category === "drakoniRoll")
+      return productData.filter(el => el.category === "barbbaresco-drakoniRoll")
     }
   },
 
