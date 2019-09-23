@@ -23,16 +23,15 @@
 
 <template>
   <div class="container ">
-
     <client-only>
       <style>
-      .owl-carousel .owl-item img {
+        .owl-carousel .owl-item img {
         display: block;
         width: 100%;
         height: 100%;
-      }
+        }
 
-      .owl-theme .owl-dots .owl-dot span {
+        .owl-theme .owl-dots .owl-dot span {
         width: 15px !important;
         height: 15px !important;
         margin: 5px 7px !important;
@@ -43,193 +42,192 @@
         -webkit-backface-visibility: visible;
         transition: opacity 200ms ease;
         border-radius: 30px !important;
-      }
+        }
 
-      .owl-theme .owl-dots .owl-dot.active span,
-      .owl-theme .owl-dots .owl-dot:hover span {
+        .owl-theme .owl-dots .owl-dot.active span,
+        .owl-theme .owl-dots .owl-dot:hover span {
         background: #ffffff !important;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.55) !important;
         width: 20px !important;
         height: 20px !important;
-      }
+        }
 
-      @media screen and (min-width: 1246px) {
+        @media screen and (min-width: 1246px) {
 
         .owl-carousel .owl-nav button.owl-prev,
         .owl-carousel .owl-nav button.owl-next {
-          background: none;
-          color: inherit;
-          border: none;
-          padding: 0 !important;
-          font-size: 50px !important;
-          position: absolute;
-          top: 25%;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font-size: 50px !important;
+        position: absolute;
+        top: 25%;
         }
 
         .owl-carousel .owl-nav button.owl-prev {
-          left: -2rem;
+        left: -2rem;
         }
 
         .owl-carousel .owl-nav button.owl-next {
-          right: -2rem;
+        right: -2rem;
         }
-      }
+        }
 
-      @media (max-width: 992px) {
+        @media (max-width: 992px) {
         h4 {
-          font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 
-          font-style: normal;
-          font-weight: bold;
-          font-size: 20px;
-          line-height: 22px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 22px;
 
-          color: #ffffff !important;
+        color: #ffffff !important;
         }
 
         p {
-          font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
 
-          color: #ffffff;
+        color: #ffffff;
 
-          margin-bottom: 0;
+        margin-bottom: 0;
         }
-      }
+        }
 
-      @media (max-width: 500px) {
+        @media (max-width: 500px) {
         .card {
-          height: 120px;
+        height: 120px;
 
-          img {
-            height: 120px;
-            width: auto;
-            object-fit: cover;
-          }
+        img {
+        height: 120px;
+        width: auto;
+        object-fit: cover;
+        }
         }
 
         h4 {
-          font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 
-          font-style: normal;
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 21px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
 
-          color: #ffffff;
+        color: #ffffff;
         }
 
         p {
-          font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 
-          font-style: normal;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 14px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
 
-          color: #ffffff;
+        color: #ffffff;
 
-          margin-bottom: 0;
+        margin-bottom: 0;
         }
 
         .carousel-caption {
-          padding: 0;
+        padding: 0;
         }
 
         .carousel ol {
-          margin-bottom: 0;
+        margin-bottom: 0;
         }
 
         .owl-carousel .owl-nav button.owl-prev,
         .owl-carousel .owl-nav button.owl-next {
-          background: none;
-          color: inherit;
-          border: none;
-          padding: 0 !important;
-          font-size: 50px !important;
-          position: absolute;
-          top: 10%;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font-size: 50px !important;
+        position: absolute;
+        top: 10%;
         }
 
         .owl-carousel .owl-nav button.owl-prev {
-          left: -1.3rem;
+        left: -1.3rem;
         }
 
         .owl-carousel .owl-nav button.owl-next {
-          right: -1.3rem;
+        right: -1.3rem;
         }
-      }
+        }
 
-      @media (max-width: 375px) {
+        @media (max-width: 375px) {
         h4 {
-          font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 
-          font-style: normal;
-          font-weight: bold;
-          font-size: 14px;
-          line-height: 16px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
 
-          color: #ffffff;
+        color: #ffffff;
         }
 
         p {
-          font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 
-          font-style: normal;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 14px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
 
-          color: #ffffff;
+        color: #ffffff;
 
-          margin-bottom: -10px;
+        margin-bottom: -10px;
         }
-      }
+        }
 
-      @media (max-width: 320px) {
+        @media (max-width: 320px) {
         h4 {
-          font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 
-          font-style: normal;
-          font-weight: bold;
-          font-size: 14px;
-          line-height: 16px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
 
-          color: #ffffff;
+        color: #ffffff;
 
-          margin-bottom: 0;
+        margin-bottom: 0;
         }
 
         p {
-          font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 
-          font-style: normal;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 14px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
 
-          color: #ffffff;
+        color: #ffffff;
 
-          margin-bottom: -10px;
+        margin-bottom: -10px;
         }
-      }
+        }
       </style>
       <carousel
         :nav="true"
         :dots="true"
         :items="1"
         :loop="true"
-        :mouseDrag="true"
-        :touchDrag="true"
+        :mouse-drag="true"
+        :touch-drag="true"
         :autoplay="true"
         :rewind="false"
-        :autoplayHoverPause="true"
+        :autoplay-hover-pause="true"
       >
-
         <div>
           <b-card
             overlay
@@ -239,7 +237,7 @@
           >
             <b-card-text class="card-img-overlay h-100 d-flex flex-column justify-content-center text-left">
               <h4 class="card-title">
-                {{ $t('promotionTitle1')}}
+                {{ $t('promotionTitle1') }}
               </h4>
               {{ $t('promotionDescription') }}
             </b-card-text>
@@ -254,7 +252,7 @@
           >
             <b-card-text class="card-img-overlay h-100 d-flex flex-column justify-content-center text-left">
               <h4 class="card-title">
-                {{ $t('promotionTitle2')}}
+                {{ $t('promotionTitle2') }}
               </h4>
               {{ $t('promotionDescription') }}
             </b-card-text>
@@ -269,13 +267,12 @@
           >
             <b-card-text class="card-img-overlay h-100 d-flex flex-column justify-content-center text-left">
               <h4 class="card-title">
-                {{ $t('promotionTitle3')}}
+                {{ $t('promotionTitle3') }}
               </h4>
               {{ $t('promotionDescription') }}
             </b-card-text>
           </b-card>
         </div>
-
       </carousel>
     </client-only>
   </div>
@@ -296,7 +293,6 @@ export default {
     },
     onSlideEnd () {
       this.sliding = false
-
     }
   }
 }

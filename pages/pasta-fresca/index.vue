@@ -30,12 +30,11 @@
     data-aos-delay="250"
     data-aos-duration="500"
   >
-
     <TheImageNavigation />
 
     <TheImagedProductNav
-      v-on:changedView="updateView($event)"
-      :currentProductsDisplayed="currentProductsDisplayed"
+      :current-products-displayed="currentProductsDisplayed"
+      @changedView="updateView($event)"
     />
 
     <!-- <b-img-lazy
@@ -57,7 +56,6 @@
     </b-tooltip> -->
 
     <vue-page-transition name="fade">
-
       <ThePasta v-if="currentProductsDisplayed === 1" />
 
       <TheRockDogs v-if="currentProductsDisplayed === 2" />
@@ -79,13 +77,11 @@
       <TheAlcohol v-if="currentProductsDisplayed === 10" />
 
       <TheMainMeal v-if="currentProductsDisplayed === 11" />
-
     </vue-page-transition>
 
     <TheBottomCarousel class="elaboraSpacing" />
 
     <TheMapComponent />
-
   </div>
 </template>
 
@@ -108,7 +104,7 @@ import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 
 export default {
-  name: 'pasta-fresca',
+  name: 'PastaFresca',
   layout: 'pasta-fresca',
   components: {
     TheImageNavigation,
@@ -129,19 +125,19 @@ export default {
   },
 
   meta: {
-    animation: "overlay-down-full"
+    animation: 'overlay-down-full'
   },
   head () {
     return {
-      title: (this.$t('name') + " - " + this.$t('title')).slice(
+      title: (this.$t('name') + ' - ' + this.$t('title')).slice(
         0,
         60
       ),
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: (this.$t('name') + " - " + this.$t('description')).slice(
+          hid: 'description',
+          name: 'description',
+          content: (this.$t('name') + ' - ' + this.$t('description')).slice(
             0,
             320
           )
@@ -151,13 +147,23 @@ export default {
   },
 
   data () {
-
     return {
-      currentProductsDisplayed: //Math.floor((Math.random() * 10) + 1)
+      currentProductsDisplayed: // Math.floor((Math.random() * 10) + 1)
         1,
-      loading: false,
+      loading: false
 
     }
+  },
+
+  created (append = false) {
+    this.loading = true
+    this.$store.dispatch('fetchProducts').then(() => (this.loading = false))
+    this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
+      title: 'Увага!',
+      autoHideDelay: 5000,
+      toaster: 'b-toaster-bottom-right',
+      appendToast: append
+    })
   },
 
   methods: {
@@ -165,17 +171,6 @@ export default {
       this.currentProductsDisplayed = updatedView
     }
 
-  },
-
-  created (append = false) {
-    this.loading = true;
-    this.$store.dispatch("fetchProducts").then(() => (this.loading = false));
-    this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
-      title: "Увага!",
-      autoHideDelay: 5000,
-      toaster: "b-toaster-bottom-right",
-      appendToast: append
-    })
   }
 
 }

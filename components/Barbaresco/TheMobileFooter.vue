@@ -17,20 +17,16 @@
 <template>
   <div id="the-footer">
     <div class="container footer-inner mx-auto">
-
       <div class="footerLogocontainer m-auto">
         <nuxt-link
           :to="localePath({name:'barbaresco'},$i18n.locale)"
           class="m-auto"
         >
-
           <b-img-lazy
             class="mx-auto"
             src="~/assets/img/barbaresco-logo.svg"
             alt="logo barbaresco"
-          >
-          </b-img-lazy>
-
+          />
         </nuxt-link>
       </div>
       <div class="address">
@@ -38,13 +34,11 @@
           :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
           class="m-auto"
         >
-          {{$t('location')}}
+          {{ $t('location') }}
         </nuxt-link>
-
       </div>
 
       <div class="phone">
-
         <a
           href="tel:+380506700400"
           class="col-12 m-auto"
@@ -54,7 +48,6 @@
       </div>
 
       <div class="socials">
-
         <a
           href="https://www.facebook.com/virus.te.ua/"
           target="_blank"
@@ -64,7 +57,7 @@
           <img
             src="~/assets/img/facebookSocialLogo.png"
             alt="icons facebook filled"
-          />
+          >
 
         </a>
 
@@ -79,17 +72,16 @@
           <img
             src="~/assets/img/instagramSocialLogo.png"
             alt="icons instagram filled"
-          />
+          >
 
         </a>
       </div>
-
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style lang="scss" scoped>

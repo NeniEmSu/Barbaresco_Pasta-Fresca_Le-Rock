@@ -1,9 +1,11 @@
 {
     "env": {
+        "node": true,
         "browser": true,
         "es6": true
     },
     "extends": [
+        "@nuxtjs",
         "eslint:recommended",
         "plugin:vue/essential"
     ],
@@ -12,6 +14,7 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
+        "parser": "babel-eslint",
         "ecmaVersion": 2018,
         "sourceType": "module"
     },

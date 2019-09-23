@@ -14,9 +14,7 @@
 
 <template>
   <div>
-
     <div class="fixed-top text-right language">
-
       <b-dropdown
         id="dropdown-1"
         :text="$t('language')"
@@ -25,18 +23,22 @@
         <b-dropdown-item
           v-if="$i18n.locale !== 'en'"
           :to="switchLocalePath('en')"
-        >English</b-dropdown-item>
+        >
+          English
+        </b-dropdown-item>
         <b-dropdown-item
           v-if="$i18n.locale !== 'uk'"
           :to="switchLocalePath('uk')"
-        >Українська</b-dropdown-item>
+        >
+          Українська
+        </b-dropdown-item>
         <b-dropdown-item
           v-if="$i18n.locale !== 'ru'"
           :to="switchLocalePath('ru')"
-        >Русский</b-dropdown-item>
-
+        >
+          Русский
+        </b-dropdown-item>
       </b-dropdown>
-
     </div>
 
     <vue-page-transition :name="$store.state.animation">

@@ -22,7 +22,7 @@
     "deserts": "Deserts",
     "salads": "Salads",
     "firstCourse": "First Course",
-    "appetizers": "Appetizers", 
+    "appetizers": "Appetizers",
     "garnishes": "Garnishes",
     "drinks": "Drinks",
     "alcohol":"Alcohol",
@@ -47,130 +47,138 @@
 
 <template>
   <div id="imageed-Products-Navigation">
-
     <section class="container text-center ">
-
       <button
         class="column text-center "
-        @click="Show1"
         :class="{ active: currentProductsDisplayed === 1}"
+        @click="Show1"
       >
-        <div class="nav-image navOne text-center"></div>
-        <div class="text-center nav-text">{{$t('pizza')}}</div>
-
+        <div class="nav-image navOne text-center" />
+        <div class="text-center nav-text">
+          {{ $t('pizza') }}
+        </div>
       </button>
 
       <button
-        @click="Show2"
         class="column"
         :class="{ active: currentProductsDisplayed === 2}"
+        @click="Show2"
       >
-        <div class="nav-image navTwo"></div>
-        <div class="text-center nav-text">{{$t('burgers')}}</div>
-
+        <div class="nav-image navTwo" />
+        <div class="text-center nav-text">
+          {{ $t('burgers') }}
+        </div>
       </button>
 
       <button
         class="column "
-        @click="Show3"
         :class="{ active: currentProductsDisplayed === 3}"
+        @click="Show3"
       >
-        <div class="nav-image navThree"></div>
-        <div class="text-center nav-text">{{$t('sushi')}}</div>
-
+        <div class="nav-image navThree" />
+        <div class="text-center nav-text">
+          {{ $t('sushi') }}
+        </div>
       </button>
       <button
         class="column "
-        @click="Show4"
         :class="{ active: currentProductsDisplayed === 4}"
+        @click="Show4"
       >
-        <div class="nav-image navFour"></div>
-        <div class="text-center nav-text">{{$t('panCakes')}}</div>
-
+        <div class="nav-image navFour" />
+        <div class="text-center nav-text">
+          {{ $t('panCakes') }}
+        </div>
       </button>
 
       <button
         class="column "
-        @click="Show5"
         :class="{ active: currentProductsDisplayed === 5}"
+        @click="Show5"
       >
-        <div class="nav-image navFive"></div>
-        <div class="text-center nav-text">{{$t('deserts')}}</div>
-
+        <div class="nav-image navFive" />
+        <div class="text-center nav-text">
+          {{ $t('deserts') }}
+        </div>
       </button>
 
       <button
         class="column "
-        @click="Show6"
         :class="{ active: currentProductsDisplayed === 6}"
+        @click="Show6"
       >
-        <div class="nav-image navSix"></div>
-        <div class="text-center nav-text">{{$t('salads')}}</div>
-
+        <div class="nav-image navSix" />
+        <div class="text-center nav-text">
+          {{ $t('salads') }}
+        </div>
       </button>
 
       <button
         class="column "
-        @click="Show7"
         :class="{ active: currentProductsDisplayed === 7}"
+        @click="Show7"
       >
-        <div class="nav-image navSeven"></div>
-        <div class="text-center nav-text">{{$t('firstCourse')}}</div>
-
+        <div class="nav-image navSeven" />
+        <div class="text-center nav-text">
+          {{ $t('firstCourse') }}
+        </div>
       </button>
 
       <button
         class="column "
-        @click="Show8"
         :class="{ active: currentProductsDisplayed === 8}"
+        @click="Show8"
       >
-        <div class="nav-image navEight"></div>
-        <div class="text-center nav-text">{{$t('appetizers')}}</div>
-
+        <div class="nav-image navEight" />
+        <div class="text-center nav-text">
+          {{ $t('appetizers') }}
+        </div>
       </button>
 
       <button
-        @click.prevent="Show9"
         class="column"
         :class="{ active: currentProductsDisplayed === 9}"
+        @click.prevent="Show9"
       >
-        <div class="nav-image navNine "></div>
-        <div class="text-center nav-text">{{$t('drinks')}}</div>
-
+        <div class="nav-image navNine " />
+        <div class="text-center nav-text">
+          {{ $t('drinks') }}
+        </div>
       </button>
 
       <button
-        @click.prevent="Show10"
         class="column "
         :class="{ active: currentProductsDisplayed === 10}"
+        @click.prevent="Show10"
       >
-        <div class="nav-image navTen"></div>
-        <div class="text-center nav-text">{{$t('alcohol')}}</div>
-
+        <div class="nav-image navTen" />
+        <div class="text-center nav-text">
+          {{ $t('alcohol') }}
+        </div>
       </button>
 
       <button
-        @click.prevent="Show11"
         class="column "
         :class="{ active: currentProductsDisplayed === 11}"
+        @click.prevent="Show11"
       >
-        <div class="nav-image navMainMeal"></div>
-        <div class="text-center nav-text">{{$t('mainMeal')}}</div>
-
+        <div class="nav-image navMainMeal" />
+        <div class="text-center nav-text">
+          {{ $t('mainMeal') }}
+        </div>
       </button>
 
       <button
-        @click.prevent="Show12"
         class="column "
         :class="{ active: currentProductsDisplayed === 12}"
+        @click.prevent="Show12"
       >
-        <div class="nav-image navGarnishes"></div>
-        <div class="text-center nav-text">{{$t('garnishes')}}</div>
-
+        <div class="nav-image navGarnishes" />
+        <div class="text-center nav-text">
+          {{ $t('garnishes') }}
+        </div>
       </button>
-
     </section>
-
   </div>
 </template>
 

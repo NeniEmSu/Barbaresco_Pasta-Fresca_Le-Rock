@@ -106,17 +106,15 @@
 }
 </i18n>
 
-
 <template>
   <div id="theHeader">
     <header
-      class="header"
       id="header"
       v-click-outside="closeMobileNavbar"
       v-handle-scroll="closeMobileNavbar"
+      class="header"
     >
       <div class="row">
-
         <div
           class="btn-hamburger"
           @click="mobileNavOpen = !mobileNavOpen"
@@ -124,7 +122,7 @@
           <img
             src="~/assets/img/menu.svg"
             alt="menu Icon"
-          />
+          >
         </div>
 
         <b-navbar-brand
@@ -135,44 +133,42 @@
             class=""
             src="~/assets/img/le-rock-logo.svg"
             alt="logo le-rock"
-          >
-          </b-img-lazy>
+          />
         </b-navbar-brand>
 
         <div
           target="nav-collapse-2"
           class="border-0 theHead-nav-toggle d-none d-sm-none d-md-none d-lg-inline my-auto reservation"
         >
-
           <button
-            @click="reservationOpen = !reservationOpen"
             class="btn reservation-btn"
             variant="outline-primary"
-          >{{$t('links.reservation')}}</button>
+            @click="reservationOpen = !reservationOpen"
+          >
+            {{ $t('links.reservation') }}
+          </button>
         </div>
 
         <div
           class="border-0 theHead-nav-toggle cart"
-          @click="cartOpen = !cartOpen"
           style="cursor: pointer;"
+          @click="cartOpen = !cartOpen"
         >
           <b-img-lazy
             src="~/assets/img/Корзина.png"
             alt="Cart Icon"
-          >
-          </b-img-lazy>
+          />
 
           <div
             id="show-total"
             class="text-center mt-n3 ml-n3"
           >
             <span
-              style="text-decoration: none;"
               id="item-count"
+              style="text-decoration: none;"
               class="text-center"
-            >{{cartSize}}</span>
+            >{{ cartSize }}</span>
           </div>
-
         </div>
 
         <nav
@@ -182,48 +178,69 @@
           <div
             class="close-navbar-hamburger text-left text-black "
             @click.stop="hide"
-          ><img
+          >
+            <img
               src="~/assets/img/exit.svg"
               alt="close icon"
-            ></div>
+            >
+          </div>
           <b-navbar-nav>
-            <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">{{$t('links.home')}}</b-nav-item>
-            <b-nav-item :to="localePath({name: 'le-rock'},$i18n.locale)">{{$t('links.menu')}}</b-nav-item>
-            <b-nav-item :to="localePath({name: 'le-rock-delivery'},$i18n.locale)">{{$t('links.delivery')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">
+              {{ $t('links.home') }}
+            </b-nav-item>
+            <b-nav-item :to="localePath({name: 'le-rock'},$i18n.locale)">
+              {{ $t('links.menu') }}
+            </b-nav-item>
+            <b-nav-item :to="localePath({name: 'le-rock-delivery'},$i18n.locale)">
+              {{ $t('links.delivery') }}
+            </b-nav-item>
             <b-nav-item
               tag="button"
               @click.stop="reservationOpen = !reservationOpen"
-            >{{$t('links.reserveAPlace')}}</b-nav-item>
-            <b-nav-item :to="localePath({name: 'le-rock-kitchen'},$i18n.locale)">{{$t('links.kitchen')}}</b-nav-item>
-            <b-nav-item :to="localePath({name: 'le-rock-about-us'},$i18n.locale)">{{$t('links.aboutUs')}}</b-nav-item>
+            >
+              {{ $t('links.reserveAPlace') }}
+            </b-nav-item>
+            <b-nav-item :to="localePath({name: 'le-rock-kitchen'},$i18n.locale)">
+              {{ $t('links.kitchen') }}
+            </b-nav-item>
+            <b-nav-item :to="localePath({name: 'le-rock-about-us'},$i18n.locale)">
+              {{ $t('links.aboutUs') }}
+            </b-nav-item>
             <b-nav-item
-              tag="button"
               v-b-modal.modal-1
-            >{{$t('links.vacancy')}}</b-nav-item>
+              tag="button"
+            >
+              {{ $t('links.vacancy') }}
+            </b-nav-item>
             <b-modal
-              hide-footer
               id="modal-1"
+              hide-footer
               :title="$t('links.vacancy')"
             >
-
-              <b>{{$t('vacancyNotice')}}</b>
+              <b>{{ $t('vacancyNotice') }}</b>
             </b-modal>
-            <b-nav-item :to="localePath({name: 'le-rock-contacts'},$i18n.locale)">{{$t('links.contact')}}</b-nav-item>
+            <b-nav-item :to="localePath({name: 'le-rock-contacts'},$i18n.locale)">
+              {{ $t('links.contact') }}
+            </b-nav-item>
             <b-nav-item
               v-if="$i18n.locale !== 'en'"
               :to="switchLocalePath('en')"
-            >{{$t('english')}}</b-nav-item>
+            >
+              {{ $t('english') }}
+            </b-nav-item>
             <b-nav-item
               v-if="$i18n.locale !== 'uk'"
               :to="switchLocalePath('uk')"
-            >{{$t('ukrainian')}}</b-nav-item>
+            >
+              {{ $t('ukrainian') }}
+            </b-nav-item>
             <b-nav-item
               v-if="$i18n.locale !== 'ru'"
               :to="switchLocalePath('ru')"
-            >{{$t('russian')}}</b-nav-item>
-
+            >
+              {{ $t('russian') }}
+            </b-nav-item>
           </b-navbar-nav>
-
         </nav>
 
         <div
@@ -233,20 +250,26 @@
           <div
             class="close-hamburger text-right "
             @click.stop="hideCart"
-          ><img
+          >
+            <img
               src="~/assets/img/exit.svg"
               alt="close icon"
-            ></div>
+            >
+          </div>
           <div class="text-center">
-            <font v-if="!cartSize">{{$t('cart.emptyCart')}}</font>
+            <font v-if="!cartSize">
+              {{ $t('cart.emptyCart') }}
+            </font>
           </div>
 
           <div>
-            <h3 v-if="cartSize">{{$t('cart.heading')}}</h3>
+            <h3 v-if="cartSize">
+              {{ $t('cart.heading') }}
+            </h3>
             <div
-              class="cart-item"
               v-for="product in cart"
               :key="product.id"
+              class="cart-item"
             >
               <div class="row my-auto">
                 <img
@@ -261,22 +284,23 @@
                       <h6
                         id="cart-item-title"
                         class="col-12 m-auto text-center py-2 crop"
-                      >{{product.name}}</h6>
+                      >
+                        {{ product.name }}
+                      </h6>
                       <div class="toggle-quantity col-12 m-auto ">
                         <button
-                          @click="removeFromCart(product.id)"
                           :disabled="product.quantity === 1"
+                          @click="removeFromCart(product.id)"
                         >
                           &minus;
                         </button>
-                        <p>{{product.quantity}}</p>
+                        <p>{{ product.quantity }}</p>
                         <button
-                          @click="addToCart(product.id)"
                           :disabled="product.quantity === product.stock"
+                          @click="addToCart(product.id)"
                         >
                           &plus;
                         </button>
-
                       </div>
                     </div>
                   </div>
@@ -284,11 +308,10 @@
                 <div class="col-4 p-0">
                   <div class="col-12 m-auto p-0">
                     <div class="row m-auto">
-
                       <div class="remove-from-chart col-12 m-auto text-right">
                         <span
-                          @click="deleteFromCart(product.id)"
                           class="close text-right"
+                          @click="deleteFromCart(product.id)"
                         >&times;
                         </span>
                       </div>
@@ -297,7 +320,9 @@
                         <p
                           id="cart-item-price"
                           class="cart-item-price text-right py-2 card-text"
-                        >{{product.quantity* product.price | currency}}</p>
+                        >
+                          {{ product.quantity* product.price | currency }}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -313,21 +338,24 @@
               >
               <div class="row">
                 <div class="col-4">
-                  <small class="col-12">{{$t('cart.total')}}:</small>
-                  <strong class="col-12">{{cartTotalAmount | currency}}</strong>
-
+                  <small class="col-12">{{ $t('cart.total') }}:</small>
+                  <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
                 </div>
                 <div class="col-8 mx-auto text-right">
                   <b-button
                     :to="localePath({name: 'le-rock-cart'},$i18n.locale)"
                     class="order"
-                  >{{$t('cart.order')}}</b-button>
+                  >
+                    {{ $t('cart.order') }}
+                  </b-button>
                 </div>
               </div>
             </div>
 
             <div class="seeAll mt-5 mx-auto text-center">
-              <button @click="emptycart()">{{$t('cart.clear')}}</button>
+              <button @click="emptycart()">
+                {{ $t('cart.clear') }}
+              </button>
             </div>
           </div>
         </div>
@@ -339,46 +367,78 @@
           <div
             class="close-hamburger text-right "
             @click.stop="hideReservation"
-          ><img
+          >
+            <img
               src="~/assets/img/exit.svg"
               alt="close icon"
-            ></div>
+            >
+          </div>
 
           <div>
-            <h5>{{$t('reservation.heading')}}</h5>
+            <h5>{{ $t('reservation.heading') }}</h5>
             <form @submit.prevent="sendMessage">
               <select
-                name="time"
                 id="time"
-                class="w-100"
                 v-model="time"
+                name="time"
+                class="w-100"
               >
-                <option value="null">{{$t('reservation.time')}}</option>
-                <option value="morning">Ранок</option>
-                <option value="breakfast">Сніданок</option>
-                <option value="afternoon">Вдень</option>
-                <option value="lunch">Обід</option>
-                <option value="night">Ніч</option>
-                <option value="dinner">Вечеря</option>
+                <option value="null">
+                  {{ $t('reservation.time') }}
+                </option>
+                <option value="morning">
+                  Ранок
+                </option>
+                <option value="breakfast">
+                  Сніданок
+                </option>
+                <option value="afternoon">
+                  Вдень
+                </option>
+                <option value="lunch">
+                  Обід
+                </option>
+                <option value="night">
+                  Ніч
+                </option>
+                <option value="dinner">
+                  Вечеря
+                </option>
               </select>
 
               <select
+                id="number-of-people"
                 v-model="noOfPeople"
                 name="number-of-people"
-                id="number-of-people"
                 class="w-100"
               >
-                <option value="null">{{$t('reservation.noOfPeople')}}</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="6">6</option>
-                <option value="8">8</option>
-                <option value="10">10</option>
-                <option value="20">20</option>
+                <option value="null">
+                  {{ $t('reservation.noOfPeople') }}
+                </option>
+                <option value="1">
+                  1
+                </option>
+                <option value="2">
+                  2
+                </option>
+                <option value="4">
+                  4
+                </option>
+                <option value="6">
+                  6
+                </option>
+                <option value="8">
+                  8
+                </option>
+                <option value="10">
+                  10
+                </option>
+                <option value="20">
+                  20
+                </option>
               </select>
 
-              <h5>{{$t('reservation.dateTitle')}}</h5>
+              <h5>{{ $t('reservation.dateTitle') }}</h5>
               <div>
                 <client-only>
                   <datepicker
@@ -387,9 +447,8 @@
                     name="date"
                     :inline="true"
                     :disabled-dates="disabledDates"
-                  ></datepicker>
+                  />
                 </client-only>
-
               </div>
 
               <input
@@ -406,41 +465,38 @@
                 class="w-100"
               >
               <div class="form-group mx-auto text-center">
-
                 <button
+                  id="submit"
                   class="order mt-2"
                   type="submit"
                   name="submit"
-                  id="submit"
-                >{{$t('reservation.order')}}</button>
-
+                >
+                  {{ $t('reservation.order') }}
+                </button>
               </div>
-
             </form>
-
           </div>
         </div>
-
       </div>
     </header>
   </div>
 </template>
 
 <script>
-import axios from "axios"
-import clickOutside from "@/directives/click-outside";
-import handleScroll from "@/directives/handle-scroll";
-import { mapGetters, mapState } from "vuex";
+import axios from 'axios'
+import { mapGetters, mapState } from 'vuex'
+import clickOutside from '@/directives/click-outside'
+import handleScroll from '@/directives/handle-scroll'
 
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0');
-var yyyy = today.getFullYear();
+let today = new Date()
+const dd = String(today.getDate()).padStart(2, '0')
+const mm = String(today.getMonth() + 1).padStart(2, '0')
+const yyyy = today.getFullYear()
 
-today = mm + '/' + dd + '/' + yyyy;
+today = mm + '/' + dd + '/' + yyyy
 
-var currentDate = new Date();
-var state = {
+const currentDate = new Date()
+const state = {
   disabledDates: {
     to: new Date(currentDate.setDate(currentDate.getDate() - 1)), // Disable all dates up to specific date
     // days: [6, 0], // Disable Saturday's and Sunday's
@@ -454,7 +510,7 @@ var state = {
     ranges: [{ // Disable dates in given ranges (exclusive).
       from: new Date(2019, 0, 0),
       to: new Date(currentDate.setDate(currentDate.getDate() - 1))
-    }],
+    }]
 
   }
 }
@@ -464,7 +520,7 @@ export default {
   },
   directives: {
     clickOutside,
-    handleScroll,
+    handleScroll
 
   },
   data () {
@@ -484,117 +540,115 @@ export default {
       noOfPeople: null,
       disabledDates: state.disabledDates
 
-
-    };
+    }
   },
   computed: {
     ...mapState([
-      "cart"
+      'cart'
     ]),
     ...mapGetters([
-      "cartSize",
-      "cartTotalAmount"
+      'cartSize',
+      'cartTotalAmount'
     ])
+  },
+  watch: {
+    $route () {
+      this.mobileNavOpen = false
+      this.cartOpen = false
+      this.reservationOpen = false
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.onScroll)
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.onScroll)
   },
 
   methods: {
 
     addToCart (id, append = false) {
-      this.$store.dispatch("addToCart", id);
+      this.$store.dispatch('addToCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
-        toaster: "b-toaster-bottom-right",
+        toaster: 'b-toaster-bottom-right',
         appendToast: append
       })
     },
 
-
     removeFromCart (id, append = false) {
-      this.$store.dispatch("removeFromCart", id);
+      this.$store.dispatch('removeFromCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
-        toaster: "b-toaster-bottom-right",
+        toaster: 'b-toaster-bottom-right',
         appendToast: append
       })
     },
 
     deleteFromCart (id, append = false) {
-      this.$store.dispatch("deleteFromCart", id);
+      this.$store.dispatch('deleteFromCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
-        toaster: "b-toaster-bottom-right",
+        toaster: 'b-toaster-bottom-right',
         appendToast: append
       })
     },
 
     emptycart (append = false) {
-      this.$store.commit("emptyCart");
+      this.$store.commit('emptyCart')
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
-        toaster: "b-toaster-bottom-right",
+        toaster: 'b-toaster-bottom-right',
         appendToast: append
       })
     },
 
     closeUserDropdown () {
-      this.userDropdownOpen = false;
+      this.userDropdownOpen = false
     },
     closeMobileNavbar () {
-      this.mobileNavOpen = false;
+      this.mobileNavOpen = false
     },
     hide () {
-      this.mobileNavOpen = false;
+      this.mobileNavOpen = false
     },
 
     hideReservation () {
-      this.reservationOpen = false;
+      this.reservationOpen = false
     },
 
     closecart () {
-      this.cartOpen = false;
+      this.cartOpen = false
     },
     hideCart () {
-      this.cartOpen = false;
+      this.cartOpen = false
     },
     onScroll () {
       const currentScrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
+        window.pageYOffset || document.documentElement.scrollTop
       if (currentScrollPosition < 0) {
-        return;
+        return
       }
       if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 30) {
-        return;
+        return
       }
-      this.showHeader = currentScrollPosition < this.lastScrollPosition;
-      this.lastScrollPosition = currentScrollPosition;
+      this.showHeader = currentScrollPosition < this.lastScrollPosition
+      this.lastScrollPosition = currentScrollPosition
     },
 
     sendMessage () {
       axios
         .post(`https://api.telegram.org/bot971666849:AAEPhgDVYttaZZxm35uC5IFU-YO3MdH8nh0/sendMessage?chat_id=-1001231729418&text=Name: ${this.name}, Number: ${this.phone}, Date: ${this.date}, Time: ${this.time}, No of People: ${this.noOfPeople}`)
-      this.name = this.email = this.phone = this.time = this.noOfPeople = null;
-      this.date = today;
-      this.success = true;
-    },
-  },
-  mounted () {
-    window.addEventListener("scroll", this.onScroll);
-  },
-  beforeDestroy () {
-    window.removeEventListener("scroll", this.onScroll);
-  },
-  watch: {
-    $route () {
-      this.mobileNavOpen = false;
-      this.cartOpen = false;
-      this.reservationOpen = false;
+      this.name = this.email = this.phone = this.time = this.noOfPeople = null
+      this.date = today
+      this.success = true
     }
   }
-};
+}
 </script>
 
 <style lang="css">
@@ -1118,5 +1172,3 @@ header {
   }
 }
 </style>
-
-

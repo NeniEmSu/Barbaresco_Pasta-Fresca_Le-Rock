@@ -4,11 +4,10 @@
     "pasta": "Паста",
     "appetizer": "Закуски",
     "garnishes": "Гарніри",
-    
+
     "deserts": "Десерти",
     "salads": "Салати",
-   
-   
+
     "coffee": "Кава",
     "tea":"Чай",
     "mainMeal": "Основні страви"
@@ -19,7 +18,7 @@
     "garnishes": "Garnishes",
     "deserts": "Deserts",
     "salads": "Salads",
-    
+
     "coffee": "Coffee",
     "tea":"Tea",
     "mainMeal": "Main dishes"
@@ -30,7 +29,7 @@
     "garnishes": "гарниры",
     "deserts": "Десерты",
     "salads": "Салаты",
-    
+
     "coffee": "Кофе",
     "tea":"Чай",
     "mainMeal": "Основні страви"
@@ -40,91 +39,95 @@
 
 <template>
   <div id="imageed-Products-Navigation">
-
     <section class="container text-center ">
-
       <button
         class="column "
-        @click="Show6"
         :class="{ active: currentProductsDisplayed === 6}"
+        @click="Show6"
       >
-        <div class="nav-image navSix"></div>
-        <div class="text-center nav-text">{{$t('salads')}}</div>
-
+        <div class="nav-image navSix" />
+        <div class="text-center nav-text">
+          {{ $t('salads') }}
+        </div>
       </button>
 
       <button
         class="column text-center "
-        @click="Show1"
         :class="{ active: currentProductsDisplayed === 1}"
+        @click="Show1"
       >
-        <div class="nav-image navOne text-center"></div>
-        <div class="text-center nav-text">{{$t('pasta')}}</div>
-
+        <div class="nav-image navOne text-center" />
+        <div class="text-center nav-text">
+          {{ $t('pasta') }}
+        </div>
       </button>
 
       <button
         class="column "
-        @click="Show8"
         :class="{ active: currentProductsDisplayed === 8}"
+        @click="Show8"
       >
-        <div class="nav-image navEight"></div>
-        <div class="text-center nav-text">{{$t('garnishes')}}</div>
-
+        <div class="nav-image navEight" />
+        <div class="text-center nav-text">
+          {{ $t('garnishes') }}
+        </div>
       </button>
 
       <button
-        @click="Show2"
         class="column"
         :class="{ active: currentProductsDisplayed === 2}"
+        @click="Show2"
       >
-        <div class="nav-image navTwo"></div>
-        <div class="text-center nav-text">{{$t('appetizer')}}</div>
-
+        <div class="nav-image navTwo" />
+        <div class="text-center nav-text">
+          {{ $t('appetizer') }}
+        </div>
       </button>
 
       <button
-        @click.prevent="Show11"
         class="column "
         :class="{ active: currentProductsDisplayed === 11}"
+        @click.prevent="Show11"
       >
-        <div class="nav-image navSeven"></div>
-        <div class="text-center nav-text">{{$t('mainMeal')}}</div>
-
+        <div class="nav-image navSeven" />
+        <div class="text-center nav-text">
+          {{ $t('mainMeal') }}
+        </div>
       </button>
 
       <button
         class="column "
-        @click="Show5"
         :class="{ active: currentProductsDisplayed === 5}"
+        @click="Show5"
       >
-        <div class="nav-image navFive"></div>
-        <div class="text-center nav-text">{{$t('deserts')}}</div>
-
+        <div class="nav-image navFive" />
+        <div class="text-center nav-text">
+          {{ $t('deserts') }}
+        </div>
       </button>
 
       <button
-        @click.prevent="Show9"
         class="column"
         :class="{ active: currentProductsDisplayed === 9}"
+        @click.prevent="Show9"
       >
-        <div class="nav-image navNine "></div>
-        <div class="text-center nav-text">{{$t('coffee')}}</div>
-
+        <div class="nav-image navNine " />
+        <div class="text-center nav-text">
+          {{ $t('coffee') }}
+        </div>
       </button>
 
       <button
-        @click.prevent="Show10"
         class="column "
         :class="{ active: currentProductsDisplayed === 10}"
+        @click.prevent="Show10"
       >
-        <div class="nav-image navTen"></div>
-        <div class="text-center nav-text">{{$t('tea')}}</div>
-
+        <div class="nav-image navTen" />
+        <div class="text-center nav-text">
+          {{ $t('tea') }}
+        </div>
       </button>
-
     </section>
-
   </div>
 </template>
 

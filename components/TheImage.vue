@@ -10,7 +10,7 @@
       :height="height"
       :class="classes"
       :alt="alt"
-    />
+    >
   </div>
 </template>
 
@@ -18,19 +18,24 @@
 export default {
   props: {
     imageURL: {
-      type: String
+      type: String,
+      default: ''
     },
     alt: {
-      type: String
+      type: String,
+      default: ''
     },
     width: {
-      type: String
+      type: String,
+      default: ''
     },
     height: {
-      type: String
+      type: String,
+      default: ''
     },
     classes: {
-      type: String
+      type: String,
+      default: ''
     },
     rounded: {
       type: Boolean,

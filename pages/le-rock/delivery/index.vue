@@ -20,7 +20,6 @@
    "description1": "Стоимость доставки - 50 грн. При заказе от 300грн - доставка бесплатная. Ждем ваших звонков с 10:00 до 23:00 ч.",
    "description2": "Ждем ваших звонков с 10:00 до 23:00 ч."
 
-
   }
 }
 </i18n>
@@ -28,7 +27,6 @@
 <template>
   <div id="delivary">
     <div class="row">
-
       <img
         loading="lazy"
         src="~/assets/img/barbarescoDelivery.jpg"
@@ -44,23 +42,23 @@
         data-aos-duration="500"
       >
         <div class="m-auto content-text">
-          <h1>{{$t('title')}}</h1>
-          <p>{{$t('description')}}</p><br />
-          <p>{{$t('description1')}}
-            <br />
-            {{$t('description2')}}</p>
+          <h1>{{ $t('title') }}</h1>
+          <p>{{ $t('description') }}</p><br>
+          <p>
+            {{ $t('description1') }}
+            <br>
+            {{ $t('description2') }}
+          </p>
         </div>
-
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'le-rock-delivery',
+  name: 'LeRockDelivery',
   layout: 'le-rock',
   nuxtI18n: {
     paths: {
@@ -73,19 +71,19 @@ export default {
 
   },
   meta: {
-    animation: "overlay-down-full"
+    animation: 'overlay-down-full'
   },
   head () {
     return {
-      title: ("Le Rock - " + this.$t('title')).slice(
+      title: ('Le Rock - ' + this.$t('title')).slice(
         0,
         60
       ),
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: ("Le Rock -" + this.$t('description') + this.$t('description1' + this.$t('description2'))).slice(
+          hid: 'description',
+          name: 'description',
+          content: ('Le Rock -' + this.$t('description') + this.$t('description1' + this.$t('description2'))).slice(
             0,
             320
           )
@@ -95,11 +93,10 @@ export default {
   },
 
   data () {
-
     return {
 
     }
-  },
+  }
 }
 </script>
 

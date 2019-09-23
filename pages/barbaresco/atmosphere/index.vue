@@ -34,20 +34,18 @@
         data-aos-duration="500"
       >
         <div class="m-auto content-text">
-          <h1>{{$t('title')}}</h1>
-          <p>{{$t('description')}}</p>
+          <h1>{{ $t('title') }}</h1>
+          <p>{{ $t('description') }}</p>
         </div>
-
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'barbaresco-atmosphere',
+  name: 'BarbarescoAtmosphere',
   layout: 'barbaresco',
   nuxtI18n: {
     paths: {
@@ -60,19 +58,19 @@ export default {
 
   },
   meta: {
-    animation: "overlay-down-full"
+    animation: 'overlay-down-full'
   },
   head () {
     return {
-      title: ("Barbaresco - " + this.$t('title')).slice(
+      title: ('Barbaresco - ' + this.$t('title')).slice(
         0,
         60
       ),
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: ("Barbaresco -" + this.$t('description')).slice(
+          hid: 'description',
+          name: 'description',
+          content: ('Barbaresco -' + this.$t('description')).slice(
             0,
             320
           )
@@ -82,11 +80,10 @@ export default {
   },
 
   data () {
-
     return {
 
     }
-  },
+  }
 }
 </script>
 

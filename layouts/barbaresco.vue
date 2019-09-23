@@ -24,7 +24,6 @@
       <vue-page-transition :name="$store.state.animation">
         <nuxt />
       </vue-page-transition>
-
     </div>
 
     <TheFooter class="d-none d-lg-block" />
@@ -36,11 +35,11 @@
 <script>
 import Header from '~/components/Barbaresco/TheHeader'
 import TheTopContact from '~/components/Barbaresco/TheTopContact'
-import TheFooter from "@/components/Barbaresco/TheFooter.vue"
-import TheMobileFooter from "@/components/Barbaresco/TheMobileFooter.vue"
+import TheFooter from '@/components/Barbaresco/TheFooter.vue'
+import TheMobileFooter from '@/components/Barbaresco/TheMobileFooter.vue'
 
 export default {
-  name: "BarbarescoLayout",
+  name: 'BarbarescoLayout',
   head () {
     const i18nSeo = this.$nuxtI18nSeo()
     return {
@@ -57,7 +56,7 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.$t('description')
-        },
+        }
         // ...i18nSeo.meta
       ],
       link: [
@@ -66,7 +65,7 @@ export default {
           rel: 'apple-touch-icon',
           sizes: '180x180',
           href: '/apple-touch-icon.png'
-        },
+        }
         // ...i18nSeo.link
       ]
     }
@@ -79,8 +78,8 @@ export default {
   },
 
   meta: {
-    animation: "overlay-up-full"
-  },
+    animation: 'overlay-up-full'
+  }
 
 }
 </script>
@@ -90,4 +89,3 @@ export default {
   min-height: calc(100vh - 120px);
 }
 </style>
-

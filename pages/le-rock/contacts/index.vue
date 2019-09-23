@@ -36,23 +36,24 @@
       >
       <div class="col-lg-6 m-auto p-0 text-center">
         <div class="inner-text px-5">
-          <h1>{{$t('title')}}</h1>
+          <h1>{{ $t('title') }}</h1>
           <div class="text-center">
-            <p>{{$t('location')}}</p>
-            <p>{{$t('call')}}.: <a
+            <p>{{ $t('location') }}</p>
+            <p>
+              {{ $t('call') }}.: <a
                 href="tel:+38671154515"
                 class="col-12 m-auto"
               >
                 <span>+38 67 115 45 15</span>
-              </a></p>
-            <p>{{$t('workHours')}}</p>
-            <p>{{$t('days')}}.: <b>11:00-01:00</b> </p>
+              </a>
+            </p>
+            <p>{{ $t('workHours') }}</p>
+            <p>{{ $t('days') }}.: <b>11:00-01:00</b> </p>
           </div>
         </div>
         <TheContactMap />
       </div>
     </div>
-
   </div>
 </template>
 
@@ -60,7 +61,7 @@
 import TheContactMap from '~/components/Barbaresco/TheMapComponent'
 
 export default {
-  name: 'le-rock-contacts',
+  name: 'LeRockContacts',
   layout: 'le-rock',
   nuxtI18n: {
     paths: {
@@ -73,19 +74,19 @@ export default {
     TheContactMap
   },
   meta: {
-    animation: "overlay-down-full"
+    animation: 'overlay-down-full'
   },
   head () {
     return {
-      title: ("Le Rock - " + this.$t('title')).slice(
+      title: ('Le Rock - ' + this.$t('title')).slice(
         0,
         60
       ),
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: ("Le Rock -" + this.$t('description')).slice(
+          hid: 'description',
+          name: 'description',
+          content: ('Le Rock -' + this.$t('description')).slice(
             0,
             320
           )
@@ -95,11 +96,10 @@ export default {
   },
 
   data () {
-
     return {
 
     }
-  },
+  }
 }
 </script>
 

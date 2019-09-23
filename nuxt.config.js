@@ -1,7 +1,6 @@
 export default {
   mode: 'universal',
 
-
   head: {
     title: 'Barbaresco',
     htmlAttrs: {
@@ -9,17 +8,17 @@ export default {
       amp: true
     },
     meta: [{
-        charset: 'utf-8'
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: "My awe-inspiring Nuxt.js project"
-      }
+      charset: 'utf-8'
+    },
+    {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1'
+    },
+    {
+      hid: 'description',
+      name: 'description',
+      content: 'My awe-inspiring Nuxt.js project'
+    }
     ],
     link: [{
       rel: 'icon',
@@ -39,55 +38,55 @@ export default {
     dir: 'auto',
     lang: 'uk',
     icons: [{
-        type: "image/png",
-        size: "32x32",
-        src: "/favicon-32x32.png"
-      },
-      {
-        type: "image/png",
-        size: "16x16",
-        src: "/favicon-16x16.png"
-      },
-      {
-        src: "/icon-72x72.png",
-        sizes: "72x72",
-        type: "image/png"
-      },
-      {
-        src: "/icon-96x96.png",
-        sizes: "96x96",
-        type: "image/png"
-      },
-      {
-        src: "/icon-128x128.png",
-        sizes: "128x128",
-        type: "image/png"
-      },
-      {
-        src: "/icon-144x144.png",
-        sizes: "144x144",
-        type: "image/png"
-      },
-      {
-        src: "/icon-152x152.png",
-        sizes: "152x152",
-        type: "image/png"
-      },
-      {
-        src: "/icon-192x192.png",
-        sizes: "192x192",
-        type: "image/png"
-      },
-      {
-        src: "/icon-384x384.png",
-        sizes: "384x384",
-        type: "image/png"
-      },
-      {
-        src: "/icon-512x512.png",
-        sizes: "512x512",
-        type: "image/png"
-      }
+      type: 'image/png',
+      size: '32x32',
+      src: '/favicon-32x32.png'
+    },
+    {
+      type: 'image/png',
+      size: '16x16',
+      src: '/favicon-16x16.png'
+    },
+    {
+      src: '/icon-72x72.png',
+      sizes: '72x72',
+      type: 'image/png'
+    },
+    {
+      src: '/icon-96x96.png',
+      sizes: '96x96',
+      type: 'image/png'
+    },
+    {
+      src: '/icon-128x128.png',
+      sizes: '128x128',
+      type: 'image/png'
+    },
+    {
+      src: '/icon-144x144.png',
+      sizes: '144x144',
+      type: 'image/png'
+    },
+    {
+      src: '/icon-152x152.png',
+      sizes: '152x152',
+      type: 'image/png'
+    },
+    {
+      src: '/icon-192x192.png',
+      sizes: '192x192',
+      type: 'image/png'
+    },
+    {
+      src: '/icon-384x384.png',
+      sizes: '384x384',
+      type: 'image/png'
+    },
+    {
+      src: '/icon-512x512.png',
+      sizes: '512x512',
+      type: 'image/png'
+    }
     ],
     categories: ['business', 'shopping']
   },
@@ -101,10 +100,10 @@ export default {
   plugins: [
     '~/plugins/vuelidate.js',
     '~/plugins/i18n.js',
-    "~/plugins/vue-scrollto.js",
-    "~/plugins/vue-lazyload.js",
+    '~/plugins/vue-scrollto.js',
+    '~/plugins/vue-lazyload.js',
     {
-      src: "@/plugins/aos",
+      src: '@/plugins/aos',
       mode: 'client'
     },
     {
@@ -122,17 +121,12 @@ export default {
       src: '~/plugins/components',
       ssr: true
     },
-
     {
       src: '~/plugins/vuex-persist',
       mode: 'client'
     },
     {
-      src: '~/plugins/vue-scroll-reveal',
-      mode: 'client'
-    },
-    {
-      src: "~/plugins/google-maps",
+      src: '~/plugins/google-maps',
       ssr: true
     }
   ],
@@ -157,26 +151,26 @@ export default {
       seo: true,
       baseUrl: 'https://barbaresco.netlify.com',
       locales: [{
-          iso: 'uk-Uk',
-          code: 'uk',
-          name: 'Українська'
-        },
-        {
-          iso: 'en-US',
-          code: 'en',
-          name: 'English'
-        },
-        {
-          iso: 'ru-RU',
-          code: 'ru',
-          name: 'Русский'
-        }
+        iso: 'uk-Uk',
+        code: 'uk',
+        name: 'Українська'
+      },
+      {
+        iso: 'en-US',
+        code: 'en',
+        name: 'English'
+      },
+      {
+        iso: 'ru-RU',
+        code: 'ru',
+        name: 'Русский'
+      }
       ]
     }],
     [
-      "@nuxtjs/google-analytics",
+      '@nuxtjs/google-analytics',
       {
-        id: "UA-62479125-9"
+        id: 'UA-62479125-9'
       }
     ],
     [
@@ -210,58 +204,58 @@ export default {
       fallbackLocale: 'uk',
       messages: {
         uk: {
-          "links": {
-            "home": "Головна",
-            "menu": "Меню",
-            "delivery": "Доставка їжі",
-            "reserveAPlace": "Резервація місця",
-            "reservation": "Резервація",
-            "aboutUs": "Про нас",
-            "atmosphere": "Атмосфера",
-            "vacancy": "Ваканції",
-            "contact": "Контакти",
+          'links': {
+            'home': 'Головна',
+            'menu': 'Меню',
+            'delivery': 'Доставка їжі',
+            'reserveAPlace': 'Резервація місця',
+            'reservation': 'Резервація',
+            'aboutUs': 'Про нас',
+            'atmosphere': 'Атмосфера',
+            'vacancy': 'Ваканції',
+            'contact': 'Контакти'
           },
-          "order": "Замовити",
-          "ukrainian": "Українська",
-          "english": "English",
-          "russian": "Русский"
+          'order': 'Замовити',
+          'ukrainian': 'Українська',
+          'english': 'English',
+          'russian': 'Русский'
         },
         en: {
-          "links": {
-            "home": "Home",
-            "menu": "Menu",
-            "delivery": "Food delivery",
-            "reserveAPlace": "Reservation of place",
-            "reservation": "Reservation",
-            "aboutUs": "About us",
-            "atmosphere": "Atmosphere",
-            "vacancy": "Vacancies",
-            "contact": "Contacts",
-            "kitchen": "Kitchen"
+          'links': {
+            'home': 'Home',
+            'menu': 'Menu',
+            'delivery': 'Food delivery',
+            'reserveAPlace': 'Reservation of place',
+            'reservation': 'Reservation',
+            'aboutUs': 'About us',
+            'atmosphere': 'Atmosphere',
+            'vacancy': 'Vacancies',
+            'contact': 'Contacts',
+            'kitchen': 'Kitchen'
           },
-          "ukrainian": "Українська",
-          "english": "English",
-          "russian": "Русский",
-          "order": "Order"
+          'ukrainian': 'Українська',
+          'english': 'English',
+          'russian': 'Русский',
+          'order': 'Order'
         },
         ru: {
 
-          "links": {
-            "home": "Главная",
-            "menu": "Меню",
-            "delivery": "Доставка еды",
-            "reserveAPlace": "Резервация места",
-            "reservation": "Резервация",
-            "aboutUs": "О нас",
-            "atmosphere": "Атмосфера",
-            "vacancy": "Вакансии",
-            "contact": "Контакты",
-            "kitchen": "Кухня"
+          'links': {
+            'home': 'Главная',
+            'menu': 'Меню',
+            'delivery': 'Доставка еды',
+            'reserveAPlace': 'Резервация места',
+            'reservation': 'Резервация',
+            'aboutUs': 'О нас',
+            'atmosphere': 'Атмосфера',
+            'vacancy': 'Вакансии',
+            'contact': 'Контакты',
+            'kitchen': 'Кухня'
           },
-          "ukrainian": "Українська",
-          "english": "English",
-          "russian": "Русский",
-          "order": "Заказать"
+          'ukrainian': 'Українська',
+          'english': 'English',
+          'russian': 'Русский',
+          'order': 'Заказать'
         }
 
       }
@@ -275,13 +269,12 @@ export default {
   },
 
   styleResources: {
-    scss: ["~/assets/scss/config.scss"]
+    scss: ['~/assets/scss/config.scss']
   },
 
   netlifyFiles: {
-    existingFilesDirectory: "./netlify/"
+    existingFilesDirectory: './netlify/'
   },
-
 
   purgeCSS: {
     mode: 'postcss',
@@ -294,37 +287,33 @@ export default {
     whitelistPatterns: [/cookie-consent/]
   },
 
-
   axios: {},
-
 
   build: {
     transpile: [/^vue2-google-maps($|\/)/],
     extractCSS: true,
 
-    extend(config) {
-      config.module.rules.forEach(rule => {
+    extend (config) {
+      config.module.rules.forEach((rule) => {
         if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
           rule.use.push({
-            loader: "image-webpack-loader",
+            loader: 'image-webpack-loader',
             options: {
               svgo: {
                 plugins: [{
-                    removeViewBox: false
-                  },
-                  {
-                    removeDimensions: true
-                  }
+                  removeViewBox: false
+                },
+                {
+                  removeDimensions: true
+                }
                 ]
               }
             }
-          });
+          })
         }
-      });
-    },
+      })
+    }
 
   }
 
-
-
-};
+}

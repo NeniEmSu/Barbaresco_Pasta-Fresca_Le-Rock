@@ -43,23 +43,24 @@
         data-aos-duration="500"
       >
         <div class="inner-text px-5">
-          <h1>{{$t('title')}}</h1>
+          <h1>{{ $t('title') }}</h1>
           <div class="text-center">
-            <p>{{$t('location')}}</p>
-            <p>{{$t('call')}}.: <a
+            <p>{{ $t('location') }}</p>
+            <p>
+              {{ $t('call') }}.: <a
                 href="tel:+380506700400"
                 class="col-12 m-auto"
               >
                 <span>+38 050 6 700 400</span>
-              </a></p>
-            <p>{{$t('workHours')}}</p>
-            <p><b>10:00-01:00</b> ({{$t('days')}})</p>
+              </a>
+            </p>
+            <p>{{ $t('workHours') }}</p>
+            <p><b>10:00-01:00</b> ({{ $t('days') }})</p>
           </div>
         </div>
         <TheContactMap />
       </div>
     </div>
-
   </div>
 </template>
 
@@ -67,7 +68,7 @@
 import TheContactMap from '~/components/Barbaresco/TheMapComponent'
 
 export default {
-  name: 'barbaresco-contacts',
+  name: 'BarbarescoContacts',
   layout: 'barbaresco',
   nuxtI18n: {
     paths: {
@@ -80,19 +81,19 @@ export default {
     TheContactMap
   },
   meta: {
-    animation: "overlay-down-full"
+    animation: 'overlay-down-full'
   },
   head () {
     return {
-      title: ("Barbaresco - " + this.$t('title')).slice(
+      title: ('Barbaresco - ' + this.$t('title')).slice(
         0,
         60
       ),
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: ("Barbaresco -" + this.$t('location')).slice(
+          hid: 'description',
+          name: 'description',
+          content: ('Barbaresco -' + this.$t('location')).slice(
             0,
             320
           )
@@ -102,11 +103,10 @@ export default {
   },
 
   data () {
-
     return {
 
     }
-  },
+  }
 }
 </script>
 

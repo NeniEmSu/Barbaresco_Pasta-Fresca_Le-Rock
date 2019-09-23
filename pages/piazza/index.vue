@@ -1,17 +1,17 @@
 <template>
   <div id="barbaresco">
-
     <TheImageNavigation />
 
     <TheImagedProductNav
-      v-on:changedView="updateView($event)"
-      :currentProductsDisplayed="currentProductsDisplayed"
+      :current-products-displayed="currentProductsDisplayed"
+      @changedView="updateView($event)"
     />
 
-    <div v-if="$route.path === '/barbaresco'"> barbaresco route true</div>
+    <div v-if="$route.path === '/barbaresco'">
+      barbaresco route true
+    </div>
 
     <vue-page-transition name="fade">
-
       <ThePizza v-if="currentProductsDisplayed === 1" />
 
       <TheBugers v-if="currentProductsDisplayed === 2" />
@@ -31,13 +31,11 @@
       <TheDrinks v-if="currentProductsDisplayed === 9" />
 
       <TheAlcohol v-if="currentProductsDisplayed === 10" />
-
     </vue-page-transition>
 
     <TheBottomCarousel />
 
     <TheMapComponent />
-
   </div>
 </template>
 
@@ -59,7 +57,7 @@ import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarousel'
 
 export default {
-  name: 'barbaresco',
+  name: 'Barbaresco',
   layout: 'barbaresco',
   components: {
     TheImageNavigation,
@@ -79,19 +77,19 @@ export default {
   },
 
   meta: {
-    animation: "overlay-down-full"
+    animation: 'overlay-down-full'
   },
   head () {
     return {
-      title: "Piazza White".slice(
+      title: 'Piazza White'.slice(
         0,
         60
       ),
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: "Piazza White.".slice(
+          hid: 'description',
+          name: 'description',
+          content: 'Piazza White.'.slice(
             0,
             320
           )
@@ -101,9 +99,8 @@ export default {
   },
 
   data () {
-
     return {
-      currentProductsDisplayed: 1,
+      currentProductsDisplayed: 1
     }
   },
 

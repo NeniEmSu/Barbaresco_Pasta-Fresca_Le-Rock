@@ -15,7 +15,6 @@
 "description1": "roles and burgers. The main goal for us is first and foremost to prepare delicious food with quality and fresh products with pleasure and soul. Not only does our food saturate, it charges the energy and joy we put into it.",
 "description2": "Every day we refine and grow for you so that you always feel special and unique. After all, every guest who came to us is important without exception, so our team will do everything to make your stay with us an unforgettable holiday of taste and pleasure."
 
-
   },
   "ru": {
     "name": "Паста фреска",
@@ -45,23 +44,23 @@
         data-aos-duration="500"
       >
         <div class="m-auto content-text">
-          <h1>{{$t('title')}}</h1>
-          <p>{{$t('description')}}</p>
-          <p>{{$t('description1')}}
-            <br />
-            {{$t('description2')}}</p>
+          <h1>{{ $t('title') }}</h1>
+          <p>{{ $t('description') }}</p>
+          <p>
+            {{ $t('description1') }}
+            <br>
+            {{ $t('description2') }}
+          </p>
         </div>
-
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'barbaresco-kitchen',
+  name: 'BarbarescoKitchen',
   layout: 'barbaresco',
   nuxtI18n: {
     paths: {
@@ -74,19 +73,19 @@ export default {
 
   },
   meta: {
-    animation: "overlay-down-full"
+    animation: 'overlay-down-full'
   },
   head () {
     return {
-      title: (this.$t('name') + " - " + this.$t('title')).slice(
+      title: (this.$t('name') + ' - ' + this.$t('title')).slice(
         0,
         60
       ),
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: (this.$t('name') + " -" + this.$t('description') + this.$t('description1' + this.$t('description2'))).slice(
+          hid: 'description',
+          name: 'description',
+          content: (this.$t('name') + ' -' + this.$t('description') + this.$t('description1' + this.$t('description2'))).slice(
             0,
             320
           )
@@ -96,11 +95,10 @@ export default {
   },
 
   data () {
-
     return {
 
     }
-  },
+  }
 }
 </script>
 

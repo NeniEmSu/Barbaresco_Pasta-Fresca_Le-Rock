@@ -1,16 +1,14 @@
 <template>
   <div
-    class="top-contacts"
     id="top-contact "
+    class="top-contacts"
   >
     <div class=" p-0 b-crumbs">
-      <b-breadcrumb :items="items"></b-breadcrumb>
+      <b-breadcrumb :items="items" />
     </div>
 
     <div class="text-right ml-auto">
-
       <ul class="text-right contacts">
-
         <li class="contact">
           <a href="tel:+380963022082">
             <span>+38 096 302 20 82</span>
@@ -27,7 +25,7 @@
             <img
               src="~/assets/img/instagramSocialLogo.png"
               alt="icons instagram filled"
-            />
+            >
 
           </a>
         </li>
@@ -42,7 +40,7 @@
             <img
               src="~/assets/img/facebookSocialLogo.png"
               alt="icons facebook filled"
-            />
+            >
 
           </a>
         </li>
@@ -69,8 +67,8 @@ export default {
   },
   watch: {
     $route () {
-      this.items[0].text = this.$t('links.home');
-      this.items[1].text = this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1);
+      this.items[0].text = this.$t('links.home')
+      this.items[1].text = this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1)
     }
   }
 }

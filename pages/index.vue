@@ -61,36 +61,34 @@
 }
 </i18n>
 
-
 <template>
   <div id="homePage">
-
     <div class="mx-auto ">
-      <h1 class="homePageHeading">{{ $t('home.title') }}</h1>
+      <h1 class="homePageHeading">
+        {{ $t('home.title') }}
+      </h1>
 
       <client-only
         aria-placeholder="Loading.."
         placeholder="Loading..."
       >
-
         <div>
-
           <carousel
             :nav="false"
             :dots="false"
             :items="4"
             :loop="false"
-            :mouseDrag="true"
-            :touchDrag="true"
+            :mouse-drag="true"
+            :touch-drag="true"
             :autoplay="false"
             :rewind="false"
-            :stagePadding="40"
-            :autoWidth="350"
+            :stage-padding="40"
+            :auto-width="350"
             :responsive="{
               0: { items: 1, center: true, dots: true },
               600: { items: 1, center: false, margin: 0 },
-              1440: { items: 4, center: false,  margin: 60},
-              1800: { items: 4, center: false,  margin: 0}
+              1440: { items: 4, center: false, margin: 60},
+              1800: { items: 4, center: false, margin: 0}
             }"
           >
             <div
@@ -114,7 +112,7 @@
                       class="mx-auto"
                       :src="require(`~/assets/img/${variants[0].logo + '.svg'}`)"
                       :alt="variants[0].logoAlt"
-                    ></b-img>
+                    />
                   </div>
                   <b-card-text class="cardDescription">
                     {{ variants[0].details }}
@@ -124,7 +122,9 @@
                       size="lg"
                       class="mx-auto goToSiteBtn"
                       :href="localePath({name: variants[0].siteLink},$i18n.locale)"
-                    >{{ $t('home.siteButtonTxt') }}</b-button>
+                    >
+                      {{ $t('home.siteButtonTxt') }}
+                    </b-button>
                   </div>
                   <div class="text-center ">
                     <b-button
@@ -135,7 +135,7 @@
                         class="inButtonImg "
                         src="~assets/img/instagram.svg"
                         alt="instagram text"
-                      ></b-img>
+                      />
                     </b-button>
                     <b-button
                       class="socialButtons facebook mx-auto"
@@ -147,7 +147,7 @@
                         target="_blank"
                         src="~assets/img/facebook.svg"
                         alt="facebook text"
-                      ></b-img>
+                      />
                     </b-button>
                   </div>
                 </div>
@@ -175,7 +175,7 @@
                       class="mx-auto"
                       :src="require(`~/assets/img/${variants[1].logo + '.svg'}`)"
                       :alt="variants[1].logoAlt"
-                    ></b-img>
+                    />
                   </div>
                   <b-card-text class="cardDescription">
                     {{ variants[1].details }}
@@ -184,7 +184,9 @@
                     <b-button
                       class="mx-auto goToSiteBtn"
                       :href="localePath({name: variants[1].siteLink},$i18n.locale)"
-                    >{{ $t('home.siteButtonTxt') }}</b-button>
+                    >
+                      {{ $t('home.siteButtonTxt') }}
+                    </b-button>
                   </div>
                   <div class="text-center ">
                     <b-button
@@ -195,7 +197,7 @@
                         class="inButtonImg "
                         src="~assets/img/instagram.svg"
                         alt="instagram text"
-                      ></b-img>
+                      />
                     </b-button>
                     <b-button
                       class="socialButtons facebook mx-auto"
@@ -207,7 +209,7 @@
                         target="_blank"
                         src="~assets/img/facebook.svg"
                         alt="facebook text"
-                      ></b-img>
+                      />
                     </b-button>
                   </div>
                 </div>
@@ -235,7 +237,7 @@
                       class="mx-auto"
                       :src="require(`~/assets/img/${variants[2].logo + '.svg'}`)"
                       :alt="variants[2].logoAlt"
-                    ></b-img>
+                    />
                   </div>
                   <b-card-text class="cardDescription">
                     {{ variants[2].details }}
@@ -244,7 +246,9 @@
                     <b-button
                       class="mx-auto goToSiteBtn"
                       :href="localePath({name: variants[2].siteLink},$i18n.locale)"
-                    >{{ $t('home.siteButtonTxt') }}</b-button>
+                    >
+                      {{ $t('home.siteButtonTxt') }}
+                    </b-button>
                   </div>
                   <div class="text-center ">
                     <b-button
@@ -255,7 +259,7 @@
                         class="inButtonImg "
                         src="~assets/img/instagram.svg"
                         alt="instagram text"
-                      ></b-img>
+                      />
                     </b-button>
                     <b-button
                       class="socialButtons facebook mx-auto"
@@ -267,7 +271,7 @@
                         target="_blank"
                         src="~assets/img/facebook.svg"
                         alt="facebook text"
-                      ></b-img>
+                      />
                     </b-button>
                   </div>
                 </div>
@@ -295,7 +299,7 @@
                       class="mx-auto"
                       :src="require(`~/assets/img/${variants[3].logo + '.svg'}`)"
                       :alt="variants[3].logoAlt"
-                    ></b-img>
+                    />
                   </div>
                   <b-card-text class="cardDescription">
                     {{ variants[3].details }}
@@ -304,7 +308,9 @@
                     <b-button
                       class="mx-auto goToSiteBtn"
                       :href="localePath({name: variants[3].siteLink},$i18n.locale)"
-                    >{{ $t('home.siteButtonTxt') }}</b-button>
+                    >
+                      {{ $t('home.siteButtonTxt') }}
+                    </b-button>
                   </div>
                   <div class="text-center ">
                     <b-button
@@ -315,7 +321,7 @@
                         class="inButtonImg "
                         src="~assets/img/instagram.svg"
                         alt="instagram text"
-                      ></b-img>
+                      />
                     </b-button>
                     <b-button
                       class="socialButtons facebook mx-auto"
@@ -327,32 +333,25 @@
                         target="_blank"
                         src="~assets/img/facebook.svg"
                         alt="facebook text"
-                      ></b-img>
+                      />
                     </b-button>
                   </div>
                 </div>
               </b-card>
             </div>
-
           </carousel>
         </div>
-
       </client-only>
-
     </div>
-
   </div>
 </template>
 
 <script>
 
-
-
 export default {
-  name: 'index',
-  layout: "default",
+  name: 'Index',
+  layout: 'default',
   components: {
-
 
   },
   data () {

@@ -17,7 +17,7 @@
    "days1": "Mon-Wed",
    "days2": "Thu-Sat",
 "days3": "Sun"
- 
+
   },
   "ru": {
     "title": "Контакты",
@@ -41,23 +41,24 @@
       >
       <div class="col-lg-6 m-auto p-0 text-center">
         <div class="inner-text px-5">
-          <h1>{{$t('title')}}</h1>
+          <h1>{{ $t('title') }}</h1>
           <div class="text-center">
-            <p>{{$t('location')}}</p>
-            <p>{{$t('call')}}.: <a
+            <p>{{ $t('location') }}</p>
+            <p>
+              {{ $t('call') }}.: <a
                 href="tel:+380963022082"
                 class="col-12 m-auto"
               >
                 <span>+38 096 302 20 82</span>
-              </a></p>
-            <p>{{$t('workHours')}}</p>
-            <p>{{$t('days1')}}.: 10:00-00:00 | {{$t('days2')}}.: 10:00-01:00 | {{$t('days3')}}.: 11:00-00:00</p>
+              </a>
+            </p>
+            <p>{{ $t('workHours') }}</p>
+            <p>{{ $t('days1') }}.: 10:00-00:00 | {{ $t('days2') }}.: 10:00-01:00 | {{ $t('days3') }}.: 11:00-00:00</p>
           </div>
         </div>
         <TheContactMap />
       </div>
     </div>
-
   </div>
 </template>
 
@@ -65,7 +66,7 @@
 import TheContactMap from '~/components/PastaFresca/TheMapComponentPastaFresca'
 
 export default {
-  name: 'pasta-fresca-contacts',
+  name: 'PastaFrescaContacts',
   layout: 'pasta-fresca',
   nuxtI18n: {
     paths: {
@@ -78,19 +79,19 @@ export default {
     TheContactMap
   },
   meta: {
-    animation: "overlay-down-full"
+    animation: 'overlay-down-full'
   },
   head () {
     return {
-      title: ("Barbaresco - " + this.$t('title')).slice(
+      title: ('Barbaresco - ' + this.$t('title')).slice(
         0,
         60
       ),
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: ("Barbaresco -" + this.$t('description')).slice(
+          hid: 'description',
+          name: 'description',
+          content: ('Barbaresco -' + this.$t('description')).slice(
             0,
             320
           )
@@ -100,11 +101,10 @@ export default {
   },
 
   data () {
-
     return {
 
     }
-  },
+  }
 }
 </script>
 

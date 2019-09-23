@@ -24,9 +24,9 @@
 <template>
   <div class="container ">
     <b-carousel
-      class="mb-5"
       id="carousel-1"
       v-model="slide"
+      class="mb-5"
       :interval="4000"
       fade
       controls
@@ -38,12 +38,13 @@
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-
       <b-carousel-slide
         class="img-fluid w-100 d-block"
         img-src="~/assets/img/pizzaBaner.jpg"
       >
-        <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle1') }}</h2>
+        <h2 class="text-left col-md-6 p-0">
+          {{ $t('promotionTitle1') }}
+        </h2>
         <p class="text-left">
           {{ $t('promotionDescription') }}
         </p>
@@ -53,7 +54,9 @@
         class="img-fluid w-100 d-block"
         img-src="~/assets/img/pizzaBaner1.jpg"
       >
-        <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle2') }}</h2>
+        <h2 class="text-left col-md-6 p-0">
+          {{ $t('promotionTitle2') }}
+        </h2>
         <p class="text-left">
           {{ $t('promotionDescription') }}
         </p>
@@ -63,14 +66,14 @@
         class="img-fluid w-100 d-block"
         img-src="~/assets/img/pizzaBaner.jpg"
       >
-        <h2 class="text-left col-md-6 p-0">{{ $t('promotionTitle3') }}</h2>
+        <h2 class="text-left col-md-6 p-0">
+          {{ $t('promotionTitle3') }}
+        </h2>
         <p class="text-left">
           {{ $t('promotionDescription') }}
         </p>
       </b-carousel-slide>
-
     </b-carousel>
-
   </div>
 </template>
 
@@ -89,7 +92,6 @@ export default {
     },
     onSlideEnd () {
       this.sliding = false
-
     }
   }
 }
