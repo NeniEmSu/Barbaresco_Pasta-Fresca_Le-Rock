@@ -58,7 +58,7 @@
     <vue-page-transition name="fade">
       <ThePasta v-if="currentProductsDisplayed === 1" />
 
-      <TheRockDogs v-if="currentProductsDisplayed === 2" />
+      <TheAppetizers v-if="currentProductsDisplayed === 2" />
 
       <TheSushi v-if="currentProductsDisplayed === 3" />
 
@@ -90,17 +90,17 @@
 import TheImageNavigation from '~/components/PastaFresca/TheImageNavigationPastaFresca'
 import TheImagedProductNav from '~/components/PastaFresca/TheImagedProductNavPastaFresca'
 import TheMapComponent from '~/components/PastaFresca/TheMapComponentPastaFresca'
-import TheRockDogs from '~/components/Barbaresco/BarbarescoProducts/TheBugers'
 import ThePasta from '~/components/PastaFresca/PastaFrescaProducts/ThePasta'
 import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
-import TheDrinks from '~/components/Barbaresco/BarbarescoProducts/TheDrinks'
+import TheDrinks from '~/components/PastaFresca/PastaFrescaProducts/TheDrinks'
 import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
 import TheDesert from '~/components/PastaFresca/PastaFrescaProducts/TheDesert'
 import TheSalad from '~/components/PastaFresca/PastaFrescaProducts/TheSalad'
-import TheFirstCourse from '~/components/Barbaresco/BarbarescoProducts/TheFirstCourse'
+import TheFirstCourse from '~/components/PastaFresca/PastaFrescaProducts/TheFirstCourse'
 import TheGarnishes from '~/components/PastaFresca/PastaFrescaProducts/TheGarnishes'
-import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
-import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
+import TheAppetizers from '~/components/PastaFresca/PastaFrescaProducts/TheAppetizers'
+import TheAlcohol from '~/components/PastaFresca/PastaFrescaProducts/TheAlcohol'
+import TheMainMeal from '~/components/PastaFresca/PastaFrescaProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 
 export default {
@@ -110,7 +110,6 @@ export default {
     TheImageNavigation,
     TheImagedProductNav,
     TheMapComponent,
-    TheRockDogs,
     ThePasta,
     TheSushi,
     TheMlinty,
@@ -118,6 +117,7 @@ export default {
     TheSalad,
     TheFirstCourse,
     TheGarnishes,
+    TheAppetizers,
     TheDrinks,
     TheAlcohol,
     TheMainMeal,

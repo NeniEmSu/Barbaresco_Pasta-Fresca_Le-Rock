@@ -4,10 +4,10 @@
     "pasta": "Паста",
     "appetizer": "Закуски",
     "garnishes": "Гарніри",
-
     "deserts": "Десерти",
     "salads": "Салати",
-
+    "alcohol":"Алкоголь",
+    "firstCourse": "Перші страви",
     "coffee": "Кава",
     "tea":"Чай",
     "mainMeal": "Основні страви"
@@ -18,7 +18,8 @@
     "garnishes": "Garnishes",
     "deserts": "Deserts",
     "salads": "Salads",
-
+    "alcohol":"Alcohol",
+    "firstCourse": "First Course",
     "coffee": "Coffee",
     "tea":"Tea",
     "mainMeal": "Main dishes"
@@ -29,7 +30,8 @@
     "garnishes": "гарниры",
     "deserts": "Десерты",
     "salads": "Салаты",
-
+    "alcohol":"Алкоголь",
+    "firstCourse": "Первые блюда",
     "coffee": "Кофе",
     "tea":"Чай",
     "mainMeal": "Основні страви"
@@ -97,6 +99,17 @@
 
       <button
         class="column "
+        :class="{ active: currentProductsDisplayed === 7}"
+        @click.prevent="Show7"
+      >
+        <div class="nav-image navSeven" />
+        <div class="text-center nav-text">
+          {{ $t('firstCourse') }}
+        </div>
+      </button>
+
+      <button
+        class="column "
         :class="{ active: currentProductsDisplayed === 5}"
         @click="Show5"
       >
@@ -124,7 +137,7 @@
       >
         <div class="nav-image navTen" />
         <div class="text-center nav-text">
-          {{ $t('tea') }}
+          {{ $t('alcohol') }}
         </div>
       </button>
     </section>
@@ -202,7 +215,7 @@ section {
 .column {
   float: left;
   box-sizing: border-box;
-  width: calc(100% / 8);
+  width: calc(100% / 9);
   height: 100%;
   min-height: 150px;
   border: 0;
@@ -306,7 +319,7 @@ section {
 }
 
 .navTen {
-  background-image: url("~assets/img/pasta-fresca-tea.jpg");
+  background-image: url("~assets/img/barbarescoAlcohol.jpg");
 }
 
 @media (max-width: 995px) {
