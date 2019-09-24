@@ -11,6 +11,16 @@
       :class="classes"
       :alt="alt"
     >
+
+    <!--        How to use in template
+       <ImageResponsive
+            :imageURL="`${product.image + '.png'}`"
+            :classes="' '"
+            :width="'150'"
+            :height="'150'"
+            :alt="product.name"
+            class=" card-img-top mx-auto"
+          /> -->
   </div>
 </template>
 

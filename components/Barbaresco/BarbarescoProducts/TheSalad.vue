@@ -4,7 +4,10 @@
     class="container "
   >
     <div class="content">
-      <div class="row  justify-content-start">
+      <div
+        v-if="$i18n.locale === 'uk'"
+        class="row"
+      >
         <div
           v-for="product in extractedProductSalads"
           :key="product.id"
@@ -61,12 +64,118 @@
           </div>
         </div>
       </div>
+
+      <div
+        v-if="$i18n.locale === 'en'"
+        class="row"
+      >
+        <div
+          v-for="product in extractedProductSaladsEn"
+          :key="product.id"
+          class="card"
+        >
+          <img
+            loading="lazy"
+            class="card-img-top mx-auto"
+            :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+            :alt="product.name"
+          >
+          <div class="card-body">
+            <h5
+              v-b-tooltip.hover
+              class="card-title mx-auto text-center crop"
+              style="cursor:context-menu"
+              :title="product.name"
+            >
+              {{ product.name }}
+            </h5>
+            <p
+              v-b-tooltip.hover
+              class="card-text d-none d-sm-block text-left"
+              style="cursor: context-menu;"
+              :title="product.summary"
+            >
+              {{ (product.summary).slice(0, 35) }}...<span class="card-text quantity">{{ product.volume }}</span>
+            </p>
+
+            <div class="row">
+              <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                <p class="card-text cost my-auto">
+                  <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                </p>
+              </div>
+              <div class="col-sm-7 pl-0 text-center  my-auto">
+                <button
+                  class="btn my-auto mr-auto"
+                  @click.prevent="addToCart(product.id)"
+                >
+                  {{ $t('order') }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-if="$i18n.locale === 'ru'"
+        class="row"
+      >
+        <div
+          v-for="product in extractedProductSaladsRu"
+          :key="product.id"
+          class="card"
+        >
+          <img
+            loading="lazy"
+            class="card-img-top mx-auto"
+            :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+            :alt="product.name"
+          >
+          <div class="card-body">
+            <h5
+              v-b-tooltip.hover
+              class="card-title mx-auto text-center crop"
+              style="cursor:context-menu"
+              :title="product.name"
+            >
+              {{ product.name }}
+            </h5>
+            <p
+              v-b-tooltip.hover
+              class="card-text d-none d-sm-block text-left"
+              style="cursor: context-menu;"
+              :title="product.summary"
+            >
+              {{ (product.summary).slice(0, 35) }}...<span class="card-text quantity">{{ product.volume }}</span>
+            </p>
+
+            <div class="row">
+              <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                <p class="card-text cost my-auto">
+                  <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                </p>
+              </div>
+              <div class="col-sm-7 pl-0 text-center  my-auto">
+                <button
+                  class="btn my-auto mr-auto"
+                  @click.prevent="addToCart(product.id)"
+                >
+                  {{ $t('order') }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import productData from '~/plugins/api/products.js'
+import productDataEn from '~/plugins/api/productsEn.js'
+import productDataRu from '~/plugins/api/productsRu.js'
 export default {
   name: 'TheSalads',
   data () {
@@ -78,6 +187,12 @@ export default {
   computed: {
     extractedProductSalads () {
       return productData.filter(el => el.category === 'barbbaresco-salads')
+    },
+    extractedProductSaladsEn () {
+      return productDataEn.filter(el => el.category === 'barbbaresco-salads')
+    },
+    extractedProductSaladsRu () {
+      return productDataRu.filter(el => el.category === 'barbbaresco-salads')
     }
   },
 

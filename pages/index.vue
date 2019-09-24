@@ -600,12 +600,12 @@ export default {
 
   &.instagram {
     margin: 10px auto;
-    padding: 10px 25px;
+    padding: 10px 23px;
     transition: 500ms ease-in-out;
 
     .inButtonImg {
       width: 80px;
-      height: 27px;
+      height: 25px;
     }
   }
 
@@ -632,7 +632,7 @@ export default {
 
   &.facebook {
     margin: 10px auto;
-    padding: 12px 25px;
+    padding: 10px 23px;
     -webkit-transition: background-color 500ms ease-out;
     -moz-transition: background-color 500ms ease-out;
     -o-transition: background-color 500ms ease-out;
@@ -640,7 +640,7 @@ export default {
 
     .inButtonImg {
       width: 80px;
-      height: 20px;
+      height: 25px;
     }
   }
 
