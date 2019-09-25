@@ -177,13 +177,13 @@ export default {
 
   computed: {
     extractedProductSalads () {
-      return productData.filter(el => el.category === 'barbbaresco-salads')
+      return productData.filter(el => el.category === 'barbaresco-salads')
     },
     extractedProductSaladsEn () {
-      return productDataEn.filter(el => el.category === 'barbbaresco-salads')
+      return productDataEn.filter(el => el.category === 'barbaresco-salads')
     },
     extractedProductSaladsRu () {
-      return productDataRu.filter(el => el.category === 'barbbaresco-salads')
+      return productDataRu.filter(el => el.category === 'barbaresco-salads')
     }
   },
 

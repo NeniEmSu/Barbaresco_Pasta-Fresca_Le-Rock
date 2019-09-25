@@ -3,7 +3,7 @@ export default [
 
   // Barbaresco Salads
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'САЛАТ З КАЛЬМАРАМИ',
     id: 'b-sal-1',
     price: 60,
@@ -13,7 +13,7 @@ export default [
     summary: 'Мікс-салат, кальмар маринований, помідори чері, маслини, огірок, ікра тобіко, лимон, заправляється фірмовим соусом'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'ЦЕЗАР З КУРКОЮ',
     id: 'b-sal-2',
     price: 60,
@@ -23,7 +23,7 @@ export default [
     summary: 'Філе курки, бекон, мікс-салат, яйце перепелине, чіпси з білого хліба соус цезар'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'ЛАЙТ ЛАЙФ',
     id: 'b-sal-3',
     price: 50,
@@ -33,7 +33,7 @@ export default [
     summary: 'Легкий овочевий салат з помідорів, болгарського перцю, мікс-салату, огірків, сиру фета, оливкова олія'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'ГРИЛЬ САЛАТ З ТЕЛЯТИНОЮ',
     id: 'b-sal-4',
     price: 65,
@@ -43,7 +43,7 @@ export default [
     summary: 'Філе телятини гриль в поєднанні з печеними овочами, заправляється зеленим соусом'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'САЛАТ З ІНДИЧКОЮ',
     id: 'b-sal-5',
     price: 80,
@@ -53,7 +53,7 @@ export default [
     summary: 'Філе індички, помідори чері, мікс-салат, сир філадельфія, заправляється фірмовим гостро-солодким соусом'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'CHICK BASILIK',
     id: 'b-sal-6',
     price: 65,
@@ -66,7 +66,7 @@ export default [
   // Barbaresco Pizzas
 
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'ГАВАЙСЬКА',
     id: 'b-p-1',
     price: 70,
@@ -76,7 +76,7 @@ export default [
     summary: 'Моцарела, курка копчена, ананас, оливки, фірмовий соус'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'ГГГГОСТРА',
     id: 'b-p-2',
     price: 70,
@@ -86,7 +86,7 @@ export default [
     summary: 'Моцарела, салямі, перець чілі, фірмовий соус'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'КАПРІЧОЗА',
     id: 'b-p-3',
     price: 70,
@@ -96,7 +96,7 @@ export default [
     summary: 'Моцарела, шинка, печериці, маслини, фірмовий соус'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'МАРГАРІТА',
     id: 'b-p-4',
     price: 70,
@@ -106,7 +106,7 @@ export default [
     summary: 'Моцарела, фірмовий соус, базилік'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'САЛЯМІ',
     id: 'b-p-5',
     price: 70,
@@ -116,7 +116,7 @@ export default [
     summary: 'Моцарела, салямі, помідори, фірмовий соус'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'ЧОТИРИ СЕЗОНИ',
     id: 'b-p-6',
     price: 70,
@@ -126,7 +126,7 @@ export default [
     summary: 'Моцарела, шинка, салямі, печериці, помідори, фірмовий соус'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'QUATTRO FORMAGGI',
     id: 'b-p-7',
     price: 70,
@@ -136,7 +136,7 @@ export default [
     summary: 'Моцарела, королівський, горгондзола, пармезан, фірмовий соус'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'Al Tonno',
     id: 'b-p-8',
     price: 70,
@@ -146,7 +146,7 @@ export default [
     summary: 'Моцарела, тунець, цибуля, фірмовий соус, помідори'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'Цезаріо',
     id: 'b-p-9',
     price: 70,
@@ -159,7 +159,7 @@ export default [
   // Barbaresco Burgers
 
   {
-    category: 'barbbaresco-burgers',
+    category: 'barbaresco-burgers',
     name: 'БУРГЕР З КУРКОЮ',
     id: 'b-b-1',
     price: 75,
@@ -169,7 +169,7 @@ export default [
     summary: 'Булка, куряча котлета, помідор, мікс-салат, соус барбекю, соус рокфор'
   },
   {
-    category: 'barbbaresco-burgers',
+    category: 'barbaresco-burgers',
     name: 'БУРГЕР З БУЖЕНИНОЮ',
     id: 'b-b-2',
     price: 75,
@@ -179,7 +179,7 @@ export default [
     summary: 'Оригінальне поєднання: булка, печена свина шия, ананас гриль, карамелізована цибуля, мікс-салат, соус барбекю'
   },
   {
-    category: 'barbbaresco-burgers',
+    category: 'barbaresco-burgers',
     name: 'НЬЮ-ЙОРК БУРГЕР З ТЕЛЯТИНОЮ',
     id: 'b-b-3',
     price: 75,
@@ -189,7 +189,7 @@ export default [
     summary: 'Справжній Нью-Йоркський бургер: булка, теляча котлета, огірок консервований, помідор, бекон, мікс-салат, соус барбекю'
   },
   {
-    category: 'barbbaresco-burgers',
+    category: 'barbaresco-burgers',
     name: 'ЧІЗБУРГЕР З СВИНИНОЮ',
     id: 'b-b-4',
     price: 75,
@@ -199,7 +199,7 @@ export default [
     summary: 'Булка, свинна котлета, огірок, сир чедер, помідор, мікс-салат, карамелізована цибуля, соус барбекю'
   },
   {
-    category: 'barbbaresco-burgers',
+    category: 'barbaresco-burgers',
     name: 'ЧІЗБУРГЕР З ТЕЛЯТИНОЮ',
     id: 'b-b-5',
     price: 75,
@@ -209,7 +209,7 @@ export default [
     summary: 'Булка, теляча котлета, огірок, сир чедер, помідор, мікс-салат, соус барбекю'
   },
   {
-    category: 'barbbaresco-burgers',
+    category: 'barbaresco-burgers',
     name: 'CHICKEN DRON',
     id: 'b-b-6',
     price: 75,
@@ -222,7 +222,7 @@ export default [
   // Barbaresco Pan Cakes
 
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'З ШИНКОЮ І СИРОМ',
     id: 'b-pc-1',
     price: 50,
@@ -232,7 +232,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'З ШПИНАТОМ І СИРОМ',
     id: 'b-pc-2',
     price: 50,
@@ -242,7 +242,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'ПОМІДОРАМИ ТА МОЦАРЕЛОЮ',
     id: 'b-pc-3',
     price: 50,
@@ -252,7 +252,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'З ШОКОЛАДНО-ГОРІХОВОЮ',
     id: 'b-pc-4',
     price: 50,
@@ -262,7 +262,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'ПАСТОЮ ТА МАРШМЕЛЛОУ',
     id: 'b-pc-5',
     price: 50,
@@ -272,7 +272,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'З ЯБЛУКАМИ',
     id: 'b-pc-6',
     price: 50,
@@ -282,7 +282,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'ТА ВАНІЛЬНИМ СОУСОМ',
     id: 'b-pc-7',
     price: 50,
@@ -292,7 +292,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'ГРИЛЬ САЛАТ З ТЕЛЯТИНОЮ',
     id: 'b-pc-8',
     price: 65,
@@ -302,7 +302,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'СЕЗОННО-ЯГІДНІ',
     id: 'b-pc-9',
     price: 50,
@@ -312,7 +312,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-pancakes',
+    category: 'barbaresco-pancakes',
     name: 'З ТИХООКЕАНСЬКИМ ЛОСОСЕМ ТА ЛИСТЯМ ШПИНАТУ',
     id: 'b-pc-10',
     price: 65,
@@ -325,7 +325,7 @@ export default [
   // Barbaresco Deserts
 
   {
-    category: 'barbbaresco-deserts',
+    category: 'barbaresco-deserts',
     name: 'НАПОЛЕОН',
     id: 'b-d-1',
     price: 45,
@@ -335,7 +335,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-deserts',
+    category: 'barbaresco-deserts',
     name: 'ЧІЗКЕЙК',
     id: 'b-d-2',
     price: 50,
@@ -345,7 +345,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-deserts',
+    category: 'barbaresco-deserts',
     name: 'МОРОЗИВО З СОУСОМ НА ВИБІР',
     id: 'b-d-3',
     price: 40,
@@ -355,7 +355,7 @@ export default [
     summary: 'Вишнево-м’ятний, Персиковий, Карамель'
   },
   {
-    category: 'barbbaresco-deserts',
+    category: 'barbaresco-deserts',
     name: 'ТОФФІ ПУДИНГ',
     id: 'b-d-4',
     price: 40,
@@ -365,7 +365,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-deserts',
+    category: 'barbaresco-deserts',
     name: 'Трюфельний торт',
     id: 'b-d-5',
     price: 45,
@@ -378,7 +378,7 @@ export default [
   // Barbaresco First Courses
 
   {
-    category: 'barbbaresco-firstCourses',
+    category: 'barbaresco-firstCourses',
     name: 'КУРЯЧИЙ БУЛЬЙОН',
     id: 'b-fc-1',
     price: 33,
@@ -388,7 +388,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-firstCourses',
+    category: 'barbaresco-firstCourses',
     name: 'ЛАГМАН',
     id: 'b-fc-2',
     price: 35,
@@ -398,7 +398,7 @@ export default [
     summary: 'Традиційна страва середньої Азії, подається з домашньою локшиною'
   },
   {
-    category: 'barbbaresco-firstCourses',
+    category: 'barbaresco-firstCourses',
     name: 'СУП-ПЮРЕ З ПЕЧЕРИЦЬ',
     id: 'b-fc-3',
     price: 35,
@@ -408,7 +408,7 @@ export default [
     summary: 'Печериці, вершки'
   },
   {
-    category: 'barbbaresco-firstCourses',
+    category: 'barbaresco-firstCourses',
     name: 'КРЕМ-СУП ЧАУДЕР',
     id: 'b-fc-4',
     price: 50,
@@ -421,7 +421,7 @@ export default [
   // Barbaresco Main Meals
 
   {
-    category: 'barbbaresco-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'КУРКА СТІР ФРАЙ',
     id: 'b-mm-1',
     price: 65,
@@ -431,7 +431,7 @@ export default [
     summary: 'Філе курки, цукіні, морква, перець болгарський, броколі, кунжут, зелена цибуля, соус териякі'
   },
   {
-    category: 'barbbaresco-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'ПЕЧЕНА БУЖЕНИНА З РОКФОРНИМ ПЮРЕ',
     id: 'b-mm-2',
     price: 100,
@@ -441,7 +441,7 @@ export default [
     summary: 'Печена свинна шия подається з картопляно-рокфорним пюре'
   },
   {
-    category: 'barbbaresco-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'Лосось теріякі',
     id: 'b-mm-3',
     price: 120,
@@ -451,7 +451,7 @@ export default [
     summary: 'Філе лосося, квасоля спаржева, морква, перець болгарський, кабачок, печериці, соус теріякі'
   },
   {
-    category: 'barbbaresco-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'телятина ПІД СОУСОМ ДЕМІГЛАС',
     id: 'b-mm-4',
     price: 100,
@@ -461,7 +461,7 @@ export default [
     summary: 'Подається з рисом із овочами-гриль'
   },
   {
-    category: 'barbbaresco-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'ХРУСТКА КУРКА З ПЕЧЕНОЮ КАРТОПЛЕЮ',
     id: 'b-mm-5',
     price: 65,
@@ -474,7 +474,7 @@ export default [
   // Barbaresco Coffee
 
   {
-    category: 'barbbaresco-coffee',
+    category: 'barbaresco-coffee',
     name: 'ЕСПРЕССО',
     id: 'b-c-1',
     price: 20,
@@ -484,7 +484,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-coffee',
+    category: 'barbaresco-coffee',
     name: 'АМЕРИКАНО',
     id: 'b-c-2',
     price: 20,
@@ -494,7 +494,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-coffee',
+    category: 'barbaresco-coffee',
     name: 'КАПУЧІНО',
     id: 'b-c-3',
     price: 35,
@@ -504,7 +504,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-coffee',
+    category: 'barbaresco-coffee',
     name: 'ФЛЕТ ВАЙТ',
     id: 'b-c-4',
     price: 35,
@@ -514,7 +514,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-coffee',
+    category: 'barbaresco-coffee',
     name: 'ЛАТЕ',
     id: 'b-c-5',
     price: 30,
@@ -524,7 +524,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-coffee',
+    category: 'barbaresco-coffee',
     name: 'ФРАПЕ',
     id: 'b-c-6',
     price: 35,
@@ -534,7 +534,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-coffee',
+    category: 'barbaresco-coffee',
     name: 'МОЛОКО',
     id: 'b-c-7',
     price: 5,
@@ -546,7 +546,7 @@ export default [
 
   // Barbaresco Tea
   {
-    category: 'barbbaresco-tea',
+    category: 'barbaresco-tea',
     name: 'ЧОРНИЙ',
     id: 'b-tea-1',
     price: 30,
@@ -556,7 +556,7 @@ export default [
     summary: 'асам середньо листовий пряний з медовими нотками'
   },
   {
-    category: 'barbbaresco-tea',
+    category: 'barbaresco-tea',
     name: 'ЗЕЛЕНИЙ',
     id: 'b-tea-2',
     price: 30,
@@ -566,7 +566,7 @@ export default [
     summary: 'класичний китайський чай'
   },
   {
-    category: 'barbbaresco-tea',
+    category: 'barbaresco-tea',
     name: 'ФРУКТОВИЙ',
     id: 'b-tea-3',
     price: 30,
@@ -576,7 +576,7 @@ export default [
     summary: 'суміш з шматочків папаї, манго, ананаса та квітів гібіскуса'
   },
   {
-    category: 'barbbaresco-tea',
+    category: 'barbaresco-tea',
     name: "ТРАВ'ЯНИЙ",
     id: 'b-tea-4',
     price: 30,
@@ -589,7 +589,7 @@ export default [
   // Barbaresco Hot Drinks
 
   {
-    category: 'barbbaresco-hotDrinks',
+    category: 'barbaresco-hotDrinks',
     name: 'ОБЛІПИХОВИЙ чай З МАРАКУЄЮ',
     id: 'b-hd-1',
     price: 30,
@@ -599,7 +599,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-hotDrinks',
+    category: 'barbaresco-hotDrinks',
     name: 'ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ',
     id: 'b-hd-2',
     price: 30,
@@ -612,7 +612,7 @@ export default [
   // Barbaresco Fresh
 
   {
-    category: 'barbbaresco-fresh',
+    category: 'barbaresco-fresh',
     name: 'АПЕЛЬСИНОВИЙ',
     id: 'b-fre-1',
     price: 60,
@@ -622,7 +622,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-fresh',
+    category: 'barbaresco-fresh',
     name: 'ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ',
     id: 'b-fre-2',
     price: 60,
@@ -635,7 +635,7 @@ export default [
   // Barbaresco Lemonade
 
   {
-    category: 'barbbaresco-lemonade',
+    category: 'barbaresco-lemonade',
     name: 'ЯБЛУКО-БАЗИЛІК',
     id: 'b-lem-1',
     price: 35,
@@ -645,7 +645,7 @@ export default [
     summary: 'сік яблука та сироп, базилік, імбир, лимонний фреш, содова'
   },
   {
-    category: 'barbbaresco-lemonade',
+    category: 'barbaresco-lemonade',
     name: 'АНАНАСОВО-ІМБИРНИЙ',
     id: 'b-lem-2',
     price: 35,
@@ -655,7 +655,7 @@ export default [
     summary: 'ананасовий сік, імбирний сироп, лимонний фреш і содова'
   },
   {
-    category: 'barbbaresco-lemonade',
+    category: 'barbaresco-lemonade',
     name: 'З ТЕМНИМ КВАСОМ',
     id: 'b-lem-3',
     price: 35,
@@ -665,7 +665,7 @@ export default [
     summary: 'темний квас, сироп кориця-карамель, лимонний фреш'
   },
   {
-    category: 'barbbaresco-lemonade',
+    category: 'barbaresco-lemonade',
     name: 'ГРЕЙПФРУТ ',
     id: 'b-lem-4',
     price: 35,
@@ -675,7 +675,7 @@ export default [
     summary: 'грейпфрутовий сік та сироп, лимонний фреш, содова'
   },
   {
-    category: 'barbbaresco-lemonade',
+    category: 'barbaresco-lemonade',
     name: 'ЗЕЛЕНИЙ БАНАН-КІВІ',
     id: 'b-lem-5',
     price: 35,
@@ -688,7 +688,7 @@ export default [
   // Barbaresco Smoothy
 
   {
-    category: 'barbbaresco-smoothy',
+    category: 'barbaresco-smoothy',
     name: 'ДИНЯ-МАРАКУЙЯ',
     id: 'b-smo-1',
     price: 40,
@@ -698,7 +698,7 @@ export default [
     summary: 'пюре дині, маракуйї та персика'
   },
   {
-    category: 'barbbaresco-smoothy',
+    category: 'barbaresco-smoothy',
     name: 'ШПИНАТНИЙ',
     id: 'b-smo-2',
     price: 40,
@@ -711,7 +711,7 @@ export default [
   // Barbaresco Milk Shake
 
   {
-    category: 'barbbaresco-milkshake',
+    category: 'barbaresco-milkshake',
     name: 'БАНАНОВИЙ',
     id: 'b-ms-1',
     price: 40,
@@ -721,7 +721,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-milkshake',
+    category: 'barbaresco-milkshake',
     name: 'ШОКОЛАДНИЙ',
     id: 'b-ms-2',
     price: 40,
@@ -731,7 +731,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-milkshake',
+    category: 'barbaresco-milkshake',
     name: 'ЧОРНИЧНИЙ',
     id: 'b-ms-3',
     price: 40,
@@ -744,7 +744,7 @@ export default [
   // Barbaresco None Alcoholic Drinks
 
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+    category: 'barbaresco-nonAlcoholicDrinks',
     name: 'МОРС З ЖУРАВЛИНИ',
     id: 'b-nad-1',
     price: 16,
@@ -754,7 +754,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+    category: 'barbaresco-nonAlcoholicDrinks',
     name: 'СІК В АСОРТИМЕНТІ',
     id: 'b-nad-2',
     price: 18,
@@ -764,7 +764,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+    category: 'barbaresco-nonAlcoholicDrinks',
     name: 'ПЕПСІ',
     id: 'b-nad-3',
     price: 15,
@@ -774,7 +774,7 @@ export default [
     summary: 'розлив'
   },
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+    category: 'barbaresco-nonAlcoholicDrinks',
     name: '7UP',
     id: 'b-nad-3-1',
     price: 15,
@@ -784,7 +784,7 @@ export default [
     summary: 'розлив'
   },
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+    category: 'barbaresco-nonAlcoholicDrinks',
     name: 'МІРІНДА',
     id: 'b-nad-3-2',
     price: 15,
@@ -794,7 +794,7 @@ export default [
     summary: 'розлив'
   },
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+    category: 'barbaresco-nonAlcoholicDrinks',
     name: 'ТОНІК',
     id: 'b-nad-4',
     price: 25,
@@ -804,7 +804,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+    category: 'barbaresco-nonAlcoholicDrinks',
     name: 'БОРЖОМІ',
     id: 'b-nad-5',
     price: 40,
@@ -814,7 +814,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+    category: 'barbaresco-nonAlcoholicDrinks',
     name: 'ДЕВАЙТІС',
     id: 'b-nad-6',
     price: 27,
@@ -827,7 +827,7 @@ export default [
   // Barbaresco Maki Rolls
 
   {
-    category: 'barbbaresco-makiRoll',
+    category: 'barbaresco-makiRoll',
     name: 'СЯКЕ МАКІ',
     id: 'b-mr-1',
     price: 55,
@@ -837,7 +837,7 @@ export default [
     summary: 'філе лосося, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-makiRoll',
+    category: 'barbaresco-makiRoll',
     name: 'СЯКЕ-КУНСЕЙ МАКІ',
     id: 'b-mr-2',
     price: 60,
@@ -847,7 +847,7 @@ export default [
     summary: 'лосось копчений, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-makiRoll',
+    category: 'barbaresco-makiRoll',
     name: 'ЧУКА МАКІ',
     id: 'b-mr-3',
     price: 40,
@@ -860,7 +860,7 @@ export default [
   // Barbaresco Futo Maki Rolls
 
   {
-    category: 'barbbaresco-futoMakiRoll',
+    category: 'barbaresco-futoMakiRoll',
     name: 'СЯКЕ ФУТОМАКІ',
     id: 'b-pmr-1',
     price: 70,
@@ -870,7 +870,7 @@ export default [
     summary: 'філе лосося, сир філадельфія, зелена цибуля, японський омлет, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-futoMakiRoll',
+    category: 'barbaresco-futoMakiRoll',
     name: 'ОВОЧЕВИЙ ФУТОМАКІ',
     id: 'b-pmr-2',
     price: 50,
@@ -880,7 +880,7 @@ export default [
     summary: 'сир фета, помідор, перець болгарський, огірок, кунжут, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-futoMakiRoll',
+    category: 'barbaresco-futoMakiRoll',
     name: 'МУРУКАЇ ФУТОМАКІ',
     id: 'b-pmr-3',
     price: 60,
@@ -893,7 +893,7 @@ export default [
   // Barbaresco Original Rolls
 
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'ХАКО СУШІ З ЛОСОСЕМ',
     id: 'b-or-1',
     price: 80,
@@ -903,7 +903,7 @@ export default [
     summary: 'філе лосося, яблуко, рис, сир філадельфія, водорості норі, соєвий папір, васабі, імбир'
   },
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'РОЛ АКАУРО',
     id: 'b-or-2',
     price: 80,
@@ -913,7 +913,7 @@ export default [
     summary: 'морський окунь, чука, ікра тобіко, чорний кунжут, сир тостерний, рис, сир філадельфія, водорості норі, васабі, імбир'
   },
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'СИРНИЙ',
     id: 'b-or-3',
     price: 60,
@@ -923,7 +923,7 @@ export default [
     summary: 'сир філадельфія, сир тостерний, сир пармезан, кунжут, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'ФІРМОВИЙ',
     id: 'b-or-4',
     price: 80,
@@ -933,7 +933,7 @@ export default [
     summary: 'окунь-унагі, філе лосося, майонез японський, огірок, ікра тобіко, водорості норі, рис, васабі, соус унагі, кунжут, імбир'
   },
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'З ОКУНЕМ-УНАГІ В КУНЖУТІ',
     id: 'b-or-5',
     price: 70,
@@ -943,7 +943,7 @@ export default [
     summary: 'окунь-унагі, авокадо, огірок, сир філадельфія, кунжут, соус унагі, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'ЛОСОСЬ ФЛАМБЕ',
     id: 'b-or-6',
     price: 110,
@@ -953,7 +953,7 @@ export default [
     summary: 'філе лососся, сир філадельфія, салат чука, окунь темпура, соус Тонкатцу, молекулярна ікра, водорості норі, рис, імбир, васабі'
   },
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'ГРІН РОЛ З КРЕВЕТКОЮ ТЕМПУРА',
     id: 'b-or-7',
     price: 75,
@@ -963,7 +963,7 @@ export default [
     summary: 'креветка темпура, омлет томаго, сир філадельфія, японський майонез, ікра тобіко, шпинат свіжий, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'Урамакі',
     id: 'b-or-8',
     price: 135,
@@ -973,7 +973,7 @@ export default [
     summary: 'тунець, сир філадельфія. креветка темпура, ікра тобіко, авокадо, кунжут білий та чорний, соус Тонкатцу, горіховий соус, молекулярна ікра, водорості норі, рис, імбир, васабі'
   },
   {
-    category: 'barbbaresco-originalRoll',
+    category: 'barbaresco-originalRoll',
     name: 'Рол Унагі',
     id: 'b-or-9',
     price: 135,
@@ -986,7 +986,7 @@ export default [
   // Barbaresco Carlifonia Rolls
 
   {
-    category: 'barbbaresco-californiaRoll',
+    category: 'barbaresco-californiaRoll',
     name: 'З ЛОСОСЕМ',
     id: 'b-cr-1',
     price: 90,
@@ -996,7 +996,7 @@ export default [
     summary: 'філе лосося, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-californiaRoll',
+    category: 'barbaresco-californiaRoll',
     name: 'З КОПЧЕНИМ ЛОСОСЕМ',
     id: 'b-cr-2',
     price: 90,
@@ -1006,7 +1006,7 @@ export default [
     summary: 'лосось копчений, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-californiaRoll',
+    category: 'barbaresco-californiaRoll',
     name: 'З ТУНЦЕМ',
     id: 'b-cr-3',
     price: 95,
@@ -1016,7 +1016,7 @@ export default [
     summary: 'тунець, авокадо, огірок, майонез японський, ікра тобіко, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-californiaRoll',
+    category: 'barbaresco-californiaRoll',
     name: 'УНАГІ',
     id: 'b-cr-4',
     price: 95,
@@ -1029,7 +1029,7 @@ export default [
   // Barbaresco Phili Rolls
 
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
+    category: 'barbaresco-PhiladelphiaRoll',
     name: 'З ЛОСОСЕМ',
     id: 'b-phir-1',
     price: 100,
@@ -1039,7 +1039,7 @@ export default [
     summary: 'філе лосося, сир філадельфія, зелена цибуля, огірок, водорості норі,рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
+    category: 'barbaresco-PhiladelphiaRoll',
     name: 'З КОПЧЕНИМ ЛОСОСЕМ',
     id: 'b-phir-2',
     price: 100,
@@ -1049,7 +1049,7 @@ export default [
     summary: 'лосось копчений, сир філадельфія, зелена цибуля, огірок, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
+    category: 'barbaresco-PhiladelphiaRoll',
     name: 'З ТУНЦЕМ',
     id: 'b-phir-3',
     price: 100,
@@ -1059,7 +1059,7 @@ export default [
     summary: 'тунець, сир філадельфія, авокадо, огірок, ікра тобіко, водорості норі, рис, васабі, імбир'
   },
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
+    category: 'barbaresco-PhiladelphiaRoll',
     name: 'УНАГІ',
     id: 'b-phir-4',
     price: 100,
@@ -1069,7 +1069,7 @@ export default [
     summary: 'вугор, окунь-унагі, сир філадельфія, авокадо, огірок, ікра тобіко, водорості норі, рис, васабі, соус унагі, кунжут, імбир'
   },
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
+    category: 'barbaresco-PhiladelphiaRoll',
     name: 'КРЕВЕТКА ФЛАМБЕ',
     id: 'b-phir-5',
     price: 95,
@@ -1082,7 +1082,7 @@ export default [
   // Barbaresco Dragon Rolls
 
   {
-    category: 'barbbaresco-drakoniRoll',
+    category: 'barbaresco-drakoniRoll',
     name: 'ЗЕЛЕНИЙ ДРАКОН',
     id: 'b-drr-1',
     price: 110,
@@ -1092,7 +1092,7 @@ export default [
     summary: 'філе лосося, авокадо, огірок, сир філадельфія, кунжут, соус унагі, ікра тобіко, молекулярна ікра, водорості норі, рис, імбир, васабі'
   },
   {
-    category: 'barbbaresco-drakoniRoll',
+    category: 'barbaresco-drakoniRoll',
     name: 'ЗОЛОТИЙ ДРАКОН',
     id: 'b-drr-2',
     price: 140,
@@ -1102,7 +1102,7 @@ export default [
     summary: 'вугор, окунь-унагі. огірок, майонез японський, ікра тобіко, соус унагі, кунжут, харчове золото, молекулярна ікра, водорості норі, рис, імбир, васабі'
   },
   {
-    category: 'barbbaresco-drakoniRoll',
+    category: 'barbaresco-drakoniRoll',
     name: 'ЧЕРВОНИЙ ДРАКОН',
     id: 'b-drr-3',
     price: 140,
@@ -1115,7 +1115,7 @@ export default [
   // Barbaresco Alcolholic Cocktails
 
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'BLOODY MARY (N.A) ',
     id: 'b-alcc-1',
     price: 40,
@@ -1125,7 +1125,7 @@ export default [
     summary: 'горілка, соуси тобаско та ворчестер, мікс спецій, лимонний фреш, цукровий сироп, томатний сік'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'BLOODY MARY (ALC) ',
     id: 'b-alcc-2',
     price: 70,
@@ -1135,7 +1135,7 @@ export default [
     summary: 'горілка, соуси тобаско та ворчестер, мікс спецій, лимонний фреш, цукровий сироп, томатний сік'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'LONG ISLAND ICE TEA',
     id: 'b-alcc-3',
     price: 70,
@@ -1145,7 +1145,7 @@ export default [
     summary: 'горілка, джин, текіла, ром, апельсиновий лікер, лимонний фреш, пепсі'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'APEROL SPRITZ',
     id: 'b-alcc-4',
     price: 65,
@@ -1155,7 +1155,7 @@ export default [
     summary: 'апероль, ігристе вино, содова, апельсин, оливки'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'APEROL berry',
     id: 'b-alcc-5',
     price: 70,
@@ -1165,7 +1165,7 @@ export default [
     summary: 'апероль, пюре Monin смородини і чорниці, ігристе вино, содова'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'green aplle MOJITO',
     id: 'b-alcc-6',
     price: 60,
@@ -1175,7 +1175,7 @@ export default [
     summary: 'м’ята, лайм, пюре зелене яблуко Monin, содова, тростинний цукор'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'aplle grape sangria',
     id: 'b-alcc-7',
     price: 60,
@@ -1185,7 +1185,7 @@ export default [
     summary: 'біле сухе вино, винограндний сік, пюре зелене яблуко Monin, розмарин'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'grapefruit whiskey sour',
     id: 'b-alcc-8',
     price: 80,
@@ -1195,7 +1195,7 @@ export default [
     summary: 'віскі, лимонний фреш, грейпфрутовий лікер, білок'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'MAI TAI',
     id: 'b-alcc-9',
     price: 70,
@@ -1205,7 +1205,7 @@ export default [
     summary: 'пряний ром, апельсиновий лікер, мигдальний сироп, лимонний фреш, пюре маракуйя, апельсиновий сік'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'PASSION FRUIT COLADA',
     id: 'b-alcc-10',
     price: 70,
@@ -1215,7 +1215,7 @@ export default [
     summary: 'пряний ром, ананасовий сік, кокосове молоко, пюре маракуя'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'MOJITO (N.A)',
     id: 'b-alcc-11',
     price: 35,
@@ -1225,7 +1225,7 @@ export default [
     summary: 'темний та золотий ром, м’ята, лайм, содова, тростинний цукор'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'MOJITO (ALC)',
     id: 'b-alcc-12',
     price: 70,
@@ -1235,7 +1235,7 @@ export default [
     summary: 'темний та золотий ром, м’ята, лайм, содова, тростинний цукор'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'Blueberry Gin Tonic',
     id: 'b-alcc-13',
     price: 65,
@@ -1245,7 +1245,7 @@ export default [
     summary: 'джин, тонік, лимонний фреш, сиропи чорниця та бузина, ягоди'
   },
   {
-    category: 'barbbaresco-alcoholicCocktail',
+    category: 'barbaresco-alcoholicCocktail',
     name: 'TIKI TIKI',
     id: 'b-alcc-14',
     price: 70,
@@ -1258,7 +1258,7 @@ export default [
   // Barbaresco Alcoholic Set
 
   {
-    category: 'barbbaresco-alcoholicSet',
+    category: 'barbaresco-alcoholicSet',
     name: 'ІМБИРНИЙ',
     id: 'b-als-1',
     price: 60,
@@ -1268,7 +1268,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicSet',
+    category: 'barbaresco-alcoholicSet',
     name: 'МАЛИНОВИЙ',
     id: 'b-als-2',
     price: 60,
@@ -1278,7 +1278,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicSet',
+    category: 'barbaresco-alcoholicSet',
     name: 'МАНГО',
     id: 'b-als-3',
     price: 60,
@@ -1288,7 +1288,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicSet',
+    category: 'barbaresco-alcoholicSet',
     name: 'ЦИТРУСОВО-М’ЯТНИЙ',
     id: 'b-als-4',
     price: 60,
@@ -1301,7 +1301,7 @@ export default [
   // Barbaresco Wine
 
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Cavaleria Bianco',
     id: 'b-wine-1',
     price: 28,
@@ -1311,7 +1311,7 @@ export default [
     summary: 'біле сухе'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Cavaleria Bianco',
     id: 'b-wine-1-1',
     price: 210,
@@ -1321,7 +1321,7 @@ export default [
     summary: 'біле сухе'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Cavaleria Bianco',
     id: 'b-wine-2',
     price: 28,
@@ -1332,7 +1332,7 @@ export default [
   },
 
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Cavaleria Bianco',
     id: 'b-wine-2-1',
     price: 210,
@@ -1342,7 +1342,7 @@ export default [
     summary: 'н/сол біле'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Cavaleria Rosso',
     id: 'b-wine-3',
     price: 28,
@@ -1352,7 +1352,7 @@ export default [
     summary: 'сухе червОНЕ'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Cavaleria Rosso',
     id: 'b-wine-3-1',
     price: 210,
@@ -1362,7 +1362,7 @@ export default [
     summary: 'сухе червОНЕ'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Cavaleria Rosso',
     id: 'b-wine-4',
     price: 28,
@@ -1372,7 +1372,7 @@ export default [
     summary: 'н/с червОНЕ'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Cavaleria Rosso',
     id: 'b-wine-4-1',
     price: 210,
@@ -1382,7 +1382,7 @@ export default [
     summary: 'н/с червОНЕ'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Casa Verde Merlot',
     id: 'b-wine-5',
     price: 44,
@@ -1392,7 +1392,7 @@ export default [
     summary: 'червоне сухе/біле сухе'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Casa Verde Merlot',
     id: 'b-wine-5-1',
     price: 330,
@@ -1402,7 +1402,7 @@ export default [
     summary: 'червоне сухе/біле сухе'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Casa Verde Merlot',
     id: 'b-wine-6',
     price: 24,
@@ -1412,7 +1412,7 @@ export default [
     summary: 'СЛИВОВЕ СОЛ/РОЖ/БІЛ'
   },
   {
-    category: 'barbbaresco-wine',
+    category: 'barbaresco-wine',
     name: 'Casa Verde Merlot',
     id: 'b-wine-6-1',
     price: 90,
@@ -1425,7 +1425,7 @@ export default [
   // Barbaresco Sparkling Wine
 
   {
-    category: 'barbbaresco-sparklingWine',
+    category: 'barbaresco-sparklingWine',
     name: 'МАРТІНІ АСТІ',
     id: 'b-swine-1',
     price: 400,
@@ -1435,7 +1435,7 @@ export default [
     summary: 'СОЛОДКЕ'
   },
   {
-    category: 'barbbaresco-sparklingWine',
+    category: 'barbaresco-sparklingWine',
     name: 'ЗЕБО',
     id: 'b-swine-2',
     price: 350,
@@ -1445,7 +1445,7 @@ export default [
     summary: 'СОЛОДКЕ'
   },
   {
-    category: 'barbbaresco-sparklingWine',
+    category: 'barbaresco-sparklingWine',
     name: 'коктебель',
     id: 'b-swine-3',
     price: 130,
@@ -1458,7 +1458,7 @@ export default [
   // Barbaresco Alcolholic Drinks
 
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'CINZANO',
     id: 'b-aldr-1',
     price: 20,
@@ -1468,7 +1468,7 @@ export default [
     summary: 'БІЛИЙ, ЧЕРВОНИЙ'
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'BECHEROVKA',
     id: 'b-aldr-2',
     price: 35,
@@ -1478,7 +1478,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'JAGERMEISTER',
     id: 'b-aldr-3',
     price: 45,
@@ -1488,7 +1488,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'AZNAURI 5*',
     id: 'b-aldr-4',
     price: 35,
@@ -1498,7 +1498,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'REMY MARTIN VS',
     id: 'b-aldr-5',
     price: 110,
@@ -1508,7 +1508,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'ЗУБРІВКА',
     id: 'b-aldr-6',
     price: 25,
@@ -1518,7 +1518,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'ФІНЛЯНДІЯ',
     id: 'b-aldr-7',
     price: 40,
@@ -1528,7 +1528,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'Козацька рада',
     id: 'b-aldr-8',
     price: 20,
@@ -1538,7 +1538,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'ESPOLON',
     id: 'b-aldr-9',
     price: 50,
@@ -1548,7 +1548,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'CAPTAIN MORGAN',
     id: 'b-aldr-10',
     price: 50,
@@ -1558,7 +1558,7 @@ export default [
     summary: 'ЗОЛОТИЙ, ТЕМНИЙ'
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'WILD TURKEY',
     id: 'b-aldr-11',
     price: 70,
@@ -1568,7 +1568,7 @@ export default [
     summary: 'RYE, 101, 81'
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'ДЖЕМЕСОН',
     id: 'b-aldr-12',
     price: 70,
@@ -1578,7 +1578,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-alcoholicDrinks',
+    category: 'barbaresco-alcoholicDrinks',
     name: 'ДЖЕК ДЕНІЕЛС ОЛД №7',
     id: 'b-aldr-13',
     price: 70,
@@ -1591,7 +1591,7 @@ export default [
   // Barbaresco Bear
 
   {
-    category: 'barbbaresco-bear',
+    category: 'barbaresco-bear',
     name: 'ЧЕРНІГІВСЬКЕ СВІТЛЕ',
     id: 'b-bear-1',
     price: 30,
@@ -1601,7 +1601,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-bear',
+    category: 'barbaresco-bear',
     name: 'БАД Б/А',
     id: 'b-bear-2',
     price: 35,
@@ -1611,7 +1611,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-bear',
+    category: 'barbaresco-bear',
     name: 'ХУГАРДЕН',
     id: 'b-bear-3',
     price: 45,
@@ -1621,7 +1621,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-bear',
+    category: 'barbaresco-bear',
     name: 'ХУГАРДЕН',
     id: 'b-bear-3-1',
     price: 70,
@@ -1631,7 +1631,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-bear',
+    category: 'barbaresco-bear',
     name: 'БІЛА НІЧ',
     id: 'b-bear-4',
     price: 23,
@@ -1641,7 +1641,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-bear',
+    category: 'barbaresco-bear',
     name: 'БІЛА НІЧ',
     id: 'b-bear-4-1',
     price: '35',
@@ -1651,7 +1651,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-bear',
+    category: 'barbaresco-bear',
     name: 'ХМЕЛЕВУС',
     id: 'b-bear-5',
     price: 26,
@@ -1661,7 +1661,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-bear',
+    category: 'barbaresco-bear',
     name: 'ХМЕЛЕВУС',
     id: 'b-bear-5-1',
     price: 40,
@@ -1674,7 +1674,7 @@ export default [
   // Barbaresco Appetizer
 
   {
-    category: 'barbbaresco-appetizers',
+    category: 'barbaresco-appetizers',
     name: 'ТАРІЛКА «ПІД ВИНО»',
     id: 'b-app-1',
     price: 120,
@@ -1684,7 +1684,7 @@ export default [
     summary: 'Багет, італійська сиров’ялена ковбаса, сир Брі, сир Дор Блю, сир Едем, маслини, палички BBQ з рокфорним соусом та медом'
   },
   {
-    category: 'barbbaresco-appetizers',
+    category: 'barbaresco-appetizers',
     name: 'ПИВНИЙ СЕТ',
     id: 'b-app-2',
     price: 80,
@@ -1694,7 +1694,7 @@ export default [
     summary: 'курка янтарна, бастурма, чіпси картопляні, сир фрі, пікантні ковбаски, соус тар-тар'
   },
   {
-    category: 'barbbaresco-appetizers',
+    category: 'barbaresco-appetizers',
     name: 'КУРЯЧІ КРИЛА BBQ',
     id: 'b-app-3',
     price: 60,
@@ -1707,7 +1707,7 @@ export default [
   // Barbaresco Garnishes
 
   {
-    category: 'barbbaresco-garnishes',
+    category: 'barbaresco-garnishes',
     name: 'ОВОЧІ-ГРИЛЬ',
     id: 'b-gar-1',
     price: 55,
@@ -1717,7 +1717,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-garnishes',
+    category: 'barbaresco-garnishes',
     name: 'РИС З ОВОЧАМИ-ГРИЛЬ',
     id: 'b-gar-2',
     price: 30,
@@ -1727,7 +1727,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-garnishes',
+    category: 'barbaresco-garnishes',
     name: 'КАРТОПЛЯ ПО-СЕЛЯНСЬКИ',
     id: 'b-gar-3',
     price: 30,
@@ -1737,7 +1737,7 @@ export default [
     summary: 'З розмарином і беконом'
   },
   {
-    category: 'barbbaresco-garnishes',
+    category: 'barbaresco-garnishes',
     name: 'КАРТОПЛЯ ФРІ',
     id: 'b-gar-4',
     price: 35,
@@ -1747,7 +1747,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-garnishes',
+    category: 'barbaresco-garnishes',
     name: 'КАРТОПЛЯНЕ ПЮРЕ',
     id: 'b-gar-5',
     price: 20,
@@ -1757,7 +1757,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-garnishes',
+    category: 'barbaresco-garnishes',
     name: 'ХЛІБ БІЛИЙ',
     id: 'b-gar-6-1',
     price: 3,
@@ -1767,7 +1767,7 @@ export default [
     summary: ''
   },
   {
-    category: 'barbbaresco-garnishes',
+    category: 'barbaresco-garnishes',
     name: 'ХЛІБ СІРИЙ',
     id: 'b-gar-6-2',
     price: 3,
@@ -2873,7 +2873,7 @@ export default [
   },
   {
     category: 'pasta-fresca-tea',
-    name: 'обліпихово-грушевий	',
+    name: 'обліпихово-грушевий',
     id: 'pf-tea-3',
     price: 30,
     quantity: Infinity,

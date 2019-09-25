@@ -67,7 +67,7 @@ export default {
 
   computed: {
     extractedProductsBurgers () {
-      return productData.filter(el => el.category === 'barbbaresco-burgers')
+      return productData.filter(el => el.category === 'barbaresco-burgers')
     }
   },
 

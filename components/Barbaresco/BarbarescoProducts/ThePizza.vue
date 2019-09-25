@@ -164,9 +164,7 @@
 </template>
 
 <script>
-import productData from '~/plugins/api/products.js'
-import productDataEn from '~/plugins/api/productsEn.js'
-import productDataRu from '~/plugins/api/productsRu.js'
+import { productData, productDataEn, productDataRu } from '~/plugins/api/index'
 
 export default {
   name: 'ThePizza',
@@ -177,13 +175,13 @@ export default {
   },
   computed: {
     extractedProductsPizza () {
-      return productData.filter(el => el.category === 'barbbaresco-pizzas')
+      return productData.filter(el => el.category === 'barbaresco-pizzas')
     },
     extractedProductsPizzaEn () {
-      return productDataEn.filter(el => el.category === 'barbbaresco-pizzas')
+      return productDataEn.filter(el => el.category === 'barbaresco-pizzas')
     },
     extractedProductsPizzaRu () {
-      return productDataRu.filter(el => el.category === 'barbbaresco-pizzas')
+      return productDataRu.filter(el => el.category === 'barbaresco-pizzas')
     }
   },
   methods: {

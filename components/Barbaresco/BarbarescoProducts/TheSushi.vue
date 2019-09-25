@@ -502,22 +502,22 @@ export default {
 
   computed: {
     extractedProductsMakiRolls () {
-      return productData.filter(el => el.category === 'barbbaresco-makiRoll')
+      return productData.filter(el => el.category === 'barbaresco-makiRoll')
     },
     extractedProductsPhotoMakiRolls () {
-      return productData.filter(el => el.category === 'barbbaresco-futoMakiRoll')
+      return productData.filter(el => el.category === 'barbaresco-futoMakiRoll')
     },
     extractedProductsOriginalRoll () {
-      return productData.filter(el => el.category === 'barbbaresco-originalRoll')
+      return productData.filter(el => el.category === 'barbaresco-originalRoll')
     },
     extractedProductsCaliforniaRoll () {
-      return productData.filter(el => el.category === 'barbbaresco-californiaRoll')
+      return productData.filter(el => el.category === 'barbaresco-californiaRoll')
     },
     extractedProductsPhiladelphiaRoll () {
-      return productData.filter(el => el.category === 'barbbaresco-PhiladelphiaRoll')
+      return productData.filter(el => el.category === 'barbaresco-PhiladelphiaRoll')
     },
     extractedProductsDrakoniRoll () {
-      return productData.filter(el => el.category === 'barbbaresco-drakoniRoll')
+      return productData.filter(el => el.category === 'barbaresco-drakoniRoll')
     }
   },
 

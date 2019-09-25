@@ -590,25 +590,25 @@ export default {
 
   computed: {
     extractedProductsCoffee () {
-      return productData.filter(el => el.category === 'barbbaresco-coffee')
+      return productData.filter(el => el.category === 'barbaresco-coffee')
     },
     extractedProductsTea () {
-      return productData.filter(el => el.category === 'barbbaresco-tea')
+      return productData.filter(el => el.category === 'barbaresco-tea')
     },
     extractedProductsFresh () {
-      return productData.filter(el => el.category === 'barbbaresco-fresh')
+      return productData.filter(el => el.category === 'barbaresco-fresh')
     },
     extractedProductsLemonade () {
-      return productData.filter(el => el.category === 'barbbaresco-lemonade')
+      return productData.filter(el => el.category === 'barbaresco-lemonade')
     },
     extractedProductsSmoothy () {
-      return productData.filter(el => el.category === 'barbbaresco-smoothy')
+      return productData.filter(el => el.category === 'barbaresco-smoothy')
     },
     extractedProductsMilkshake () {
-      return productData.filter(el => el.category === 'barbbaresco-milkshake')
+      return productData.filter(el => el.category === 'barbaresco-milkshake')
     },
     extractedProductsNonAlcoholicDrinks () {
-      return productData.filter(el => el.category === 'barbbaresco-nonAlcoholicDrinks')
+      return productData.filter(el => el.category === 'barbaresco-nonAlcoholicDrinks')
     }
   },
 

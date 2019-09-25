@@ -502,22 +502,22 @@ export default {
 
   computed: {
     extractedProductsAlcoholicCocktail () {
-      return productData.filter(el => el.category === 'barbbaresco-alcoholicCocktail')
+      return productData.filter(el => el.category === 'barbaresco-alcoholicCocktail')
     },
     extractedProductsAlcoholicSet () {
-      return productData.filter(el => el.category === 'barbbaresco-alcoholicSet')
+      return productData.filter(el => el.category === 'barbaresco-alcoholicSet')
     },
     extractedProductsWine () {
-      return productData.filter(el => el.category === 'barbbaresco-wine')
+      return productData.filter(el => el.category === 'barbaresco-wine')
     },
     extractedProductsSparklingWine () {
-      return productData.filter(el => el.category === 'barbbaresco-sparklingWine')
+      return productData.filter(el => el.category === 'barbaresco-sparklingWine')
     },
     extractedProductsAlcoholicDrinks () {
-      return productData.filter(el => el.category === 'barbbaresco-alcoholicDrinks')
+      return productData.filter(el => el.category === 'barbaresco-alcoholicDrinks')
     },
     extractedProductsBear () {
-      return productData.filter(el => el.category === 'barbbaresco-bear')
+      return productData.filter(el => el.category === 'barbaresco-bear')
     }
   },
 

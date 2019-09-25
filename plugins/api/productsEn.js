@@ -3,7 +3,7 @@ export default [
 
   // Barbaresco Salads
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'Squid salad',
     id: 'b-sal-1',
     price: 60,
@@ -13,7 +13,7 @@ export default [
     summary: 'Mixed salad, marinated squid, cherry tomatoes, olives, cucumber, tobiko caviar, lemon, seasoned with signature sauce'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'Caesar with Chicken',
     id: 'b-sal-2',
     price: 60,
@@ -23,7 +23,7 @@ export default [
     summary: 'Chicken fillet, bacon, mix salad, quail egg, white bread chips caesar sauce'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'LIGHT LIFE',
     id: 'b-sal-3',
     price: 50,
@@ -33,7 +33,7 @@ export default [
     summary: 'Light vegetable salad of tomatoes, bell peppers, mix salad, cucumbers, feta cheese, olive oil'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'Grilled veal salad',
     id: 'b-sal-4',
     price: 65,
@@ -43,7 +43,7 @@ export default [
     summary: 'Grilled veal fillet in combination with roasted vegetables, seasoned with green sauce'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'Indian salad',
     id: 'b-sal-5',
     price: 80,
@@ -53,7 +53,7 @@ export default [
     summary: 'Turkey fillet, cherry tomatoes, mix salad, Philadelphia cheese, seasoned with savory hot and savory sauce'
   },
   {
-    category: 'barbbaresco-salads',
+    category: 'barbaresco-salads',
     name: 'CHICK BASILIK',
     id: 'b-sal-6',
     price: 65,
@@ -66,7 +66,7 @@ export default [
   // Barbaresco Pizzas
 
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'Hawaiian',
     id: 'b-p-1',
     price: 70,
@@ -76,7 +76,7 @@ export default [
     summary: 'Mozzarella, smoked chicken, pineapple, olives, signature sauce'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'HHHHOT',
     id: 'b-p-2',
     price: 70,
@@ -86,7 +86,7 @@ export default [
     summary: 'Mozzarella, salami, chilli, signature sauce'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'capricciosa',
     id: 'b-p-3',
     price: 70,
@@ -96,7 +96,7 @@ export default [
     summary: 'Mozzarella, ham, mushrooms, olives, signature sauce'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'MARGARITA',
     id: 'b-p-4',
     price: 70,
@@ -106,7 +106,7 @@ export default [
     summary: 'Mozzarella, special sauce, basil'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'SALAMI',
     id: 'b-p-5',
     price: 70,
@@ -116,7 +116,7 @@ export default [
     summary: 'Mozzarella, salami, tomatoes, signature sauce'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'FOUR SEASONS',
     id: 'b-p-6',
     price: 70,
@@ -126,7 +126,7 @@ export default [
     summary: 'Mozzarella, ham, salami, mushrooms, tomatoes, signature sauce'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'QUATTRO FORMAGGI',
     id: 'b-p-7',
     price: 70,
@@ -136,7 +136,7 @@ export default [
     summary: 'Mozzarella, royal, gorgonzola, parmesan, signature sauce'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'Al Tonno',
     id: 'b-p-8',
     price: 70,
@@ -146,7 +146,7 @@ export default [
     summary: 'Mozzarella, tuna, onion, signature sauce, tomatoes'
   },
   {
-    category: 'barbbaresco-pizzas',
+    category: 'barbaresco-pizzas',
     name: 'Caesar',
     id: 'b-p-9',
     price: 70,
@@ -159,2905 +159,5574 @@ export default [
   // Barbaresco Burgers
 
   {
-    category: 'barbbaresco-burgers',
-    name: 'БУРГЕР З КУРКОЮ',
+    category: 'barbaresco-burgers',
+    name: 'BURGER WITH CHICKEN',
     id: 'b-b-1',
     price: 75,
     quantity: Infinity,
-    volume: '380г',
+    volume: '380g',
     image: 'barbarescoChickenBuger',
-    summary: 'Булка, куряча котлета, помідор, мікс-салат, соус барбекю, соус рокфор'
+    summary: 'Bun, chicken cutlet, tomato, mix salad, barbecue sauce, rockfor sauce'
   },
   {
-    category: 'barbbaresco-burgers',
-    name: 'БУРГЕР З БУЖЕНИНОЮ',
+    category: 'barbaresco-burgers',
+    name: 'BURGER WITH Pork',
     id: 'b-b-2',
     price: 75,
     quantity: Infinity,
-    volume: '380г',
+    volume: '380g',
     image: 'barbarescoChickenBuger',
-    summary: 'Оригінальне поєднання: булка, печена свина шия, ананас гриль, карамелізована цибуля, мікс-салат, соус барбекю'
+    summary: 'Original combination: roll, baked pork neck, grilled pineapple, caramelized onion, mix salad, barbecue sauce'
   },
   {
-    category: 'barbbaresco-burgers',
-    name: 'НЬЮ-ЙОРК БУРГЕР З ТЕЛЯТИНОЮ',
+    category: 'barbaresco-burgers',
+    name: 'NEW YORK BURGER WITH VEAL',
     id: 'b-b-3',
     price: 75,
     quantity: Infinity,
-    volume: '380г',
+    volume: '380g',
     image: 'barbarescoChickenBuger',
-    summary: 'Справжній Нью-Йоркський бургер: булка, теляча котлета, огірок консервований, помідор, бекон, мікс-салат, соус барбекю'
+    summary: 'Real New York burger: roll, veal cutlet, canned cucumber, tomato, bacon, mix salad, barbecue sauce'
   },
   {
-    category: 'barbbaresco-burgers',
-    name: 'ЧІЗБУРГЕР З СВИНИНОЮ',
+    category: 'barbaresco-burgers',
+    name: 'CHEESEBURGER WITH Pork',
     id: 'b-b-4',
     price: 75,
     quantity: Infinity,
-    volume: '380г',
+    volume: '380g',
     image: 'barbarescoChickenBuger',
-    summary: 'Булка, свинна котлета, огірок, сир чедер, помідор, мікс-салат, карамелізована цибуля, соус барбекю'
+    summary: 'Rolls, pork cutlet, cucumber, cheddar cheese, tomato, mix salad, caramelized onions, barbecue sauce'
   },
   {
-    category: 'barbbaresco-burgers',
-    name: 'ЧІЗБУРГЕР З ТЕЛЯТИНОЮ',
+    category: 'barbaresco-burgers',
+    name: 'CHEESEBURGER WITH VEAL',
     id: 'b-b-5',
     price: 75,
     quantity: Infinity,
-    volume: '380г',
+    volume: '380g',
     image: 'barbarescoChickenBuger',
-    summary: 'Булка, теляча котлета, огірок, сир чедер, помідор, мікс-салат, соус барбекю'
+    summary: 'Bun, veal cutlet, cucumber, cheddar cheese, tomato, mix salad, barbecue sauce'
   },
   {
-    category: 'barbbaresco-burgers',
+    category: 'barbaresco-burgers',
     name: 'CHICKEN DRON',
     id: 'b-b-6',
     price: 75,
     quantity: Infinity,
-    volume: '380г',
+    volume: '380g',
     image: 'barbarescoChickenBuger',
-    summary: 'Булка, куряча філе, овочі гриль, мікс салат, сир Філадельфія, тостерний сир, соус big tasty'
+    summary: 'Bun, chicken fillet, grilled vegetables, mix salad, Philadelphia cheese, toaster cheese, big tasty sauce'
   },
 
-  // Barbaresco Pan Cakes
+  //  Barbaresco Pan Cakes
 
   {
-    category: 'barbbaresco-pancakes',
-    name: 'З ШИНКОЮ І СИРОМ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'WITH HAM & CHEESE',
+
     id: 'b-pc-1',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '260г',
+
+    volume: '260g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'З ШПИНАТОМ І СИРОМ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'WITH SPINACH AND CHEESE',
+
     id: 'b-pc-2',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '260г',
+
+    volume: '260g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'ПОМІДОРАМИ ТА МОЦАРЕЛОЮ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'Tomatoes and mozzarella',
+
     id: 'b-pc-3',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '235г',
+
+    volume: '235g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'З ШОКОЛАДНО-ГОРІХОВОЮ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'WITH CHOCOLATE-NUT',
+
     id: 'b-pc-4',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '235г',
+
+    volume: '235g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'ПАСТОЮ ТА МАРШМЕЛЛОУ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'PASTA AND MARSHMELLOW',
+
     id: 'b-pc-5',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '250г',
+
+    volume: '250g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'З ЯБЛУКАМИ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'WITH APPLE',
+
     id: 'b-pc-6',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '250г',
+
+    volume: '250g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'ТА ВАНІЛЬНИМ СОУСОМ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'AND Vanilla Sauce',
+
     id: 'b-pc-7',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'ГРИЛЬ САЛАТ З ТЕЛЯТИНОЮ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'Grilled Veal Salad',
+
     id: 'b-pc-8',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '280г',
+
+    volume: '280g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'СЕЗОННО-ЯГІДНІ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'SEASONAL AND FRUIT',
+
     id: 'b-pc-9',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '250г',
+
+    volume: '250g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-pancakes',
-    name: 'З ТИХООКЕАНСЬКИМ ЛОСОСЕМ ТА ЛИСТЯМ ШПИНАТУ',
+
+    category: 'barbaresco-pancakes',
+
+    name: 'WITH Pacific Salmon and Spinach Leaves',
+
     id: 'b-pc-10',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '270г',
+
+    volume: '270g',
+
     image: 'barbarescoMlinty',
+
     summary: ''
+
   },
 
-  // Barbaresco Deserts
+  //  Barbaresco Deserts
 
   {
-    category: 'barbbaresco-deserts',
-    name: 'НАПОЛЕОН',
-    id: 'b-d-1',
+
+    category: 'barbaresco-deserts',
+
+    name: 'NAPOLEON',
+
+    id: 'bd-1',
+
     price: 45,
+
     quantity: Infinity,
-    volume: '150/40г',
+
+    volume: '150 / 40g',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-deserts',
-    name: 'ЧІЗКЕЙК',
-    id: 'b-d-2',
+
+    category: 'barbaresco-deserts',
+
+    name: 'Cheesecake',
+
+    id: 'bd-2',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '150г',
+
+    volume: '150g',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-deserts',
-    name: 'МОРОЗИВО З СОУСОМ НА ВИБІР',
-    id: 'b-d-3',
+
+    category: 'barbaresco-deserts',
+
+    name: 'Ice Cream with Choice Sauce',
+
+    id: 'bd-3',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '150г',
+
+    volume: '150g',
+
     image: 'barbarescoDesert',
-    summary: 'Вишнево-м’ятний, Персиковий, Карамель'
+
+    summary: 'Cherry Mint, Peach, Caramel'
+
   },
+
   {
-    category: 'barbbaresco-deserts',
-    name: 'ТОФФІ ПУДИНГ',
-    id: 'b-d-4',
+
+    category: 'barbaresco-deserts',
+
+    name: 'TOFFY PUDDING',
+
+    id: 'bd-4',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '170г',
+
+    volume: '170g',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-deserts',
-    name: 'Трюфельний торт',
-    id: 'b-d-5',
+
+    category: 'barbaresco-deserts',
+
+    name: 'Truffle Cake',
+
+    id: 'bd-5',
+
     price: 45,
+
     quantity: Infinity,
-    volume: '170г',
+
+    volume: '170g',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
 
-  // Barbaresco First Courses
+  //  Barbaresco First Courses
 
   {
-    category: 'barbbaresco-firstCourses',
-    name: 'КУРЯЧИЙ БУЛЬЙОН',
+
+    category: 'barbaresco-firstCourses',
+
+    name: 'CHICKEN BULLION',
+
     id: 'b-fc-1',
+
     price: 33,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoFirstCourse',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-firstCourses',
-    name: 'ЛАГМАН',
+
+    category: 'barbaresco-firstCourses',
+
+    name: 'LAGMAN',
+
     id: 'b-fc-2',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '350г',
+
+    volume: '350g',
+
     image: 'barbarescoFirstCourse',
-    summary: 'Традиційна страва середньої Азії, подається з домашньою локшиною'
+
+    summary: 'Traditional Central Asian dish served with homemade noodles'
+
   },
+
   {
-    category: 'barbbaresco-firstCourses',
-    name: 'СУП-ПЮРЕ З ПЕЧЕРИЦЬ',
+
+    category: 'barbaresco-firstCourses',
+
+    name: 'MUSHROOM Soup',
+
     id: 'b-fc-3',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoFirstCourse',
-    summary: 'Печериці, вершки'
+
+    summary: 'Mushrooms, cream'
+
   },
+
   {
-    category: 'barbbaresco-firstCourses',
-    name: 'КРЕМ-СУП ЧАУДЕР',
+
+    category: 'barbaresco-firstCourses',
+
+    name: 'CHAUDER CREAM SOUP',
+
     id: 'b-fc-4',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoFirstCourse',
-    summary: 'Сирний суп, на рибному бульйоні з креветками'
+
+    summary: 'Cheese soup, on shrimp fish broth'
+
   },
 
-  // Barbaresco Main Meals
+  //  Barbaresco Main Meals
 
   {
-    category: 'barbbaresco-mainMeals',
-    name: 'КУРКА СТІР ФРАЙ',
+
+    category: 'barbaresco-mainMeals',
+
+    name: 'CHICKEN STYLE FRI',
+
     id: 'b-mm-1',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoHits',
-    summary: 'Філе курки, цукіні, морква, перець болгарський, броколі, кунжут, зелена цибуля, соус териякі'
+
+    summary: 'Chicken fillet, zucchini, carrots, bell peppers, broccoli, sesame, green onions, teriyaki sauce'
+
   },
+
   {
-    category: 'barbbaresco-mainMeals',
-    name: 'ПЕЧЕНА БУЖЕНИНА З РОКФОРНИМ ПЮРЕ',
+
+    category: 'barbaresco-mainMeals',
+
+    name: 'Roast Roast Pork Roast',
+
     id: 'b-mm-2',
+
     price: 100,
+
     quantity: Infinity,
-    volume: '350г',
+
+    volume: '350g',
+
     image: 'barbarescoHits',
-    summary: 'Печена свинна шия подається з картопляно-рокфорним пюре'
+
+    summary: 'Roasted pork neck served with mashed potato-roquefort'
+
   },
+
   {
-    category: 'barbbaresco-mainMeals',
-    name: 'Лосось теріякі',
+
+    category: 'barbaresco-mainMeals',
+
+    name: 'Teriyaki salmon',
+
     id: 'b-mm-3',
+
     price: 120,
+
     quantity: Infinity,
-    volume: '250г',
+
+    volume: '250g',
+
     image: 'barbarescoHits',
-    summary: 'Філе лосося, квасоля спаржева, морква, перець болгарський, кабачок, печериці, соус теріякі'
+
+    summary: 'Salmon fillet, asparagus beans, carrots, bell peppers, zucchini, mushrooms, teriyaki sauce'
+
   },
+
   {
-    category: 'barbbaresco-mainMeals',
-    name: 'телятина ПІД СОУСОМ ДЕМІГЛАС',
+
+    category: 'barbaresco-mainMeals',
+
+    name: 'veal under Demiglas sauce',
+
     id: 'b-mm-4',
+
     price: 100,
+
     quantity: Infinity,
-    volume: '400г',
+
+    volume: '400g',
+
     image: 'barbarescoHits',
-    summary: 'Подається з рисом із овочами-гриль'
+
+    summary: 'Served with grilled vegetables'
+
   },
+
   {
-    category: 'barbbaresco-mainMeals',
-    name: 'ХРУСТКА КУРКА З ПЕЧЕНОЮ КАРТОПЛЕЮ',
+
+    category: 'barbaresco-mainMeals',
+
+    name: 'CREAM CHICKEN WITH BAKED POTATOES',
+
     id: 'b-mm-5',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
 
-  // Barbaresco Coffee
+  //  Barbaresco Coffee
 
   {
-    category: 'barbbaresco-coffee',
-    name: 'ЕСПРЕССО',
-    id: 'b-c-1',
+
+    category: 'barbaresco-coffee',
+
+    name: 'ESPRESSO',
+
+    id: 'bc-1',
+
     price: 20,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-coffee',
-    name: 'АМЕРИКАНО',
-    id: 'b-c-2',
+
+    category: 'barbaresco-coffee',
+
+    name: 'AMERICAN',
+
+    id: 'bc-2',
+
     price: 20,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-coffee',
-    name: 'КАПУЧІНО',
-    id: 'b-c-3',
+
+    category: 'barbaresco-coffee',
+
+    name: 'Cappuccino',
+
+    id: 'bc-3',
+
     price: 35,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-coffee',
-    name: 'ФЛЕТ ВАЙТ',
-    id: 'b-c-4',
+
+    category: 'barbaresco-coffee',
+
+    name: 'FLIGHT WIGHT',
+
+    id: 'bc-4',
+
     price: 35,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-coffee',
-    name: 'ЛАТЕ',
-    id: 'b-c-5',
+
+    category: 'barbaresco-coffee',
+
+    name: 'LATE',
+
+    id: 'bc-5',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-coffee',
-    name: 'ФРАПЕ',
-    id: 'b-c-6',
+
+    category: 'barbaresco-coffee',
+
+    name: 'FRAPE',
+
+    id: 'bc-6',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-coffee',
-    name: 'МОЛОКО',
-    id: 'b-c-7',
+
+    category: 'barbaresco-coffee',
+
+    name: 'MILK',
+
+    id: 'bc-7',
+
     price: 5,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
 
-  // Barbaresco Tea
+  //  Barbaresco Tea
+
   {
-    category: 'barbbaresco-tea',
-    name: 'ЧОРНИЙ',
+
+    category: 'barbaresco-tea',
+
+    name: 'BLACK',
+
     id: 'b-tea-1',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '0,6л',
+
+    volume: '0,6l',
+
     image: 'barbarescoDrinksTea',
-    summary: 'асам середньо листовий пряний з медовими нотками'
+
+    summary: 'Assam medium spicy honey with honey notes'
+
   },
+
   {
-    category: 'barbbaresco-tea',
-    name: 'ЗЕЛЕНИЙ',
+
+    category: 'barbaresco-tea',
+
+    name: 'GREEN',
+
     id: 'b-tea-2',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '0,6л',
+
+    volume: '0,6l',
+
     image: 'barbarescoDrinksTea',
-    summary: 'класичний китайський чай'
+
+    summary: 'classic chinese tea'
+
   },
+
   {
-    category: 'barbbaresco-tea',
-    name: 'ФРУКТОВИЙ',
+
+    category: 'barbaresco-tea',
+
+    name: 'FRUIT',
+
     id: 'b-tea-3',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '0,6л',
+
+    volume: '0,6l',
+
     image: 'barbarescoDrinksTea',
-    summary: 'суміш з шматочків папаї, манго, ананаса та квітів гібіскуса'
+
+    summary: 'blend of papaya, mango, pineapple and hibiscus flowers'
+
   },
+
   {
-    category: 'barbbaresco-tea',
-    name: "ТРАВ'ЯНИЙ",
+
+    category: 'barbaresco-tea',
+
+    name: 'HERBS',
+
     id: 'b-tea-4',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '0,6л',
+
+    volume: '0,6l',
+
     image: 'barbarescoDrinksTea',
-    summary: 'суміш лимонної трави, меліси, м’яти, ромашки та цедри апельсина'
+
+    summary: 'blend of lemongrass, lemon balm, mint, chamomile and orange peel'
+
   },
 
   // Barbaresco Hot Drinks
 
   {
-    category: 'barbbaresco-hotDrinks',
-    name: 'ОБЛІПИХОВИЙ чай З МАРАКУЄЮ',
+
+    category: 'barbaresco-hotDrinks',
+
+    name: 'MARRIAGE SEAFOOD tea',
+
     id: 'b-hd-1',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '0,30л',
+
+    volume: '0,30l',
+
     image: 'barbarescoDrinksTea',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-hotDrinks',
-    name: 'ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ',
+
+    category: 'barbaresco-hotDrinks',
+
+    name: 'Ginger tea with honey and mint',
+
     id: 'b-hd-2',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '0,30л',
+
+    volume: '0,30l',
+
     image: 'barbarescoDrinksTea',
+
     summary: ''
+
   },
 
   // Barbaresco Fresh
 
   {
-    category: 'barbbaresco-fresh',
-    name: 'АПЕЛЬСИНОВИЙ',
+
+    category: 'barbaresco-fresh',
+
+    name: 'APRIL',
+
     id: 'b-fre-1',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-fresh',
-    name: 'ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ',
+
+    category: 'barbaresco-fresh',
+
+    name: 'Ginger tea with honey and mint',
+
     id: 'b-fre-2',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
 
   // Barbaresco Lemonade
 
   {
-    category: 'barbbaresco-lemonade',
-    name: 'ЯБЛУКО-БАЗИЛІК',
+
+    category: 'barbaresco-lemonade',
+
+    name: 'APPLE-BASIL',
+
     id: 'b-lem-1',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'сік яблука та сироп, базилік, імбир, лимонний фреш, содова'
+
+    summary: 'apple juice and syrup, basil, ginger, lemon juice, soda'
+
   },
+
   {
-    category: 'barbbaresco-lemonade',
-    name: 'АНАНАСОВО-ІМБИРНИЙ',
+
+    category: 'barbaresco-lemonade',
+
+    name: 'Pineapple Ginger',
+
     id: 'b-lem-2',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'ананасовий сік, імбирний сироп, лимонний фреш і содова'
+
+    summary: 'pineapple juice, ginger syrup, lemon juice and soda'
+
   },
+
   {
-    category: 'barbbaresco-lemonade',
-    name: 'З ТЕМНИМ КВАСОМ',
+
+    category: 'barbaresco-lemonade',
+
+    name: 'WITH BLACK Yeast',
+
     id: 'b-lem-3',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'темний квас, сироп кориця-карамель, лимонний фреш'
+
+    summary: 'dark kvass, cinnamon-caramel syrup, lemon fresh'
+
   },
+
   {
-    category: 'barbbaresco-lemonade',
-    name: 'ГРЕЙПФРУТ ',
+
+    category: 'barbaresco-lemonade',
+
+    name: 'Grapefruit',
+
     id: 'b-lem-4',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'грейпфрутовий сік та сироп, лимонний фреш, содова'
+
+    summary: 'grapefruit juice and syrup, lemon juice, soda'
+
   },
+
   {
-    category: 'barbbaresco-lemonade',
-    name: 'ЗЕЛЕНИЙ БАНАН-КІВІ',
+
+    category: 'barbaresco-lemonade',
+
+    name: 'GREEN Banana Kiwi',
+
     id: 'b-lem-5',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'сироп зелений банан, ківі, лимонний фреш, содова'
+
+    summary: 'green banana syrup, kiwi, lemon juice, soda'
+
   },
 
   // Barbaresco Smoothy
 
   {
-    category: 'barbbaresco-smoothy',
-    name: 'ДИНЯ-МАРАКУЙЯ',
-    id: 'b-smo-1',
+
+    category: 'barbaresco-smoothy',
+
+    name: 'DANI-MARAKUYA',
+
+    id: 'b-we-1',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'пюре дині, маракуйї та персика'
+
+    summary: 'melon, passion fruit and peach puree'
+
   },
+
   {
-    category: 'barbbaresco-smoothy',
-    name: 'ШПИНАТНИЙ',
-    id: 'b-smo-2',
+
+    category: 'barbaresco-smoothy',
+
+    name: 'SPINISH',
+
+    id: 'b-we-2',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'шпинат, банан, сік яблука, пюре маракуйї'
+
+    summary: 'spinach, banana, apple juice, passion fruit puree'
+
   },
 
   // Barbaresco Milk Shake
 
   {
-    category: 'barbbaresco-milkshake',
-    name: 'БАНАНОВИЙ',
+
+    category: 'barbaresco-milkshake',
+
+    name: 'BANAN',
+
     id: 'b-ms-1',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-milkshake',
-    name: 'ШОКОЛАДНИЙ',
+
+    category: 'barbaresco-milkshake',
+
+    name: 'CHOCOLATE',
+
     id: 'b-ms-2',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-milkshake',
-    name: 'ЧОРНИЧНИЙ',
+
+    category: 'barbaresco-milkshake',
+
+    name: 'BLACK',
+
     id: 'b-ms-3',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
 
   // Barbaresco None Alcoholic Drinks
 
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
-    name: 'МОРС З ЖУРАВЛИНИ',
-    id: 'b-nad-1',
+
+    category: 'barbaresco-nonAlcoholicDrinks',
+
+    name: 'CRANE SEA',
+
+    id: 'b-over-1',
+
     price: 16,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
-    name: 'СІК В АСОРТИМЕНТІ',
-    id: 'b-nad-2',
+
+    category: 'barbaresco-nonAlcoholicDrinks',
+
+    name: 'JUICE IN ASSORTMENT',
+
+    id: 'b-over-2',
+
     price: 18,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
-    name: 'ПЕПСІ',
-    id: 'b-nad-3',
+
+    category: 'barbaresco-nonAlcoholicDrinks',
+
+    name: 'Pepsi',
+
+    id: 'b-over-3',
+
     price: 15,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'розлив'
+
+    summary: 'spill'
+
   },
+
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
+
+    category: 'barbaresco-nonAlcoholicDrinks',
+
     name: '7UP',
-    id: 'b-nad-3-1',
+
+    id: 'b-over-3-1',
+
     price: 15,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'розлив'
+
+    summary: 'spill'
+
   },
+
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
-    name: 'МІРІНДА',
-    id: 'b-nad-3-2',
+
+    category: 'barbaresco-nonAlcoholicDrinks',
+
+    name: 'MIRINDA',
+
+    id: 'b-over-3-2',
+
     price: 15,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'розлив'
+
+    summary: 'spill'
+
   },
+
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
-    name: 'ТОНІК',
-    id: 'b-nad-4',
+
+    category: 'barbaresco-nonAlcoholicDrinks',
+
+    name: 'TONIC',
+
+    id: 'b-over-4',
+
     price: 25,
+
     quantity: Infinity,
-    volume: '0,5л',
+
+    volume: '0.5l',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
-    name: 'БОРЖОМІ',
-    id: 'b-nad-5',
+
+    category: 'barbaresco-nonAlcoholicDrinks',
+
+    name: 'BOROMS',
+
+    id: 'b-over-5',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '0,5л',
+
+    volume: '0.5l',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-nonAlcoholicDrinks',
-    name: 'ДЕВАЙТІС',
-    id: 'b-nad-6',
+
+    category: 'barbaresco-nonAlcoholicDrinks',
+
+    name: 'DEVICE',
+
+    id: 'b-over-6',
+
     price: 27,
+
     quantity: Infinity,
-    volume: '0,5л',
+
+    volume: '0.5l',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'слабогаз./негаз'
+
+    summary: 'low / low'
+
   },
 
   // Barbaresco Maki Rolls
 
   {
-    category: 'barbbaresco-makiRoll',
-    name: 'СЯКЕ МАКІ',
+
+    category: 'barbaresco-makiRoll',
+
+    name: 'SAKE MAKI',
+
     id: 'b-mr-1',
+
     price: 55,
+
     quantity: Infinity,
-    volume: '120/7/15г',
+
+    volume: '120/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'філе лосося, водорості норі, рис, васабі, імбир'
+
+    summary: 'salmon fillet, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-makiRoll',
-    name: 'СЯКЕ-КУНСЕЙ МАКІ',
+
+    category: 'barbaresco-makiRoll',
+
+    name: 'SAKE-KUNSEY MAKE',
+
     id: 'b-mr-2',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '120/7/15г',
+
+    volume: '120/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'лосось копчений, водорості норі, рис, васабі, імбир'
+
+    summary: 'smoked salmon, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-makiRoll',
-    name: 'ЧУКА МАКІ',
+
+    category: 'barbaresco-makiRoll',
+
+    name: 'seaweed',
+
     id: 'b-mr-3',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '130/7/15г',
+
+    volume: '130/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'салат чука, горіховий соус, кунжут, водорості норі, рис, васабі, імбир'
+
+    summary: 'ham salad, nut sauce, sesame, nori seaweed, rice, wasabi, ginger'
+
   },
 
   // Barbaresco Futo Maki Rolls
 
   {
-    category: 'barbbaresco-futoMakiRoll',
-    name: 'СЯКЕ ФУТОМАКІ',
+
+    category: 'barbaresco-futoMakiRoll',
+
+    name: 'SOME PHOTOS',
+
     id: 'b-pmr-1',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '190/7/15г',
+
+    volume: '190/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'філе лосося, сир філадельфія, зелена цибуля, японський омлет, водорості норі, рис, васабі, імбир'
+
+    summary: 'salmon fillet, Philadelphia cheese, green onion, Japanese omelet, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-futoMakiRoll',
-    name: 'ОВОЧЕВИЙ ФУТОМАКІ',
+
+    category: 'barbaresco-futoMakiRoll',
+
+    name: 'VEGETABLES',
+
     id: 'b-pmr-2',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '195/7/15г',
+
+    volume: '195/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'сир фета, помідор, перець болгарський, огірок, кунжут, водорості норі, рис, васабі, імбир'
+
+    summary: 'feta cheese, tomato, bell pepper, cucumber, sesame, nori, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-futoMakiRoll',
-    name: 'МУРУКАЇ ФУТОМАКІ',
+
+    category: 'barbaresco-futoMakiRoll',
+
+    name: 'MURKAY FUTOMAKS',
+
     id: 'b-pmr-3',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '130/7/15г',
+
+    volume: '130/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'м’ясо мідії, сир філадельфія, сир тостерний, салат чука, водорості норі, рис, васабі, імбир'
+
+    summary: 'mussel meat, Philadelphia cheese, toaster cheese, ham salad, nori seaweed, rice, wasabi, ginger'
+
   },
 
   // Barbaresco Original Rolls
 
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'ХАКО СУШІ З ЛОСОСЕМ',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'HAKO SUSHI WITH SALMON',
+
     id: 'b-or-1',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '200/7/15г',
+
+    volume: '200/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'філе лосося, яблуко, рис, сир філадельфія, водорості норі, соєвий папір, васабі, імбир'
+
+    summary: 'salmon fillet, apple, rice, Philadelphia cheese, nori seaweed, soy paper, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'РОЛ АКАУРО',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'ACAURO ROLL',
+
     id: 'b-or-2',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '220/7/15г',
+
+    volume: '220/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'морський окунь, чука, ікра тобіко, чорний кунжут, сир тостерний, рис, сир філадельфія, водорості норі, васабі, імбир'
+
+    summary: 'sea bass, ham, tobiko caviar, black sesame, toaster cheese, rice, Philadelphia cheese, nori seaweed, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'СИРНИЙ',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'CHEESE',
+
     id: 'b-or-3',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '200/7/15г',
+
+    volume: '200/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'сир філадельфія, сир тостерний, сир пармезан, кунжут, водорості норі, рис, васабі, імбир'
+
+    summary: 'Philadelphia cheese, toaster cheese, parmesan cheese, sesame seeds, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'ФІРМОВИЙ',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'COMPANY',
+
     id: 'b-or-4',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '210/7/15г',
+
+    volume: '210/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'окунь-унагі, філе лосося, майонез японський, огірок, ікра тобіко, водорості норі, рис, васабі, соус унагі, кунжут, імбир'
+
+    summary: 'unaki salmon, salmon fillet, japanese mayonnaise, cucumber, tobiko caviar, nori seaweed, rice, wasabi, unagi sauce, sesame, ginger'
+
   },
+
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'З ОКУНЕМ-УНАГІ В КУНЖУТІ',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'WITH A BOOK-BACK IN SUNSHINE',
+
     id: 'b-or-5',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '205/7/15г',
+
+    volume: '205/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'окунь-унагі, авокадо, огірок, сир філадельфія, кунжут, соус унагі, водорості норі, рис, васабі, імбир'
+
+    summary: 'perch-unagi, avocado, cucumber, Philadelphia cheese, sesame, unagi sauce, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'ЛОСОСЬ ФЛАМБЕ',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'SALMON',
+
     id: 'b-or-6',
+
     price: 110,
+
     quantity: Infinity,
-    volume: '235/7/15г',
+
+    volume: '235/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'філе лососся, сир філадельфія, салат чука, окунь темпура, соус Тонкатцу, молекулярна ікра, водорості норі, рис, імбир, васабі'
+
+    summary: 'salmon fillet, Philadelphia cheese, ham salad, tempura perch, Tonkatsu sauce, molecular caviar, nori seaweed, rice, ginger, wasabi'
+
   },
+
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'ГРІН РОЛ З КРЕВЕТКОЮ ТЕМПУРА',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'GREEN ROLL WITH TEMPUR',
+
     id: 'b-or-7',
+
     price: 75,
+
     quantity: Infinity,
-    volume: '220/7/15г',
+
+    volume: '220/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'креветка темпура, омлет томаго, сир філадельфія, японський майонез, ікра тобіко, шпинат свіжий, водорості норі, рис, васабі, імбир'
+
+    summary: 'tempura shrimp, tomago omelette, Philadelphia cheese, Japanese mayonnaise, tobiko caviar, fresh spinach, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'Урамакі',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'Uramaki',
+
     id: 'b-or-8',
+
     price: 135,
+
     quantity: Infinity,
-    volume: '255/7/15г',
+
+    volume: '255/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'тунець, сир філадельфія. креветка темпура, ікра тобіко, авокадо, кунжут білий та чорний, соус Тонкатцу, горіховий соус, молекулярна ікра, водорості норі, рис, імбир, васабі'
+
+    summary: 'tuna, Philadelphia cheese. tempura shrimp, tobiko caviar, avocado, sesame white and black, tonkatsu sauce, nut sauce, molecular caviar, nori algae, rice, ginger, wasabi '
+
   },
+
   {
-    category: 'barbbaresco-originalRoll',
-    name: 'Рол Унагі',
+
+    category: 'barbaresco-originalRoll',
+
+    name: 'Unagi Roll',
+
     id: 'b-or-9',
+
     price: 135,
+
     quantity: Infinity,
-    volume: '240/7/15г',
+
+    volume: '240/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'вугор, омлет томаго, сир філадельфія, соус унагі, кунжут, харчове золото, молекулярна ікра, водорості норі, рис, імбир, васабі'
+
+    summary: 'eel, tomago omelette, Philadelphia cheese, unagi sauce, sesame, edible gold, molecular caviar, nori seaweed, rice, ginger, wasabi'
+
   },
 
   // Barbaresco Carlifonia Rolls
 
   {
-    category: 'barbbaresco-californiaRoll',
-    name: 'З ЛОСОСЕМ',
+
+    category: 'barbaresco-californiaRoll',
+
+    name: 'WITH THE SALMON',
+
     id: 'b-cr-1',
+
     price: 90,
+
     quantity: Infinity,
-    volume: '210/7/15г',
+
+    volume: '210/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'філе лосося, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир'
+
+    summary: 'salmon fillet, avocado, cucumber, japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-californiaRoll',
-    name: 'З КОПЧЕНИМ ЛОСОСЕМ',
+
+    category: 'barbaresco-californiaRoll',
+
+    name: 'WITH SMOKED SALMON',
+
     id: 'b-cr-2',
+
     price: 90,
+
     quantity: Infinity,
-    volume: '210/7/15г',
+
+    volume: '210/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'лосось копчений, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир'
+
+    summary: 'smoked salmon, avocado, cucumber, japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-californiaRoll',
-    name: 'З ТУНЦЕМ',
+
+    category: 'barbaresco-californiaRoll',
+
+    name: 'WITH TUNE',
+
     id: 'b-cr-3',
+
     price: 95,
+
     quantity: Infinity,
-    volume: '210/7/15г',
+
+    volume: '210/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'тунець, авокадо, огірок, майонез японський, ікра тобіко, водорості норі, рис, васабі, імбир'
+
+    summary: 'tuna, avocado, cucumber, japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-californiaRoll',
-    name: 'УНАГІ',
+
+    category: 'barbaresco-californiaRoll',
+
+    name: 'ALONG',
+
     id: 'b-cr-4',
+
     price: 95,
+
     quantity: Infinity,
-    volume: '220/7/15г',
+
+    volume: '220/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'вугор, окунь унагі, авокадо, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, соус унагі, кунжут, імбир'
+
+    summary: 'eel, uncle perch, avocado, cucumber, japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, unagi sauce, sesame, ginger'
+
   },
 
   // Barbaresco Phili Rolls
 
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
-    name: 'З ЛОСОСЕМ',
+
+    category: 'barbaresco-PhiladelphiaRoll',
+
+    name: 'WITH THE SALMON',
+
     id: 'b-phir-1',
+
     price: 100,
+
     quantity: Infinity,
-    volume: '220/7/15г',
+
+    volume: '220/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'філе лосося, сир філадельфія, зелена цибуля, огірок, водорості норі,рис, васабі, імбир'
+
+    summary: 'salmon fillet, Philadelphia cheese, green onion, cucumber, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
-    name: 'З КОПЧЕНИМ ЛОСОСЕМ',
+
+    category: 'barbaresco-PhiladelphiaRoll',
+
+    name: 'WITH SMOKED SALMON',
+
     id: 'b-phir-2',
+
     price: 100,
+
     quantity: Infinity,
-    volume: '220/7/15г',
+
+    volume: '220/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'лосось копчений, сир філадельфія, зелена цибуля, огірок, водорості норі, рис, васабі, імбир'
+
+    summary: 'smoked salmon, Philadelphia cheese, green onion, cucumber, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
-    name: 'З ТУНЦЕМ',
+
+    category: 'barbaresco-PhiladelphiaRoll',
+
+    name: 'WITH TUNE',
+
     id: 'b-phir-3',
+
     price: 100,
+
     quantity: Infinity,
-    volume: '210/7/15г',
+
+    volume: '210/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'тунець, сир філадельфія, авокадо, огірок, ікра тобіко, водорості норі, рис, васабі, імбир'
+
+    summary: 'tuna, philadelphia cheese, avocado, cucumber, tobiko caviar, nori seaweed, rice, wasabi, ginger'
+
   },
+
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
-    name: 'УНАГІ',
+
+    category: 'barbaresco-PhiladelphiaRoll',
+
+    name: 'ALONG',
+
     id: 'b-phir-4',
+
     price: 100,
+
     quantity: Infinity,
-    volume: '220/7/15г',
+
+    volume: '220/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'вугор, окунь-унагі, сир філадельфія, авокадо, огірок, ікра тобіко, водорості норі, рис, васабі, соус унагі, кунжут, імбир'
+
+    summary: 'eel, uncle perch, Philadelphia cheese, avocado, cucumber, tobiko caviar, nori seaweed, rice, wasabi, unagi sauce, sesame, ginger'
+
   },
+
   {
-    category: 'barbbaresco-PhiladelphiaRoll',
-    name: 'КРЕВЕТКА ФЛАМБЕ',
+
+    category: 'barbaresco-PhiladelphiaRoll',
+
+    name: 'FLAMBE SHEET',
+
     id: 'b-phir-5',
+
     price: 95,
+
     quantity: Infinity,
-    volume: '220/7/15г',
+
+    volume: '220/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'сир філадельфія, авокадо, ікра тобіко, креветка, молекулярна ікра, водорості норі, рис, імбир, васабі'
+
+    summary: 'Philadelphia cheese, avocado, tobiko caviar, shrimp, molecular caviar, nori seaweed, rice, ginger, wasabi'
+
   },
 
   // Barbaresco Dragon Rolls
 
   {
-    category: 'barbbaresco-drakoniRoll',
-    name: 'ЗЕЛЕНИЙ ДРАКОН',
+
+    category: 'barbaresco-drakoniRoll',
+
+    name: 'GREEN DRAGON',
+
     id: 'b-drr-1',
+
     price: 110,
+
     quantity: Infinity,
-    volume: '235/7/15г',
+
+    volume: '235/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'філе лосося, авокадо, огірок, сир філадельфія, кунжут, соус унагі, ікра тобіко, молекулярна ікра, водорості норі, рис, імбир, васабі'
+
+    summary: 'salmon fillet, avocado, cucumber, Philadelphia cheese, sesame, unagi sauce, tobiko caviar, molecular caviar, nori seaweed, rice, ginger, wasabi'
+
   },
+
   {
-    category: 'barbbaresco-drakoniRoll',
-    name: 'ЗОЛОТИЙ ДРАКОН',
+
+    category: 'barbaresco-drakoniRoll',
+
+    name: 'GOLD DRAGON',
+
     id: 'b-drr-2',
+
     price: 140,
+
     quantity: Infinity,
-    volume: '245/7/15г',
+
+    volume: '245/7 / 15y',
+
     image: 'barbarescoSushi',
-    summary: 'вугор, окунь-унагі. огірок, майонез японський, ікра тобіко, соус унагі, кунжут, харчове золото, молекулярна ікра, водорості норі, рис, імбир, васабі'
+
+    summary: 'eel, perch-unag. cucumber, japanese mayonnaise, tobiko caviar, unagi sauce, sesame, edible gold, molecular caviar, nori seaweed, rice, ginger, wasabi '
+
   },
+
   {
-    category: 'barbbaresco-drakoniRoll',
-    name: 'ЧЕРВОНИЙ ДРАКОН',
+
+    category: 'barbaresco-drakoniRoll',
+
+    name: 'RED DRAGON',
+
     id: 'b-drr-3',
+
     price: 140,
+
     quantity: Infinity,
-    volume: '235/7/15г',
+
+    volume: '235/7 / 15g',
+
     image: 'barbarescoSushi',
-    summary: 'філе лосося, вугор, окунь-унагі, огірок, майонез японський, ікра тобіко,водорості норі, рис, васабі, імбир'
+
+    summary: 'salmon fillet, eel, perch-unaki, cucumber, Japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, ginger'
+
   },
 
   // Barbaresco Alcolholic Cocktails
 
   {
-    category: 'barbbaresco-alcoholicCocktail',
-    name: 'BLOODY MARY (N.A) ',
+
+    category: 'barbaresco-alcoholicCocktail',
+
+    name: 'BLOODY MARY (NA)',
+
     id: 'b-alcc-1',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'горілка, соуси тобаско та ворчестер, мікс спецій, лимонний фреш, цукровий сироп, томатний сік'
+
+    summary: 'vodka, tobasco and worcester sauces, spice mix, lemon juice, sugar syrup, tomato juice'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
-    name: 'BLOODY MARY (ALC) ',
+
+    category: 'barbaresco-alcoholicCocktail',
+
+    name: 'BLOODY MARY (ALC)',
+
     id: 'b-alcc-2',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'горілка, соуси тобаско та ворчестер, мікс спецій, лимонний фреш, цукровий сироп, томатний сік'
+
+    summary: 'vodka, tobasco and worcester sauces, spice mix, lemon juice, sugar syrup, tomato juice'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'LONG ISLAND ICE TEA',
+
     id: 'b-alcc-3',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'горілка, джин, текіла, ром, апельсиновий лікер, лимонний фреш, пепсі'
+
+    summary: 'vodka, gin, tequila, rum, orange liqueur, lemon juice, pepsi'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'APEROL SPRITZ',
+
     id: 'b-alcc-4',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'апероль, ігристе вино, содова, апельсин, оливки'
+
+    summary: 'sparkling wine, sparkling wine, soda, orange, olives'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'APEROL berry',
+
     id: 'b-alcc-5',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'апероль, пюре Monin смородини і чорниці, ігристе вино, содова'
+
+    summary: 'appel, Monin puree currants and blueberries, sparkling wine, soda'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'green aplle MOJITO',
+
     id: 'b-alcc-6',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'м’ята, лайм, пюре зелене яблуко Monin, содова, тростинний цукор'
+
+    summary: 'mint, lime, puree green apple Monin, soda, cane sugar'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'aplle grape sangria',
+
     id: 'b-alcc-7',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'біле сухе вино, винограндний сік, пюре зелене яблуко Monin, розмарин'
+
+    summary: 'white dry wine, grape juice, puree green apple Monin, rosemary'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'grapefruit whiskey sour',
+
     id: 'b-alcc-8',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '150мл',
+
+    volume: '150ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'віскі, лимонний фреш, грейпфрутовий лікер, білок'
+
+    summary: 'whiskey, lemon juice, grapefruit, protein'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'MAI TAI',
+
     id: 'b-alcc-9',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'пряний ром, апельсиновий лікер, мигдальний сироп, лимонний фреш, пюре маракуйя, апельсиновий сік'
+
+    summary: 'spicy rum, orange liqueur, almond syrup, lemon juice, passion fruit puree, orange juice'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'PASSION FRUIT COLADA',
+
     id: 'b-alcc-10',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'пряний ром, ананасовий сік, кокосове молоко, пюре маракуя'
+
+    summary: 'spicy rum, pineapple juice, coconut milk, passion fruit puree'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
-    name: 'MOJITO (N.A)',
+
+    category: 'barbaresco-alcoholicCocktail',
+
+    name: 'MOJITO (NA)',
+
     id: 'b-alcc-11',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'темний та золотий ром, м’ята, лайм, содова, тростинний цукор'
+
+    summary: 'dark and golden rum, mint, lime, soda, cane sugar'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'MOJITO (ALC)',
+
     id: 'b-alcc-12',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'темний та золотий ром, м’ята, лайм, содова, тростинний цукор'
+
+    summary: 'dark and golden rum, mint, lime, soda, cane sugar'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'Blueberry Gin Tonic',
+
     id: 'b-alcc-13',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'джин, тонік, лимонний фреш, сиропи чорниця та бузина, ягоди'
+
+    summary: 'gin, tonic, lemon juice, blueberry and elderberry syrups, berries'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicCocktail',
+
+    category: 'barbaresco-alcoholicCocktail',
+
     name: 'TIKI TIKI',
+
     id: 'b-alcc-14',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'горілка, біттер, кокосове пюре, сік ананаса, фреш лимонний'
+
+    summary: 'vodka, bitter, coconut puree, pineapple juice, lemon juice'
+
   },
 
   // Barbaresco Alcoholic Set
 
   {
-    category: 'barbbaresco-alcoholicSet',
-    name: 'ІМБИРНИЙ',
+
+    category: 'barbaresco-alcoholicSet',
+
+    name: 'Ginger',
+
     id: 'b-als-1',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '210мл',
+
+    volume: '210ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicSet',
-    name: 'МАЛИНОВИЙ',
+
+    category: 'barbaresco-alcoholicSet',
+
+    name: 'RED',
+
     id: 'b-als-2',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '210мл',
+
+    volume: '210ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicSet',
-    name: 'МАНГО',
+
+    category: 'barbaresco-alcoholicSet',
+
+    name: 'MANGO',
+
     id: 'b-als-3',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '210мл',
+
+    volume: '210ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicSet',
-    name: 'ЦИТРУСОВО-М’ЯТНИЙ',
+
+    category: 'barbaresco-alcoholicSet',
+
+    name: 'Citrus Mint',
+
     id: 'b-als-4',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '210мл',
+
+    volume: '210ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
 
   // Barbaresco Wine
 
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Cavaleria Bianco',
+
     id: 'b-wine-1',
+
     price: 28,
+
     quantity: Infinity,
-    volume: '100мл',
+
+    volume: '100ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'біле сухе'
-  },
-  {
-    category: 'barbbaresco-wine',
-    name: 'Cavaleria Bianco',
-    id: 'b-wine-1-1',
-    price: 210,
-    quantity: Infinity,
-    volume: '750мл',
-    image: 'barbarescoAlcohol',
-    summary: 'біле сухе'
-  },
-  {
-    category: 'barbbaresco-wine',
-    name: 'Cavaleria Bianco',
-    id: 'b-wine-2',
-    price: 28,
-    quantity: Infinity,
-    volume: '100мл',
-    image: 'barbarescoAlcohol',
-    summary: 'н/сол біле'
+
+    summary: 'white dry'
+
   },
 
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Cavaleria Bianco',
+
+    id: 'b-wine-1-1',
+
+    price: 210,
+
+    quantity: Infinity,
+
+    volume: '750ml',
+
+    image: 'barbarescoAlcohol',
+
+    summary: 'white dry'
+
+  },
+
+  {
+
+    category: 'barbaresco-wine',
+
+    name: 'Cavaleria Bianco',
+
+    id: 'b-wine-2',
+
+    price: 28,
+
+    quantity: Infinity,
+
+    volume: '100ml',
+
+    image: 'barbarescoAlcohol',
+
+    summary: 'n / salt white'
+
+  },
+
+  {
+
+    category: 'barbaresco-wine',
+
+    name: 'Cavaleria Bianco',
+
     id: 'b-wine-2-1',
+
     price: 210,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'н/сол біле'
+
+    summary: 'n / salt white'
+
   },
+
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Cavaleria Rosso',
+
     id: 'b-wine-3',
+
     price: 28,
+
     quantity: Infinity,
-    volume: '100мл',
+
+    volume: '100ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'сухе червОНЕ'
+
+    summary: 'dry worm'
+
   },
+
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Cavaleria Rosso',
+
     id: 'b-wine-3-1',
+
     price: 210,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'сухе червОНЕ'
+
+    summary: 'dry worm'
+
   },
+
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Cavaleria Rosso',
+
     id: 'b-wine-4',
+
     price: 28,
+
     quantity: Infinity,
-    volume: '100мл',
+
+    volume: '100ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'н/с червОНЕ'
+
+    summary: 'n / s worm'
+
   },
+
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Cavaleria Rosso',
+
     id: 'b-wine-4-1',
+
     price: 210,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'н/с червОНЕ'
+
+    summary: 'n / s worm'
+
   },
+
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Casa Verde Merlot',
+
     id: 'b-wine-5',
+
     price: 44,
+
     quantity: Infinity,
-    volume: '100мл',
+
+    volume: '100ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'червоне сухе/біле сухе'
+
+    summary: 'red dry / white dry'
+
   },
+
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Casa Verde Merlot',
+
     id: 'b-wine-5-1',
+
     price: 330,
+
     quantity: Infinity,
-    volume: '375мл',
+
+    volume: '375ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'червоне сухе/біле сухе'
+
+    summary: 'red dry / white dry'
+
   },
+
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Casa Verde Merlot',
+
     id: 'b-wine-6',
+
     price: 24,
+
     quantity: Infinity,
-    volume: '100мл',
+
+    volume: '100ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'СЛИВОВЕ СОЛ/РОЖ/БІЛ'
+
+    summary: 'PLUM SALT / ROE / WHITE'
+
   },
+
   {
-    category: 'barbbaresco-wine',
+
+    category: 'barbaresco-wine',
+
     name: 'Casa Verde Merlot',
+
     id: 'b-wine-6-1',
+
     price: 90,
+
     quantity: Infinity,
-    volume: '375мл',
+
+    volume: '375ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'СЛИВОВЕ СОЛ/РОЖ/БІЛ'
+
+    summary: 'PLUM SALT / ROE / WHITE'
+
   },
 
   // Barbaresco Sparkling Wine
 
   {
-    category: 'barbbaresco-sparklingWine',
-    name: 'МАРТІНІ АСТІ',
+
+    category: 'barbaresco-sparklingWine',
+
+    name: 'MARTIN ASTI',
+
     id: 'b-swine-1',
+
     price: 400,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'СОЛОДКЕ'
+
+    summary: 'SWEET'
+
   },
+
   {
-    category: 'barbbaresco-sparklingWine',
-    name: 'ЗЕБО',
+
+    category: 'barbaresco-sparklingWine',
+
+    name: 'ZEBO',
+
     id: 'b-swine-2',
+
     price: 350,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'СОЛОДКЕ'
+
+    summary: 'SWEET'
+
   },
+
   {
-    category: 'barbbaresco-sparklingWine',
-    name: 'коктебель',
+
+    category: 'barbaresco-sparklingWine',
+
+    name: 'cocktail',
+
     id: 'b-swine-3',
+
     price: 130,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'БРЮТ\\напівСОЛОДКЕ\\рожеве'
+
+    summary: 'SHORT \\ semi-sweet \\ pink'
+
   },
 
-  // Barbaresco Alcolholic Drinks
+  //  Barbaresco Alcolholic Drinks
 
   {
-    category: 'barbbaresco-alcoholicDrinks',
+
+    category: 'barbaresco-alcoholicDrinks',
+
     name: 'CINZANO',
+
     id: 'b-aldr-1',
+
     price: 20,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
-    summary: 'БІЛИЙ, ЧЕРВОНИЙ'
+
+    summary: 'WHITE, RED'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
+
+    category: 'barbaresco-alcoholicDrinks',
+
     name: 'BECHEROVKA',
+
     id: 'b-aldr-2',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
+
+    category: 'barbaresco-alcoholicDrinks',
+
     name: 'JAGERMEISTER',
+
     id: 'b-aldr-3',
+
     price: 45,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
-    name: 'AZNAURI 5*',
+
+    category: 'barbaresco-alcoholicDrinks',
+
+    name: 'AZNAURI 5 *',
+
     id: 'b-aldr-4',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
+
+    category: 'barbaresco-alcoholicDrinks',
+
     name: 'REMY MARTIN VS',
+
     id: 'b-aldr-5',
+
     price: 110,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
-    name: 'ЗУБРІВКА',
+
+    category: 'barbaresco-alcoholicDrinks',
+
+    name: 'WINNING',
+
     id: 'b-aldr-6',
+
     price: 25,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
-    name: 'ФІНЛЯНДІЯ',
+
+    category: 'barbaresco-alcoholicDrinks',
+
+    name: 'FINLAND',
+
     id: 'b-aldr-7',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
-    name: 'Козацька рада',
+
+    category: 'barbaresco-alcoholicDrinks',
+
+    name: 'Cossack Council',
+
     id: 'b-aldr-8',
+
     price: 20,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
+
+    category: 'barbaresco-alcoholicDrinks',
+
     name: 'ESPOLON',
+
     id: 'b-aldr-9',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
+
+    category: 'barbaresco-alcoholicDrinks',
+
     name: 'CAPTAIN MORGAN',
+
     id: 'b-aldr-10',
+
     price: 50,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
-    summary: 'ЗОЛОТИЙ, ТЕМНИЙ'
+
+    summary: 'GOLDEN, DARK'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
+
+    category: 'barbaresco-alcoholicDrinks',
+
     name: 'WILD TURKEY',
+
     id: 'b-aldr-11',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: 'RYE, 101, 81'
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
-    name: 'ДЖЕМЕСОН',
+
+    category: 'barbaresco-alcoholicDrinks',
+
+    name: 'JAMESON',
+
     id: 'b-aldr-12',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-alcoholicDrinks',
-    name: 'ДЖЕК ДЕНІЕЛС ОЛД №7',
+
+    category: 'barbaresco-alcoholicDrinks',
+
+    name: 'JACK DANIELS OLD # 7',
+
     id: 'b-aldr-13',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
 
   // Barbaresco Bear
 
   {
-    category: 'barbbaresco-bear',
-    name: 'ЧЕРНІГІВСЬКЕ СВІТЛЕ',
+
+    category: 'barbaresco-bear',
+
+    name: 'CHERNIGIV LIGHT',
+
     id: 'b-bear-1',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '0,5л',
+
+    volume: '0.5l',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-bear',
-    name: 'БАД Б/А',
+
+    category: 'barbaresco-bear',
+
+    name: 'BAD A / B',
+
     id: 'b-bear-2',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '0,5л',
+
+    volume: '0.5l',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-bear',
-    name: 'ХУГАРДЕН',
+
+    category: 'barbaresco-bear',
+
+    name: 'HUGARD',
+
     id: 'b-bear-3',
+
     price: 45,
+
     quantity: Infinity,
-    volume: '0,3л',
+
+    volume: '0,3l',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-bear',
-    name: 'ХУГАРДЕН',
+
+    category: 'barbaresco-bear',
+
+    name: 'HUGARD',
+
     id: 'b-bear-3-1',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '0,5л',
+
+    volume: '0.5l',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-bear',
-    name: 'БІЛА НІЧ',
+
+    category: 'barbaresco-bear',
+
+    name: 'WHITE NIGHT',
+
     id: 'b-bear-4',
+
     price: 23,
+
     quantity: Infinity,
-    volume: '0,3л',
+
+    volume: '0,3l',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-bear',
-    name: 'БІЛА НІЧ',
+
+    category: 'barbaresco-bear',
+
+    name: 'WHITE NIGHT',
+
     id: 'b-bear-4-1',
+
     price: '35',
+
     quantity: Infinity,
-    volume: '0,5л',
+
+    volume: '0.5l',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-bear',
-    name: 'ХМЕЛЕВУС',
+
+    category: 'barbaresco-bear',
+
+    name: 'HEMELEVUS',
+
     id: 'b-bear-5',
+
     price: 26,
+
     quantity: Infinity,
-    volume: '0,3л',
+
+    volume: '0,3l',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-bear',
-    name: 'ХМЕЛЕВУС',
+
+    category: 'barbaresco-bear',
+
+    name: 'HEMELEVUS',
+
     id: 'b-bear-5-1',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '0,5л',
+
+    volume: '0.5l',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
 
   // Barbaresco Appetizer
 
   {
-    category: 'barbbaresco-appetizers',
-    name: 'ТАРІЛКА «ПІД ВИНО»',
+
+    category: 'barbaresco-appetizers',
+
+    name: 'UNDER THE WINE',
+
     id: 'b-app-1',
+
     price: 120,
+
     quantity: Infinity,
-    volume: '220г',
+
+    volume: '220g',
+
     image: 'pasta-presca-appetizer',
-    summary: 'Багет, італійська сиров’ялена ковбаса, сир Брі, сир Дор Блю, сир Едем, маслини, палички BBQ з рокфорним соусом та медом'
+
+    summary: 'Baguette, Italian uncooked sausage, Brie cheese, Dor Blue cheese, Eden cheese, olives, BBQ sticks with Roquefort sauce and honey'
+
   },
+
   {
-    category: 'barbbaresco-appetizers',
-    name: 'ПИВНИЙ СЕТ',
+
+    category: 'barbaresco-appetizers',
+
+    name: 'BEER SET',
+
     id: 'b-app-2',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'pasta-presca-appetizer',
-    summary: 'курка янтарна, бастурма, чіпси картопляні, сир фрі, пікантні ковбаски, соус тар-тар'
+
+    summary: 'amber chicken, basturma, potato chips, french fries, savory sausages, tartar sauce'
+
   },
+
   {
-    category: 'barbbaresco-appetizers',
-    name: 'КУРЯЧІ КРИЛА BBQ',
+
+    category: 'barbaresco-appetizers',
+
+    name: 'BBQ CHICKEN WINGS',
+
     id: 'b-app-3',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'pasta-presca-appetizer',
-    summary: 'Приготовлені в пікантному соусі та подаються з соусом тар-тар'
+
+    summary: 'Spicy sauce and served with tar-tar sauce'
+
   },
 
   // Barbaresco Garnishes
 
   {
-    category: 'barbbaresco-garnishes',
-    name: 'ОВОЧІ-ГРИЛЬ',
+
+    category: 'barbaresco-garnishes',
+
+    name: 'GRILLED VEGETABLES',
+
     id: 'b-gar-1',
+
     price: 55,
+
     quantity: Infinity,
-    volume: '250г',
+
+    volume: '250g',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-garnishes',
-    name: 'РИС З ОВОЧАМИ-ГРИЛЬ',
+
+    category: 'barbaresco-garnishes',
+
+    name: 'RICE WITH GRILLED VEGETABLES',
+
     id: 'b-gar-2',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '220г',
+
+    volume: '220g',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-garnishes',
-    name: 'КАРТОПЛЯ ПО-СЕЛЯНСЬКИ',
+
+    category: 'barbaresco-garnishes',
+
+    name: 'POTATOES IN THE VILLAGE',
+
     id: 'b-gar-3',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '250г',
+
+    volume: '250g',
+
     image: 'le-rock-side-dishes',
-    summary: 'З розмарином і беконом'
+
+    summary: 'With rosemary and bacon'
+
   },
+
   {
-    category: 'barbbaresco-garnishes',
-    name: 'КАРТОПЛЯ ФРІ',
+
+    category: 'barbaresco-garnishes',
+
+    name: 'French Fries',
+
     id: 'b-gar-4',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '150/30г',
+
+    volume: '150 / 30g',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-garnishes',
-    name: 'КАРТОПЛЯНЕ ПЮРЕ',
+
+    category: 'barbaresco-garnishes',
+
+    name: 'POTATOES',
+
     id: 'b-gar-5',
+
     price: 20,
+
     quantity: Infinity,
-    volume: '200г',
+
+    volume: '200g',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-garnishes',
-    name: 'ХЛІБ БІЛИЙ',
+
+    category: 'barbaresco-garnishes',
+
+    name: 'WHITE BREAD',
+
     id: 'b-gar-6-1',
+
     price: 3,
+
     quantity: Infinity,
-    volume: '1 шматочок',
+
+    volume: '1 piece',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
+
   {
-    category: 'barbbaresco-garnishes',
-    name: 'ХЛІБ СІРИЙ',
+
+    category: 'barbaresco-garnishes',
+
+    name: 'BREAD',
+
     id: 'b-gar-6-2',
+
     price: 3,
+
     quantity: Infinity,
-    volume: '1 шматочок',
+
+    volume: '1 piece',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
 
-  // Pasta Fresca Starts Here
+  // Fresca Pasta Starts Here
 
-  // Pasta Fresca Salad
+  //  Pasta Fresca Salad
+
   {
+
     category: 'pasta-fresca-salads',
-    name: 'Салат «ФРЕСКА ІТАЛІЯ»',
+
+    name: 'FRESH ITALY salad',
+
     id: 'pf-sal-1',
+
     price: 65,
+
     quantity: Infinity,
+
     volume: '0,320',
+
     image: 'pasta-fresca-salad',
-    summary: 'Листя салату, помідор, огірок,  м’який сир, оливки, заправляється соусом з руколи'
+
+    summary: 'Lettuce, tomato, cucumber, soft cheese, olives, flavored with arugula sauce'
+
   },
+
   {
+
     category: 'pasta-fresca-salads',
-    name: 'Панцанела',
+
+    name: 'Pancannella',
+
     id: 'pf-sal-2',
+
     price: 70,
+
     quantity: Infinity,
+
     volume: '0,280',
+
     image: 'pasta-fresca-salad',
-    summary: 'Традиційний італійський салат з грильованими овочами, хрусткою чіабатою, маринованими анчоусами, заправляється медово-гірчичним соусом'
+
+    summary: 'Traditional Italian salad with grilled vegetables, crispy chiabata, marinated anchovies, topped with honey-mustard sauce'
+
   },
+
   {
+
     category: 'pasta-fresca-salads',
-    name: 'Салат з телятиною та болгарським перцем',
+
+    name: 'Veal salad with bell peppers',
+
     id: 'pf-sal-3',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '0,230',
+
+    volume: '0.230',
+
     image: 'pasta-fresca-salad',
-    summary: 'Листя салату,  філе телятини, болгарський перець, опеньки, помідори  рукола'
+
+    summary: 'Lettuce leaves, veal fillets, bell peppers, honey, arugula tomatoes'
+
   },
+
   {
+
     category: 'pasta-fresca-salads',
-    name: 'салат з равіолі',
+
+    name: 'ravioli salad',
+
     id: 'pf-sal-4',
+
     price: 70,
+
     quantity: Infinity,
+
     volume: '0,395',
+
     image: 'pasta-fresca-salad',
-    summary: 'листя салату, равіолі з сиром, огірок, кабачок, каперси, заправляється медово-гірчичним соусом'
+
+    summary: 'lettuce, cheese ravioli, cucumber, zucchini, capers, topped with honey-mustard sauce'
+
   },
+
   {
+
     category: 'pasta-fresca-salads',
-    name: 'Салат з курячою грудинкою',
+
+    name: 'Chicken breast salad',
+
     id: 'pf-sal-5',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '0,300',
+
+    volume: '0.300',
+
     image: 'pasta-fresca-salad',
-    summary: 'Листя салату, куряче філе гриль, помідор, гриби, яйця, пармезан, базиліковий соус'
+
+    summary: 'Lettuce, grilled chicken fillet, tomato, mushrooms, eggs, parmesan, basil sauce'
+
   },
+
   {
+
     category: 'pasta-fresca-salads',
-    name: 'Салат з норвезьким лососем',
+
+    name: 'Norwegian salmon salad',
+
     id: 'pf-sal-6',
+
     price: 85,
+
     quantity: Infinity,
-    volume: '0,250',
+
+    volume: '0.250',
+
     image: 'pasta-fresca-salad',
-    summary: 'філе лосося, листя салату, броколі, помідор, каперси, заправляється метанно-гірчичним соусом'
+
+    summary: 'salmon fillet, lettuce, broccoli, tomato, capers, methane mustard sauce'
+
   },
 
-  // Pasta Fresca Pasta
+  //  Pasta Fresca Pasta
 
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'Тальятеллі «Quatro Formaggi»',
+
+    name: 'Tagliatelli Quatro Formaggi',
+
     id: 'pf-pasta-1',
+
     price: 55,
+
     quantity: Infinity,
-    volume: '0,250',
+
+    volume: '0.250',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'Тальятеллі з куркою під томатним соусом',
+
+    name: 'Tagliatelli with chicken under tomato sauce',
+
     id: 'pf-pasta-2',
+
     price: 55,
+
     quantity: Infinity,
+
     volume: '0,350',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'Шпинатні тальятеллі з в‘яленими помідорами та куркою',
+
+    name: 'Spinach tagliatelle with sun-dried tomatoes and chicken',
+
     id: 'pf-pasta-3',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '0,330',
+
+    volume: '0.300',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'тальятеллі з морепродуктами під вершковим соусом',
+
+    name: 'seafood tagliatelle under cream sauce',
+
     id: 'pf-pasta-4',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '0,300',
+
+    volume: '0.300',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'шпинатні тальятеллі з куркою та грибами',
+
+    name: 'spinach tagliatelle with chicken and mushrooms',
+
     id: 'pf-pasta-5',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '0,300',
+
+    volume: '0.300',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'Спагеті адіоліо з креветками',
+
+    name: 'Spaghetti adiolio with prawns',
+
     id: 'pf-pasta-6',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '0,330',
+
+    volume: '0.300',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'CПАГЕТІ БОЛОНЬЄЗЕ',
+
+    name: 'SPAGHETTI BOLOGNESE',
+
     id: 'pf-pasta-7',
+
     price: 55,
+
     quantity: Infinity,
-    volume: '0,300',
+
+    volume: '0.300',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'Спагеті «Маргарита»',
+
+    name: 'Margarita Spaghetti',
+
     id: 'pf-pasta-8',
+
     price: 60,
+
     quantity: Infinity,
+
     volume: '0,370',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'Спагеті карбонара',
+
+    name: 'Spaghetti Carbonara',
+
     id: 'pf-pasta-9',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '0,300',
+
+    volume: '0.300',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'Равіолі з куркою та горіховим соусом',
+
+    name: 'Ravioli with Chicken and Nut Sauce',
+
     id: 'pf-pasta-10',
+
     price: 60,
+
     quantity: Infinity,
+
     volume: '0,260',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'равіолі з лососем та рікоттою',
+
+    name: 'salmon and ricotta ravioli',
+
     id: 'pf-pasta-11',
+
     price: 85,
+
     quantity: Infinity,
-    volume: '0,250',
+
+    volume: '0.250',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-pasta',
-    name: 'равіолі з м’ясом та соусом прімавера',
+
+    name: 'ravioli with meat and sauce',
+
     id: 'pf-pasta-12',
+
     price: 65,
+
     quantity: Infinity,
+
     volume: '0,280',
+
     image: 'pasta-fresca-pasta',
+
     summary: ''
+
   },
 
   // Pasta Fresca Garnishes
+
   {
+
     category: 'pasta-fresca-garnishes',
-    name: 'КАРТОПЛЯНЕ ПЮРЕ',
+
+    name: 'POTATOES',
+
     id: 'pf-gar-1',
+
     price: 20,
+
     quantity: Infinity,
-    volume: '0,220',
+
+    volume: '0.220',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-garnishes',
-    name: 'РИС З ОВОЧАМИ-ГРИЛЬ',
+
+    name: 'RICE WITH GRILLED VEGETABLES',
+
     id: 'pf-gar-2',
+
     price: 25,
+
     quantity: Infinity,
+
     volume: '0,200',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-garnishes',
-    name: 'Чіабата  біла',
+
+    name: 'Chiabata White',
+
     id: 'pf-gar-3-1',
+
     price: 16,
+
     quantity: Infinity,
-    volume: '1шт.',
+
+    volume: '1pc',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-garnishes',
-    name: 'Чіабата  сіра',
+
+    name: 'Ciabata Gray',
+
     id: 'pf-gar-3-2',
+
     price: 16,
+
     quantity: Infinity,
-    volume: '1шт.',
+
+    volume: '1pc',
+
     image: 'le-rock-side-dishes',
+
     summary: ''
+
   },
 
-  // Pasta Freca Deserts
+  //  Pasta Freca Deserts
 
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Лимонний тарт',
+
+    name: 'Lemon Cake',
+
     id: 'pf-d-1',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '0,150',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Десерт «Павлова»',
+
+    name: 'Pavlova Dessert',
+
     id: 'pf-d-2',
+
     price: 45,
+
     quantity: Infinity,
-    volume: '0,220',
+
+    volume: '0.220',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Десерт «Буко»',
+
+    name: 'Buko Dessert',
+
     id: 'pf-d-3',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '0,200',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Чізкейк',
+
+    name: 'Cheesecake',
+
     id: 'pf-d-4',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '0,170',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Шоколадно-ромовий фондан з морозивом',
+
+    name: 'Chocolate rum fondue with ice cream',
+
     id: 'pf-d-5',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '0,210',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Пана котта',
+
+    name: 'Mr Cotta',
+
     id: 'pf-d-6',
+
     price: 40,
+
     quantity: Infinity,
+
     volume: '0,180',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Тірамісу',
+
+    name: 'Tiramisu',
+
     id: 'pf-d-7',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '0,200',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Морозиво',
+
+    name: 'Ice Cream',
+
     id: 'pf-d-8',
+
     price: 40,
+
     quantity: Infinity,
+
     volume: '0,170',
+
     image: 'barbarescoDesert',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-deserts',
-    name: 'Круасан з соусом на вибір',
+
+    name: 'Croissant with choice sauce',
+
     id: 'pf-d-9',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '1шт',
+
+    volume: '1pc',
+
     image: 'barbarescoDesert',
-    summary: 'Шоколад, малина'
+
+    summary: 'Chocolate, raspberry'
+
   },
 
-  // Pasta Fresca Appetizer/Snacks
+  // Pasta Fresca Appetizer / Snacks
 
   {
+
     category: 'pasta-fresca-appetizers',
-    name: 'Брускети',
+
+    name: 'Bruschetta',
+
     id: 'pf-app-1',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '4 шт',
+
+    volume: '4 pcs',
+
     image: 'pasta-presca-appetizer',
-    summary: 'прошутто, лосось, гриби,помідори з моцарелою'
+
+    summary: 'prosciutto, salmon, mushrooms, mozzarella'
+
   },
+
   {
+
     category: 'pasta-fresca-appetizers',
-    name: 'мідії у вершковому соусі під вино',
+
+    name: 'mussels in cream sauce',
+
     id: 'pf-app-2',
+
     price: 80,
+
     quantity: Infinity,
+
     volume: '0,285',
+
     image: 'pasta-presca-appetizer',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-appetizers',
-    name: 'Карпачо з лосося',
+
+    name: 'Salmon Carpaccio',
+
     id: 'pf-app-3',
+
     price: 90,
+
     quantity: Infinity,
+
     volume: '0,075',
+
     image: 'pasta-presca-appetizer',
-    summary: 'рукола, пармезан, каперси'
+
+    summary: 'arugula, parmesan, capers'
+
   },
+
   {
+
     category: 'pasta-fresca-appetizers',
-    name: 'італійські сири',
+
+    name: 'Italian cheeses',
+
     id: 'pf-app-4',
+
     price: 75,
+
     quantity: Infinity,
+
     volume: '0,150',
+
     image: 'pasta-presca-appetizer',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-appetizers',
-    name: 'Антипасто',
+
+    name: 'Antipasto',
+
     id: 'pf-app-5',
+
     price: 230,
+
     quantity: Infinity,
+
     volume: '0,600',
+
     image: 'pasta-presca-appetizer',
-    summary: 'Щедра порція італійських делікатесів'
+
+    summary: 'A generous serving of Italian delicacies'
+
   },
 
-  // Pasta Fresca Main Meals
+  // Fresca Pasta Main Meals
 
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'філе тріски з червоним рисом',
+
+    name: 'Red Rice Cod Fillet',
+
     id: 'pf-mm-1',
+
     price: 90,
+
     quantity: Infinity,
-    volume: '300г',
+
+    volume: '300g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'Біфштекс з моцарелою НА КАРТОПЛЯНІЙ ПОДУШЦІ',
+
+    name: 'Potato Steak Mozzarella Steak',
+
     id: 'pf-mm-2',
+
     price: 85,
+
     quantity: Infinity,
+
     volume: '0,400',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'Куряче філе фаршироване шпинатом',
+
+    name: 'Chicken fillet stuffed with spinach',
+
     id: 'pf-mm-3',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '0,200г',
+
+    volume: '0,200g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'шарлотт з лососем та моцарелою',
+
+    name: 'charlotte with salmon and mozzarella',
+
     id: 'pf-mm-4',
+
     price: 125,
+
     quantity: Infinity,
-    volume: '0,300г',
+
+    volume: '0.300g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'курКА «ПАРМЕЗАН»',
+
+    name: 'Parmesan Chicken',
+
     id: 'pf-mm-5',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '0,380г',
+
+    volume: '0,380g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'соте з морепродуктами',
+
+    name: 'seafood saute',
+
     id: 'pf-mm-6',
+
     price: 120,
+
     quantity: Infinity,
-    volume: '0,420г',
+
+    volume: '0,420g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'МЕДАЛЬЙОНИ   Зі  СВИНИНИ З  ОВОЧАМИ   ГРИЛЬ',
+
+    name: 'Pork and Grilled Pork Medallions',
+
     id: 'pf-mm-7',
+
     price: 90,
+
     quantity: Infinity,
-    volume: '0,300г',
+
+    volume: '0.300g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'стейк з телятини з соусом сальса',
+
+    name: 'veal steak with salsa sauce',
+
     id: 'pf-mm-8',
+
     price: 115,
+
     quantity: Infinity,
-    volume: '0,250г',
+
+    volume: '0,250g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-mainMeals',
-    name: 'сет з морепродуктів',
+
+    name: 'seafood set',
+
     id: 'pf-mm-9',
+
     price: 350,
+
     quantity: Infinity,
-    volume: '0,900г',
+
+    volume: '0,900g',
+
     image: 'barbarescoHits',
+
     summary: ''
+
   },
 
-  // Barbaresco First Courses
+  //  Barbaresco First Courses
 
   {
+
     category: 'pasta-fresca-firstCourses',
-    name: 'Мінестроне',
+
+    name: 'Minestrone',
+
     id: 'pf-fc-1',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '0,300',
+
+    volume: '0.300',
+
     image: 'barbarescoFirstCourse',
-    summary: 'Традиційний італійський суп з помідорів'
+
+    summary: 'Traditional Italian tomato soup'
+
   },
+
   {
+
     category: 'pasta-fresca-firstCourses',
-    name: 'Курячий  бульйон  зі шматочками курки',
+
+    name: 'Chicken broth with chicken pieces',
+
     id: 'pf-fc-2',
+
     price: 35,
+
     quantity: Infinity,
+
     volume: '0,350',
+
     image: 'barbarescoFirstCourse',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-firstCourses',
-    name: 'СУП-ПЮРЕ З ПЕЧЕРИЦЬ',
+
+    name: 'MUSHROOM Soup',
+
     id: 'pf-fc-3',
+
     price: 55,
+
     quantity: Infinity,
-    volume: '0,250',
+
+    volume: '0.250',
+
     image: 'barbarescoFirstCourse',
+
     summary: ''
+
   },
 
   // Pasta Fresca Alcolholic Cocktails
 
   {
+
     category: 'pasta-fresca-alcoholicCocktail',
-    name: 'Bellini ',
+
+    name: 'Bellini',
+
     id: 'pf-alcc-1',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'персикове пюре, ігристе вино'
+
+    summary: 'peach puree, sparkling wine'
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicCocktail',
+
     name: 'Martini Royale',
+
     id: 'pf-alcc-2',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'білий вермут, ігристе вино, содова, лайм, м’ята'
+
+    summary: 'white vermouth, sparkling wine, soda, lime, mint'
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicCocktail',
+
     name: 'Aperol Spritz',
+
     id: 'pf-alcc-3',
+
     price: 65,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'Апероль, ігристе вино, содова, апельсин, зелені оливки'
+
+    summary: 'Aperol, sparkling wine, soda, orange, green olives'
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicCocktail',
+
     name: 'Mojito',
+
     id: 'pf-alcc-4',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'золотий ром, тростинний цукор, м’ята, лайм, содова'
+
+    summary: 'golden rum, cane sugar, mint, lime, soda'
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicCocktail',
+
     name: 'strawberry basil smash',
+
     id: 'pf-alcc-5',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '150мл',
+
+    volume: '150ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'джин, полуничне пюре, базилік, лайм, цукровий сироп'
+
+    summary: 'gin, strawberry puree, basil, lime, sugar syrup'
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicCocktail',
+
     name: 'amaretto sour',
+
     id: 'pf-alcc-6',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '200мл',
+
+    volume: '200ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'ром, лікер Disaronno, лимонний фреш, альбумін'
+
+    summary: 'rum, Disaronno liquor, lemon juice, albumin'
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicCocktail',
+
     name: 'pink lady',
+
     id: 'pf-alcc-7',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '200мл',
+
+    volume: '200ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'текіла, апельсиновий фреш, сироп гібіскус, лимонний фреш'
+
+    summary: 'tequila, orange juice, hibiscus syrup, lemon juice'
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicCocktail',
+
     name: 'violet gin sour',
+
     id: 'pf-alcc-8',
+
     price: 80,
+
     quantity: Infinity,
-    volume: '150мл',
+
+    volume: '150ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'джин, лимонний фреш, сироп фіалки, цукровий сироп, ангостура'
+
+    summary: 'gin, lemon fresh, violet syrup, sugar syrup, angostura'
+
   },
 
-  // Pasta Fresca Wine
+  // Fresca Wine Pasta
 
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Cavaleria Bianco (Cavaleria) біле сухе',
+
+    name: 'Cavaleria Bianco (Cavaleria) white dry',
+
     id: 'pf-wine-1',
+
     price: 18,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
-    summary: 'Приємний, свіжий смак з нотками фруктів'
-  },
-  {
-    category: 'pasta-fresca-wine',
-    name: 'Cavaleria Bianco (Cavaleria) біле сухе',
-    id: 'pf-wine-1-1',
-    price: 270,
-    quantity: Infinity,
-    volume: '750мл',
-    image: 'barbarescoAlcohol',
-    summary: 'Приємний, свіжий смак з нотками фруктів'
-  },
-  {
-    category: 'pasta-fresca-wine',
-    name: 'Cavaleria Bianco (Cavaleria) н/сол біле',
-    id: 'pf-wine-2',
-    price: 18,
-    quantity: Infinity,
-    volume: '50мл',
-    image: 'barbarescoAlcohol',
-    summary: 'Чудовий насичений смак з фруктовими нотками'
+
+    summary: 'A nice, fresh taste with a touch of fruit'
+
   },
 
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Cavaleria Bianco (Cavaleria) н/сол біле',
+
+    name: 'Cavaleria Bianco (Cavaleria) white dry',
+
+    id: 'pf-wine-1-1',
+
+    price: 270,
+
+    quantity: Infinity,
+
+    volume: '750ml',
+
+    image: 'barbarescoAlcohol',
+
+    summary: 'A nice, fresh taste with a touch of fruit'
+
+  },
+
+  {
+
+    category: 'pasta-fresca-wine',
+
+    name: 'Cavaleria Bianco (Cavaleria) n / white salt',
+
+    id: 'pf-wine-2',
+
+    price: 18,
+
+    quantity: Infinity,
+
+    volume: '50 ml ',
+
+    image: 'barbarescoAlcohol',
+
+    summary: 'Great fruity flavor'
+
+  },
+
+  {
+
+    category: 'pasta-fresca-wine',
+
+    name: 'Cavaleria Bianco (Cavaleria) n / white salt',
+
     id: 'pf-wine-2-1',
+
     price: 270,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'Чудовий насичений смак з фруктовими нотками'
+
+    summary: 'Great fruity flavor'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Cavaleria Rosato (Cavaleria) н/сол рожеве',
+
+    name: 'Cavaleria Rosato (Cavaleria) n / salt rose',
+
     id: 'pf-wine-3',
+
     price: 18,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
-    summary: 'Вино з нотками свіжих фруктів, ягід та легким квітковими ароматом'
+
+    summary: 'Wine with a touch of fresh fruit, berries and a light floral aroma'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Cavaleria Rosato (Cavaleria) н/сол рожеве',
+
+    name: 'Cavaleria Rosato (Cavaleria) n / salt rose',
+
     id: 'pf-wine-3-1',
+
     price: 270,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'Вино з нотками свіжих фруктів, ягід та легким квітковими ароматом'
+
+    summary: 'Wine with a touch of fresh fruit, berries and a light floral aroma'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Cavaleria Rosso (Cavaleria) сухе червоне',
+
+    name: 'Cavaleria Rosso (Cavaleria) dry red',
+
     id: 'pf-wine-4',
+
     price: 18,
+
     quantity: Infinity,
-    volume: '50мл',
+
+    volume: '50 ml ',
+
     image: 'barbarescoAlcohol',
-    summary: 'Сухий та свіжий смак, з приємним виноградним ароматом'
+
+    summary: 'Dry and fresh taste, with a pleasant grape aroma'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Cavaleria Rosso (Cavaleria) сухе червоне',
+
+    name: 'Cavaleria Rosso (Cavaleria) dry red',
+
     id: 'pf-wine-4-1',
+
     price: 270,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'Сухий та свіжий смак, з приємним виноградним ароматом'
+
+    summary: 'Dry and fresh taste, with a pleasant grape aroma'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Сavaleria Rosso (Cavaleria) н/сол червоне',
+
+    name: 'Cavaleria Rosso (Cavaleria) n / salt red',
+
     id: 'pf-wine-5',
+
     price: 44,
+
     quantity: Infinity,
-    volume: '100мл',
+
+    volume: '100ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'Вино за смаком оксамитове, з нотками ягід, та легкою терпкістю'
+
+    summary: 'The wine tastes velvety, with a touch of berries and light tartness'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Сavaleria Rosso (Cavaleria) н/сол червоне',
+
+    name: 'Cavaleria Rosso (Cavaleria) n / salt red',
+
     id: 'pf-wine-5-1',
+
     price: 330,
+
     quantity: Infinity,
-    volume: '375мл',
+
+    volume: '375ml',
+
     image: 'barbarescoAlcohol',
-    summary: 'Вино за смаком оксамитове, з нотками ягід, та легкою терпкістю'
+
+    summary: 'The wine tastes velvety, with a touch of berries and light tartness'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Soave (Sizarini) сухе біле',
+
+    name: 'Soave (Sizarini) Dry White',
+
     id: 'pf-wine-6',
+
     price: 300,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
-    summary: 'Освіжний легкий смак з м’яким ароматом цитрусових та персика'
+
+    summary: 'A refreshing light taste with a mild citrus and peach aroma'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Сhardonnay (Sizarini) сухе біле',
+
+    name: 'Chardonnay (Sizarini) dry white',
+
     id: 'pf-wine-7',
+
     price: 300,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
-    summary: 'Вино з ароматом тропічних фруктів, з нотами персика та нектарина'
+
+    summary: 'Tropical fruit aroma with notes of peach and nectarine'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Gavi DOC (Moranera) сухе біле',
+
+    name: 'Gavi DOC (Moranera) Dry White',
+
     id: 'pf-wine-8',
+
     price: 320,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
-    summary: 'Свіжий смак з нотами меду і цукатів, та легким мигдальним післясмаком'
+
+    summary: 'Fresh taste with notes of honey and candied fruit, with a light almond aftertaste'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Merlot Rosato (Castelmarco) сухе рожеве',
+
+    name: 'Merlot Rosato (Castelmarco) Dry Roses',
+
     id: 'pf-wine-9',
+
     price: 300,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
-    summary: 'Сухий насичений смак з фруктово-ягідним ароматом'
+
+    summary: 'Dry rich taste with fruit and berry aroma'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Chianti (Castelmarco)  сухе червоне',
+
+    name: 'Chianti (Castelmarco) dry red',
+
     id: 'pf-wine-9',
+
     price: 300,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
-    summary: 'Тонкий фруктовий, квітковий аромат з нотами вишні та ожини'
+
+    summary: 'Slim fruity, floral aroma with cherry and blackberry notes'
+
   },
+
   {
+
     category: 'pasta-fresca-wine',
-    name: 'Sangiovese Rubicone (Sizarini) сухе червоне',
+
+    name: 'Sangiovese Rubicone (Sizarini) Dry Red',
+
     id: 'pf-wine-10',
+
     price: 300,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
-    summary: 'Має елегантний аромат червоних яблук і чорних слив, з тонкими відтінками ванілі'
+
+    summary: 'Has an elegant aroma of red apples and black plums, with subtle hints of vanilla'
+
   },
 
   // Pasta Fresca Sparkling Wine
 
   {
+
     category: 'pasta-fresca-sparklingWine',
-    name: 'Fragolino Bianco (Novellina )солодке біле',
+
+    name: 'Fragolino Bianco (Novellina) sweet white',
+
     id: 'b-swine-1',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '150мл',
+
+    volume: '150ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-sparklingWine',
-    name: 'Fragolino Bianco (Novellina )солодке біле',
+
+    name: 'Fragolino Bianco (Novellina) sweet white',
+
     id: 'b-swine-1-1',
+
     price: 200,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-sparklingWine',
-    name: 'Fragolino Rosso (Novellina) солодке червоне',
+
+    name: 'Fragolino Rosso (Novellina) sweet red',
+
     id: 'b-swine-3',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '150мл',
+
+    volume: '150ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-sparklingWine',
-    name: 'Fragolino Rosso (Novellina) солодке червоне',
+
+    name: 'Fragolino Rosso (Novellina) sweet red',
+
     id: 'b-swine-3',
+
     price: 200,
+
     quantity: Infinity,
-    volume: '750мл',
+
+    volume: '750ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
 
   // Pasta Fresca Italian Wine
 
   {
+
     category: 'pasta-fresca-italianWine',
-    name: 'червоне напівсолодке',
+
+    name: 'red semisweet',
+
     id: 'b-mitwine-1',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '150мл',
+
+    volume: '150ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-italianWine',
-    name: 'біле напівслолодке',
+
+    name: 'white semi-sweet',
+
     id: 'b-mitwine-1-1',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '150мл',
+
+    volume: '150ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
 
-  // Barbaresco Alcolholic Drinks
+  //  Barbaresco Alcolholic Drinks
 
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Горілка Zubrowka',
+
+    name: 'Zubrowka vodka',
+
     id: 'b-aldr-1',
+
     price: 30,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Горілка Finlandia класична',
+
+    name: 'Finlandia vodka classic',
+
     id: 'b-aldr-2',
+
     price: 40,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Горілка Finlandia журавлина',
+
+    name: 'Vodka Finlandia Cranberry',
+
     id: 'b-aldr-2-1',
+
     price: 40,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Ром Captain Morgan золотий',
+
+    name: 'Captain Morgan Gold Gold',
+
     id: 'b-aldr-3',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Ром Captain Morgan темний',
+
+    name: 'Captain Morgan Rum Dark',
+
     id: 'b-aldr-3-1',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Коньяк Remy Martin VS',
+
+    name: 'Remy Martin VS Cognac',
+
     id: 'b-aldr-4',
+
     price: 120,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Бурбон Wild Turkey Rye',
+
+    name: 'Wild Turkey Rye Bourbon',
+
     id: 'b-aldr-5',
+
     price: 80,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Бурбон Wild Turkey101',
+
+    name: 'Bourbon Wild Turkey101',
+
     id: 'b-aldr-5-1',
+
     price: 80,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Бурбон Wild Turkey 81',
+
+    name: 'Bourbon Wild Turkey 81',
+
     id: 'b-aldr-5-2',
+
     price: 80,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Віскі Jameson',
+
+    name: 'Jameson Whiskey',
+
     id: 'b-aldr-6',
+
     price: 70,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Віскі Jack Daniel’s Old № 7',
+
+    name: 'Jack Daniel\'s Whiskey No 7',
+
     id: 'b-aldr-7',
+
     price: 80,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Настоянка Becherovka',
+
+    name: 'Tincture of Becherovka',
+
     id: 'b-aldr-8',
+
     price: 45,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Вермут Cinzano bianco',
+
+    name: 'Vermouth Cinzano bianco',
+
     id: 'b-aldr-9',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Вермут Cinzano rosso',
+
+    name: 'Vermouth Cinzano rosso',
+
     id: 'b-aldr-9-1',
+
     price: 50,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-alcoholicDrinks',
-    name: 'Бренді Aznauri',
+
+    name: 'Brandy Aznauri',
+
     id: 'b-aldr-10',
+
     price: 40,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
 
-  // Pasta Fresca Bear
+  // Fresca Bear Pasta
 
   {
+
     category: 'pasta-fresca-bear',
-    name: 'ірландський ель',
+
+    name: 'Irish ale',
+
     id: 'pf-bear-1',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '400мл',
+
+    volume: '400ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-bear',
+
     name: 'Hoegaarden',
+
     id: 'pf-bear-2',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '330мл',
+
+    volume: '330ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-bear',
+
     name: 'Hoegaarden',
+
     id: 'pf-bear-3',
+
     price: 70,
+
     quantity: Infinity,
-    volume: '500мл',
+
+    volume: '500ml',
+
     image: 'barbarescoAlcohol',
+
     summary: ''
+
   },
+
   // Pasta Fresca Coffee
 
   {
+
     category: 'pasta-fresca-coffee',
-    name: 'ЕСПРЕССО',
+
+    name: 'ESPRESSO',
+
     id: 'pf-c-1',
+
     price: 25,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-coffee',
-    name: 'АМЕРИКАНО',
+
+    name: 'AMERICAN',
+
     id: 'pf-c-2',
+
     price: 25,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-coffee',
-    name: 'КАПУЧІНО',
+
+    name: 'Cappuccino',
+
     id: 'pf-c-3',
+
     price: 40,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-coffee',
-    name: 'рістрето',
+
+    name: 'ristretto',
+
     id: 'pf-c-4',
+
     price: 25,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-coffee',
-    name: 'ЛАТЕ',
+
+    name: 'LATE',
+
     id: 'pf-c-5',
+
     price: 35,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-coffee',
-    name: 'мигдально -черешневе фраппе',
+
+    name: 'almond-cherry frappe',
+
     id: 'pf-c-6',
+
     price: 45,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-coffee',
-    name: 'МОЛОКО',
+
+    name: 'MILK',
+
     id: 'pf-c-7',
+
     price: 5,
+
     quantity: Infinity,
+
     volume: '',
+
     image: 'barbarescoDrinksCoffe',
+
     summary: ''
+
   },
 
-  // Pasta Fresca Tea
+  //  Pasta Fresca Tea
 
   {
+
     category: 'pasta-fresca-tea',
-    name: 'чорний/зелений/фруктовий/ трав’яний',
+
+    name: 'black / green / fruity / herbal',
+
     id: 'pf-tea-1',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '600мл',
+
+    volume: '600ml',
+
     image: 'barbarescoDrinksTea',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-tea',
-    name: 'чеський',
+
+    name: 'Czech',
+
     id: 'pf-tea-2',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksTea',
-    summary: 'м‘ятний чай з додаванням лайму та кориці'
+
+    summary: 'mint tea with lime and cinnamon'
+
   },
+
   {
+
     category: 'pasta-fresca-tea',
-    name: 'обліпихово-грушевий',
+
+    name: 'sea buckthorn pear ',
+
     id: 'pf-tea-3',
+
     price: 30,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksTea',
+
     summary: ''
+
   },
 
   // Pasta Fresca Fresh
 
   {
+
     category: 'pasta-fresca-fresh',
-    name: 'АПЕЛЬСИНОВИЙ',
+
+    name: 'APRIL',
+
     id: 'pf-fre-1',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-fresh',
-    name: 'Грейпфрутовий',
+
+    name: 'Grapefruit',
+
     id: 'pf-fre-2',
+
     price: 60,
+
     quantity: Infinity,
-    volume: '0,25л',
+
+    volume: '0.25l',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
 
-  // Pasta Fresca Lemonade
+  // Fresca Lemonade Pasta
 
   {
+
     category: 'pasta-fresca-lemonade',
-    name: 'полуниця-лічі',
+
+    name: 'strawberry-lychee',
+
     id: 'pf-lem-1',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-lemonade',
-    name: 'гуава-гранат',
+
+    name: 'guava garnet',
+
     id: 'pf-lem-2',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-lemonade',
-    name: 'ківі',
+
+    name: 'kiwi',
+
     id: 'pf-lem-3',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-lemonade',
-    name: 'ананас-базилік',
+
+    name: 'pineapple basil',
+
     id: 'pf-lem-4',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
 
   // Pasta Fresca None Alcoholic Drinks
 
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
-    name: 'мохіто б/а',
-    id: 'b-nad-1',
+
+    name: 'used mojito',
+
+    id: 'b-over-1',
+
     price: 40,
+
     quantity: Infinity,
-    volume: '500мл',
+
+    volume: '500ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
-    name: 'мілкшейк чорниця',
-    id: 'b-nad-2',
+
+    name: 'milkshake blueberries',
+
+    id: 'b-over-2',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
-    name: 'мілкшейк банан',
-    id: 'b-nad-2-1',
+
+    name: 'banana banana',
+
+    id: 'b-over-2-1',
+
     price: 35,
+
     quantity: Infinity,
-    volume: '300мл',
+
+    volume: '300ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
-    name: 'Морс',
-    id: 'b-nad-3',
+
+    name: 'Morse',
+
+    id: 'b-over-3',
+
     price: 15,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'з журавлини'
+
+    summary: 'cranberries'
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
-    name: 'Сік Sandora',
-    id: 'b-nad-4',
+
+    name: 'Sandora Juice',
+
+    id: 'b-over-4',
+
     price: 18,
+
     quantity: Infinity,
-    volume: '250мл',
+
+    volume: '250ml',
+
     image: 'barbarescoDrinksFresh',
-    summary: 'в асортименті'
+
+    summary: 'in stock'
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
+
     name: 'Pepsi',
-    id: 'b-nad-5',
+
+    id: 'b-over-5',
+
     price: 25,
+
     quantity: Infinity,
-    volume: '330мл',
+
+    volume: '330ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
+
     name: '7UP',
-    id: 'b-nad-6',
+
+    id: 'b-over-6',
+
     price: 27,
+
     quantity: Infinity,
-    volume: '500мл',
+
+    volume: '500ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
+
     name: 'Tonic Water',
-    id: 'b-nad-7',
+
+    id: 'b-over-7',
+
     price: 27,
+
     quantity: Infinity,
-    volume: '500мл',
+
+    volume: '500ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
-    name: 'девайтіс слабо газ.',
-    id: 'b-nad-8',
+
+    name: 'Devas is weak gas.',
+
+    id: 'b-over-8',
+
     price: 27,
+
     quantity: Infinity,
-    volume: '500мл',
+
+    volume: '500ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
-    name: 'девайтіс н. газ.',
-    id: 'b-nad-8',
+
+    name: 'device n. gas.',
+
+    id: 'b-over-8',
+
     price: 27,
+
     quantity: Infinity,
-    volume: '500мл',
+
+    volume: '500ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   },
+
   {
+
     category: 'pasta-fresca-nonAlcoholicDrinks',
+
     name: 'Borjomi',
-    id: 'b-nad-8',
+
+    id: 'b-over-8',
+
     price: 45,
+
     quantity: Infinity,
-    volume: '500мл',
+
+    volume: '500ml',
+
     image: 'barbarescoDrinksFresh',
+
     summary: ''
+
   }
+
 ]
