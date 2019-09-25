@@ -1,3 +1,35 @@
+<i18n>
+{
+  "uk": {
+    "coffee": "КАВА",
+    "tea": "ЧАЙ",
+    "coldDrinks": "ХОЛОДНІ НАПОЇ",
+    "lemonade": "ЛИМОНАДИ",
+    "smoothy": "СМУЗІ",
+    "milkShake": "МІЛКШЕЙКИ",
+    "noneAlcoholicDrinks": "БЕЗАЛКОГОЛЬНІ НАПОЇ"
+  },
+  "en": {
+   "coffee": "COFFEE",
+   "tea": "Tea",
+   "coldDrinks": "Cold Drinks",
+   "lemonade": "Lemonade",
+   "smoothy": "Smoothies",
+    "milkShake": "MILKSHAKES",
+    "noneAlcoholicDrinks": "NON-ALCOHOLIC BEVERAGES"
+  },
+  "ru": {
+    "coffee": "КОФЕ",
+    "tea": "ЧАЙ",
+    "coldDrinks": "ХОЛОДНЫЕ НАПИТКИ",
+    "lemonade": "ЛИМОНАД",
+    "smoothy": "ПОЛОСЕ",
+    "milkShake": "Милкшейк",
+    "noneAlcoholicDrinks": "безалкогольные напитки"
+  }
+}
+</i18n>
+
 <template>
   <div
     id="drinks"
@@ -16,7 +48,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                Кава
+                {{ $t('coffee') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksCoffeIcon.png"
@@ -92,7 +124,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                Чай
+                {{ $t('tea') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
@@ -177,7 +209,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                Холодні напої
+                {{ $t('coldDrinks') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -253,7 +285,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                ЛИМОНАДИ
+                {{ $t('lemonade') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -329,7 +361,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                БЕЗАЛКОГОЛЬНІ НАПОЇ
+                {{ $t('noneAlcoholicDrinks') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"

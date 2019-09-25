@@ -1,3 +1,35 @@
+<i18n>
+{
+  "uk": {
+    "coffee": "КАВА",
+    "tea": "ЧАЙ",
+    "coldDrinks": "ХОЛОДНІ НАПОЇ",
+    "lemonade": "ЛИМОНАДИ",
+    "smoothy": "СМУЗІ",
+    "milkShake": "МІЛКШЕЙКИ",
+    "noneAlcoholicDrinks": "БЕЗАЛКОГОЛЬНІ НАПОЇ"
+  },
+  "en": {
+   "coffee": "COFFEE",
+   "tea": "Tea",
+   "coldDrinks": "Cold Drinks",
+   "lemonade": "Lemonade",
+   "smoothy": "Smoothies",
+    "milkShake": "MILKSHAKES",
+    "noneAlcoholicDrinks": "NON-ALCOHOLIC BEVERAGES"
+  },
+  "ru": {
+    "coffee": "КОФЕ",
+    "tea": "ЧАЙ",
+    "coldDrinks": "ХОЛОДНЫЕ НАПИТКИ",
+    "lemonade": "ЛИМОНАД",
+    "smoothy": "ПОЛОСЕ",
+    "milkShake": "Милкшейк",
+    "noneAlcoholicDrinks": "безалкогольные напитки"
+  }
+}
+</i18n>
+
 <template>
   <div
     id="drinks"
@@ -16,7 +48,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                Кава
+                {{ $t('coffee') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksCoffeIcon.png"
@@ -92,7 +124,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                Чай
+                {{ $t('tea') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
@@ -115,43 +147,43 @@
         <div class="col-sm-9">
           <div class="row">
             <div
-              v-for="tea in extractedProductsTea"
-              :key="tea.id"
+              v-for="product in extractedProductsTea"
+              :key="product.id"
               class="card"
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${tea.image + '.jpg'}`)"
-                :alt="tea.name"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :alt="product.name"
               >
               <div class="card-body">
                 <h5
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="tea.name"
+                  :title="product.name"
                 >
-                  {{ tea.name }}
+                  {{ product.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
                   class="card-text text-left ingredients d-none d-md-block"
                   style="cursor: context-menu;"
-                  :title="tea.summary"
+                  :title="product.summary"
                 >
-                  {{ (tea.summary).slice(0, 30) }}...<span class="card-text quantity">{{ tea.volume }}</span>
+                  {{ (product.summary).slice(0, 30) }}...<span class="card-text quantity">{{ product.volume }}</span>
                 </p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto">
-                      <span class="card-text d-inline d-sm-none">{{ tea.volume }}</span> {{ tea.price | currency }}
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                     </p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(tea.id)"
+                      @click.prevent="addToCart(product.id)"
                     >
                       {{ $t('order') }}
                     </button>
@@ -177,7 +209,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                Холодні напої
+                {{ $t('coldDrinks') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -253,7 +285,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                ЛИМОНАДИ
+                {{ $t('lemonade') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -329,7 +361,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                СМУЗІ
+                {{ $t('smoothy') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -405,7 +437,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                МІЛКШЕЙКИ
+                {{ $t('milkShake') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -481,7 +513,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                БЕЗАЛКОГОЛЬНІ НАПОЇ
+                {{ $t('noneAlcoholicDrinks') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
