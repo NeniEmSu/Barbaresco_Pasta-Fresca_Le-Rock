@@ -61,11 +61,11 @@ export default {
       ],
       link: [
         {
-          hid: 'apple-touch-icon',
-          rel: 'apple-touch-icon',
-          sizes: '180x180',
-          href: '/apple-touch-icon.png'
+          rel: 'icon',
+          type: 'image/png',
+          href: 'barbaresco-logo.png'
         }
+
         // ...i18nSeo.link
       ]
     }

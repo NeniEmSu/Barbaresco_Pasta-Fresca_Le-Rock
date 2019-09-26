@@ -68,6 +68,44 @@
         {{ $t('home.title') }}
       </h1>
 
+      <style>
+        .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: -5px !important;
+        }
+
+        .owl-carousel .owl-stage {
+        margin: auto !important;
+        }
+
+        .owl-theme .owl-dots .owl-dot span {
+        min-width: 50px;
+        max-width: 50px;
+        width: 100%;
+        min-height: 50px;
+        max-height: 50px;
+        height: 100%;
+        background-color: black !important;
+        }
+
+        @media screen and (max-height: 480px) {
+        .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: -13px !important;
+        }
+        }
+
+        @media screen and (min-height: 537px) and (max-height: 560px) {
+        .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: -8px !important;
+        }
+        }
+
+        @media screen and (min-height: 560px) and (max-height: 640px) {
+        .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 1% !important;
+        }
+        }
+      </style>
+
       <client-only
         aria-placeholder="Loading.."
         placeholder="Loading..."
@@ -76,7 +114,7 @@
           <carousel
             :nav="false"
             :dots="false"
-            :items="4"
+            :items="3"
             :loop="false"
             :mouse-drag="true"
             :touch-drag="true"
@@ -87,8 +125,8 @@
             :responsive="{
               0: { items: 1, center: true, dots: true },
               600: { items: 1, center: false, margin: 0 },
-              1440: { items: 4, center: false, margin: 60},
-              1800: { items: 4, center: false, margin: 0}
+              1440: { items: 3, center: false, margin: 60},
+              1800: { items: 3, center: false, margin: 0}
             }"
           >
             <div
@@ -96,7 +134,7 @@
               data-aos-easing="ease"
               data-aos-delay="500"
               data-aos-duration="750"
-              class=" col-3 "
+              class=" col-4 "
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[0].imageShowcase + '.jpg'}`)"
@@ -104,7 +142,7 @@
                 img-top
                 tag="article"
                 style=""
-                class="mb-2 ml-md-4 mx-auto homeNavCard"
+                class="mb-1 homeNavCard"
               >
                 <div class="cardContent">
                   <div class="card-log mx-auto text-center">
@@ -159,7 +197,7 @@
               data-aos-easing="ease"
               data-aos-delay="1000"
               data-aos-duration="750"
-              class=" col-3 "
+              class=" col-4 "
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.jpg'}`)"
@@ -167,7 +205,7 @@
                 img-top
                 tag="article"
                 style=""
-                class="mb-2 ml-md-4 mx-auto homeNavCard"
+                class="mb-1 homeNavCard"
               >
                 <div class="cardContent">
                   <div class="card-log mx-auto text-center">
@@ -221,7 +259,7 @@
               data-aos-easing="ease"
               data-aos-delay="1500"
               data-aos-duration="750"
-              class=" col-3 "
+              class=" col-4 "
             >
               <b-card
                 :img-src="require(`~/assets/img/${variants[2].imageShowcase + '.jpg'}`)"
@@ -229,7 +267,7 @@
                 img-top
                 tag="article"
                 style=""
-                class="mb-2 ml-md-4 mx-auto homeNavCard"
+                class="mb-1 homeNavCard"
               >
                 <div class="cardContent">
                   <div class="card-log mx-auto text-center">
@@ -278,7 +316,7 @@
               </b-card>
             </div>
 
-            <div
+            <!-- <div
               data-aos="fade-up"
               data-aos-easing="ease"
               data-aos-delay="2000"
@@ -291,7 +329,7 @@
                 img-top
                 tag="article"
                 style=""
-                class="mb-2 ml-md-4 mx-auto homeNavCard"
+                class="mb-1 homeNavCard"
               >
                 <div class="cardContent">
                   <div class="card-log mx-auto text-center">
@@ -338,7 +376,7 @@
                   </div>
                 </div>
               </b-card>
-            </div>
+            </div> -->
           </carousel>
         </div>
       </client-only>
@@ -408,65 +446,36 @@ export default {
 }
 </script>
 
-<style lang="css" >
+<style lang="scss">
 @media screen and (max-width: 600px) {
-  .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: -5px !important;
-  }
-  .owl-theme .owl-dots .owl-dot span {
-    min-width: 50px;
-    max-width: 50px;
-    width: 100%;
-    min-height: 50px;
-    max-height: 50px;
-    height: 100%;
-    background-color: black !important;
-  }
+  #homePage {
+    .owl-theme .owl-dots button:nth-child(1) span {
+      background-image: url("~assets/img/barbaresco-logo.svg") !important;
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
 
-  .owl-theme .owl-dots button:nth-child(1) span {
-    background-image: url("~assets/img/barbaresco-logo.svg") !important;
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-  }
+    .owl-theme .owl-dots button:nth-child(2) span {
+      background-image: url("~assets/img/pasta-fresca-logo.svg") !important;
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
 
-  .owl-theme .owl-dots button:nth-child(2) span {
-    background-image: url("~assets/img/pasta-fresca-logo.svg") !important;
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-  }
+    .owl-theme .owl-dots button:nth-child(3) span {
+      background-image: url("~assets/img/le-rock-logo.svg") !important;
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
 
-  .owl-theme .owl-dots button:nth-child(3) span {
-    background-image: url("~assets/img/le-rock-logo.svg") !important;
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-  }
-
-  .owl-theme .owl-dots button:nth-child(4) span {
-    background-image: url("~assets/img/piazza-white-logo.svg") !important;
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-  }
-}
-
-@media screen and (max-height: 480px) {
-  .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: -13px !important;
-  }
-}
-
-@media screen and (min-height: 537px) and (max-height: 560px) {
-  .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 10px !important;
-  }
-}
-
-@media screen and (min-height: 560px) and (max-height: 640px) {
-  .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 12% !important;
+    .owl-theme .owl-dots button:nth-child(4) span {
+      background-image: url("~assets/img/piazza-white-logo.svg") !important;
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
   }
 }
 </style>
@@ -860,6 +869,13 @@ export default {
 }
 
 @media screen and (min-height: 520px) and (max-height: 640px) {
+  .homePageHeading {
+    margin-top: 12%;
+    margin-bottom: 12%;
+  }
+}
+
+@media screen and (min-height: 641px) and (max-height: 650px) {
   .homePageHeading {
     margin-top: 12%;
     margin-bottom: 12%;
