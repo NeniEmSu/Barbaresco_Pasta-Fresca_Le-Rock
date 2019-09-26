@@ -8,7 +8,7 @@
     "salads": "Салати",
     "alcohol":"Алкоголь",
     "firstCourse": "Перші страви",
-    "coffee": "Кава",
+    "drinks": "Напої",
     "tea":"Чай",
     "mainMeal": "Основні страви"
   },
@@ -20,7 +20,7 @@
     "salads": "Salads",
     "alcohol":"Alcohol",
     "firstCourse": "First Course",
-    "coffee": "Coffee",
+    "drinks": "Drinks",
     "tea":"Tea",
     "mainMeal": "Main dishes"
   },
@@ -32,7 +32,7 @@
     "salads": "Салаты",
     "alcohol":"Алкоголь",
     "firstCourse": "Первые блюда",
-    "coffee": "Кофе",
+    "drinks": "Напитки",
     "tea":"Чай",
     "mainMeal": "Основні страви"
   }
@@ -126,7 +126,7 @@
       >
         <div class="nav-image navNine " />
         <div class="text-center nav-text">
-          {{ $t('coffee') }}
+          {{ $t('drinks') }}
         </div>
       </button>
 

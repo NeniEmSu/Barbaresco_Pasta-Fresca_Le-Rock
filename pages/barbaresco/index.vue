@@ -35,23 +35,21 @@
       @changedView="updateView($event)"
     />
 
-    <!-- <b-img-lazy
-      class="feedBack d-none d-md-block"
+    <b-img-lazy
       id="feedBack"
+      class="feedBack d-none d-md-block"
       src="~/assets/img/feedBack.png"
       alt="feedback Icon"
-    >
-
-    </b-img-lazy>
-     <b-tooltip
+    />
+    <b-tooltip
       target="feedBack"
       placement="topleft"
       variant="light"
     >
       <strong>
-        <h6> {{$t('tooltip')}}</h6>
+        <h6> {{ $t('tooltip') }}</h6>
       </strong>
-    </b-tooltip> -->
+    </b-tooltip>
 
     <vue-page-transition name="fade">
       <ThePizza v-if="currentProductsDisplayed === 1" />
