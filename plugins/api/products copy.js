@@ -66,94 +66,174 @@ export default [
   // Le Rock Meat BBQ
 
   {
-    category: 'barbaresco-pizzas',
-    name: 'ГАВАЙСЬКА',
-    id: 'lr-p-1',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Стейк New York',
+    id: 'lr-mbbq-1',
+    price: 125,
     quantity: Infinity,
-    volume: '500г',
-    image: 'barbarescoPizza',
-    summary: 'Моцарела, курка копчена, ананас, оливки, фірмовий соус'
+    volume: '250г',
+    image: 'le-rock-meat',
+    summary: 'соковите м’ясо з поясничної частини'
   },
   {
-    category: 'barbaresco-pizzas',
-    name: 'ГГГГОСТРА',
-    id: 'lr-p-2',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Стейк Рібай',
+    id: 'lr-mbbq-2',
+    price: 135,
     quantity: Infinity,
-    volume: '400г',
-    image: 'barbarescoPizza',
-    summary: 'Моцарела, салямі, перець чілі, фірмовий соус'
+    volume: '250г',
+    image: 'le-rock-meat',
+    summary: 'м’ясо з підлопаткової частини туші, має велику кількість жирових прожилок'
   },
   {
-    category: 'barbaresco-pizzas',
-    name: 'КАПРІЧОЗА',
-    id: 'lr-p-3',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Філе Міньйон',
+    id: 'lr-mbbq-3',
+    price: 145,
     quantity: Infinity,
-    volume: '480г',
-    image: 'barbarescoPizza',
-    summary: 'Моцарела, шинка, печериці, маслини, фірмовий соус'
+    volume: '200г',
+    image: 'le-rock-meat',
+    summary: 'сама ніжна, та пісна частина гов’ядини'
   },
   {
-    category: 'barbaresco-pizzas',
-    name: 'МАРГАРІТА',
-    id: 'lr-p-4',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Стейк свинний',
+    id: 'lr-mbbq-4',
+    price: 100,
     quantity: Infinity,
-    volume: '380г',
-    image: 'barbarescoPizza',
-    summary: 'Моцарела, фірмовий соус, базилік'
+    volume: '200/140/30г',
+    image: 'le-rock-meat',
+    summary: 'з стручковою квасолею та песто'
   },
   {
-    category: 'barbaresco-pizzas',
-    name: 'САЛЯМІ',
-    id: 'lr-p-5',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Half chicken',
+    id: 'lr-mbbq-5',
+    price: 100,
     quantity: Infinity,
-    volume: '420г',
-    image: 'barbarescoPizza',
-    summary: 'Моцарела, салямі, помідори, фірмовий соус'
+    volume: '300/120/30г',
+    image: 'le-rock-meat',
+    summary: 'з грибами гриль та гірчичним соусом'
   },
   {
-    category: 'barbaresco-pizzas',
-    name: 'ЧОТИРИ СЕЗОНИ',
-    id: 'lr-p-6',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Свинна гомілка з картопляним пюре',
+    id: 'lr-mbbq-6',
+    price: 100,
     quantity: Infinity,
-    volume: '520г',
-    image: 'barbarescoPizza',
-    summary: 'Моцарела, шинка, салямі, печериці, помідори, фірмовий соус'
+    volume: '380/150г',
+    image: 'le-rock-meat',
+    summary: '(Рябчик) (подається з рокфорним пюре)'
   },
   {
-    category: 'barbaresco-pizzas',
-    name: 'QUATTRO FORMAGGI',
-    id: 'lr-p-7',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Свинина на кістці з печеною картоплею',
+    id: 'lr-mbbq-7',
+    price: 110,
     quantity: Infinity,
-    volume: '400г',
-    image: 'barbarescoPizza',
-    summary: 'Моцарела, королівський, горгондзола, пармезан, фірмовий соус'
+    volume: '270/250/30г',
+    image: 'le-rock-meat',
+    summary: ''
   },
   {
-    category: 'barbaresco-pizzas',
-    name: 'Al Tonno',
-    id: 'lr-p-8',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Асорті М’яса гриль',
+    id: 'lr-mbbq-8',
+    price: 350,
     quantity: Infinity,
-    volume: '460г',
-    image: 'barbarescoPizza',
-    summary: 'Моцарела, тунець, цибуля, фірмовий соус, помідори'
+    volume: '1500г',
+    image: 'le-rock-meat',
+    summary: 'стейк з говядини, стейк свинний, куряче філе, ковбаски, картопля печена, 2 соуси'
   },
   {
-    category: 'barbaresco-pizzas',
-    name: 'Цезаріо',
-    id: 'lr-p-9',
-    price: 70,
+    category: 'le-rock-meat-bbq',
+    name: 'Солоний арахіс з насінням гарбуза',
+    id: 'lr-mbbq-9',
+    price: 30,
     quantity: Infinity,
-    volume: '470г',
-    image: 'barbarescoPizza',
+    volume: '100г',
+    image: 'le-rock-meat',
     summary: 'Моцарела, філе курки, бекон, помідори чері, пармезан, мікс-салат, вершковий соус'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Крила фрі',
+    id: 'lr-mbbq-10',
+    price: 60,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-meat',
+    summary: 'гострі/з гірчичним соусом'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Сирні палички',
+    id: 'lr-mbbq-11',
+    price: 50,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-meat',
+    summary: 'соус з журавлини/часниковий'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Хрумкі вуха в соєвому соусі',
+    id: 'lr-mbbq-12',
+    price: 45,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'le-rock-meat',
+    summary: 'гострі/не гострі'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Ковбаски в беконі',
+    id: 'lr-mbbq-13',
+    price: 60,
+    quantity: Infinity,
+    volume: '300/30г',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Креветки до пива',
+    id: 'lr-mbbq-14',
+    price: 80,
+    quantity: Infinity,
+    volume: '100/30г',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Копчені свинні ребра BBQ',
+    id: 'lr-mbbq-15',
+    price: 90,
+    quantity: Infinity,
+    volume: '300/30г',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Ковбаски власного приготування з картопляними крокетами',
+    id: 'lr-mbbq-16',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/130/30/50г',
+    image: 'le-rock-meat',
+    summary: 'курячі / свинні'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Ребра на компанію',
+    id: 'lr-mbbq-17',
+    price: 250,
+    quantity: Infinity,
+    volume: '800/300/100г',
+    image: 'le-rock-meat',
+    summary: 'курячі / свинні'
   },
 
   // Le Rock Rock Dogs
@@ -165,7 +245,7 @@ export default [
     price: 70,
     quantity: Infinity,
     volume: '200/100/30г',
-    image: 'barbarescoChickenBuger',
+    image: 'le-rock-rock-dogs',
     summary: '+картопля фрі, та соус'
   },
   {
@@ -175,7 +255,7 @@ export default [
     price: 70,
     quantity: Infinity,
     volume: '200/100/30г',
-    image: 'barbarescoChickenBuger',
+    image: 'le-rock-rock-dogs',
     summary: '+картопля фрі, та соус'
   },
   {
@@ -185,7 +265,7 @@ export default [
     price: 70,
     quantity: Infinity,
     volume: '200/100/30г',
-    image: 'barbarescoChickenBuger',
+    image: 'le-rock-rock-dogs',
     summary: '+картопля фрі, та соус'
   },
 
@@ -380,30 +460,30 @@ export default [
     image: 'barbarescoHits',
     summary: ''
   },
-  // Barbaresco Coffee
+  // Le Rock Coffee
 
   {
-    category: 'barbaresco-coffee',
+    category: 'le-rock-coffee',
     name: 'ЕСПРЕССО',
     id: 'lr-c-1',
-    price: 20,
+    price: 25,
     quantity: Infinity,
     volume: '',
     image: 'barbarescoDrinksCoffe',
     summary: ''
   },
   {
-    category: 'barbaresco-coffee',
+    category: 'le-rock-coffee',
     name: 'АМЕРИКАНО',
     id: 'lr-c-2',
-    price: 20,
+    price: 25,
     quantity: Infinity,
     volume: '',
     image: 'barbarescoDrinksCoffe',
     summary: ''
   },
   {
-    category: 'barbaresco-coffee',
+    category: 'le-rock-coffee',
     name: 'КАПУЧІНО',
     id: 'lr-c-3',
     price: 35,
@@ -413,8 +493,8 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-coffee',
-    name: 'ФЛЕТ ВАЙТ',
+    category: 'le-rock-coffee',
+    name: 'Лате',
     id: 'lr-c-4',
     price: 35,
     quantity: Infinity,
@@ -423,79 +503,149 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-coffee',
-    name: 'ЛАТЕ',
+    category: 'le-rock-coffee',
+    name: 'Лате фісташкове',
     id: 'lr-c-5',
-    price: 30,
+    price: 40,
     quantity: Infinity,
-    volume: '300г',
+    volume: '',
     image: 'barbarescoDrinksCoffe',
     summary: ''
   },
   {
-    category: 'barbaresco-coffee',
-    name: 'ФРАПЕ',
+    category: 'le-rock-coffee',
+    name: 'Лате кокосове',
     id: 'lr-c-6',
+    price: 40,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Ожинове какао',
+    id: 'lr-c-7',
     price: 35,
     quantity: Infinity,
-    volume: '300г',
+    volume: '',
     image: 'barbarescoDrinksCoffe',
     summary: ''
   },
   {
-    category: 'barbaresco-coffee',
-    name: 'МОЛОКО',
-    id: 'lr-c-7',
-    price: 5,
+    category: 'le-rock-coffee',
+    name: 'Flat White',
+    id: 'lr-c-8',
+    price: 35,
     quantity: Infinity,
     volume: '',
     image: 'barbarescoDrinksCoffe',
     summary: ''
   },
 
-  // Barbaresco Tea
+  // Le Rock Tea
   {
-    category: 'barbaresco-tea',
-    name: 'ЧОРНИЙ',
+    category: 'le-rock-tea',
+    name: 'Чай заварний чорний',
     id: 'lr-tea-1',
-    price: 30,
+    price: 25,
     quantity: Infinity,
-    volume: '0,6л',
+    volume: '600мл',
     image: 'barbarescoDrinksTea',
-    summary: 'асам середньо листовий пряний з медовими нотками'
+    summary: ''
   },
   {
-    category: 'barbaresco-tea',
-    name: 'ЗЕЛЕНИЙ',
+    category: 'le-rock-tea',
+    name: 'Чай заварний зелени',
+    id: 'lr-tea-1-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '600мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай заварний фруктовий',
+    id: 'lr-tea-1-2',
+    price: 25,
+    quantity: Infinity,
+    volume: '600мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай жасмин-чорниця',
     id: 'lr-tea-2',
     price: 30,
     quantity: Infinity,
-    volume: '0,6л',
+    volume: '600мл',
     image: 'barbarescoDrinksTea',
-    summary: 'класичний китайський чай'
+    summary: ''
   },
   {
-    category: 'barbaresco-tea',
-    name: 'ФРУКТОВИЙ',
+    category: 'le-rock-tea',
+    name: 'Чай розмарин-яблуко',
     id: 'lr-tea-3',
     price: 30,
     quantity: Infinity,
-    volume: '0,6л',
+    volume: '600мл',
     image: 'barbarescoDrinksTea',
-    summary: 'суміш з шматочків папаї, манго, ананаса та квітів гібіскуса'
+    summary: ''
   },
   {
-    category: 'barbaresco-tea',
-    name: "ТРАВ'ЯНИЙ",
+    category: 'le-rock-tea',
+    name: 'Чай обліпиха-манго з курагою',
     id: 'lr-tea-4',
     price: 30,
     quantity: Infinity,
-    volume: '0,6л',
+    volume: '250мл',
     image: 'barbarescoDrinksTea',
-    summary: 'суміш лимонної трави, меліси, м’яти, ромашки та цедри апельсина'
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай м’ята-лайм',
+    id: 'lr-tea-5',
+    price: 30,
+    quantity: Infinity,
+    volume: '250мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Вишня-ваніль',
+    id: 'lr-tea-6',
+    price: 40,
+    quantity: Infinity,
+    volume: '300мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Попкорн-кориця',
+    id: 'lr-tea-7',
+    price: 40,
+    quantity: Infinity,
+    volume: '300мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Солона карамель',
+    id: 'lr-tea-8',
+    price: 40,
+    quantity: Infinity,
+    volume: '300мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
   },
 
-  // Barbaresco Hot Drinks
+  // Le Rock Hot Drinks
 
   {
     category: 'barbaresco-hotDrinks',
@@ -518,136 +668,186 @@ export default [
     summary: ''
   },
 
-  // Barbaresco Fresh
+  // Le Rock Drinks
 
   {
-    category: 'barbaresco-fresh',
-    name: 'АПЕЛЬСИНОВИЙ',
-    id: 'lr-fre-1',
-    price: 60,
+    category: 'le-rock-drinks',
+    name: 'Девайтіс слабо газ',
+    id: 'lr-drinks-1',
+    price: 27,
     quantity: Infinity,
-    volume: '0,25л',
+    volume: '500мл',
     image: 'barbarescoDrinksFresh',
     summary: ''
   },
   {
-    category: 'barbaresco-fresh',
-    name: 'ІМБИРНИЙ чай З МЕДОМ ТА М’ЯТОЮ',
-    id: 'lr-fre-2',
-    price: 60,
+    category: 'le-rock-drinks',
+    name: 'Девайтіс не газ',
+    id: 'lr-drinks-1-1',
+    price: 27,
     quantity: Infinity,
-    volume: '0,25л',
+    volume: '500мл',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-drinks',
+    name: 'Боржомі',
+    id: 'lr-drinks-2',
+    price: 45,
+    quantity: Infinity,
+    volume: '500мл',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-drinks',
+    name: 'Тонік Evervess',
+    id: 'lr-drinks-3',
+    price: 35,
+    quantity: Infinity,
+    volume: '330мл',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-drinks',
+    name: 'Pepsi (розлив)',
+    id: 'lr-drinks-4',
+    price: 20,
+    quantity: Infinity,
+    volume: '250мл',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-drinks',
+    name: 'Ягідний морс (власного приготування)',
+    id: 'lr-drinks-5',
+    price: 15,
+    quantity: Infinity,
+    volume: '250мл',
     image: 'barbarescoDrinksFresh',
     summary: ''
   },
 
-  // Barbaresco Lemonade
+  // Le Rock Lemonade
 
   {
-    category: 'barbaresco-lemonade',
-    name: 'ЯБЛУКО-БАЗИЛІК',
+    category: 'le-rock-lemonade',
+    name: 'Малина-жасмин',
     id: 'lr-lem-1',
-    price: 35,
+    price: 40,
     quantity: Infinity,
-    volume: '300мл',
+    volume: '350мл',
     image: 'barbarescoDrinksFresh',
-    summary: 'сік яблука та сироп, базилік, імбир, лимонний фреш, содова'
+    summary: ''
   },
   {
-    category: 'barbaresco-lemonade',
-    name: 'АНАНАСОВО-ІМБИРНИЙ',
+    category: 'le-rock-lemonade',
+    name: 'Ананас-базилік',
     id: 'lr-lem-2',
-    price: 35,
+    price: 40,
     quantity: Infinity,
-    volume: '300мл',
+    volume: '350мл',
     image: 'barbarescoDrinksFresh',
-    summary: 'ананасовий сік, імбирний сироп, лимонний фреш і содова'
+    summary: ''
   },
   {
-    category: 'barbaresco-lemonade',
-    name: 'З ТЕМНИМ КВАСОМ',
+    category: 'le-rock-lemonade',
+    name: 'Яблуко-ківі',
     id: 'lr-lem-3',
-    price: 35,
+    price: 40,
     quantity: Infinity,
-    volume: '300мл',
+    volume: '350мл',
     image: 'barbarescoDrinksFresh',
-    summary: 'темний квас, сироп кориця-карамель, лимонний фреш'
+    summary: ''
   },
   {
-    category: 'barbaresco-lemonade',
-    name: 'ГРЕЙПФРУТ ',
+    category: 'le-rock-lemonade',
+    name: 'Грейпфрутовий',
     id: 'lr-lem-4',
-    price: 35,
+    price: 40,
     quantity: Infinity,
-    volume: '300мл',
+    volume: '350мл',
     image: 'barbarescoDrinksFresh',
-    summary: 'грейпфрутовий сік та сироп, лимонний фреш, содова'
+    summary: ''
   },
   {
-    category: 'barbaresco-lemonade',
-    name: 'ЗЕЛЕНИЙ БАНАН-КІВІ',
+    category: 'le-rock-lemonade',
+    name: 'Лічі-кокос',
     id: 'lr-lem-5',
-    price: 35,
+    price: 40,
     quantity: Infinity,
-    volume: '300мл',
+    volume: '350мл',
     image: 'barbarescoDrinksFresh',
-    summary: 'сироп зелений банан, ківі, лимонний фреш, содова'
+    summary: ''
   },
 
-  // Barbaresco Smoothy
+  // Le Rock Smoothy
 
   {
-    category: 'barbaresco-smoothy',
-    name: 'ДИНЯ-МАРАКУЙЯ',
+    category: 'le-rock-smoothy',
+    name: 'Авокадо-ківі з петрушкою',
     id: 'lr-smo-1',
-    price: 40,
+    price: 45,
     quantity: Infinity,
     volume: '250мл',
     image: 'barbarescoDrinksFresh',
-    summary: 'пюре дині, маракуйї та персика'
+    summary: ''
   },
   {
-    category: 'barbaresco-smoothy',
-    name: 'ШПИНАТНИЙ',
+    category: 'le-rock-smoothy',
+    name: 'Диня-манго',
     id: 'lr-smo-2',
-    price: 40,
+    price: 45,
     quantity: Infinity,
     volume: '250мл',
     image: 'barbarescoDrinksFresh',
-    summary: 'шпинат, банан, сік яблука, пюре маракуйї'
+    summary: ''
+  },
+  {
+    category: 'le-rock-smoothy',
+    name: 'Смородина-банан',
+    id: 'lr-smo-3',
+    price: 45,
+    quantity: Infinity,
+    volume: '250мл',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
   },
 
-  // Barbaresco Milk Shake
+  // Le Rock Fresh
 
   {
-    category: 'barbaresco-milkshake',
-    name: 'БАНАНОВИЙ',
-    id: 'lr-ms-1',
-    price: 40,
+    category: 'le-rock-fresh',
+    name: 'Апельсиновий',
+    id: 'lr-fresh-1',
+    price: 65,
     quantity: Infinity,
-    volume: '300мл',
+    volume: '250мл',
     image: 'barbarescoDrinksFresh',
     summary: ''
   },
   {
-    category: 'barbaresco-milkshake',
-    name: 'ШОКОЛАДНИЙ',
-    id: 'lr-ms-2',
-    price: 40,
+    category: 'le-rock-fresh',
+    name: 'Грейпфрутовий',
+    id: 'lr-fresh-2',
+    price: 65,
     quantity: Infinity,
-    volume: '300мл',
+    volume: '250мл',
     image: 'barbarescoDrinksFresh',
     summary: ''
   },
   {
-    category: 'barbaresco-milkshake',
-    name: 'ЧОРНИЧНИЙ',
-    id: 'lr-ms-3',
-    price: 40,
+    category: 'le-rock-fresh',
+    name: 'СІК ПАКЕТОВАНИЙ',
+    id: 'lr-fresh-3',
+    price: 17,
     quantity: Infinity,
-    volume: '300мл',
+    volume: '250мл',
     image: 'barbarescoDrinksFresh',
-    summary: ''
+    summary: 'Апельсиновий, ананасовий, персиковий, вишневий, яблучний, томатний, грейпфрутовий'
   },
 
   // Barbaresco None Alcoholic Drinks
@@ -1164,40 +1364,40 @@ export default [
     summary: 'горілка, біттер, кокосове пюре, сік ананаса, фреш лимонний'
   },
 
-  // Barbaresco Alcoholic Set
+  // Le Rock Alcoholic Set
 
   {
-    category: 'barbaresco-alcoholicSet',
-    name: 'ІМБИРНИЙ',
+    category: 'le-rock-alcoholicSet',
+    name: 'Фісташковий',
     id: 'lr-als-1',
-    price: 60,
+    price: 70,
     quantity: Infinity,
     volume: '210мл',
     image: 'barbarescoAlcohol',
     summary: ''
   },
   {
-    category: 'barbaresco-alcoholicSet',
-    name: 'МАЛИНОВИЙ',
+    category: 'le-rock-alcoholicSet',
+    name: 'Ожиновий',
     id: 'lr-als-2',
-    price: 60,
+    price: 70,
     quantity: Infinity,
     volume: '210мл',
     image: 'barbarescoAlcohol',
     summary: ''
   },
   {
-    category: 'barbaresco-alcoholicSet',
-    name: 'МАНГО',
+    category: 'le-rock-alcoholicSet',
+    name: 'Вишневий',
     id: 'lr-als-3',
-    price: 60,
+    price: 70,
     quantity: Infinity,
     volume: '210мл',
     image: 'barbarescoAlcohol',
     summary: ''
   },
   {
-    category: 'barbaresco-alcoholicSet',
+    category: 'le-rock-alcoholicSet',
     name: 'ЦИТРУСОВО-М’ЯТНИЙ',
     id: 'lr-als-4',
     price: 60,
@@ -1207,161 +1407,356 @@ export default [
     summary: ''
   },
 
-  // Barbaresco Wine
+  // Le Rock Wine
 
   {
-    category: 'barbaresco-wine',
-    name: 'Cavaleria Bianco',
-    id: 'lr-wine-1',
-    price: 28,
+    category: 'le-rock-wine',
+    name: 'Tierra Eden ТієрРа Еден біле н/с',
+    id: 'lr-wine-1a',
+    price: 34,
     quantity: Infinity,
     volume: '100мл',
     image: 'barbarescoAlcohol',
-    summary: 'біле сухе'
+    summary: ''
   },
   {
-    category: 'barbaresco-wine',
-    name: 'Cavaleria Bianco',
-    id: 'lr-wine-1-1',
-    price: 210,
+    category: 'le-rock-wine',
+    name: 'Tierra Eden ТієрРа Еден біле н/с',
+    id: 'lr-wine-1a-1',
+    price: 250,
     quantity: Infinity,
     volume: '750мл',
     image: 'barbarescoAlcohol',
-    summary: 'біле сухе'
+    summary: ''
   },
   {
-    category: 'barbaresco-wine',
-    name: 'Cavaleria Bianco',
-    id: 'lr-wine-2',
-    price: 28,
+    category: 'le-rock-wine',
+    name: 'Tierra Eden ТієрРа Еден червоне н/c',
+    id: 'lr-wine-1b',
+    price: 34,
     quantity: Infinity,
     volume: '100мл',
     image: 'barbarescoAlcohol',
-    summary: 'н/сол біле'
+    summary: ''
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden ТієрРа Еден червоне н/c',
+    id: 'lr-wine-1b-1',
+    price: 250,
+    quantity: Infinity,
+    volume: '750мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden ТієрРа Еден червоне сухе',
+    id: 'lr-wine-2a',
+    price: 34,
+    quantity: Infinity,
+    volume: '100мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden ТієрРа Еден червоне сухе',
+    id: 'lr-wine-2a-1',
+    price: 250,
+    quantity: Infinity,
+    volume: '750мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden ТієрРа Еден біле сухе',
+    id: 'lr-wine-2b',
+    price: 34,
+    quantity: Infinity,
+    volume: '100мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden ТієрРа Еден біле сухе',
+    id: 'lr-wine-2b-1',
+    price: 250,
+    quantity: Infinity,
+    volume: '750мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
   },
 
   {
-    category: 'barbaresco-wine',
-    name: 'Cavaleria Bianco',
-    id: 'lr-wine-2-1',
-    price: 210,
-    quantity: Infinity,
-    volume: '750мл',
-    image: 'barbarescoAlcohol',
-    summary: 'н/сол біле'
-  },
-  {
-    category: 'barbaresco-wine',
-    name: 'Cavaleria Rosso',
-    id: 'lr-wine-3',
-    price: 28,
+    category: 'le-rock-wine',
+    name: 'Casa Verde Merlot Каса Верде Мерло червоне сухе',
+    id: 'lr-wine-3a',
+    price: 34,
     quantity: Infinity,
     volume: '100мл',
     image: 'barbarescoAlcohol',
-    summary: 'сухе червОНЕ'
+    summary: ''
   },
   {
-    category: 'barbaresco-wine',
-    name: 'Cavaleria Rosso',
-    id: 'lr-wine-3-1',
-    price: 210,
+    category: 'le-rock-wine',
+    name: 'Casa Verde Merlot Каса Верде Мерло червоне сухе',
+    id: 'lr-wine-3a-1',
+    price: 330,
     quantity: Infinity,
     volume: '750мл',
     image: 'barbarescoAlcohol',
-    summary: 'сухе червОНЕ'
+    summary: ''
   },
   {
-    category: 'barbaresco-wine',
-    name: 'Cavaleria Rosso',
-    id: 'lr-wine-4',
-    price: 28,
-    quantity: Infinity,
-    volume: '100мл',
-    image: 'barbarescoAlcohol',
-    summary: 'н/с червОНЕ'
-  },
-  {
-    category: 'barbaresco-wine',
-    name: 'Cavaleria Rosso',
-    id: 'lr-wine-4-1',
-    price: 210,
-    quantity: Infinity,
-    volume: '750мл',
-    image: 'barbarescoAlcohol',
-    summary: 'н/с червОНЕ'
-  },
-  {
-    category: 'barbaresco-wine',
-    name: 'Casa Verde Merlot',
-    id: 'lr-wine-5',
+    category: 'le-rock-wine',
+    name: 'Casa Verde Merlot Каса Верде Мерло біле сухе',
+    id: 'lr-wine-2b',
     price: 44,
     quantity: Infinity,
     volume: '100мл',
     image: 'barbarescoAlcohol',
-    summary: 'червоне сухе/біле сухе'
+    summary: ''
   },
   {
-    category: 'barbaresco-wine',
-    name: 'Casa Verde Merlot',
-    id: 'lr-wine-5-1',
+    category: 'le-rock-wine',
+    name: 'Casa Verde Merlot Каса Верде Мерло біле сухе',
+    id: 'lr-wine-2b-1',
     price: 330,
     quantity: Infinity,
-    volume: '375мл',
+    volume: '750мл',
     image: 'barbarescoAlcohol',
-    summary: 'червоне сухе/біле сухе'
+    summary: ''
   },
+
   {
-    category: 'barbaresco-wine',
-    name: 'Casa Verde Merlot',
-    id: 'lr-wine-6',
-    price: 24,
+    category: 'le-rock-wine',
+    name: 'J.P. Chenet Жан поль Шанет',
+    id: 'lr-wine-4',
+    price: 44,
     quantity: Infinity,
     volume: '100мл',
     image: 'barbarescoAlcohol',
-    summary: 'СЛИВОВЕ СОЛ/РОЖ/БІЛ'
+    summary: 'рожеве н.с'
+  },
+
+  {
+    category: 'le-rock-wine',
+    name: 'J.P. Chenet Жан поль Шанет',
+    id: 'lr-wine-4-1',
+    price: 2330,
+    quantity: Infinity,
+    volume: '750мл',
+    image: 'barbarescoAlcohol',
+    summary: 'рожеве н.с'
+  },
+
+  // Le Rock Wiskey
+
+  {
+    category: 'le-rock-whiskey',
+    name: 'Wild Turkey 81',
+    id: 'lr-whisk-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '500мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
   },
   {
-    category: 'barbaresco-wine',
-    name: 'Casa Verde Merlot',
-    id: 'lr-wine-6-1',
-    price: 90,
+    category: 'le-rock-whiskey',
+    name: 'Уайльд Тьоркі 81',
+    id: 'lr-whisk-1-1',
+    price: 210,
     quantity: Infinity,
-    volume: '375мл',
+    volume: '50мл',
     image: 'barbarescoAlcohol',
-    summary: 'СЛИВОВЕ СОЛ/РОЖ/БІЛ'
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Wild Turkey 101',
+    id: 'lr-whisk-2',
+    price: 75,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Уайльд Тьоркі 101',
+    id: 'lr-whisk-2-1',
+    price: 75,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Wild Turkey Rye',
+    id: 'lr-whisk-3',
+    price: 85,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Уайльд Тьоркі Рай',
+    id: 'lr-whisk-3-1',
+    price: 85,
+    quantity: Infinity,
+    volume: '75мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Jack Daniel’s old №7',
+    id: 'lr-whisk-4',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Джек Деніелс',
+    id: 'lr-whisk-4-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Jack Daniel`s Honey',
+    id: 'lr-whisk-5',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Джек Деніелс Хані',
+    id: 'lr-whisk-5-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Jameson',
+    id: 'lr-whisk-6',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Джеймсон',
+    id: 'lr-whisk-6-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'Tomatin talisman',
+    id: 'lr-whisk-7',
+    price: 40,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whiskey',
+    name: 'томатін талісман',
+    id: 'lr-whisk-7-1',
+    price: 40,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
   },
 
   // Barbaresco Sparkling Wine
 
   {
     category: 'barbaresco-sparklingWine',
-    name: 'МАРТІНІ АСТІ',
+    name: 'Asti Mondoro',
     id: 'lr-swine-1',
-    price: 400,
+    price: 450,
     quantity: Infinity,
     volume: '750мл',
     image: 'barbarescoAlcohol',
-    summary: 'СОЛОДКЕ'
+    summary: ''
   },
   {
     category: 'barbaresco-sparklingWine',
-    name: 'ЗЕБО',
+    name: 'Асті мондоро',
+    id: 'lr-swine-1-1',
+    price: 450,
+    quantity: Infinity,
+    volume: '750мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'barbaresco-sparklingWine',
+    name: 'Fragolino Rosso',
     id: 'lr-swine-2',
-    price: 350,
+    price: 180,
     quantity: Infinity,
     volume: '750мл',
     image: 'barbarescoAlcohol',
-    summary: 'СОЛОДКЕ'
+    summary: ''
   },
   {
     category: 'barbaresco-sparklingWine',
-    name: 'коктебель',
-    id: 'lr-swine-3',
-    price: 130,
+    name: 'Фраголіно',
+    id: 'lr-swine-2-1',
+    price: 180,
     quantity: Infinity,
     volume: '750мл',
     image: 'barbarescoAlcohol',
-    summary: 'БРЮТ\\напівСОЛОДКЕ\\рожеве'
+    summary: ''
+  },
+  {
+    category: 'barbaresco-sparklingWine',
+    name: 'Salute (roze)',
+    id: 'lr-swine-3',
+    price: 150,
+    quantity: Infinity,
+    volume: '750мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'barbaresco-sparklingWine',
+    name: 'Салюте (рожеве н/c)',
+    id: 'lr-swine-3',
+    price: 150,
+    quantity: Infinity,
+    volume: '750мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
   },
 
   // Barbaresco Alcolholic Drinks
@@ -1497,12 +1892,12 @@ export default [
     summary: ''
   },
 
-  // Barbaresco Bear
+  // Le Rock Cocktail
 
   {
-    category: 'barbaresco-bear',
+    category: 'le-rock-cocktail',
     name: 'ЧЕРНІГІВСЬКЕ СВІТЛЕ',
-    id: 'lr-bear-1',
+    id: 'lr-cocktail-1',
     price: 30,
     quantity: Infinity,
     volume: '0,5л',
@@ -1510,9 +1905,9 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-bear',
+    category: 'le-rock-cocktail',
     name: 'БАД Б/А',
-    id: 'lr-bear-2',
+    id: 'lr-cocktail-2',
     price: 35,
     quantity: Infinity,
     volume: '0,5л',
@@ -1520,9 +1915,9 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-bear',
+    category: 'le-rock-cocktail',
     name: 'ХУГАРДЕН',
-    id: 'lr-bear-3',
+    id: 'lr-cocktail-3',
     price: 45,
     quantity: Infinity,
     volume: '0,3л',
@@ -1530,9 +1925,9 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-bear',
+    category: 'le-rock-cocktail',
     name: 'ХУГАРДЕН',
-    id: 'lr-bear-3-1',
+    id: 'lr-cocktail-3-1',
     price: 70,
     quantity: Infinity,
     volume: '0,5л',
@@ -1540,9 +1935,9 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-bear',
+    category: 'le-rock-cocktail',
     name: 'БІЛА НІЧ',
-    id: 'lr-bear-4',
+    id: 'lr-cocktail-4',
     price: 23,
     quantity: Infinity,
     volume: '0,3л',
@@ -1550,9 +1945,9 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-bear',
+    category: 'le-rock-cocktail',
     name: 'БІЛА НІЧ',
-    id: 'lr-bear-4-1',
+    id: 'lr-cocktail-4-1',
     price: '35',
     quantity: Infinity,
     volume: '0,5л',
@@ -1560,9 +1955,9 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-bear',
+    category: 'le-rock-cocktail',
     name: 'ХМЕЛЕВУС',
-    id: 'lr-bear-5',
+    id: 'lr-cocktail-5',
     price: 26,
     quantity: Infinity,
     volume: '0,3л',
@@ -1570,9 +1965,9 @@ export default [
     summary: ''
   },
   {
-    category: 'barbaresco-bear',
+    category: 'le-rock-cocktail',
     name: 'ХМЕЛЕВУС',
-    id: 'lr-bear-5-1',
+    id: 'lr-cocktail-5-1',
     price: 40,
     quantity: Infinity,
     volume: '0,5л',
@@ -1589,7 +1984,7 @@ export default [
     price: 55,
     quantity: Infinity,
     volume: '3шт',
-    image: 'pasta-presca-appetizer',
+    image: 'le-rock-appetizer',
     summary: 'з чорізо, з телятиною, з овочами'
   },
   {
@@ -1599,7 +1994,7 @@ export default [
     price: 55,
     quantity: Infinity,
     volume: '200г',
-    image: 'pasta-presca-appetizer',
+    image: 'le-rock-appetizer',
     summary: 'подається з грінками'
   },
   {
@@ -1609,7 +2004,7 @@ export default [
     price: 50,
     quantity: Infinity,
     volume: '400г',
-    image: 'pasta-presca-appetizer',
+    image: 'le-rock-appetizer',
     summary: ''
   },
   {
@@ -1619,7 +2014,7 @@ export default [
     price: 70,
     quantity: Infinity,
     volume: '170г',
-    image: 'pasta-presca-appetizer',
+    image: 'le-rock-appetizer',
     summary: ''
   },
   {
@@ -1629,8 +2024,61 @@ export default [
     price: 70,
     quantity: Infinity,
     volume: '170г',
-    image: 'pasta-presca-appetizer',
+    image: 'le-rock-appetizer',
     summary: ''
+  },
+
+  // Le Rock Appetizer For Bear
+
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Пивна тарілка',
+    id: 'lr-app-f-b-1',
+    price: 55,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'le-rock-appetizer',
+    summary: 'житні сухарики, в’ялене м’ясо, часниковий  соус'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Соленики',
+    id: 'lr-app-f-b-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '100/30г',
+    image: 'le-rock-appetizer',
+    summary: 'подається з грінками'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Житні сухарики',
+    id: 'lr-app-f-b-3',
+    price: 30,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'le-rock-appetizer',
+    summary: 'з часниковим соусом'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Курячий попкорн',
+    id: 'lr-app-f-b-4',
+    price: 55,
+    quantity: Infinity,
+    volume: '200г',
+    image: 'le-rock-appetizer',
+    summary: 'з часниковим соусом'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Пивна дошка на компанію',
+    id: 'lr-app-f-b-5',
+    price: 150,
+    quantity: Infinity,
+    volume: '600г',
+    image: 'le-rock-appetizer',
+    summary: 'сирні палички, нагетси, ковбаски в беконі, снеки, грісіні, соус тартар'
   },
 
   // Le Rock Garnishes
