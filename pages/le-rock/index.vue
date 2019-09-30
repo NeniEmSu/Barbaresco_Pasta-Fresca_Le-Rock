@@ -57,13 +57,13 @@
     </b-tooltip> -->
 
     <vue-page-transition name="fade">
-      <ThePizza v-if="currentProductsDisplayed === 1" />
+      <TheAppetizers v-if="currentProductsDisplayed === 1" />
 
-      <TheBugers v-if="currentProductsDisplayed === 2" />
+      <TheRockDogs v-if="currentProductsDisplayed === 2" />
 
-      <TheSushi v-if="currentProductsDisplayed === 3" />
+      <TheTheBBQMeat v-if="currentProductsDisplayed === 3" />
 
-      <TheMlinty v-if="currentProductsDisplayed === 4" />
+      <TheGarnishes v-if="currentProductsDisplayed === 4" />
 
       <TheDesert v-if="currentProductsDisplayed === 5" />
 
@@ -91,17 +91,17 @@
 import TheImageNavigation from '~/components/LeRock/TheImageNavigationLeRock'
 import TheImagedProductNav from '~/components/LeRock/TheImagedProductNavLeRock'
 import TheMapComponent from '~/components/Barbaresco/TheMapComponent'
-import TheBugers from '~/components/LeRock/LeRockProducts/TheBugersLeRock'
-import ThePizza from '~/components/Barbaresco/BarbarescoProducts/ThePizza'
-import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
+import TheRockDogs from '~/components/LeRock/LeRockProducts/TheRockDogs'
+import TheAppetizers from '~/components/LeRock/LeRockProducts/TheAppetizers'
+import TheTheBBQMeat from '~/components/LeRock/LeRockProducts/TheBBQMeat'
 import TheDrinks from '~/components/Barbaresco/BarbarescoProducts/TheDrinks'
-import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
-import TheDesert from '~/components/Barbaresco/BarbarescoProducts/TheDesert'
-import TheSalad from '~/components/Barbaresco/BarbarescoProducts/TheSalad'
-import TheFirstCourse from '~/components/Barbaresco/BarbarescoProducts/TheFirstCourse'
+import TheGarnishes from '~/components/LeRock/LeRockProducts/TheGarnishes'
+import TheDesert from '~/components/LeRock/LeRockProducts/TheDeserts'
+import TheSalad from '~/components/LeRock/LeRockProducts/TheSalad'
+import TheFirstCourse from '~/components/LeRock/LeRockProducts/TheFirstCourse'
 // import TheHits from '~/components/Barbaresco/BarbarescoProducts/TheHits'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
-import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
+import TheMainMeal from '~/components/LeRock/LeRockProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 
 export default {
@@ -111,10 +111,10 @@ export default {
     TheImageNavigation,
     TheImagedProductNav,
     TheMapComponent,
-    TheBugers,
-    ThePizza,
-    TheSushi,
-    TheMlinty,
+    TheRockDogs,
+    TheAppetizers,
+    TheTheBBQMeat,
+    TheGarnishes,
     TheDesert,
     TheSalad,
     TheFirstCourse,

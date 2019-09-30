@@ -6,7 +6,8 @@
     "wine": "ВИНА",
     "sparklingWine": "ІГРИСТІ ВИНА",
     "alcoholicDrinks": "Алкогольні напої",
-    "bear": "ПИВО"
+    "bear": "ПИВО",
+    "order": "Замовити"
   },
   "en": {
    "cocktail": "ALCOHOLIC COCKTAILS",
@@ -14,7 +15,8 @@
    "wine": "Wine",
    "sparklingWine": "SPARKLING WINES",
    "alcoholicDrinks": "Alcoholic Drinks",
-    "bear": "Bear"
+    "bear": "Bear",
+    "order": "Order"
   },
   "ru": {
     "cocktail": "Алкогольные Коктейли",
@@ -22,7 +24,8 @@
     "wine": "ВИНА",
     "sparklingWine": "игристые вина",
     "alcoholicDrinks": "Алкогольные напитки",
-    "bear": "ПИВО"
+    "bear": "ПИВО",
+    "order": "Заказать"
   }
 }
 </i18n>

@@ -7,7 +7,8 @@
     "lemonade": "ЛИМОНАДИ",
     "smoothy": "СМУЗІ",
     "milkShake": "МІЛКШЕЙКИ",
-    "noneAlcoholicDrinks": "БЕЗАЛКОГОЛЬНІ НАПОЇ"
+    "noneAlcoholicDrinks": "БЕЗАЛКОГОЛЬНІ НАПОЇ",
+    "order": "Замовити"
   },
   "en": {
    "coffee": "COFFEE",
@@ -16,7 +17,8 @@
    "lemonade": "Lemonade",
    "smoothy": "Smoothies",
     "milkShake": "MILKSHAKES",
-    "noneAlcoholicDrinks": "NON-ALCOHOLIC BEVERAGES"
+    "noneAlcoholicDrinks": "NON-ALCOHOLIC BEVERAGES",
+    "order": "Order"
   },
   "ru": {
     "coffee": "КОФЕ",
@@ -25,7 +27,8 @@
     "lemonade": "ЛИМОНАД",
     "smoothy": "ПОЛОСЕ",
     "milkShake": "Милкшейк",
-    "noneAlcoholicDrinks": "безалкогольные напитки"
+    "noneAlcoholicDrinks": "безалкогольные напитки",
+    "order": "Заказать"
   }
 }
 </i18n>
