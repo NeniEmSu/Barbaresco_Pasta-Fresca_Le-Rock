@@ -888,7 +888,7 @@ header {
   box-shadow: none;
   transform: translate3d(0, 0, 0);
   transition: 0.1s all ease-out;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .nav-link {
@@ -1073,7 +1073,7 @@ header {
     padding: 20px 40px;
     transform: translate3d(0, 0, 0);
     transition: 0.1s all ease-out;
-    z-index: 1000;
+    z-index: 2;
   }
 
   .btn-hamburger {

@@ -35,12 +35,57 @@
       @changedView="updateView($event)"
     />
 
-    <b-img-lazy
-      id="feedBack"
+    <b-dropdown
       class="feedBack d-none d-md-block"
-      src="~/assets/img/feedBack.png"
-      alt="feedback Icon"
-    />
+      size="lg"
+      droplet
+      text="Drop-Left"
+      variant="link"
+      toggle-class="text-decoration-none"
+      no-caret
+    >
+      <template v-slot:button-content>
+        <b-img-lazy
+          id="feedBack"
+          class="feedBack d-none d-md-block"
+          src="~/assets/img/feedBack.png"
+          alt="feedback Icon"
+        />
+      </template>
+      <b-dropdown-form>
+        <b-form-group
+          label="Name"
+          size="lg"
+          label-for="dropdown-form-name"
+          @submit.stop.prevent
+        >
+          <b-form-input
+            id="dropdown-form-name"
+            size="sm"
+            placeholder="Name"
+          />
+        </b-form-group>
+        <b-form-group
+          label="Phone Number"
+          label-for="dropdown-form-phone"
+          @submit.stop.prevent
+        >
+          <b-form-input
+            id="dropdown-form-phone"
+            size="sm"
+            placeholder="380 ## ### ####"
+          />
+        </b-form-group>
+        <b-button
+          variant="primary"
+          size="sm"
+          @click="onClick"
+        >
+          Send
+        </b-button>
+      </b-dropdown-form>
+    </b-dropdown>
+
     <b-tooltip
       target="feedBack"
       placement="topleft"
@@ -169,8 +214,10 @@ export default {
   methods: {
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView
+    },
+    onClick () {
+      this.$refs.dropdown.hide(true)
     }
-
   }
 
 }
@@ -190,13 +237,14 @@ export default {
   border: none;
   border-radius: 50%;
   background: none;
-  position: absolute;
-  bottom: 23.5%;
+  position: fixed;
+  bottom: 3%;
   right: 50px;
+  z-index: 1;
   cursor: pointer;
 }
 
 .elaboraSpacing {
-  margin-top: 190px;
+  margin-top: 90px;
 }
 </style>

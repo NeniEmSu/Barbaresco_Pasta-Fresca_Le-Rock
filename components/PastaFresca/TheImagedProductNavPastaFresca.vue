@@ -88,23 +88,23 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 11}"
-        @click.prevent="Show11"
-      >
-        <div class="nav-image navSeven" />
-        <div class="text-center nav-text">
-          {{ $t('mainMeal') }}
-        </div>
-      </button>
-
-      <button
-        class="column "
         :class="{ active: currentProductsDisplayed === 7}"
         @click.prevent="Show7"
       >
         <div class="nav-image navSeven" />
         <div class="text-center nav-text">
           {{ $t('firstCourse') }}
+        </div>
+      </button>
+
+      <button
+        class="column "
+        :class="{ active: currentProductsDisplayed === 11}"
+        @click.prevent="Show11"
+      >
+        <div class="nav-image navSeven" />
+        <div class="text-center nav-text">
+          {{ $t('mainMeal') }}
         </div>
       </button>
 
@@ -328,7 +328,7 @@ section {
   }
 
   section {
-    border-bottom: 1px solid $blackColor;
+    border-bottom: 1px solid $lightColor;
 
     opacity: 1;
     overflow: hidden;
@@ -340,6 +340,10 @@ section {
     margin: auto;
     min-height: 110px;
     opacity: 1;
+
+    .nav-text {
+      color: $lightColor;
+    }
 
     &:hover {
       .nav-image {

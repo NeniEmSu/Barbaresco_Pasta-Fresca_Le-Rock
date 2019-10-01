@@ -154,7 +154,7 @@ export default {
 }
 
 .grid figure figcaption > span {
-  z-index: 9;
+  z-index: 1;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
@@ -310,7 +310,7 @@ section {
   }
 
   .grid figure figcaption > span {
-    z-index: 9;
+    z-index: 1;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
@@ -392,7 +392,7 @@ section {
   }
 
   .grid figure figcaption > span {
-    z-index: 9;
+    z-index: 1;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;

@@ -354,7 +354,7 @@ section {
   }
 
   section {
-    border-bottom: 1px solid $blackColor;
+    border-bottom: 1px solid $lightColor;
 
     opacity: 1;
     overflow: hidden;
@@ -366,6 +366,10 @@ section {
     margin: auto;
     min-height: 110px;
     opacity: 1;
+
+    .nav-text {
+      color: $lightColor;
+    }
 
     &:hover {
       .nav-image {

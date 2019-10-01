@@ -211,6 +211,6 @@ export default {
 }
 
 .elaboraSpacing {
-  margin-top: 190px;
+  margin-top: 90px;
 }
 </style>
