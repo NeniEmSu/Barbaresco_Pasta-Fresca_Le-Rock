@@ -36,8 +36,7 @@
     />
 
     <b-dropdown
-      class="feedBack d-none d-md-block"
-      size="lg"
+      class="feedBack "
       droplet
       text="Drop-Left"
       variant="link"
@@ -47,7 +46,7 @@
       <template v-slot:button-content>
         <b-img-lazy
           id="feedBack"
-          class="feedBack d-none d-md-block"
+          class="feedBack "
           src="~/assets/img/feedBack.png"
           alt="feedback Icon"
         />
@@ -246,5 +245,27 @@ export default {
 
 .elaboraSpacing {
   margin-top: 90px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .feedBack {
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .feedBack {
+    bottom: -40px;
+    right: -40px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .feedBack {
+    position: fixed;
+    bottom: -46px;
+    right: -45px;
+  }
 }
 </style>
