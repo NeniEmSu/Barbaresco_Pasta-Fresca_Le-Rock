@@ -256,16 +256,26 @@ export default {
 
 @media only screen and (max-width: 1200px) {
   .feedBack {
-    bottom: -40px;
-    right: -40px;
+    bottom: -30px;
+    right: -30px;
+  }
+
+  img.feedBack {
+    width: 100px;
+    height: 100px;
   }
 }
 
 @media only screen and (max-width: 425px) {
   .feedBack {
     position: fixed;
-    bottom: -46px;
-    right: -45px;
+    bottom: -35px;
+    right: -35px;
+  }
+
+  img.feedBack {
+    width: 100px;
+    height: 100px;
   }
 }
 </style>
