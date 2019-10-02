@@ -16,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
     "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/manifest": "^3.0.0-beta.16",
     "@nuxtjs/netlify-files": "^1.0.0",
     "@nuxtjs/pwa": "^3.0.0-beta.18",
     "@nuxtjs/style-resources": "^1.0.0",
@@ -28,6 +29,7 @@
     "nuxt-gmaps": "^1.0.4",
     "nuxt-i18n": "^6.3.0",
     "nuxt-purgecss": "^0.2.1",
+    "nuxt-rfg-icon": "^0.6.4",
     "postcss-nested": "^4.1.2",
     "sass-loader": "^8.0.0",
     "v-owl-carousel": "^1.0.8",
