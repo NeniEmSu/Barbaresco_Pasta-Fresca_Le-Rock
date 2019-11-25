@@ -69,19 +69,19 @@
       </h1>
 
       <style>
-      .owl-theme .owl-nav.disabled+.owl-dots {
+        .owl-theme .owl-nav.disabled+.owl-dots {
         margin-top: -5px !important;
-      }
+        }
 
-      .owl-theme .owl-nav.disabled+.owl-dots .active span {
+        .owl-theme .owl-nav.disabled+.owl-dots .active span {
         background-color: #444 !important;
-      }
+        }
 
-      .owl-carousel .owl-stage {
+        .owl-carousel .owl-stage {
         margin: auto !important;
-      }
+        }
 
-      .owl-theme .owl-dots .owl-dot span {
+        .owl-theme .owl-dots .owl-dot span {
         min-width: 50px;
         max-width: 50px;
         width: 100%;
@@ -90,25 +90,25 @@
         height: 100%;
         background-color: black !important;
         border: none;
-      }
-
-      @media screen and (max-height: 480px) {
-        .owl-theme .owl-nav.disabled+.owl-dots {
-          margin-top: -13px !important;
         }
-      }
 
-      @media screen and (min-height: 537px) and (max-height: 560px) {
+        @media screen and (max-height: 480px) {
         .owl-theme .owl-nav.disabled+.owl-dots {
-          margin-top: -8px !important;
+        margin-top: -13px !important;
         }
-      }
+        }
 
-      @media screen and (min-height: 560px) and (max-height: 640px) {
+        @media screen and (min-height: 537px) and (max-height: 560px) {
         .owl-theme .owl-nav.disabled+.owl-dots {
-          margin-top: 1% !important;
+        margin-top: -8px !important;
         }
-      }
+        }
+
+        @media screen and (min-height: 560px) and (max-height: 640px) {
+        .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 1% !important;
+        }
+        }
       </style>
 
       <client-only
