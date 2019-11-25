@@ -1,6 +1,7 @@
 <i18n>
 {
   "uk": {
+    "language": "Мова",
     "vacancyNotice": "Наразі вакансій у нас немає!",
     "reservation":{
       "heading": "Оберіть час та кількість осіб",
@@ -35,6 +36,7 @@
       "russian": "Русский"
   },
   "en": {
+    "language": "Language",
    "vacancyNotice": "We don't have any vacancies right now!",
    "reservation":{
       "heading": "Choose the time and number of people",
@@ -70,6 +72,7 @@
 
   },
   "ru": {
+    "language": "язык",
     "vacancyNotice": "Сейчас вакансий у нас нет!",
     "reservation":{
       "heading": "Выберите время и количество человек",
@@ -222,24 +225,37 @@
             <b-nav-item :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)">
               {{ $t('links.contact') }}
             </b-nav-item>
-            <b-nav-item
-              v-if="$i18n.locale !== 'en'"
-              :to="switchLocalePath('en')"
+
+            <div
+              class="mx-auto language-nav"
+              style="margin-top: 50%;"
             >
-              {{ $t('english') }}
-            </b-nav-item>
-            <b-nav-item
-              v-if="$i18n.locale !== 'uk'"
-              :to="switchLocalePath('uk')"
-            >
-              {{ $t('ukrainian') }}
-            </b-nav-item>
-            <b-nav-item
-              v-if="$i18n.locale !== 'ru'"
-              :to="switchLocalePath('ru')"
-            >
-              {{ $t('russian') }}
-            </b-nav-item>
+              <b-dropdown
+                id="dropdown-1"
+                :text="$t('language')"
+                class="m-md-2 "
+                variant="outline-dark"
+              >
+                <b-dropdown-item
+                  v-if="$i18n.locale !== 'en'"
+                  :to="switchLocalePath('en')"
+                >
+                  English
+                </b-dropdown-item>
+                <b-dropdown-item
+                  v-if="$i18n.locale !== 'uk'"
+                  :to="switchLocalePath('uk')"
+                >
+                  Українська
+                </b-dropdown-item>
+                <b-dropdown-item
+                  v-if="$i18n.locale !== 'ru'"
+                  :to="switchLocalePath('ru')"
+                >
+                  Русский
+                </b-dropdown-item>
+              </b-dropdown>
+            </div>
           </b-navbar-nav>
         </nav>
 
@@ -274,7 +290,7 @@
               <div class="row my-auto">
                 <img
                   style="border-radius: 50%;   "
-                  :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                  :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                   alt=""
                   class="col-2 m-auto"
                 >
@@ -652,6 +668,44 @@ export default {
 </script>
 
 <style lang="css">
+.language-nav .dropdown-toggle {
+  border: 2px solid #000000;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  border-radius: 0;
+  box-sizing: border-box;
+
+  background-color: transparent;
+
+  padding: 14px 50px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.language-nav .dropdown-toggle:hover {
+  border: 3px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: 1px solid rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+
+  background: #000000;
+  color: #ffffff;
+}
+
 .modal-content {
   border-radius: 0;
 }
@@ -680,7 +734,7 @@ export default {
 }
 </style>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header.header--hidden {
   box-shadow: none;
   transform: translate3d(0, -100%, 0);

@@ -346,7 +346,7 @@
                   </p>
                   <img
                     style="border-radius: 50%;   "
-                    :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                    :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                     alt=""
                     class="col-2 m-auto"
                   >

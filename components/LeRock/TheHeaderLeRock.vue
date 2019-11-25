@@ -1,6 +1,7 @@
 <i18n>
 {
   "uk": {
+    "language": "Мова",
     "vacancyNotice": "Наразі вакансій у нас немає!",
     "reservation":{
       "heading": "Оберіть час та кількість осіб",
@@ -35,6 +36,7 @@
       "russian": "Русский"
   },
   "en": {
+    "language": "Language",
    "vacancyNotice": "We don't have any vacancies right now!",
    "reservation":{
       "heading": "Choose the time and number of people",
@@ -70,6 +72,7 @@
 
   },
   "ru": {
+    "language": "язык",
     "vacancyNotice": "Сейчас вакансий у нас нет!",
     "reservation":{
       "heading": "Выберите время и количество человек",
@@ -222,24 +225,36 @@
             <b-nav-item :to="localePath({name: 'le-rock-contacts'},$i18n.locale)">
               {{ $t('links.contact') }}
             </b-nav-item>
-            <b-nav-item
-              v-if="$i18n.locale !== 'en'"
-              :to="switchLocalePath('en')"
+            <div
+              class="mx-auto language-nav"
+              style="margin-top: 50%;"
             >
-              {{ $t('english') }}
-            </b-nav-item>
-            <b-nav-item
-              v-if="$i18n.locale !== 'uk'"
-              :to="switchLocalePath('uk')"
-            >
-              {{ $t('ukrainian') }}
-            </b-nav-item>
-            <b-nav-item
-              v-if="$i18n.locale !== 'ru'"
-              :to="switchLocalePath('ru')"
-            >
-              {{ $t('russian') }}
-            </b-nav-item>
+              <b-dropdown
+                id="dropdown-1"
+                :text="$t('language')"
+                class="m-md-2 "
+                variant="outline-dark"
+              >
+                <b-dropdown-item
+                  v-if="$i18n.locale !== 'en'"
+                  :to="switchLocalePath('en')"
+                >
+                  English
+                </b-dropdown-item>
+                <b-dropdown-item
+                  v-if="$i18n.locale !== 'uk'"
+                  :to="switchLocalePath('uk')"
+                >
+                  Українська
+                </b-dropdown-item>
+                <b-dropdown-item
+                  v-if="$i18n.locale !== 'ru'"
+                  :to="switchLocalePath('ru')"
+                >
+                  Русский
+                </b-dropdown-item>
+              </b-dropdown>
+            </div>
           </b-navbar-nav>
         </nav>
 
@@ -274,7 +289,7 @@
               <div class="row my-auto">
                 <img
                   style="border-radius: 50%;   "
-                  :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                  :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                   alt=""
                   class="col-2 m-auto"
                 >

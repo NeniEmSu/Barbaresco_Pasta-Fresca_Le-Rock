@@ -240,6 +240,8 @@ section {
   position: relative;
   text-align: center;
   margin: 22px auto 22px auto;
+  display: block;
+  flex-direction: column;
 
   @include easeOut;
   text-decoration: none;

@@ -68,7 +68,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -144,7 +144,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -220,7 +220,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -296,7 +296,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -372,7 +372,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -448,7 +448,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">

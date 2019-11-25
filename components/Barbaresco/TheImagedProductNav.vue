@@ -268,6 +268,8 @@ section {
   text-align: center;
   margin: 22px auto 22px auto;
   text-transform: capitalize;
+  display: block;
+  flex-direction: column;
 
   @include easeOut;
   text-decoration: none;

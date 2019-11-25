@@ -74,7 +74,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${coffee.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${coffee.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="coffee.name"
               >
               <div class="card-body">
@@ -151,7 +151,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${coffee.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${coffee.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="coffee.name"
               >
               <div class="card-body">
@@ -228,7 +228,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${coffee.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${coffee.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="coffee.name"
               >
               <div class="card-body">
@@ -306,7 +306,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -382,7 +382,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -458,7 +458,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -537,7 +537,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${fresh.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${fresh.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="fresh.name"
               >
               <div class="card-body">
@@ -614,7 +614,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${fresh.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${fresh.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="fresh.name"
               >
               <div class="card-body">
@@ -691,7 +691,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${fresh.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${fresh.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="fresh.name"
               >
               <div class="card-body">
@@ -770,7 +770,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${lemonade.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${lemonade.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="lemonade.name"
               >
               <div class="card-body">
@@ -847,7 +847,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${lemonade.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${lemonade.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="lemonade.name"
               >
               <div class="card-body">
@@ -924,7 +924,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${lemonade.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${lemonade.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="lemonade.name"
               >
               <div class="card-body">
@@ -1003,7 +1003,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${smoothy.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${smoothy.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="smoothy.name"
               >
               <div class="card-body">
@@ -1080,7 +1080,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${smoothy.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${smoothy.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="smoothy.name"
               >
               <div class="card-body">
@@ -1157,7 +1157,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${smoothy.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${smoothy.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="smoothy.name"
               >
               <div class="card-body">
@@ -1236,7 +1236,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${milkshake.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${milkshake.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="milkshake.name"
               >
               <div class="card-body">
@@ -1313,7 +1313,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${milkshake.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${milkshake.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="milkshake.name"
               >
               <div class="card-body">
@@ -1390,7 +1390,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${milkshake.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${milkshake.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="milkshake.name"
               >
               <div class="card-body">
@@ -1469,7 +1469,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -1546,7 +1546,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">
@@ -1623,7 +1623,7 @@
             >
               <img
                 class="card-img-top mx-auto"
-                :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                 :alt="product.name"
               >
               <div class="card-body">

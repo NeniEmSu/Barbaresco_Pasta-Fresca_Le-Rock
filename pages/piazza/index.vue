@@ -35,7 +35,7 @@
 
     <TheBottomCarousel />
 
-    <TheMapComponent />
+    <!-- <TheMapComponent /> -->
   </div>
 </template>
 
@@ -43,7 +43,7 @@
 
 import TheImageNavigation from '~/components/Barbaresco/TheImageNavigation'
 import TheImagedProductNav from '~/components/Barbaresco/TheImagedProductNav'
-import TheMapComponent from '~/components/Barbaresco/TheMapComponent'
+// import TheMapComponent from '~/components/Barbaresco/TheMapComponent'
 import TheBugers from '~/components/Barbaresco/BarbarescoProducts/TheBugers'
 import ThePizza from '~/components/Barbaresco/BarbarescoProducts/ThePizza'
 import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
@@ -62,7 +62,7 @@ export default {
   components: {
     TheImageNavigation,
     TheImagedProductNav,
-    TheMapComponent,
+    // TheMapComponent,
     TheBugers,
     ThePizza,
     TheSushi,
