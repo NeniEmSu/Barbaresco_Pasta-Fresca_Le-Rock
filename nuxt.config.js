@@ -100,6 +100,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
+    'nuxt-polyfill',
     ['nuxt-gmaps', {
       key: 'AIzaSyDKJciVrAvST8C9SJzwkjmHFnoPM8FwooY'
     }],
@@ -218,6 +219,48 @@ export default {
     }
   },
 
+  polyfill: {
+    features: [
+      /*
+          Feature without detect:
+
+          Note:
+            This is not recommended for most polyfills
+            because the polyfill will always be loaded, parsed and executed.
+      */
+      {
+        require: 'url-polyfill' // NPM package or require path of file
+      },
+
+      /*
+          Feature with detect:
+
+          Detection is better because the polyfill will not be
+          loaded, parsed and executed if it's not necessary.
+      */
+      {
+        require: 'intersection-observer',
+        detect: () => 'IntersectionObserver' in window
+      },
+
+      /*
+          Feature with detect & install:
+
+          Some polyfills require a installation step
+          Hence you could supply a install function which accepts the require result
+      */
+      {
+        require: 'smoothscroll-polyfill',
+
+        // Detection found in source: https://github.com/iamdustan/smoothscroll/blob/master/src/smoothscroll.js
+        detect: () => 'scrollBehavior' in document.documentElement.style && window.__forceSmoothScrollPolyfill__ !== true,
+
+        // Optional install function called client side after the package is required:
+        install: smoothscroll => smoothscroll.polyfill()
+      }
+    ]
+  },
+
   proxy: {
     '/.netlify/functions/': {
       target: 'http://localhost:8000'
@@ -268,8 +311,45 @@ export default {
           })
         }
       })
+    },
+
+    babel: {
+      presets ({
+        isServer
+      }, [preset, options]) {
+        const r = [
+          [
+            preset, {
+              buildTarget: isServer ? 'server' : 'client',
+              ...options
+            }
+          ]
+          // [ Other presets ]
+        ]
+
+        r[0][1].targets = {
+          'browsers': ['> 1%', 'last 2 versions'],
+          ie: 11
+        }
+
+        r[0][1].polyfills = [
+          'es6.array.iterator',
+          'es6.promise',
+          'es6.object.assign',
+          'es6.symbol',
+          'es6.array.find',
+          'es6.array.from',
+          'es7.promise.finally',
+          'es7.object.entries'
+        ]
+
+        return r
+      },
+
+      plugins: [
+        ['@babel/plugin-transform-runtime']
+      ]
     }
 
   }
-
 }
