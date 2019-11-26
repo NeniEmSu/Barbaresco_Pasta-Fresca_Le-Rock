@@ -121,7 +121,7 @@
       <TheGarnishes v-if="currentProductsDisplayed === 12" />
     </vue-page-transition>
 
-    <TheBottomCarousel class="elaboraSpacing" />
+    <!-- <TheBottomCarousel class="elaboraSpacing" /> -->
 
     <TheMapComponent />
   </div>
@@ -144,7 +144,7 @@ import TheAppetizers from '~/components/Barbaresco/BarbarescoProducts/TheAppetiz
 import TheGarnishes from '~/components/Barbaresco/BarbarescoProducts/TheGarnishes'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
-import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
+// import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarousel'
 
 export default {
   name: 'Barbaresco',
@@ -164,8 +164,8 @@ export default {
     TheGarnishes,
     TheDrinks,
     TheAlcohol,
-    TheMainMeal,
-    TheBottomCarousel
+    TheMainMeal
+    // TheBottomCarousel
   },
 
   meta: {

@@ -1,13 +1,13 @@
 <i18n>
 {
   "uk": {
-    "language": "Мова"
+    "language": "Українська"
   },
   "en": {
-   "language": "Language"
+   "language": "English"
   },
   "ru": {
-    "language": "язык"
+    "language": "Русский"
   }
 }
 </i18n>
@@ -86,27 +86,34 @@ body {
 
     background-color: transparent;
 
-    padding: 14px 50px;
+    // padding: 14px 50px;
+    height: 48px;
+    width: 180px;
 
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    margin: 30px;
 
     color: $lightColor;
 
     &:hover {
-      border: 3px solid;
-      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
-        0 0 20px rgba(255, 255, 255, 0.2);
-      outline-color: rgba(255, 255, 255, 0);
-      outline-offset: 15px;
-      text-shadow: 1px 1px 2px #427388;
-
       background: $lightColor;
       color: $darkColor;
     }
+  }
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    // margin-left: 2.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
   }
 }
 

@@ -129,126 +129,126 @@ export default {
   mix-blend-mode: normal;
 }
 
-section {
-  overflow: hidden;
-}
+// section {
+//   overflow: hidden;
+// }
 
-.column {
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% / 10);
-  height: 100%;
-  min-height: 150px;
-  border: 0;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  margin: 22px auto 22px auto;
+// .column {
+//   float: left;
+//   box-sizing: border-box;
+//   width: calc(100% / 10);
+//   height: 100%;
+//   min-height: 150px;
+//   border: 0;
+//   background-color: transparent;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   position: relative;
+//   text-align: center;
+//   margin: 22px auto 22px auto;
 
-  transition: 500ms ease-in-out;
-  text-decoration: none;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
-}
+//   transition: 500ms ease-in-out;
+//   text-decoration: none;
+//   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
+// }
 
-.column .nav-image {
-  mix-blend-mode: luminosity;
+// .column .nav-image {
+//   mix-blend-mode: luminosity;
 
-  &:hover {
-    mix-blend-mode: normal;
-  }
+//   &:hover {
+//     mix-blend-mode: normal;
+//   }
 
-  &.active {
-    mix-blend-mode: normal;
-  }
-}
+//   &.active {
+//     mix-blend-mode: normal;
+//   }
+// }
 
-.nav-text {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  text-decoration: none;
+// .nav-text {
+//   font-family: $mainFont;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 18px;
+//   line-height: 21px;
+//   text-decoration: none;
 
-  color: $lightColor;
-  margin-top: 10px;
-}
+//   color: $lightColor;
+//   margin-top: 10px;
+// }
 
-.nav-image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  min-width: 100px;
-  max-width: 100px;
-  height: 100%;
-  min-height: 100px;
-  max-height: 100px;
+// .nav-image {
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   position: relative;
+//   text-align: center;
+//   width: 100%;
+//   min-width: 100px;
+//   max-width: 100px;
+//   height: 100%;
+//   min-height: 100px;
+//   max-height: 100px;
 
-  border-radius: 50%;
-  background-color: $darkColor;
-}
+//   border-radius: 50%;
+//   background-color: $darkColor;
+// }
 
-.navOne {
-  background-image: url("~assets/img/barbarescoPizza.png");
-}
+// .navOne {
+//   background-image: url("~assets/img/barbarescoPizza.png");
+// }
 
-.navTwo {
-  background-image: url("~assets/img/barbarescoBurger.png");
-}
+// .navTwo {
+//   background-image: url("~assets/img/barbarescoBurger.png");
+// }
 
-.navThree {
-  background-image: url("~assets/img/barbarescoSushi.png");
-}
+// .navThree {
+//   background-image: url("~assets/img/barbarescoSushi.png");
+// }
 
-.navFour {
-  background-image: url("~assets/img/barbarescoMlinty.png");
-}
+// .navFour {
+//   background-image: url("~assets/img/barbarescoMlinty.png");
+// }
 
-.navFive {
-  background-image: url("~assets/img/barbarescoDesert.png");
-}
+// .navFive {
+//   background-image: url("~assets/img/barbarescoDesert.png");
+// }
 
-.navSix {
-  background-image: url("~assets/img/barbarescoSalad.png");
-}
+// .navSix {
+//   background-image: url("~assets/img/barbarescoSalad.png");
+// }
 
-.navSeven {
-  background-image: url("~assets/img/barbarescoFirstCourse.png");
-}
+// .navSeven {
+//   background-image: url("~assets/img/barbarescoFirstCourse.png");
+// }
 
-.navEight {
-  background-image: url("~assets/img/barbarescoHits.png");
-}
+// .navEight {
+//   background-image: url("~assets/img/barbarescoHits.png");
+// }
 
-.navNine {
-  background-image: url("~assets/img/barbarescoHotDrinks.png");
-}
+// .navNine {
+//   background-image: url("~assets/img/barbarescoHotDrinks.png");
+// }
 
-.navTen {
-  background-image: url("~assets/img/barbarescoAlcohol.png");
-}
+// .navTen {
+//   background-image: url("~assets/img/barbarescoAlcohol.png");
+// }
 
-@media (max-width: 750px) {
-  .column {
-    width: calc(100% / 5);
-  }
-}
+// @media (max-width: 750px) {
+//   .column {
+//     width: calc(100% / 5);
+//   }
+// }
 
-@media (max-width: 400px) {
-  .column {
-    width: calc(100% / 3);
-  }
-}
+// @media (max-width: 400px) {
+//   .column {
+//     width: calc(100% / 3);
+//   }
+// }
 
-@media (max-width: 375px) {
-  .column {
-    width: calc(100% / 2);
-  }
-}
+// @media (max-width: 375px) {
+//   .column {
+//     width: calc(100% / 2);
+//   }
+// }
 </style>

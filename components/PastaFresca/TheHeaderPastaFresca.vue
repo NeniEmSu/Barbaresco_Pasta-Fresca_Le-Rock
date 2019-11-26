@@ -680,7 +680,7 @@ export default {
 .vdp-datepicker__calendar .cell.day:hover {
   background: #000000 !important;
   color: white;
-  border: 1px solid black !important;
+  border: 2px solid black !important;
 }
 
 .vdp-datepicker__calendar .cell.blank:hover,
@@ -713,7 +713,7 @@ option {
 
 select {
   background: transparent;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   box-sizing: border-box;
 
   font-family: $mainFont;
@@ -760,7 +760,7 @@ select option {
 
 input {
   background: transparent;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   box-sizing: border-box;
 
   font-family: $mainFont;
@@ -776,7 +776,7 @@ input {
 
 .order {
   background: #000000;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   box-sizing: border-box;
 
   font-family: $mainFont;
@@ -791,7 +791,7 @@ input {
 
 .seeAll button {
   background: transparent;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   box-sizing: border-box;
 
   font-family: $mainFont;
@@ -818,7 +818,7 @@ input {
     font-size: 30px;
     line-height: 35px;
 
-    color: $blackColor;
+    color: $darkColor;
   }
 }
 
@@ -832,7 +832,7 @@ input {
 
     letter-spacing: 0.05em;
 
-    color: $blackColor;
+    color: $darkColor;
   }
 }
 
@@ -870,7 +870,7 @@ input {
   }
 
   p {
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     box-sizing: border-box;
     padding: 0 5px;
   }
@@ -921,7 +921,7 @@ header {
 .reservation-btn {
   border: 2px solid $lightColor;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 1px solid;
+  outline: 2px solid;
   outline-color: rgba(255, 255, 255, 0.5);
   outline-offset: 0px;
   text-shadow: none;

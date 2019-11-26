@@ -221,7 +221,7 @@ export default {
 }
 
 section {
-  border-bottom: 1px solid $blackColor;
+  border-bottom: 1px solid $darkColor;
   opacity: 1;
   overflow: hidden;
 }

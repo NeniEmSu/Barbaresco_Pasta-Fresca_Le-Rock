@@ -818,7 +818,7 @@ input {
     font-size: 30px;
     line-height: 35px;
 
-    color: $blackColor;
+    color: $darkColor;
   }
 }
 
@@ -832,7 +832,7 @@ input {
 
     letter-spacing: 0.05em;
 
-    color: $blackColor;
+    color: $darkColor;
   }
 }
 

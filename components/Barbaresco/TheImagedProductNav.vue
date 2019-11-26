@@ -49,7 +49,7 @@
   <div id="imageed-Products-Navigation">
     <section class="container text-center ">
       <button
-        class="column text-center "
+        class="column text-center"
         :class="{ active: currentProductsDisplayed === 1}"
         @click="Show1"
       >
@@ -71,7 +71,7 @@
       </button>
 
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 3}"
         @click="Show3"
       >
@@ -81,7 +81,7 @@
         </div>
       </button>
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 4}"
         @click="Show4"
       >
@@ -92,7 +92,7 @@
       </button>
 
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 5}"
         @click="Show5"
       >
@@ -103,7 +103,7 @@
       </button>
 
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 6}"
         @click="Show6"
       >
@@ -114,7 +114,7 @@
       </button>
 
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 7}"
         @click="Show7"
       >
@@ -125,7 +125,7 @@
       </button>
 
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 8}"
         @click="Show8"
       >
@@ -136,8 +136,11 @@
       </button>
 
       <button
-        class="column"
-        :class="{ active: currentProductsDisplayed === 9}"
+        class="column
+        :class="
+        {
+        active:
+        currentProductsDisplayed="==9}&quot;"
         @click.prevent="Show9"
       >
         <div class="nav-image navNine " />
@@ -147,7 +150,7 @@
       </button>
 
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 10}"
         @click.prevent="Show10"
       >
@@ -158,7 +161,7 @@
       </button>
 
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 11}"
         @click.prevent="Show11"
       >
@@ -169,7 +172,7 @@
       </button>
 
       <button
-        class="column "
+        class="column"
         :class="{ active: currentProductsDisplayed === 12}"
         @click.prevent="Show12"
       >
@@ -248,7 +251,7 @@ export default {
 }
 
 section {
-  border-bottom: 1px solid $blackColor;
+  border-bottom: 1px solid $darkColor;
   opacity: 1;
   overflow: hidden;
 }
@@ -266,7 +269,7 @@ section {
   background-size: cover;
   position: relative;
   text-align: center;
-  margin: 22px auto 22px auto;
+  margin: 22px auto;
   text-transform: capitalize;
   display: block;
   flex-direction: column;
@@ -294,7 +297,7 @@ section {
 }
 
 .column .nav-image {
-  margin: auto;
+  // margin: auto;
   mix-blend-mode: luminosity;
 }
 
@@ -320,16 +323,16 @@ section {
   position: relative;
   text-align: center;
   width: 100%;
-  min-width: 90px;
-  max-width: 90px;
+  min-width: 80px;
+  max-width: 80px;
   height: 100%;
-  min-height: 90px;
-  max-height: 90px;
+  min-height: 80px;
+  max-height: 80px;
 
   border-radius: 50%;
   background-color: $darkColor;
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 
   @include easeOut;
 }
@@ -387,7 +390,7 @@ section {
   }
 
   section {
-    border-bottom: 1px solid $blackColor;
+    border-bottom: 1px solid $darkColor;
 
     opacity: 1;
     overflow: hidden;

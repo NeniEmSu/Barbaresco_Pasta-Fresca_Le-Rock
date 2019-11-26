@@ -528,7 +528,7 @@ export default {
 
 .homeNavCard {
   background: #0a0a0a;
-  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.55);
+  // box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.55);
   border: 0;
 }
 
@@ -564,6 +564,8 @@ export default {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  padding-right: 18.5px;
+  padding-left: 18.5px;
 
   color: $lightColor;
 }
@@ -597,13 +599,6 @@ export default {
   color: $lightColor;
 
   &:hover {
-    border: 3px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
-      0 0 20px rgba(255, 255, 255, 0.2);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
-    text-shadow: 1px 1px 2px #427388;
-
     background: $lightColor;
     color: #000000;
   }
@@ -615,10 +610,11 @@ export default {
   box-sizing: border-box;
 
   background-color: transparent;
+  margin: 10px 10px 10px 10px;
 
   &.instagram {
-    margin: 10px auto;
-    padding: 10px 25px;
+    margin: 10px 10px 10px 10px !important;
+    padding: 10px 20px;
     transition: 500ms ease-in-out;
 
     .inButtonImg {
@@ -649,12 +645,13 @@ export default {
   }
 
   &.facebook {
-    margin: 10px auto;
-    padding: 10px 25px;
-    -webkit-transition: background-color 500ms ease-out;
-    -moz-transition: background-color 500ms ease-out;
-    -o-transition: background-color 500ms ease-out;
-    transition: background-color 500ms ease-out;
+    margin: 10px 10px 10px 10px !important;
+    padding: 10px 20px;
+
+    // -webkit-transition: background-color 500ms ease-out;
+    // -moz-transition: background-color 500ms ease-out;
+    // -o-transition: background-color 500ms ease-out;
+    // transition: background-color 500ms ease-out;
 
     .inButtonImg {
       width: 80px;

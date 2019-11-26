@@ -571,7 +571,7 @@ h3 {
   font-style: normal;
   font-weight: normal;
 
-  color: $blackColor;
+  color: $darkColor;
   span.number {
     font-size: 50px;
     line-height: 59px;
@@ -584,8 +584,8 @@ h3 {
 }
 
 .order {
-  background: $blackColor;
-  border: 1px solid $blackColor;
+  background: $darkColor;
+  border: 1px solid $darkColor;
   box-sizing: border-box;
 
   font-family: $mainFont;
@@ -639,7 +639,7 @@ h3 {
   }
 
   p {
-    border: 1px solid $blackColor;
+    border: 1px solid $darkColor;
     box-sizing: border-box;
     padding: 0 5px;
   }
@@ -664,13 +664,13 @@ label {
   font-size: 18px;
   line-height: 21px;
 
-  color: $blackColor;
+  color: $darkColor;
 }
 
 input.form-control,
 textarea.form-control {
   background: transparent;
-  border: 2px solid $blackColor;
+  border: 2px solid $darkColor;
   box-sizing: border-box;
   border-radius: 0;
 
@@ -680,7 +680,7 @@ textarea.form-control {
   font-size: 18px;
   line-height: 21px;
 
-  color: $blackColor;
+  color: $darkColor;
   width: 100%;
 
   margin: 5px auto 10px auto;

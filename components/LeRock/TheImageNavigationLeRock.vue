@@ -340,7 +340,7 @@ section {
     width: 100%;
     height: 100%;
 
-    background: linear-gradient(180deg, $blackColor 0%, $blackColor 100%);
+    background: linear-gradient(180deg, $darkColor 0%, $darkColor 100%);
 
     opacity: 0.35;
     content: "";
