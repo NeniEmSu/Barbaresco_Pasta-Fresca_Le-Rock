@@ -190,7 +190,15 @@ figure.saddleEffect figcaption::before {
   width: 100%;
   height: 100%;
 
-  background: linear-gradient(180deg, #000000 0%, #e0a671 100%);
+  // background: linear-gradient(180deg, #000000 0%, #e0a671 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.483146) 22.4%,
+    #5e4732 44.39%,
+    #8f6a48 71.84%,
+    #e0a671 100%
+  );
   opacity: 0;
   content: "";
 
@@ -252,7 +260,15 @@ figure.saddleEffect:hover h1,
 
 figure.saddleEffect:hover figcaption::before,
 .nuxt-link-exact-active figure.saddleEffect figcaption::before {
-  background: linear-gradient(180deg, #000000 0%, #e0a671 100%);
+  // background: linear-gradient(180deg, #000000 0%, #e0a671 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.483146) 22.4%,
+    #5e4732 44.39%,
+    #8f6a48 71.84%,
+    #e0a671 100%
+  );
   opacity: 0.55;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);

@@ -316,7 +316,10 @@ main {
   .language {
     .langBtn,
     .dropdown-toggle {
+      height: inherit;
+      width: inherit;
       padding: 10px 25px;
+      margin: inherit;
 
       font-size: 14px;
       line-height: 16px;

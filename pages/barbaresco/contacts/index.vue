@@ -51,11 +51,10 @@
                 href="tel:+380506700400"
                 class="col-12 m-auto"
               >
-                <span>+38 050 6 700 400</span>
+                <span>+38 050 6 700 400</span><span> | </span><span>+38 068 6 700 400</span>
               </a>
             </p>
-            <p>{{ $t('workHours') }}</p>
-            <p><b>10:00-01:00</b> ({{ $t('days') }})</p>
+            <p>{{ $t('workHours') }} <b>10:00-01:00</b> ({{ $t('days') }})</p>
           </div>
         </div>
         <TheContactMap />
@@ -112,7 +111,7 @@ export default {
 
 <style lang="scss" scoped>
 .image-container {
-  min-height: calc(100vh - 120px);
+  max-height: calc(100vh - 120px);
 
   object-fit: cover;
   object-position: center;
@@ -136,7 +135,7 @@ span {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 140.4%;
+  line-height: 110.4%;
 
   color: #000000;
 }

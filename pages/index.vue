@@ -709,6 +709,7 @@ export default {
 
   .socialButtons {
     &.instagram {
+      margin: auto 0 5px 0 !important;
       padding: 7.5px 18px;
 
       .inButtonImg {
@@ -718,6 +719,7 @@ export default {
     }
 
     &.facebook {
+      margin: auto 0 5px 0 !important;
       padding: 12px 18px;
 
       .inButtonImg {

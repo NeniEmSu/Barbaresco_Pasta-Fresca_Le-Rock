@@ -1,5 +1,6 @@
 .image-container {
-    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
+    min-height: calc(100vh - 120.1px);
 
     object-fit: cover;
     object-position: left center;
@@ -22,14 +23,14 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 140.4%;
+    line-height: 110%;
 
     color: #000000;
 }
 
 @media (min-width: 1280px) {
     .content-text {
-        width: 90%;
+        width: 80%;
         padding: 0 50px;
     }
 }

@@ -144,7 +144,7 @@
           class="border-0 theHead-nav-toggle d-none d-sm-none d-md-none d-lg-inline my-auto reservation"
         >
           <button
-            class="btn reservation-btn"
+            class="btn reservation-btn d-none"
             variant="outline-primary"
             @click="reservationOpen = !reservationOpen"
           >
