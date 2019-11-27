@@ -1,7 +1,7 @@
 <i18n>
 {
   "uk": {
-    "language": "Мова",
+    "language": "Укр",
     "vacancyNotice": "Наразі вакансій у нас немає!",
     "reservation":{
       "heading": "Оберіть час та кількість осіб",
@@ -36,7 +36,7 @@
       "russian": "Русский"
   },
   "en": {
-    "language": "Language",
+    "language": "Eng",
    "vacancyNotice": "We don't have any vacancies right now!",
    "reservation":{
       "heading": "Choose the time and number of people",
@@ -72,7 +72,7 @@
 
   },
   "ru": {
-    "language": "язык",
+    "language": "Рус",
     "vacancyNotice": "Сейчас вакансий у нас нет!",
     "reservation":{
       "heading": "Выберите время и количество человек",

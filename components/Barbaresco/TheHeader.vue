@@ -1,7 +1,7 @@
 <i18n>
 {
   "uk": {
-    "language": "Українська",
+    "language": "Укр",
     "vacancyNotice": "Наразі вакансій у нас немає!",
     "reservation":{
       "heading": "Оберіть час та кількість осіб",
@@ -36,7 +36,7 @@
       "russian": "Русский"
   },
   "en": {
-    "language": "English",
+    "language": "Eng",
    "vacancyNotice": "We don't have any vacancies right now!",
    "reservation":{
       "heading": "Choose the time and number of people",
@@ -72,7 +72,7 @@
 
   },
   "ru": {
-    "language": "Русский",
+    "language": "Рус",
     "vacancyNotice": "Сейчас вакансий у нас нет!",
     "reservation":{
       "heading": "Выберите время и количество человек",
@@ -671,7 +671,7 @@ export default {
 .language-nav .dropdown-toggle {
   border: 2px solid #000000;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 1px solid;
+  outline: 2px solid #000000;
   outline-color: rgba(255, 255, 255, 0.5);
   outline-offset: 0px;
   text-shadow: none;
@@ -682,7 +682,9 @@ export default {
 
   background-color: transparent;
 
-  padding: 14px 50px;
+  /* padding: 14px 50px; */
+  width: 180px;
+  height: 48px;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;

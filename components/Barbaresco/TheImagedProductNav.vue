@@ -136,11 +136,8 @@
       </button>
 
       <button
-        class="column
-        :class="
-        {
-        active:
-        currentProductsDisplayed="==9}&quot;"
+        class="column"
+        :class="{active: currentProductsDisplayed === 9}"
         @click.prevent="Show9"
       >
         <div class="nav-image navNine " />
