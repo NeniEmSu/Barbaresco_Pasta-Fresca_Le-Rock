@@ -171,24 +171,6 @@ export default {
   meta: {
     animation: 'overlay-down-full'
   },
-  head () {
-    return {
-      title: ('Barbaresco - ' + this.$t('title')).slice(
-        0,
-        60
-      ),
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: ('Barbaresco -' + this.$t('description')).slice(
-            0,
-            320
-          )
-        }
-      ]
-    }
-  },
 
   data () {
     return {
@@ -216,6 +198,24 @@ export default {
     },
     onClick () {
       this.$refs.dropdown.hide(true)
+    }
+  },
+  head () {
+    return {
+      title: ('Barbaresco - ' + this.$t('title')).slice(
+        0,
+        60
+      ),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ('Barbaresco -' + this.$t('description')).slice(
+            0,
+            320
+          )
+        }
+      ]
     }
   }
 

@@ -76,6 +76,12 @@ export default {
   meta: {
     animation: 'overlay-down-full'
   },
+
+  data () {
+    return {
+
+    }
+  },
   head () {
     return {
       title: ('Le Rock - ' + this.$t('title')).slice(
@@ -92,12 +98,6 @@ export default {
           )
         }
       ]
-    }
-  },
-
-  data () {
-    return {
-
     }
   }
 }

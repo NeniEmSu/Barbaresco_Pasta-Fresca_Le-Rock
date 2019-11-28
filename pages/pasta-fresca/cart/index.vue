@@ -450,24 +450,6 @@ export default {
   meta: {
     animation: 'overlay-down-full'
   },
-  head () {
-    return {
-      title: ('Barbaresco - ' + this.$t('title')).slice(
-        0,
-        60
-      ),
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: ('Barbaresco -' + this.$t('description')).slice(
-            0,
-            320
-          )
-        }
-      ]
-    }
-  },
 
   data () {
     return {
@@ -483,7 +465,6 @@ export default {
       modeOfPayment: ''
     }
   },
-
   computed: {
     ...mapState([
       'cart'
@@ -544,7 +525,7 @@ export default {
       this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
       this.$store.commit('emptyCart')
       this.success = true
-      this.$bvToast.toast(`Your Order has been recieved!`, {
+      this.$bvToast.toast('Your Order has been recieved!', {
         title: 'Увага!',
         autoHideDelay: 500,
         variant: 'success',
@@ -554,6 +535,25 @@ export default {
     },
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView
+    }
+  },
+
+  head () {
+    return {
+      title: ('Barbaresco - ' + this.$t('title')).slice(
+        0,
+        60
+      ),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: ('Barbaresco -' + this.$t('description')).slice(
+            0,
+            320
+          )
+        }
+      ]
     }
   }
 

@@ -79,6 +79,18 @@ export default {
   meta: {
     animation: 'overlay-down-full'
   },
+
+  data () {
+    return {
+      currentProductsDisplayed: 1
+    }
+  },
+
+  methods: {
+    updateView (updatedView) {
+      this.currentProductsDisplayed = updatedView
+    }
+  },
   head () {
     return {
       title: 'Piazza White'.slice(
@@ -95,18 +107,6 @@ export default {
           )
         }
       ]
-    }
-  },
-
-  data () {
-    return {
-      currentProductsDisplayed: 1
-    }
-  },
-
-  methods: {
-    updateView (updatedView) {
-      this.currentProductsDisplayed = updatedView
     }
   }
 }

@@ -128,24 +128,6 @@ export default {
   meta: {
     animation: 'overlay-down-full'
   },
-  head () {
-    return {
-      title: (this.$t('name') + ' - ' + this.$t('title')).slice(
-        0,
-        60
-      ),
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: (this.$t('name') + ' - ' + this.$t('description')).slice(
-            0,
-            320
-          )
-        }
-      ]
-    }
-  },
 
   data () {
     return {
@@ -172,6 +154,24 @@ export default {
       this.currentProductsDisplayed = updatedView
     }
 
+  },
+  head () {
+    return {
+      title: (this.$t('name') + ' - ' + this.$t('title')).slice(
+        0,
+        60
+      ),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: (this.$t('name') + ' - ' + this.$t('description')).slice(
+            0,
+            320
+          )
+        }
+      ]
+    }
   }
 
 }

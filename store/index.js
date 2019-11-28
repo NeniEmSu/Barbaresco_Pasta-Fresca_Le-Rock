@@ -63,23 +63,23 @@ export const actions = {
       commit('deleteFromCart', productId)
       commit('showToast', 'Видалено з кошика')
     })
-  },
-
-  checkout: ({
-    state,
-    commit
-  }) => {
-    myApi.buyProducts(
-      state.cart,
-      () => {
-        commit('emptyCart')
-        commit('setCheckoutStatus', 'Successful')
-      },
-      () => {
-        commit('setCheckoutStatus', 'Failled')
-      }
-    )
   }
+
+  // checkout: ({
+  //   state,
+  //   commit
+  // }) => {
+  //   myApi.buyProducts(
+  //     state.cart,
+  //     () => {
+  //       commit('emptyCart')
+  //       commit('setCheckoutStatus', 'Successful')
+  //     },
+  //     () => {
+  //       commit('setCheckoutStatus', 'Failled')
+  //     }
+  //   )
+  // }
 }
 
 export const mutations = {
@@ -139,9 +139,9 @@ export const mutations = {
     state.toast.text = ''
   },
 
-  setCheckoutStatus (state, status) {
-    state.checkoutStatus = status
-  },
+  // setCheckoutStatus (state, status) {
+  //   state.checkoutStatus = status
+  // },
 
   emptyCart (state) {
     state.cart = []

@@ -59,6 +59,12 @@ export default {
   meta: {
     animation: 'overlay-down-full'
   },
+
+  data () {
+    return {
+
+    }
+  },
   head () {
     return {
       title: ('Barbaresco - ' + this.$t('title')).slice(
@@ -75,12 +81,6 @@ export default {
           )
         }
       ]
-    }
-  },
-
-  data () {
-    return {
-
     }
   }
 }

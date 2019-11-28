@@ -87,8 +87,7 @@ export default {
 
   router: {
     middleware: [
-      'animation',
-      'i18n'
+      'animation'
     ]
   },
 
@@ -161,58 +160,58 @@ export default {
       fallbackLocale: 'uk',
       messages: {
         uk: {
-          'links': {
-            'home': 'Головна',
-            'menu': 'Меню',
-            'delivery': 'Доставка їжі',
-            'reserveAPlace': 'Резервація місця',
-            'reservation': 'Резервація',
-            'aboutUs': 'Про нас',
-            'atmosphere': 'Атмосфера',
-            'vacancy': 'Ваканції',
-            'contact': 'Контакти'
+          links: {
+            home: 'Головна',
+            menu: 'Меню',
+            delivery: 'Доставка їжі',
+            reserveAPlace: 'Резервація місця',
+            reservation: 'Резервація',
+            aboutUs: 'Про нас',
+            atmosphere: 'Атмосфера',
+            vacancy: 'Ваканції',
+            contact: 'Контакти'
           },
-          'order': 'Замовити',
-          'ukrainian': 'Українська',
-          'english': 'English',
-          'russian': 'Русский'
+          order: 'Замовити',
+          ukrainian: 'Українська',
+          english: 'English',
+          russian: 'Русский'
         },
         en: {
-          'links': {
-            'home': 'Home',
-            'menu': 'Menu',
-            'delivery': 'Food delivery',
-            'reserveAPlace': 'Reservation of place',
-            'reservation': 'Reservation',
-            'aboutUs': 'About us',
-            'atmosphere': 'Atmosphere',
-            'vacancy': 'Vacancies',
-            'contact': 'Contacts',
-            'kitchen': 'Kitchen'
+          links: {
+            home: 'Home',
+            menu: 'Menu',
+            delivery: 'Food delivery',
+            reserveAPlace: 'Reservation of place',
+            reservation: 'Reservation',
+            aboutUs: 'About us',
+            atmosphere: 'Atmosphere',
+            vacancy: 'Vacancies',
+            contact: 'Contacts',
+            kitchen: 'Kitchen'
           },
-          'ukrainian': 'Українська',
-          'english': 'English',
-          'russian': 'Русский',
-          'order': 'Order'
+          ukrainian: 'Українська',
+          english: 'English',
+          russian: 'Русский',
+          order: 'Order'
         },
         ru: {
 
-          'links': {
-            'home': 'Главная',
-            'menu': 'Меню',
-            'delivery': 'Доставка еды',
-            'reserveAPlace': 'Резервация места',
-            'reservation': 'Резервация',
-            'aboutUs': 'О нас',
-            'atmosphere': 'Атмосфера',
-            'vacancy': 'Вакансии',
-            'contact': 'Контакты',
-            'kitchen': 'Кухня'
+          links: {
+            home: 'Главная',
+            menu: 'Меню',
+            delivery: 'Доставка еды',
+            reserveAPlace: 'Резервация места',
+            reservation: 'Резервация',
+            aboutUs: 'О нас',
+            atmosphere: 'Атмосфера',
+            vacancy: 'Вакансии',
+            contact: 'Контакты',
+            kitchen: 'Кухня'
           },
-          'ukrainian': 'Українська',
-          'english': 'English',
-          'russian': 'Русский',
-          'order': 'Заказать'
+          ukrainian: 'Українська',
+          english: 'English',
+          russian: 'Русский',
+          order: 'Заказать'
         }
 
       }
@@ -220,44 +219,22 @@ export default {
   },
 
   polyfill: {
-    features: [
-      /*
-          Feature without detect:
+    features: [{
+      require: 'url-polyfill'
+    },
 
-          Note:
-            This is not recommended for most polyfills
-            because the polyfill will always be loaded, parsed and executed.
-      */
-      {
-        require: 'url-polyfill' // NPM package or require path of file
-      },
+    {
+      require: 'intersection-observer',
+      detect: () => 'IntersectionObserver' in window
+    },
 
-      /*
-          Feature with detect:
+    {
+      require: 'smoothscroll-polyfill',
 
-          Detection is better because the polyfill will not be
-          loaded, parsed and executed if it's not necessary.
-      */
-      {
-        require: 'intersection-observer',
-        detect: () => 'IntersectionObserver' in window
-      },
+      detect: () => 'scrollBehavior' in document.documentElement.style && window.__forceSmoothScrollPolyfill__ !== true,
 
-      /*
-          Feature with detect & install:
-
-          Some polyfills require a installation step
-          Hence you could supply a install function which accepts the require result
-      */
-      {
-        require: 'smoothscroll-polyfill',
-
-        // Detection found in source: https://github.com/iamdustan/smoothscroll/blob/master/src/smoothscroll.js
-        detect: () => 'scrollBehavior' in document.documentElement.style && window.__forceSmoothScrollPolyfill__ !== true,
-
-        // Optional install function called client side after the package is required:
-        install: smoothscroll => smoothscroll.polyfill()
-      }
+      install: smoothscroll => smoothscroll.polyfill()
+    }
     ]
   },
 
@@ -275,16 +252,16 @@ export default {
     existingFilesDirectory: './netlify/'
   },
 
-  purgeCSS: {
-    mode: 'postcss',
-    content: [
-      './pages/**/*.vue',
-      './layouts/**/*.vue',
-      './components/**/*.vue'
-    ],
-    whitelist: ['html', 'body'],
-    whitelistPatterns: [/cookie-consent/]
-  },
+  // purgeCSS: {
+  //   mode: 'postcss',
+  //   content: [
+  //     './pages/**/*.vue',
+  //     './layouts/**/*.vue',
+  //     './components/**/*.vue'
+  //   ],
+  //   whitelist: ['html', 'body'],
+  //   whitelistPatterns: [/cookie-consent/, /modal/]
+  // },
 
   axios: {},
 
@@ -328,7 +305,7 @@ export default {
         ]
 
         r[0][1].targets = {
-          'browsers': ['> 1%', 'last 2 versions'],
+          browsers: ['> 1%', 'last 2 versions'],
           ie: 11
         }
 

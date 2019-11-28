@@ -15,14 +15,14 @@ export default {
       }, 100)
     })
   },
-  buyProducts (cb, errorCb) {
-    setTimeout(() => {
-      // simulate random checkout failure.
-      Math.random() > 0.5 || navigator.userAgent.includes('PhantomJS')
-        ? cb()
-        : errorCb()
-    }, 3000)
-  },
+  // buyProducts (cb, errorCb) {
+  //   setTimeout(() => {
+  //     // simulate random checkout failure.
+  //     Math.random() > 0.5 || navigator.userAgent.includes('PhantomJS')
+  //       ? cb()
+  //       : errorCb()
+  //   }, 3000)
+  // },
 
   postFormToDB (form) {
     return new Promise((resolve) => {

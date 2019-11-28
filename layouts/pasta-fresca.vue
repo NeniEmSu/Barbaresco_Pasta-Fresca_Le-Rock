@@ -40,6 +40,12 @@ import TheMobileFooter from '@/components/PastaFresca/TheMobileFooterPastaFresca
 
 export default {
   name: 'PastaFrescaLayout',
+  components: {
+    Header,
+    TheFooter,
+    TheMobileFooter,
+    TheTopContact
+  },
   head () {
     const i18nSeo = this.$nuxtI18nSeo()
     return {
@@ -69,12 +75,6 @@ export default {
         // ...i18nSeo.link
       ]
     }
-  },
-  components: {
-    Header,
-    TheFooter,
-    TheMobileFooter,
-    TheTopContact
   },
 
   meta: {

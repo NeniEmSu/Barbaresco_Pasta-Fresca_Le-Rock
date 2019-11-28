@@ -199,6 +199,7 @@
             </b-nav-item>
             <b-nav-item
               tag="button"
+              class="d-none"
               @click.stop="reservationOpen = !reservationOpen"
             >
               {{ $t('links.reserveAPlace') }}
@@ -226,10 +227,7 @@
               {{ $t('links.contact') }}
             </b-nav-item>
 
-            <div
-              class="mx-auto language-nav"
-              style="margin-top: 50%;"
-            >
+            <div class="mx-auto language-nav">
               <b-dropdown
                 id="dropdown-1"
                 :text="$t('language')"
@@ -667,8 +665,16 @@ export default {
 }
 </script>
 
-<style lang="css">
+ <style lang="css">
+.language-nav {
+  position: absolute;
+  bottom: 6.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .language-nav .dropdown-toggle {
+  position: relative;
   border: 2px solid #000000;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 2px solid #000000;
@@ -697,13 +703,6 @@ export default {
 }
 
 .language-nav .dropdown-toggle:hover {
-  border: 3px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
-    0 0 20px rgba(255, 255, 255, 0.2);
-  outline-color: 1px solid rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 1px 1px 2px #427388;
-
   background: #000000;
   color: #ffffff;
 }
@@ -734,9 +733,18 @@ export default {
   background: #000000 !important;
   color: white;
 }
+
+@media screen and (max-width: 320px) {
+  .language-nav {
+    position: absolute;
+    bottom: 2rem;
+    left: 30%;
+    transform: translateX(-30%);
+  }
+}
 </style>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .header.header--hidden {
   box-shadow: none;
   transform: translate3d(0, -100%, 0);

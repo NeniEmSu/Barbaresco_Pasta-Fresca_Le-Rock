@@ -75,6 +75,12 @@ export default {
   meta: {
     animation: 'overlay-down-full'
   },
+
+  data () {
+    return {
+
+    }
+  },
   head () {
     return {
       title: (this.$t('name') + ' - ' + this.$t('title')).slice(
@@ -91,12 +97,6 @@ export default {
           )
         }
       ]
-    }
-  },
-
-  data () {
-    return {
-
     }
   }
 }
