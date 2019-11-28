@@ -581,20 +581,24 @@ export default {
   outline-color: rgba(255, 255, 255, 0.5);
   outline-offset: 0px;
   text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   border-radius: 0;
   box-sizing: border-box;
 
   background-color: transparent;
 
-  padding: 12px 50px;
+  // padding: 12px 50px;
+  width: 280px;
+  height: 48px;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 35px;
 
   color: $lightColor;
 
@@ -612,18 +616,26 @@ export default {
   background-color: transparent;
   margin: 10px 10px 10px 10px;
 
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
   &.instagram {
     margin: 10px 10px 10px 10px !important;
-    padding: 10px 20px;
-    transition: 500ms ease-in-out;
+    // padding: 10px 20px;
+    width: 130px;
+    height: 48px;
+    text-align: center;
 
     .inButtonImg {
       width: 80px;
-      height: 25px;
+      height: 35px;
+      margin: auto;
     }
   }
 
   &.instagram:hover {
+    background-position: right center;
     background-image: -moz-linear-gradient(
       69.74deg,
       #fdd276 -7.77%,
@@ -646,16 +658,15 @@ export default {
 
   &.facebook {
     margin: 10px 10px 10px 10px !important;
-    padding: 10px 20px;
-
-    // -webkit-transition: background-color 500ms ease-out;
-    // -moz-transition: background-color 500ms ease-out;
-    // -o-transition: background-color 500ms ease-out;
-    // transition: background-color 500ms ease-out;
+    // padding: 10px 20px;
+    width: 130px;
+    height: 48px;
+    text-align: center;
 
     .inButtonImg {
       width: 80px;
-      height: 25px;
+      height: 30px;
+      margin: auto;
     }
   }
 
@@ -704,13 +715,19 @@ export default {
   }
 
   .goToSiteBtn {
+    width: inherit;
+    height: inherit;
     padding: 12px 25px;
+    line-height: inherit;
   }
 
   .socialButtons {
     &.instagram {
       margin: auto 0 5px 0 !important;
       padding: 7.5px 18px;
+      width: inherit;
+      height: inherit;
+      line-height: inherit;
 
       .inButtonImg {
         width: 70px;
@@ -721,6 +738,9 @@ export default {
     &.facebook {
       margin: auto 0 5px 0 !important;
       padding: 12px 18px;
+      width: inherit;
+      height: inherit;
+      line-height: inherit;
 
       .inButtonImg {
         width: 70px;
