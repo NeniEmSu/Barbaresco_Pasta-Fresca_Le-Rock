@@ -30,7 +30,7 @@
             </h5>
             <p
               v-b-tooltip.hover
-              class="card-text text-left d-none d-sm-block"
+              class="card-text text-left d-none d-sm-block ingredients"
               style="cursor: context-menu;"
               :title="product.summary"
             >

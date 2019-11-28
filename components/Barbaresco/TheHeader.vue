@@ -734,6 +734,15 @@ export default {
   color: white;
 }
 
+@media screen and (max-width: 375px) {
+  .language-nav {
+    position: absolute;
+    bottom: 5.25rem;
+    left: 40%;
+    transform: translateX(-40%);
+  }
+}
+
 @media screen and (max-width: 320px) {
   .language-nav {
     position: absolute;

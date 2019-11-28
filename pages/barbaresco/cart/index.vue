@@ -8,7 +8,8 @@
       "emptyCart": "Ви ще нічого не додали до замовлення",
       "total": "Сума",
       "order": "Замовити",
-      "clear": "Очистити все"
+      "clear": "Очистити все",
+      "currencyValue": "Uah"
       },
     "orderProcess": {
       "heading": "Як відбувається замовлення",
@@ -50,7 +51,8 @@
       "emptyCart": "You haven't added anything to your order yet",
       "total": "Sum",
       "order": "Order",
-      "clear": "Clear everything"
+      "clear": "Clear everything",
+      "currencyValue": "грн"
       },
     "orderProcess": {
       "heading": "How the order is made",
@@ -92,7 +94,8 @@
       "emptyCart": "Вы еще ничего не добавили к заказу",
       "total": "Сумма",
       "order": "Заказать",
-      "clear": "Очистить все"
+      "clear": "Очистить все",
+      "currencyValue": "грн"
       },
        "orderProcess": {
       "heading": "Как происходит заказ",
@@ -258,21 +261,21 @@
               </div>
               <div class="col-4">
                 <label for="code">{{ $t('form.code') }} <input
-                  v-model="code"
-                  class="form-control"
-                  type="text"
-                  name="code"
-                  placeholder="..."
-                > </label>
+                    v-model="code"
+                    class="form-control"
+                    type="text"
+                    name="code"
+                    placeholder="..."
+                  > </label>
               </div>
               <div class="col-4">
                 <label for="appartment">{{ $t('form.apartment') }} <input
-                  v-model="apartment"
-                  class="form-control"
-                  type="text"
-                  name="appartment"
-                  placeholder="..."
-                > </label>
+                    v-model="apartment"
+                    class="form-control"
+                    type="text"
+                    name="appartment"
+                    placeholder="..."
+                  > </label>
               </div>
             </div>
 
@@ -409,11 +412,12 @@
                 class="mt-5"
               >
               <div class="row mt-5">
-                <div class="col-4 text-left">
-                  <small class="col-12">{{ $t('cart.total') }}:</small> <br>
-                  <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
+                <div class="col-6 text-left">
+                  <small class="col-12 p-0 small-sum">{{ $t('cart.total') }}:</small>
+                  <strong class="col-12 p-0 cart-total">{{ cartTotalAmount | currency }}</strong>
+                  <small class="col-12 p-0 small-value">{{ $t('cart.currencyValue') }}</small>
                 </div>
-                <div class="col-8 mx-auto text-right">
+                <div class="col-6 mx-auto text-right">
                   <b-button
                     :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                     class="order"
@@ -644,6 +648,27 @@ h3 {
     box-sizing: border-box;
     padding: 0 5px;
   }
+}
+
+.cart-total {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+
+  color: $darkColor;
+}
+
+.small-sum,
+.small-value {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: $darkColor;
 }
 
 .remove-from-chart {
