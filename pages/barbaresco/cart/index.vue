@@ -9,7 +9,7 @@
       "total": "Сума",
       "order": "Замовити",
       "clear": "Очистити все",
-      "currencyValue": "Uah"
+      "currencyValue": "грн"
       },
     "orderProcess": {
       "heading": "Як відбувається замовлення",
@@ -52,7 +52,7 @@
       "total": "Sum",
       "order": "Order",
       "clear": "Clear everything",
-      "currencyValue": "грн"
+      "currencyValue": "Uah"
       },
     "orderProcess": {
       "heading": "How the order is made",
