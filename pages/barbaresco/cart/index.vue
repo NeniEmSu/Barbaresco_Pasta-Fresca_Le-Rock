@@ -261,21 +261,21 @@
               </div>
               <div class="col-4">
                 <label for="code">{{ $t('form.code') }} <input
-                    v-model="code"
-                    class="form-control"
-                    type="text"
-                    name="code"
-                    placeholder="..."
-                  > </label>
+                  v-model="code"
+                  class="form-control"
+                  type="text"
+                  name="code"
+                  placeholder="..."
+                > </label>
               </div>
               <div class="col-4">
                 <label for="appartment">{{ $t('form.apartment') }} <input
-                    v-model="apartment"
-                    class="form-control"
-                    type="text"
-                    name="appartment"
-                    placeholder="..."
-                  > </label>
+                  v-model="apartment"
+                  class="form-control"
+                  type="text"
+                  name="appartment"
+                  placeholder="..."
+                > </label>
               </div>
             </div>
 
@@ -526,7 +526,7 @@ export default {
       const orderedProducts = JSON.stringify(this.cart)
 
       axios
-        .post(`https://api.telegram.org/bot971666849:AAEPhgDVYttaZZxm35uC5IFU-YO3MdH8nh0/sendMessage?chat_id=-1001231729418&text=${this.$t('form.name')}: ${this.name}, ${this.$t('form.phone')}: ${this.phone}, ${this.$t('form.city')}: ${this.city}, ${this.$t('form.street')}: ${this.street}, ${this.$t('form.house')}: ${this.house}, ${this.$t('form.code')}: ${this.code}, ${this.$t('form.apartment')}: ${this.apartment}, ${this.$t('form.comment')}: ${this.comment},   ${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, : ${this.noOfPeople}, cartTotalAmount: ${this.cartTotalAmount}, ${this.$t('cart.heading')}: ${orderedProducts}, `)
+        .post(`https://api.telegram.org/bot971666849:AAEPhgDVYttaZZxm35uC5IFU-YO3MdH8nh0/sendMessage?chat_id=-1001231729418&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
       this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
       this.$store.commit('emptyCart')
       this.success = true
@@ -568,7 +568,7 @@ export default {
 
 <style lang="scss" scoped>
 #cart {
-  margin-bottom: 110px;
+  padding-bottom: 145px;
 }
 
 h3 {
