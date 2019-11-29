@@ -14,6 +14,7 @@
             <span>+38 050 6 700 400</span>
           </a>
         </li>
+        <span class="text-white">|</span>
         <li class="contact">
           <a href="tel:+380686700400">
             <span>+38 068 6 700 400</span>

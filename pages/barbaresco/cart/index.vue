@@ -40,6 +40,10 @@
       "comment": "Коментар до замовлення",
       "pay-carrier": "Оплата кур’єру готівкою",
       "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Увага!",
+      "info": "Ваше замовлення отримано! Не соромтеся продовжувати покупки. Незабаром з вами зв’яжуться."
       }
 
   },
@@ -83,6 +87,10 @@
       "comment": "Order comment",
       "pay-carrier": "Payment by courier in cash",
       "pay-card": "Payment on card"
+      },
+      "toast":{
+      "title": "Attention",
+      "info": "Your Order has been recieved! Feel free to continue shoping. You will be contacted shortly"
       }
 
   },
@@ -126,6 +134,10 @@
       "comment": "Комментарий к заказу",
       "pay-carrier": "Оплата курьеру наличными",
       "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Внимание!",
+      "info": "Ваш заказ был получен! Не стесняйтесь, чтобы продолжить покупки. С вами свяжутся в ближайшее время."
       }
   }
 }
@@ -526,13 +538,13 @@ export default {
       const orderedProducts = JSON.stringify(this.cart)
 
       axios
-        .post(`https://api.telegram.org/bot971666849:AAEPhgDVYttaZZxm35uC5IFU-YO3MdH8nh0/sendMessage?chat_id=-1001231729418&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
-      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
+      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = this.modeOfPayment = null
       this.$store.commit('emptyCart')
       this.success = true
-      this.$bvToast.toast('Your Order has been recieved!', {
-        title: 'Увага!',
-        autoHideDelay: 500,
+      this.$bvToast.toast(`${this.$t('toast.info')}`, {
+        title: `${this.$t('toast.title')}`,
+        autoHideDelay: 10000,
         variant: 'success',
         toaster: 'b-toaster-top-center',
         appendToast: append

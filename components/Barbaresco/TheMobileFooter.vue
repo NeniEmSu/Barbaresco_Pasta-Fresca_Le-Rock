@@ -41,9 +41,16 @@
       <div class="phone">
         <a
           href="tel:+380506700400"
-          class="col-12 m-auto"
+          class="col-6 m-auto p-0"
         >
           <span>+38 050 6 700 400</span>
+        </a>
+        <span class="text-white">|</span>
+        <a
+          href="tel:+380686700400"
+          class="col-6 m-auto p-0"
+        >
+          <span>+38 068 6 700 400</span>
         </a>
       </div>
 

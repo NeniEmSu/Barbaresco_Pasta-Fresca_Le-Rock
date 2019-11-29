@@ -521,7 +521,7 @@ export default {
       const orderedProducts = JSON.stringify(this.cart)
 
       axios
-        .post(`https://api.telegram.org/bot971666849:AAEPhgDVYttaZZxm35uC5IFU-YO3MdH8nh0/sendMessage?chat_id=-1001231729418&text=${this.$t('form.name')}: ${this.name}, ${this.$t('form.phone')}: ${this.phone}, ${this.$t('form.city')}: ${this.city}, ${this.$t('form.street')}: ${this.street}, ${this.$t('form.house')}: ${this.house}, ${this.$t('form.code')}: ${this.code}, ${this.$t('form.apartment')}: ${this.apartment}, ${this.$t('form.comment')}: ${this.comment},   ${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, : ${this.noOfPeople}, cartTotalAmount: ${this.cartTotalAmount}, ${this.$t('cart.heading')}: ${orderedProducts}, `)
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text=${this.$t('form.name')}: ${this.name}, ${this.$t('form.phone')}: ${this.phone}, ${this.$t('form.city')}: ${this.city}, ${this.$t('form.street')}: ${this.street}, ${this.$t('form.house')}: ${this.house}, ${this.$t('form.code')}: ${this.code}, ${this.$t('form.apartment')}: ${this.apartment}, ${this.$t('form.comment')}: ${this.comment},   ${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, : ${this.noOfPeople}, cartTotalAmount: ${this.cartTotalAmount}, ${this.$t('cart.heading')}: ${orderedProducts}, `)
       this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
       this.$store.commit('emptyCart')
       this.success = true

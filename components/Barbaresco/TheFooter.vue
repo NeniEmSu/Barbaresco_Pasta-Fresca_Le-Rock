@@ -40,12 +40,18 @@
         </div>
 
         <div class="ml-auto d-flex">
-          <div class="phone my-auto ">
+          <div class="phone my-auto mr-5 pr-5 ">
             <a
               href="tel:+380506700400"
-              class=" m-auto"
+              class="mx-auto "
             >
               <span>+38 050 6 700 400</span>
+            </a><br>
+            <a
+              href="tel:+380686700400"
+              class="mx-auto "
+            >
+              <span>+38 068 6 700 400</span>
             </a>
           </div>
 

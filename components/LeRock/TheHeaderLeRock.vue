@@ -657,7 +657,7 @@ export default {
 
     sendMessage () {
       axios
-        .post(`https://api.telegram.org/bot971666849:AAEPhgDVYttaZZxm35uC5IFU-YO3MdH8nh0/sendMessage?chat_id=-1001231729418&text=Name: ${this.name}, Number: ${this.phone}, Date: ${this.date}, Time: ${this.time}, No of People: ${this.noOfPeople}`)
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= Бронювання %0AІм'я: ${this.name}, %0AНомер телефону: ${this.phone}, %0AДата: ${this.date}, %0AЧас прибуття: ${this.time}, %0A№ людей: ${this.noOfPeople}`)
       this.name = this.email = this.phone = this.time = this.noOfPeople = null
       this.date = today
       this.success = true

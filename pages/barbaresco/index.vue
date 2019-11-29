@@ -3,19 +3,34 @@
   "uk": {
     "title": "Меню",
     "tooltip": "Передзвонимо за 1 хв.",
-    "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас"
+    "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас",
+    "call":{
+      "name": "Ім’я",
+      "phone": "Телефон",
+      "send": "Зателефонуй мені!"
+      }
 
   },
   "en": {
    "title": "Menu",
    "tooltip": "Call back in 1 minute",
-   "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
+   "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us",
+   "call":{
+      "name": "Name",
+      "phone": "Phone",
+      "send": "Call Me!"
+      }
 
   },
   "ru": {
     "title": "Меню",
     "tooltip": "Перезвоним за 1 мин.",
-    "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас"
+    "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас",
+    "call":{
+      "name": "название",
+      "phone": "Телефон",
+      "send": "Позвоните мне!"
+      }
   }
 }
 </i18n>
@@ -35,55 +50,55 @@
       @changedView="updateView($event)"
     />
 
-    <b-dropdown
+    <b-img-lazy
+      id="feedBack"
+      v-b-modal.modal-center
       class="feedBack "
-      droplet
-      text="Drop-Left"
-      variant="link"
-      toggle-class="text-decoration-none"
-      no-caret
-    >
-      <template v-slot:button-content>
-        <b-img-lazy
-          id="feedBack"
-          class="feedBack "
-          src="~/assets/img/feedBack.png"
-          alt="feedback Icon"
-        />
-      </template>
-      <b-dropdown-form>
-        <b-form-group
-          label="Name"
-          size="lg"
-          label-for="dropdown-form-name"
-          @submit.stop.prevent
-        >
-          <b-form-input
-            id="dropdown-form-name"
+      src="~/assets/img/feedBack.png"
+      alt="feedback Icon"
+    />
+
+    <div>
+      <b-modal
+        id="modal-center"
+        centered
+        :title="$t('tooltip')"
+        hide-footer
+      >
+        <b-form>
+          <b-form-group
+            :label="$t('call.name')"
+            size="lg"
+            label-for="dropdown-form-name"
+            @submit.stop.prevent
+          >
+            <b-form-input
+              id="dropdown-form-name"
+              size="sm"
+              :placeholder="$t('call.name')"
+            />
+          </b-form-group>
+          <b-form-group
+            :label="$t('call.phone')"
+            label-for="dropdown-form-phone"
+            @submit.stop.prevent
+          >
+            <b-form-input
+              id="dropdown-form-phone"
+              size="sm"
+              placeholder="+380 ## ### ####"
+            />
+          </b-form-group>
+          <b-button
+            variant="outline-dark"
             size="sm"
-            placeholder="Name"
-          />
-        </b-form-group>
-        <b-form-group
-          label="Phone Number"
-          label-for="dropdown-form-phone"
-          @submit.stop.prevent
-        >
-          <b-form-input
-            id="dropdown-form-phone"
-            size="sm"
-            placeholder="380 ## ### ####"
-          />
-        </b-form-group>
-        <b-button
-          variant="primary"
-          size="sm"
-          @click="onClick"
-        >
-          Send
-        </b-button>
-      </b-dropdown-form>
-    </b-dropdown>
+            class="feedback-btn"
+          >
+            {{$t('call.send')}}
+          </b-button>
+        </b-form>
+      </b-modal>
+    </div>
 
     <b-tooltip
       target="feedBack"
@@ -241,6 +256,37 @@ export default {
   right: 50px;
   z-index: 1;
   cursor: pointer;
+}
+
+.feedback-btn {
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+  padding: 14px 48px;
+}
+
+input {
+  background: transparent;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  padding: 14px 20px;
+  margin: 10px auto;
 }
 
 .elaboraSpacing {
