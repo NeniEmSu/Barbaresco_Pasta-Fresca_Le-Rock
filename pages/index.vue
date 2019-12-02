@@ -589,7 +589,6 @@ export default {
   box-sizing: border-box;
 
   background-color: transparent;
-
   // padding: 12px 50px;
   width: 280px;
   height: 48px;
@@ -621,7 +620,7 @@ export default {
   transition: all 0.4s ease-in-out;
 
   &.instagram {
-    margin: 10px 10px 10px 10px !important;
+    margin: 10px 9px 10px 10px !important;
     // padding: 10px 20px;
     width: 130px;
     height: 48px;
@@ -657,7 +656,7 @@ export default {
   }
 
   &.facebook {
-    margin: 10px 10px 10px 10px !important;
+    margin: 10px 10px 10px 9px !important;
     // padding: 10px 20px;
     width: 130px;
     height: 48px;
@@ -884,29 +883,36 @@ export default {
 
 @media screen and (max-height: 480px) {
   .homePageHeading {
-    margin-top: 8%;
-    margin-bottom: 6%;
+    margin-top: 3.5vh;
+    margin-bottom: 3.5vh;
   }
 }
 
 @media screen and (min-height: 481px) and (max-height: 519px) {
   .homePageHeading {
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
   }
 }
 
 @media screen and (min-height: 520px) and (max-height: 640px) {
   .homePageHeading {
-    margin-top: 12%;
-    margin-bottom: 12%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
   }
 }
 
 @media screen and (min-height: 641px) and (max-height: 650px) {
   .homePageHeading {
-    margin-top: 12%;
-    margin-bottom: 12%;
+    margin-top: 6.5vh;
+    margin-bottom: 6.5vh;
+  }
+}
+
+@media screen and (min-height: 651px) and (max-height: 820px) {
+  .homePageHeading {
+    margin-top: 6.8vh;
+    margin-bottom: 6.8vh;
   }
 }
 
