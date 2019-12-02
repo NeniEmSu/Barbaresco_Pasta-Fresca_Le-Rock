@@ -94,7 +94,7 @@
             size="sm"
             class="feedback-btn"
           >
-            {{$t('call.send')}}
+            {{ $t('call.send') }}
           </b-button>
         </b-form>
       </b-modal>
@@ -159,7 +159,7 @@ import TheAppetizers from '~/components/Barbaresco/BarbarescoProducts/TheAppetiz
 import TheGarnishes from '~/components/Barbaresco/BarbarescoProducts/TheGarnishes'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
-import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarousel'
+import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 
 export default {
   name: 'Barbaresco',

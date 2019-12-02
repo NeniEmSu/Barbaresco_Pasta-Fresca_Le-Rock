@@ -82,7 +82,7 @@ export default {
 
 <style lang="scss" scoped>
 .top-contacts {
-  background: #000000;
+  background: $darkColor;
 
   height: 50px;
   margin: 99px 0 0 0;

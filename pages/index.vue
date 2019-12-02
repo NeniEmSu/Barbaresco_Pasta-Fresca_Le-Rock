@@ -112,7 +112,7 @@
       </style>
 
       <client-only
-        aria-placeholder="Loading.."
+        aria-placeholder="Loading..."
         placeholder="Loading..."
       >
         <div>

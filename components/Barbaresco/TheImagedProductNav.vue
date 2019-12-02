@@ -53,7 +53,7 @@
         :class="{ active: currentProductsDisplayed === 1}"
         @click="Show1"
       >
-        <div class="nav-image navOne text-center" />
+        <div class="nav-image navOne spin circle" />
         <div class="text-center nav-text">
           {{ $t('pizza') }}
         </div>
@@ -64,7 +64,7 @@
         :class="{ active: currentProductsDisplayed === 2}"
         @click="Show2"
       >
-        <div class="nav-image navTwo" />
+        <div class="nav-image navTwo spin circle" />
         <div class="text-center nav-text">
           {{ $t('burgers') }}
         </div>
@@ -75,7 +75,7 @@
         :class="{ active: currentProductsDisplayed === 3}"
         @click="Show3"
       >
-        <div class="nav-image navThree" />
+        <div class="nav-image navThree spin circle" />
         <div class="text-center nav-text">
           {{ $t('sushi') }}
         </div>
@@ -85,7 +85,7 @@
         :class="{ active: currentProductsDisplayed === 4}"
         @click="Show4"
       >
-        <div class="nav-image navFour" />
+        <div class="nav-image navFour spin circle" />
         <div class="text-center nav-text">
           {{ $t('panCakes') }}
         </div>
@@ -96,7 +96,7 @@
         :class="{ active: currentProductsDisplayed === 5}"
         @click="Show5"
       >
-        <div class="nav-image navFive" />
+        <div class="nav-image navFive spin circle" />
         <div class="text-center nav-text">
           {{ $t('deserts') }}
         </div>
@@ -107,7 +107,7 @@
         :class="{ active: currentProductsDisplayed === 6}"
         @click="Show6"
       >
-        <div class="nav-image navSix" />
+        <div class="nav-image navSix spin circle" />
         <div class="text-center nav-text">
           {{ $t('salads') }}
         </div>
@@ -118,7 +118,7 @@
         :class="{ active: currentProductsDisplayed === 7}"
         @click="Show7"
       >
-        <div class="nav-image navSeven" />
+        <div class="nav-image navSeven spin circle" />
         <div class="text-center nav-text">
           {{ $t('firstCourse') }}
         </div>
@@ -129,7 +129,7 @@
         :class="{ active: currentProductsDisplayed === 8}"
         @click="Show8"
       >
-        <div class="nav-image navEight" />
+        <div class="nav-image navEight spin circle" />
         <div class="text-center nav-text">
           {{ $t('appetizers') }}
         </div>
@@ -140,7 +140,7 @@
         :class="{active: currentProductsDisplayed === 9}"
         @click.prevent="Show9"
       >
-        <div class="nav-image navNine " />
+        <div class="nav-image navNine spin circle" />
         <div class="text-center nav-text">
           {{ $t('drinks') }}
         </div>
@@ -151,7 +151,7 @@
         :class="{ active: currentProductsDisplayed === 10}"
         @click.prevent="Show10"
       >
-        <div class="nav-image navTen" />
+        <div class="nav-image navTen spin circle" />
         <div class="text-center nav-text">
           {{ $t('alcohol') }}
         </div>
@@ -162,7 +162,7 @@
         :class="{ active: currentProductsDisplayed === 11}"
         @click.prevent="Show11"
       >
-        <div class="nav-image navMainMeal" />
+        <div class="nav-image navMainMeal spin circle" />
         <div class="text-center nav-text">
           {{ $t('mainMeal') }}
         </div>
@@ -173,7 +173,7 @@
         :class="{ active: currentProductsDisplayed === 12}"
         @click.prevent="Show12"
       >
-        <div class="nav-image navGarnishes" />
+        <div class="nav-image navGarnishes spin circle" />
         <div class="text-center nav-text">
           {{ $t('garnishes') }}
         </div>
@@ -267,9 +267,12 @@ section {
   position: relative;
   text-align: center;
   margin: 22px auto;
+  // padding: 5px;
   text-transform: capitalize;
-  display: block;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @include easeOut;
   text-decoration: none;
@@ -280,6 +283,36 @@ section {
     }
     .nav-image {
       mix-blend-mode: normal;
+    }
+
+    .spin {
+      &::before {
+        border-top-color: $goldColor;
+        border-right-color: $goldColor;
+        border-bottom-color: $goldColor;
+
+        transition: border-top-color 0.15s linear,
+          border-right-color 0.15s linear 0.1s,
+          border-bottom-color 0.15s linear 0.2s;
+      }
+
+      &::after {
+        border-top: 2px solid $goldColor;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        transform: rotate(270deg);
+        transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+      }
+    }
+
+    .circle {
+      border-radius: 100%;
+      box-shadow: none;
+
+      &::before,
+      &::after {
+        border-radius: 100%;
+      }
     }
   }
 
@@ -294,7 +327,6 @@ section {
 }
 
 .column .nav-image {
-  // margin: auto;
   mix-blend-mode: luminosity;
 }
 
@@ -308,7 +340,7 @@ section {
   text-decoration: none;
 
   color: $lightColor;
-  margin-top: 10px;
+  width: auto;
 
   @include easeOut;
 }
@@ -332,6 +364,61 @@ section {
   margin: 0 0 10px 0;
 
   @include easeOut;
+}
+
+.nav-image {
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.spin {
+  &::before,
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    border: 2px solid transparent;
+  }
+
+  &:hover::before {
+    border-top-color: $goldColor;
+    border-right-color: $goldColor;
+    border-bottom-color: $goldColor;
+
+    transition: border-top-color 0.15s linear,
+      border-right-color 0.15s linear 0.1s,
+      border-bottom-color 0.15s linear 0.2s;
+  }
+
+  &::after {
+    border: 0 solid transparent;
+  }
+
+  &:hover::after {
+    border-top: 2px solid $goldColor;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+  }
+}
+
+.circle {
+  border-radius: 100%;
+  box-shadow: none;
+
+  &::before,
+  &::after {
+    border-radius: 100%;
+  }
 }
 
 .navOne {
@@ -381,7 +468,8 @@ section {
 .navGarnishes {
   background-image: url("~assets/img/le-rock-side-dishes.jpg");
 }
-@media (max-width: 995px) {
+
+@media (max-width: 1200px) {
   #imageed-Products-Navigation {
     background-color: transparent;
   }
@@ -443,6 +531,7 @@ section {
     opacity: 1;
     @include easeOut;
     box-sizing: border-box;
+    padding: 0;
   }
 
   .nav-image {
@@ -452,16 +541,18 @@ section {
     height: 100%;
     min-height: 60px;
     max-height: 60px;
+    box-shadow: none;
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .column {
     background-color: transparent;
     width: calc(100% / 4);
     margin: auto;
     min-height: 110px;
     opacity: 1;
+    padding: 0 10px;
   }
 }
 </style>
