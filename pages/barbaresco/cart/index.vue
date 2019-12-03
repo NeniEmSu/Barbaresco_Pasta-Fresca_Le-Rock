@@ -38,12 +38,14 @@
       "code": "Код",
       "apartment": "Кв./офіс",
       "comment": "Коментар до замовлення",
+      "modeOfPayment": "Бажаний спосіб оплати",
       "pay-carrier": "Оплата кур’єру готівкою",
       "pay-card": "Оплата на карту"
       },
       "toast":{
-      "title": "Увага!",
-      "info": "Ваше замовлення отримано! Не соромтеся продовжувати покупки. Незабаром з вами зв’яжуться."
+      "title": "Дякуємо за замовлення",
+      "info": "Очікуйте на дзвінок нашого менеджера",
+      "btn": "Повернутися на головну"
       }
 
   },
@@ -85,12 +87,14 @@
       "code": "Code",
       "apartment": "Apt./Office",
       "comment": "Order comment",
+      "modeOfPayment": "Preferred mode of payment",
       "pay-carrier": "Payment by courier in cash",
       "pay-card": "Payment on card"
       },
       "toast":{
-      "title": "Attention",
-      "info": "Your Order has been recieved! Feel free to continue shoping. You will be contacted shortly"
+      "title": "Thank you for your order",
+      "info": "Expect a call from our manager",
+      "btn": "Back to home"
       }
 
   },
@@ -132,12 +136,14 @@
       "code": "Код",
       "apartment": "Кв./Офис",
       "comment": "Комментарий к заказу",
+      "modeOfPayment": "Предпочтительный способ оплаты",
       "pay-carrier": "Оплата курьеру наличными",
       "pay-card": "Оплата на карту"
       },
       "toast":{
-      "title": "Внимание!",
-      "info": "Ваш заказ был получен! Не стесняйтесь, чтобы продолжить покупки. С вами свяжутся в ближайшее время."
+      "title": "Спасибо за заказ",
+      "info": "Ожидайте звонок нашего менеджера",
+      "btn": "Вернуться на главную"
       }
   }
 }
@@ -145,7 +151,10 @@
 
 <template>
   <div id="cart">
-    <div class="container">
+    <div
+      v-if="success === false"
+      class="container"
+    >
       <h1 class="text-center mb-4">
         {{ $t('orderProcess.heading') }}
       </h1>
@@ -300,7 +309,11 @@
             />
 
             <div class="row text-center mx-auto mt-2">
-              <div class="form-check text-center mx-auto">
+              <div
+                v-b-tooltip.hover
+                :title="$t('form.modeOfPayment')"
+                class="form-check text-center mx-auto"
+              >
                 <input
                   id="exampleRadios1"
                   v-model="modeOfPayment"
@@ -316,7 +329,11 @@
                   {{ $t('form.pay-carrier') }}
                 </label>
               </div>
-              <div class="form-check text-center mx-auto">
+              <div
+                v-b-tooltip.hover
+                :title="$t('form.modeOfPayment')"
+                class="form-check text-center mx-auto"
+              >
                 <input
                   id="exampleRadios2"
                   v-model="modeOfPayment"
@@ -444,6 +461,32 @@
         </div>
       </div>
     </div>
+    <section v-else class="success container ">
+      <div class="text-center m-auto">
+        <div class="animation-ctn">
+          <div class="icon icon--order-success svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="154px" height="154px">
+              <g fill="none" stroke="none" stroke-width="0">
+                <polyline
+                  class="st0"
+                  stroke="#0A0A0A"
+                  stroke-width="12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  points="43.5,77.8 63.7,97.9 112.2,49.4 "
+                  style="stroke-dasharray:100px, 100px; stroke-dashoffset: 200px;"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <h5>{{ $t('toast.title') }}</h5>
+        <p>{{ $t('toast.info') }}</p>
+        <b-button class="backToHome" :to="localePath({name: 'barbaresco'},$i18n.locale)" @click="success = false">
+          {{ $t('toast.btn') }}
+        </b-button>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -469,6 +512,7 @@ export default {
 
   data () {
     return {
+      success: false,
       currentProductsDisplayed: 1,
       name: '',
       phone: '',
@@ -542,6 +586,9 @@ export default {
       this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = this.modeOfPayment = null
       this.$store.commit('emptyCart')
       this.success = true
+      if (process.client) {
+        document.body.scrollTop = document.documentElement.scrollTop = 0
+      }
       this.$bvToast.toast(`${this.$t('toast.info')}`, {
         title: `${this.$t('toast.title')}`,
         autoHideDelay: 10000,
@@ -549,6 +596,10 @@ export default {
         toaster: 'b-toaster-top-center',
         appendToast: append
       })
+      const self = this
+      setTimeout(function () {
+        self.success = false
+      }, 10000)
     },
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView
@@ -724,7 +775,108 @@ textarea.form-control {
   margin: 5px auto 10px auto;
 }
 
+input[type=radio]{
+  cursor: pointer;
+}
+
+.form-check-label{
+ cursor: pointer;
+}
+
 textarea.form-control {
   height: 100px;
+}
+
+.success {
+
+  h5 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .backToHome {
+    height: 48px;
+    width: 240px;
+
+    margin-top: 100px;
+    padding: 14px 16px;
+
+    background: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #ffffff;
+  }
+
+  .animation-ctn {
+    text-align: center;
+    margin: 200px auto 50px auto;
+    height: 150px;
+    width: 150px;
+  }
+
+  @-webkit-keyframes checkmark {
+    0% {
+      stroke-dashoffset: 100px;
+    }
+
+    100% {
+      stroke-dashoffset: 200px;
+    }
+  }
+
+  @-ms-keyframes checkmark {
+    0% {
+      stroke-dashoffset: 100px;
+    }
+
+    100% {
+      stroke-dashoffset: 200px;
+    }
+  }
+
+  @keyframes checkmark {
+    0% {
+      stroke-dashoffset: 100px;
+    }
+
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+
+  .inlinesvg .svg svg {
+    display: inline;
+  }
+
+  .icon--order-success svg polyline {
+    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    animation: checkmark 0.25s ease-in-out 0.7s backwards;
+  }
 }
 </style>

@@ -82,17 +82,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="coffee.name"
+                  :title="coffee.name.length > 19 ? coffee.name : ''"
                 >
                   {{ coffee.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-sm-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="coffee.summary"
+                  :title="coffee.summary.length > 30 ? coffee.summary : ''"
                 >
-                  {{ (coffee.summary).slice(0, 30) }}...<span class="card-text quantity">{{ coffee.volume }}</span>
+                  {{ (coffee.summary).slice(0, 30) }}<span v-if="coffee.summary.length > 30">...</span><span class="card-text quantity">{{ coffee.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -159,17 +159,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="coffee.name"
+                  :title="coffee.name.length > 19 ? coffee.name : ''"
                 >
                   {{ coffee.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-sm-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="coffee.summary"
+                  :title="coffee.summary.length > 30 ? coffee.summary : ''"
                 >
-                  {{ (coffee.summary).slice(0, 30) }}...<span class="card-text quantity">{{ coffee.volume }}</span>
+                  {{ (coffee.summary).slice(0, 30) }}<span v-if="coffee.summary.length > 30">...</span><span class="card-text quantity">{{ coffee.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -236,17 +236,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="coffee.name"
+                  :title="coffee.name.length > 19 ? coffee.name : ''"
                 >
                   {{ coffee.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-sm-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="coffee.summary"
+                  :title="coffee.summary.length > 30 ? coffee.summary : ''"
                 >
-                  {{ (coffee.summary).slice(0, 30) }}...<span class="card-text quantity">{{ coffee.volume }}</span>
+                  {{ (coffee.summary).slice(0, 30) }}<span v-if="coffee.summary.length > 30">...</span><span class="card-text quantity">{{ coffee.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -314,17 +314,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="product.name"
+                  :title="product.name.length > 19 ? product.name : ''"
                 >
                   {{ product.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="product.summary"
+                  :title="product.summary.length > 30 ? product.summary : ''"
                 >
-                  {{ (product.summary).slice(0, 30) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                  {{ (product.summary).slice(0, 30) }}<span v-if="product.summary.length > 30">...</span><span class="card-text quantity">{{ product.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -390,17 +390,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="product.name"
+                  :title="product.name.length > 19 ? product.name : ''"
                 >
                   {{ product.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="product.summary"
+                  :title="product.summary.length > 30 ? product.summary : ''"
                 >
-                  {{ (product.summary).slice(0, 30) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                  {{ (product.summary).slice(0, 30) }}<span v-if="product.summary.length > 30">...</span><span class="card-text quantity">{{ product.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -466,17 +466,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="product.name"
+                  :title="product.name.length > 19 ? product.name : ''"
                 >
                   {{ product.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="product.summary"
+                  :title="product.summary.length > 30 ? product.summary : ''"
                 >
-                  {{ (product.summary).slice(0, 30) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                  {{ (product.summary).slice(0, 30) }}<span v-if="product.summary.length > 30">...</span><span class="card-text quantity">{{ product.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -545,17 +545,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="fresh.name"
+                  :title="fresh.name.length > 19 ? fresh.name : ''"
                 >
                   {{ fresh.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="fresh.summary"
+                  :title="fresh.summary.length > 30 ? fresh.summary : ''"
                 >
-                  {{ (fresh.summary).slice(0, 30) }}...<span class="card-text quantity">{{ fresh.volume }}</span>
+                  {{ (fresh.summary).slice(0, 30) }}<span v-if="fresh.summary.length > 30">...</span><span class="card-text quantity">{{ fresh.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -601,6 +601,40 @@
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="fresh.name.length > 19 ? fresh.name : ''"
+                >
+                  {{ fresh.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text d-none d-sm-block text-left ingredients"
+                  style="cursor: context-menu;"
+                  :title="fresh.summary.length > 30 ? fresh.summary : ''"
+                >
+                  {{ (fresh.summary).slice(0, 30) }}<span v-if="fresh.summary.length > 30">...</span><span class="card-text quantity">{{ fresh.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ fresh.volume }}</span> {{ fresh.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto"
+                      @click.prevent="addToCart(fresh.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -622,17 +656,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="fresh.name"
+                  :title="fresh.name.length > 19 ? fresh.name : ''"
                 >
                   {{ fresh.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="fresh.summary"
+                  :title="fresh.summary.length > 30 ? fresh.summary : ''"
                 >
-                  {{ (fresh.summary).slice(0, 30) }}...<span class="card-text quantity">{{ fresh.volume }}</span>
+                  {{ (fresh.summary).slice(0, 30) }}<span v-if="fresh.summary.length > 30">...</span><span class="card-text quantity">{{ fresh.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -699,29 +733,29 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="fresh.name"
+                  :title="product.name.length > 19 ? product.name : ''"
                 >
-                  {{ fresh.name }}
+                  {{ product.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="fresh.summary"
+                  :title="product.summary.length > 30 ? product.summary : ''"
                 >
-                  {{ (fresh.summary).slice(0, 30) }}...<span class="card-text quantity">{{ fresh.volume }}</span>
+                  {{ (product.summary).slice(0, 30) }}<span v-if="product.summary.length > 30">...</span><span class="card-text quantity">{{ product.volume }}</span>
                 </p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto">
-                      <span class="card-text d-inline d-sm-none">{{ fresh.volume }}</span> {{ fresh.price | currency }}
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                     </p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(fresh.id)"
+                      @click.prevent="addToCart(product.id)"
                     >
                       {{ $t('order') }}
                     </button>
@@ -778,17 +812,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="lemonade.name"
+                  :title="lemonade.name.length > 19 ? lemonade.name : ''"
                 >
                   {{ lemonade.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="lemonade.summary"
+                  :title="lemonade.summary.length > 30 ? lemonade.summary : ''"
                 >
-                  {{ (lemonade.summary).slice(0, 30) }}...<span class="card-text quantity">{{ lemonade.volume }}</span>
+                  {{ (lemonade.summary).slice(0, 30) }}<span v-if="lemonade.summary.length > 30">...</span><span class="card-text quantity">{{ lemonade.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -855,17 +889,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="lemonade.name"
+                  :title="lemonade.name.length > 19 ? lemonade.name : ''"
                 >
                   {{ lemonade.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="lemonade.summary"
+                  :title="lemonade.summary.length > 30 ? lemonade.summary : ''"
                 >
-                  {{ (lemonade.summary).slice(0, 30) }}...<span class="card-text quantity">{{ lemonade.volume }}</span>
+                  {{ (lemonade.summary).slice(0, 30) }}<span v-if="lemonade.summary.length > 30">...</span><span class="card-text quantity">{{ lemonade.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -932,17 +966,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="lemonade.name"
+                  :title="lemonade.name.length > 19 ? lemonade.name : ''"
                 >
                   {{ lemonade.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="lemonade.summary"
+                  :title="lemonade.summary.length > 30 ? lemonade.summary : ''"
                 >
-                  {{ (lemonade.summary).slice(0, 30) }}...<span class="card-text quantity">{{ lemonade.volume }}</span>
+                  {{ (lemonade.summary).slice(0, 30) }}<span v-if="lemonade.summary.length > 30">...</span><span class="card-text quantity">{{ lemonade.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1011,17 +1045,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="smoothy.name"
+                  :title="smoothy.name.length > 19 ? smoothy.name : ''"
                 >
                   {{ smoothy.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="smoothy.summary"
+                  :title="smoothy.summary.length > 30 ? smoothy.summary : ''"
                 >
-                  {{ (smoothy.summary).slice(0, 30) }}...<span class="card-text quantity">{{ smoothy.volume }}</span>
+                  {{ (smoothy.summary).slice(0, 30) }}<span v-if="smoothy.summary.length > 30">...</span><span class="card-text quantity">{{ smoothy.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1088,17 +1122,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="smoothy.name"
+                  :title="smoothy.name.length > 19 ? smoothy.name : ''"
                 >
                   {{ smoothy.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="smoothy.summary"
+                  :title="smoothy.summary.length > 30 ? smoothy.summary : ''"
                 >
-                  {{ (smoothy.summary).slice(0, 30) }}...<span class="card-text quantity">{{ smoothy.volume }}</span>
+                  {{ (smoothy.summary).slice(0, 30) }}<span v-if="smoothy.summary.length > 30">...</span><span class="card-text quantity">{{ smoothy.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1165,17 +1199,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="smoothy.name"
+                  :title="smoothy.name.length > 19 ? smoothy.name : ''"
                 >
                   {{ smoothy.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="smoothy.summary"
+                  :title="smoothy.summary.length > 30 ? smoothy.summary : ''"
                 >
-                  {{ (smoothy.summary).slice(0, 30) }}...<span class="card-text quantity">{{ smoothy.volume }}</span>
+                  {{ (smoothy.summary).slice(0, 30) }}<span v-if="smoothy.summary.length > 30">...</span><span class="card-text quantity">{{ smoothy.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1244,17 +1278,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="milkshake.name"
+                  :title="milkshake.name.length > 19 ? milkshake.name : ''"
                 >
                   {{ milkshake.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="milkshake.summary"
+                  :title="milkshake.summary.length > 30 ? milkshake.summary : ''"
                 >
-                  {{ (milkshake.summary).slice(0, 30) }}...<span class="card-text quantity">{{ milkshake.volume }}</span>
+                  {{ (milkshake.summary).slice(0, 30) }}<span v-if="milkshake.summary.length > 30">...</span><span class="card-text quantity">{{ milkshake.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1321,17 +1355,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="milkshake.name"
+                  :title="milkshake.name.length > 19 ? milkshake.name : ''"
                 >
                   {{ milkshake.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="milkshake.summary"
+                  :title="milkshake.summary.length > 30 ? milkshake.summary : ''"
                 >
-                  {{ (milkshake.summary).slice(0, 30) }}...<span class="card-text quantity">{{ milkshake.volume }}</span>
+                  {{ (milkshake.summary).slice(0, 30) }}<span v-if="milkshake.summary.length > 30">...</span><span class="card-text quantity">{{ milkshake.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1398,17 +1432,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="milkshake.name"
+                  :title="milkshake.name.length > 19 ? milkshake.name : ''"
                 >
                   {{ milkshake.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="milkshake.summary"
+                  :title="milkshake.summary.length > 30 ? milkshake.summary : ''"
                 >
-                  {{ (milkshake.summary).slice(0, 30) }}...<span class="card-text quantity">{{ milkshake.volume }}</span>
+                  {{ (milkshake.summary).slice(0, 30) }}<span v-if="milkshake.summary.length > 30">...</span><span class="card-text quantity">{{ milkshake.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1477,17 +1511,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="product.name"
+                  :title="product.name.length > 19 ? product.name : ''"
                 >
                   {{ product.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="product.summary"
+                  :title="product.summary.length > 30 ? product.summary : ''"
                 >
-                  {{ (product.summary).slice(0, 30) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                  {{ (product.summary).slice(0, 30) }}<span v-if="product.summary.length > 30">...</span><span class="card-text quantity">{{ product.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1554,17 +1588,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="product.name"
+                  :title="product.name.length > 19 ? product.name : ''"
                 >
                   {{ product.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="product.summary"
+                  :title="product.summary.length > 30 ? product.summary : ''"
                 >
-                  {{ (product.summary).slice(0, 30) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                  {{ (product.summary).slice(0, 30) }}<span v-if="product.summary.length > 30">...</span><span class="card-text quantity">{{ product.volume }}</span>
                 </p>
 
                 <div class="row">
@@ -1631,17 +1665,17 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="product.name"
+                  :title="product.name.length > 19 ? product.name : ''"
                 >
                   {{ product.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
-                  class="card-text text-left ingredients d-none d-md-block"
+                  class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="product.summary"
+                  :title="product.summary.length > 30 ? product.summary : ''"
                 >
-                  {{ (product.summary).slice(0, 30) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                  {{ (product.summary).slice(0, 30) }}<span v-if="product.summary.length > 30">...</span><span class="card-text quantity">{{ product.volume }}</span>
                 </p>
 
                 <div class="row">

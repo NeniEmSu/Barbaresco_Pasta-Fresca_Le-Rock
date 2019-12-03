@@ -23,17 +23,17 @@
               v-b-tooltip.hover
               class="card-title mx-auto text-center crop"
               style="cursor:context-menu"
-              :title="product.name"
+              :title="product.name.length > 19 ? product.name : ''"
             >
               {{ product.name }}
             </h5>
             <p
               v-b-tooltip.hover
-              class="card-text text-left d-none d-sm-block"
+              class="card-text d-none d-sm-block text-left ingredients"
               style="cursor: context-menu;"
-              :title="product.summary"
+              :title="product.summary.length > 39 ? product.summary : ''"
             >
-              {{ (product.summary).slice(0, 39) }}... <span class="card-text quantity">{{ product.volume }}</span>
+              {{ (product.summary).slice(0, 39) }}<span v-if="product.summary.length > 39">...</span><span class="card-text quantity">{{ product.volume }}</span>
             </p>
 
             <div class="row">
@@ -42,7 +42,7 @@
                   <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                 </p>
               </div>
-              <div class="col-sm-7 pl-0  my-auto text-center">
+              <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
@@ -74,17 +74,17 @@
               v-b-tooltip.hover
               class="card-title mx-auto text-center crop"
               style="cursor:context-menu"
-              :title="product.name"
+              :title="product.name.length > 19 ? product.name : ''"
             >
               {{ product.name }}
             </h5>
             <p
               v-b-tooltip.hover
-              class="card-text text-left d-none d-sm-block"
+              class="card-text d-none d-sm-block text-left ingredients"
               style="cursor: context-menu;"
-              :title="product.summary"
+              :title="product.summary.length > 39 ? product.summary : ''"
             >
-              {{ (product.summary).slice(0, 39) }}... <span class="card-text quantity">{{ product.volume }}</span>
+              {{ (product.summary).slice(0, 39) }}<span v-if="product.summary.length > 39">...</span><span class="card-text quantity">{{ product.volume }}</span>
             </p>
 
             <div class="row">
@@ -93,7 +93,7 @@
                   <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                 </p>
               </div>
-              <div class="col-sm-7 pl-0  my-auto text-center">
+              <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
@@ -125,17 +125,17 @@
               v-b-tooltip.hover
               class="card-title mx-auto text-center crop"
               style="cursor:context-menu"
-              :title="product.name"
+              :title="product.name.length > 19 ? product.name : ''"
             >
               {{ product.name }}
             </h5>
             <p
               v-b-tooltip.hover
-              class="card-text text-left d-none d-sm-block"
+              class="card-text d-none d-sm-block text-left ingredients"
               style="cursor: context-menu;"
-              :title="product.summary"
+              :title="product.summary.length > 39 ? product.summary : ''"
             >
-              {{ (product.summary).slice(0, 39) }}... <span class="card-text quantity">{{ product.volume }}</span>
+              {{ (product.summary).slice(0, 39) }}<span v-if="product.summary.length > 39">...</span><span class="card-text quantity">{{ product.volume }}</span>
             </p>
 
             <div class="row">
@@ -144,7 +144,7 @@
                   <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                 </p>
               </div>
-              <div class="col-sm-7 pl-0  my-auto text-center">
+              <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
