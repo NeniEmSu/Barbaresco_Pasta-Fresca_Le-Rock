@@ -17,7 +17,8 @@
       "emptyCart": "Ви ще нічого не додали до замовлення",
       "total": "Сума",
       "order": "Замовити",
-      "clear": "Очистити все"
+      "clear": "Очистити все",
+      "currencyValue": "грн"
       },
       "links": {
         "home": "Головна",
@@ -30,6 +31,24 @@
         "vacancy": "Ваканції",
         "contact": "Контакти",
         "kitchen": "Кухня"
+      },
+      "form":{
+      "name": "Ваше ім’я",
+      "phone": "Ваш телефон",
+      "city": "Місто/село",
+      "street": "Вулиця",
+      "house": "Буд",
+      "code": "Код",
+      "apartment": "Кв./офіс",
+      "comment": "Коментар до замовлення",
+      "modeOfPayment": "Бажаний спосіб оплати",
+      "pay-carrier": "Оплата кур’єру готівкою",
+      "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Дякуємо за замовлення",
+      "info": "Очікуйте на дзвінок нашого менеджера",
+      "btn": "Повернутися на головну"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -52,7 +71,8 @@
       "emptyCart": "You haven't added anything to your order yet",
       "total": "Sum",
       "order": "Order",
-      "clear": "Clear everything"
+      "clear": "Clear everything",
+      "currencyValue": "Uah"
       },
       "links": {
         "home": "Home",
@@ -65,6 +85,24 @@
         "vacancy": "Vacancies",
         "contact": "Contacts",
         "kitchen": "Kitchen"
+      },
+      "form":{
+      "name": "Your name",
+      "phone": "Your phone",
+      "city": "City/Village",
+      "street": "Street",
+      "house": "Building",
+      "code": "Code",
+      "apartment": "Apt./Office",
+      "comment": "Order comment",
+      "modeOfPayment": "Preferred mode of payment",
+      "pay-carrier": "Payment by courier in cash",
+      "pay-card": "Payment on card"
+      },
+      "toast":{
+      "title": "Thank you for your order",
+      "info": "Expect a call from our manager",
+      "btn": "Back to home"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -88,7 +126,8 @@
       "emptyCart": "Вы еще ничего не добавили к заказу",
       "total": "Сумма",
       "order": "Заказать",
-      "clear": "Очистить все"
+      "clear": "Очистить все",
+      "currencyValue": "грн"
       },
       "links": {
         "home": "Главная",
@@ -101,6 +140,24 @@
         "vacancy": "Вакансии",
         "contact": "Контакты",
         "kitchen": "Кухня"
+      },
+      "form":{
+      "name": "Ваше имя",
+      "phone": "Ваш телефон",
+      "city": "Город/село",
+      "street": "Улица",
+      "house": "Буд",
+      "code": "Код",
+      "apartment": "Кв./Офис",
+      "comment": "Комментарий к заказу",
+      "modeOfPayment": "Предпочтительный способ оплаты",
+      "pay-carrier": "Оплата курьеру наличными",
+      "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Спасибо за заказ",
+      "info": "Ожидайте звонок нашего менеджера",
+      "btn": "Вернуться на главную"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -269,106 +326,248 @@
               alt="close icon"
             >
           </div>
-          <div class="text-center">
-            <font v-if="!cartSize">
-              {{ $t('cart.emptyCart') }}
-            </font>
-          </div>
-
-          <div>
-            <h3 v-if="cartSize">
-              {{ $t('cart.heading') }}
-            </h3>
-            <div
-              v-for="product in cart"
-              :key="product.id"
-              class="cart-item"
-            >
-              <div class="row my-auto">
-                <img
-                  style="border-radius: 50%;   "
-                  :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
-                  alt=""
-                  class="col-2 m-auto"
-                >
-                <div class="col-6 p-0">
-                  <div class="col-12 p-0 m-auto">
-                    <div class="row m-auto">
-                      <h6
-                        id="cart-item-title"
-                        class="col-12 m-auto text-center py-2 crop"
-                      >
-                        {{ product.name }}
-                      </h6>
-                      <div class="toggle-quantity col-12 m-auto ">
-                        <button
-                          :disabled="product.quantity === 1"
-                          @click="removeFromCart(product.id)"
-                        >
-                          &minus;
-                        </button>
-                        <p>{{ product.quantity }}</p>
-                        <button
-                          :disabled="product.quantity === product.stock"
-                          @click="addToCart(product.id)"
-                        >
-                          &plus;
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4 p-0">
-                  <div class="col-12 m-auto p-0">
-                    <div class="row m-auto">
-                      <div class="remove-from-chart col-12 m-auto text-right">
-                        <span
-                          class="close text-right"
-                          @click="deleteFromCart(product.id)"
-                        >&times;
-                        </span>
-                      </div>
-
-                      <div class="cost col-12 m-auto ">
-                        <p
-                          id="cart-item-price"
-                          class="cart-item-price text-right py-2 card-text"
-                        >
-                          {{ product.quantity* product.price | currency }}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
+          <section v-if="cartForm === false && success === false">
+            <div class="text-center">
+              <font v-if="!cartSize">
+                {{ $t('cart.emptyCart') }}
+              </font>
             </div>
 
             <div>
-              <hr
-                v-if="!cartSize"
-                class="mt-5"
+              <h3 v-if="cartSize">
+                {{ $t('cart.heading') }}
+              </h3>
+              <div
+                v-for="product in cart"
+                :key="product.id"
+                class="cart-item"
               >
-              <div class="row">
-                <div class="col-4">
-                  <small class="col-12">{{ $t('cart.total') }}:</small>
-                  <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
+                <div class="row my-auto">
+                  <img
+                    style="border-radius: 50%;   "
+                    :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                    alt=""
+                    class="col-2 m-auto"
+                  >
+                  <div class="col-6 p-0">
+                    <div class="col-12 p-0 m-auto">
+                      <div class="row m-auto">
+                        <h6
+                          id="cart-item-title"
+                          class="col-12 m-auto text-center py-2 crop"
+                        >
+                          {{ product.name }}
+                        </h6>
+                        <div class="toggle-quantity col-12 m-auto ">
+                          <button
+                            :disabled="product.quantity === 1"
+                            @click="removeFromCart(product.id)"
+                          >
+                            &minus;
+                          </button>
+                          <p>{{ product.quantity }}</p>
+                          <button
+                            :disabled="product.quantity === product.stock"
+                            @click="addToCart(product.id)"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 p-0">
+                    <div class="col-12 m-auto p-0">
+                      <div class="row m-auto">
+                        <div class="remove-from-chart col-12 m-auto text-right">
+                          <span
+                            class="close text-right"
+                            @click="deleteFromCart(product.id)"
+                          >&times;
+                          </span>
+                        </div>
+
+                        <div class="cost col-12 m-auto ">
+                          <p
+                            id="cart-item-price"
+                            class="cart-item-price text-right py-2 card-text"
+                          >
+                            {{ product.quantity* product.price | currency }}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-8 mx-auto text-right">
+                <hr>
+              </div>
+
+              <div>
+                <hr
+                  v-if="!cartSize"
+                  class="mt-5"
+                >
+                <div class="row">
+                  <div class="col-4">
+                    <small class="col-12">{{ $t('cart.total') }}:</small>
+                    <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
+                  </div>
+                  <div class="col-8 mx-auto text-right">
+                    <b-button
+                      :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
+                      class="order d-none d-lg-block"
+                    >
+                      {{ $t('cart.order') }}
+                    </b-button>
+                    <b-button
+                      class="order d-block d-lg-none"
+                      @click="showCartForm()"
+                    >
+                      {{ $t('cart.order') }}
+                    </b-button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="seeAll mt-5 mx-auto text-center">
+                <button @click="emptycart()">
+                  {{ $t('cart.clear') }}
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section v-if="cartForm === true && success === false">
+            <div class="form-total text-center">
+              <small class="col-12 p-0 small-sum">{{ $t('cart.total') }}:</small>
+              <strong class="col-12 p-0 cart-total">{{ cartTotalAmount | currency }}</strong>
+              <small class="col-12 p-0 small-value">{{ $t('cart.currencyValue') }}</small>
+            </div>
+            <hr>
+
+            <div class=" cart-form">
+              <form>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="name">{{ $t('form.name') }}
+                      <input
+                        v-model="name"
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        placeholder="..."
+                      >
+                    </label>
+                  </div>
+                  <div class="col-6">
+                    <label for="phone">{{ $t('form.phone') }}
+                      <input
+                        v-model.number="phone"
+                        class="form-control"
+                        type="text"
+                        name="phone"
+                        placeholder="+380..."
+                      > </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6">
+                    <label for="city">{{ $t('form.city') }}
+                      <input
+                        v-model="city"
+                        class="form-control"
+                        type="text"
+                        name="city"
+                        placeholder="..."
+                      ></label>
+                  </div>
+                  <div class="col-6">
+                    <label for="street">{{ $t('form.street') }}
+                      <input
+                        v-model="street"
+                        class="form-control"
+                        type="text"
+                        name="streeet"
+                        placeholder="..."
+                      ></label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-4">
+                    <label for="house">{{ $t('form.house') }}
+                      <input
+                        v-model="house"
+                        class="form-control"
+                        type="text"
+                        name="house"
+                        placeholder="..."
+                      > </label>
+                  </div>
+                  <div class="col-4">
+                    <label for="code">{{ $t('form.code') }} <input
+                      v-model="code"
+                      class="form-control"
+                      type="text"
+                      name="code"
+                      placeholder="..."
+                    > </label>
+                  </div>
+                  <div class="col-4">
+                    <label for="appartment">{{ $t('form.apartment') }} <input
+                      v-model="apartment"
+                      class="form-control"
+                      type="text"
+                      name="appartment"
+                      placeholder="..."
+                    > </label>
+                  </div>
+                </div>
+
+                <label for="comment">{{ $t('form.comment') }}</label>
+                <textarea
+                  id="comment"
+                  v-model="comment"
+                  class="form-control"
+                  name="comment"
+                />
+                <div class="send-order text-center">
                   <b-button
-                    :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                     class="order"
+                    @click.prevent="sendOrder"
                   >
                     {{ $t('cart.order') }}
                   </b-button>
                 </div>
-              </div>
+              </form>
             </div>
+          </section>
 
-            <div class="seeAll mt-5 mx-auto text-center">
-              <button @click="emptycart()">
-                {{ $t('cart.clear') }}
-              </button>
+          <div v-if="success === true" class="success">
+            <div class="text-center m-auto">
+              <div class="animation-ctn">
+                <div class="icon icon--order-success svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="154px" height="154px">
+                    <g fill="none" stroke="none" stroke-width="0">
+                      <polyline
+                        class="st0"
+                        stroke="#0A0A0A"
+                        stroke-width="12"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        points="43.5,77.8 63.7,97.9 112.2,49.4 "
+                        style="stroke-dasharray:100px, 100px; stroke-dashoffset: 200px;"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h5>{{ $t('toast.title') }}</h5>
+              <p>{{ $t('toast.info') }}</p>
+              <b-button class="backToHome" :to="localePath({name: 'barbaresco'},$i18n.locale)" @click="success = false">
+                {{ $t('toast.btn') }}
+              </b-button>
             </div>
           </div>
         </div>
@@ -539,6 +738,7 @@ export default {
   data () {
     return {
       success: false,
+      cartForm: false,
       userDropdownOpen: false,
       mobileNavOpen: false,
       cartOpen: false,
@@ -551,6 +751,12 @@ export default {
       name: null,
       time: null,
       noOfPeople: null,
+      city: null,
+      street: null,
+      house: null,
+      code: null,
+      apartment: null,
+      comment: null,
       disabledDates: state.disabledDates
 
     }
@@ -620,6 +826,10 @@ export default {
       })
     },
 
+    showCartForm () {
+      this.cartForm = true
+    },
+
     closeUserDropdown () {
       this.userDropdownOpen = false
     },
@@ -651,6 +861,30 @@ export default {
       }
       this.showHeader = currentScrollPosition < this.lastScrollPosition
       this.lastScrollPosition = currentScrollPosition
+    },
+
+    sendOrder (append = false) {
+      const orderedProducts = JSON.stringify(this.cart)
+
+      axios
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
+      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
+      this.$store.commit('emptyCart')
+      this.success = true
+      if (process.client) {
+        document.body.scrollTop = document.documentElement.scrollTop = 0
+      }
+      this.$bvToast.toast(`${this.$t('toast.info')}`, {
+        title: `${this.$t('toast.title')}`,
+        autoHideDelay: 10000,
+        variant: 'success',
+        toaster: 'b-toaster-top-center',
+        appendToast: append
+      })
+      const self = this
+      setTimeout(function () {
+        self.cartForm = self.success = false
+      }, 10000)
     },
 
     sendMessage (append = false) {
@@ -1248,6 +1482,168 @@ header {
 
   .navbar-open {
     transform: translateX(0);
+  }
+}
+
+.form-total {
+  .cart-total {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: $darkColor;
+  }
+
+  .small-sum,
+  .small-value {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: $darkColor;
+  }
+}
+
+.cart-form {
+  label {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: $darkColor;
+  }
+
+  input.form-control,
+  textarea.form-control {
+    background: transparent;
+    border: 2px solid $darkColor;
+    box-sizing: border-box;
+    border-radius: 0;
+
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: $darkColor;
+    width: 100%;
+
+    margin: 5px auto 10px auto;
+  }
+
+  input[type="radio"] {
+    cursor: pointer;
+  }
+
+  .form-check-label {
+    cursor: pointer;
+  }
+
+  textarea.form-control {
+    height: 100px;
+  }
+
+  .send-order {
+    margin-top: 40px;
+  }
+}
+
+.success {
+  h5 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .backToHome {
+    height: 48px;
+    width: 240px;
+
+    margin-top: 100px;
+    padding: 13px 0px;
+
+    background: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #ffffff;
+  }
+
+  .animation-ctn {
+    text-align: center;
+    margin: 80px auto 120px auto;
+    height: 101px;
+    width: 101px;
+  }
+
+  @-webkit-keyframes checkmark {
+    0% {
+      stroke-dashoffset: 100px;
+    }
+
+    100% {
+      stroke-dashoffset: 200px;
+    }
+  }
+
+  @-ms-keyframes checkmark {
+    0% {
+      stroke-dashoffset: 100px;
+    }
+
+    100% {
+      stroke-dashoffset: 200px;
+    }
+  }
+
+  @keyframes checkmark {
+    0% {
+      stroke-dashoffset: 100px;
+    }
+
+    100% {
+      stroke-dashoffset: 0px;
+    }
+  }
+
+  .inlinesvg .svg svg {
+    display: inline;
+  }
+
+  .icon--order-success svg polyline {
+    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    animation: checkmark 0.25s ease-in-out 0.7s backwards;
   }
 }
 </style>

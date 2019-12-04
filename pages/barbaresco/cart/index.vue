@@ -153,14 +153,14 @@
   <div id="cart">
     <div
       v-if="success === false"
-      class="container"
+      class="container pt-5 pt-lg-0"
     >
       <h1 class="text-center mb-4">
         {{ $t('orderProcess.heading') }}
       </h1>
 
       <div class="row">
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderOnline.png"
             alt="Order Online"
@@ -176,7 +176,7 @@
               {{ $t('orderProcess.desc1-b') }}</b>
           </p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderPayment.png"
             alt="Order Payment"
@@ -188,7 +188,7 @@
 
           <p>{{ $t('orderProcess.desc2a') }} <b>{{ $t('orderProcess.desc2-b1') }}</b>{{ $t('orderProcess.desc2b') }}<b>{{ $t('orderProcess.desc2-b2') }}</b> {{ $t('orderProcess.desc2c') }} </p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderPreparation.png"
             alt="Order Preparation"
@@ -201,7 +201,7 @@
 
           <p>{{ $t('orderProcess.desc3') }}</p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderDelivery.png"
             alt="Order Delivery"
@@ -220,7 +220,7 @@
       <hr>
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6">
           <form class="col-12">
             <div class="row">
               <div class="col-6">
@@ -352,7 +352,7 @@
             </div>
           </form>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6">
           <div class="text-center">
             <font
               v-if="!cartSize"
@@ -441,12 +441,12 @@
                 class="mt-5"
               >
               <div class="row mt-5">
-                <div class="col-6 text-left">
+                <div class="col-md-6 text-md-left">
                   <small class="col-12 p-0 small-sum">{{ $t('cart.total') }}:</small>
                   <strong class="col-12 p-0 cart-total">{{ cartTotalAmount | currency }}</strong>
                   <small class="col-12 p-0 small-value">{{ $t('cart.currencyValue') }}</small>
                 </div>
-                <div class="col-6 mx-auto text-right">
+                <div class="col-md-6 mx-auto text-md-right">
                   <b-button
                     :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                     class="order"
@@ -514,15 +514,15 @@ export default {
     return {
       success: false,
       currentProductsDisplayed: 1,
-      name: '',
-      phone: '',
-      city: '',
-      street: '',
-      house: '',
-      code: '',
-      apartment: '',
-      comment: '',
-      modeOfPayment: ''
+      name: null,
+      phone: null,
+      city: null,
+      street: null,
+      house: null,
+      code: null,
+      apartment: null,
+      comment: null,
+      modeOfPayment: null
     }
   },
 
@@ -753,6 +753,8 @@ label {
   font-size: 18px;
   line-height: 21px;
 
+  width: 100%;
+
   color: $darkColor;
 }
 
@@ -775,12 +777,12 @@ textarea.form-control {
   margin: 5px auto 10px auto;
 }
 
-input[type=radio]{
+input[type="radio"] {
   cursor: pointer;
 }
 
-.form-check-label{
- cursor: pointer;
+.form-check-label {
+  cursor: pointer;
 }
 
 textarea.form-control {
@@ -788,7 +790,6 @@ textarea.form-control {
 }
 
 .success {
-
   h5 {
     font-family: $mainFont;
     font-style: normal;
