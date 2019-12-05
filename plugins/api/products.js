@@ -421,7 +421,7 @@ export default [
   // Barbaresco Main Meals
 
   {
-    category: 'le-rock-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'КУРКА СТІР ФРАЙ',
     id: 'b-mm-1',
     price: 65,
@@ -431,7 +431,7 @@ export default [
     summary: 'Філе курки, цукіні, морква, перець болгарський, броколі, кунжут, зелена цибуля, соус териякі'
   },
   {
-    category: 'le-rock-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'ПЕЧЕНА БУЖЕНИНА З РОКФОРНИМ ПЮРЕ',
     id: 'b-mm-2',
     price: 100,
@@ -441,7 +441,7 @@ export default [
     summary: 'Печена свинна шия подається з картопляно-рокфорним пюре'
   },
   {
-    category: 'le-rock-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'Лосось теріякі',
     id: 'b-mm-3',
     price: 120,
@@ -451,7 +451,7 @@ export default [
     summary: 'Філе лосося, квасоля спаржева, морква, перець болгарський, кабачок, печериці, соус теріякі'
   },
   {
-    category: 'le-rock-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'телятина ПІД СОУСОМ ДЕМІГЛАС',
     id: 'b-mm-4',
     price: 100,
@@ -461,7 +461,7 @@ export default [
     summary: 'Подається з рисом із овочами-гриль'
   },
   {
-    category: 'le-rock-mainMeals',
+    category: 'barbaresco-mainMeals',
     name: 'ХРУСТКА КУРКА З ПЕЧЕНОЮ КАРТОПЛЕЮ',
     id: 'b-mm-5',
     price: 65,

@@ -733,29 +733,29 @@
                   v-b-tooltip.hover
                   class="card-title mx-auto text-center crop"
                   style="cursor:context-menu"
-                  :title="product.name.length > 19 ? product.name : ''"
+                  :title="fresh.name.length > 19 ? fresh.name : ''"
                 >
-                  {{ product.name }}
+                  {{ fresh.name }}
                 </h5>
                 <p
                   v-b-tooltip.hover
                   class="card-text d-none d-sm-block text-left ingredients"
                   style="cursor: context-menu;"
-                  :title="product.summary.length > 30 ? product.summary : ''"
+                  :title="fresh.summary.length > 30 ? fresh.summary : ''"
                 >
-                  {{ (product.summary).slice(0, 30) }}<span v-if="product.summary.length > 30">...</span><span class="card-text quantity">{{ product.volume }}</span>
+                  {{ (fresh.summary).slice(0, 30) }}<span v-if="fresh.summary.length > 30">...</span><span class="card-text quantity">{{ fresh.volume }}</span>
                 </p>
 
                 <div class="row">
                   <div class="col-sm-5 pr-4 pr-md-0 my-auto">
                     <p class="card-text cost my-auto">
-                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                      <span class="card-text d-inline d-sm-none">{{ fresh.volume }}</span> {{ fresh.price | currency }}
                     </p>
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto"
-                      @click.prevent="addToCart(product.id)"
+                      @click.prevent="addToCart(fresh.id)"
                     >
                       {{ $t('order') }}
                     </button>

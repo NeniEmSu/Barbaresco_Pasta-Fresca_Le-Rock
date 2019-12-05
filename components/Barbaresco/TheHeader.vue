@@ -651,11 +651,35 @@
               </select>
 
               <h5>{{ $t('reservation.dateTitle') }}</h5>
+
               <div>
                 <client-only>
                   <datepicker
+                    v-if="$i18n.locale === 'en'"
                     v-model="date"
                     :value="date"
+                    :language="en"
+                    format="YYYY-MM-dd"
+                    name="date"
+                    :inline="true"
+                    :disabled-dates="disabledDates"
+                  />
+                  <datepicker
+                    v-if="$i18n.locale === 'uk'"
+                    v-model="date"
+                    :value="date"
+                    :language="uk"
+                    format="YYYY-MM-dd"
+                    name="date"
+                    :inline="true"
+                    :disabled-dates="disabledDates"
+                  />
+                  <datepicker
+                    v-if="$i18n.locale === 'ru'"
+                    v-model="date"
+                    :value="date"
+                    :language="ru"
+                    format="YYYY-MM-dd"
                     name="date"
                     :inline="true"
                     :disabled-dates="disabledDates"
@@ -697,6 +721,7 @@
 <script>
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
+import { en, uk, ru } from 'vuejs-datepicker/dist/locale'
 import clickOutside from '@/directives/click-outside'
 import handleScroll from '@/directives/handle-scroll'
 
@@ -757,7 +782,11 @@ export default {
       code: null,
       apartment: null,
       comment: null,
-      disabledDates: state.disabledDates
+      disabledDates: state.disabledDates,
+      format: 'd MMMM yyyy',
+      en,
+      uk,
+      ru
 
     }
   },
@@ -974,10 +1003,22 @@ export default {
   color: white;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .language-nav {
     position: absolute;
-    bottom: 5.25rem;
+    bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .language-nav {
+    left: 45%;
+    transform: translateX(-45%);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .language-nav {
     left: 40%;
     transform: translateX(-40%);
   }
@@ -985,8 +1026,6 @@ export default {
 
 @media screen and (max-width: 320px) {
   .language-nav {
-    position: absolute;
-    bottom: 2rem;
     left: 30%;
     transform: translateX(-30%);
   }

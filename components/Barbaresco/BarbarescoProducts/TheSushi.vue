@@ -6,7 +6,8 @@
     "originalRolls": "ОРИГІНАЛЬНІ РОЛИ",
     "californiaRolls": "РОЛИ КАЛІФОРНІЯ",
     "philiRolls": "РОЛИ ФІЛАДЕЛЬФІЯ",
-    "drakonRolls": "РОЛИ ДРАКОНИ"
+    "drakonRolls": "РОЛИ ДРАКОНИ",
+    "order": "Замовити"
   },
   "en": {
    "makiRoll": "Maki Rolls",
@@ -14,7 +15,8 @@
    "originalRolls": "ORIGINAL ROLls",
    "californiaRolls": "CALIFORNIA ROLLS",
    "philiRolls": "PHILADELPHIA ROLLS",
-    "drakonRolls": "DRAGONS ROLLs"
+    "drakonRolls": "DRAGONS ROLLs",
+    "order": "Order"
   },
   "ru": {
     "makiRoll": "РОЛЛЫ МАКИ",
@@ -22,7 +24,8 @@
     "originalRolls": "ОРИГИНАЛЬНЫЕ РОЛЛЫ",
     "californiaRolls": "Роллы Калифорния",
     "philiRolls": "РОЛЛЫ ФИЛАДЕЛЬФИЯ",
-    "drakonRolls": "Рулонные драконы"
+    "drakonRolls": "Рулонные драконы",
+    "order": "Заказать"
   }
 }
 </i18n>

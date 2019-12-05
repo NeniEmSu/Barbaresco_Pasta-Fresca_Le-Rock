@@ -86,7 +86,7 @@ export default {
 
   height: 50px;
   margin: 99px 0 0 0;
-  padding: 0 30px;
+  padding: 5px 30px;
   top: 0;
   left: 0;
   box-shadow: none;
@@ -130,5 +130,18 @@ export default {
 }
 
 @include mediaMenu {
+  img {
+    height: auto;
+    max-width: 25px;
+  }
+
+  .breadcrumb {
+    padding: 10px 0;
+  }
+
+  ul,
+  span {
+    font-size: 14px;
+  }
 }
 </style>
