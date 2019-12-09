@@ -155,6 +155,10 @@ figcaption {
   -webkit-box-sizing: border-box;
   outline: none !important;
   font-family: $mainFont;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 
 figure {

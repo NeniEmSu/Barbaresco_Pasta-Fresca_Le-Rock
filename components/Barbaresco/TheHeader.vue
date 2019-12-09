@@ -414,12 +414,14 @@
                   </div>
                   <div class="col-8 mx-auto text-right">
                     <b-button
+                      :disabled="!cartSize"
                       :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                       class="order d-none d-lg-block"
                     >
                       {{ $t('cart.order') }}
                     </b-button>
                     <b-button
+                      :disabled="!cartSize"
                       class="order d-block d-lg-none"
                       @click="showCartForm()"
                     >
@@ -430,7 +432,10 @@
               </div>
 
               <div class="seeAll mt-5 mx-auto text-center">
-                <button @click="emptycart()">
+                <button
+                  :disabled="!cartSize"
+                  @click="emptycart()"
+                >
                   {{ $t('cart.clear') }}
                 </button>
               </div>
@@ -534,6 +539,7 @@
                 />
                 <div class="send-order text-center">
                   <b-button
+                    :disabled="!cartSize"
                     class="order"
                     @click.prevent="sendOrder"
                   >

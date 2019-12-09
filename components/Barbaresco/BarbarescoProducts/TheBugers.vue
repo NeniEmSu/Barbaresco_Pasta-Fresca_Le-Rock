@@ -44,7 +44,7 @@
               </div>
               <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
-                  class="btn my-auto mr-auto"
+                  class="btn my-auto mr-auto draw"
                   @click.prevent="addToCart(product.id)"
                 >
                   {{ $t('order') }}
@@ -95,7 +95,7 @@
               </div>
               <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
-                  class="btn my-auto mr-auto"
+                  class="btn my-auto mr-auto draw"
                   @click.prevent="addToCart(product.id)"
                 >
                   {{ $t('order') }}
@@ -146,7 +146,7 @@
               </div>
               <div class="col-sm-7 pl-0 text-center  my-auto">
                 <button
-                  class="btn my-auto mr-auto"
+                  class="btn my-auto mr-auto draw"
                   @click.prevent="addToCart(product.id)"
                 >
                   {{ $t('order') }}

@@ -448,6 +448,7 @@
                 </div>
                 <div class="col-md-6 mx-auto text-md-right">
                   <b-button
+                    :disabled="!cartSize"
                     :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                     class="order"
                     @click.prevent="sendOrder"

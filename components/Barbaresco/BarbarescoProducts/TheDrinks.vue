@@ -103,7 +103,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(coffee.id)"
                     >
                       {{ $t('order') }}
@@ -180,7 +180,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(coffee.id)"
                     >
                       {{ $t('order') }}
@@ -257,7 +257,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(coffee.id)"
                     >
                       {{ $t('order') }}
@@ -335,7 +335,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
                     >
                       {{ $t('order') }}
@@ -411,7 +411,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
                     >
                       {{ $t('order') }}
@@ -487,7 +487,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
                     >
                       {{ $t('order') }}
@@ -566,7 +566,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(fresh.id)"
                     >
                       {{ $t('order') }}
@@ -627,7 +627,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(fresh.id)"
                     >
                       {{ $t('order') }}
@@ -677,7 +677,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(fresh.id)"
                     >
                       {{ $t('order') }}
@@ -754,7 +754,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(fresh.id)"
                     >
                       {{ $t('order') }}
@@ -833,7 +833,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(lemonade.id)"
                     >
                       {{ $t('order') }}
@@ -910,7 +910,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(lemonade.id)"
                     >
                       {{ $t('order') }}
@@ -987,7 +987,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(lemonade.id)"
                     >
                       {{ $t('order') }}
@@ -1066,7 +1066,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(smoothy.id)"
                     >
                       {{ $t('order') }}
@@ -1143,7 +1143,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(smoothy.id)"
                     >
                       {{ $t('order') }}
@@ -1220,7 +1220,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(smoothy.id)"
                     >
                       {{ $t('order') }}
@@ -1299,7 +1299,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(milkshake.id)"
                     >
                       {{ $t('order') }}
@@ -1376,7 +1376,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(milkshake.id)"
                     >
                       {{ $t('order') }}
@@ -1453,7 +1453,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(milkshake.id)"
                     >
                       {{ $t('order') }}
@@ -1532,7 +1532,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
                     >
                       {{ $t('order') }}
@@ -1609,7 +1609,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
                     >
                       {{ $t('order') }}
@@ -1686,7 +1686,7 @@
                   </div>
                   <div class="col-sm-7 pl-0 text-center  my-auto">
                     <button
-                      class="btn my-auto mr-auto"
+                      class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
                     >
                       {{ $t('order') }}

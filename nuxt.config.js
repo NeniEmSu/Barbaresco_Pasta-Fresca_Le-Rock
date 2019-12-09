@@ -268,6 +268,18 @@ export default {
   build: {
     transpile: [/^vue2-google-maps($|\/)/],
     extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    },
 
     extend (config) {
       config.module.rules.forEach((rule) => {
