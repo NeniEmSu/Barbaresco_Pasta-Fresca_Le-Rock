@@ -21,7 +21,15 @@
           <div class="card-body">
             <h5
               v-b-tooltip.hover
-              class="card-title mx-auto text-center crop"
+              class="card-title mx-auto text-center crop d-block d-md-none"
+              style="cursor:context-menu"
+              :title="product.name.length > 8 ? product.name : ''"
+            >
+              {{ product.name }}
+            </h5>
+            <h5
+              v-b-tooltip.hover
+              class="card-title mx-auto text-center crop d-none d-md-block"
               style="cursor:context-menu"
               :title="product.name.length > 19 ? product.name : ''"
             >
@@ -72,7 +80,15 @@
           <div class="card-body">
             <h5
               v-b-tooltip.hover
-              class="card-title mx-auto text-center crop"
+              class="card-title mx-auto text-center crop d-block d-md-none"
+              style="cursor:context-menu"
+              :title="product.name.length > 8 ? product.name : ''"
+            >
+              {{ product.name }}
+            </h5>
+            <h5
+              v-b-tooltip.hover
+              class="card-title mx-auto text-center crop d-none d-md-block"
               style="cursor:context-menu"
               :title="product.name.length > 19 ? product.name : ''"
             >
@@ -123,7 +139,15 @@
           <div class="card-body">
             <h5
               v-b-tooltip.hover
-              class="card-title mx-auto text-center crop"
+              class="card-title mx-auto text-center crop d-block d-md-none"
+              style="cursor:context-menu"
+              :title="product.name.length > 8 ? product.name : ''"
+            >
+              {{ product.name }}
+            </h5>
+            <h5
+              v-b-tooltip.hover
+              class="card-title mx-auto text-center crop d-none d-md-block"
               style="cursor:context-menu"
               :title="product.name.length > 19 ? product.name : ''"
             >
