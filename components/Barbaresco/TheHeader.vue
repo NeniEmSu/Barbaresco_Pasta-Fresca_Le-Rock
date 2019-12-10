@@ -245,28 +245,45 @@
             >
           </div>
           <b-navbar-nav>
-            <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'index'},$i18n.locale)"
+            >
               {{ $t('links.home') }}
             </b-nav-item>
-            <b-nav-item :to="localePath({name: 'barbaresco'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'barbaresco'},$i18n.locale)"
+            >
               {{ $t('links.menu') }}
             </b-nav-item>
-            <b-nav-item :to="localePath({name: 'barbaresco-delivery'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'barbaresco-delivery'},$i18n.locale)"
+            >
               {{ $t('links.delivery') }}
             </b-nav-item>
             <b-nav-item
               tag="button"
+              class="fromleft"
               @click.stop="reservationOpen = !reservationOpen"
             >
               {{ $t('links.reserveAPlace') }}
             </b-nav-item>
-            <b-nav-item :to="localePath({name: 'barbaresco-kitchen'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'barbaresco-kitchen'},$i18n.locale)"
+            >
               {{ $t('links.kitchen') }}
             </b-nav-item>
-            <b-nav-item :to="localePath({name: 'barbaresco-about-us'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'barbaresco-about-us'},$i18n.locale)"
+            >
               {{ $t('links.aboutUs') }}
             </b-nav-item>
             <b-nav-item
+              class="fromleft"
               v-b-modal.modal-1
               tag="button"
             >
@@ -279,7 +296,10 @@
             >
               <b>{{ $t('vacancyNotice') }}</b>
             </b-modal>
-            <b-nav-item :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
+            >
               {{ $t('links.contact') }}
             </b-nav-item>
 
@@ -512,21 +532,21 @@
                   </div>
                   <div class="col-4">
                     <label for="code">{{ $t('form.code') }} <input
-                      v-model="code"
-                      class="form-control"
-                      type="text"
-                      name="code"
-                      placeholder="..."
-                    > </label>
+                        v-model="code"
+                        class="form-control"
+                        type="text"
+                        name="code"
+                        placeholder="..."
+                      > </label>
                   </div>
                   <div class="col-4">
                     <label for="appartment">{{ $t('form.apartment') }} <input
-                      v-model="apartment"
-                      class="form-control"
-                      type="text"
-                      name="appartment"
-                      placeholder="..."
-                    > </label>
+                        v-model="apartment"
+                        class="form-control"
+                        type="text"
+                        name="appartment"
+                        placeholder="..."
+                      > </label>
                   </div>
                 </div>
 
@@ -1257,8 +1277,6 @@ header {
   line-height: 35px;
 
   color: #000000;
-
-  margin-right: 50px;
 }
 
 .reservation-btn {
@@ -1690,5 +1708,33 @@ header {
     -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
     animation: checkmark 0.25s ease-in-out 0.7s backwards;
   }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.nav-item {
+  height: auto;
+  opacity: 0.8;
+}
+
+.nav-item:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px $darkColor;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.nav-item:hover:after {
+  transform: scaleX(1);
+}
+
+.nav-item.fromleft:after {
+  transform-origin: 0 50% !important;
 }
 </style>
