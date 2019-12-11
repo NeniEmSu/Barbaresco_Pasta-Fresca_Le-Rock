@@ -283,8 +283,8 @@
               {{ $t('links.aboutUs') }}
             </b-nav-item>
             <b-nav-item
-              class="fromleft"
               v-b-modal.modal-1
+              class="fromleft"
               tag="button"
             >
               {{ $t('links.vacancy') }}
@@ -473,7 +473,7 @@
             <div class=" cart-form">
               <form>
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-6 pr-0">
                     <label for="name">{{ $t('form.name') }}
                       <input
                         v-model="name"
@@ -497,7 +497,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-6 pr-0">
                     <label for="city">{{ $t('form.city') }}
                       <input
                         v-model="city"
@@ -520,7 +520,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-4 pr-0">
                     <label for="house">{{ $t('form.house') }}
                       <input
                         v-model="house"
@@ -530,23 +530,23 @@
                         placeholder="..."
                       > </label>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4 pr-0">
                     <label for="code">{{ $t('form.code') }} <input
-                        v-model="code"
-                        class="form-control"
-                        type="text"
-                        name="code"
-                        placeholder="..."
-                      > </label>
+                      v-model="code"
+                      class="form-control"
+                      type="text"
+                      name="code"
+                      placeholder="..."
+                    > </label>
                   </div>
                   <div class="col-4">
                     <label for="appartment">{{ $t('form.apartment') }} <input
-                        v-model="apartment"
-                        class="form-control"
-                        type="text"
-                        name="appartment"
-                        placeholder="..."
-                      > </label>
+                      v-model="apartment"
+                      class="form-control"
+                      type="text"
+                      name="appartment"
+                      placeholder="..."
+                    > </label>
                   </div>
                 </div>
 
@@ -918,7 +918,7 @@ export default {
       this.lastScrollPosition = currentScrollPosition
     },
 
-    sendOrder (append = false) {
+    sendOrder () {
       const orderedProducts = JSON.stringify(this.cart)
 
       axios
@@ -933,8 +933,7 @@ export default {
         title: `${this.$t('toast.title')}`,
         autoHideDelay: 10000,
         variant: 'success',
-        toaster: 'b-toaster-top-center',
-        appendToast: append
+        toaster: 'b-toaster-top-center'
       })
       const self = this
       setTimeout(function () {
@@ -942,7 +941,7 @@ export default {
       }, 10000)
     },
 
-    sendMessage (append = false) {
+    sendMessage () {
       axios
         .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= Бронювання %0AІм'я: ${this.name}, %0AНомер телефону: ${this.phone}, %0AДата: ${this.date}, %0AЧас прибуття: ${this.time}, %0A№ людей: ${this.noOfPeople}`)
       this.name = this.email = this.phone = this.time = this.noOfPeople = null
@@ -952,8 +951,7 @@ export default {
         title: `${this.$t('toast.title')}`,
         autoHideDelay: 10000,
         variant: 'success',
-        toaster: 'b-toaster-top-center',
-        appendToast: append
+        toaster: 'b-toaster-top-center'
       })
     }
   }

@@ -579,7 +579,7 @@ export default {
       })
     },
 
-    sendOrder (append = false) {
+    sendOrder () {
       const orderedProducts = JSON.stringify(this.cart)
 
       axios
@@ -594,8 +594,7 @@ export default {
         title: `${this.$t('toast.title')}`,
         autoHideDelay: 10000,
         variant: 'success',
-        toaster: 'b-toaster-top-center',
-        appendToast: append
+        toaster: 'b-toaster-top-center'
       })
       const self = this
       setTimeout(function () {
@@ -820,7 +819,7 @@ textarea.form-control {
     width: 240px;
 
     margin-top: 100px;
-    padding: 14px 16px;
+    padding: 14px 0px;
 
     background: #000000;
     border: 1px solid #000000;

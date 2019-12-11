@@ -335,6 +335,12 @@ main {
   }
 }
 
+@include mediaMd {
+  hr {
+    border: 0.5px solid $darkColor;
+  }
+}
+
 @include mediaXSm {
   .scrollable-element {
     scrollbar-width: none;

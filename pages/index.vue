@@ -698,7 +698,7 @@ export default {
   }
 
   .cardDescription {
-    height: 60px;
+    height: 75px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -792,7 +792,7 @@ export default {
   }
 
   .cardDescription {
-    height: 50px;
+    height: 80px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -837,7 +837,7 @@ export default {
   }
 
   .cardDescription {
-    height: 60px;
+    height: px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;

@@ -101,7 +101,7 @@
                       <span class="card-text d-inline d-sm-none">{{ coffee.volume }}</span> {{ coffee.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(coffee.id)"
@@ -178,7 +178,7 @@
                       <span class="card-text d-inline d-sm-none">{{ coffee.volume }}</span> {{ coffee.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(coffee.id)"
@@ -255,7 +255,7 @@
                       <span class="card-text d-inline d-sm-none">{{ coffee.volume }}</span> {{ coffee.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(coffee.id)"
@@ -333,7 +333,7 @@
                       <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
@@ -409,7 +409,7 @@
                       <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
@@ -485,7 +485,7 @@
                       <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
@@ -564,7 +564,7 @@
                       <span class="card-text d-inline d-sm-none">{{ fresh.volume }}</span> {{ fresh.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(fresh.id)"
@@ -625,7 +625,7 @@
                       <span class="card-text d-inline d-sm-none">{{ fresh.volume }}</span> {{ fresh.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(fresh.id)"
@@ -675,7 +675,7 @@
                       <span class="card-text d-inline d-sm-none">{{ fresh.volume }}</span> {{ fresh.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(fresh.id)"
@@ -752,7 +752,7 @@
                       <span class="card-text d-inline d-sm-none">{{ fresh.volume }}</span> {{ fresh.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(fresh.id)"
@@ -831,7 +831,7 @@
                       <span class="card-text d-inline d-sm-none">{{ lemonade.volume }}</span> {{ lemonade.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(lemonade.id)"
@@ -908,7 +908,7 @@
                       <span class="card-text d-inline d-sm-none">{{ lemonade.volume }}</span> {{ lemonade.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(lemonade.id)"
@@ -985,7 +985,7 @@
                       <span class="card-text d-inline d-sm-none">{{ lemonade.volume }}</span> {{ lemonade.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(lemonade.id)"
@@ -1064,7 +1064,7 @@
                       <span class="card-text d-inline d-sm-none">{{ smoothy.volume }}</span> {{ smoothy.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(smoothy.id)"
@@ -1141,7 +1141,7 @@
                       <span class="card-text d-inline d-sm-none">{{ smoothy.volume }}</span> {{ smoothy.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(smoothy.id)"
@@ -1218,7 +1218,7 @@
                       <span class="card-text d-inline d-sm-none">{{ smoothy.volume }}</span> {{ smoothy.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(smoothy.id)"
@@ -1297,7 +1297,7 @@
                       <span class="card-text d-inline d-sm-none">{{ milkshake.volume }}</span> {{ milkshake.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(milkshake.id)"
@@ -1374,7 +1374,7 @@
                       <span class="card-text d-inline d-sm-none">{{ milkshake.volume }}</span> {{ milkshake.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(milkshake.id)"
@@ -1451,7 +1451,7 @@
                       <span class="card-text d-inline d-sm-none">{{ milkshake.volume }}</span> {{ milkshake.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(milkshake.id)"
@@ -1530,7 +1530,7 @@
                       <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
@@ -1607,7 +1607,7 @@
                       <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
@@ -1684,7 +1684,7 @@
                       <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                     </p>
                   </div>
-                  <div class="col-sm-7 pl-0 text-center  my-auto">
+                  <div class="col-sm-7 p-0 text-center  my-auto">
                     <button
                       class="btn my-auto mr-auto center"
                       @click.prevent="addToCart(product.id)"
