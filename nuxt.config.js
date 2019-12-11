@@ -319,7 +319,7 @@ export default {
             'opacity-0',
             'nuxt__build_indicator'
           ],
-          whitelistPatternsChildren: [/svg-inline--fa/, /__layout/, /__nuxt/, /aos/, /fade-in/, /tooltip/, /modal/, /map/, /gm/]
+          whitelistPatternsChildren: [/svg-inline--fa/, /__layout/, /__nuxt/, /aos/, /fade-in/, /tooltip/, /modal/, /map/, /gm/, /dropdown/, /toast/]
         })
       ]
     },
