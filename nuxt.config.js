@@ -1,3 +1,5 @@
+import purgecss from '@fullhuman/postcss-purgecss'
+
 export default {
   mode: 'universal',
 
@@ -49,7 +51,11 @@ export default {
     color: '#E0A671'
   },
 
-  css: ['normalize.css/normalize.css', '~/assets/scss/config.scss', '~/assets/fonts/fonts.css'],
+  css: [
+    'normalize.css/normalize.css',
+    '~/assets/scss/config.scss',
+    '~/assets/fonts/fonts.css'
+  ],
 
   plugins: [
     '~/plugins/vuelidate.js',
@@ -252,16 +258,7 @@ export default {
     existingFilesDirectory: './netlify/'
   },
 
-  // purgeCSS: {
-  //   mode: 'postcss',
-  //   content: [
-  //     './pages/**/*.vue',
-  //     './layouts/**/*.vue',
-  //     './components/**/*.vue'
-  //   ],
-  //   whitelist: ['html', 'body'],
-  //   whitelistPatterns: [/cookie-consent/, /modal/]
-  // },
+  purgeCSS: {},
 
   axios: {},
 
@@ -300,6 +297,31 @@ export default {
           })
         }
       })
+    },
+
+    postcss: {
+      plugins: [
+        purgecss({
+          content: [
+            './pages/**/*.vue',
+            './layouts/**/*.vue',
+            './components/**/*.vue',
+            './content/**/*.md',
+            './content/**/*.json'
+          ],
+          whitelist: [
+            'html',
+            'body',
+            'has-navbar-fixed-top',
+            'nuxt-link-exact-active',
+            'nuxt-progress',
+            'hidden',
+            'opacity-0',
+            'nuxt__build_indicator'
+          ],
+          whitelistPatternsChildren: [/svg-inline--fa/, /__layout/, /__nuxt/, /aos/, /fade-in/, /tooltip/, /modal/, /map/, /gm/]
+        })
+      ]
     },
 
     babel: {
