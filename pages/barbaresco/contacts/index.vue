@@ -118,7 +118,7 @@ export default {
 }
 
 h1 {
-  font-family: $primaryFont;
+  font-family: $segoeFont;
   font-style: normal;
   font-weight: bold;
   font-size: 80px;
@@ -126,18 +126,18 @@ h1 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #000000;
+  color: $blackColor;
 }
 
 p,
 span {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 110.4%;
 
-  color: #000000;
+  color: $blackColor;
 }
 
 @media (max-width: 1280px) {

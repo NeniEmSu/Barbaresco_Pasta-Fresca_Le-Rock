@@ -635,7 +635,7 @@ export default {
 }
 
 h3 {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
 
@@ -656,7 +656,7 @@ h3 {
   border: 1px solid $darkColor;
   box-sizing: border-box;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -694,7 +694,7 @@ h3 {
 
   p,
   button {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -714,7 +714,7 @@ h3 {
 }
 
 .cart-total {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -725,7 +725,7 @@ h3 {
 
 .small-sum,
 .small-value {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -747,7 +747,7 @@ h3 {
 }
 
 label {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -765,7 +765,7 @@ textarea.form-control {
   box-sizing: border-box;
   border-radius: 0;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -791,7 +791,7 @@ textarea.form-control {
 
 .success {
   h5 {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -800,7 +800,7 @@ textarea.form-control {
     text-align: center;
     text-transform: uppercase;
 
-    color: #000000;
+    color: $blackColor;
   }
 
   p {
@@ -811,7 +811,7 @@ textarea.form-control {
 
     text-align: center;
 
-    color: #000000;
+    color: $blackColor;
   }
 
   .backToHome {
@@ -821,11 +821,11 @@ textarea.form-control {
     margin-top: 100px;
     padding: 14px 0px;
 
-    background: #000000;
-    border: 1px solid #000000;
+    background: $blackColor;
+    border: 1px solid $blackColor;
     box-sizing: border-box;
 
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

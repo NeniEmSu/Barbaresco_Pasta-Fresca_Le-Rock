@@ -259,11 +259,11 @@ export default {
 }
 
 .feedback-btn {
-  background: #000000;
-  border: 1px solid #000000;
+  background: $blackColor;
+  border: 1px solid $blackColor;
   box-sizing: border-box;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -275,16 +275,16 @@ export default {
 
 input {
   background: transparent;
-  border: 1px solid #000000;
+  border: 1px solid $blackColor;
   box-sizing: border-box;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
 
-  color: #000000;
+  color: $blackColor;
   padding: 14px 20px;
   margin: 10px auto;
 }

@@ -567,7 +567,7 @@ export default {
 }
 
 h3 {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
 
@@ -588,7 +588,7 @@ h3 {
   border: 1px solid $darkColor;
   box-sizing: border-box;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -626,7 +626,7 @@ h3 {
 
   p,
   button {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -658,7 +658,7 @@ h3 {
 }
 
 label {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -674,7 +674,7 @@ textarea.form-control {
   box-sizing: border-box;
   border-radius: 0;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

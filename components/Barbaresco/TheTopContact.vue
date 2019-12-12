@@ -113,19 +113,24 @@ export default {
     text-align: right;
   }
 
-  ul.contacts li.contact a,
-  img {
-    padding: 0;
-    margin: 0;
+  ul.contacts li.contact a {
     text-decoration: none;
     color: $lightColor;
-    font-family: $secondaryFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: normal;
     text-align: center;
-    @include easeOut;
+    padding: 0;
+    margin: 0;
+    @include easeInOut;
+  }
+
+  img {
+    padding: 0;
+    margin: 0;
+    @include easeInOut;
   }
 }
 

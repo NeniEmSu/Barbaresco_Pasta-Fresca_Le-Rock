@@ -229,7 +229,7 @@ section {
   display: block;
   flex-direction: column;
 
-  @include easeOut;
+  @include easeInOut;
   text-decoration: none;
 
   &:hover {
@@ -258,7 +258,7 @@ section {
 
 .nav-text {
   margin: 10px auto auto auto;
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -268,7 +268,7 @@ section {
   color: $lightColor;
   margin-top: 10px;
 
-  @include easeOut;
+  @include easeInOut;
 }
 
 .nav-image {
@@ -289,7 +289,7 @@ section {
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
   margin-bottom: 10px;
 
-  @include easeOut;
+  @include easeInOut;
 }
 
 .navOne {
@@ -378,7 +378,7 @@ section {
     color: $darkColor;
     font-size: 14px;
     line-height: 16px;
-    @include easeOut;
+    @include easeInOut;
   }
   section {
     padding: 5px;
@@ -388,7 +388,7 @@ section {
     margin: auto;
     mix-blend-mode: normal;
     opacity: 1;
-    @include easeOut;
+    @include easeInOut;
     box-sizing: border-box;
   }
 

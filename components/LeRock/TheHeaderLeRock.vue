@@ -716,7 +716,7 @@ select {
   border: 1px solid #000000;
   box-sizing: border-box;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -763,7 +763,7 @@ input {
   border: 1px solid #000000;
   box-sizing: border-box;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -779,7 +779,7 @@ input {
   border: 1px solid #000000;
   box-sizing: border-box;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -794,7 +794,7 @@ input {
   border: 1px solid #000000;
   box-sizing: border-box;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -812,7 +812,7 @@ input {
 
 .cart-body {
   h3 {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -824,7 +824,7 @@ input {
 
 .reservation-body {
   h5 {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -857,7 +857,7 @@ input {
 
   p,
   button {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -907,7 +907,7 @@ header {
 }
 
 .nav-link {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -925,7 +925,7 @@ header {
   outline-color: rgba(255, 255, 255, 0.5);
   outline-offset: 0px;
   text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  @include cubicBezier;
 
   border-radius: 0;
   box-sizing: border-box;
@@ -979,7 +979,7 @@ header {
     -o-border-radius: 50%;
     position: relative;
 
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;

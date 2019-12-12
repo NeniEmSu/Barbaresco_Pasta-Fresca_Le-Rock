@@ -126,7 +126,7 @@ export default {}
 .phone {
   margin-right: 40px;
   a {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -146,7 +146,7 @@ export default {}
   a {
     margin: auto;
 
-    font-family: $primaryFont;
+    font-family: $segoeFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

@@ -499,7 +499,7 @@ export default {
   background-size: cover;
   position: fixed;
 
-  background-color: #000000;
+  background-color: $blackColor;
 
   opacity: 0.9;
   filter: blur(0.5px);
@@ -513,7 +513,7 @@ export default {
   margin-top: 3.5%;
   margin-bottom: 3.5%;
 
-  font-family: $primaryFont;
+  font-family: $segoeFont;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -581,9 +581,8 @@ export default {
   outline-color: rgba(255, 255, 255, 0.5);
   outline-offset: 0px;
   text-shadow: none;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+
+  @include easeInOut;
 
   border-radius: 0;
   box-sizing: border-box;
@@ -603,7 +602,7 @@ export default {
 
   &:hover {
     background: $lightColor;
-    color: #000000;
+    color: $blackColor;
   }
 }
 
@@ -615,9 +614,7 @@ export default {
   background-color: transparent;
   margin: 10px 10px 10px 10px;
 
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  @include easeInOut;
 
   &.instagram {
     margin: 10px 9px 10px 10px !important;

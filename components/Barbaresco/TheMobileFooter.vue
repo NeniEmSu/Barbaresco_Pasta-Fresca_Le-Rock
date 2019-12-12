@@ -119,7 +119,7 @@ export default {}
 .phone {
   margin: 5px auto;
   a {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -140,7 +140,7 @@ export default {}
   a {
     margin: auto;
 
-    font-family: $primaryFont;
+    font-family: $segoeFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -170,7 +170,7 @@ export default {}
   .phone {
     margin: 5px auto;
     a {
-      font-family: $mainFont;
+      font-family: $robotoFont;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -191,7 +191,7 @@ export default {}
     a {
       margin: auto;
 
-      font-family: $primaryFont;
+      font-family: $segoeFont;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;

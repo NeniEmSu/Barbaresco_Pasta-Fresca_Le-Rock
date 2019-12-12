@@ -70,7 +70,7 @@ button.btn {
   box-sizing: border-box;
   outline: none;
 
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -186,7 +186,7 @@ button.btn {
 }
 
 .card-title {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -194,20 +194,20 @@ button.btn {
 
   text-transform: uppercase;
 
-  color: #000000;
+  color: $blackColor;
 
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .card-text {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
 
-  color: #000000;
+  color: $blackColor;
 
   margin-bottom: 10px;
 
@@ -230,7 +230,7 @@ button.btn {
 }
 
 .card-title {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -238,20 +238,20 @@ button.btn {
 
   text-transform: uppercase;
 
-  color: #000000;
+  color: $blackColor;
 
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .card-text {
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
 
-  color: #000000;
+  color: $blackColor;
 
   margin-bottom: 10px;
 

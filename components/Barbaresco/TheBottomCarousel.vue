@@ -118,7 +118,7 @@ export default {
 
 @media (max-width: 992px) {
   h2 {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -128,7 +128,7 @@ export default {
   }
 
   p {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -142,7 +142,7 @@ export default {
 
 @media (max-width: 500px) {
   h2 {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -152,7 +152,7 @@ export default {
   }
 
   p {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -174,7 +174,7 @@ export default {
 
 @media (max-width: 375px) {
   h2 {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -184,7 +184,7 @@ export default {
   }
 
   p {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -207,7 +207,7 @@ export default {
 
 @media (max-width: 320px) {
   h2 {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -219,7 +219,7 @@ export default {
   }
 
   p {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

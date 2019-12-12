@@ -79,7 +79,7 @@ body {
     outline-color: rgba(255, 255, 255, 0.5);
     outline-offset: 0px;
     text-shadow: none;
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    @include cubicBezier;
 
     border-radius: 0;
     box-sizing: border-box;
@@ -154,7 +154,7 @@ figcaption {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   outline: none !important;
-  font-family: $mainFont;
+  font-family: $robotoFont;
 
   &:disabled {
     cursor: not-allowed;
@@ -184,7 +184,7 @@ hr {
 button,
 .btn {
   cursor: pointer;
-  font-family: $mainFont;
+  font-family: $robotoFont;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -267,7 +267,7 @@ main {
   padding: 12px 0;
 
   li {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -276,7 +276,7 @@ main {
     color: #8b8b8b;
   }
   h1 {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -288,7 +288,7 @@ main {
   }
 
   a {
-    font-family: $mainFont;
+    font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

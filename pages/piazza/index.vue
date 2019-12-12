@@ -166,7 +166,7 @@ export default {
 // }
 
 // .nav-text {
-//   font-family: $mainFont;
+//   font-family: $robotoFont;
 //   font-style: normal;
 //   font-weight: normal;
 //   font-size: 18px;

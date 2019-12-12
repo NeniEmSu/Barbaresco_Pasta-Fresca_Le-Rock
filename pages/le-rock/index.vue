@@ -195,7 +195,7 @@ export default {
     bottom: 0;
     left: 0;
 
-    background-image: linear-gradient(to bottom right, #000000, #000000);
+    background-image: linear-gradient(to bottom right, $blackColor, $blackColor);
     opacity: 0.4;
   }
 }
