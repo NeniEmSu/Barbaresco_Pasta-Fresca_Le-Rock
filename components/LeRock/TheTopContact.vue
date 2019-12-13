@@ -10,8 +10,8 @@
     <div class="text-right ml-auto">
       <ul class="text-right contacts">
         <li class="contact">
-          <a href="tel:+380963022082">
-            <span>+38 096 302 20 82</span>
+          <a href="tel:+380671154515">
+            <span>+38 067 115 45 15</span>
           </a>
         </li>
 

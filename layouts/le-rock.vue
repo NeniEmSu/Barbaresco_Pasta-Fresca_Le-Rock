@@ -34,7 +34,7 @@
 
 <script>
 import Header from '~/components/LeRock/TheHeaderLeRock'
-import TheTopContact from '~/components/Barbaresco/TheTopContact'
+import TheTopContact from '~/components/LeRock/TheTopContact'
 import TheFooter from '@/components/LeRock/TheFooterLeRock'
 import TheMobileFooter from '@/components/Barbaresco/TheMobileFooter.vue'
 

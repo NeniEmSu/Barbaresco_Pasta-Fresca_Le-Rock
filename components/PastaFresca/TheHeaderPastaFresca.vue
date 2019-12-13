@@ -17,7 +17,8 @@
       "emptyCart": "Ви ще нічого не додали до замовлення",
       "total": "Сума",
       "order": "Замовити",
-      "clear": "Очистити все"
+      "clear": "Очистити все",
+      "currencyValue": "грн"
       },
       "links": {
         "home": "Головна",
@@ -30,6 +31,24 @@
         "vacancy": "Ваканції",
         "contact": "Контакти",
         "kitchen": "Кухня"
+      },
+      "form":{
+      "name": "Ваше ім’я",
+      "phone": "Ваш телефон",
+      "city": "Місто/село",
+      "street": "Вулиця",
+      "house": "Буд",
+      "code": "Код",
+      "apartment": "Кв./офіс",
+      "comment": "Коментар до замовлення",
+      "modeOfPayment": "Бажаний спосіб оплати",
+      "pay-carrier": "Оплата кур’єру готівкою",
+      "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Дякуємо за замовлення",
+      "info": "Очікуйте на дзвінок нашого менеджера",
+      "btn": "Повернутися на головну"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -52,7 +71,8 @@
       "emptyCart": "You haven't added anything to your order yet",
       "total": "Sum",
       "order": "Order",
-      "clear": "Clear everything"
+      "clear": "Clear everything",
+      "currencyValue": "Uah"
       },
       "links": {
         "home": "Home",
@@ -65,6 +85,24 @@
         "vacancy": "Vacancies",
         "contact": "Contacts",
         "kitchen": "Kitchen"
+      },
+      "form":{
+      "name": "Your name",
+      "phone": "Your phone",
+      "city": "City/Village",
+      "street": "Street",
+      "house": "Building",
+      "code": "Code",
+      "apartment": "Apt./Office",
+      "comment": "Order comment",
+      "modeOfPayment": "Preferred mode of payment",
+      "pay-carrier": "Payment by courier in cash",
+      "pay-card": "Payment on card"
+      },
+      "toast":{
+      "title": "Thank you for your order",
+      "info": "Expect a call from our manager",
+      "btn": "Back to home"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -88,7 +126,8 @@
       "emptyCart": "Вы еще ничего не добавили к заказу",
       "total": "Сумма",
       "order": "Заказать",
-      "clear": "Очистить все"
+      "clear": "Очистить все",
+      "currencyValue": "грн"
       },
       "links": {
         "home": "Главная",
@@ -101,6 +140,24 @@
         "vacancy": "Вакансии",
         "contact": "Контакты",
         "kitchen": "Кухня"
+      },
+      "form":{
+      "name": "Ваше имя",
+      "phone": "Ваш телефон",
+      "city": "Город/село",
+      "street": "Улица",
+      "house": "Буд",
+      "code": "Код",
+      "apartment": "Кв./Офис",
+      "comment": "Комментарий к заказу",
+      "modeOfPayment": "Предпочтительный способ оплаты",
+      "pay-carrier": "Оплата курьеру наличными",
+      "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Спасибо за заказ",
+      "info": "Ожидайте звонок нашего менеджера",
+      "btn": "Вернуться на главную"
       },
       "ukrainian": "Українська",
       "english": "English",
@@ -188,29 +245,46 @@
             >
           </div>
           <b-navbar-nav>
-            <b-nav-item :to="localePath({name: 'index'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'index'},$i18n.locale)"
+            >
               {{ $t('links.home') }}
             </b-nav-item>
-            <b-nav-item :to="localePath({name: 'pasta-fresca'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'pasta-fresca'},$i18n.locale)"
+            >
               {{ $t('links.menu') }}
             </b-nav-item>
-            <b-nav-item :to="localePath({name: 'pasta-fresca-delivery'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'pasta-fresca-delivery'},$i18n.locale)"
+            >
               {{ $t('links.delivery') }}
             </b-nav-item>
             <b-nav-item
+              class="fromleft"
               tag="button"
               @click.stop="reservationOpen = !reservationOpen"
             >
               {{ $t('links.reserveAPlace') }}
             </b-nav-item>
-            <b-nav-item :to="localePath({name: 'pasta-fresca-about-us'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'pasta-fresca-about-us'},$i18n.locale)"
+            >
               {{ $t('links.aboutUs') }}
             </b-nav-item>
-            <b-nav-item :to="localePath({name: 'pasta-fresca-kitchen'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'pasta-fresca-kitchen'},$i18n.locale)"
+            >
               {{ $t('links.kitchen') }}
             </b-nav-item>
             <b-nav-item
               v-b-modal.modal-1
+              class="fromleft"
               tag="button"
             >
               {{ $t('links.vacancy') }}
@@ -222,7 +296,10 @@
             >
               <b>{{ $t('vacancyNotice') }}</b>
             </b-modal>
-            <b-nav-item :to="localePath({name: 'pasta-fresca-contacts'},$i18n.locale)">
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'pasta-fresca-contacts'},$i18n.locale)"
+            >
               {{ $t('links.contact') }}
             </b-nav-item>
             <div
@@ -271,106 +348,254 @@
               alt="close icon"
             >
           </div>
-          <div class="text-center">
-            <font v-if="!cartSize">
-              {{ $t('cart.emptyCart') }}
-            </font>
-          </div>
-
-          <div>
-            <h3 v-if="cartSize">
-              {{ $t('cart.heading') }}
-            </h3>
-            <div
-              v-for="product in cart"
-              :key="product.id"
-              class="cart-item"
-            >
-              <div class="row my-auto">
-                <img
-                  style="border-radius: 50%;   "
-                  :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
-                  alt=""
-                  class="col-2 m-auto"
-                >
-                <div class="col-6 p-0">
-                  <div class="col-12 p-0 m-auto">
-                    <div class="row m-auto">
-                      <h6
-                        id="cart-item-title"
-                        class="col-12 m-auto text-center py-2 crop"
-                      >
-                        {{ product.name }}
-                      </h6>
-                      <div class="toggle-quantity col-12 m-auto ">
-                        <button
-                          :disabled="product.quantity === 1"
-                          @click="removeFromCart(product.id)"
-                        >
-                          &minus;
-                        </button>
-                        <p>{{ product.quantity }}</p>
-                        <button
-                          :disabled="product.quantity === product.stock"
-                          @click="addToCart(product.id)"
-                        >
-                          &plus;
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4 p-0">
-                  <div class="col-12 m-auto p-0">
-                    <div class="row m-auto">
-                      <div class="remove-from-chart col-12 m-auto text-right">
-                        <span
-                          class="close text-right"
-                          @click="deleteFromCart(product.id)"
-                        >&times;
-                        </span>
-                      </div>
-
-                      <div class="cost col-12 m-auto ">
-                        <p
-                          id="cart-item-price"
-                          class="cart-item-price text-right py-2 card-text"
-                        >
-                          {{ product.quantity* product.price | currency }}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr>
+          <section v-if="cartForm === false && success === false">
+            <div class="text-center">
+              <font v-if="!cartSize">
+                {{ $t('cart.emptyCart') }}
+              </font>
             </div>
 
             <div>
-              <hr
-                v-if="!cartSize"
-                class="mt-5"
+              <h3 v-if="cartSize">
+                {{ $t('cart.heading') }}
+              </h3>
+              <div
+                v-for="product in cart"
+                :key="product.id"
+                class="cart-item"
               >
-              <div class="row">
-                <div class="col-4">
-                  <small class="col-12">{{ $t('cart.total') }}:</small>
-                  <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
+                <div class="row my-auto">
+                  <img
+                    style="border-radius: 50%;"
+                    :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                    alt=""
+                    class="col-2 m-auto"
+                  >
+                  <div class="col-6 p-0">
+                    <div class="col-12 p-0 m-auto">
+                      <div class="row m-auto">
+                        <h6
+                          id="cart-item-title"
+                          class="col-12 m-auto text-center py-2 crop"
+                        >
+                          {{ product.name }}
+                        </h6>
+                        <div class="toggle-quantity col-12 m-auto ">
+                          <button
+                            :disabled="product.quantity === 1"
+                            @click="removeFromCart(product.id)"
+                          >
+                            &minus;
+                          </button>
+                          <p>{{ product.quantity }}</p>
+                          <button
+                            :disabled="product.quantity === product.stock"
+                            @click="addToCart(product.id)"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 p-0">
+                    <div class="col-12 m-auto p-0">
+                      <div class="row m-auto">
+                        <div class="remove-from-chart col-12 m-auto text-right">
+                          <span
+                            class="close text-right"
+                            @click="deleteFromCart(product.id)"
+                          >&times;
+                          </span>
+                        </div>
+
+                        <div class="cost col-12 m-auto ">
+                          <p
+                            id="cart-item-price"
+                            class="cart-item-price text-right py-2 card-text"
+                          >
+                            {{ product.quantity* product.price | currency }}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-8 mx-auto text-right">
+                <hr>
+              </div>
+
+              <div>
+                <hr
+                  v-if="!cartSize"
+                  class="mt-5"
+                >
+                <div class="row">
+                  <div class="col-4">
+                    <small class="col-12">{{ $t('cart.total') }}:</small>
+                    <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
+                  </div>
+                  <div class="col-8 mx-auto text-right">
+                    <b-button
+                      :disabled="!cartSize"
+                      :to="localePath({name: 'pasta-fresca-cart'},$i18n.locale)"
+                      class="order d-none d-lg-block"
+                    >
+                      {{ $t('cart.order') }}
+                    </b-button>
+                    <b-button
+                      :disabled="!cartSize"
+                      class="order d-block d-lg-none"
+                      @click="showCartForm()"
+                    >
+                      {{ $t('cart.order') }}
+                    </b-button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="seeAll mt-5 mx-auto text-center">
+                <button
+                  :disabled="!cartSize"
+                  @click="emptycart()"
+                >
+                  {{ $t('cart.clear') }}
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section v-if="cartForm === true && success === false">
+            <div class="form-total text-center">
+              <small class="col-12 p-0 small-sum">{{ $t('cart.total') }}:</small>
+              <strong class="col-12 p-0 cart-total">{{ cartTotalAmount | currency }}</strong>
+              <small class="col-12 p-0 small-value">{{ $t('cart.currencyValue') }}</small>
+            </div>
+            <hr>
+
+            <div class=" cart-form">
+              <form>
+                <div class="row">
+                  <div class="col-6 pr-0">
+                    <label for="name">{{ $t('form.name') }}
+                      <input
+                        v-model="name"
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        placeholder="..."
+                      >
+                    </label>
+                  </div>
+                  <div class="col-6">
+                    <label for="phone">{{ $t('form.phone') }}
+                      <input
+                        v-model.number="phone"
+                        class="form-control"
+                        type="text"
+                        name="phone"
+                        placeholder="+380..."
+                      > </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6 pr-0">
+                    <label for="city">{{ $t('form.city') }}
+                      <input
+                        v-model="city"
+                        class="form-control"
+                        type="text"
+                        name="city"
+                        placeholder="..."
+                      ></label>
+                  </div>
+                  <div class="col-6">
+                    <label for="street">{{ $t('form.street') }}
+                      <input
+                        v-model="street"
+                        class="form-control"
+                        type="text"
+                        name="streeet"
+                        placeholder="..."
+                      ></label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-4 pr-0">
+                    <label for="house">{{ $t('form.house') }}
+                      <input
+                        v-model="house"
+                        class="form-control"
+                        type="text"
+                        name="house"
+                        placeholder="..."
+                      > </label>
+                  </div>
+                  <div class="col-4 pr-0">
+                    <label for="code">{{ $t('form.code') }} <input
+                      v-model="code"
+                      class="form-control"
+                      type="text"
+                      name="code"
+                      placeholder="..."
+                    > </label>
+                  </div>
+                  <div class="col-4">
+                    <label for="appartment">{{ $t('form.apartment') }} <input
+                      v-model="apartment"
+                      class="form-control"
+                      type="text"
+                      name="appartment"
+                      placeholder="..."
+                    > </label>
+                  </div>
+                </div>
+
+                <label for="comment">{{ $t('form.comment') }}</label>
+                <textarea
+                  id="comment"
+                  v-model="comment"
+                  class="form-control"
+                  name="comment"
+                />
+                <div class="send-order text-center">
                   <b-button
-                    :to="localePath({name: 'pasta-fresca-cart'},$i18n.locale)"
+                    :disabled="!cartSize"
                     class="order"
+                    @click.prevent="sendOrder"
                   >
                     {{ $t('cart.order') }}
                   </b-button>
                 </div>
-              </div>
+              </form>
             </div>
+          </section>
 
-            <div class="seeAll mt-5 mx-auto text-center">
-              <button @click="emptycart()">
-                {{ $t('cart.clear') }}
-              </button>
+          <div v-if="success === true" class="success">
+            <div class="text-center m-auto">
+              <div class="animation-ctn">
+                <div class="icon icon--order-success svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="154px" height="154px">
+                    <g fill="none" stroke="none" stroke-width="0">
+                      <polyline
+                        class="st0"
+                        stroke="#0A0A0A"
+                        stroke-width="12"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        points="43.5,77.8 63.7,97.9 112.2,49.4 "
+                        style="stroke-dasharray:100px, 100px; stroke-dashoffset: 200px;"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <h5>{{ $t('toast.title') }}</h5>
+              <p>{{ $t('toast.info') }}</p>
+              <b-button class="backToHome" :to="localePath({name: 'pasta-fresca'},$i18n.locale)" @click="success = false">
+                {{ $t('toast.btn') }}
+              </b-button>
             </div>
           </div>
         </div>
@@ -500,8 +725,10 @@
 <script>
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
+import { en, uk, ru } from 'vuejs-datepicker/dist/locale'
 import clickOutside from '@/directives/click-outside'
 import handleScroll from '@/directives/handle-scroll'
+// require('@/assets/css/TheHeader.css')
 
 let today = new Date()
 const dd = String(today.getDate()).padStart(2, '0')
@@ -541,6 +768,7 @@ export default {
   data () {
     return {
       success: false,
+      cartForm: false,
       userDropdownOpen: false,
       mobileNavOpen: false,
       cartOpen: false,
@@ -553,7 +781,17 @@ export default {
       name: null,
       time: null,
       noOfPeople: null,
-      disabledDates: state.disabledDates
+      city: null,
+      street: null,
+      house: null,
+      code: null,
+      apartment: null,
+      comment: null,
+      disabledDates: state.disabledDates,
+      format: 'd MMMM yyyy',
+      en,
+      uk,
+      ru
 
     }
   },
@@ -622,6 +860,10 @@ export default {
       })
     },
 
+    showCartForm () {
+      this.cartForm = true
+    },
+
     closeUserDropdown () {
       this.userDropdownOpen = false
     },
@@ -638,10 +880,16 @@ export default {
 
     closecart () {
       this.cartOpen = false
+      this.cartForm = false
+      this.success = false
     },
+
     hideCart () {
       this.cartOpen = false
+      this.cartForm = false
+      this.success = false
     },
+
     onScroll () {
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop
@@ -655,535 +903,75 @@ export default {
       this.lastScrollPosition = currentScrollPosition
     },
 
+    sendOrder () {
+      const orderedProducts = JSON.stringify(this.cart)
+
+      axios
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
+      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
+      this.$store.commit('emptyCart')
+      this.success = true
+      if (process.client) {
+        document.body.scrollTop = document.documentElement.scrollTop = 0
+      }
+      this.$bvToast.toast(`${this.$t('toast.info')}`, {
+        title: `${this.$t('toast.title')}`,
+        autoHideDelay: 10000,
+        variant: 'success',
+        toaster: 'b-toaster-top-center'
+      })
+      const self = this
+      setTimeout(function () {
+        self.cartForm = self.success = false
+      }, 10000)
+    },
+
     sendMessage () {
       axios
         .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= Бронювання %0AІм'я: ${this.name}, %0AНомер телефону: ${this.phone}, %0AДата: ${this.date}, %0AЧас прибуття: ${this.time}, %0A№ людей: ${this.noOfPeople}`)
       this.name = this.email = this.phone = this.time = this.noOfPeople = null
       this.date = today
       this.success = true
+      this.$bvToast.toast(`${this.$t('toast.info')}`, {
+        title: `${this.$t('toast.title')}`,
+        autoHideDelay: 10000,
+        variant: 'success',
+        toaster: 'b-toaster-top-center'
+      })
     }
   }
 }
 </script>
 
-<style lang="css">
-.modal-content {
-  border-radius: 0;
-}
-
-.vdp-datepicker__calendar {
-  margin: auto auto 20px auto;
-  border: 0 !important;
-}
-
-.vdp-datepicker__calendar .cell.selected:hover,
-.vdp-datepicker__calendar .cell.day:hover {
-  background: #000000 !important;
-  color: white;
-  border: 2px solid black !important;
-}
-
-.vdp-datepicker__calendar .cell.blank:hover,
-.vdp-datepicker__calendar .cell.disabled:hover {
-  background: transparent !important;
-  border: 0 !important;
-}
-
-.vdp-datepicker__calendar .cell.selected {
-  background: #000000 !important;
-  color: white;
-}
-</style>
-
 <style lang="scss" scoped>
-.header.header--hidden {
-  box-shadow: none;
-  transform: translate3d(0, -100%, 0);
-}
+@import "~assets/css/TheHeader.css";
+@import "~assets/scss/TheHeader.scss";
 
-select {
-  text-align: center;
-  text-align-last: center;
-  /* webkit*/
-}
-option {
-  text-align: left;
-  /* reset to left*/
-}
-
-select {
-  background: transparent;
-  border: 2px solid #000000;
-  box-sizing: border-box;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #000000;
-  padding: 14px 48px;
-
-  &#time {
-    padding: 14px 10px;
-    margin: 10px auto;
-  }
-  &#number-of-people {
-    padding: 14px 10px;
-    margin: 10px auto;
-  }
-}
-
-select {
-  -webkit-appearance: none;
-  -o-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-image: url("~assets/img/select.png");
-  background-position: 72% center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  &.active,
-  &:focus {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
-  }
-}
-select option {
-  background-color: $lightColor;
-  color: $darkColor;
-  text-align: center;
-  white-space: pre-line;
-  font-weight: 400;
-}
-
-input {
-  background: transparent;
-  border: 2px solid #000000;
-  box-sizing: border-box;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #000000;
-  padding: 14px 20px;
-  margin: 10px auto;
-}
-
-.order {
-  background: #000000;
-  border: 2px solid #000000;
-  box-sizing: border-box;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #ffffff;
-  padding: 14px 48px;
-}
-
-.seeAll button {
-  background: transparent;
-  border: 2px solid #000000;
-  box-sizing: border-box;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #000000;
-  padding: 14px 48px;
-}
-
-.close-hamburger,
-.close-navbar-hamburger {
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-.cart-body {
-  h3 {
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-
-    color: $darkColor;
-  }
-}
-
-.reservation-body {
-  h5 {
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-
-    letter-spacing: 0.05em;
-
-    color: $darkColor;
-  }
-}
-
-.toggle-quantity {
-  box-sizing: border-box;
-  width: 100%;
-
+.navbar-nav {
   display: flex;
-  justify-content: space-evenly;
-
-  button {
-    border: 0;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
-    cursor: pointer;
-    margin: auto;
-    color: $darkColor;
-    text-decoration: none;
-  }
-
-  p,
-  button {
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-
-    color: $darkColor;
-
-    margin: auto 2px;
-    text-decoration: none;
-  }
-
-  p {
-    border: 2px solid #000000;
-    box-sizing: border-box;
-    padding: 0 5px;
-  }
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.remove-from-chart {
-  span {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
-    cursor: pointer;
-    margin: auto;
-    color: $darkColor;
-    text-decoration: none;
-  }
+.nav-item {
+  height: auto;
+  opacity: 0.8;
 }
 
-header {
-  background-size: cover;
-  background-color: $darkColor;
-  width: 100vw;
-  min-height: 100px;
-  height: 100%;
-  max-height: 100px;
-  right: 0;
-  left: 0px;
-  top: 0px;
-  position: fixed;
-  padding: 20px 50px;
-  box-shadow: none;
-  transform: translate3d(0, 0, 0);
-  transition: 0.1s all ease-out;
-  z-index: 10;
-}
-
-.nav-link {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 35px;
-
-  color: #000000;
-
-  margin-right: 50px;
-}
-
-.reservation-btn {
-  border: 2px solid $lightColor;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 2px solid;
-  outline-color: rgba(255, 255, 255, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  @include cubicBezier;
-
-  border-radius: 0;
-  box-sizing: border-box;
-
-  background-color: transparent;
-
-  padding: 14px 50px;
-
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: $lightColor;
-
-  margin: auto 60px auto 0;
-}
-
-.theHeader-nav-brand img {
-  left: 50%;
-  position: absolute;
-
-  transform: translateX(-50%);
-
-  min-height: 60px;
-  max-height: 60px;
-  height: 100%;
-}
-
-.theHead-nav-toggle {
-  margin: auto 0;
-  outline: 0;
-  text-decoration: none;
-
-  &.cart {
-    display: inline-block;
-    margin: auto 0;
-    margin-top: 10px;
-  }
-}
-
-#show-total {
-  span {
-    padding: 0px 5px;
-    background-color: $goldColor;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    position: relative;
-
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration: none !important;
-
-    color: $darkColor;
-    text-align: center;
-  }
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
+.nav-item:after {
   display: block;
-
-  transition: all 0.3s ease-in-out;
-  transform: translateX(-100%);
-
-  padding: 30px 50px;
-  background: $lightColor;
-
-  height: 100vh;
-  width: 430px;
-  left: 0;
-  top: 0px;
+  content: "";
+  border-bottom: solid 2px $darkColor;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
 }
 
-.navbar-right {
-  position: fixed;
-  top: 0;
-  right: 0;
-
-  transition: all 0.3s ease-in-out;
-  transform: translateX(100%);
-
-  padding: 30px 50px;
-  background: $lightColor;
-
-  overflow-y: scroll;
-  scrollbar-width: none;
-  height: 100vh;
-  width: 430px;
-  right: 0;
-  top: 0px;
-  bottom: 0;
-
-  ::-webkit-scrollbar-track {
-    box-shadow: none;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
-    background-color: $backgroudColor;
-  }
-
-  ::-webkit-scrollbar {
-    border-radius: 50px;
-    width: 0;
-    background-color: $backgroudColor;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    box-shadow: none;
-    background-color: rgb(149, 150, 150);
-  }
+.nav-item:hover:after {
+  transform: scaleX(1);
 }
 
-.btn-hamburger {
-  margin: auto 0;
-  cursor: pointer;
-
-  img {
-    height: 40px;
-    width: 40px;
-  }
-}
-
-.navbar-right-open {
-  transform: translateX(0);
-}
-
-.navbar-open {
-  transform: translateX(0);
-}
-
-.close-hamburger {
-  display: block;
-}
-
-.close-navbar-hamburger {
-  display: block;
-}
-
-@include mediaSm {
-  header {
-    background-size: cover;
-    background-color: $darkColor;
-    width: 100vw;
-    min-height: 60px;
-    height: 60%;
-    max-height: 100px;
-    right: 0;
-    left: 0px;
-    top: 0px;
-    position: fixed;
-    padding: 20px 40px;
-    transform: translate3d(0, 0, 0);
-    transition: 0.1s all ease-out;
-    z-index: 2;
-  }
-
-  .btn-hamburger {
-    margin: auto 0;
-    cursor: pointer;
-
-    img {
-      height: 30px;
-      width: 30px;
-    }
-  }
-
-  .theHead-nav-toggle {
-    &.cart {
-      img {
-        height: 30px;
-        width: 30px;
-      }
-    }
-  }
-
-  #show-total {
-    span {
-      padding: 0.5px 5px;
-      background-color: $goldColor;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      position: relative;
-
-      font-size: 12px;
-      line-height: 15px;
-
-      color: $darkColor;
-      text-align: center;
-    }
-  }
-
-  .nav-link {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    display: block;
-
-    transition: all 0.3s linear;
-    transform: translateX(-100%);
-
-    padding: 15px 20px;
-    background: $lightColor;
-
-    height: 100vh;
-    width: 430px;
-    left: 0;
-    top: 0px;
-    bottom: 0;
-  }
-
-  .theHeader-nav-brand img {
-    min-height: 50px;
-    max-height: 50px;
-  }
-
-  .navbar-right {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-
-    transition: all 0.3s ease-in-out;
-    transform: translateX(100%);
-
-    padding: 15px 15px 40px 15px;
-    background: $lightColor;
-
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100vh;
-
-    right: 0;
-    width: 100vw;
-    bottom: 0;
-  }
-
-  .navbar-right-open {
-    transform: translateX(0);
-  }
-
-  .navbar-open {
-    transform: translateX(0);
-  }
+.nav-item.fromleft:after {
+  transform-origin: 0 50% !important;
 }
 </style>

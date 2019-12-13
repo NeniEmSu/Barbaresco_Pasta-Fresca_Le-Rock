@@ -364,7 +364,7 @@
               >
                 <div class="row my-auto">
                   <img
-                    style="border-radius: 50%;   "
+                    style="border-radius: 50%;"
                     :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                     alt=""
                     class="col-2 m-auto"
@@ -902,10 +902,16 @@ export default {
 
     closecart () {
       this.cartOpen = false
+      this.cartForm = false
+      this.success = false
     },
+
     hideCart () {
       this.cartOpen = false
+      this.cartForm = false
+      this.success = false
     },
+
     onScroll () {
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop

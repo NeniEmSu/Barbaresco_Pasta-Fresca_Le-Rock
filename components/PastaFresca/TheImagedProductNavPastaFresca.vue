@@ -198,98 +198,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#imageed-Products-Navigation {
-  background-color: $darkColor;
-}
-
-.active {
-  mix-blend-mode: normal;
-}
-
-section {
-  border-bottom: 1px solid $darkColor;
-  opacity: 1;
-  overflow: hidden;
-}
+@import "~assets/scss/TheImagedProductNav.scss";
 
 .column {
-  float: left;
-  box-sizing: border-box;
   width: calc(100% / 9);
-  height: 100%;
-  min-height: 150px;
-  border: 0;
-  background-color: $darkColor;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  margin: 22px auto 22px auto;
-  display: block;
-  flex-direction: column;
 
-  @include easeInOut;
-  text-decoration: none;
+  @media (max-width: 1200px) {
+    width: calc(100% / 5);
 
-  &:hover {
     .nav-text {
-      font-weight: bold;
-    }
-    .nav-image {
-      mix-blend-mode: normal;
+      color: $lightColor;
     }
   }
 
-  &.active {
-    .nav-text {
-      font-weight: bold;
-    }
-    .nav-image {
-      mix-blend-mode: normal;
-    }
+  @media (max-width: 375px) {
+    width: calc(100% / 4);
   }
-}
-
-.column .nav-image {
-  margin: auto;
-  mix-blend-mode: luminosity;
-}
-
-.nav-text {
-  margin: 10px auto auto auto;
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  text-decoration: none;
-
-  color: $lightColor;
-  margin-top: 10px;
-
-  @include easeInOut;
-}
-
-.nav-image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  min-width: 90px;
-  max-width: 90px;
-  height: 100%;
-  min-height: 90px;
-  max-height: 90px;
-
-  border-radius: 50%;
-  background-color: $darkColor;
-  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
-  margin-bottom: 10px;
-
-  @include easeInOut;
 }
 
 .navOne {
@@ -322,83 +246,5 @@ section {
 
 .navTen {
   background-image: url("~assets/img/barbarescoAlcohol.jpg");
-}
-
-@media (max-width: 995px) {
-  #imageed-Products-Navigation {
-    background-color: transparent;
-  }
-
-  section {
-    border-bottom: 1px solid $lightColor;
-
-    opacity: 1;
-    overflow: hidden;
-  }
-
-  .column {
-    background-color: transparent;
-    width: calc(100% / 5);
-    margin: auto;
-    min-height: 110px;
-    opacity: 1;
-
-    .nav-text {
-      color: $lightColor;
-    }
-
-    &:hover {
-      .nav-image {
-        mix-blend-mode: normal;
-        opacity: 1;
-        border: 2px solid $goldColor;
-        box-sizing: border-box;
-      }
-
-      .nav-text {
-        font-weight: bold;
-      }
-    }
-
-    &.active {
-      .nav-image {
-        mix-blend-mode: normal;
-        opacity: 1;
-        border: 2px solid $goldColor;
-        box-sizing: border-box;
-      }
-
-      .nav-text {
-        font-weight: bold;
-      }
-    }
-  }
-
-  .nav-text {
-    color: $darkColor;
-    font-size: 14px;
-    line-height: 16px;
-    @include easeInOut;
-  }
-  section {
-    padding: 5px;
-  }
-
-  .column .nav-image {
-    margin: auto;
-    mix-blend-mode: normal;
-    opacity: 1;
-    @include easeInOut;
-    box-sizing: border-box;
-  }
-
-  .nav-image {
-    width: 100%;
-    min-width: 60px;
-    max-width: 60px;
-    height: 100%;
-    min-height: 60px;
-    max-height: 60px;
-  }
 }
 </style>

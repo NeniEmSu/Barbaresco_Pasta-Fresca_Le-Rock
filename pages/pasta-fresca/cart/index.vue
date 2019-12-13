@@ -415,7 +415,7 @@
                 </div>
                 <div class="col-8 mx-auto text-right">
                   <b-button
-                    :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
+                    :to="localePath({name: 'pasta-fresca-cart'},$i18n.locale)"
                     class="order"
                     @click.prevent="sendOrder"
                   >

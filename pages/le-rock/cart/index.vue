@@ -8,7 +8,8 @@
       "emptyCart": "Ви ще нічого не додали до замовлення",
       "total": "Сума",
       "order": "Замовити",
-      "clear": "Очистити все"
+      "clear": "Очистити все",
+      "currencyValue": "грн"
       },
     "orderProcess": {
       "heading": "Як відбувається замовлення",
@@ -37,8 +38,14 @@
       "code": "Код",
       "apartment": "Кв./офіс",
       "comment": "Коментар до замовлення",
+      "modeOfPayment": "Бажаний спосіб оплати",
       "pay-carrier": "Оплата кур’єру готівкою",
       "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Дякуємо за замовлення",
+      "info": "Очікуйте на дзвінок нашого менеджера",
+      "btn": "Повернутися на головну"
       }
 
   },
@@ -50,7 +57,8 @@
       "emptyCart": "You haven't added anything to your order yet",
       "total": "Sum",
       "order": "Order",
-      "clear": "Clear everything"
+      "clear": "Clear everything",
+      "currencyValue": "Uah"
       },
     "orderProcess": {
       "heading": "How the order is made",
@@ -79,8 +87,14 @@
       "code": "Code",
       "apartment": "Apt./Office",
       "comment": "Order comment",
+      "modeOfPayment": "Preferred mode of payment",
       "pay-carrier": "Payment by courier in cash",
       "pay-card": "Payment on card"
+      },
+      "toast":{
+      "title": "Thank you for your order",
+      "info": "Expect a call from our manager",
+      "btn": "Back to home"
       }
 
   },
@@ -92,7 +106,8 @@
       "emptyCart": "Вы еще ничего не добавили к заказу",
       "total": "Сумма",
       "order": "Заказать",
-      "clear": "Очистить все"
+      "clear": "Очистить все",
+      "currencyValue": "грн"
       },
        "orderProcess": {
       "heading": "Как происходит заказ",
@@ -121,8 +136,14 @@
       "code": "Код",
       "apartment": "Кв./Офис",
       "comment": "Комментарий к заказу",
+      "modeOfPayment": "Предпочтительный способ оплаты",
       "pay-carrier": "Оплата курьеру наличными",
       "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Спасибо за заказ",
+      "info": "Ожидайте звонок нашего менеджера",
+      "btn": "Вернуться на главную"
       }
   }
 }
@@ -130,13 +151,16 @@
 
 <template>
   <div id="cart">
-    <div class="container">
+    <div
+      v-if="success === false"
+      class="container pt-5 pt-lg-0"
+    >
       <h1 class="text-center mb-4">
         {{ $t('orderProcess.heading') }}
       </h1>
 
       <div class="row">
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderOnline.png"
             alt="Order Online"
@@ -152,7 +176,7 @@
               {{ $t('orderProcess.desc1-b') }}</b>
           </p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderPayment.png"
             alt="Order Payment"
@@ -164,7 +188,7 @@
 
           <p>{{ $t('orderProcess.desc2a') }} <b>{{ $t('orderProcess.desc2-b1') }}</b>{{ $t('orderProcess.desc2b') }}<b>{{ $t('orderProcess.desc2-b2') }}</b> {{ $t('orderProcess.desc2c') }} </p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderPreparation.png"
             alt="Order Preparation"
@@ -177,7 +201,7 @@
 
           <p>{{ $t('orderProcess.desc3') }}</p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderDelivery.png"
             alt="Order Delivery"
@@ -196,7 +220,7 @@
       <hr>
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6">
           <form class="col-12">
             <div class="row">
               <div class="col-6">
@@ -285,7 +309,11 @@
             />
 
             <div class="row text-center mx-auto mt-2">
-              <div class="form-check text-center mx-auto">
+              <div
+                v-b-tooltip.hover
+                :title="$t('form.modeOfPayment')"
+                class="form-check text-center mx-auto"
+              >
                 <input
                   id="exampleRadios1"
                   v-model="modeOfPayment"
@@ -301,7 +329,11 @@
                   {{ $t('form.pay-carrier') }}
                 </label>
               </div>
-              <div class="form-check text-center mx-auto">
+              <div
+                v-b-tooltip.hover
+                :title="$t('form.modeOfPayment')"
+                class="form-check text-center mx-auto"
+              >
                 <input
                   id="exampleRadios2"
                   v-model="modeOfPayment"
@@ -320,7 +352,7 @@
             </div>
           </form>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6">
           <div class="text-center">
             <font
               v-if="!cartSize"
@@ -409,13 +441,15 @@
                 class="mt-5"
               >
               <div class="row mt-5">
-                <div class="col-4 text-left">
-                  <small class="col-12">{{ $t('cart.total') }}:</small> <br>
-                  <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
+                <div class="col-md-6 text-md-left">
+                  <small class="col-12 p-0 small-sum">{{ $t('cart.total') }}:</small>
+                  <strong class="col-12 p-0 cart-total">{{ cartTotalAmount | currency }}</strong>
+                  <small class="col-12 p-0 small-value">{{ $t('cart.currencyValue') }}</small>
                 </div>
-                <div class="col-8 mx-auto text-right">
+                <div class="col-md-6 mx-auto text-md-right">
                   <b-button
-                    :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
+                    :disabled="!cartSize"
+                    :to="localePath({name: 'le-rock-cart'},$i18n.locale)"
                     class="order"
                     @click.prevent="sendOrder"
                   >
@@ -428,6 +462,32 @@
         </div>
       </div>
     </div>
+    <section v-else class="success container ">
+      <div class="text-center m-auto">
+        <div class="animation-ctn">
+          <div class="icon icon--order-success svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="154px" height="154px">
+              <g fill="none" stroke="none" stroke-width="0">
+                <polyline
+                  class="st0"
+                  stroke="#0A0A0A"
+                  stroke-width="12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  points="43.5,77.8 63.7,97.9 112.2,49.4 "
+                  style="stroke-dasharray:100px, 100px; stroke-dashoffset: 200px;"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <h5>{{ $t('toast.title') }}</h5>
+        <p>{{ $t('toast.info') }}</p>
+        <b-button class="backToHome" :to="localePath({name: 'le-rock'},$i18n.locale)" @click="success = false">
+          {{ $t('toast.btn') }}
+        </b-button>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -439,9 +499,9 @@ export default {
   layout: 'le-rock',
   nuxtI18n: {
     paths: {
-      en: '/pasta-fresca/cart',
-      uk: '/pasta-fresca/koshik',
-      ru: '/pasta-fresca/korzina'
+      en: '/le-rock/cart',
+      uk: '/le-rock/koshik',
+      ru: '/le-rock/korzina'
     }
   },
   components: {
@@ -453,18 +513,20 @@ export default {
 
   data () {
     return {
+      success: false,
       currentProductsDisplayed: 1,
-      name: '',
-      phone: '',
-      city: '',
-      street: '',
-      house: '',
-      code: '',
-      apartment: '',
-      comment: '',
-      modeOfPayment: ''
+      name: null,
+      phone: null,
+      city: null,
+      street: null,
+      house: null,
+      code: null,
+      apartment: null,
+      comment: null,
+      modeOfPayment: null
     }
   },
+
   computed: {
     ...mapState([
       'cart'
@@ -517,21 +579,27 @@ export default {
       })
     },
 
-    sendOrder (append = false) {
+    sendOrder () {
       const orderedProducts = JSON.stringify(this.cart)
 
       axios
-        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text=${this.$t('form.name')}: ${this.name}, ${this.$t('form.phone')}: ${this.phone}, ${this.$t('form.city')}: ${this.city}, ${this.$t('form.street')}: ${this.street}, ${this.$t('form.house')}: ${this.house}, ${this.$t('form.code')}: ${this.code}, ${this.$t('form.apartment')}: ${this.apartment}, ${this.$t('form.comment')}: ${this.comment},   ${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, : ${this.noOfPeople}, cartTotalAmount: ${this.cartTotalAmount}, ${this.$t('cart.heading')}: ${orderedProducts}, `)
-      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
+      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = this.modeOfPayment = null
       this.$store.commit('emptyCart')
       this.success = true
-      this.$bvToast.toast('Your Order has been recieved!', {
-        title: 'Увага!',
-        autoHideDelay: 500,
+      if (process.client) {
+        document.body.scrollTop = document.documentElement.scrollTop = 0
+      }
+      this.$bvToast.toast(`${this.$t('toast.info')}`, {
+        title: `${this.$t('toast.title')}`,
+        autoHideDelay: 10000,
         variant: 'success',
-        toaster: 'b-toaster-top-center',
-        appendToast: append
+        toaster: 'b-toaster-top-center'
       })
+      const self = this
+      setTimeout(function () {
+        self.success = false
+      }, 10000)
     },
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView
@@ -562,131 +630,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#cart {
-  margin-bottom: 110px;
-}
-
-h3 {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-
-  color: $darkColor;
-  span.number {
-    font-size: 50px;
-    line-height: 59px;
-  }
-
-  span.text {
-    font-size: 18px;
-    line-height: 21px;
-  }
-}
-
-.order {
-  background: $darkColor;
-  border: 1px solid $darkColor;
-  box-sizing: border-box;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #ffffff;
-  padding: 14px 48px;
-}
-
-.cart-items {
-  max-height: 285px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 0 10px;
-}
-
-.toggle-quantity {
-  box-sizing: border-box;
-  width: 100%;
-
-  display: flex;
-  justify-content: space-evenly;
-
-  button {
-    border: 0;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
-    cursor: pointer;
-    margin: auto;
-    color: $darkColor;
-    text-decoration: none;
-  }
-
-  p,
-  button {
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-
-    color: $darkColor;
-
-    margin: auto 2px;
-    text-decoration: none;
-  }
-
-  p {
-    border: 1px solid $darkColor;
-    box-sizing: border-box;
-    padding: 0 5px;
-  }
-}
-
-.remove-from-chart {
-  span {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
-    cursor: pointer;
-    margin: auto;
-    color: $darkColor;
-    text-decoration: none;
-  }
-}
-
-label {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: $darkColor;
-}
-
-input.form-control,
-textarea.form-control {
-  background: transparent;
-  border: 2px solid $darkColor;
-  box-sizing: border-box;
-  border-radius: 0;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: $darkColor;
-  width: 100%;
-
-  margin: 5px auto 10px auto;
-}
-
-textarea.form-control {
-  height: 100px;
-}
+@import "~/assets/scss/Cart.scss";
 </style>

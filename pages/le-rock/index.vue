@@ -99,7 +99,6 @@ import TheGarnishes from '~/components/LeRock/LeRockProducts/TheGarnishes'
 import TheDesert from '~/components/LeRock/LeRockProducts/TheDeserts'
 import TheSalad from '~/components/LeRock/LeRockProducts/TheSalad'
 import TheFirstCourse from '~/components/LeRock/LeRockProducts/TheFirstCourse'
-// import TheHits from '~/components/Barbaresco/BarbarescoProducts/TheHits'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/LeRock/LeRockProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
@@ -195,7 +194,11 @@ export default {
     bottom: 0;
     left: 0;
 
-    background-image: linear-gradient(to bottom right, $blackColor, $blackColor);
+    background-image: linear-gradient(
+      to bottom right,
+      $blackColor,
+      $blackColor
+    );
     opacity: 0.4;
   }
 }
