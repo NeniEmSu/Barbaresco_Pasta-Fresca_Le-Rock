@@ -1,15 +1,15 @@
 <i18n>
 {
   "uk": {
-    "location": "Вул. О.Кульчицькоі 2а"
+    "location": "Вул. Олени Кульчицької, 2, Тернопіль, Тернопільська область, 46002"
 
   },
   "en": {
-   "location": "Ternopil City, 2a O.Kulchitskoi Street"
+   "location": "Oleny Kul'chyts'koi St, 2, Ternopil, Ternopil Oblast, 46002"
 
   },
   "ru": {
-    "location": "г.. Тернополь, улица Князя О.Кульчицькоі, 2a"
+    "location": "г.. Тернополь, улица Олени Кульчицької, 2, Тернопільська область, 46002"
   }
 }
 </i18n>

@@ -1,15 +1,14 @@
 <i18n>
 {
   "uk": {
-    "location": "Вул. О.Кульчицькоі 2а"
-
+    "location": "м.Тернопіль, вулиця Олени Кульчицькоі, 2"
   },
   "en": {
-   "location": "Ternopil City, 2a O.Kulchitskoi Street"
+   "location": "Ternopil City, Oleny Kul'chyts'koi St, 2"
 
   },
   "ru": {
-    "location": "г.. Тернополь, улица Князя О.Кульчицькоі, 2a"
+    "location": "г.. Тернополь, улица Князя О.Кульчицькоі, 2"
   }
 }
 </i18n>

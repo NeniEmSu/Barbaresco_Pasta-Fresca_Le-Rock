@@ -90,7 +90,7 @@
 
 import TheImageNavigation from '~/components/LeRock/TheImageNavigationLeRock'
 import TheImagedProductNav from '~/components/LeRock/TheImagedProductNavLeRock'
-import TheMapComponent from '~/components/Barbaresco/TheMapComponent'
+import TheMapComponent from '~/components/LeRock/TheMapComponentLeRock'
 import TheRockDogs from '~/components/LeRock/LeRockProducts/TheRockDogs'
 import TheAppetizers from '~/components/LeRock/LeRockProducts/TheAppetizers'
 import TheTheBBQMeat from '~/components/LeRock/LeRockProducts/TheBBQMeat'
