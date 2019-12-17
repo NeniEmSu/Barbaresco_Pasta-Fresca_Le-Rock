@@ -1,6 +1,6 @@
 .image-container {
     // max-height: calc(100% - 120px);
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 118px);
     height: 100%;
 
     object-fit: cover;
@@ -90,5 +90,9 @@ p {
     p {
         font-size: 18px;
         line-height: 140.4%;
+    }
+
+    .content-text {
+        margin: 10px auto 20px auto;
     }
 }
