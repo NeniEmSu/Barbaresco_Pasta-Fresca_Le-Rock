@@ -10,6 +10,11 @@
 
     border: 0;
 
+    .btn.btn-link {
+        outline: none;
+        border: none;
+    }
+
     ul.contacts {
         list-style: none;
         overflow: hidden;

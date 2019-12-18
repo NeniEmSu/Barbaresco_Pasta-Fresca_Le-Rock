@@ -15,17 +15,17 @@ export default {
       amp: true
     },
     meta: [{
-      charset: 'utf-8'
-    },
-    {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1'
-    },
-    {
-      hid: 'description',
-      name: 'description',
-      content: 'My awe-inspiring Nuxt.js project'
-    }
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'My awe-inspiring Nuxt.js project'
+      }
     ],
     link: [{
       rel: 'icon',
@@ -118,20 +118,20 @@ export default {
       seo: true,
       baseUrl: 'https://barbaresco.netlify.com',
       locales: [{
-        iso: 'uk-Uk',
-        code: 'uk',
-        name: 'Українська'
-      },
-      {
-        iso: 'en-US',
-        code: 'en',
-        name: 'English'
-      },
-      {
-        iso: 'ru-RU',
-        code: 'ru',
-        name: 'Русский'
-      }
+          iso: 'uk-Uk',
+          code: 'uk',
+          name: 'Українська'
+        },
+        {
+          iso: 'en-US',
+          code: 'en',
+          name: 'English'
+        },
+        {
+          iso: 'ru-RU',
+          code: 'ru',
+          name: 'Русский'
+        }
       ]
     }],
     [
@@ -231,21 +231,21 @@ export default {
 
   polyfill: {
     features: [{
-      require: 'url-polyfill'
-    },
+        require: 'url-polyfill'
+      },
 
-    {
-      require: 'intersection-observer',
-      detect: () => 'IntersectionObserver' in window
-    },
+      {
+        require: 'intersection-observer',
+        detect: () => 'IntersectionObserver' in window
+      },
 
-    {
-      require: 'smoothscroll-polyfill',
+      {
+        require: 'smoothscroll-polyfill',
 
-      detect: () => 'scrollBehavior' in document.documentElement.style && window.__forceSmoothScrollPolyfill__ !== true,
+        detect: () => 'scrollBehavior' in document.documentElement.style && window.__forceSmoothScrollPolyfill__ !== true,
 
-      install: smoothscroll => smoothscroll.polyfill()
-    }
+        install: smoothscroll => smoothscroll.polyfill()
+      }
     ]
   },
 
@@ -283,7 +283,7 @@ export default {
       }
     },
 
-    extend (config) {
+    extend(config) {
       config.module.rules.forEach((rule) => {
         if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
           rule.use.push({
@@ -291,11 +291,11 @@ export default {
             options: {
               svgo: {
                 plugins: [{
-                  removeViewBox: false
-                },
-                {
-                  removeDimensions: true
-                }
+                    removeViewBox: false
+                  },
+                  {
+                    removeDimensions: true
+                  }
                 ]
               }
             }
@@ -330,7 +330,7 @@ export default {
     },
 
     babel: {
-      presets ({
+      presets({
         isServer
       }, [preset, options]) {
         const r = [

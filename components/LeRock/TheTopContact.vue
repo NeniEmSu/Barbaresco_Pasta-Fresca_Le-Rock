@@ -3,8 +3,15 @@
     id="top-contact "
     class="top-contacts"
   >
-    <div class=" p-0 b-crumbs">
+    <div class=" p-0 b-crumbs d-flex">
       <b-breadcrumb :items="items" />
+      <b-button
+        variant="link"
+        class="d-flex text-white"
+        @click="$router.back()"
+      >
+        &#8592;
+      </b-button>
     </div>
 
     <div class="text-right ml-auto">

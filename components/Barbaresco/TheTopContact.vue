@@ -3,10 +3,16 @@
     id="top-contact "
     class="top-contacts"
   >
-    <div class=" p-0 b-crumbs">
+    <div class=" p-0 b-crumbs d-flex">
       <b-breadcrumb :items="items" />
+      <b-button
+        variant="link"
+        class="d-flex text-white"
+        @click="$router.back()"
+      >
+        &#8592;
+      </b-button>
     </div>
-
     <div class="text-right ml-auto">
       <ul class="text-right contacts">
         <li class="contact">
@@ -65,16 +71,21 @@ export default {
           href: this.localePath({ name: 'index' }, this.$i18n.locale)
         },
         {
-          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          text: this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2),
           active: true
         }
+        // {
+        //   text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+        //   active: true
+        // }
       ]
     }
   },
   watch: {
     $route () {
       this.items[0].text = this.$t('links.home')
-      this.items[1].text = this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1)
+      this.items[1].text = this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2)
+      // this.items[1].text = this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1)
     }
   }
 }

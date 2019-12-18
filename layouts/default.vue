@@ -192,6 +192,13 @@ button,
 
   box-sizing: border-box;
   border-radius: 0;
+  outline: 0;
+}
+
+button:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 ::-webkit-scrollbar-track {

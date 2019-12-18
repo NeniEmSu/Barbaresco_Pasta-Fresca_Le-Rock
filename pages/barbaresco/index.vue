@@ -215,6 +215,13 @@ export default {
       this.$refs.dropdown.hide(true)
     }
   },
+  nuxtI18n: {
+    paths: {
+      en: '/barbaresco-menu',
+      uk: '/barbaresko-menyu',
+      ru: '/barbaresco-menyu'
+    }
+  },
   head () {
     return {
       title: ('Barbaresco - ' + this.$t('title')).slice(

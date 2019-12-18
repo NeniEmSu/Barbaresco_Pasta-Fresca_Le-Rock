@@ -106,6 +106,13 @@ import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 export default {
   name: 'LeRock',
   layout: 'le-rock',
+  nuxtI18n: {
+    paths: {
+      en: '/le-rock-menu',
+      uk: '/le-rok-menyu',
+      ru: "/l'-rok-menyu"
+    }
+  },
   components: {
     TheImageNavigation,
     TheImagedProductNav,

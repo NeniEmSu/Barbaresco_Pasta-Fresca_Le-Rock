@@ -106,6 +106,13 @@ import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 export default {
   name: 'PastaFresca',
   layout: 'pasta-fresca',
+  nuxtI18n: {
+    paths: {
+      en: '/pasta-fresca-menu',
+      uk: '/Pasta-freska-menyu',
+      ru: '/Pasta-freska-menyu'
+    }
+  },
   components: {
     TheImageNavigation,
     TheImagedProductNav,
