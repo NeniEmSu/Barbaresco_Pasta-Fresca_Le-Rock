@@ -53,7 +53,7 @@
     <b-img-lazy
       id="feedBack"
       v-b-modal.modal-center
-      class="feedBack "
+      class="feedBack pulse"
       src="~/assets/img/feedBack.png"
       alt="feedback Icon"
     />
@@ -329,6 +329,41 @@ input {
   img.feedBack {
     width: 100px;
     height: 100px;
+  }
+}
+
+.pulse {
+  display: block;
+  box-shadow: 0 0 0 rgba(224, 166, 113, 0.4);
+  animation: pulse 2000ms infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
+    box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
+    box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
+    box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
   }
 }
 </style>

@@ -4,8 +4,8 @@ export default {
   mode: 'universal',
 
   server: {
-    port: 3100, // default: 3000
-    host: '0.0.0.0' // default: localhost
+    port: 3100,
+    host: '0.0.0.0'
   },
 
   head: {
@@ -110,6 +110,8 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/netlify-files',
     '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
     'nuxt-polyfill',
     ['nuxt-gmaps', {
       key: 'AIzaSyDKJciVrAvST8C9SJzwkjmHFnoPM8FwooY'
@@ -261,6 +263,10 @@ export default {
 
   netlifyFiles: {
     existingFilesDirectory: './netlify/'
+  },
+
+  robots: {
+    Sitemap: '/sitemap.xml'
   },
 
   purgeCSS: {},
