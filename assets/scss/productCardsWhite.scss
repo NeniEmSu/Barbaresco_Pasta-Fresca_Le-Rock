@@ -37,6 +37,31 @@
   }
 }
 
+.quantity {
+  float: right;
+  margin-right: 15px;
+}
+
+.btn {
+  font-family: $robotoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: $lightColor;
+
+  padding: 5px 8px;
+
+  border: 2px solid $lightColor;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $darkColor;
+    background: $lightColor;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .card {
     width: calc(100% / 4);
@@ -140,24 +165,4 @@
     width: calc(100% / 2);
 
   }
-}
-
-.quantity {
-  float: right;
-  margin-right: 15px;
-}
-
-.btn {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: $lightColor;
-
-  padding: 5px 8px;
-
-  border: 2px solid $lightColor;
-  box-sizing: border-box;
 }

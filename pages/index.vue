@@ -632,6 +632,7 @@ export default {
   }
 
   &.instagram:hover {
+    border: 0;
     background-position: right center;
     background-image: -moz-linear-gradient(
       69.74deg,
@@ -668,6 +669,7 @@ export default {
   }
 
   &.facebook:hover {
+    border: 0;
     background-color: #395795;
   }
 }

@@ -2,12 +2,10 @@ import purgecss from '@fullhuman/postcss-purgecss'
 
 export default {
   mode: 'universal',
-
   server: {
     port: 3100,
     host: '0.0.0.0'
   },
-
   head: {
     title: 'Barbaresco',
     htmlAttrs: {

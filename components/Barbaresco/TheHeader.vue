@@ -265,7 +265,7 @@
             </b-nav-item>
             <b-nav-item
               tag="button"
-              class="fromleft"
+              class="fromleft d-none"
               @click.stop="reservationOpen = !reservationOpen"
             >
               {{ $t('links.reserveAPlace') }}
@@ -531,22 +531,26 @@
                       > </label>
                   </div>
                   <div class="col-4 pr-0">
-                    <label for="code">{{ $t('form.code') }} <input
+                    <label for="code">{{ $t('form.code') }}
+                      <input
                         v-model="code"
                         class="form-control"
                         type="text"
                         name="code"
                         placeholder="..."
-                      > </label>
+                      >
+                    </label>
                   </div>
                   <div class="col-4">
-                    <label for="appartment">{{ $t('form.apartment') }} <input
+                    <label for="appartment">{{ $t('form.apartment') }}
+                      <input
                         v-model="apartment"
                         class="form-control"
                         type="text"
                         name="appartment"
                         placeholder="..."
-                      > </label>
+                      >
+                    </label>
                   </div>
                 </div>
 

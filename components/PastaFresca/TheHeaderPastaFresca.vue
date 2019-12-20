@@ -264,7 +264,7 @@
               {{ $t('links.delivery') }}
             </b-nav-item>
             <b-nav-item
-              class="fromleft"
+              class="fromleft d-none"
               tag="button"
               @click.stop="reservationOpen = !reservationOpen"
             >
@@ -476,7 +476,8 @@
               <form>
                 <div class="row">
                   <div class="col-6 pr-0">
-                    <label for="name">{{ $t('form.name') }}
+                    <label for="name">
+                      {{ $t('form.name') }}
                       <input
                         v-model="name"
                         class="form-control"
@@ -487,7 +488,8 @@
                     </label>
                   </div>
                   <div class="col-6">
-                    <label for="phone">{{ $t('form.phone') }}
+                    <label for="phone">
+                      {{ $t('form.phone') }}
                       <input
                         v-model.number="phone"
                         class="form-control"
@@ -500,7 +502,8 @@
 
                 <div class="row">
                   <div class="col-6 pr-0">
-                    <label for="city">{{ $t('form.city') }}
+                    <label for="city">
+                      {{ $t('form.city') }}
                       <input
                         v-model="city"
                         class="form-control"
@@ -510,7 +513,8 @@
                       ></label>
                   </div>
                   <div class="col-6">
-                    <label for="street">{{ $t('form.street') }}
+                    <label for="street">
+                      {{ $t('form.street') }}
                       <input
                         v-model="street"
                         class="form-control"
@@ -523,7 +527,8 @@
 
                 <div class="row">
                   <div class="col-4 pr-0">
-                    <label for="house">{{ $t('form.house') }}
+                    <label for="house">
+                      {{ $t('form.house') }}
                       <input
                         v-model="house"
                         class="form-control"
@@ -533,7 +538,9 @@
                       > </label>
                   </div>
                   <div class="col-4 pr-0">
-                    <label for="code">{{ $t('form.code') }} <input
+                    <label for="code">
+                      {{ $t('form.code') }}
+                      <input
                         v-model="code"
                         class="form-control"
                         type="text"
@@ -542,7 +549,9 @@
                       > </label>
                   </div>
                   <div class="col-4">
-                    <label for="appartment">{{ $t('form.apartment') }} <input
+                    <label for="appartment">
+                      {{ $t('form.apartment') }}
+                      <input
                         v-model="apartment"
                         class="form-control"
                         type="text"

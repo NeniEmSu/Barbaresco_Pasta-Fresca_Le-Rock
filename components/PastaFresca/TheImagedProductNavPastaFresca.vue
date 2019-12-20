@@ -47,7 +47,7 @@
         :class="{ active: currentProductsDisplayed === 6}"
         @click="Show6"
       >
-        <div class="nav-image navSix" />
+        <div class="nav-image  spin circle navSix" />
         <div class="text-center nav-text">
           {{ $t('salads') }}
         </div>
@@ -58,7 +58,7 @@
         :class="{ active: currentProductsDisplayed === 1}"
         @click="Show1"
       >
-        <div class="nav-image navOne text-center" />
+        <div class="nav-image  spin circle navOne text-center" />
         <div class="text-center nav-text">
           {{ $t('pasta') }}
         </div>
@@ -69,7 +69,7 @@
         :class="{ active: currentProductsDisplayed === 8}"
         @click="Show8"
       >
-        <div class="nav-image navEight" />
+        <div class="nav-image  spin circle navEight" />
         <div class="text-center nav-text">
           {{ $t('garnishes') }}
         </div>
@@ -80,7 +80,7 @@
         :class="{ active: currentProductsDisplayed === 2}"
         @click="Show2"
       >
-        <div class="nav-image navTwo" />
+        <div class="nav-image  spin circle navTwo" />
         <div class="text-center nav-text">
           {{ $t('appetizer') }}
         </div>
@@ -91,7 +91,7 @@
         :class="{ active: currentProductsDisplayed === 7}"
         @click.prevent="Show7"
       >
-        <div class="nav-image navSeven" />
+        <div class="nav-image  spin circle navSeven" />
         <div class="text-center nav-text">
           {{ $t('firstCourse') }}
         </div>
@@ -102,7 +102,7 @@
         :class="{ active: currentProductsDisplayed === 11}"
         @click.prevent="Show11"
       >
-        <div class="nav-image navSeven" />
+        <div class="nav-image  spin circle navSeven" />
         <div class="text-center nav-text">
           {{ $t('mainMeal') }}
         </div>
@@ -113,7 +113,7 @@
         :class="{ active: currentProductsDisplayed === 5}"
         @click="Show5"
       >
-        <div class="nav-image navFive" />
+        <div class="nav-image  spin circle navFive" />
         <div class="text-center nav-text">
           {{ $t('deserts') }}
         </div>
@@ -124,7 +124,7 @@
         :class="{ active: currentProductsDisplayed === 9}"
         @click.prevent="Show9"
       >
-        <div class="nav-image navNine " />
+        <div class="nav-image  spin circle navNine " />
         <div class="text-center nav-text">
           {{ $t('drinks') }}
         </div>
@@ -135,7 +135,7 @@
         :class="{ active: currentProductsDisplayed === 10}"
         @click.prevent="Show10"
       >
-        <div class="nav-image navTen" />
+        <div class="nav-image  spin circle navTen" />
         <div class="text-center nav-text">
           {{ $t('alcohol') }}
         </div>
