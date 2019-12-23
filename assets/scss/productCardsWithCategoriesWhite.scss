@@ -77,6 +77,7 @@ img.d-sm-block.d-none {
 
   border: 2px solid $lightColor;
   box-sizing: border-box;
+  @include cubicBezier;
 
   &:hover {
     color: $darkColor;

@@ -583,7 +583,7 @@ export default {
   outline-offset: 0px;
   text-shadow: none;
 
-  @include easeInOut;
+  @include cubicBezier;
 
   border-radius: 0;
   box-sizing: border-box;
@@ -615,7 +615,7 @@ export default {
   background-color: transparent;
   margin: 10px 10px 10px 10px;
 
-  @include easeInOut;
+  @include cubicBezier;
 
   &.instagram {
     margin: 10px 9px 10px 10px !important;

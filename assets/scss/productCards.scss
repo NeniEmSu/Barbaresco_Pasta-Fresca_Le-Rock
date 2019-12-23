@@ -53,6 +53,7 @@ button.btn {
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
+  @include cubicBezier;
 
   padding: 5px 8px;
 

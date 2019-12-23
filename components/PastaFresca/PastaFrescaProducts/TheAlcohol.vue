@@ -7,7 +7,8 @@
     "sparklingWine": "ІГРИСТІ ВИНА",
     "alcoholicDrinks": "Алкогольні напої",
     "bear": "ПИВО",
-    "italianWine": "Молоде італійське вино"
+    "italianWine": "Молоде італійське вино",
+    "order": "Замовити"
   },
   "en": {
    "cocktail": "ALCOHOLIC COCKTAILS",
@@ -16,7 +17,8 @@
    "sparklingWine": "SPARKLING WINES",
    "alcoholicDrinks": "Alcoholic Drinks",
     "bear": "Bear",
-    "italianWine": "Young Italian wine"
+    "italianWine": "Young Italian wine",
+    "order": "Order"
   },
   "ru": {
     "cocktail": "Алкогольные Коктейли",
@@ -25,7 +27,8 @@
     "sparklingWine": "игристые вина",
     "alcoholicDrinks": "Алкогольные напитки",
     "bear": "ПИВО",
-    "italianWine": "Молодые итальянское вино"
+    "italianWine": "Молодые итальянское вино",
+    "order": "Заказать"
   }
 }
 </i18n>

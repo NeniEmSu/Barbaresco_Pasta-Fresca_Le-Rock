@@ -4865,7 +4865,7 @@ export default [
 
     name: 'Chianti (Castelmarco) сухое красное',
 
-    id: 'pf-wine-9',
+    id: 'pf-wine-10',
 
     price: 300,
 
@@ -4885,7 +4885,7 @@ export default [
 
     name: 'Sangiovese Rubicone (Sizarini) сухое красное',
 
-    id: 'pf-wine-10',
+    id: 'pf-wine-11',
 
     price: 300,
 
@@ -4907,7 +4907,7 @@ export default [
 
     name: 'Fragolino Bianco (Novellina) сладкое белое',
 
-    id: 'b-swine-1',
+    id: 'pf-swine-1',
 
     price: 40,
 
@@ -4927,7 +4927,7 @@ export default [
 
     name: 'Fragolino Bianco (Novellina) сладкое белое',
 
-    id: 'b-swine-1-1',
+    id: 'pf-swine-1-1',
 
     price: 200,
 
@@ -4947,7 +4947,7 @@ export default [
 
     name: 'Fragolino Rosso (Novellina) сладкое красное',
 
-    id: 'b-swine-3',
+    id: 'pf-swine-2',
 
     price: 40,
 
@@ -4967,7 +4967,7 @@ export default [
 
     name: 'Fragolino Rosso (Novellina) сладкое красное',
 
-    id: 'b-swine-3',
+    id: 'pf-swine-2-1',
 
     price: 200,
 
@@ -5883,7 +5883,7 @@ export default [
 
     name: 'девайтис слабо газ.',
 
-    id: 'b-nad-8',
+    id: 'b-nad-8a',
 
     price: 27,
 
@@ -5903,7 +5903,7 @@ export default [
 
     name: 'девайтис н. газ. ',
 
-    id: 'b-nad-8',
+    id: 'b-nad-8b',
 
     price: 27,
 
@@ -5923,7 +5923,7 @@ export default [
 
     name: 'Borjomi',
 
-    id: 'b-nad-8',
+    id: 'b-nad-9',
 
     price: 45,
 

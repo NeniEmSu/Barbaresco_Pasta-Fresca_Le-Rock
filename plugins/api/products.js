@@ -2507,7 +2507,7 @@ export default [
   {
     category: 'pasta-fresca-wine',
     name: 'Chianti (Castelmarco)  сухе червоне',
-    id: 'pf-wine-9',
+    id: 'pf-wine-10',
     price: 300,
     quantity: Infinity,
     volume: '',
@@ -2517,7 +2517,7 @@ export default [
   {
     category: 'pasta-fresca-wine',
     name: 'Sangiovese Rubicone (Sizarini) сухе червоне',
-    id: 'pf-wine-10',
+    id: 'pf-wine-11',
     price: 300,
     quantity: Infinity,
     volume: '',
@@ -2530,7 +2530,7 @@ export default [
   {
     category: 'pasta-fresca-sparklingWine',
     name: 'Fragolino Bianco (Novellina )солодке біле',
-    id: 'b-swine-1',
+    id: 'pf-swine-1',
     price: 40,
     quantity: Infinity,
     volume: '150мл',
@@ -2540,7 +2540,7 @@ export default [
   {
     category: 'pasta-fresca-sparklingWine',
     name: 'Fragolino Bianco (Novellina )солодке біле',
-    id: 'b-swine-1-1',
+    id: 'pf-swine-1-1',
     price: 200,
     quantity: Infinity,
     volume: '750мл',
@@ -2550,7 +2550,7 @@ export default [
   {
     category: 'pasta-fresca-sparklingWine',
     name: 'Fragolino Rosso (Novellina) солодке червоне',
-    id: 'b-swine-3',
+    id: 'pf-swine-2',
     price: 40,
     quantity: Infinity,
     volume: '150мл',
@@ -2560,7 +2560,7 @@ export default [
   {
     category: 'pasta-fresca-sparklingWine',
     name: 'Fragolino Rosso (Novellina) солодке червоне',
-    id: 'b-swine-3',
+    id: 'pf-swine-2-1',
     price: 200,
     quantity: Infinity,
     volume: '750мл',
@@ -3033,7 +3033,7 @@ export default [
   {
     category: 'pasta-fresca-nonAlcoholicDrinks',
     name: 'девайтіс слабо газ.',
-    id: 'b-nad-8',
+    id: 'b-nad-8a',
     price: 27,
     quantity: Infinity,
     volume: '500мл',
@@ -3043,7 +3043,7 @@ export default [
   {
     category: 'pasta-fresca-nonAlcoholicDrinks',
     name: 'девайтіс н. газ.',
-    id: 'b-nad-8',
+    id: 'b-nad-8b',
     price: 27,
     quantity: Infinity,
     volume: '500мл',
@@ -3053,7 +3053,7 @@ export default [
   {
     category: 'pasta-fresca-nonAlcoholicDrinks',
     name: 'Borjomi',
-    id: 'b-nad-8',
+    id: 'b-nad-9',
     price: 45,
     quantity: Infinity,
     volume: '500мл',

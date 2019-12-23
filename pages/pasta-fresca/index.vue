@@ -60,9 +60,9 @@
 
       <TheAppetizers v-if="currentProductsDisplayed === 2" />
 
-      <TheSushi v-if="currentProductsDisplayed === 3" />
+      <!-- <TheSushi v-if="currentProductsDisplayed === 3" /> -->
 
-      <TheMlinty v-if="currentProductsDisplayed === 4" />
+      <!-- <TheMlinty v-if="currentProductsDisplayed === 4" /> -->
 
       <TheDesert v-if="currentProductsDisplayed === 5" />
 

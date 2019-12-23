@@ -4657,7 +4657,7 @@ export default [
 
     name: 'Chianti (Castelmarco) dry red',
 
-    id: 'pf-wine-9',
+    id: 'pf-wine-10',
 
     price: 300,
 
@@ -4677,7 +4677,7 @@ export default [
 
     name: 'Sangiovese Rubicone (Sizarini) Dry Red',
 
-    id: 'pf-wine-10',
+    id: 'pf-wine-11',
 
     price: 300,
 
@@ -4699,7 +4699,7 @@ export default [
 
     name: 'Fragolino Bianco (Novellina) sweet white',
 
-    id: 'b-swine-1',
+    id: 'pf-swine-1',
 
     price: 40,
 
@@ -4719,7 +4719,7 @@ export default [
 
     name: 'Fragolino Bianco (Novellina) sweet white',
 
-    id: 'b-swine-1-1',
+    id: 'pf-swine-1-1',
 
     price: 200,
 
@@ -4739,7 +4739,7 @@ export default [
 
     name: 'Fragolino Rosso (Novellina) sweet red',
 
-    id: 'b-swine-3',
+    id: 'pf-swine-2',
 
     price: 40,
 
@@ -4759,7 +4759,7 @@ export default [
 
     name: 'Fragolino Rosso (Novellina) sweet red',
 
-    id: 'b-swine-3',
+    id: 'pf-swine-2-1',
 
     price: 200,
 
@@ -5675,7 +5675,7 @@ export default [
 
     name: 'Devas is weak gas.',
 
-    id: 'b-over-8',
+    id: 'b-nad-8a',
 
     price: 27,
 
@@ -5695,7 +5695,7 @@ export default [
 
     name: 'device n. gas.',
 
-    id: 'b-over-8',
+    id: 'b-nad-8b',
 
     price: 27,
 
@@ -5715,7 +5715,7 @@ export default [
 
     name: 'Borjomi',
 
-    id: 'b-over-8',
+    id: 'b-nad-9',
 
     price: 45,
 

@@ -91,9 +91,15 @@ input {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    @include cubicBezier;
 
-    color: #ffffff;
+    color: $lightColor;
     padding: 14px 48px;
+
+    &:hover {
+        color: $blackColor;
+        background: $lightColor;
+    }
 }
 
 .seeAll button {
@@ -106,9 +112,15 @@ input {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    @include cubicBezier;
 
     color: $blackColor;
     padding: 14px 48px;
+
+    &:hover {
+        color: $lightColor;
+        background: $blackColor;
+    }
 }
 
 .close-hamburger,
@@ -238,6 +250,11 @@ header {
     color: $lightColor;
 
     margin: auto 60px auto 0;
+
+    &:hover {
+        background-color: $lightColor;
+        color: $darkColor;
+    }
 }
 
 .theHeader-nav-brand img {
@@ -480,7 +497,7 @@ header {
         font-size: 18px;
         line-height: 21px;
 
-        color: #ffffff;
+        color: $lightColor;
     }
 
     .animation-ctn {
