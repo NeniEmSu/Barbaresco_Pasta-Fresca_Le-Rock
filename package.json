@@ -38,6 +38,7 @@
     "sass-loader": "^8.0.0",
     "smoothscroll-polyfill": "^0.4.4",
     "url-polyfill": "^1.1.7",
+    "v-mask": "^2.0.2",
     "v-owl-carousel": "^1.0.8",
     "vue-analytics": "^5.19.1",
     "vue-cookieconsent-component": "^1.2.0",

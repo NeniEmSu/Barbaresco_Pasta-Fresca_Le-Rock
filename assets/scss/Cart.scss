@@ -32,12 +32,23 @@ h3 {
     line-height: 21px;
     @include cubicBezier;
 
-    color: #ffffff;
+    color: $lightColor;
     padding: 14px 48px;
 
     &:hover {
         color: $blackColor;
         background: $lightColor;
+    }
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+
+
+    &:hover {
+        background: $darkColor;
+        color: $lightColor;
     }
 }
 
@@ -65,6 +76,8 @@ h3 {
         margin: auto;
         color: $darkColor;
         text-decoration: none;
+
+
     }
 
     p,
@@ -206,7 +219,7 @@ textarea.form-control {
         font-size: 18px;
         line-height: 21px;
 
-        color: #ffffff;
+        color: $lightColor;
     }
 
     .animation-ctn {

@@ -99,6 +99,17 @@ input {
     &:hover {
         color: $blackColor;
         background: $lightColor;
+
+    }
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+
+    &:hover {
+        color: $blackColor;
+        background: $lightColor;
     }
 }
 

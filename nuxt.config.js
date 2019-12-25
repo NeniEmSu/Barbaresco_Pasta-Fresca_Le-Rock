@@ -77,6 +77,9 @@ export default {
       mode: 'client'
     },
     {
+      src: '~/plugins/vuemask'
+    },
+    {
       src: '~/plugins/v-owl-carousel',
       mode: 'client'
     },
