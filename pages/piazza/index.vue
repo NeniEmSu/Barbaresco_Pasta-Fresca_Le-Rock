@@ -54,7 +54,7 @@ import TheSalad from '~/components/Barbaresco/BarbarescoProducts/TheSalad'
 import TheFirstCourse from '~/components/Barbaresco/BarbarescoProducts/TheFirstCourse'
 // import TheHits from '~/components/Barbaresco/BarbarescoProducts/TheHits'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
-import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarousel'
+import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 
 export default {
   name: 'Barbaresco',

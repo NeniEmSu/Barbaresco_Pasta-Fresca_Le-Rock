@@ -22,16 +22,19 @@
 </i18n>
 
 <template>
-  <div class="container ">
+  <div
+    id="botttom-carousel"
+    class="container "
+  >
     <client-only>
       <style>
-        .owl-carousel .owl-item img {
+      #botttom-carousel .owl-carousel .owl-item img {
         display: block;
         width: 100%;
         height: 100%;
-        }
+      }
 
-        .owl-theme .owl-dots .owl-dot span {
+      #botttom-carousel .owl-theme .owl-dots .owl-dot span {
         width: 15px !important;
         height: 15px !important;
         margin: 5px 7px !important;
@@ -42,180 +45,180 @@
         -webkit-backface-visibility: visible;
         transition: opacity 200ms ease;
         border-radius: 30px !important;
-        }
+      }
 
-        .owl-theme .owl-dots .owl-dot.active span,
-        .owl-theme .owl-dots .owl-dot:hover span {
+      #botttom-carousel .owl-theme .owl-dots .owl-dot.active span,
+      #botttom-carousel .owl-theme .owl-dots .owl-dot:hover span {
         background: #ffffff !important;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.55) !important;
         width: 20px !important;
         height: 20px !important;
+      }
+
+      @media screen and (min-width: 1246px) {
+
+        #botttom-carousel .owl-carousel .owl-nav button.owl-prev,
+        #botttom-carousel .owl-carousel .owl-nav button.owl-next {
+          background: none;
+          color: inherit;
+          border: none;
+          padding: 0 !important;
+          font-size: 50px !important;
+          position: absolute;
+          top: 25%;
         }
 
-        @media screen and (min-width: 1246px) {
-
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel .owl-nav button.owl-next {
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0 !important;
-        font-size: 50px !important;
-        position: absolute;
-        top: 25%;
+        #botttom-carousel .owl-carousel .owl-nav button.owl-prev {
+          left: -2rem;
         }
 
-        .owl-carousel .owl-nav button.owl-prev {
-        left: -2rem;
+        #botttom-carousel .owl-carousel .owl-nav button.owl-next {
+          right: -2rem;
+        }
+      }
+
+      @media (max-width: 992px) {
+        #botttom-carousel h4 {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 22px;
+
+          color: #ffffff !important;
         }
 
-        .owl-carousel .owl-nav button.owl-next {
-        right: -2rem;
+        #botttom-carousel p {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+
+          color: #ffffff;
+
+          margin-bottom: 0;
         }
-        }
+      }
 
-        @media (max-width: 992px) {
-        h4 {
-        font-family: 'Roboto', sans-serif;
+      @media (max-width: 500px) {
+        #botttom-carousel .card {
+          height: 120px;
 
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 22px;
-
-        color: #ffffff !important;
-        }
-
-        p {
-        font-family: 'Roboto', sans-serif;
-
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
-
-        color: #ffffff;
-
-        margin-bottom: 0;
-        }
+          img {
+            height: 120px;
+            width: auto;
+            object-fit: cover;
+          }
         }
 
-        @media (max-width: 500px) {
-        .card {
-        height: 120px;
+        #botttom-carousel h4 {
+          font-family: 'Roboto', sans-serif;
 
-        img {
-        height: 120px;
-        width: auto;
-        object-fit: cover;
-        }
-        }
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
 
-        h4 {
-        font-family: 'Roboto', sans-serif;
-
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 21px;
-
-        color: #ffffff;
+          color: #ffffff;
         }
 
-        p {
-        font-family: 'Roboto', sans-serif;
+        #botttom-carousel p {
+          font-family: 'Roboto', sans-serif;
 
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
 
-        color: #ffffff;
+          color: #ffffff;
 
-        margin-bottom: 0;
+          margin-bottom: 0;
         }
 
-        .carousel-caption {
-        padding: 0;
+        #botttom-carousel .carousel-caption {
+          padding: 0;
         }
 
-        .carousel ol {
-        margin-bottom: 0;
+        #botttom-carousel .carousel ol {
+          margin-bottom: 0;
         }
 
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel .owl-nav button.owl-next {
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0 !important;
-        font-size: 50px !important;
-        position: absolute;
-        top: 10%;
+        #botttom-carousel .owl-carousel .owl-nav button.owl-prev,
+        #botttom-carousel .owl-carousel .owl-nav button.owl-next {
+          background: none;
+          color: inherit;
+          border: none;
+          padding: 0 !important;
+          font-size: 50px !important;
+          position: absolute;
+          top: 10%;
         }
 
-        .owl-carousel .owl-nav button.owl-prev {
-        left: -1.3rem;
+        #botttom-carousel .owl-carousel .owl-nav button.owl-prev {
+          left: -1.3rem;
         }
 
-        .owl-carousel .owl-nav button.owl-next {
-        right: -1.3rem;
+        #botttom-carousel .owl-carousel .owl-nav button.owl-next {
+          right: -1.3rem;
         }
-        }
+      }
 
-        @media (max-width: 375px) {
-        h4 {
-        font-family: 'Roboto', sans-serif;
+      @media (max-width: 375px) {
+        #botttom-carousel h4 {
+          font-family: 'Roboto', sans-serif;
 
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
 
-        color: #ffffff;
-        }
-
-        p {
-        font-family: 'Roboto', sans-serif;
-
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
-
-        color: #ffffff;
-
-        margin-bottom: -10px;
-        }
+          color: #ffffff;
         }
 
-        @media (max-width: 320px) {
-        h4 {
-        font-family: 'Roboto', sans-serif;
+        #botttom-carousel p {
+          font-family: 'Roboto', sans-serif;
 
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
 
-        color: #ffffff;
+          color: #ffffff;
 
-        margin-bottom: 0;
+          margin-bottom: -10px;
+        }
+      }
+
+      @media (max-width: 320px) {
+        #botttom-carousel h4 {
+          font-family: 'Roboto', sans-serif;
+
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+
+          color: #ffffff;
+
+          margin-bottom: 0;
         }
 
-        p {
-        font-family: 'Roboto', sans-serif;
+        #botttom-carousel p {
+          font-family: 'Roboto', sans-serif;
 
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
 
-        color: #ffffff;
+          color: #ffffff;
 
-        margin-bottom: -10px;
+          margin-bottom: -10px;
         }
-        }
+      }
       </style>
       <carousel
         :nav="true"
