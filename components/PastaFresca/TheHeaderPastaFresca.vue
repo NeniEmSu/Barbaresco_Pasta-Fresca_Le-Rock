@@ -967,7 +967,15 @@ export default {
   opacity: 0.8;
   margin-bottom: 20px;
   @media screen and (max-width: 1100px) {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-height: 480px) and (max-height: 534px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-height: 535px) and (max-height: 900px) {
+    margin-bottom: 30px;
   }
 }
 

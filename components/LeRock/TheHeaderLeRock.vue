@@ -430,11 +430,11 @@
                   class="mt-5"
                 >
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-5">
                     <small class="col-12">{{ $t('cart.total') }}:</small>
                     <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
                   </div>
-                  <div class="col-8 mx-auto text-right">
+                  <div class="col-7 mx-auto text-right">
                     <b-button
                       :disabled="!cartSize"
                       :to="localePath({name: 'le-rock-cart'},$i18n.locale)"
@@ -534,21 +534,21 @@
                   </div>
                   <div class="col-4 pr-0">
                     <label for="code">{{ $t('form.code') }} <input
-                      v-model="code"
-                      class="form-control"
-                      type="text"
-                      name="code"
-                      placeholder="..."
-                    > </label>
+                        v-model="code"
+                        class="form-control"
+                        type="text"
+                        name="code"
+                        placeholder="..."
+                      > </label>
                   </div>
                   <div class="col-4">
                     <label for="appartment">{{ $t('form.apartment') }} <input
-                      v-model="apartment"
-                      class="form-control"
-                      type="text"
-                      name="appartment"
-                      placeholder="..."
-                    > </label>
+                        v-model="apartment"
+                        class="form-control"
+                        type="text"
+                        name="appartment"
+                        placeholder="..."
+                      > </label>
                   </div>
                 </div>
 
@@ -957,7 +957,15 @@ export default {
   opacity: 0.8;
   margin-bottom: 20px;
   @media screen and (max-width: 1100px) {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-height: 480px) and (max-height: 534px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-height: 535px) and (max-height: 900px) {
+    margin-bottom: 30px;
   }
 }
 
