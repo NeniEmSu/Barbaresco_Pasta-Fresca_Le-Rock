@@ -105,7 +105,8 @@ body {
     }
 
     @media screen and (min-height: 651px) and (max-height: 820px) {
-      margin: 10px !important;
+      margin-top: 92vh !important;
+      margin-right: calc(100vw - 62.5%) !important;
     }
   }
 
