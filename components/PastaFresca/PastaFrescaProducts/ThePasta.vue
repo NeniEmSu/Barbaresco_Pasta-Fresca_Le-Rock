@@ -43,7 +43,7 @@
                   <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                 </p>
               </div>
-              <div class="col-sm-7 pl-0 text-center my-auto">
+              <div class="col-sm-7 p-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
@@ -95,7 +95,7 @@
                   <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                 </p>
               </div>
-              <div class="col-sm-7 pl-0 text-center my-auto">
+              <div class="col-sm-7 p-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
@@ -147,7 +147,7 @@
                   <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
                 </p>
               </div>
-              <div class="col-sm-7 pl-0 text-center my-auto">
+              <div class="col-sm-7 p-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto"
                   @click.prevent="addToCart(product.id)"
