@@ -97,6 +97,18 @@ export default {
     }
   ],
 
+  sitemap: {
+    hostname: 'https://barbaresco.w-start.com.ua/',
+    gzip: true,
+    path: '/sitemap.xml',
+    exclude: [],
+    routes: [],
+    cacheTime: 900000,
+    trailingSlash: false,
+    defaults: {},
+    pathGzip: '/sitemap.xml'
+  },
+
   router: {
     middleware: [
       'animation'
