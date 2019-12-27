@@ -105,8 +105,10 @@ body {
     }
 
     @media screen and (min-height: 651px) and (max-height: 820px) {
-      margin-top: 92vh !important;
-      margin-right: calc(100vw - 62.5%) !important;
+      position: absolute;
+      top: 92vh;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -354,14 +356,14 @@ main {
     scrollbar-width: none;
   }
 
-  .language {
-    .langBtn,
-    .dropdown-toggle {
-      padding: 1px 15px;
+  // .language {
+  //   .langBtn,
+  //   .dropdown-toggle {
+  //     padding: 1px 15px;
 
-      font-size: 14px;
-      line-height: 16px;
-    }
-  }
+  //     font-size: 14px;
+  //     line-height: 16px;
+  //   }
+  // }
 }
 </style>

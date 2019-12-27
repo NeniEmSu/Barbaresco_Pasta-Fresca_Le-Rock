@@ -2,27 +2,35 @@
     padding-bottom: 145px;
 }
 
-h3 {
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: normal;
+.order-explanation {
+    h3 {
+        font-family: $robotoFont;
+        font-style: normal;
+        font-weight: normal;
 
-    color: $darkColor;
+        color: $darkColor;
+        margin-bottom: 30px;
 
-    span.number {
-        font-size: 50px;
-        line-height: 59px;
+        span.number {
+            font-size: 50px;
+            line-height: 59px;
+        }
+
+        span.text {
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
+}
 
-    span.text {
-        font-size: 18px;
-        line-height: 21px;
-    }
+img {
+    height: 65.89px;
+    width: auto;
 }
 
 .order {
     background: $darkColor;
-    border: 1px solid $darkColor;
+    border: 2px solid $darkColor;
     box-sizing: border-box;
 
     font-family: $robotoFont;

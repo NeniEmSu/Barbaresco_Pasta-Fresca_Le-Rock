@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-  min-height: calc(100vh - 120px);
-}
+// .content {
+//   min-height: calc(100vh - 120px);
+// }
 </style>

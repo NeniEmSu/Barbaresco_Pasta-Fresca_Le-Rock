@@ -57,7 +57,7 @@
             <p>{{ $t('workHours') }} <b>10:00-01:00</b> ({{ $t('days') }})</p>
           </div>
         </div>
-        <TheContactMap />
+        <TheContactMap style="margin-top: 90px;" />
       </div>
     </div>
   </div>
@@ -110,12 +110,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.image-container {
-  min-height: calc(100vh - 120px);
-
-  object-fit: cover;
-  object-position: center;
-}
+@import "~assets/scss/subPagesStyles.scss";
 
 h1 {
   font-family: $segoeFont;

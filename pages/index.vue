@@ -85,7 +85,7 @@
             :auto-width="350"
             :responsive="{
               0: { items: 1, center: true, dots: true },
-              600: { items: 1, center: false, margin: 0 },
+              600: { items: 1, center: false, margin: 0, autoWidth: 280 },
               1440: { items: 3, center: false, margin: 60},
               1800: { items: 3, center: false, margin: 0}
             }"
@@ -276,68 +276,6 @@
                 </div>
               </b-card>
             </div>
-
-            <!-- <div
-              data-aos="fade-up"
-              data-aos-easing="ease"
-              data-aos-delay="2000"
-              data-aos-duration="750"
-              class=" col-3 "
-            >
-              <b-card
-                :img-src="require(`~/assets/img/${variants[3].imageShowcase + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
-                :img-alt="variants[3].showcaseAlt"
-                img-top
-                tag="article"
-                style=""
-                class="mb-1 homeNavCard"
-              >
-                <div class="cardContent">
-                  <div class="card-log mx-auto text-center">
-                    <b-img
-                      class="mx-auto"
-                      :src="require(`~/assets/img/${variants[3].logo + '.svg'}`)"
-                      :alt="variants[3].logoAlt"
-                    />
-                  </div>
-                  <b-card-text class="cardDescription">
-                    {{ variants[3].details }}
-                  </b-card-text>
-                  <div class="text-center goTosite">
-                    <b-button
-                      class="mx-auto goToSiteBtn"
-                      :href="localePath({name: variants[3].siteLink},$i18n.locale)"
-                    >
-                      {{ $t('home.siteButtonTxt') }}
-                    </b-button>
-                  </div>
-                  <div class="text-center ">
-                    <b-button
-                      class="socialButtons instagram mx-auto"
-                      :href="variants[3].instaLink"
-                    >
-                      <b-img
-                        class="inButtonImg "
-                        src="~assets/img/instagram.svg"
-                        alt="instagram text"
-                      />
-                    </b-button>
-                    <b-button
-                      class="socialButtons facebook mx-auto"
-                      target="_blank"
-                      :href="variants[3].facebLink"
-                    >
-                      <b-img
-                        class="inButtonImg "
-                        target="_blank"
-                        src="~assets/img/facebook.svg"
-                        alt="facebook text"
-                      />
-                    </b-button>
-                  </div>
-                </div>
-              </b-card>
-            </div> -->
           </carousel>
         </div>
       </client-only>
@@ -413,7 +351,7 @@ export default {
 }
 
 #homePage .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: -5px !important;
+  margin-top: 30px !important;
 }
 
 #homePage .owl-theme .owl-nav.disabled + .owl-dots .active span {
@@ -456,7 +394,7 @@ export default {
 @media screen and (max-width: 600px) {
   #homePage {
     .owl-theme .owl-dots button:nth-child(1) span {
-      background-image: url("~assets/img/barbaresco-logo.svg") !important;
+      background-image: url("~assets/img/barbaresco-padded.svg") !important;
       background-size: contain !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
@@ -464,7 +402,7 @@ export default {
     }
 
     .owl-theme .owl-dots button:nth-child(2) span {
-      background-image: url("~assets/img/pasta-fresca-logo.svg") !important;
+      background-image: url("~assets/img/pasta-fresca-padded.svg") !important;
       background-size: contain !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
@@ -472,7 +410,7 @@ export default {
     }
 
     .owl-theme .owl-dots button:nth-child(3) span {
-      background-image: url("~assets/img/le-rock-logo.svg") !important;
+      background-image: url("~assets/img/padded-le-rock.svg") !important;
       background-size: contain !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
@@ -493,6 +431,10 @@ export default {
 <style lang="scss" scoped>
 #homePage {
   top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
   background: url("~assets/img/home-page-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -722,27 +664,27 @@ export default {
 
   .socialButtons {
     &.instagram {
-      margin: auto 0 5px 0 !important;
+      margin: auto 2.5px 5px 0 !important;
       padding: 7.5px 18px;
       width: inherit;
       height: inherit;
       line-height: inherit;
 
       .inButtonImg {
-        width: 70px;
+        width: 67.5px;
         height: 24px;
       }
     }
 
     &.facebook {
-      margin: auto 0 5px 0 !important;
+      margin: auto 0 5px 2.5px !important;
       padding: 12px 18px;
       width: inherit;
       height: inherit;
       line-height: inherit;
 
       .inButtonImg {
-        width: 70px;
+        width: 67.5px;
         height: 14.82px;
       }
     }
@@ -770,7 +712,7 @@ export default {
   .homePageHeading {
     margin-top: 6.5%;
     margin-bottom: 6.5%;
-    font-size: px;
+    font-size: 20px;
     line-height: 24px;
   }
 
@@ -861,17 +803,17 @@ export default {
       padding: 7.5px 18px;
 
       .inButtonImg {
-        width: 70px;
+        width: 65px;
         height: 24px;
       }
     }
 
     &.facebook {
-      padding: 12px 18px;
+      padding: 14px 18px;
 
       .inButtonImg {
-        width: 70px;
-        height: 14.82px;
+        width: 65px;
+        height: 15px;
       }
     }
   }

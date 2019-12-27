@@ -159,7 +159,7 @@
         {{ $t('orderProcess.heading') }}
       </h1>
 
-      <div class="row">
+      <div class="row order-explanation">
         <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderOnline.png"
