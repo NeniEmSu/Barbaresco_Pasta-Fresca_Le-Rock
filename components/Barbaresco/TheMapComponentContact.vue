@@ -23,7 +23,7 @@
       :zoom="18"
       map-type-id="terrain"
       :options="{fullscreenControl: true, streetViewControl: true, mapTypeControl: true, zoomControl: true, gestureHandling: 'cooperative', styles: mapStyle}"
-      style="width: 100%; height: 300px"
+      style=""
     >
       <GmapMarker
         v-for="location in locations"
@@ -345,5 +345,25 @@ code {
   font-size: 18px;
   color: #0a0a0a;
   word-break: break-word;
+}
+
+.vue-map-container {
+  width: calc(100% - 15px);
+  height: 410px;
+}
+
+@media (min-width: 1400px) {
+  .vue-map-container {
+    width: calc(100% - 21px);
+    height: 410px;
+  }
+}
+
+@media (max-width: 991px) {
+  .vue-map-container {
+    margin: auto;
+    width: 100vw;
+    height: 360px;
+  }
 }
 </style>

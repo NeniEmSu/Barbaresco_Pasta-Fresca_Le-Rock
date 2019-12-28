@@ -2,7 +2,7 @@
 {
   "uk": {
     "title": "Контакти",
-    "location": "м. Тернопіль, вулиця Князя Острозького, 14",
+    "location": "Вул. Кн. Острозького 14",
     "call": "Тел",
     "workHours": "Заклад працює для Вас",
     "days": "Пн-Нд"
@@ -42,29 +42,37 @@
         data-aos-delay="1000"
         data-aos-duration="500"
       >
-        <div class="inner-text px-5">
+        <div class="inner-text container px-4">
           <h1>{{ $t('title') }}</h1>
           <div class="text-center">
             <p>{{ $t('location') }}</p>
             <p>
-              {{ $t('call') }}.: <a
+              {{ $t('call') }}.:
+              <a
                 href="tel:+380506700400"
                 class="col-12 m-auto"
               >
-                <span>+38 050 6 700 400</span><span> | </span><span>+38 068 6 700 400</span>
+                <span>+38 050 6 700 400</span>
+              </a>
+              <span> | </span>
+              <a
+                href="tel:+380686700400"
+                class="col-12 m-auto"
+              >
+                <span>+38 068 6 700 400</span>
               </a>
             </p>
             <p>{{ $t('workHours') }} <b>10:00-01:00</b> ({{ $t('days') }})</p>
           </div>
         </div>
-        <TheContactMap style="margin-top: 90px;" />
+        <TheContactMap style="margin-top: 50px;" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import TheContactMap from '~/components/Barbaresco/TheMapComponent'
+import TheContactMap from '~/components/Barbaresco/TheMapComponentContact'
 
 export default {
   name: 'BarbarescoContacts',
@@ -146,7 +154,7 @@ span {
     font-size: 24px;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 992px) {
   .image-container {
     min-height: 200px;
     max-height: 200px;

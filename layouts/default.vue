@@ -104,17 +104,44 @@ body {
       color: $darkColor;
     }
 
-    @media screen and (min-height: 651px) and (max-height: 820px) {
+    @media screen and (min-height: 480px) and (max-height: 579px) {
+      display: none;
+    }
+
+    @media screen and (min-height: 579px) and (max-height: 684px) {
       position: absolute;
-      top: 92vh;
+      top: 93vh;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    @media screen and (min-height: 685px) and (max-height: 820px) and (max-width: 1000px) {
+      position: absolute;
+      top: 89vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media screen and (min-height: 821px) and (max-height: 900px) and (max-width: 1200px) {
+      position: absolute;
+      top: 85vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media screen and (min-height: 600px) and (max-height: 1090px) and (min-width: 600px) and (max-width: 820px) {
+      position: absolute;
+      top: 88vh;
+      left: 50%;
+      transform: translateX(-50%);
+
+      background: $lightColor;
+      color: $darkColor;
     }
   }
 
   .dropdown-toggle::after {
     display: inline-block;
-    // margin-left: 2.255em;
     vertical-align: 0.255em;
     content: "";
     border-top: 0.3em solid;

@@ -1,6 +1,6 @@
 .image-container {
     min-height: calc(100vh - 250px);
-    max-height: 750px;
+    max-height: 751px;
 
     object-fit: cover;
     object-position: left center;
@@ -29,6 +29,11 @@ p {
     color: $blackColor;
 }
 
+a {
+    text-decoration: none;
+    ;
+}
+
 @media (min-width: 1280px) {
     .content-text {
         width: 80%;
@@ -52,7 +57,7 @@ p {
     }
 }
 
-@media (max-width: 993px) {
+@media (max-width: 992px) {
     .image-container {
         min-height: 200px;
         max-height: 200px;

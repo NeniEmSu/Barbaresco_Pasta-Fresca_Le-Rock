@@ -84,8 +84,8 @@
             :stage-padding="40"
             :auto-width="350"
             :responsive="{
-              0: { items: 1, center: true, dots: true },
-              600: { items: 1, center: false, margin: 0, autoWidth: 280 },
+              0: { items: 1, center: true, dots: true, autoWidth: 280 },
+              600: { items: 1, center: false, margin: 0},
               1440: { items: 3, center: false, margin: 60},
               1800: { items: 3, center: false, margin: 0}
             }"
@@ -375,17 +375,23 @@ export default {
 
 @media screen and (max-height: 480px) {
   #homePage .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: -13px !important;
+    margin-top: -12px !important;
   }
 }
 
-@media screen and (min-height: 537px) and (max-height: 560px) {
+@media screen and (min-height: 481px) and (max-height: 500px) {
   #homePage .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: -8px !important;
+    margin-top: -9px !important;
   }
 }
 
-@media screen and (min-height: 560px) and (max-height: 640px) {
+@media screen and (min-height: 500px) and (max-height: 559px) {
+  #homePage .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: -2px !important;
+  }
+}
+
+@media screen and (min-height: 560px) and (max-height: 670px) {
   #homePage .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 1% !important;
   }
@@ -471,7 +477,6 @@ export default {
 
 .homeNavCard {
   background: #0a0a0a;
-  // box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.55);
   border: 0;
 }
 
@@ -825,22 +830,29 @@ export default {
 
 @media screen and (max-height: 480px) {
   .homePageHeading {
-    margin-top: 3.5vh;
-    margin-bottom: 3.5vh;
+    margin-top: 3.5px;
+    margin-bottom: 3.5px;
   }
 }
 
-@media screen and (min-height: 481px) and (max-height: 519px) {
+@media screen and (min-height: 481px) and (max-height: 500px) {
   .homePageHeading {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (min-height: 500px) and (max-height: 519px) {
+  .homePageHeading {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-height: 520px) and (max-height: 640px) {
   .homePageHeading {
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -851,10 +863,167 @@ export default {
   }
 }
 
-@media screen and (min-height: 651px) and (max-height: 820px) {
+@media screen and (min-height: 651px) and (max-height: 700px) {
   .homePageHeading {
-    margin-top: 6.8vh;
-    margin-bottom: 6.8vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
+
+@media screen and (min-height: 701px) and (max-height: 900px) {
+  .homePageHeading {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+}
+
+@media screen and (min-height: 600px) and (max-height: 1090px) and (min-width: 600px) and (max-width: 820px) {
+  .homePageHeading {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .card {
+    max-width: 350px;
+    width: 100%;
+    min-width: 350px;
+  }
+
+  .cardContent {
+    padding: 35px 20px;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-log,
+  .card-log img {
+    max-height: 80px;
+    max-width: 160px;
+    min-height: 80px;
+    min-width: 160px;
+    margin-bottom: 35px;
+    object-fit: contain;
+  }
+
+  .cardDescription {
+    height: 94px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-right: 18.5px;
+    padding-left: 18.5px;
+
+    color: $lightColor;
+  }
+
+  .goTosite {
+    margin-bottom: 10px;
+  }
+
+  .goToSiteBtn {
+    border: 2px solid $lightColor;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+
+    @include cubicBezier;
+
+    border-radius: 0;
+    box-sizing: border-box;
+
+    background-color: transparent;
+    // padding: 12px 50px;
+    width: 280px;
+    height: 48px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+
+    color: $lightColor;
+
+    &:hover {
+      background: $lightColor;
+      color: $blackColor;
+    }
+  }
+
+  .socialButtons {
+    border: 2px solid $lightColor;
+    border-radius: 0;
+    box-sizing: border-box;
+
+    background-color: transparent;
+    margin: 10px 10px 10px 10px;
+
+    @include cubicBezier;
+
+    &.instagram {
+      margin: 10px 9px 10px 10px !important;
+      // padding: 10px 20px;
+      width: 130px;
+      height: 48px;
+      text-align: center;
+
+      .inButtonImg {
+        width: 80px;
+        height: 35px;
+        margin: auto;
+      }
+    }
+
+    &.instagram:hover {
+      border: 0;
+      background-position: right center;
+      background-image: -moz-linear-gradient(
+        69.74deg,
+        #fdd276 -7.77%,
+        #e1585f 55.36%,
+        #a741b6 106.84%
+      );
+      background-image: -webkit-linear-gradient(
+        69.74deg,
+        #fdd276 -7.77%,
+        #e1585f 55.36%,
+        #a741b6 106.84%
+      );
+      background-image: linear-gradient(
+        69.74deg,
+        #fdd276 -7.77%,
+        #e1585f 55.36%,
+        #a741b6 106.84%
+      );
+    }
+
+    &.facebook {
+      margin: 10px 10px 10px 9px !important;
+      // padding: 10px 20px;
+      width: 130px;
+      height: 48px;
+      text-align: center;
+
+      .inButtonImg {
+        width: 80px;
+        height: 30px;
+        margin: auto;
+      }
+    }
+
+    &.facebook:hover {
+      border: 0;
+      background-color: #395795;
+    }
   }
 }
 

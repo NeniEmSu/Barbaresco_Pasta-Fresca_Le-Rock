@@ -34,12 +34,16 @@
         height: 100%;
       }
 
+      #botttom-carousel .owl-theme .owl-dots .owl-dot.active,
+      #botttom-carousel .owl-theme .owl-dots .owl-dot:hover {
+        height: 29.6px !important;
+      }
+
       #botttom-carousel .owl-theme .owl-dots .owl-dot span {
         width: 15px !important;
         height: 15px !important;
-        margin: 5px 7px !important;
-        background: #545454 !important;
-        opacity: 0.8 !important;
+        background: #DADADA !important;
+        opacity: 0.7 !important;
         display: block;
         backface-visibility: visible;
         -webkit-backface-visibility: visible;
