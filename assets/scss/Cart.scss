@@ -28,6 +28,25 @@ img {
     width: auto;
 }
 
+
+input {
+    background: transparent;
+    border: 2px solid $blackColor;
+    box-sizing: border-box;
+    border-radius: 0;
+
+    font-family: $robotoFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    height: auto;
+
+    color: $darkColor;
+
+    padding: 14px 10px 14px 10px;
+}
+
 .order {
     background: $darkColor;
     border: 2px solid $darkColor;

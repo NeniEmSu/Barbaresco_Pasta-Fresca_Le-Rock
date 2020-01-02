@@ -729,26 +729,29 @@
                   />
                 </client-only>
               </div>
-              <input
-                v-model="$v.name.$model"
-                class="form-control w-100"
-                type="text"
-                name="name"
-                :placeholder="$t('reservation.name')"
-                :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
-                :state="$v.name.$dirty ? !$v.name.$error : null"
-              >
-
-              <input
-                v-model="$v.phone.$model"
-                v-mask="'+38 (0##) ###-####'"
-                class="form-control w-100"
-                type="text"
-                name="phone"
-                :placeholder="$t('reservation.phone')"
-                :class="[!$v.phone.$error && $v.phone.$model && $v.phone.minLength ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
-                :state="$v.phone.$dirty ? !$v.phone.$error : null"
-              >
+              <label class="w-100" for="name">
+                <input
+                  v-model="$v.name.$model"
+                  class="form-control w-100"
+                  type="text"
+                  name="name"
+                  :placeholder="$t('reservation.name')"
+                  :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                  :state="$v.name.$dirty ? !$v.name.$error : null"
+                >
+              </label>
+              <label class="w-100" for="phone">
+                <input
+                  v-model="$v.phone.$model"
+                  v-mask="'+38 (0##) ###-####'"
+                  class="form-control w-100"
+                  type="text"
+                  name="phone"
+                  :placeholder="$t('reservation.phone')"
+                  :class="[!$v.phone.$error && $v.phone.$model && $v.phone.minLength ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                  :state="$v.phone.$dirty ? !$v.phone.$error : null"
+                >
+              </label>
 
               <div class="form-group mx-auto text-center">
                 <button

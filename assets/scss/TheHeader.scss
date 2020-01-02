@@ -68,16 +68,20 @@ input {
     background: transparent;
     border: 2px solid $blackColor;
     box-sizing: border-box;
+    border-radius: 0;
 
     font-family: $robotoFont;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    height: auto;
 
-    color: $blackColor;
+    color: $darkColor;
+    width: 100%;
+
+    margin: 5px auto 10px auto;
     padding: 14px 10px 14px 10px !important;
-    margin: 10px auto;
 }
 
 .order {
@@ -446,6 +450,7 @@ header {
         width: 100%;
 
         margin: 5px auto 10px auto;
+        padding: 14px 10px 14px 10px !important;
     }
 
     input[type="radio"] {

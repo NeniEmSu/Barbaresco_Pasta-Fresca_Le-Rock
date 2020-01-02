@@ -273,7 +273,7 @@
                   <input
                     v-model="$v.phone.$model"
                     v-mask="'+38 (0##) ###-####'"
-                    class="form-control"
+                    class="form-control w-100"
                     type="text"
                     name="phone"
                     placeholder="+380..."
@@ -769,7 +769,8 @@ export default {
 
       axios
         .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
-      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = null
+      // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
+      this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
       this.$store.commit('emptyCart')
       this.success = true
       if (process.client) {
