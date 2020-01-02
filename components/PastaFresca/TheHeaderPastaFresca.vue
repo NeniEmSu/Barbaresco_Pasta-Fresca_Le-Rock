@@ -952,6 +952,31 @@ export default {
 }
 </script>
 
+<style lang="css">
+.vdp-datepicker__calendar {
+  margin: auto auto 20px auto;
+  border: 0 !important;
+}
+
+.vdp-datepicker__calendar .cell.selected:hover,
+.vdp-datepicker__calendar .cell.day:hover {
+  background: #000000 !important;
+  color: white;
+  border: 1px solid black !important;
+}
+
+.vdp-datepicker__calendar .cell.blank:hover,
+.vdp-datepicker__calendar .cell.disabled:hover {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.vdp-datepicker__calendar .cell.selected {
+  background: #000000 !important;
+  color: white;
+}
+</style>
+
 <style lang="scss" scoped>
 @import "~assets/css/TheHeader.css";
 @import "~assets/scss/TheHeader.scss";

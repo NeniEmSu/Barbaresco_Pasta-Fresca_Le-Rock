@@ -30,13 +30,13 @@
       "desc4b": "Час доставки також залежить від Вашого району і часу дня, пробки на дорозі ніхто не відміняв :)"
     },
     "form":{
-      "name": "Ваше ім’я",
-      "phone": "Ваш телефон",
-      "city": "Місто/село",
-      "street": "Вулиця",
-      "house": "Буд",
+      "name": "Ваше ім’я*",
+      "phone": "Ваш телефон*",
+      "city": "Місто/село*",
+      "street": "Вулиця*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./офіс",
+      "apartment": "Кв./офіс*",
       "comment": "Коментар до замовлення",
       "modeOfPayment": "Бажаний спосіб оплати",
       "pay-carrier": "Оплата кур’єру готівкою",
@@ -79,13 +79,13 @@
       "desc4b": "Delivery time also depends on your area and time of day, no traffic jams were canceled :)"
     },
   "form":{
-      "name": "Your name",
-      "phone": "Your phone",
-      "city": "City/Village",
-      "street": "Street",
-      "house": "Building",
+      "name": "Your name*",
+      "phone": "Your phone*",
+      "city": "City/Village*",
+      "street": "Street*",
+      "house": "Building*",
       "code": "Code",
-      "apartment": "Apt./Office",
+      "apartment": "Apt./Office*",
       "comment": "Order comment",
       "modeOfPayment": "Preferred mode of payment",
       "pay-carrier": "Payment by courier in cash",
@@ -128,13 +128,13 @@
       "desc4b": "Время доставки также зависит от Вашего района и времени дня, пробки на дороге никто не отменял :)"
     },
     "form":{
-      "name": "Ваше имя",
-      "phone": "Ваш телефон",
-      "city": "Город/село",
-      "street": "Улица",
-      "house": "Буд",
+      "name": "Ваше имя*",
+      "phone": "Ваш телефон*",
+      "city": "Город/село*",
+      "street": "Улица*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./Офис",
+      "apartment": "Кв./Офис*",
       "comment": "Комментарий к заказу",
       "modeOfPayment": "Предпочтительный способ оплаты",
       "pay-carrier": "Оплата курьеру наличными",
@@ -249,7 +249,7 @@
                   Ім'я обов'язково і має містити не менше {{ $v.name.$params.minLength.min }} символів.
                 </div>
                 <div
-                  v-if="!$v.models.phone.minLength"
+                  v-if="!$v.phone.minLength"
                   class="text-danger text-left"
                 >
                   Номер телефону обов'язковий і повинен містити 10 символів
@@ -258,12 +258,12 @@
               <div class="col-6">
                 <label for="name">{{ $t('form.name') }}
                   <input
-                    v-model="name"
+                    v-model="$v.name.$model"
                     class="form-control"
                     type="text"
                     name="name"
                     placeholder="..."
-                    :class="[!$v.name.$error && $v.name.$model ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                    :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
                     :state="$v.name.$dirty ? !$v.name.$error : null"
                   >
                 </label>
@@ -271,14 +271,14 @@
               <div class="col-6">
                 <label for="phone">{{ $t('form.phone') }}
                   <input
-                    v-model="$v.models.phone.$model"
-                    v-mask="'+380(##) ###-####'"
+                    v-model="$v.phone.$model"
+                    v-mask="'+38 (0##) ###-####'"
                     class="form-control"
                     type="text"
                     name="phone"
                     placeholder="+380..."
-                    :class="[!$v.models.phone.$error && $v.models.phone.$model ? 'is-valid' : '', $v.models.phone.$error && !$v.models.phone.minLength ? 'is-invalid' : '']"
-                    :state="$v.models.phone.$dirty ? !$v.models.phone.$error : null"
+                    :class="[!$v.phone.$error && $v.phone.$model ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                    :state="$v.phone.$dirty ? !$v.phone.$error : null"
                   >
                 </label>
               </div>
@@ -302,11 +302,13 @@
               <div class="col-6">
                 <label for="city">{{ $t('form.city') }}
                   <input
-                    v-model="city"
+                    v-model="$v.city.$model"
                     class="form-control"
                     type="text"
                     name="city"
                     placeholder="..."
+                    :class="[!$v.city.$error && $v.city.$model ? 'is-valid' : '', $v.city.$error && !$v.city.minLength ? 'is-invalid' : '']"
+                    :state="$v.city.$dirty ? !$v.city.$error : null"
                   >
                 </label>
               </div>
@@ -314,11 +316,13 @@
                 <label for="street">
                   {{ $t('form.street') }}
                   <input
-                    v-model="street"
+                    v-model="$v.street.$model"
                     class="form-control"
                     type="text"
                     name="streeet"
                     placeholder="..."
+                    :class="[!$v.street.$error && $v.street.$model ? 'is-valid' : '', $v.street.$error && !$v.street.minLength ? 'is-invalid' : '']"
+                    :state="$v.street.$dirty ? !$v.street.$error : null"
                   >
                 </label>
               </div>
@@ -329,11 +333,13 @@
                 <label for="house">
                   {{ $t('form.house') }}
                   <input
-                    v-model="house"
+                    v-model="$v.house.$model"
                     class="form-control"
                     type="text"
                     name="house"
                     placeholder="..."
+                    :class="[!$v.house.$error && $v.house.$model ? 'is-valid' : '', $v.house.$error && !$v.house.minLength ? 'is-invalid' : '']"
+                    :state="$v.house.$dirty ? !$v.house.$error : null"
                   >
                 </label>
               </div>
@@ -352,11 +358,13 @@
               <div class="col-4">
                 <label for="appartment">{{ $t('form.apartment') }}
                   <input
-                    v-model="apartment"
+                    v-model="$v.apartment.$model"
                     class="form-control"
                     type="text"
                     name="appartment"
                     placeholder="..."
+                    :class="[!$v.apartment.$error && $v.apartment.$model ? 'is-valid' : '', $v.apartment.$error && !$v.apartment.minLength ? 'is-invalid' : '']"
+                    :state="$v.apartment.$dirty ? !$v.apartment.$error : null"
                   >
                 </label>
               </div>
@@ -510,7 +518,7 @@
                 </div>
                 <div class="col-md-6 mx-auto text-md-right">
                   <button
-                    :disabled="!cartSize || loading === true || !name || !street || !city || !models.phone || !apartment"
+                    :disabled="!cartSize || loading === true || !name || !street || !city || !phone || !apartment"
                     :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                     class="order"
                     type="submit"
@@ -580,7 +588,7 @@ export default {
     return {
       currentProductsDisplayed: 1,
       name: null,
-      models: { phone: null },
+      phone: null,
       city: null,
       street: null,
       house: null,
@@ -601,17 +609,24 @@ export default {
     },
     city: {
       required,
-      minLength: minLength(4)
+      minLength: minLength(3)
     },
     street: {
       required,
-      minLength: minLength(4)
+      minLength: minLength(3)
     },
-    models: {
-      phone: {
-        required,
-        minLength: minLength(17)
-      }
+    house: {
+      required,
+      minLength: minLength(1)
+    },
+    apartment: {
+      required,
+      minLength: minLength(1)
+    },
+
+    phone: {
+      required,
+      minLength: minLength(18)
     }
   },
 
@@ -623,6 +638,60 @@ export default {
       'cartSize',
       'cartTotalAmount'
     ])
+  },
+
+  watch: {
+    name (newName) {
+      localStorage.name = newName
+    },
+    city (newCity) {
+      localStorage.city = newCity
+    },
+    street (newStreet) {
+      localStorage.street = newStreet
+    },
+    house (newHouse) {
+      localStorage.house = newHouse
+    },
+    apartment (newApartment) {
+      localStorage.apartment = newApartment
+    },
+    code (newCode) {
+      localStorage.code = newCode
+    },
+    phone (newPhone) {
+      localStorage.phone = newPhone
+    }
+  },
+
+  mounted () {
+    if (localStorage.name) {
+      this.name = localStorage.name
+    }
+
+    if (localStorage.phone) {
+      this.phone = localStorage.phone
+    }
+
+    if (localStorage.city) {
+      this.city = localStorage.city
+    }
+
+    if (localStorage.street) {
+      this.street = localStorage.street
+    }
+
+    if (localStorage.house) {
+      this.house = localStorage.house
+    }
+
+    if (localStorage.apartment) {
+      this.apartment = localStorage.apartment
+    }
+
+    if (localStorage.code) {
+      this.code = localStorage.code
+    }
   },
 
   methods: {
@@ -686,7 +755,7 @@ export default {
       if (!this.apartment) {
         this.errors.push('Кв./офіс вимагається')
       }
-      if (!this.models.phone) {
+      if (!this.phone) {
         this.errors.push('Телефон вимагається')
       }
       if (!this.errors.length) {
@@ -699,8 +768,8 @@ export default {
       const orderedProducts = JSON.stringify(this.cart)
 
       axios
-        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.models.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
-      this.name = this.models.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = null
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
+      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = null
       this.$store.commit('emptyCart')
       this.success = true
       if (process.client) {

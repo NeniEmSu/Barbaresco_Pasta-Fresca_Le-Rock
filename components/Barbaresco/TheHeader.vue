@@ -33,13 +33,13 @@
         "kitchen": "Кухня"
       },
       "form":{
-      "name": "Ваше ім’я",
-      "phone": "Ваш телефон",
-      "city": "Місто/село",
-      "street": "Вулиця",
-      "house": "Буд",
+      "name": "Ваше ім’я*",
+      "phone": "Ваш телефон*",
+      "city": "Місто/село*",
+      "street": "Вулиця*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./офіс",
+      "apartment": "Кв./офіс*",
       "comment": "Коментар до замовлення",
       "modeOfPayment": "Бажаний спосіб оплати",
       "pay-carrier": "Оплата кур’єру готівкою",
@@ -87,13 +87,13 @@
         "kitchen": "Kitchen"
       },
       "form":{
-      "name": "Your name",
-      "phone": "Your phone",
-      "city": "City/Village",
-      "street": "Street",
-      "house": "Building",
+      "name": "Your name*",
+      "phone": "Your phone*",
+      "city": "City/Village*",
+      "street": "Street*",
+      "house": "Building*",
       "code": "Code",
-      "apartment": "Apt./Office",
+      "apartment": "Apt./Office*",
       "comment": "Order comment",
       "modeOfPayment": "Preferred mode of payment",
       "pay-carrier": "Payment by courier in cash",
@@ -142,13 +142,13 @@
         "kitchen": "Кухня"
       },
       "form":{
-      "name": "Ваше имя",
-      "phone": "Ваш телефон",
-      "city": "Город/село",
-      "street": "Улица",
-      "house": "Буд",
+      "name": "Ваше имя*",
+      "phone": "Ваш телефон*",
+      "city": "Город/село*",
+      "street": "Улица*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./Офис",
+      "apartment": "Кв./Офис*",
       "comment": "Комментарий к заказу",
       "modeOfPayment": "Предпочтительный способ оплаты",
       "pay-carrier": "Оплата курьеру наличными",
@@ -265,7 +265,7 @@
             </b-nav-item>
             <b-nav-item
               tag="button"
-              class="fromleft d-none"
+              class="fromleft"
               @click.stop="reservationOpen = !reservationOpen"
             >
               {{ $t('links.reserveAPlace') }}
@@ -367,9 +367,9 @@
                     style="border-radius: 50%;"
                     :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                     alt=""
-                    class="col-2 m-auto"
+                    class="col-3 m-auto cart-product-img"
                   >
-                  <div class="col-6 p-0">
+                  <div class="col-5 p-0">
                     <div class="col-12 p-0 m-auto">
                       <div class="row m-auto">
                         <h6
@@ -476,22 +476,27 @@
                   <div class="col-6 pr-0">
                     <label for="name">{{ $t('form.name') }}
                       <input
-                        v-model="name"
+                        v-model="$v.name.$model"
                         class="form-control"
                         type="text"
                         name="name"
                         placeholder="..."
+                        :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                        :state="$v.name.$dirty ? !$v.name.$error : null"
                       >
                     </label>
                   </div>
                   <div class="col-6">
                     <label for="phone">{{ $t('form.phone') }}
                       <input
-                        v-model.number="phone"
+                        v-model="$v.phone.$model"
+                        v-mask="'+38 (0##) ###-####'"
                         class="form-control"
                         type="text"
                         name="phone"
                         placeholder="+380..."
+                        :class="[!$v.phone.$error && $v.phone.$model ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                        :state="$v.phone.$dirty ? !$v.phone.$error : null"
                       > </label>
                   </div>
                 </div>
@@ -500,21 +505,25 @@
                   <div class="col-6 pr-0">
                     <label for="city">{{ $t('form.city') }}
                       <input
-                        v-model="city"
+                        v-model="$v.city.$model"
                         class="form-control"
                         type="text"
                         name="city"
                         placeholder="..."
+                        :class="[!$v.city.$error && $v.city.$model ? 'is-valid' : '', $v.city.$error && !$v.city.minLength ? 'is-invalid' : '']"
+                        :state="$v.city.$dirty ? !$v.city.$error : null"
                       ></label>
                   </div>
                   <div class="col-6">
                     <label for="street">{{ $t('form.street') }}
                       <input
-                        v-model="street"
+                        v-model="$v.street.$model"
                         class="form-control"
                         type="text"
                         name="streeet"
                         placeholder="..."
+                        :class="[!$v.street.$error && $v.street.$model ? 'is-valid' : '', $v.street.$error && !$v.street.minLength ? 'is-invalid' : '']"
+                        :state="$v.street.$dirty ? !$v.street.$error : null"
                       ></label>
                   </div>
                 </div>
@@ -523,11 +532,13 @@
                   <div class="col-4 pr-0">
                     <label for="house">{{ $t('form.house') }}
                       <input
-                        v-model="house"
+                        v-model="$v.house.$model"
                         class="form-control"
                         type="text"
                         name="house"
                         placeholder="..."
+                        :class="[!$v.house.$error && $v.house.$model ? 'is-valid' : '', $v.house.$error && !$v.house.minLength ? 'is-invalid' : '']"
+                        :state="$v.house.$dirty ? !$v.house.$error : null"
                       > </label>
                   </div>
                   <div class="col-4 pr-0">
@@ -544,11 +555,13 @@
                   <div class="col-4">
                     <label for="appartment">{{ $t('form.apartment') }}
                       <input
-                        v-model="apartment"
+                        v-model="$v.apartment.$model"
                         class="form-control"
                         type="text"
                         name="appartment"
                         placeholder="..."
+                        :class="[!$v.apartment.$error && $v.apartment.$model ? 'is-valid' : '', $v.apartment.$error && !$v.apartment.minLength ? 'is-invalid' : '']"
+                        :state="$v.apartment.$dirty ? !$v.apartment.$error : null"
                       >
                     </label>
                   </div>
@@ -716,20 +729,27 @@
                   />
                 </client-only>
               </div>
-
               <input
-                v-model="name"
+                v-model="$v.name.$model"
+                class="form-control w-100"
                 type="text"
+                name="name"
                 :placeholder="$t('reservation.name')"
-                class="w-100"
+                :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                :state="$v.name.$dirty ? !$v.name.$error : null"
               >
 
               <input
-                v-model="phone"
+                v-model="$v.phone.$model"
+                v-mask="'+38 (0##) ###-####'"
+                class="form-control w-100"
                 type="text"
+                name="phone"
                 :placeholder="$t('reservation.phone')"
-                class="w-100"
+                :class="[!$v.phone.$error && $v.phone.$model && $v.phone.minLength ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                :state="$v.phone.$dirty ? !$v.phone.$error : null"
               >
+
               <div class="form-group mx-auto text-center">
                 <button
                   id="submit"
@@ -752,9 +772,10 @@
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
 import { en, uk, ru } from 'vuejs-datepicker/dist/locale'
+import { required, minLength } from 'vuelidate/lib/validators'
 import clickOutside from '@/directives/click-outside'
 import handleScroll from '@/directives/handle-scroll'
-// require('@/assets/css/TheHeader.css')
+require('@/assets/css/TheHeader.css')
 
 let today = new Date()
 const dd = String(today.getDate()).padStart(2, '0')
@@ -821,6 +842,35 @@ export default {
 
     }
   },
+
+  validations: {
+    name: {
+      required,
+      minLength: minLength(4)
+    },
+    city: {
+      required,
+      minLength: minLength(3)
+    },
+    street: {
+      required,
+      minLength: minLength(3)
+    },
+    house: {
+      required,
+      minLength: minLength(1)
+    },
+    apartment: {
+      required,
+      minLength: minLength(1)
+    },
+
+    phone: {
+      required,
+      minLength: minLength(18)
+    }
+  },
+
   computed: {
     ...mapState([
       'cart'
@@ -835,10 +885,60 @@ export default {
       this.mobileNavOpen = false
       this.cartOpen = false
       this.reservationOpen = false
+    },
+
+    name (newName) {
+      localStorage.name = newName
+    },
+    city (newCity) {
+      localStorage.city = newCity
+    },
+    street (newStreet) {
+      localStorage.street = newStreet
+    },
+    house (newHouse) {
+      localStorage.house = newHouse
+    },
+    apartment (newApartment) {
+      localStorage.apartment = newApartment
+    },
+    code (newCode) {
+      localStorage.code = newCode
+    },
+    phone (newPhone) {
+      localStorage.phone = newPhone
     }
   },
   mounted () {
     window.addEventListener('scroll', this.onScroll)
+
+    if (localStorage.name) {
+      this.name = localStorage.name
+    }
+
+    if (localStorage.phone) {
+      this.phone = localStorage.phone
+    }
+
+    if (localStorage.city) {
+      this.city = localStorage.city
+    }
+
+    if (localStorage.street) {
+      this.street = localStorage.street
+    }
+
+    if (localStorage.house) {
+      this.house = localStorage.house
+    }
+
+    if (localStorage.apartment) {
+      this.apartment = localStorage.apartment
+    }
+
+    if (localStorage.code) {
+      this.code = localStorage.code
+    }
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll)
@@ -968,6 +1068,31 @@ export default {
   }
 }
 </script>
+
+<style lang="css">
+.vdp-datepicker__calendar {
+  margin: auto auto 20px auto;
+  border: 0 !important;
+}
+
+.vdp-datepicker__calendar .cell.selected:hover,
+.vdp-datepicker__calendar .cell.day:hover {
+  background: #000000 !important;
+  color: white;
+  border: 1px solid black !important;
+}
+
+.vdp-datepicker__calendar .cell.blank:hover,
+.vdp-datepicker__calendar .cell.disabled:hover {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.vdp-datepicker__calendar .cell.selected {
+  background: #000000 !important;
+  color: white;
+}
+</style>
 
 <style lang="scss" scoped>
 @import "~assets/css/TheHeader.css";
