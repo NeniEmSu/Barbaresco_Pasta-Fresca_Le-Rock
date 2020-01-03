@@ -490,7 +490,7 @@
                     <label for="phone">{{ $t('form.phone') }}
                       <input
                         v-model="$v.phone.$model"
-                        v-mask="'+38 (0##) ###-####'"
+                        v-mask="'+38 (###) ###-####'"
                         class="form-control"
                         type="text"
                         name="phone"
@@ -576,7 +576,7 @@
                 />
                 <div class="send-order text-center">
                   <b-button
-                    :disabled="!cartSize"
+                    :disabled="!cartSize || loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !street || !$v.street.minLength || !city || !$v.city.minLength || !phone || !apartment || !house"
                     class="order"
                     @click.prevent="sendOrder"
                   >
@@ -743,7 +743,7 @@
               <label class="w-100" for="phone">
                 <input
                   v-model="$v.phone.$model"
-                  v-mask="'+38 (0##) ###-####'"
+                  v-mask="'+38 (###) ###-####'"
                   class="form-control w-100"
                   type="text"
                   name="phone"
@@ -818,6 +818,8 @@ export default {
   data () {
     return {
       success: false,
+      loading: false,
+      error: [],
       cartForm: false,
       userDropdownOpen: false,
       mobileNavOpen: false,
@@ -910,6 +912,9 @@ export default {
     },
     phone (newPhone) {
       localStorage.phone = newPhone
+    },
+    comment (newComment) {
+      sessionStorage.comment = newComment
     }
   },
   mounted () {
@@ -941,6 +946,10 @@ export default {
 
     if (localStorage.code) {
       this.code = localStorage.code
+    }
+
+    if (sessionStorage.comment) {
+      this.comment = sessionStorage.comment
     }
   },
   beforeDestroy () {
@@ -1036,8 +1045,9 @@ export default {
       const orderedProducts = JSON.stringify(this.cart)
 
       axios
-        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
-      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я: ${this.name}, %0AТелефон: ${this.phone}, %0AМісто/село: ${this.city}, %0AВулиця: ${this.street}, %0AБуд: ${this.house}, %0AКод: ${this.code}, %0AКв./офіс: ${this.apartment}, %0AКоментар до замовлення: ${this.comment}, %0Aспосіб оплати: ${this.modeOfPayment}, %0AВсього: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
+      // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
+      this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
       this.$store.commit('emptyCart')
       this.success = true
       if (process.client) {

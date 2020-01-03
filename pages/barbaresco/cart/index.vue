@@ -272,7 +272,7 @@
                 <label for="phone">{{ $t('form.phone') }}
                   <input
                     v-model="$v.phone.$model"
-                    v-mask="'+38 (0##) ###-####'"
+                    v-mask="'+38 (###) ###-####'"
                     class="form-control w-100"
                     type="text"
                     name="phone"
@@ -290,13 +290,13 @@
                   v-if="!$v.city.minLength"
                   class="error text-danger text-left"
                 >
-                  Ім'я обов'язково і має містити не менше {{ $v.city.$params.minLength.min }} символів.
+                  {{ $t('form.city') }} обов'язково і має містити не менше {{ $v.city.$params.minLength.min }} символів.
                 </div>
                 <div
                   v-if="!$v.street.minLength"
                   class="error text-danger text-left"
                 >
-                  Ім'я обов'язково і має містити не менше {{ $v.street.$params.minLength.min }} символів.
+                  {{ $t('form.street') }} обов'язково і має містити не менше {{ $v.street.$params.minLength.min }} символів.
                 </div>
               </div>
               <div class="col-6">
@@ -518,7 +518,7 @@
                 </div>
                 <div class="col-md-6 mx-auto text-md-right">
                   <button
-                    :disabled="!cartSize || loading === true || !name || !street || !city || !phone || !apartment"
+                    :disabled="!cartSize || loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !street || !$v.street.minLength || !city || !$v.city.minLength || !phone || !apartment || !house"
                     :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                     class="order"
                     type="submit"
@@ -661,6 +661,9 @@ export default {
     },
     phone (newPhone) {
       localStorage.phone = newPhone
+    },
+    comment (newComment) {
+      sessionStorage.comment = newComment
     }
   },
 
@@ -691,6 +694,10 @@ export default {
 
     if (localStorage.code) {
       this.code = localStorage.code
+    }
+
+    if (sessionStorage.comment) {
+      this.comment = sessionStorage.comment
     }
   },
 
@@ -765,10 +772,13 @@ export default {
     },
 
     sendOrder () {
-      const orderedProducts = JSON.stringify(this.cart)
+      // const orderedProducts = JSON.stringify(this.cart)
+
+      let data = this.cart.map(item => ({ [item.name]: [`${item.quantity}шт, ${item.price}₴`] }))
+      data = Object.assign({}, ...data)
 
       axios
-        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я : ${this.name}, %0AТелефон : ${this.phone}, %0AМісто/село : ${this.city}, %0AВулиця : ${this.street}, %0AБуд : ${this.house}, %0AКод : ${this.code}, %0AКв./офіс : ${this.apartment}, %0AКоментар до замовлення : ${this.comment}, %0Aспосіб оплати : ${this.modeOfPayment}, %0AВсього : ${this.cartTotalAmount}₴, %0A${this.$t('cart.heading')} : %0A${JSON.stringify(data)} `)
       // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
       this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
       this.$store.commit('emptyCart')

@@ -13,23 +13,23 @@ export const state = () => ({
 export const getters = {
   // pizzas: state => state.arrayedStoreData.filter(el => el.category === "pizzas"),
 
-  cartSize (state) {
+  cartSize(state) {
     return state.cart.length
   },
 
-  cartTotalAmount (state) {
+  cartTotalAmount(state) {
     return state.cart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
 
-  toast (state) {
+  toast(state) {
     return state.toast
   }
 }
 
 export const actions = {
-  fetchProducts ({
+  fetchProducts({
     commit
   }) {
     myApi.getProducts().then((products) => {
@@ -38,7 +38,7 @@ export const actions = {
     })
   },
 
-  addToCart ({
+  addToCart({
     commit
   }, productId) {
     myApi.products('add', productId).then((productId) => {
@@ -47,7 +47,7 @@ export const actions = {
     })
   },
 
-  removeFromCart ({
+  removeFromCart({
     commit
   }, productId) {
     myApi.products('remove', productId).then((productId) => {
@@ -56,7 +56,7 @@ export const actions = {
     })
   },
 
-  deleteFromCart ({
+  deleteFromCart({
     commit
   }, productId) {
     myApi.products('delete', productId).then((productId) => {
@@ -85,11 +85,11 @@ export const actions = {
 export const mutations = {
   pizzasAction: state => state.products.filter(el => el.category === 'pizzas'),
 
-  setUpProducts (state, productsPayload) {
+  setUpProducts(state, productsPayload) {
     state.products = productsPayload
   },
 
-  addToCart (state, productId) {
+  addToCart(state, productId) {
     const product = state.products.find(product => product.id === productId)
 
     const cartProduct = state.cart.find(product => product.id === productId)
@@ -98,8 +98,13 @@ export const mutations = {
       cartProduct.quantity++
     } else {
       state.cart.push({
-        ...product,
-        stock: product.quantity,
+        // ...product,
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: product.image,
+
+        // stock: product.quantity,
         quantity: 1
       })
     }
@@ -107,7 +112,7 @@ export const mutations = {
     product.quantity--
   },
 
-  removeFromCart (state, productId) {
+  removeFromCart(state, productId) {
     const product = state.products.find(product => product.id === productId)
 
     const cartProduct = state.cart.find(product => product.id === productId)
@@ -117,7 +122,7 @@ export const mutations = {
     product.quantity++
   },
 
-  deleteFromCart (state, productId) {
+  deleteFromCart(state, productId) {
     const product = state.products.find(product => product.id === productId)
 
     const cartProductIndex = state.cart.findIndex(
@@ -129,12 +134,12 @@ export const mutations = {
     state.cart.splice(cartProductIndex, 1)
   },
 
-  showToast (state, toastText) {
+  showToast(state, toastText) {
     state.toast.show = true
     state.toast.text = toastText
   },
 
-  hideToast (state) {
+  hideToast(state) {
     state.toast.show = false
     state.toast.text = ''
   },
@@ -143,12 +148,12 @@ export const mutations = {
   //   state.checkoutStatus = status
   // },
 
-  emptyCart (state) {
+  emptyCart(state) {
     state.cart = []
     state.cartCount = 0
   },
 
-  SET_ANIMATION (state, animation) {
+  SET_ANIMATION(state, animation) {
     state.animation = animation
   }
 }
