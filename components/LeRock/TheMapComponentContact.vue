@@ -1,15 +1,15 @@
 <i18n>
 {
   "uk": {
-    "location": "Barbaresco: м. Тернопіль, вулиця Князя Острозького, 14"
+    "location": "Вул. Олени Кульчицької, 2, Тернопіль, Тернопільська область, 46002"
 
   },
   "en": {
-   "location": "Barbaresco: C. Ternopil, 14th Ostrozkoho Street"
+   "location": "Oleny Kul'chyts'koi St, 2, Ternopil, Ternopil Oblast, 46002"
 
   },
   "ru": {
-    "location": "Barbaresco г.. Тернополь, улица Князя Острожского, 14"
+    "location": "г.. Тернополь, улица Олени Кульчицької, 2, Тернопільська область, 46002"
   }
 }
 </i18n>
@@ -48,12 +48,10 @@ export default {
       currentLocation: {},
       locations: [
         {
-          id: 1,
-          lat: 49.549199,
-          lng: 25.594941,
+          lat: 49.552314,
+          lng: 25.596150,
           name: this.$t('location')
         }
-
       ],
       pins: {
 
@@ -349,13 +347,13 @@ code {
 
 .vue-map-container {
   width: calc(100% - 15px);
-  height: 429px;
+  height: 414px;
 }
 
 @media (min-width: 1400px) {
   .vue-map-container {
     width: calc(100% - 21px);
-    height: 429px;
+    height: 414px;
   }
 }
 

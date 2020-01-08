@@ -474,10 +474,13 @@
               <form>
                 <div class="row">
                   <div class="col-6 pr-0">
-                    <label for="name">{{ $t('form.name') }}
+                    <label
+                      class="w-100"
+                      for="name"
+                    >{{ $t('form.name') }}
                       <input
                         v-model="$v.name.$model"
-                        class="form-control"
+                        class="form-control w-100"
                         type="text"
                         name="name"
                         placeholder="..."
@@ -1041,11 +1044,42 @@ export default {
       this.lastScrollPosition = currentScrollPosition
     },
 
+    checkForm (e) {
+      this.errors = []
+      this.success = false
+
+      if (!this.name) {
+        this.errors.push('Ім’я вимагається')
+      }
+      if (!this.city) {
+        this.errors.push('Місто/село вимагається')
+      }
+      if (!this.street) {
+        this.errors.push('Вулиця вимагається')
+      }
+      if (!this.house) {
+        this.errors.push('Буд вимагається')
+      }
+      if (!this.apartment) {
+        this.errors.push('Кв./офіс вимагається')
+      }
+      if (!this.phone) {
+        this.errors.push('Телефон вимагається')
+      }
+      if (!this.errors.length) {
+        this.sendOrder()
+      }
+      e.preventDefault()
+    },
+
     sendOrder () {
-      const orderedProducts = JSON.stringify(this.cart)
+      // const orderedProducts = JSON.stringify(this.cart)
+
+      let data = this.cart.map(item => ({ [item.name]: [`${item.quantity}шт, ${item.price}₴`] }))
+      data = Object.assign({}, ...data)
 
       axios
-        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я: ${this.name}, %0AТелефон: ${this.phone}, %0AМісто/село: ${this.city}, %0AВулиця: ${this.street}, %0AБуд: ${this.house}, %0AКод: ${this.code}, %0AКв./офіс: ${this.apartment}, %0AКоментар до замовлення: ${this.comment}, %0Aспосіб оплати: ${this.modeOfPayment}, %0AВсього: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я : ${this.name}, %0AТелефон : ${this.phone}, %0AМісто/село : ${this.city}, %0AВулиця : ${this.street}, %0AБуд : ${this.house}, %0AКод : ${this.code}, %0AКв./офіс : ${this.apartment}, %0AКоментар до замовлення : ${this.comment}, %0Aспосіб оплати : ${this.modeOfPayment}, %0AВсього : ${this.cartTotalAmount}₴, %0A${this.$t('cart.heading')} : %0A${JSON.stringify(data)} `)
       // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
       this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
       this.$store.commit('emptyCart')
@@ -1061,8 +1095,11 @@ export default {
       })
       const self = this
       setTimeout(function () {
-        self.cartForm = self.success = false
+        self.success = false
       }, 10000)
+    },
+    updateView (updatedView) {
+      this.currentProductsDisplayed = updatedView
     },
 
     sendMessage () {

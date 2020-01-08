@@ -191,7 +191,7 @@ export default {
 
   methods: {
     addToCart (id, append = false) {
-      this.$store.dispatch('addToCart', id)
+      this.$store.dispatch('addToleRockCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,

@@ -91,9 +91,9 @@ import TheImageNavigation from '~/components/PastaFresca/TheImageNavigationPasta
 import TheImagedProductNav from '~/components/PastaFresca/TheImagedProductNavPastaFresca'
 import TheMapComponent from '~/components/PastaFresca/TheMapComponentPastaFresca'
 import ThePasta from '~/components/PastaFresca/PastaFrescaProducts/ThePasta'
-import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
+// import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
 import TheDrinks from '~/components/PastaFresca/PastaFrescaProducts/TheDrinks'
-import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
+// import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
 import TheDesert from '~/components/PastaFresca/PastaFrescaProducts/TheDesert'
 import TheSalad from '~/components/PastaFresca/PastaFrescaProducts/TheSalad'
 import TheFirstCourse from '~/components/PastaFresca/PastaFrescaProducts/TheFirstCourse'
@@ -118,8 +118,8 @@ export default {
     TheImagedProductNav,
     TheMapComponent,
     ThePasta,
-    TheSushi,
-    TheMlinty,
+    // TheSushi,
+    // TheMlinty,
     TheDesert,
     TheSalad,
     TheFirstCourse,

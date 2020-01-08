@@ -32,7 +32,7 @@
         data-aos-delay="1000"
         data-aos-duration="500"
       >
-        <div class="m-auto content-text">
+        <div class="m-auto container content-text">
           <h1>{{ $t('title') }}</h1>
           <p>{{ $t('description') }}</p>
         </div>

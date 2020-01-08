@@ -81,7 +81,12 @@ input {
     width: 100%;
 
     margin: 5px auto 10px auto;
-    padding: 14px 10px 14px 10px !important;
+    padding: 14px 10px 14px 10px;
+
+    &.is-invalid,
+    &.is-invalid {
+        padding-right: 30px !important;
+    }
 }
 
 .order {
@@ -433,8 +438,7 @@ header {
         color: $darkColor;
     }
 
-    input.form-control,
-    textarea.form-control {
+    textarea {
         background: transparent;
         border: 2px solid $darkColor;
         box-sizing: border-box;

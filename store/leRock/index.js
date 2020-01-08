@@ -3,7 +3,6 @@ import myApi from '~/plugins/api/myApi.js'
 export const state = () => ({
   animation: 'fade-in-up',
   cart: [],
-  leRockCart: [],
   toast: {
     text: '',
     show: false
@@ -18,18 +17,8 @@ export const getters = {
     return state.cart.length
   },
 
-  leRockCartSize (state) {
-    return state.leRockCart.length
-  },
-
   cartTotalAmount (state) {
     return state.cart.reduce((total, product) => {
-      return total + product.price * product.quantity
-    }, 0)
-  },
-
-  leRockCartTotalAmount (state) {
-    return state.leRockCart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
@@ -58,29 +47,11 @@ export const actions = {
     })
   },
 
-  addToleRockCart ({
-    commit
-  }, productId) {
-    myApi.products('add', productId).then((productId) => {
-      commit('addToleRockCart', productId)
-      commit('showToast', 'Додано з кошика')
-    })
-  },
-
   removeFromCart ({
     commit
   }, productId) {
     myApi.products('remove', productId).then((productId) => {
       commit('removeFromCart', productId)
-      commit('showToast', 'Видалено з кошика')
-    })
-  },
-
-  removeFromleRockCart ({
-    commit
-  }, productId) {
-    myApi.products('remove', productId).then((productId) => {
-      commit('removeFromleRockCart', productId)
       commit('showToast', 'Видалено з кошика')
     })
   },
@@ -92,16 +63,8 @@ export const actions = {
       commit('deleteFromCart', productId)
       commit('showToast', 'Видалено з кошика')
     })
-  },
-
-  deleteFromleRockCart ({
-    commit
-  }, productId) {
-    myApi.products('delete', productId).then((productId) => {
-      commit('deleteFromleRockCart', productId)
-      commit('showToast', 'Видалено з кошика')
-    })
   }
+
   // checkout: ({
   //   state,
   //   commit
@@ -171,51 +134,6 @@ export const mutations = {
     state.cart.splice(cartProductIndex, 1)
   },
 
-  addToleRockCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
-
-    const cartProduct = state.leRockCart.find(product => product.id === productId)
-
-    if (cartProduct) {
-      cartProduct.quantity++
-    } else {
-      state.leRockCart.push({
-        // ...product,
-        id: product.id,
-        name: product.name,
-        price: product.price,
-        image: product.image,
-
-        // stock: product.quantity,
-        quantity: 1
-      })
-    }
-
-    product.quantity--
-  },
-
-  removeFromleRockCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
-
-    const cartProduct = state.leRockCart.find(product => product.id === productId)
-
-    cartProduct.quantity--
-
-    product.quantity++
-  },
-
-  deleteFromleRockCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
-
-    const cartProductIndex = state.leRockCart.findIndex(
-      product => product.id === productId
-    )
-
-    product.quantity = state.leRockCart[cartProductIndex].stock
-
-    state.leRockCart.splice(cartProductIndex, 1)
-  },
-
   showToast (state, toastText) {
     state.toast.show = true
     state.toast.text = toastText
@@ -235,10 +153,6 @@ export const mutations = {
     state.cartCount = 0
   },
 
-  emptyleRockCart (state) {
-    state.leRockCart = []
-    state.leRockCartCount = 0
-  },
   SET_ANIMATION (state, animation) {
     state.animation = animation
   }

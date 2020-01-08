@@ -30,13 +30,13 @@
       "desc4b": "Час доставки також залежить від Вашого району і часу дня, пробки на дорозі ніхто не відміняв :)"
     },
     "form":{
-      "name": "Ваше ім’я",
-      "phone": "Ваш телефон",
-      "city": "Місто/село",
-      "street": "Вулиця",
-      "house": "Буд",
+      "name": "Ваше ім’я*",
+      "phone": "Ваш телефон*",
+      "city": "Місто/село*",
+      "street": "Вулиця*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./офіс",
+      "apartment": "Кв./офіс*",
       "comment": "Коментар до замовлення",
       "modeOfPayment": "Бажаний спосіб оплати",
       "pay-carrier": "Оплата кур’єру готівкою",
@@ -79,13 +79,13 @@
       "desc4b": "Delivery time also depends on your area and time of day, no traffic jams were canceled :)"
     },
   "form":{
-      "name": "Your name",
-      "phone": "Your phone",
-      "city": "City/Village",
-      "street": "Street",
-      "house": "Building",
+      "name": "Your name*",
+      "phone": "Your phone*",
+      "city": "City/Village*",
+      "street": "Street*",
+      "house": "Building*",
       "code": "Code",
-      "apartment": "Apt./Office",
+      "apartment": "Apt./Office*",
       "comment": "Order comment",
       "modeOfPayment": "Preferred mode of payment",
       "pay-carrier": "Payment by courier in cash",
@@ -128,13 +128,13 @@
       "desc4b": "Время доставки также зависит от Вашего района и времени дня, пробки на дороге никто не отменял :)"
     },
     "form":{
-      "name": "Ваше имя",
-      "phone": "Ваш телефон",
-      "city": "Город/село",
-      "street": "Улица",
-      "house": "Буд",
+      "name": "Ваше имя*",
+      "phone": "Ваш телефон*",
+      "city": "Город/село*",
+      "street": "Улица*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./Офис",
+      "apartment": "Кв./Офис*",
       "comment": "Комментарий к заказу",
       "modeOfPayment": "Предпочтительный способ оплаты",
       "pay-carrier": "Оплата курьеру наличными",
@@ -159,7 +159,7 @@
         {{ $t('orderProcess.heading') }}
       </h1>
 
-      <div class="row">
+      <div class="row order-explanation">
         <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderOnline.png"
@@ -219,84 +219,154 @@
       </div>
       <hr>
 
-      <div class="row">
+      <form
+        class="row"
+        @submit.prevent="checkForm"
+      >
         <div class="col-lg-6">
-          <form class="col-12">
+          <div class="col-12">
+            <div
+              v-if="errors.length"
+              class="text-left text-danger"
+            >
+              <b>Виправте такі помилку(и):</b>
+              <ol>
+                <li
+                  v-for="error in errors"
+                  :key="error"
+                  class="ml-3"
+                >
+                  {{ error }}
+                </li>
+              </ol>
+            </div>
             <div class="row">
+              <div class="col-12">
+                <div
+                  v-if="!$v.name.minLength"
+                  class="error text-danger text-left"
+                >
+                  Ім'я обов'язково і має містити не менше {{ $v.name.$params.minLength.min }} символів.
+                </div>
+                <div
+                  v-if="!$v.phone.minLength"
+                  class="text-danger text-left"
+                >
+                  Номер телефону обов'язковий і повинен містити 10 символів
+                </div>
+              </div>
               <div class="col-6">
                 <label for="name">{{ $t('form.name') }}
                   <input
-                    v-model="name"
+                    v-model="$v.name.$model"
                     class="form-control"
                     type="text"
                     name="name"
                     placeholder="..."
+                    :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                    :state="$v.name.$dirty ? !$v.name.$error : null"
                   >
                 </label>
               </div>
               <div class="col-6">
                 <label for="phone">{{ $t('form.phone') }}
                   <input
-                    v-model.number="phone"
-                    class="form-control"
+                    v-model="$v.phone.$model"
+                    v-mask="'+38 (###) ###-####'"
+                    class="form-control w-100"
                     type="text"
                     name="phone"
                     placeholder="+380..."
-                  > </label>
+                    :class="[!$v.phone.$error && $v.phone.$model ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                    :state="$v.phone.$dirty ? !$v.phone.$error : null"
+                  >
+                </label>
               </div>
             </div>
 
             <div class="row">
+              <div class="col-12">
+                <div
+                  v-if="!$v.city.minLength"
+                  class="error text-danger text-left"
+                >
+                  {{ $t('form.city') }} обов'язково і має містити не менше {{ $v.city.$params.minLength.min }} символів.
+                </div>
+                <div
+                  v-if="!$v.street.minLength"
+                  class="error text-danger text-left"
+                >
+                  {{ $t('form.street') }} обов'язково і має містити не менше {{ $v.street.$params.minLength.min }} символів.
+                </div>
+              </div>
               <div class="col-6">
                 <label for="city">{{ $t('form.city') }}
                   <input
-                    v-model="city"
+                    v-model="$v.city.$model"
                     class="form-control"
                     type="text"
                     name="city"
                     placeholder="..."
-                  ></label>
+                    :class="[!$v.city.$error && $v.city.$model ? 'is-valid' : '', $v.city.$error && !$v.city.minLength ? 'is-invalid' : '']"
+                    :state="$v.city.$dirty ? !$v.city.$error : null"
+                  >
+                </label>
               </div>
               <div class="col-6">
-                <label for="street">{{ $t('form.street') }}
+                <label for="street">
+                  {{ $t('form.street') }}
                   <input
-                    v-model="street"
+                    v-model="$v.street.$model"
                     class="form-control"
                     type="text"
                     name="streeet"
                     placeholder="..."
-                  ></label>
+                    :class="[!$v.street.$error && $v.street.$model ? 'is-valid' : '', $v.street.$error && !$v.street.minLength ? 'is-invalid' : '']"
+                    :state="$v.street.$dirty ? !$v.street.$error : null"
+                  >
+                </label>
               </div>
             </div>
 
             <div class="row">
               <div class="col-4">
-                <label for="house">{{ $t('form.house') }}
+                <label for="house">
+                  {{ $t('form.house') }}
                   <input
-                    v-model="house"
+                    v-model="$v.house.$model"
                     class="form-control"
                     type="text"
                     name="house"
                     placeholder="..."
-                  > </label>
+                    :class="[!$v.house.$error && $v.house.$model ? 'is-valid' : '', $v.house.$error && !$v.house.minLength ? 'is-invalid' : '']"
+                    :state="$v.house.$dirty ? !$v.house.$error : null"
+                  >
+                </label>
               </div>
               <div class="col-4">
-                <label for="code">{{ $t('form.code') }} <input
-                  v-model="code"
-                  class="form-control"
-                  type="text"
-                  name="code"
-                  placeholder="..."
-                > </label>
+                <label for="code">
+                  {{ $t('form.code') }}
+                  <input
+                    v-model="code"
+                    class="form-control"
+                    type="text"
+                    name="code"
+                    placeholder="..."
+                  >
+                </label>
               </div>
               <div class="col-4">
-                <label for="appartment">{{ $t('form.apartment') }} <input
-                  v-model="apartment"
-                  class="form-control"
-                  type="text"
-                  name="appartment"
-                  placeholder="..."
-                > </label>
+                <label for="appartment">{{ $t('form.apartment') }}
+                  <input
+                    v-model="$v.apartment.$model"
+                    class="form-control"
+                    type="text"
+                    name="appartment"
+                    placeholder="..."
+                    :class="[!$v.apartment.$error && $v.apartment.$model ? 'is-valid' : '', $v.apartment.$error && !$v.apartment.minLength ? 'is-invalid' : '']"
+                    :state="$v.apartment.$dirty ? !$v.apartment.$error : null"
+                  >
+                </label>
               </div>
             </div>
 
@@ -350,25 +420,25 @@
                 </label>
               </div>
             </div>
-          </form>
+          </div>
         </div>
         <div class="col-lg-6">
           <div class="text-center">
             <font
-              v-if="!cartSize"
+              v-if="!leRockCartSize"
               class="text-center mx-auto"
             >
               {{ $t('cart.emptyCart') }}
             </font>
             <h3
-              v-if="cartSize"
+              v-if="leRockCartSize"
               class="text-left"
             >
               {{ $t('cart.heading') }}
             </h3>
             <div class="cart-items">
               <div
-                v-for="(product, index) in cart"
+                v-for="(product, index) in leRockCart"
                 :key="product.id"
                 class="cart-item"
               >
@@ -377,7 +447,7 @@
                     {{ index+=1 }}
                   </p>
                   <img
-                    style="border-radius: 50%;   "
+                    style="border-radius: 50%;"
                     :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                     alt=""
                     class="col-2 m-auto"
@@ -437,30 +507,32 @@
             </div>
             <div class="submition">
               <hr
-                v-if="!cartSize"
+                v-if="!leRockCartSize"
                 class="mt-5"
               >
               <div class="row mt-5">
                 <div class="col-md-6 text-md-left">
                   <small class="col-12 p-0 small-sum">{{ $t('cart.total') }}:</small>
-                  <strong class="col-12 p-0 cart-total">{{ cartTotalAmount | currency }}</strong>
+                  <strong class="col-12 p-0 cart-total">{{ leRockCartTotalAmount | currency }}</strong>
                   <small class="col-12 p-0 small-value">{{ $t('cart.currencyValue') }}</small>
                 </div>
                 <div class="col-md-6 mx-auto text-md-right">
-                  <b-button
-                    :disabled="!cartSize"
-                    :to="localePath({name: 'le-rock-cart'},$i18n.locale)"
+                  <button
+                    :disabled="!leRockCartSize || loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !street || !$v.street.minLength || !city || !$v.city.minLength || !phone || !apartment || !house"
+                    :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
                     class="order"
-                    @click.prevent="sendOrder"
+                    type="submit"
+                    aria-label="submit"
+                    name="submit"
                   >
                     {{ $t('cart.order') }}
-                  </b-button>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
     <section v-else class="success container ">
       <div class="text-center m-auto">
@@ -483,7 +555,7 @@
         </div>
         <h5>{{ $t('toast.title') }}</h5>
         <p>{{ $t('toast.info') }}</p>
-        <b-button class="backToHome" :to="localePath({name: 'le-rock'},$i18n.locale)" @click="success = false">
+        <b-button class="backToHome" :to="localePath({name: 'barbaresco'},$i18n.locale)" @click="success = false">
           {{ $t('toast.btn') }}
         </b-button>
       </div>
@@ -494,6 +566,7 @@
 <script>
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
+import { required, minLength } from 'vuelidate/lib/validators'
 export default {
   name: 'Cart',
   layout: 'le-rock',
@@ -513,7 +586,6 @@ export default {
 
   data () {
     return {
-      success: false,
       currentProductsDisplayed: 1,
       name: null,
       phone: null,
@@ -523,34 +595,126 @@ export default {
       code: null,
       apartment: null,
       comment: null,
-      modeOfPayment: null
+      modeOfPayment: null,
+      loading: false,
+      errors: [],
+      success: false
+    }
+  },
+
+  validations: {
+    name: {
+      required,
+      minLength: minLength(4)
+    },
+    city: {
+      required,
+      minLength: minLength(3)
+    },
+    street: {
+      required,
+      minLength: minLength(3)
+    },
+    house: {
+      required,
+      minLength: minLength(1)
+    },
+    apartment: {
+      required,
+      minLength: minLength(1)
+    },
+
+    phone: {
+      required,
+      minLength: minLength(18)
     }
   },
 
   computed: {
     ...mapState([
-      'cart'
+      'leRockCart'
     ]),
     ...mapGetters([
-      'cartSize',
-      'cartTotalAmount'
+      'leRockCartSize',
+      'leRockCartTotalAmount'
     ])
+  },
+
+  watch: {
+    name (newName) {
+      localStorage.name = newName
+    },
+    city (newCity) {
+      localStorage.city = newCity
+    },
+    street (newStreet) {
+      localStorage.street = newStreet
+    },
+    house (newHouse) {
+      localStorage.house = newHouse
+    },
+    apartment (newApartment) {
+      localStorage.apartment = newApartment
+    },
+    code (newCode) {
+      localStorage.code = newCode
+    },
+    phone (newPhone) {
+      localStorage.phone = newPhone
+    },
+    comment (newComment) {
+      sessionStorage.comment = newComment
+    }
+  },
+
+  mounted () {
+    if (localStorage.name) {
+      this.name = localStorage.name
+    }
+
+    if (localStorage.phone) {
+      this.phone = localStorage.phone
+    }
+
+    if (localStorage.city) {
+      this.city = localStorage.city
+    }
+
+    if (localStorage.street) {
+      this.street = localStorage.street
+    }
+
+    if (localStorage.house) {
+      this.house = localStorage.house
+    }
+
+    if (localStorage.apartment) {
+      this.apartment = localStorage.apartment
+    }
+
+    if (localStorage.code) {
+      this.code = localStorage.code
+    }
+
+    if (sessionStorage.comment) {
+      this.comment = sessionStorage.comment
+    }
   },
 
   methods: {
 
     addToCart (id, append = false) {
-      this.$store.dispatch('addToCart', id)
+      this.$store.dispatch('addToleRockCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
-        toaster: 'b-toaster-bottom-right',
         autoHideDelay: 500,
+        toaster: 'b-toaster-bottom-right',
         appendToast: append
       })
     },
 
     removeFromCart (id, append = false) {
-      this.$store.dispatch('removeFromCart', id)
+      this.$store.dispatch('removeFromleRockCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -560,7 +724,7 @@ export default {
     },
 
     deleteFromCart (id, append = false) {
-      this.$store.dispatch('deleteFromCart', id)
+      this.$store.dispatch('deleteFromleRockCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -570,7 +734,7 @@ export default {
     },
 
     emptycart (append = false) {
-      this.$store.commit('emptyCart')
+      this.$store.commit('emptyleRockCart')
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -579,13 +743,43 @@ export default {
       })
     },
 
+    checkForm (e) {
+      this.errors = []
+      this.success = false
+
+      if (!this.name) {
+        this.errors.push('Ім’я вимагається')
+      }
+      if (!this.city) {
+        this.errors.push('Місто/село вимагається')
+      }
+      if (!this.street) {
+        this.errors.push('Вулиця вимагається')
+      }
+      if (!this.house) {
+        this.errors.push('Буд вимагається')
+      }
+      if (!this.apartment) {
+        this.errors.push('Кв./офіс вимагається')
+      }
+      if (!this.phone) {
+        this.errors.push('Телефон вимагається')
+      }
+      if (!this.errors.length) {
+        this.sendOrder()
+      }
+      e.preventDefault()
+    },
+
     sendOrder () {
-      const orderedProducts = JSON.stringify(this.cart)
+      let data = this.leRockCart.map(item => ({ [item.name]: [`${item.quantity}шт, ${item.price}₴`] }))
+      data = Object.assign({}, ...data)
 
       axios
-        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0A${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
-      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = this.modeOfPayment = null
-      this.$store.commit('emptyCart')
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я : ${this.name}, %0AТелефон : ${this.phone}, %0AМісто/село : ${this.city}, %0AВулиця : ${this.street}, %0AБуд : ${this.house}, %0AКод : ${this.code}, %0AКв./офіс : ${this.apartment}, %0AКоментар до замовлення : ${this.comment}, %0Aспосіб оплати : ${this.modeOfPayment}, %0AВсього : ${this.leRockCartTotalAmount}₴, %0A${this.$t('cart.heading')} : %0A${JSON.stringify(data)} `)
+      // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
+      this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
+      this.$store.commit('emptyleRockCart')
       this.success = true
       if (process.client) {
         document.body.scrollTop = document.documentElement.scrollTop = 0

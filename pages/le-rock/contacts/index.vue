@@ -34,7 +34,13 @@
         class="col-lg-6 p-0 image-container"
         alt="Barbaresco Contact page image"
       >
-      <div class="col-lg-6 m-auto p-0 text-center">
+      <div
+        class="col-lg-6 m-auto p-0 text-center"
+        data-aos="fade-left"
+        data-aos-easing="ease"
+        data-aos-delay="1000"
+        data-aos-duration="500"
+      >
         <div class="inner-text px-5">
           <h1>{{ $t('title') }}</h1>
           <div class="text-center">
@@ -58,7 +64,7 @@
 </template>
 
 <script>
-import TheContactMap from '~/components/Barbaresco/TheMapComponent'
+import TheContactMap from '~/components/LeRock/TheMapComponentContact'
 
 export default {
   name: 'LeRockContacts',
@@ -92,7 +98,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: ('Le Rock -' + this.$t('description')).slice(
+          content: ('Le Rock -' + this.$t('location')).slice(
             0,
             320
           )
@@ -104,12 +110,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.image-container {
-  min-height: calc(100vh - 120px);
-
-  object-fit: cover;
-  object-position: center;
-}
+@import "~assets/scss/subPagesStyles.scss";
 
 h1 {
   font-family: $segoeFont;
@@ -121,6 +122,7 @@ h1 {
   text-transform: uppercase;
 
   color: $blackColor;
+  margin-top: 50px;
 }
 
 p,
@@ -129,7 +131,7 @@ span {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 140.4%;
+  line-height: 110.4%;
 
   color: $blackColor;
 }
@@ -145,7 +147,7 @@ span {
     font-size: 24px;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 992px) {
   .image-container {
     min-height: 200px;
     max-height: 200px;

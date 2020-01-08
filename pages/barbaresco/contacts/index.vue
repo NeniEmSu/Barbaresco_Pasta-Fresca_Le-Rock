@@ -130,6 +130,7 @@ h1 {
   text-transform: uppercase;
 
   color: $blackColor;
+  margin-top: 50px;
 }
 
 p,
