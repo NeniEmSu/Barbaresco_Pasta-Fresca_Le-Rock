@@ -2,15 +2,18 @@
 {
   "uk": {
    "title": "Паста фреска",
-   "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас"
+   "description": "Відкриваємо суперздібності від смаку нашої пасти Приходьте та спробуйте самі",
+   "keywords": "Паста фреска, Паста фреска Тернополь, Макаронні вироби Фреска, Макаронні вироби Фреска Тернополь, Замовлення їжі Тернопіль, Замовлення їжі онлайн Тернопіль, Тернопіль, Укріан, Макаронні вироби, Приємна музика, Затишна атмосфера, Відмінна їжа, Салат, Десерти, Напої"
   },
   "en": {
     "title": "Pasta Fresca",
-    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
+    "description": "Unlock the taste of our pasta Come and try for yourself",
+    "keywords": "Pasta Fresca, Pasta Fresca Ternopil, Food order Ternopil, Order food online ternopil, Ternopil, Ukriane, Pasta, Nice music, Cozy atmosphere, Great Food, Salad, Deserts, Drinks"
   },
   "ru": {
     "title": "Паста фреска",
-    "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас"
+    "description": "Открываем суперспособности от вкуса нашей пасты Приходите и попробуйте сами",
+    "keywords": "Pasta Fresca, Pasta Fresca Тернополь, Еда на заказ Тернополь, Заказать еду онлайн Тернополь, Тернополь, Укриане, Макароны, Приятная музыка, Уютная атмосфера, Отличная еда, Салат, Десерты, Напитки"
   }
 }
 </i18n>
@@ -62,6 +65,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.$t('description')
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.$t('keywords')
         }
         // ...i18nSeo.meta
       ],

@@ -10,9 +10,27 @@
 
     border: 0;
 
-    .btn.btn-link {
-        outline: none;
-        border: none;
+    .breadcrumb-item+.breadcrumb-item:before {
+        display: inline-block;
+        padding-right: .5rem;
+        content: "<";
+        font-family: $robotoFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #FFFFFF;
+
+        opacity: 0.5;
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+
+        &:hover {
+            color: $goldColor;
+        }
     }
 
     ul.contacts {

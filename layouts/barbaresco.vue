@@ -2,15 +2,19 @@
 {
   "uk": {
    "title": "Барбареско",
-   "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас"
+   "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас",
+   "keywords": "Barbaresco, Barbaresco тернопіль, замовлення їжі тернопіль, замовити їжу онлайн тернопіль, тернопіль, укріане, смачна кухня, приємна музика, затишна атмосфера, відмінна їжа, піца, бургер, салат, пустелі, напої, суші"
   },
   "en": {
     "title": "Barbaresco",
-    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
+    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us",
+    "keywords": "Barbaresco, Barbaresco Ternopil, Food order Ternopil, Order food online ternopil, Ternopil, Ukriane, Delicious cuisine, Nice music, Cozy atmosphere, Great Food, Pizza, Burger, Salad, Deserts, Drinks, Sushi"
   },
   "ru": {
     "title": "Барбареско",
-    "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас"
+    "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас",
+    "keywords": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас",
+    "keywords": "Барбареско, Барбареско Тернополь, Еда на заказ Тернополь, Заказать еду онлайн Тернополь, Тернополь, Укриане, Вкусная кухня, Приятная музыка, Уютная атмосфера, Отличная еда, Пицца, Бургер, Салат, Десерты, Напитки, Суши"
   }
 }
 </i18n>
@@ -18,8 +22,6 @@
 <template>
   <div id="BarbarescoLayout">
     <Header class="d-block" />
-
-    <TheTopContact class="d-none d-md-flex w-100" />
     <div class="content">
       <vue-page-transition :name="$store.state.animation">
         <nuxt />
@@ -34,7 +36,7 @@
 
 <script>
 import Header from '~/components/Barbaresco/TheHeader'
-import TheTopContact from '~/components/Barbaresco/TheTopContact'
+
 import TheFooter from '@/components/Barbaresco/TheFooter.vue'
 import TheMobileFooter from '@/components/Barbaresco/TheMobileFooter.vue'
 
@@ -43,8 +45,8 @@ export default {
   components: {
     Header,
     TheFooter,
-    TheMobileFooter,
-    TheTopContact
+    TheMobileFooter
+
   },
   head () {
     const i18nSeo = this.$nuxtI18nSeo()
@@ -62,6 +64,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.$t('description')
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.$t('keywords')
         }
         // ...i18nSeo.meta
       ],

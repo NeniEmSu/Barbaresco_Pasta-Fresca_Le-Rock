@@ -1,22 +1,25 @@
 <i18n>
 {
   "uk": {
-   "title": "Барбареско",
-   "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас"
+   "title": "Ле Рок",
+   "description": "Компанія друзів, смачне меню і відмінна атмосфера - тільки в Le Rock!",
+   "keywords": "Le Rock, Le Rock Тернопіль, Замовлення їжі Тернопіль, Замовлення їжі онлайн Тернопіль, Тернопіль, Укріан, Смачна кухня, Приємна музика, Затишна атмосфера, Відмінна їжа, М'ясо барбекю, Салат, Десерти, Напої, Рок Дог"
   },
   "en": {
-    "title": "Barbaresco",
-    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us"
+    "title": "Le Rock",
+    "description": "Company of friends, delicious menu and great atmosphere - only in Le Rock!",
+    "keywords": "Le Rock, Le Rock Ternopil, Food order Ternopil, Order food online ternopil, Ternopil, Ukriane, Delicious cuisine, Nice music, Cozy atmosphere, Great Food, BBQ Meat, Salad, Deserts, Drinks, Rock Dog"
   },
   "ru": {
-    "title": "Барбареско",
-    "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас"
+    "title": "Ле Рок",
+    "description": "Компания друзей, вкусное меню и отличная атмосфера - только в Le Rock!",
+    "keywords": "Le Rock, Le Rock Тернополь, Еда на заказ Тернополь, Заказать еду онлайн Тернополь, Тернополь, Укриане, Вкусная кухня, Приятная музыка, Уютная атмосфера, Отличная еда, Барбекю, Мясо, Салат, Десерты, Напитки, Рок Дог"
   }
 }
 </i18n>
 
 <template>
-  <div id="BarbarescoLayout">
+  <div id="LeRockLayout">
     <Header class="d-block" />
 
     <TheTopContact class="d-none d-md-flex w-100" />
@@ -62,6 +65,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.$t('description')
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.$t('keywords')
         }
         // ...i18nSeo.meta
       ],

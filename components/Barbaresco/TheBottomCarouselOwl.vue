@@ -42,8 +42,8 @@
         #botttom-carousel .owl-theme .owl-dots .owl-dot span {
         width: 15px !important;
         height: 15px !important;
-        background: #DADADA !important;
-        opacity: 0.7 !important;
+        background: #545454 !important;
+        opacity: 0.8 !important;
         display: block;
         backface-visibility: visible;
         -webkit-backface-visibility: visible;
@@ -67,17 +67,19 @@
         color: inherit;
         border: none;
         padding: 0 !important;
-        font-size: 50px !important;
+        font-size: 80px !important;
+        font-weight: 100;
         position: absolute;
-        top: 25%;
+        top: 18%;
+
         }
 
         #botttom-carousel .owl-carousel .owl-nav button.owl-prev {
-        left: -2rem;
+        left: -3rem;
         }
 
         #botttom-carousel .owl-carousel .owl-nav button.owl-next {
-        right: -2rem;
+        right: -3rem;
         }
         }
 

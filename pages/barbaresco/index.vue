@@ -43,6 +43,10 @@
     data-aos-delay="250"
     data-aos-duration="500"
   >
+    <TheTopContact
+      :items="items"
+      class="d-none d-md-flex w-100"
+    />
     <TheImageNavigation />
 
     <TheImagedProductNav
@@ -143,7 +147,7 @@
 </template>
 
 <script>
-
+import TheTopContact from '~/components/Barbaresco/TheTopContact'
 import TheImageNavigation from '~/components/Barbaresco/TheImageNavigation'
 import TheImagedProductNav from '~/components/Barbaresco/TheImagedProductNav'
 import TheMapComponent from '~/components/Barbaresco/TheMapComponent'
@@ -165,6 +169,7 @@ export default {
   name: 'Barbaresco',
   layout: 'barbaresco',
   components: {
+    TheTopContact,
     TheImageNavigation,
     TheImagedProductNav,
     TheMapComponent,
@@ -189,10 +194,37 @@ export default {
 
   data () {
     return {
+      activeProduct: 'pizza',
+      items: [
+        {
+          text: this.$t('links.home'),
+          to: this.localePath({ name: 'index' }, this.$i18n.locale)
+        },
+        {
+          text: this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2),
+          active: true
+        }
+        // {
+        //   text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+        //   active: true
+        // }
+      ],
       currentProductsDisplayed: // Math.floor((Math.random() * 10) + 1)
         1,
       loading: false
 
+    }
+  },
+
+  computed: {
+    // activeProduct () {
+    //   return 'Pizza'
+    // }
+  },
+  watch: {
+    $route () {
+      this.items[0].text = this.$t('links.home')
+      this.items[1].text = this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2)
     }
   },
 

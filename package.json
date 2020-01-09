@@ -1,7 +1,7 @@
 {
-  "name": "barbaresco",
+  "name": "barbaresco-pasta_fresca-le_rock",
   "version": "1.0.0",
-  "description": "My awe-inspiring Nuxt.js project",
+  "description": "Barbaresco, Pasta Fresca & Le Rock the top restaurants in ternopil in one place.",
   "author": "w-start",
   "private": true,
   "scripts": {

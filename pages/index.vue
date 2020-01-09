@@ -293,6 +293,7 @@ export default {
   },
   data () {
     return {
+
       variants: [
         {
           name: 'Barbaresco',
@@ -340,6 +341,12 @@ export default {
           facebLink: '#'
         }
       ]
+    }
+  },
+  watch: {
+    $route () {
+      this.items[0].text = this.$t('links.home')
+      this.items[1].text = this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2)
     }
   }
 }
