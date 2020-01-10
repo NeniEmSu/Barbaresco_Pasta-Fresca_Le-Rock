@@ -10,10 +10,10 @@
           exact
         >
           <figure class="saddleEffect">
-            <b-img-lazy
-              src="~assets/img/navHome.jpg"
+            <img
+              src="~assets/img/navHome.svg"
               :alt="$t('links.home')"
-            />
+            >
             <figcaption>
               <h2>{{ $t('links.home') }} </h2>
               <span />
@@ -26,10 +26,10 @@
           exact
         >
           <figure class="saddleEffect">
-            <b-img-lazy
-              src="~assets/img/navMenu.jpg"
+            <img
+              src="~assets/img/navMenu.svg"
               alt="img14"
-            />
+            >
             <figcaption>
               <h1>{{ $t('links.menu') }}</h1>
               <span />
@@ -42,10 +42,10 @@
           exact
         >
           <figure class="saddleEffect">
-            <b-img-lazy
-              src="~assets/img/navDelivery.jpg"
+            <img
+              src="~assets/img/navDelivery.svg"
               alt="img02"
-            />
+            >
             <figcaption>
               <h2>{{ $t('links.delivery') }}</h2>
               <span />
@@ -58,10 +58,10 @@
           exact
         >
           <figure class="saddleEffect">
-            <b-img-lazy
-              src="~assets/img/navAboutUs.jpg"
+            <img
+              src="~assets/img/navAboutUs.svg"
               alt="img02"
-            />
+            >
             <figcaption>
               <h2>{{ $t('links.aboutUs') }}</h2>
               <span />
@@ -74,10 +74,10 @@
           exact
         >
           <figure class="saddleEffect">
-            <b-img-lazy
+            <img
               src="~assets/img/navAtmosphere.jpg"
               alt="img14"
-            />
+            >
             <figcaption>
               <h2>{{ $t('links.atmosphere') }}</h2>
               <span />
@@ -90,10 +90,10 @@
           exact
         >
           <figure class="saddleEffect">
-            <b-img-lazy
+            <img
               src="~assets/img/navContact.jpg"
               alt="img02"
-            />
+            >
             <figcaption>
               <h2>{{ $t('links.contact') }}</h2>
               <span />
