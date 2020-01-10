@@ -22,7 +22,6 @@
   <div id="LeRockLayout">
     <Header class="d-block" />
 
-    <TheTopContact class="d-none d-md-flex w-100" />
     <div class="content">
       <vue-page-transition :name="$store.state.animation">
         <nuxt />
@@ -37,7 +36,6 @@
 
 <script>
 import Header from '~/components/LeRock/TheHeaderLeRock'
-import TheTopContact from '~/components/LeRock/TheTopContact'
 import TheFooter from '@/components/LeRock/TheFooterLeRock'
 import TheMobileFooter from '@/components/Barbaresco/TheMobileFooter.vue'
 
@@ -46,8 +44,7 @@ export default {
   components: {
     Header,
     TheFooter,
-    TheMobileFooter,
-    TheTopContact
+    TheMobileFooter
   },
   head () {
     const i18nSeo = this.$nuxtI18nSeo()

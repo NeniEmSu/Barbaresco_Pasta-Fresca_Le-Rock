@@ -130,6 +130,10 @@
 
 <template>
   <div id="cart">
+    <TheTopContact
+      :items="items"
+      class="d-none d-md-flex w-100"
+    />
     <div class="container">
       <h1 class="text-center mb-4">
         {{ $t('orderProcess.heading') }}
@@ -258,21 +262,21 @@
               </div>
               <div class="col-4">
                 <label for="code">{{ $t('form.code') }} <input
-                  v-model="code"
-                  class="form-control"
-                  type="text"
-                  name="code"
-                  placeholder="..."
-                > </label>
+                    v-model="code"
+                    class="form-control"
+                    type="text"
+                    name="code"
+                    placeholder="..."
+                  > </label>
               </div>
               <div class="col-4">
                 <label for="appartment">{{ $t('form.apartment') }} <input
-                  v-model="apartment"
-                  class="form-control"
-                  type="text"
-                  name="appartment"
-                  placeholder="..."
-                > </label>
+                    v-model="apartment"
+                    class="form-control"
+                    type="text"
+                    name="appartment"
+                    placeholder="..."
+                  > </label>
               </div>
             </div>
 
@@ -434,6 +438,7 @@
 <script>
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
+import TheTopContact from '~/components/PastaFresca/TheTopContactPastaFresca'
 export default {
   name: 'Cart',
   layout: 'pasta-fresca',
@@ -445,6 +450,7 @@ export default {
     }
   },
   components: {
+    TheTopContact
   },
 
   meta: {
@@ -462,7 +468,21 @@ export default {
       code: '',
       apartment: '',
       comment: '',
-      modeOfPayment: ''
+      modeOfPayment: '',
+      items: [
+        {
+          text: this.$t('links.home'),
+          to: this.localePath({ name: 'index' }, this.$i18n.locale)
+        },
+        {
+          text: this.$t('links.menu'),
+          to: this.localePath({ name: 'pasta-fresca' }, this.$i18n.locale)
+        },
+        {
+          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          active: true
+        }
+      ]
     }
   },
   computed: {

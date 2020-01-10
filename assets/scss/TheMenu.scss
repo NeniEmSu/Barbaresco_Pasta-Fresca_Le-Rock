@@ -1,0 +1,147 @@
+.feedBack {
+    border: none;
+    border-radius: 50%;
+    background: none;
+    position: fixed;
+    bottom: 3%;
+    right: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.form-group {
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+input {
+    background: transparent;
+    border: 2px solid $blackColor;
+    box-sizing: border-box;
+
+    font-family: $robotoFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 0;
+
+    height: 48px;
+
+    color: $blackColor;
+    padding: 18px 20px !important;
+    margin: 10px auto;
+}
+
+.feedback-btn {
+    background: $blackColor;
+    border: 2px solid $blackColor;
+    box-sizing: border-box;
+
+    font-family: $robotoFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: $lightColor;
+    padding: 14px 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    @include cubicBezier;
+
+    &:hover {
+        color: $darkColor;
+        background: $lightColor;
+    }
+
+    &:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+
+        &:hover {
+            background: $darkColor;
+            color: $lightColor;
+        }
+    }
+}
+
+.elaboraSpacing {
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .feedBack {
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .feedBack {
+        bottom: -30px;
+        right: -30px;
+    }
+
+    img.feedBack {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .feedBack {
+        position: fixed;
+        bottom: -35px;
+        right: -35px;
+    }
+
+    img.feedBack {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.pulse {
+    display: block;
+    box-shadow: 0 0 0 rgba(224, 166, 113, 0.4);
+    animation: pulse 2000ms infinite;
+}
+
+.pulse:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
+        box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
+        box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
+        box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
+    }
+}

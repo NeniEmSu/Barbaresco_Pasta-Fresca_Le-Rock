@@ -452,7 +452,7 @@
                 </div>
               </div>
 
-              <div class="seeAll mt-5 mx-auto text-center">
+              <div class="clearAll mt-5 mx-auto text-center">
                 <button
                   :disabled="!leRockCartSize"
                   @click="emptycart()"

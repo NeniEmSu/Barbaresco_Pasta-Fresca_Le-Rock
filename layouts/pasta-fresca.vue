@@ -22,7 +22,6 @@
   <div id="BarbarescoLayout">
     <Header class="d-block" />
 
-    <TheTopContact class="d-none d-md-flex w-100" />
     <div class="content">
       <vue-page-transition :name="$store.state.animation">
         <nuxt />
@@ -37,7 +36,6 @@
 
 <script>
 import Header from '~/components/PastaFresca/TheHeaderPastaFresca'
-import TheTopContact from '~/components/PastaFresca/TheTopContactPastaFresca'
 import TheFooter from '@/components/PastaFresca/TheFooterPastaFresca.vue'
 import TheMobileFooter from '@/components/PastaFresca/TheMobileFooterPastaFresca.vue'
 
@@ -46,8 +44,7 @@ export default {
   components: {
     Header,
     TheFooter,
-    TheMobileFooter,
-    TheTopContact
+    TheMobileFooter
   },
   head () {
     const i18nSeo = this.$nuxtI18nSeo()

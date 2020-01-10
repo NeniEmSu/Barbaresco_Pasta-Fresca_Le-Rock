@@ -151,6 +151,10 @@
 
 <template>
   <div id="cart">
+    <TheTopContact
+      :items="items"
+      class="d-none d-md-flex w-100"
+    />
     <div
       v-if="success === false"
       class="container pt-5 pt-lg-0"
@@ -567,6 +571,7 @@
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
 import { required, minLength } from 'vuelidate/lib/validators'
+import TheTopContact from '~/components/LeRock/TheTopContact'
 export default {
   name: 'Cart',
   layout: 'le-rock',
@@ -578,6 +583,7 @@ export default {
     }
   },
   components: {
+    TheTopContact
   },
 
   meta: {
@@ -598,7 +604,21 @@ export default {
       modeOfPayment: null,
       loading: false,
       errors: [],
-      success: false
+      success: false,
+      items: [
+        {
+          text: this.$t('links.home'),
+          to: this.localePath({ name: 'index' }, this.$i18n.locale)
+        },
+        {
+          text: this.$t('links.menu'),
+          to: this.localePath({ name: 'le-rock' }, this.$i18n.locale)
+        },
+        {
+          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          active: true
+        }
+      ]
     }
   },
 

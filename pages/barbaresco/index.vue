@@ -9,7 +9,6 @@
       "phone": "Телефон",
       "send": "Зателефонуй мені!"
       }
-
   },
   "en": {
    "title": "Menu",
@@ -20,7 +19,6 @@
       "phone": "Phone",
       "send": "Call Me!"
       }
-
   },
   "ru": {
     "title": "Меню",
@@ -66,7 +64,6 @@
       <b-modal
         id="modal-center"
         centered
-        :title="$t('tooltip')"
         hide-footer
       >
         <b-form>
@@ -78,28 +75,45 @@
           >
             <b-form-input
               id="dropdown-form-name"
+              v-model="$v.name.$model"
               size="sm"
               :placeholder="$t('call.name')"
+              class="form-control w-100"
+              type="text"
+              name="name"
+              :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+              :state="$v.name.$dirty ? !$v.name.$error : null"
             />
           </b-form-group>
           <b-form-group
             :label="$t('call.phone')"
             label-for="dropdown-form-phone"
-            @submit.stop.prevent
+            @submit.stop.prevent="sendContact"
           >
             <b-form-input
               id="dropdown-form-phone"
+              v-model="$v.phone.$model"
+              v-mask="'+38 (###) ###-####'"
               size="sm"
               placeholder="+380 ## ### ####"
+              class="form-control w-100"
+              type="text"
+              name="phone"
+              :class="[!$v.phone.$error && $v.phone.$model && $v.phone.minLength ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+              :state="$v.phone.$dirty ? !$v.phone.$error : null"
             />
           </b-form-group>
-          <b-button
-            variant="outline-dark"
-            size="sm"
-            class="feedback-btn"
-          >
-            {{ $t('call.send') }}
-          </b-button>
+          <div class="text-center">
+            <b-button
+              variant="outline-dark"
+              size="sm"
+              class="feedback-btn text-center"
+              type="submit"
+              :disabled="loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !phone"
+            >
+              {{ $t('call.send') }}
+            </b-button>
+          </div>
         </b-form>
       </b-modal>
     </div>
@@ -147,6 +161,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+import { required, minLength } from 'vuelidate/lib/validators'
 import TheTopContact from '~/components/Barbaresco/TheTopContact'
 import TheImageNavigation from '~/components/Barbaresco/TheImageNavigation'
 import TheImagedProductNav from '~/components/Barbaresco/TheImagedProductNav'
@@ -194,7 +210,10 @@ export default {
 
   data () {
     return {
-      activeProduct: 'pizza',
+      success: false,
+      error: [],
+      phone: null,
+      name: null,
       items: [
         {
           text: this.$t('links.home'),
@@ -204,10 +223,6 @@ export default {
           text: this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2),
           active: true
         }
-        // {
-        //   text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
-        //   active: true
-        // }
       ],
       currentProductsDisplayed: // Math.floor((Math.random() * 10) + 1)
         1,
@@ -216,15 +231,39 @@ export default {
     }
   },
 
-  computed: {
-    // activeProduct () {
-    //   return 'Pizza'
-    // }
+  validations: {
+    name: {
+      required,
+      minLength: minLength(4)
+    },
+    phone: {
+      required,
+      minLength: minLength(18)
+    }
   },
+
+  computed: {
+
+  },
+
   watch: {
-    $route () {
-      this.items[0].text = this.$t('links.home')
-      this.items[1].text = this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2)
+    name (newName) {
+      localStorage.name = newName
+    },
+    phone (newPhone) {
+      localStorage.phone = newPhone
+    }
+  },
+
+  mounted () {
+    window.addEventListener('scroll', this.onScroll)
+
+    if (localStorage.name) {
+      this.name = localStorage.name
+    }
+
+    if (localStorage.phone) {
+      this.phone = localStorage.phone
     }
   },
 
@@ -245,6 +284,34 @@ export default {
     },
     onClick () {
       this.$refs.dropdown.hide(true)
+    },
+
+    checkForm (e) {
+      this.errors = []
+      this.success = false
+
+      if (!this.name) {
+        this.errors.push('Ім’я вимагається')
+      }
+      if (!this.phone) {
+        this.errors.push('Телефон вимагається')
+      }
+      if (!this.errors.length) {
+        this.sendOrder()
+      }
+      e.preventDefault()
+    },
+
+    sendContact () {
+      axios
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= Передзвонимо за 1 хв %0AІм'я: ${this.name}, %0AНомер телефону: ${this.phone}`)
+      this.success = true
+      this.$bvToast.toast(`${this.$t('toast.info')}`, {
+        title: `${this.$t('toast.title')}`,
+        autoHideDelay: 10000,
+        variant: 'success',
+        toaster: 'b-toaster-top-center'
+      })
     }
   },
   nuxtI18n: {
@@ -276,7 +343,35 @@ export default {
 }
 </script>
 
+<style lang="scss">
+#modal-center___BV_modal_content_ {
+  // max-width: 430px;
+  background: $lightColor;
+
+  box-shadow: 0px 15px 75px rgba(0, 0, 0, 0.35);
+
+  .modal-header {
+    max-width: 330px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px 0rem 30px 0rem;
+
+    border-bottom: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .close {
+    font-size: 60px;
+    font-weight: 300;
+  }
+}
+</style>
+
 <style lang="scss" scoped>
+@import "~assets/scss/TheMenu.scss";
+
 #barbaresco {
   background: url("~assets/img/textureBeton.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -284,118 +379,5 @@ export default {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-}
-
-.feedBack {
-  border: none;
-  border-radius: 50%;
-  background: none;
-  position: fixed;
-  bottom: 3%;
-  right: 50px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.feedback-btn {
-  background: $blackColor;
-  border: 1px solid $blackColor;
-  box-sizing: border-box;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #ffffff;
-  padding: 14px 48px;
-}
-
-input {
-  background: transparent;
-  border: 1px solid $blackColor;
-  box-sizing: border-box;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: $blackColor;
-  padding: 14px 20px;
-  margin: 10px auto;
-}
-
-.elaboraSpacing {
-  margin-top: 90px;
-}
-
-@media only screen and (max-width: 1400px) {
-  .feedBack {
-    bottom: 0px;
-    right: 0px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .feedBack {
-    bottom: -30px;
-    right: -30px;
-  }
-
-  img.feedBack {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .feedBack {
-    position: fixed;
-    bottom: -35px;
-    right: -35px;
-  }
-
-  img.feedBack {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-.pulse {
-  display: block;
-  box-shadow: 0 0 0 rgba(224, 166, 113, 0.4);
-  animation: pulse 2000ms infinite;
-}
-.pulse:hover {
-  animation: none;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
-  }
-  70% {
-    -webkit-box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
-  }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
-    box-shadow: 0 0 0 0 rgba(224, 166, 113, 0.4);
-  }
-  70% {
-    -moz-box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
-    box-shadow: 0 0 0 15px rgba(224, 166, 113, 0);
-  }
-  100% {
-    -moz-box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
-    box-shadow: 0 0 0 0 rgba(224, 166, 113, 0);
-  }
 }
 </style>

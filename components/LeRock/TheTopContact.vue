@@ -5,13 +5,6 @@
   >
     <div class=" p-0 b-crumbs d-flex">
       <b-breadcrumb :items="items" />
-      <b-button
-        variant="link"
-        class="d-flex text-white"
-        @click="$router.back()"
-      >
-        &#8592;
-      </b-button>
     </div>
 
     <div class="text-right ml-auto">
@@ -58,18 +51,15 @@
 
 <script>
 export default {
+  props: {
+    // eslint-disable-next-line vue/require-default-prop
+    items: {
+      type: Array
+    }
+  },
   data () {
     return {
-      items: [
-        {
-          text: this.$t('links.home'),
-          href: this.localePath({ name: 'index' }, this.$i18n.locale)
-        },
-        {
-          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
-          active: true
-        }
-      ]
+
     }
   },
   watch: {

@@ -26,6 +26,10 @@
 
 <template>
   <div id="delivary">
+    <TheTopContact
+      :items="items"
+      class="d-none d-md-flex w-100"
+    />
     <div class="row">
       <img
         loading="lazy"
@@ -56,7 +60,7 @@
 </template>
 
 <script>
-
+import TheTopContact from '~/components/LeRock/TheTopContact'
 export default {
   name: 'LeRockDelivery',
   layout: 'le-rock',
@@ -68,7 +72,7 @@ export default {
     }
   },
   components: {
-
+    TheTopContact
   },
   meta: {
     animation: 'overlay-down-full'
@@ -76,7 +80,20 @@ export default {
 
   data () {
     return {
-
+      items: [
+        {
+          text: this.$t('links.home'),
+          to: this.localePath({ name: 'index' }, this.$i18n.locale)
+        },
+        {
+          text: this.$t('links.menu'),
+          to: this.localePath({ name: 'le-rock' }, this.$i18n.locale)
+        },
+        {
+          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          active: true
+        }
+      ]
     }
   },
   head () {

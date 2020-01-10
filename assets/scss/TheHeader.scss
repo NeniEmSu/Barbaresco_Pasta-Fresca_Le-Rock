@@ -121,7 +121,7 @@ button:disabled {
     }
 }
 
-.seeAll button {
+.clearAll button {
     background: transparent;
     border: 2px solid $blackColor;
     box-sizing: border-box;
@@ -135,6 +135,7 @@ button:disabled {
 
     color: $blackColor;
     padding: 14px 48px;
+    width: 100%;
 
     &:hover {
         color: $lightColor;
