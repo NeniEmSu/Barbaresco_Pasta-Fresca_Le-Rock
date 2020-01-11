@@ -72,7 +72,7 @@
             |
 
             <a
-              href="#"
+              href="https://www.instagram.com/barbaresco.citycafe/?hl=ru"
               target="_blank"
               rel="noopener"
             >

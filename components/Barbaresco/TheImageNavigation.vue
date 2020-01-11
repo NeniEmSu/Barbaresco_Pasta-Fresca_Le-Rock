@@ -11,7 +11,7 @@
         >
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navHome.svg"
+              src="~assets/img/navHome.jpg"
               :alt="$t('links.home')"
             >
             <figcaption>
@@ -27,7 +27,7 @@
         >
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navMenu.svg"
+              src="~assets/img/navMenu.jpg"
               alt="img14"
             >
             <figcaption>
@@ -43,7 +43,7 @@
         >
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navDelivery.svg"
+              src="~assets/img/navDelivery.jpg"
               alt="img02"
             >
             <figcaption>
@@ -59,7 +59,7 @@
         >
           <figure class="saddleEffect">
             <img
-              src="~assets/img/navAboutUs.svg"
+              src="~assets/img/navAboutUs.jpg"
               alt="img02"
             >
             <figcaption>

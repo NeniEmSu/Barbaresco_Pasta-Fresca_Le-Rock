@@ -1,15 +1,14 @@
 <i18n>
 {
   "uk": {
-    "location": "м. Тернопіль, вулиця Князя Острозького, 14"
-
+    "location": "м.Тернопіль, вулиця Олени Кульчицькоі, 2"
   },
   "en": {
-   "location": "Ternopil City, 14th Ostrozkoho Street"
+   "location": "Ternopil City, Oleny Kul'chyts'koi St, 2"
 
   },
   "ru": {
-    "location": "г.. Тернополь, улица Князя Острожского, 14"
+    "location": "г.. Тернополь, улица Князя О.Кульчицькоі, 2"
   }
 }
 </i18n>
@@ -24,7 +23,7 @@
         >
           <b-img-lazy
             class="mx-auto"
-            src="~/assets/img/barbaresco-logo.svg"
+            src="~/assets/img/le-rock-logo.svg"
             alt="logo barbaresco"
           />
         </nuxt-link>
@@ -40,17 +39,10 @@
 
       <div class="phone">
         <a
-          href="tel:+380506700400"
-          class="col-6 m-auto p-0"
+          href="tel:+380671154515"
+          class=" m-auto"
         >
-          <span>+38 050 6 700 400</span>
-        </a>
-        <span class="text-white">|</span>
-        <a
-          href="tel:+380686700400"
-          class="col-6 m-auto p-0"
-        >
-          <span>+38 068 6 700 400</span>
+          <span>+380 67 115 45 15</span>
         </a>
       </div>
 
@@ -71,7 +63,7 @@
         |
 
         <a
-          href="https://www.instagram.com/barbaresco.citycafe/?hl=ru"
+          href="https://www.instagram.com/lerock2017/?igshid=1sbpswqx2738u"
           target="_blank"
           rel="noopener"
         >

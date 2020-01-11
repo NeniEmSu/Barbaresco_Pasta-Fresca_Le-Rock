@@ -37,7 +37,7 @@
 <script>
 import Header from '~/components/LeRock/TheHeaderLeRock'
 import TheFooter from '@/components/LeRock/TheFooterLeRock'
-import TheMobileFooter from '@/components/Barbaresco/TheMobileFooter.vue'
+import TheMobileFooter from '@/components/LeRock/TheMobileFooter'
 
 export default {
   name: 'BarbarescoLayout',

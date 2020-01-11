@@ -22,7 +22,7 @@
 
         <li class="instagram contact">
           <a
-            href="https://www.instagram.com/virusdetailing/"
+            href="https://www.instagram.com/barbaresco.citycafe/?hl=ru"
             target="_blank"
             rel="noopener"
           >

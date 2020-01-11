@@ -303,7 +303,7 @@ export default {
           logoAlt: 'barbaresco logo',
           siteLink: 'barbaresco',
           details: this.$t('home.descriptions[0].details'),
-          instaLink: '#',
+          instaLink: 'https://www.instagram.com/barbaresco.citycafe/?hl=ru',
           facebLink: 'https://www.facebook.com/barbarescocitycafe/'
         },
         {
@@ -315,7 +315,7 @@ export default {
           siteLink: 'pasta-fresca',
           details:
             this.$t('home.descriptions[1].details'),
-          instaLink: '#',
+          instaLink: 'https://www.instagram.com/pasta_fresca_/?igshid=1qyzx39m5mbxn',
           facebLink: '#'
         },
         {
@@ -326,7 +326,7 @@ export default {
           logoAlt: 'Le rock logo',
           siteLink: 'le-rock',
           details: this.$t('home.descriptions[2].details'),
-          instaLink: 'https://www.instagram.com/lera_galich/?hl=uk',
+          instaLink: 'https://www.instagram.com/lerock2017/?igshid=1sbpswqx2738u',
           facebLink: 'https://www.facebook.com/barbarescocitycafe/'
         },
         {
