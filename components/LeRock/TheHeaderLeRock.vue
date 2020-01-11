@@ -27,19 +27,19 @@
         "reserveAPlace": "Резервація місця",
         "reservation": "Резервація",
         "aboutUs": "Про нас",
-        "atmosphere": "Атмосфера",
+        "atmosphere": "Інтер’єр",
         "vacancy": "Ваканції",
         "contact": "Контакти",
         "kitchen": "Кухня"
       },
       "form":{
-      "name": "Ваше ім’я",
-      "phone": "Ваш телефон",
-      "city": "Місто/село",
-      "street": "Вулиця",
-      "house": "Буд",
+      "name": "Ваше ім’я*",
+      "phone": "Ваш телефон*",
+      "city": "Місто/село*",
+      "street": "Вулиця*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./офіс",
+      "apartment": "Кв./офіс*",
       "comment": "Коментар до замовлення",
       "modeOfPayment": "Бажаний спосіб оплати",
       "pay-carrier": "Оплата кур’єру готівкою",
@@ -66,7 +66,7 @@
       "phone": "Phone",
       "order": "Order"
       },
-   "cart":{
+    "cart":{
       "heading": "Order",
       "emptyCart": "You haven't added anything to your order yet",
       "total": "Sum",
@@ -81,19 +81,19 @@
         "reserveAPlace": "Reservation of place",
         "reservation": "Reservation",
         "aboutUs": "About us",
-        "atmosphere": "Atmosphere",
+        "atmosphere": "Interior",
         "vacancy": "Vacancies",
         "contact": "Contacts",
         "kitchen": "Kitchen"
       },
       "form":{
-      "name": "Your name",
-      "phone": "Your phone",
-      "city": "City/Village",
-      "street": "Street",
-      "house": "Building",
+      "name": "Your name*",
+      "phone": "Your phone*",
+      "city": "City/Village*",
+      "street": "Street*",
+      "house": "Building*",
       "code": "Code",
-      "apartment": "Apt./Office",
+      "apartment": "Apt./Office*",
       "comment": "Order comment",
       "modeOfPayment": "Preferred mode of payment",
       "pay-carrier": "Payment by courier in cash",
@@ -136,19 +136,19 @@
         "reserveAPlace": "Резервация места",
         "reservation": "Резервация",
         "aboutUs": "О нас",
-        "atmosphere": "Атмосфера",
+        "atmosphere": "Интерьер",
         "vacancy": "Вакансии",
         "contact": "Контакты",
         "kitchen": "Кухня"
       },
       "form":{
-      "name": "Ваше имя",
-      "phone": "Ваш телефон",
-      "city": "Город/село",
-      "street": "Улица",
-      "house": "Буд",
+      "name": "Ваше имя*",
+      "phone": "Ваш телефон*",
+      "city": "Город/село*",
+      "street": "Улица*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./Офис",
+      "apartment": "Кв./Офис*",
       "comment": "Комментарий к заказу",
       "modeOfPayment": "Предпочтительный способ оплаты",
       "pay-carrier": "Оплата курьеру наличными",
@@ -580,7 +580,7 @@
                 />
                 <div class="send-order text-center">
                   <b-button
-                    :disabled="!cartSize || loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !street || !$v.street.minLength || !city || !$v.city.minLength || !phone || !apartment || !house"
+                    :disabled="!leRockCartSize || loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !street || !$v.street.minLength || !city || !$v.city.minLength || !phone || !apartment || !house"
                     class="order"
                     @click.prevent="sendOrder"
                   >

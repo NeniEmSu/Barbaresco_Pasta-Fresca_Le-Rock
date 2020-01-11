@@ -180,7 +180,7 @@ import TheGarnishes from '~/components/PastaFresca/PastaFrescaProducts/TheGarnis
 import TheAppetizers from '~/components/PastaFresca/PastaFrescaProducts/TheAppetizers'
 import TheAlcohol from '~/components/PastaFresca/PastaFrescaProducts/TheAlcohol'
 import TheMainMeal from '~/components/PastaFresca/PastaFrescaProducts/TheMainMeal'
-import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
+import TheBottomCarousel from '~/components/PastaFresca/TheBottomCarouselOwl'
 
 export default {
   name: 'PastaFresca',

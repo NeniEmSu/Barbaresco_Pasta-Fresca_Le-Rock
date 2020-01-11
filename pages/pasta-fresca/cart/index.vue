@@ -8,7 +8,8 @@
       "emptyCart": "Ви ще нічого не додали до замовлення",
       "total": "Сума",
       "order": "Замовити",
-      "clear": "Очистити все"
+      "clear": "Очистити все",
+      "currencyValue": "грн"
       },
     "orderProcess": {
       "heading": "Як відбувається замовлення",
@@ -29,16 +30,22 @@
       "desc4b": "Час доставки також залежить від Вашого району і часу дня, пробки на дорозі ніхто не відміняв :)"
     },
     "form":{
-      "name": "Ваше ім’я",
-      "phone": "Ваш телефон",
-      "city": "Місто/село",
-      "street": "Вулиця",
-      "house": "Буд",
+      "name": "Ваше ім’я*",
+      "phone": "Ваш телефон*",
+      "city": "Місто/село*",
+      "street": "Вулиця*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./офіс",
+      "apartment": "Кв./офіс*",
       "comment": "Коментар до замовлення",
+      "modeOfPayment": "Бажаний спосіб оплати",
       "pay-carrier": "Оплата кур’єру готівкою",
       "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Дякуємо за замовлення",
+      "info": "Очікуйте на дзвінок нашого менеджера",
+      "btn": "Повернутися на головну"
       }
 
   },
@@ -50,7 +57,8 @@
       "emptyCart": "You haven't added anything to your order yet",
       "total": "Sum",
       "order": "Order",
-      "clear": "Clear everything"
+      "clear": "Clear everything",
+      "currencyValue": "Uah"
       },
     "orderProcess": {
       "heading": "How the order is made",
@@ -71,16 +79,22 @@
       "desc4b": "Delivery time also depends on your area and time of day, no traffic jams were canceled :)"
     },
   "form":{
-      "name": "Your name",
-      "phone": "Your phone",
-      "city": "City/Village",
-      "street": "Street",
-      "house": "Building",
+      "name": "Your name*",
+      "phone": "Your phone*",
+      "city": "City/Village*",
+      "street": "Street*",
+      "house": "Building*",
       "code": "Code",
-      "apartment": "Apt./Office",
+      "apartment": "Apt./Office*",
       "comment": "Order comment",
+      "modeOfPayment": "Preferred mode of payment",
       "pay-carrier": "Payment by courier in cash",
       "pay-card": "Payment on card"
+      },
+      "toast":{
+      "title": "Thank you for your order",
+      "info": "Expect a call from our manager",
+      "btn": "Back to home"
       }
 
   },
@@ -92,7 +106,8 @@
       "emptyCart": "Вы еще ничего не добавили к заказу",
       "total": "Сумма",
       "order": "Заказать",
-      "clear": "Очистить все"
+      "clear": "Очистить все",
+      "currencyValue": "грн"
       },
        "orderProcess": {
       "heading": "Как происходит заказ",
@@ -113,16 +128,22 @@
       "desc4b": "Время доставки также зависит от Вашего района и времени дня, пробки на дороге никто не отменял :)"
     },
     "form":{
-      "name": "Ваше имя",
-      "phone": "Ваш телефон",
-      "city": "Город/село",
-      "street": "Улица",
-      "house": "Буд",
+      "name": "Ваше имя*",
+      "phone": "Ваш телефон*",
+      "city": "Город/село*",
+      "street": "Улица*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./Офис",
+      "apartment": "Кв./Офис*",
       "comment": "Комментарий к заказу",
+      "modeOfPayment": "Предпочтительный способ оплаты",
       "pay-carrier": "Оплата курьеру наличными",
       "pay-card": "Оплата на карту"
+      },
+      "toast":{
+      "title": "Спасибо за заказ",
+      "info": "Ожидайте звонок нашего менеджера",
+      "btn": "Вернуться на главную"
       }
   }
 }
@@ -134,13 +155,16 @@
       :items="items"
       class="d-none d-md-flex w-100"
     />
-    <div class="container">
+    <div
+      v-if="success === false"
+      class="container pt-5 pt-lg-0"
+    >
       <h1 class="text-center mb-4">
         {{ $t('orderProcess.heading') }}
       </h1>
 
-      <div class="row">
-        <div class="col-3 mx-auto text-center">
+      <div class="row order-explanation">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderOnline.png"
             alt="Order Online"
@@ -156,7 +180,7 @@
               {{ $t('orderProcess.desc1-b') }}</b>
           </p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderPayment.png"
             alt="Order Payment"
@@ -168,7 +192,7 @@
 
           <p>{{ $t('orderProcess.desc2a') }} <b>{{ $t('orderProcess.desc2-b1') }}</b>{{ $t('orderProcess.desc2b') }}<b>{{ $t('orderProcess.desc2-b2') }}</b> {{ $t('orderProcess.desc2c') }} </p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderPreparation.png"
             alt="Order Preparation"
@@ -181,7 +205,7 @@
 
           <p>{{ $t('orderProcess.desc3') }}</p>
         </div>
-        <div class="col-3 mx-auto text-center">
+        <div class="col-lg-3 col-md-6 col-12 mx-auto text-center">
           <img
             src="~/assets/img/orderDelivery.png"
             alt="Order Delivery"
@@ -199,84 +223,154 @@
       </div>
       <hr>
 
-      <div class="row">
-        <div class="col-6">
-          <form class="col-12">
+      <form
+        class="row"
+        @submit.prevent="checkForm"
+      >
+        <div class="col-lg-6">
+          <div class="col-12">
+            <div
+              v-if="errors.length"
+              class="text-left text-danger"
+            >
+              <b>Виправте такі помилку(и):</b>
+              <ol>
+                <li
+                  v-for="error in errors"
+                  :key="error"
+                  class="ml-3"
+                >
+                  {{ error }}
+                </li>
+              </ol>
+            </div>
             <div class="row">
+              <div class="col-12">
+                <div
+                  v-if="!$v.name.minLength"
+                  class="error text-danger text-left"
+                >
+                  Ім'я обов'язково і має містити не менше {{ $v.name.$params.minLength.min }} символів.
+                </div>
+                <div
+                  v-if="!$v.phone.minLength"
+                  class="text-danger text-left"
+                >
+                  Номер телефону обов'язковий і повинен містити 10 символів
+                </div>
+              </div>
               <div class="col-6">
                 <label for="name">{{ $t('form.name') }}
                   <input
-                    v-model="name"
+                    v-model="$v.name.$model"
                     class="form-control"
                     type="text"
                     name="name"
                     placeholder="..."
+                    :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                    :state="$v.name.$dirty ? !$v.name.$error : null"
                   >
                 </label>
               </div>
               <div class="col-6">
                 <label for="phone">{{ $t('form.phone') }}
                   <input
-                    v-model.number="phone"
-                    class="form-control"
+                    v-model="$v.phone.$model"
+                    v-mask="'+38 (###) ###-####'"
+                    class="form-control w-100"
                     type="text"
                     name="phone"
                     placeholder="+380..."
-                  > </label>
+                    :class="[!$v.phone.$error && $v.phone.$model ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                    :state="$v.phone.$dirty ? !$v.phone.$error : null"
+                  >
+                </label>
               </div>
             </div>
 
             <div class="row">
+              <div class="col-12">
+                <div
+                  v-if="!$v.city.minLength"
+                  class="error text-danger text-left"
+                >
+                  {{ $t('form.city') }} обов'язково і має містити не менше {{ $v.city.$params.minLength.min }} символів.
+                </div>
+                <div
+                  v-if="!$v.street.minLength"
+                  class="error text-danger text-left"
+                >
+                  {{ $t('form.street') }} обов'язково і має містити не менше {{ $v.street.$params.minLength.min }} символів.
+                </div>
+              </div>
               <div class="col-6">
                 <label for="city">{{ $t('form.city') }}
                   <input
-                    v-model="city"
+                    v-model="$v.city.$model"
                     class="form-control"
                     type="text"
                     name="city"
                     placeholder="..."
-                  ></label>
+                    :class="[!$v.city.$error && $v.city.$model ? 'is-valid' : '', $v.city.$error && !$v.city.minLength ? 'is-invalid' : '']"
+                    :state="$v.city.$dirty ? !$v.city.$error : null"
+                  >
+                </label>
               </div>
               <div class="col-6">
-                <label for="street">{{ $t('form.street') }}
+                <label for="street">
+                  {{ $t('form.street') }}
                   <input
-                    v-model="street"
+                    v-model="$v.street.$model"
                     class="form-control"
                     type="text"
                     name="streeet"
                     placeholder="..."
-                  ></label>
+                    :class="[!$v.street.$error && $v.street.$model ? 'is-valid' : '', $v.street.$error && !$v.street.minLength ? 'is-invalid' : '']"
+                    :state="$v.street.$dirty ? !$v.street.$error : null"
+                  >
+                </label>
               </div>
             </div>
 
             <div class="row">
               <div class="col-4">
-                <label for="house">{{ $t('form.house') }}
+                <label for="house">
+                  {{ $t('form.house') }}
                   <input
-                    v-model="house"
+                    v-model="$v.house.$model"
                     class="form-control"
                     type="text"
                     name="house"
                     placeholder="..."
-                  > </label>
+                    :class="[!$v.house.$error && $v.house.$model ? 'is-valid' : '', $v.house.$error && !$v.house.minLength ? 'is-invalid' : '']"
+                    :state="$v.house.$dirty ? !$v.house.$error : null"
+                  >
+                </label>
               </div>
               <div class="col-4">
-                <label for="code">{{ $t('form.code') }} <input
-                  v-model="code"
-                  class="form-control"
-                  type="text"
-                  name="code"
-                  placeholder="..."
-                > </label>
+                <label for="code">
+                  {{ $t('form.code') }}
+                  <input
+                    v-model="code"
+                    class="form-control"
+                    type="text"
+                    name="code"
+                    placeholder="..."
+                  >
+                </label>
               </div>
               <div class="col-4">
-                <label for="appartment">{{ $t('form.apartment') }} <input
-                  v-model="apartment"
-                  class="form-control"
-                  type="text"
-                  name="appartment"
-                  placeholder="..."
-                > </label>
+                <label for="appartment">{{ $t('form.apartment') }}
+                  <input
+                    v-model="$v.apartment.$model"
+                    class="form-control"
+                    type="text"
+                    name="appartment"
+                    placeholder="..."
+                    :class="[!$v.apartment.$error && $v.apartment.$model ? 'is-valid' : '', $v.apartment.$error && !$v.apartment.minLength ? 'is-invalid' : '']"
+                    :state="$v.apartment.$dirty ? !$v.apartment.$error : null"
+                  >
+                </label>
               </div>
             </div>
 
@@ -289,7 +383,11 @@
             />
 
             <div class="row text-center mx-auto mt-2">
-              <div class="form-check text-center mx-auto">
+              <div
+                v-b-tooltip.hover
+                :title="$t('form.modeOfPayment')"
+                class="form-check text-center mx-auto"
+              >
                 <input
                   id="exampleRadios1"
                   v-model="modeOfPayment"
@@ -305,7 +403,11 @@
                   {{ $t('form.pay-carrier') }}
                 </label>
               </div>
-              <div class="form-check text-center mx-auto">
+              <div
+                v-b-tooltip.hover
+                :title="$t('form.modeOfPayment')"
+                class="form-check text-center mx-auto"
+              >
                 <input
                   id="exampleRadios2"
                   v-model="modeOfPayment"
@@ -322,25 +424,25 @@
                 </label>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6">
           <div class="text-center">
             <font
-              v-if="!cartSize"
+              v-if="!pastaFrescaCartSize"
               class="text-center mx-auto"
             >
               {{ $t('cart.emptyCart') }}
             </font>
             <h3
-              v-if="cartSize"
+              v-if="pastaFrescaCartSize"
               class="text-left"
             >
               {{ $t('cart.heading') }}
             </h3>
             <div class="cart-items">
               <div
-                v-for="(product, index) in cart"
+                v-for="(product, index) in pastaFrescaCart"
                 :key="product.id"
                 class="cart-item"
               >
@@ -349,7 +451,7 @@
                     {{ index+=1 }}
                   </p>
                   <img
-                    style="border-radius: 50%;   "
+                    style="border-radius: 50%;"
                     :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                     alt=""
                     class="col-2 m-auto"
@@ -409,35 +511,66 @@
             </div>
             <div class="submition">
               <hr
-                v-if="!cartSize"
+                v-if="!pastaFrescaCartSize"
                 class="mt-5"
               >
               <div class="row mt-5">
-                <div class="col-4 text-left">
-                  <small class="col-12">{{ $t('cart.total') }}:</small> <br>
-                  <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
+                <div class="col-md-6 text-md-left">
+                  <small class="col-12 p-0 small-sum">{{ $t('cart.total') }}:</small>
+                  <strong class="col-12 p-0 cart-total">{{ pastaFrescaCartTotalAmount | currency }}</strong>
+                  <small class="col-12 p-0 small-value">{{ $t('cart.currencyValue') }}</small>
                 </div>
-                <div class="col-8 mx-auto text-right">
-                  <b-button
+                <div class="col-md-6 mx-auto text-md-right">
+                  <button
+                    :disabled="!pastaFrescaCartSize || loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !street || !$v.street.minLength || !city || !$v.city.minLength || !phone || !apartment || !house"
                     :to="localePath({name: 'pasta-fresca-cart'},$i18n.locale)"
                     class="order"
-                    @click.prevent="sendOrder"
+                    type="submit"
+                    aria-label="submit"
+                    name="submit"
                   >
                     {{ $t('cart.order') }}
-                  </b-button>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+    <section v-else class="success container ">
+      <div class="text-center m-auto">
+        <div class="animation-ctn">
+          <div class="icon icon--order-success svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="154px" height="154px">
+              <g fill="none" stroke="none" stroke-width="0">
+                <polyline
+                  class="st0"
+                  stroke="#0A0A0A"
+                  stroke-width="12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  points="43.5,77.8 63.7,97.9 112.2,49.4 "
+                  style="stroke-dasharray:100px, 100px; stroke-dashoffset: 200px;"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <h5>{{ $t('toast.title') }}</h5>
+        <p>{{ $t('toast.info') }}</p>
+        <b-button class="backToHome" :to="localePath({name: 'pasta-fresca'},$i18n.locale)" @click="success = false">
+          {{ $t('toast.btn') }}
+        </b-button>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
+import { required, minLength } from 'vuelidate/lib/validators'
 import TheTopContact from '~/components/PastaFresca/TheTopContactPastaFresca'
 export default {
   name: 'Cart',
@@ -460,15 +593,18 @@ export default {
   data () {
     return {
       currentProductsDisplayed: 1,
-      name: '',
-      phone: '',
-      city: '',
-      street: '',
-      house: '',
-      code: '',
-      apartment: '',
-      comment: '',
-      modeOfPayment: '',
+      name: null,
+      phone: null,
+      city: null,
+      street: null,
+      house: null,
+      code: null,
+      apartment: null,
+      comment: null,
+      modeOfPayment: null,
+      loading: false,
+      errors: [],
+      success: false,
       items: [
         {
           text: this.$t('links.home'),
@@ -485,30 +621,119 @@ export default {
       ]
     }
   },
+  validations: {
+    name: {
+      required,
+      minLength: minLength(4)
+    },
+    city: {
+      required,
+      minLength: minLength(3)
+    },
+    street: {
+      required,
+      minLength: minLength(3)
+    },
+    house: {
+      required,
+      minLength: minLength(1)
+    },
+    apartment: {
+      required,
+      minLength: minLength(1)
+    },
+
+    phone: {
+      required,
+      minLength: minLength(18)
+    }
+  },
+
   computed: {
     ...mapState([
-      'cart'
+      'pastaFrescaCart'
     ]),
     ...mapGetters([
-      'cartSize',
-      'cartTotalAmount'
+      'pastaFrescaCartSize',
+      'pastaFrescaCartTotalAmount'
     ])
+  },
+
+  watch: {
+    name (newName) {
+      localStorage.name = newName
+    },
+    city (newCity) {
+      localStorage.city = newCity
+    },
+    street (newStreet) {
+      localStorage.street = newStreet
+    },
+    house (newHouse) {
+      localStorage.house = newHouse
+    },
+    apartment (newApartment) {
+      localStorage.apartment = newApartment
+    },
+    code (newCode) {
+      localStorage.code = newCode
+    },
+    phone (newPhone) {
+      localStorage.phone = newPhone
+    },
+    comment (newComment) {
+      sessionStorage.comment = newComment
+    }
+  },
+
+  mounted () {
+    if (localStorage.name) {
+      this.name = localStorage.name
+    }
+
+    if (localStorage.phone) {
+      this.phone = localStorage.phone
+    }
+
+    if (localStorage.city) {
+      this.city = localStorage.city
+    }
+
+    if (localStorage.street) {
+      this.street = localStorage.street
+    }
+
+    if (localStorage.house) {
+      this.house = localStorage.house
+    }
+
+    if (localStorage.apartment) {
+      this.apartment = localStorage.apartment
+    }
+
+    if (localStorage.code) {
+      this.code = localStorage.code
+    }
+
+    if (sessionStorage.comment) {
+      this.comment = sessionStorage.comment
+    }
   },
 
   methods: {
 
     addToCart (id, append = false) {
-      this.$store.dispatch('addToCart', id)
+      this.$store.dispatch('addTopastaFrescaCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
-        toaster: 'b-toaster-bottom-right',
         autoHideDelay: 500,
+        toaster: 'b-toaster-bottom-right',
         appendToast: append
       })
     },
 
     removeFromCart (id, append = false) {
-      this.$store.dispatch('removeFromCart', id)
+      this.$store.dispatch('removeFrompastaFrescaCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -518,7 +743,7 @@ export default {
     },
 
     deleteFromCart (id, append = false) {
-      this.$store.dispatch('deleteFromCart', id)
+      this.$store.dispatch('deleteFrompastaFrescaCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -528,7 +753,7 @@ export default {
     },
 
     emptycart (append = false) {
-      this.$store.commit('emptyCart')
+      this.$store.commit('emptypastaFrescaCart')
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -537,21 +762,57 @@ export default {
       })
     },
 
-    sendOrder (append = false) {
-      const orderedProducts = JSON.stringify(this.cart)
+    checkForm (e) {
+      this.errors = []
+      this.success = false
+
+      if (!this.name) {
+        this.errors.push('Ім’я вимагається')
+      }
+      if (!this.city) {
+        this.errors.push('Місто/село вимагається')
+      }
+      if (!this.street) {
+        this.errors.push('Вулиця вимагається')
+      }
+      if (!this.house) {
+        this.errors.push('Буд вимагається')
+      }
+      if (!this.apartment) {
+        this.errors.push('Кв./офіс вимагається')
+      }
+      if (!this.phone) {
+        this.errors.push('Телефон вимагається')
+      }
+      if (!this.errors.length) {
+        this.sendOrder()
+      }
+      e.preventDefault()
+    },
+
+    sendOrder () {
+      let data = this.pastaFrescaCart.map(item => ({ [item.name]: [`${item.quantity}шт, ${item.price}₴`] }))
+      data = Object.assign({}, ...data)
 
       axios
-        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text=${this.$t('form.name')}: ${this.name}, ${this.$t('form.phone')}: ${this.phone}, ${this.$t('form.city')}: ${this.city}, ${this.$t('form.street')}: ${this.street}, ${this.$t('form.house')}: ${this.house}, ${this.$t('form.code')}: ${this.code}, ${this.$t('form.apartment')}: ${this.apartment}, ${this.$t('form.comment')}: ${this.comment},   ${this.$t('form.pay-carrier')}: ${this.modeOfPayment}, : ${this.noOfPeople}, cartTotalAmount: ${this.cartTotalAmount}, ${this.$t('cart.heading')}: ${orderedProducts}, `)
-      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
-      this.$store.commit('emptyCart')
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я : ${this.name}, %0AТелефон : ${this.phone}, %0AМісто/село : ${this.city}, %0AВулиця : ${this.street}, %0AБуд : ${this.house}, %0AКод : ${this.code}, %0AКв./офіс : ${this.apartment}, %0AКоментар до замовлення : ${this.comment}, %0Aспосіб оплати : ${this.modeOfPayment}, %0AВсього : ${this.pastaFrescaCartTotalAmount}₴, %0A${this.$t('cart.heading')} : %0A${JSON.stringify(data)} `)
+      // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
+      this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
+      this.$store.commit('emptypastaFrescaCart')
       this.success = true
-      this.$bvToast.toast('Your Order has been recieved!', {
-        title: 'Увага!',
-        autoHideDelay: 500,
+      if (process.client) {
+        document.body.scrollTop = document.documentElement.scrollTop = 0
+      }
+      this.$bvToast.toast(`${this.$t('toast.info')}`, {
+        title: `${this.$t('toast.title')}`,
+        autoHideDelay: 10000,
         variant: 'success',
-        toaster: 'b-toaster-top-center',
-        appendToast: append
+        toaster: 'b-toaster-top-center'
       })
+      const self = this
+      setTimeout(function () {
+        self.success = false
+      }, 10000)
     },
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView
@@ -560,7 +821,7 @@ export default {
 
   head () {
     return {
-      title: ('Barbaresco - ' + this.$t('title')).slice(
+      title: ('Le Rock - ' + this.$t('title')).slice(
         0,
         60
       ),
@@ -568,7 +829,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: ('Barbaresco -' + this.$t('description')).slice(
+          content: ('Le Rock -' + this.$t('description')).slice(
             0,
             320
           )
@@ -578,135 +839,8 @@ export default {
   }
 
 }
-
 </script>
 
 <style lang="scss" scoped>
-#cart {
-  margin-bottom: 110px;
-}
-
-h3 {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-
-  color: $darkColor;
-  span.number {
-    font-size: 50px;
-    line-height: 59px;
-  }
-
-  span.text {
-    font-size: 18px;
-    line-height: 21px;
-  }
-}
-
-.order {
-  background: $darkColor;
-  border: 1px solid $darkColor;
-  box-sizing: border-box;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #ffffff;
-  padding: 14px 48px;
-}
-
-.cart-items {
-  max-height: 285px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 0 10px;
-}
-
-.toggle-quantity {
-  box-sizing: border-box;
-  width: 100%;
-
-  display: flex;
-  justify-content: space-evenly;
-
-  button {
-    border: 0;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
-    cursor: pointer;
-    margin: auto;
-    color: $darkColor;
-    text-decoration: none;
-  }
-
-  p,
-  button {
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-
-    color: $darkColor;
-
-    margin: auto 2px;
-    text-decoration: none;
-  }
-
-  p {
-    border: 1px solid $darkColor;
-    box-sizing: border-box;
-    padding: 0 5px;
-  }
-}
-
-.remove-from-chart {
-  span {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
-    cursor: pointer;
-    margin: auto;
-    color: $darkColor;
-    text-decoration: none;
-  }
-}
-
-label {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: $darkColor;
-}
-
-input.form-control,
-textarea.form-control {
-  background: transparent;
-  border: 2px solid $darkColor;
-  box-sizing: border-box;
-  border-radius: 0;
-
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: $darkColor;
-  width: 100%;
-
-  margin: 5px auto 10px auto;
-}
-
-textarea.form-control {
-  height: 100px;
-}
+@import "~/assets/scss/Cart.scss";
 </style>

@@ -19,7 +19,7 @@
     <div class="container">
       <div class="footerLogocontainer my-auto">
         <nuxt-link
-          :to="localePath({name:'barbaresco'},$i18n.locale)"
+          :to="localePath({name:'pasta-fresca'},$i18n.locale)"
           class="m-auto"
         >
           <b-img-lazy
@@ -32,7 +32,7 @@
       <div class=" footer-inner mx-auto">
         <div class="address my-auto">
           <nuxt-link
-            :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
+            :to="localePath({name: 'pasta-fresca-contacts'},$i18n.locale)"
             class="m-auto"
           >
             {{ $t('location') }}
@@ -51,7 +51,7 @@
 
           <div class="socials my-auto">
             <a
-              href="#"
+              href="https://www.facebook.com/pages/Pasta-Fresca/305757176274117"
               target="_blank"
               rel="noopener"
             >

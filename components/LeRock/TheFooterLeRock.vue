@@ -50,7 +50,7 @@
 
           <div class="socials my-auto">
             <a
-              href="#"
+              href="https://www.facebook.com/lerockpab/"
               target="_blank"
               rel="noopener"
             >

@@ -198,7 +198,7 @@ export default {
             reserveAPlace: 'Резервація місця',
             reservation: 'Резервація',
             aboutUs: 'Про нас',
-            atmosphere: 'Атмосфера',
+            atmosphere: 'Інтер’єр',
             vacancy: 'Ваканції',
             contact: 'Контакти'
           },
@@ -236,7 +236,7 @@ export default {
             reserveAPlace: 'Резервация места',
             reservation: 'Резервация',
             aboutUs: 'О нас',
-            atmosphere: 'Атмосфера',
+            atmosphere: 'Інтер’єр',
             vacancy: 'Вакансии',
             contact: 'Контакты',
             kitchen: 'Кухня'

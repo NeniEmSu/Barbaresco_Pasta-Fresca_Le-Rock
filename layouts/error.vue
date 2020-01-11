@@ -1,24 +1,52 @@
+<i18n>
+{
+  "uk": {
+    "title": "Ой, щось пішло не так",
+    "buttonTxt": "Повернутися на головну"
+  },
+  "en": {
+   "title": "Oh, something went wrong",
+   "buttonTxt": "Back to home"
+  },
+  "ru": {
+    "title": "Ой, что-то пошло не так",
+    "buttonTxt": "Вернуться на главную"
+  }
+}
+</i18n>
+
 <template>
   <div class="__nuxt-error-page">
     <div class="error">
       <img
         src="~/assets/img/404.png"
-        alt="404 imgage in a house"
-        class="img-fluid"
+        alt="404 imgage broken plate"
+        class="img-fluid image"
       >
+      <div class="col-12">
+        <div class="row">
+          <div class="title col-sm-6">
+            <h1 class="row m-auto">
+              <span class="col-6 p-0 m-auto text-center number">
+                404
+              </span>
 
-      <div class="title">
-        Ой, щось пішло не так
+              <span class="col-6 p-0 text m-auto text-left">
+                {{ $t('title') }}
+              </span>
+            </h1>
+          </div>
+          <p class="description col-sm-6 m-auto text-center">
+            <nuxt-link
+              :to="localePath({name: 'index'},$i18n.locale)"
+              exact
+              class="error-link nuxt-link-active"
+            >
+              {{ $t('buttonTxt') }}
+            </nuxt-link>
+          </p>
+        </div>
       </div>
-      <p class="description">
-        <nuxt-link
-          :to="localePath({name: 'index'},$i18n.locale)"
-          exact
-          class="error-link nuxt-link-active"
-        >
-          Повернутися на головну
-        </nuxt-link>
-      </p>
     </div>
   </div>
 </template>
@@ -55,11 +83,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .__nuxt-error-page {
   padding: 1rem;
-  background: #f7f8fb;
-  color: #47494e;
+  background: #ffffff;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -76,23 +103,34 @@ export default {
   right: 0;
   bottom: 0;
 }
-.__nuxt-error-page .error {
-  max-width: 500px;
-}
-.__nuxt-error-page .title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 47px;
 
-  text-align: center;
+.__nuxt-error-page img {
+  margin-bottom: 48px;
+}
+
+.__nuxt-error-page .title {
+  font-family: $segoeFont;
+  font-style: normal;
+
+  color: $blackColor;
+}
+
+.__nuxt-error-page .title h1 span.number {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 80px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.__nuxt-error-page .title h1 span.text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
   text-transform: uppercase;
 
-  color: #000000;
-
-  margin-top: 60px;
-  margin-bottom: 100px;
+  color: $blackColor;
 }
 
 .__nuxt-error-page a {
@@ -110,9 +148,9 @@ export default {
   color: #ffffff;
   text-decoration: none;
 
-  background: #000000;
-  background: #000000;
-  border: 1px solid #000000;
+  background: $blackColor;
+  background: $blackColor;
+  border: 1px solid $blackColor;
   box-sizing: border-box;
   border-radius: 0;
 }

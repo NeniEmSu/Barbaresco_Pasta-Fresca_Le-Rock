@@ -523,7 +523,7 @@
                 <div class="col-md-6 mx-auto text-md-right">
                   <button
                     :disabled="!leRockCartSize || loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !street || !$v.street.minLength || !city || !$v.city.minLength || !phone || !apartment || !house"
-                    :to="localePath({name: 'barbaresco-cart'},$i18n.locale)"
+                    :to="localePath({name: 'le-rock-cart'},$i18n.locale)"
                     class="order"
                     type="submit"
                     aria-label="submit"
@@ -559,7 +559,7 @@
         </div>
         <h5>{{ $t('toast.title') }}</h5>
         <p>{{ $t('toast.info') }}</p>
-        <b-button class="backToHome" :to="localePath({name: 'barbaresco'},$i18n.locale)" @click="success = false">
+        <b-button class="backToHome" :to="localePath({name: 'le-rock'},$i18n.locale)" @click="success = false">
           {{ $t('toast.btn') }}
         </b-button>
       </div>

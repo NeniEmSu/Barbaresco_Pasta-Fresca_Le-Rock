@@ -27,19 +27,19 @@
         "reserveAPlace": "Резервація місця",
         "reservation": "Резервація",
         "aboutUs": "Про нас",
-        "atmosphere": "Атмосфера",
+        "atmosphere": "Інтер’єр",
         "vacancy": "Ваканції",
         "contact": "Контакти",
         "kitchen": "Кухня"
       },
       "form":{
-      "name": "Ваше ім’я",
-      "phone": "Ваш телефон",
-      "city": "Місто/село",
-      "street": "Вулиця",
-      "house": "Буд",
+      "name": "Ваше ім’я*",
+      "phone": "Ваш телефон*",
+      "city": "Місто/село*",
+      "street": "Вулиця*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./офіс",
+      "apartment": "Кв./офіс*",
       "comment": "Коментар до замовлення",
       "modeOfPayment": "Бажаний спосіб оплати",
       "pay-carrier": "Оплата кур’єру готівкою",
@@ -81,19 +81,19 @@
         "reserveAPlace": "Reservation of place",
         "reservation": "Reservation",
         "aboutUs": "About us",
-        "atmosphere": "Atmosphere",
+        "atmosphere": "Interior",
         "vacancy": "Vacancies",
         "contact": "Contacts",
         "kitchen": "Kitchen"
       },
       "form":{
-      "name": "Your name",
-      "phone": "Your phone",
-      "city": "City/Village",
-      "street": "Street",
-      "house": "Building",
+      "name": "Your name*",
+      "phone": "Your phone*",
+      "city": "City/Village*",
+      "street": "Street*",
+      "house": "Building*",
       "code": "Code",
-      "apartment": "Apt./Office",
+      "apartment": "Apt./Office*",
       "comment": "Order comment",
       "modeOfPayment": "Preferred mode of payment",
       "pay-carrier": "Payment by courier in cash",
@@ -136,19 +136,19 @@
         "reserveAPlace": "Резервация места",
         "reservation": "Резервация",
         "aboutUs": "О нас",
-        "atmosphere": "Атмосфера",
+        "atmosphere": "Интерьер",
         "vacancy": "Вакансии",
         "contact": "Контакты",
         "kitchen": "Кухня"
       },
       "form":{
-      "name": "Ваше имя",
-      "phone": "Ваш телефон",
-      "city": "Город/село",
-      "street": "Улица",
-      "house": "Буд",
+      "name": "Ваше имя*",
+      "phone": "Ваш телефон*",
+      "city": "Город/село*",
+      "street": "Улица*",
+      "house": "Буд*",
       "code": "Код",
-      "apartment": "Кв./Офис",
+      "apartment": "Кв./Офис*",
       "comment": "Комментарий к заказу",
       "modeOfPayment": "Предпочтительный способ оплаты",
       "pay-carrier": "Оплата курьеру наличными",
@@ -227,7 +227,7 @@
               id="item-count"
               style="text-decoration: none;"
               class="text-center"
-            >{{ cartSize }}</span>
+            >{{ pastaFrescaCartSize }}</span>
           </div>
         </div>
 
@@ -264,23 +264,23 @@
               {{ $t('links.delivery') }}
             </b-nav-item>
             <b-nav-item
-              class="fromleft d-none"
               tag="button"
+              class="fromleft"
               @click.stop="reservationOpen = !reservationOpen"
             >
               {{ $t('links.reserveAPlace') }}
             </b-nav-item>
             <b-nav-item
               class="fromleft"
-              :to="localePath({name: 'pasta-fresca-about-us'},$i18n.locale)"
-            >
-              {{ $t('links.aboutUs') }}
-            </b-nav-item>
-            <b-nav-item
-              class="fromleft"
               :to="localePath({name: 'pasta-fresca-kitchen'},$i18n.locale)"
             >
               {{ $t('links.kitchen') }}
+            </b-nav-item>
+            <b-nav-item
+              class="fromleft"
+              :to="localePath({name: 'pasta-fresca-about-us'},$i18n.locale)"
+            >
+              {{ $t('links.aboutUs') }}
             </b-nav-item>
             <b-nav-item
               v-b-modal.modal-1
@@ -302,10 +302,8 @@
             >
               {{ $t('links.contact') }}
             </b-nav-item>
-            <div
-              class="mx-auto language-nav"
-              style="margin-top: 50%;"
-            >
+
+            <div class="mx-auto language-nav">
               <b-dropdown
                 id="dropdown-1"
                 :text="$t('language')"
@@ -350,17 +348,17 @@
           </div>
           <section v-if="cartForm === false && success === false">
             <div class="text-center">
-              <font v-if="!cartSize">
+              <font v-if="!pastaFrescaCartSize">
                 {{ $t('cart.emptyCart') }}
               </font>
             </div>
 
             <div>
-              <h3 v-if="cartSize">
+              <h3 v-if="pastaFrescaCartSize">
                 {{ $t('cart.heading') }}
               </h3>
               <div
-                v-for="product in cart"
+                v-for="product in pastaFrescaCart"
                 :key="product.id"
                 class="cart-item"
               >
@@ -369,9 +367,9 @@
                     style="border-radius: 50%;"
                     :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
                     alt=""
-                    class="col-2 m-auto"
+                    class="col-3 m-auto cart-product-img"
                   >
-                  <div class="col-6 p-0">
+                  <div class="col-5 p-0">
                     <div class="col-12 p-0 m-auto">
                       <div class="row m-auto">
                         <h6
@@ -426,24 +424,24 @@
 
               <div>
                 <hr
-                  v-if="!cartSize"
+                  v-if="!pastaFrescaCartSize"
                   class="mt-5"
                 >
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-5">
                     <small class="col-12">{{ $t('cart.total') }}:</small>
-                    <strong class="col-12">{{ cartTotalAmount | currency }}</strong>
+                    <strong class="col-12">{{ pastaFrescaCartTotalAmount | currency }}</strong>
                   </div>
-                  <div class="col-8 mx-auto text-right">
+                  <div class="col-7 mx-auto text-right">
                     <b-button
-                      :disabled="!cartSize"
+                      :disabled="!pastaFrescaCartSize"
                       :to="localePath({name: 'pasta-fresca-cart'},$i18n.locale)"
                       class="order d-none d-lg-block"
                     >
                       {{ $t('cart.order') }}
                     </b-button>
                     <b-button
-                      :disabled="!cartSize"
+                      :disabled="!pastaFrescaCartSize"
                       class="order d-block d-lg-none"
                       @click="showCartForm()"
                     >
@@ -455,7 +453,7 @@
 
               <div class="clearAll mt-5 mx-auto text-center">
                 <button
-                  :disabled="!cartSize"
+                  :disabled="!pastaFrescaCartSize"
                   @click="emptycart()"
                 >
                   {{ $t('cart.clear') }}
@@ -467,7 +465,7 @@
           <section v-if="cartForm === true && success === false">
             <div class="form-total text-center">
               <small class="col-12 p-0 small-sum">{{ $t('cart.total') }}:</small>
-              <strong class="col-12 p-0 cart-total">{{ cartTotalAmount | currency }}</strong>
+              <strong class="col-12 p-0 cart-total">{{ pastaFrescaCartTotalAmount | currency }}</strong>
               <small class="col-12 p-0 small-value">{{ $t('cart.currencyValue') }}</small>
             </div>
             <hr>
@@ -476,88 +474,99 @@
               <form>
                 <div class="row">
                   <div class="col-6 pr-0">
-                    <label for="name">
-                      {{ $t('form.name') }}
+                    <label
+                      class="w-100"
+                      for="name"
+                    >{{ $t('form.name') }}
                       <input
-                        v-model="name"
-                        class="form-control"
+                        v-model="$v.name.$model"
+                        class="form-control w-100"
                         type="text"
                         name="name"
                         placeholder="..."
+                        :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                        :state="$v.name.$dirty ? !$v.name.$error : null"
                       >
                     </label>
                   </div>
                   <div class="col-6">
-                    <label for="phone">
-                      {{ $t('form.phone') }}
+                    <label for="phone">{{ $t('form.phone') }}
                       <input
-                        v-model.number="phone"
+                        v-model="$v.phone.$model"
+                        v-mask="'+38 (###) ###-####'"
                         class="form-control"
                         type="text"
                         name="phone"
                         placeholder="+380..."
+                        :class="[!$v.phone.$error && $v.phone.$model ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                        :state="$v.phone.$dirty ? !$v.phone.$error : null"
                       > </label>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-6 pr-0">
-                    <label for="city">
-                      {{ $t('form.city') }}
+                    <label for="city">{{ $t('form.city') }}
                       <input
-                        v-model="city"
+                        v-model="$v.city.$model"
                         class="form-control"
                         type="text"
                         name="city"
                         placeholder="..."
+                        :class="[!$v.city.$error && $v.city.$model ? 'is-valid' : '', $v.city.$error && !$v.city.minLength ? 'is-invalid' : '']"
+                        :state="$v.city.$dirty ? !$v.city.$error : null"
                       ></label>
                   </div>
                   <div class="col-6">
-                    <label for="street">
-                      {{ $t('form.street') }}
+                    <label for="street">{{ $t('form.street') }}
                       <input
-                        v-model="street"
+                        v-model="$v.street.$model"
                         class="form-control"
                         type="text"
                         name="streeet"
                         placeholder="..."
+                        :class="[!$v.street.$error && $v.street.$model ? 'is-valid' : '', $v.street.$error && !$v.street.minLength ? 'is-invalid' : '']"
+                        :state="$v.street.$dirty ? !$v.street.$error : null"
                       ></label>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-4 pr-0">
-                    <label for="house">
-                      {{ $t('form.house') }}
+                    <label for="house">{{ $t('form.house') }}
                       <input
-                        v-model="house"
+                        v-model="$v.house.$model"
                         class="form-control"
                         type="text"
                         name="house"
                         placeholder="..."
+                        :class="[!$v.house.$error && $v.house.$model ? 'is-valid' : '', $v.house.$error && !$v.house.minLength ? 'is-invalid' : '']"
+                        :state="$v.house.$dirty ? !$v.house.$error : null"
                       > </label>
                   </div>
                   <div class="col-4 pr-0">
-                    <label for="code">
-                      {{ $t('form.code') }}
+                    <label for="code">{{ $t('form.code') }}
                       <input
                         v-model="code"
                         class="form-control"
                         type="text"
                         name="code"
                         placeholder="..."
-                      > </label>
+                      >
+                    </label>
                   </div>
                   <div class="col-4">
-                    <label for="appartment">
-                      {{ $t('form.apartment') }}
+                    <label for="appartment">{{ $t('form.apartment') }}
                       <input
-                        v-model="apartment"
+                        v-model="$v.apartment.$model"
                         class="form-control"
                         type="text"
                         name="appartment"
                         placeholder="..."
-                      > </label>
+                        :class="[!$v.apartment.$error && $v.apartment.$model ? 'is-valid' : '', $v.apartment.$error && !$v.apartment.minLength ? 'is-invalid' : '']"
+                        :state="$v.apartment.$dirty ? !$v.apartment.$error : null"
+                      >
+                    </label>
                   </div>
                 </div>
 
@@ -570,7 +579,7 @@
                 />
                 <div class="send-order text-center">
                   <b-button
-                    :disabled="!cartSize"
+                    :disabled="!pastaFrescaCartSize || loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !street || !$v.street.minLength || !city || !$v.city.minLength || !phone || !apartment || !house"
                     class="order"
                     @click.prevent="sendOrder"
                   >
@@ -688,31 +697,65 @@
               </select>
 
               <h5>{{ $t('reservation.dateTitle') }}</h5>
+
               <div>
                 <client-only>
                   <datepicker
+                    v-if="$i18n.locale === 'en'"
                     v-model="date"
                     :value="date"
+                    :language="en"
+                    format="YYYY-MM-dd"
+                    name="date"
+                    :inline="true"
+                    :disabled-dates="disabledDates"
+                  />
+                  <datepicker
+                    v-if="$i18n.locale === 'uk'"
+                    v-model="date"
+                    :value="date"
+                    :language="uk"
+                    format="YYYY-MM-dd"
+                    name="date"
+                    :inline="true"
+                    :disabled-dates="disabledDates"
+                  />
+                  <datepicker
+                    v-if="$i18n.locale === 'ru'"
+                    v-model="date"
+                    :value="date"
+                    :language="ru"
+                    format="YYYY-MM-dd"
                     name="date"
                     :inline="true"
                     :disabled-dates="disabledDates"
                   />
                 </client-only>
               </div>
+              <label class="w-100" for="name">
+                <input
+                  v-model="$v.name.$model"
+                  class="form-control w-100"
+                  type="text"
+                  name="name"
+                  :placeholder="$t('reservation.name')"
+                  :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                  :state="$v.name.$dirty ? !$v.name.$error : null"
+                >
+              </label>
+              <label class="w-100" for="phone">
+                <input
+                  v-model="$v.phone.$model"
+                  v-mask="'+38 (###) ###-####'"
+                  class="form-control w-100"
+                  type="text"
+                  name="phone"
+                  :placeholder="$t('reservation.phone')"
+                  :class="[!$v.phone.$error && $v.phone.$model && $v.phone.minLength ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                  :state="$v.phone.$dirty ? !$v.phone.$error : null"
+                >
+              </label>
 
-              <input
-                v-model="name"
-                type="text"
-                :placeholder="$t('reservation.name')"
-                class="w-100"
-              >
-
-              <input
-                v-model="phone"
-                type="text"
-                :placeholder="$t('reservation.phone')"
-                class="w-100"
-              >
               <div class="form-group mx-auto text-center">
                 <button
                   id="submit"
@@ -735,9 +778,10 @@
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
 import { en, uk, ru } from 'vuejs-datepicker/dist/locale'
+import { required, minLength } from 'vuelidate/lib/validators'
 import clickOutside from '@/directives/click-outside'
 import handleScroll from '@/directives/handle-scroll'
-// require('@/assets/css/TheHeader.css')
+require('@/assets/css/TheHeader.css')
 
 let today = new Date()
 const dd = String(today.getDate()).padStart(2, '0')
@@ -777,6 +821,8 @@ export default {
   data () {
     return {
       success: false,
+      loading: false,
+      error: [],
       cartForm: false,
       userDropdownOpen: false,
       mobileNavOpen: false,
@@ -804,13 +850,42 @@ export default {
 
     }
   },
+
+  validations: {
+    name: {
+      required,
+      minLength: minLength(4)
+    },
+    city: {
+      required,
+      minLength: minLength(3)
+    },
+    street: {
+      required,
+      minLength: minLength(3)
+    },
+    house: {
+      required,
+      minLength: minLength(1)
+    },
+    apartment: {
+      required,
+      minLength: minLength(1)
+    },
+
+    phone: {
+      required,
+      minLength: minLength(18)
+    }
+  },
+
   computed: {
     ...mapState([
-      'cart'
+      'pastaFrescaCart'
     ]),
     ...mapGetters([
-      'cartSize',
-      'cartTotalAmount'
+      'pastaFrescaCartSize',
+      'pastaFrescaCartTotalAmount'
     ])
   },
   watch: {
@@ -830,7 +905,7 @@ export default {
   methods: {
 
     addToCart (id, append = false) {
-      this.$store.dispatch('addToCart', id)
+      this.$store.dispatch('addTopastaFrescaCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -840,7 +915,7 @@ export default {
     },
 
     removeFromCart (id, append = false) {
-      this.$store.dispatch('removeFromCart', id)
+      this.$store.dispatch('removeFrompastaFrescaCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -850,7 +925,7 @@ export default {
     },
 
     deleteFromCart (id, append = false) {
-      this.$store.dispatch('deleteFromCart', id)
+      this.$store.dispatch('deleteFrompastaFrescaCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -860,7 +935,7 @@ export default {
     },
 
     emptycart (append = false) {
-      this.$store.commit('emptyCart')
+      this.$store.commit('emptypastaFrescaCart')
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
@@ -892,13 +967,11 @@ export default {
       this.cartForm = false
       this.success = false
     },
-
     hideCart () {
       this.cartOpen = false
       this.cartForm = false
       this.success = false
     },
-
     onScroll () {
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop
@@ -912,13 +985,45 @@ export default {
       this.lastScrollPosition = currentScrollPosition
     },
 
+    checkForm (e) {
+      this.errors = []
+      this.success = false
+
+      if (!this.name) {
+        this.errors.push('Ім’я вимагається')
+      }
+      if (!this.city) {
+        this.errors.push('Місто/село вимагається')
+      }
+      if (!this.street) {
+        this.errors.push('Вулиця вимагається')
+      }
+      if (!this.house) {
+        this.errors.push('Буд вимагається')
+      }
+      if (!this.apartment) {
+        this.errors.push('Кв./офіс вимагається')
+      }
+      if (!this.phone) {
+        this.errors.push('Телефон вимагається')
+      }
+      if (!this.errors.length) {
+        this.sendOrder()
+      }
+      e.preventDefault()
+    },
+
     sendOrder () {
-      const orderedProducts = JSON.stringify(this.cart)
+      // const orderedProducts = JSON.stringify(this.cart)
+
+      let data = this.pastaFrescaCart.map(item => ({ [item.name]: [`${item.quantity}шт, ${item.price}₴`] }))
+      data = Object.assign({}, ...data)
 
       axios
-        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0A${this.$t('form.name')}: ${this.name}, %0A${this.$t('form.phone')}: ${this.phone}, %0A${this.$t('form.city')}: ${this.city}, %0A${this.$t('form.street')}: ${this.street}, %0A${this.$t('form.house')}: ${this.house}, %0A${this.$t('form.code')}: ${this.code}, %0A${this.$t('form.apartment')}: ${this.apartment}, %0A${this.$t('form.comment')}: ${this.comment}, %0AcartTotalAmount: ${this.cartTotalAmount}, %0A${this.$t('cart.heading')}: ${orderedProducts}, `)
-      this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.house = this.street = this.house = null
-      this.$store.commit('emptyCart')
+        .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я : ${this.name}, %0AТелефон : ${this.phone}, %0AМісто/село : ${this.city}, %0AВулиця : ${this.street}, %0AБуд : ${this.house}, %0AКод : ${this.code}, %0AКв./офіс : ${this.apartment}, %0AКоментар до замовлення : ${this.comment}, %0Aспосіб оплати : ${this.modeOfPayment}, %0AВсього : ${this.pastaFrescaCartTotalAmount}₴, %0A${this.$t('cart.heading')} : %0A${JSON.stringify(data)} `)
+      // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
+      this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
+      this.$store.commit('emptypastaFrescaCart')
       this.success = true
       if (process.client) {
         document.body.scrollTop = document.documentElement.scrollTop = 0
@@ -931,14 +1036,17 @@ export default {
       })
       const self = this
       setTimeout(function () {
-        self.cartForm = self.success = false
+        self.success = false
       }, 10000)
+    },
+    updateView (updatedView) {
+      this.currentProductsDisplayed = updatedView
     },
 
     sendMessage () {
       axios
         .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= Бронювання %0AІм'я: ${this.name}, %0AНомер телефону: ${this.phone}, %0AДата: ${this.date}, %0AЧас прибуття: ${this.time}, %0A№ людей: ${this.noOfPeople}`)
-      this.name = this.email = this.phone = this.time = this.noOfPeople = null
+      this.time = this.noOfPeople = null
       this.date = today
       this.success = true
       this.$bvToast.toast(`${this.$t('toast.info')}`, {

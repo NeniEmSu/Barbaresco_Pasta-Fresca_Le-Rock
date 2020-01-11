@@ -4,6 +4,7 @@ export const state = () => ({
   animation: 'fade-in-up',
   cart: [],
   leRockCart: [],
+  pastaFrescaCart: [],
   toast: {
     text: '',
     show: false
@@ -22,6 +23,10 @@ export const getters = {
     return state.leRockCart.length
   },
 
+  pastaFrescaCartSize (state) {
+    return state.pastaFrescaCart.length
+  },
+
   cartTotalAmount (state) {
     return state.cart.reduce((total, product) => {
       return total + product.price * product.quantity
@@ -30,6 +35,11 @@ export const getters = {
 
   leRockCartTotalAmount (state) {
     return state.leRockCart.reduce((total, product) => {
+      return total + product.price * product.quantity
+    }, 0)
+  },
+  pastaFrescaCartTotalAmount (state) {
+    return state.pastaFrescaCart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
@@ -67,6 +77,15 @@ export const actions = {
     })
   },
 
+  addTopastaFrescaCart ({
+    commit
+  }, productId) {
+    myApi.products('add', productId).then((productId) => {
+      commit('addTopastaFrescaCart', productId)
+      commit('showToast', 'Додано з кошика')
+    })
+  },
+
   removeFromCart ({
     commit
   }, productId) {
@@ -85,6 +104,15 @@ export const actions = {
     })
   },
 
+  removeFrompastaFrescaCart ({
+    commit
+  }, productId) {
+    myApi.products('remove', productId).then((productId) => {
+      commit('removeFrompastaFrescaCart', productId)
+      commit('showToast', 'Видалено з кошика')
+    })
+  },
+
   deleteFromCart ({
     commit
   }, productId) {
@@ -99,6 +127,15 @@ export const actions = {
   }, productId) {
     myApi.products('delete', productId).then((productId) => {
       commit('deleteFromleRockCart', productId)
+      commit('showToast', 'Видалено з кошика')
+    })
+  },
+
+  deleteFrompastaFrescaCart ({
+    commit
+  }, productId) {
+    myApi.products('delete', productId).then((productId) => {
+      commit('deleteFrompastaFrescaCart', productId)
       commit('showToast', 'Видалено з кошика')
     })
   }
@@ -216,6 +253,51 @@ export const mutations = {
     state.leRockCart.splice(cartProductIndex, 1)
   },
 
+  addTopastaFrescaCart (state, productId) {
+    const product = state.products.find(product => product.id === productId)
+
+    const cartProduct = state.pastaFrescaCart.find(product => product.id === productId)
+
+    if (cartProduct) {
+      cartProduct.quantity++
+    } else {
+      state.pastaFrescaCart.push({
+        // ...product,
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: product.image,
+
+        // stock: product.quantity,
+        quantity: 1
+      })
+    }
+
+    product.quantity--
+  },
+
+  removeFrompastaFrescaCart (state, productId) {
+    const product = state.products.find(product => product.id === productId)
+
+    const cartProduct = state.pastaFrescaCart.find(product => product.id === productId)
+
+    cartProduct.quantity--
+
+    product.quantity++
+  },
+
+  deleteFrompastaFrescaCart (state, productId) {
+    const product = state.products.find(product => product.id === productId)
+
+    const cartProductIndex = state.pastaFrescaCart.findIndex(
+      product => product.id === productId
+    )
+
+    product.quantity = state.pastaFrescaCart[cartProductIndex].stock
+
+    state.pastaFrescaCart.splice(cartProductIndex, 1)
+  },
+
   showToast (state, toastText) {
     state.toast.show = true
     state.toast.text = toastText
@@ -239,6 +321,12 @@ export const mutations = {
     state.leRockCart = []
     state.leRockCartCount = 0
   },
+
+  emptypastaFrescaCart (state) {
+    state.pastaFrescaCart = []
+    state.pastaFrescaCartCount = 0
+  },
+
   SET_ANIMATION (state, animation) {
     state.animation = animation
   }

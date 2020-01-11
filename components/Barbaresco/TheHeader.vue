@@ -27,7 +27,7 @@
         "reserveAPlace": "Резервація місця",
         "reservation": "Резервація",
         "aboutUs": "Про нас",
-        "atmosphere": "Атмосфера",
+        "atmosphere": "Інтер’єр",
         "vacancy": "Ваканції",
         "contact": "Контакти",
         "kitchen": "Кухня"
@@ -81,7 +81,7 @@
         "reserveAPlace": "Reservation of place",
         "reservation": "Reservation",
         "aboutUs": "About us",
-        "atmosphere": "Atmosphere",
+        "atmosphere": "Interior",
         "vacancy": "Vacancies",
         "contact": "Contacts",
         "kitchen": "Kitchen"
@@ -136,7 +136,7 @@
         "reserveAPlace": "Резервация места",
         "reservation": "Резервация",
         "aboutUs": "О нас",
-        "atmosphere": "Атмосфера",
+        "atmosphere": "Интерьер",
         "vacancy": "Вакансии",
         "contact": "Контакты",
         "kitchen": "Кухня"

@@ -316,7 +316,7 @@ export default {
           details:
             this.$t('home.descriptions[1].details'),
           instaLink: 'https://www.instagram.com/pasta_fresca_/?igshid=1qyzx39m5mbxn',
-          facebLink: '#'
+          facebLink: 'https://www.facebook.com/pages/Pasta-Fresca/305757176274117'
         },
         {
           name: 'Le rock',
@@ -327,7 +327,7 @@ export default {
           siteLink: 'le-rock',
           details: this.$t('home.descriptions[2].details'),
           instaLink: 'https://www.instagram.com/lerock2017/?igshid=1sbpswqx2738u',
-          facebLink: 'https://www.facebook.com/barbarescocitycafe/'
+          facebLink: 'https://www.facebook.com/lerockpab/'
         },
         {
           name: 'Piazza white',
@@ -362,7 +362,7 @@ export default {
 }
 
 #homePage .owl-theme .owl-nav.disabled + .owl-dots .active span {
-  background-color: #444 !important;
+  background-color: #ffffff !important;
 }
 
 #homePage .owl-carousel .owl-stage {
@@ -414,6 +414,10 @@ export default {
       background-origin: content-box !important;
     }
 
+    .owl-theme .owl-nav.disabled + .owl-dots button:nth-child(1).active span {
+      background-image: url("~assets/img/barbaresco-padded-black.svg") !important;
+    }
+
     .owl-theme .owl-dots button:nth-child(2) span {
       background-image: url("~assets/img/pasta-fresca-padded.svg") !important;
       background-size: contain !important;
@@ -422,12 +426,20 @@ export default {
       background-origin: content-box !important;
     }
 
+    .owl-theme .owl-nav.disabled + .owl-dots button:nth-child(2).active span {
+      background-image: url("~assets/img/pasta-fresca-padded-black.svg") !important;
+    }
+
     .owl-theme .owl-dots button:nth-child(3) span {
       background-image: url("~assets/img/padded-le-rock.svg") !important;
       background-size: contain !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
       background-origin: content-box !important;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots button:nth-child(3).active span {
+      background-image: url("~assets/img/padded-le-rock-black.svg") !important;
     }
 
     .owl-theme .owl-dots button:nth-child(4) span {

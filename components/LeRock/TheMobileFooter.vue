@@ -18,19 +18,19 @@
     <div class="container footer-inner mx-auto">
       <div class="footerLogocontainer m-auto">
         <nuxt-link
-          :to="localePath({name:'barbaresco'},$i18n.locale)"
+          :to="localePath({name:'le-rock'},$i18n.locale)"
           class="m-auto"
         >
           <b-img-lazy
             class="mx-auto"
             src="~/assets/img/le-rock-logo.svg"
-            alt="logo barbaresco"
+            alt="logo le rock"
           />
         </nuxt-link>
       </div>
       <div class="address">
         <nuxt-link
-          :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
+          :to="localePath({name: 'le-rock-contacts'},$i18n.locale)"
           class="m-auto"
         >
           {{ $t('location') }}
@@ -48,7 +48,7 @@
 
       <div class="socials">
         <a
-          href="https://www.facebook.com/barbarescocitycafe/"
+          href="https://www.facebook.com/lerockpab/"
           target="_blank"
           rel="noopener"
         >

@@ -179,7 +179,7 @@ import TheSalad from '~/components/LeRock/LeRockProducts/TheSalad'
 import TheFirstCourse from '~/components/LeRock/LeRockProducts/TheFirstCourse'
 import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/LeRock/LeRockProducts/TheMainMeal'
-import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
+import TheBottomCarousel from '~/components/LeRock/TheBottomCarouselOwl'
 
 export default {
   name: 'LeRock',

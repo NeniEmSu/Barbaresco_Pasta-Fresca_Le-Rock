@@ -31,7 +31,7 @@
       </div>
       <div class="address">
         <nuxt-link
-          :to="localePath({name: 'barbaresco-contacts'},$i18n.locale)"
+          :to="localePath({name: 'pasta-fresca-contacts'},$i18n.locale)"
           class="m-auto"
         >
           {{ $t('location') }}
@@ -49,7 +49,7 @@
 
       <div class="socials">
         <a
-          href="#"
+          href="https://www.facebook.com/pages/Pasta-Fresca/305757176274117"
           target="_blank"
           rel="noopener"
         >

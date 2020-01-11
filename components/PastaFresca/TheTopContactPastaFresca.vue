@@ -32,7 +32,7 @@
 
         <li class="facebook contact">
           <a
-            href="https://www.facebook.com/virus.te.ua/"
+            href="https://www.facebook.com/pages/Pasta-Fresca/305757176274117"
             target="_blank"
             rel="noopener"
           >

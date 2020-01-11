@@ -1,68 +1,69 @@
-.block-1{
+.block-1 {
   vertical-align: middle;
 }
 
-  h1 {
-    font-family: $segoeFont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 106px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-top: 0;
+h1 {
+  font-family: $segoeFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 106px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 0;
 
-    color: $blackColor;
+  color: $blackColor;
 }
 
 p {
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 110%;
+  font-family: $robotoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 110%;
 
-    color: $blackColor;
+  color: $blackColor;
 }
 
 a {
-    text-decoration: none;
-    color: $darkColor;
+  text-decoration: none;
+  color: $darkColor;
 }
 
 
 .block1 .left-image {
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    min-height: calc(100vh - 150px);
-    max-height: 100%;
-  }
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  min-height: calc(100vh - 150px);
+  max-height: 100%;
+}
 
-  .block1 .left-content {
-   margin: auto;
-  }
+.block1 .left-content {
+  margin: auto;
+}
 
 
-  .block1 .block1-left {
-   margin: auto;
-   max-width: 80%;
-  }
+.block1 .block1-left {
+  margin: auto;
+  max-width: 80%;
+}
 
-.map{
- margin-top: 100px;
+.map {
+  margin-top: 100px;
 
 }
-  @media (min-width: 576px){
-  .col-sm-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-}}
-  
+
+@media (min-width: 1301px) {
+  .block1 .block1-left {
+    margin: auto;
+    max-width: 70%;
+  }
+}
+
 @media (min-width: 1301px) and (max-width: 1600px) {
   .content-area .block1 .block1-left {
     width: 50%;
@@ -74,12 +75,12 @@ a {
 }
 
 @media (max-width: 1200px) {
-  
-   .block1 .block1-left {
-    max-width: 90%; 
+
+  .block1 .block1-left {
+    max-width: 90%;
   }
 
-   .block1 .block1-left {
+  .block1 .block1-left {
     padding-left: 35px;
     padding-right: 35px;
     width: 100%;
@@ -94,59 +95,68 @@ a {
 
 @media (max-width: 1280px) {
 
-    h1 {
-        font-size: 60px;
-        line-height: 80px;
-    }
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
 
-    p {
-        font-size: 24px;
-    }
+  p {
+    font-size: 24px;
+  }
 
-    .content-text {
-        width: 90%;
-        padding: 0 20px;
-    }
+  .content-text {
+    width: 90%;
+    padding: 0 20px;
+  }
 
-    .map{
- margin-top: 115px;
-}
+  .map {
+    margin-top: 115px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .left-content .block1-left:after {
     background: none;
   }
-  
+
   .panel .overview {
     height: auto !important;
   }
-  
+
   .block1 {
     height: 100%;
   }
-  
-}
-
-  @media (max-width: 992px) {
-    h1 {
-        font-size: 60px;
-        line-height: 80px;
-    }
-
-    p {
-        font-size: 24px;
-    }
-
-    .map{
- margin-top: 00px;
 
 }
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 55px;
+    line-height: 70px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  .map {
+    margin-top: 00px;
+
+  }
 }
 
 
 @media (max-width: 767px) {
-  
+  h1 {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 140.4%;
+  }
+
   .panel.overview {
     height: auto !important;
   }
@@ -162,19 +172,9 @@ a {
 }
 
 
-  @media (max-width: 575px) {
+@media (max-width: 575px) {
 
-    h1 {
-        font-size: 40px;
-        line-height: 53px;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 140.4%;
-    }
-
-    .block1 .left-image {
+  .block1 .left-image {
     width: 100%;
     min-height: calc(50vh - 100px);
     background-repeat: no-repeat;
