@@ -32,46 +32,50 @@
       :items="items"
       class="d-none d-md-flex w-100"
     />
-    <div class="row">
-      <img
-        loading="lazy"
-        src="~/assets/img/barbarescoContact.jpg"
-        class="col-lg-6 p-0 image-container"
-        alt="Barbaresco Contact page image"
-      >
-      <div
-        class="col-lg-6 m-auto p-0 text-center"
-        data-aos="fade-left"
-        data-aos-easing="ease"
-        data-aos-delay="1000"
-        data-aos-duration="500"
-      >
-        <div class="inner-text container px-4">
-          <h1>{{ $t('title') }}</h1>
-          <div class="text-center">
-            <p>{{ $t('location') }}</p>
-            <p>
-              {{ $t('call') }}.:
-              <a
-                href="tel:+380506700400"
-                class="col-12 m-auto"
+    <section id="section2" class="panel overview" data-section-name="overview">
+      <div id="transcroller-body" class="block1 aos-all">
+        <div class="row mx-0">
+          <div class="col-sm-6 p-0 col-xs-12 left-image" />
+
+          <div class="col-sm-6 p-0 col-xs-12 left-content verticalcenter">
+            <div class="block1-left" style="top: auto; transform: none;">
+              <div
+                class="aos-item aos-init"
+                data-aos="fade-left"
+                data-aos-easing="ease"
+                data-aos-delay="1000"
+                data-aos-duration="500"
               >
-                <span>+38 050 6 700 400</span>
-              </a>
-              <span> | </span>
-              <a
-                href="tel:+380686700400"
-                class="col-12 m-auto"
-              >
-                <span>+38 068 6 700 400</span>
-              </a>
-            </p>
-            <p>{{ $t('workHours') }} <b>10:00-01:00</b> ({{ $t('days') }})</p>
+                <div class="aos-item__inner">
+                  <div class="text-center">
+                    <h1>{{ $t('title') }}</h1>
+                    <p>{{ $t('location') }}</p>
+                    <p>
+                      {{ $t('call') }}.:
+                      <a
+                        href="tel:+380506700400"
+                        class="col-12 m-auto"
+                      >
+                        <span>+38 050 6 700 400</span>
+                      </a>
+                      <span> | </span>
+                      <a
+                        href="tel:+380686700400"
+                        class="col-12 m-auto"
+                      >
+                        <span>+38 068 6 700 400</span>
+                      </a>
+                    </p>
+                    <p>{{ $t('workHours') }} <b>10:00-01:00</b> ({{ $t('days') }})</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <TheContactMap class="map" />
           </div>
         </div>
-        <TheContactMap style="margin-top: 50px;" />
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -136,84 +140,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/subPagesStyles.scss";
-
-h1 {
-  font-family: $segoeFont;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 106px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-
-  color: $blackColor;
-  margin-top: 50px;
-}
-
-p,
-span {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 110.4%;
-
-  color: $blackColor;
-}
-
-@media (max-width: 1280px) {
-  h1 {
-    font-size: 60px;
-    line-height: 80px;
+.block1 .left-image {
+    background: url(~assets/img/barbarescoContact.jpg);
   }
-
-  p,
-  span {
-    font-size: 24px;
-  }
-}
-@media (max-width: 992px) {
-  .image-container {
-    min-height: 200px;
-    max-height: 200px;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: center;
-  }
-
-  h1 {
-    font-size: 60px;
-    line-height: 80px;
-  }
-
-  p,
-  span {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 500px) {
-  .image-container {
-    min-height: 200px;
-    max-height: 200px;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: center;
-  }
-
-  h1 {
-    font-size: 40px;
-    line-height: 53px;
-  }
-
-  p,
-  span {
-    font-size: 18px;
-    line-height: 140.4%;
-    padding-bottom: 20px;
-  }
-}
+@import "~assets/scss/subPagesStylesNew.scss";
 </style>

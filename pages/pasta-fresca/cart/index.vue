@@ -262,21 +262,21 @@
               </div>
               <div class="col-4">
                 <label for="code">{{ $t('form.code') }} <input
-                    v-model="code"
-                    class="form-control"
-                    type="text"
-                    name="code"
-                    placeholder="..."
-                  > </label>
+                  v-model="code"
+                  class="form-control"
+                  type="text"
+                  name="code"
+                  placeholder="..."
+                > </label>
               </div>
               <div class="col-4">
                 <label for="appartment">{{ $t('form.apartment') }} <input
-                    v-model="apartment"
-                    class="form-control"
-                    type="text"
-                    name="appartment"
-                    placeholder="..."
-                  > </label>
+                  v-model="apartment"
+                  class="form-control"
+                  type="text"
+                  name="appartment"
+                  placeholder="..."
+                > </label>
               </div>
             </div>
 

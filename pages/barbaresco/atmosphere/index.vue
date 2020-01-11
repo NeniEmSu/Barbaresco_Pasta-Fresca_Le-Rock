@@ -23,26 +23,31 @@
       :items="items"
       class="d-none d-md-flex w-100"
     />
-    <div class="row">
-      <img
-        loading="lazy"
-        src="~/assets/img/barbarescoAtmosphere.jpg"
-        class="col-lg-6 p-0 image-container"
-        alt="Barbaresco Atmosphere page image"
-      >
-      <div
-        class="col-lg-6 m-auto"
-        data-aos="fade-left"
-        data-aos-easing="ease"
-        data-aos-delay="1000"
-        data-aos-duration="500"
-      >
-        <div class="m-auto content-text">
-          <h1>{{ $t('title') }}</h1>
-          <p>{{ $t('description') }}</p>
+
+    <section id="section2" class="panel overview" data-section-name="overview">
+      <div id="transcroller-body" class="block1 aos-all">
+        <div class="row mx-0">
+          <div class="col-sm-6 p-0 col-xs-12 left-image" />
+
+          <div class="col-sm-6 p-0 col-xs-12 left-content verticalcenter">
+            <div class="block1-left" style="top: auto; transform: none;">
+              <div
+                class="aos-item aos-init"
+                data-aos="fade-left"
+                data-aos-easing="ease"
+                data-aos-delay="1000"
+                data-aos-duration="500"
+              >
+                <div class="aos-item__inner">
+                  <h1>{{ $t('title') }}</h1>
+                  <p>{{ $t('description') }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -105,5 +110,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/subPagesStyles.scss";
+
+.block1 .left-image {
+    background: url(~assets/img/barbarescoAtmosphere.jpg);
+  }
+
+  @import "~assets/scss/subPagesStylesNew.scss";
 </style>
