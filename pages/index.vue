@@ -586,8 +586,7 @@ export default {
   }
 
   &.instagram:hover {
-    border: 0;
-    background-position: right center;
+    border: 2px solid $darkColor;
     background-image: -moz-linear-gradient(
       69.74deg,
       #fdd276 -7.77%,
@@ -623,7 +622,7 @@ export default {
   }
 
   &.facebook:hover {
-    border: 0;
+    border: 2px solid transparent;
     background-color: #395795;
   }
 }
@@ -961,6 +960,7 @@ export default {
     color: $lightColor;
 
     &:hover {
+      border: 2px solid transparent;
       background: $lightColor;
       color: $blackColor;
     }
@@ -991,8 +991,7 @@ export default {
     }
 
     &.instagram:hover {
-      border: 0;
-      background-position: right center;
+      border: 2px solid transparent;
       background-image: -moz-linear-gradient(
         69.74deg,
         #fdd276 -7.77%,
@@ -1028,7 +1027,7 @@ export default {
     }
 
     &.facebook:hover {
-      border: 0;
+      border: 2px solid transparent;
       background-color: #395795;
     }
   }
