@@ -37,129 +37,129 @@
 </i18n>
 
 <template>
-  <div
-    id="le-rock"
-    data-aos="fade-up"
-    data-aos-easing="ease"
-    data-aos-delay="250"
-    data-aos-duration="500"
-  >
+  <section id="le-rock">
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"
     />
-
-    <TheImageNavigation />
-
-    <TheImagedProductNav
-      :current-products-displayed="currentProductsDisplayed"
-      @changedView="updateView($event)"
-    />
-
-    <b-img-lazy
-      id="feedBack"
-      v-b-modal.modal-center
-      class="feedBack pulse"
-      src="~/assets/img/feedBack.png"
-      alt="feedback Icon"
-    />
-
-    <div>
-      <b-modal
-        id="modal-center"
-        centered
-        hide-footer
-      >
-        <b-form>
-          <b-form-group
-            :label="$t('call.name')"
-            size="lg"
-            label-for="dropdown-form-name"
-            @submit.stop.prevent
-          >
-            <b-form-input
-              id="dropdown-form-name"
-              v-model="$v.name.$model"
-              size="sm"
-              :placeholder="$t('call.name')"
-              class="form-control w-100"
-              type="text"
-              name="name"
-              :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
-              :state="$v.name.$dirty ? !$v.name.$error : null"
-            />
-          </b-form-group>
-          <b-form-group
-            :label="$t('call.phone')"
-            label-for="dropdown-form-phone"
-            @submit.stop.prevent="sendContact"
-          >
-            <b-form-input
-              id="dropdown-form-phone"
-              v-model="$v.phone.$model"
-              v-mask="'+38 (###) ###-####'"
-              size="sm"
-              placeholder="+380 ## ### ####"
-              class="form-control w-100"
-              type="text"
-              name="phone"
-              :class="[!$v.phone.$error && $v.phone.$model && $v.phone.minLength ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
-              :state="$v.phone.$dirty ? !$v.phone.$error : null"
-            />
-          </b-form-group>
-          <div class="text-center">
-            <b-button
-              variant="outline-dark"
-              size="sm"
-              class="feedback-btn text-center"
-              type="submit"
-              :disabled="loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !phone"
-            >
-              {{ $t('call.send') }}
-            </b-button>
-          </div>
-        </b-form>
-      </b-modal>
-    </div>
-
-    <b-tooltip
-      target="feedBack"
-      placement="topleft"
-      variant="light"
+    <div
+      data-aos="fade-up"
+      data-aos-easing="ease"
+      data-aos-delay="250"
+      data-aos-duration="500"
     >
-      <strong>
-        <h6> {{ $t('tooltip') }}</h6>
-      </strong>
-    </b-tooltip>
+      <TheImageNavigation />
 
-    <vue-page-transition name="fade">
-      <TheAppetizers v-if="currentProductsDisplayed === 1" />
+      <TheImagedProductNav
+        :current-products-displayed="currentProductsDisplayed"
+        @changedView="updateView($event)"
+      />
 
-      <TheRockDogs v-if="currentProductsDisplayed === 2" />
+      <b-img-lazy
+        id="feedBack"
+        v-b-modal.modal-center
+        class="feedBack pulse"
+        src="~/assets/img/feedBack.png"
+        alt="feedback Icon"
+      />
 
-      <TheTheBBQMeat v-if="currentProductsDisplayed === 3" />
+      <div>
+        <b-modal
+          id="modal-center"
+          centered
+          hide-footer
+        >
+          <b-form>
+            <b-form-group
+              :label="$t('call.name')"
+              size="lg"
+              label-for="dropdown-form-name"
+              @submit.stop.prevent
+            >
+              <b-form-input
+                id="dropdown-form-name"
+                v-model="$v.name.$model"
+                size="sm"
+                :placeholder="$t('call.name')"
+                class="form-control w-100"
+                type="text"
+                name="name"
+                :class="[!$v.name.$error && $v.name.$model && $v.name.minLength ? 'is-valid' : '', $v.name.$error && !$v.name.minLength ? 'is-invalid' : '']"
+                :state="$v.name.$dirty ? !$v.name.$error : null"
+              />
+            </b-form-group>
+            <b-form-group
+              :label="$t('call.phone')"
+              label-for="dropdown-form-phone"
+              @submit.stop.prevent="sendContact"
+            >
+              <b-form-input
+                id="dropdown-form-phone"
+                v-model="$v.phone.$model"
+                v-mask="'+38 (###) ###-####'"
+                size="sm"
+                placeholder="+380 ## ### ####"
+                class="form-control w-100"
+                type="text"
+                name="phone"
+                :class="[!$v.phone.$error && $v.phone.$model && $v.phone.minLength ? 'is-valid' : '', $v.phone.$error && !$v.phone.minLength ? 'is-invalid' : '']"
+                :state="$v.phone.$dirty ? !$v.phone.$error : null"
+              />
+            </b-form-group>
+            <div class="text-center">
+              <b-button
+                variant="outline-dark"
+                size="sm"
+                class="feedback-btn text-center"
+                type="submit"
+                :disabled="loading === true || !$v.name.minLength || !name || !$v.phone.minLength || !phone"
+              >
+                {{ $t('call.send') }}
+              </b-button>
+            </div>
+          </b-form>
+        </b-modal>
+      </div>
 
-      <TheGarnishes v-if="currentProductsDisplayed === 4" />
+      <b-tooltip
+        target="feedBack"
+        placement="topleft"
+        variant="light"
+      >
+        <strong>
+          <h6> {{ $t('tooltip') }}</h6>
+        </strong>
+      </b-tooltip>
 
-      <TheDesert v-if="currentProductsDisplayed === 5" />
+      <vue-page-transition name="fade">
+        <TheAppetizers v-if="currentProductsDisplayed === 1" />
 
-      <TheSalad v-if="currentProductsDisplayed === 6" />
+        <TheRockDogs v-if="currentProductsDisplayed === 2" />
 
-      <TheFirstCourse v-if="currentProductsDisplayed === 7" />
+        <TheTheBBQMeat v-if="currentProductsDisplayed === 3" />
 
-      <!-- <TheHits v-if="currentProductsDisplayed === 8" /> -->
+        <TheGarnishes v-if="currentProductsDisplayed === 4" />
 
-      <TheDrinks v-if="currentProductsDisplayed === 9" />
+        <TheDesert v-if="currentProductsDisplayed === 5" />
 
-      <TheAlcohol v-if="currentProductsDisplayed === 10" />
+        <TheSalad v-if="currentProductsDisplayed === 6" />
 
-      <TheMainMeal v-if="currentProductsDisplayed === 11" />
-    </vue-page-transition>
+        <TheFirstCourse v-if="currentProductsDisplayed === 7" />
 
-    <TheBottomCarousel class="elaboraSpacing" />
+        <!-- <TheHits v-if="currentProductsDisplayed === 8" /> -->
 
-    <TheMapComponent />
-  </div>
+        <TheDrinks v-if="currentProductsDisplayed === 9" />
+
+        <TheAlcohol v-if="currentProductsDisplayed === 10" />
+
+        <TheMainMeal v-if="currentProductsDisplayed === 11" />
+      </vue-page-transition>
+
+      <TheBottomCarousel class="elaboraSpacing" />
+
+      <TheMapComponent />
+    </div>
+  </section>
 </template>
 
 <script>
@@ -380,7 +380,7 @@ export default {
   &:before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
     bottom: 0;
     left: 0;

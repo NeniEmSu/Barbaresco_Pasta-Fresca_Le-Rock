@@ -50,6 +50,7 @@
 </template>
 
 <script>
+import '~/assets/scss/TheTopContact.scss'
 export default {
   props: {
     // eslint-disable-next-line vue/require-default-prop
@@ -64,97 +65,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.top-contacts {
-  background: $darkColor;
-
-  height: 50px;
-  margin: 99px 0 0 0;
-  padding: 5px 30px;
-  top: 0;
-  left: 0;
-  box-shadow: none;
-
-  border: 0;
-
-  .breadcrumb-item + .breadcrumb-item:before {
-    display: inline-block;
-    padding-right: 0.5rem;
-    content: "<";
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #ffffff;
-
-    opacity: 0.5;
-  }
-
-  .breadcrumb a {
-    text-decoration: none;
-
-    &:hover {
-      color: $goldColor;
-    }
-  }
-
-  ul.contacts {
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    height: 40px;
-    line-height: 40px;
-  }
-
-  ul.contacts li.contact {
-    display: inline;
-    padding: 0 10px;
-    margin: 0;
-    line-height: 40px;
-    right: 0;
-
-    text-align: right;
-  }
-
-  ul.contacts li.contact a {
-    text-decoration: none;
-    color: $lightColor;
-    font-family: $robotoFont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    @include easeInOut;
-  }
-
-  img {
-    padding: 0;
-    margin: 0;
-    @include easeInOut;
-  }
-}
-
-@include mediaMenu {
-  img {
-    height: auto;
-    max-width: 25px;
-  }
-
-  .breadcrumb {
-    padding: 10px 0;
-  }
-
-  ul,
-  span {
-    font-size: 14px;
-  }
-}
-</style>

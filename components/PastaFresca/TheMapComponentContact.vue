@@ -1,15 +1,15 @@
 <i18n>
 {
   "uk": {
-    "location": "Вул. Олени Кульчицької, 2, Тернопіль, Тернопільська область, 46002"
+    "location": "м. Тернопіль, бул. Т. Шевченка 23"
 
   },
   "en": {
-   "location": "Oleny Kul'chyts'koi St, 2, Ternopil, Ternopil Oblast, 46002"
+   "location": "Ternopil City, 23rd Shevchenka Street"
 
   },
   "ru": {
-    "location": "г.. Тернополь, улица Олени Кульчицької, 2, Тернопільська область, 46002"
+    "location": "г.. Тернополь, улица Князя Шевченко, 23"
   }
 }
 </i18n>
@@ -346,13 +346,13 @@ code {
 }
 
 .vue-map-container {
-  // width: calc(100% - 15px);
+  width: 100%;
   height: 429px;
 }
 
 @media (min-width: 1400px) {
   .vue-map-container {
-    // width: calc(100% - 21px);
+    width: 100%;
     height: 429px;
   }
 }
