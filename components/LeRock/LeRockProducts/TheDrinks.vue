@@ -1680,67 +1680,67 @@ export default {
 
   computed: {
     extractedProductsCoffee () {
-      return productData.filter(el => el.category === 'barbaresco-coffee')
+      return productData.filter(el => el.category === 'le-rock-coffee')
     },
     extractedProductsCoffeeEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-coffee')
+      return productDataEn.filter(el => el.category === 'le-rock-coffee')
     },
     extractedProductsCoffeeRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-coffee')
+      return productDataRu.filter(el => el.category === 'le-rock-coffee')
     },
     extractedProductsTea () {
-      return productData.filter(el => el.category === 'barbaresco-tea')
+      return productData.filter(el => el.category === 'le-rock-tea')
     },
     extractedProductsTeaEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-tea')
+      return productDataEn.filter(el => el.category === 'le-rock-tea')
     },
     extractedProductsTeaRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-tea')
+      return productDataRu.filter(el => el.category === 'le-rock-tea')
     },
     extractedProductsFresh () {
-      return productData.filter(el => el.category === 'barbaresco-fresh')
+      return productData.filter(el => el.category === 'le-rock-fresh')
     },
     extractedProductsFreshEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-fresh')
+      return productDataEn.filter(el => el.category === 'le-rock-fresh')
     },
     extractedProductsFreshRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-fresh')
+      return productDataRu.filter(el => el.category === 'le-rock-fresh')
     },
     extractedProductsLemonade () {
-      return productData.filter(el => el.category === 'barbaresco-lemonade')
+      return productData.filter(el => el.category === 'le-rock-lemonade')
     },
     extractedProductsLemonadeEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-lemonade')
+      return productDataEn.filter(el => el.category === 'le-rock-lemonade')
     },
     extractedProductsLemonadeRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-lemonade')
+      return productDataRu.filter(el => el.category === 'le-rock-lemonade')
     },
     extractedProductsSmoothy () {
-      return productData.filter(el => el.category === 'barbaresco-smoothy')
+      return productData.filter(el => el.category === 'le-rock-smoothy')
     },
     extractedProductsSmoothyEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-smoothy')
+      return productDataEn.filter(el => el.category === 'le-rock-smoothy')
     },
     extractedProductsSmoothyRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-smoothy')
+      return productDataRu.filter(el => el.category === 'le-rock-smoothy')
     },
     extractedProductsMilkshake () {
-      return productData.filter(el => el.category === 'barbaresco-milkshake')
+      return productData.filter(el => el.category === 'le-rock-milkshake')
     },
     extractedProductsMilkshakeEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-milkshake')
+      return productDataEn.filter(el => el.category === 'le-rock-milkshake')
     },
     extractedProductsMilkshakeRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-milkshake')
+      return productDataRu.filter(el => el.category === 'le-rock-milkshake')
     },
     extractedProductsNonAlcoholicDrinks () {
-      return productData.filter(el => el.category === 'barbaresco-nonAlcoholicDrinks')
+      return productData.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
     },
     extractedProductsNonAlcoholicDrinksEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-nonAlcoholicDrinks')
+      return productDataEn.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
     },
     extractedProductsNonAlcoholicDrinksRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-nonAlcoholicDrinks')
+      return productDataRu.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
     }
   },
 

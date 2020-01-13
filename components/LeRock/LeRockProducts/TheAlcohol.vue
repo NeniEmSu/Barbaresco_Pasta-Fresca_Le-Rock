@@ -1445,58 +1445,58 @@ export default {
 
   computed: {
     extractedProductsAlcoholicCocktail () {
-      return productData.filter(el => el.category === 'barbaresco-alcoholicCocktail')
+      return productData.filter(el => el.category === 'le-rock-alcoholicCocktail')
     },
     extractedProductsAlcoholicCocktailEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-alcoholicCocktail')
+      return productDataEn.filter(el => el.category === 'le-rock-alcoholicCocktail')
     },
     extractedProductsAlcoholicCocktailRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-alcoholicCocktail')
+      return productDataRu.filter(el => el.category === 'le-rock-alcoholicCocktail')
     },
     extractedProductsAlcoholicSet () {
-      return productData.filter(el => el.category === 'barbaresco-alcoholicSet')
+      return productData.filter(el => el.category === 'le-rock-alcoholicSet')
     },
     extractedProductsAlcoholicSetEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-alcoholicSet')
+      return productDataEn.filter(el => el.category === 'le-rock-alcoholicSet')
     },
     extractedProductsAlcoholicSetRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-alcoholicSet')
+      return productDataRu.filter(el => el.category === 'le-rock-alcoholicSet')
     },
     extractedProductsWine () {
-      return productData.filter(el => el.category === 'barbaresco-wine')
+      return productData.filter(el => el.category === 'le-rock-wine')
     },
     extractedProductsWineEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-wine')
+      return productDataEn.filter(el => el.category === 'le-rock-wine')
     },
     extractedProductsWineRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-wine')
+      return productDataRu.filter(el => el.category === 'le-rock-wine')
     },
     extractedProductsSparklingWine () {
-      return productData.filter(el => el.category === 'barbaresco-sparklingWine')
+      return productData.filter(el => el.category === 'le-rock-sparklingWine')
     },
     extractedProductsSparklingWineEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-sparklingWine')
+      return productDataEn.filter(el => el.category === 'le-rock-sparklingWine')
     },
     extractedProductsSparklingWineRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-sparklingWine')
+      return productDataRu.filter(el => el.category === 'le-rock-sparklingWine')
     },
     extractedProductsAlcoholicDrinks () {
-      return productData.filter(el => el.category === 'barbaresco-alcoholicDrinks')
+      return productData.filter(el => el.category === 'le-rock-drinks')
     },
     extractedProductsAlcoholicDrinksEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-alcoholicDrinks')
+      return productDataEn.filter(el => el.category === 'le-rock-drinks')
     },
     extractedProductsAlcoholicDrinksRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-alcoholicDrinks')
+      return productDataRu.filter(el => el.category === 'le-rock-drinks')
     },
     extractedProductsBear () {
-      return productData.filter(el => el.category === 'barbaresco-bear')
+      return productData.filter(el => el.category === 'le-rock-gin')
     },
     extractedProductsBearEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-bear')
+      return productDataEn.filter(el => el.category === 'le-rock-gin')
     },
     extractedProductsBearRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-bear')
+      return productDataRu.filter(el => el.category === 'le-rock-gin')
     }
   },
 
