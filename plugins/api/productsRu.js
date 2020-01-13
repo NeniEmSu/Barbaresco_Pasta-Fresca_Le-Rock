@@ -5229,7 +5229,7 @@ export default [
 
     category: 'pasta-fresca-alcoholicDrinks',
 
-    name: "Виски Jack Daniel's Old № 7",
+    name: "Виски Jack Daniel's Old №7",
 
     id: 'b-aldr-7',
 
@@ -5575,7 +5575,7 @@ export default [
 
     category: 'pasta-fresca-tea',
 
-    name: 'Облепиховый-грушевый ',
+    name: 'Облепиховый-грушевый',
 
     id: 'pf-tea-3',
 
@@ -5901,7 +5901,7 @@ export default [
 
     category: 'pasta-fresca-nonAlcoholicDrinks',
 
-    name: 'девайтис н. газ. ',
+    name: 'девайтис н. газ.',
 
     id: 'b-nad-8b',
 
@@ -5935,6 +5935,818 @@ export default [
 
     summary: ''
 
-  }
+  },
+  // Le Rock Starts Here
 
+  // Le Rock Salads
+  {
+    category: 'le-rock-salads',
+    name: 'Цезарь с курицей',
+    id: 'lr-sal-1',
+    price: 65,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-salad',
+    summary: 'филе курицы, бекон, листья салата, помидор, перепелиные яйца, соус цезарь'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Родос',
+    id: 'lr-sal-2',
+    price: 60,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-salad',
+    summary: 'свежий помидор, огурец, перец болгарский, мусс дор блю, соус из рукколы'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Гриль салат с телятиной',
+    id: 'lr-sal-3',
+    price: 75,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-salad',
+    summary: 'телятина гриль, помидор, перец болгарский, кабачок, грибы, фирменный соус'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Rokoko',
+    id: 'lr-sal-4',
+    price: 70,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-salad',
+    summary: 'мясо с бедра курицы, брокколи, грибы, кабачок, стручковая фасоль, морковь, заправляется сырным соусом'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Салат с лососем',
+    id: 'lr-sal-5',
+    price: 80,
+    quantity: Infinity,
+    volume: '300г',
+    image: 'le-rock-salad',
+    summary: 'слабосоленая лосось, помидор, лист салата, брокколи, сыр филадельфия, соус медово-горчичный'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Салат из печени',
+    id: 'lr-sal-6',
+    price: 65,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-salad',
+    summary: 'листья салата, карамелизированное яблоко, рукула, перец гриль, помидоры, куриная печень, оливковое масло, уксус бальзамик'
+  },
+
+  // Le Rock Meat BBQ
+
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Стейк New York',
+    id: 'lr-mbbq-1',
+    price: 125,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-meat',
+    summary: 'сочное мясо с поясничной части'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Стейк Рибай',
+    id: 'lr-mbbq-2',
+    price: 135,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-meat',
+    summary: 'мясо из подлопаточной части туши, имеет большое количество жировых прожилок'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Филе Миньон',
+    id: 'lr-mbbq-3',
+    price: 145,
+    quantity: Infinity,
+    volume: '200г',
+    image: 'le-rock-meat',
+    summary: 'самая нежная, и постная часть говядины'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Стейк свиной',
+    id: 'lr-mbbq-4',
+    price: 100,
+    quantity: Infinity,
+    volume: '200/140 / 30г',
+    image: 'le-rock-meat',
+    summary: 'со стручковой фасолью и песто'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Half chicken',
+    id: 'lr-mbbq-5',
+    price: 100,
+    quantity: Infinity,
+    volume: '300/120 / 30г',
+    image: 'le-rock-meat',
+    summary: 'с грибами гриль и горчичным соусом'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Свиная голень с картофельным пюре',
+    id: 'lr-mbbq-6',
+    price: 100,
+    quantity: Infinity,
+    volume: '380 / 150г',
+    image: 'le-rock-meat',
+    summary: '(Рябчик) (подается с рокфорним пюре)'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Свинина на кости с печеным картофелем',
+    id: 'lr-mbbq-7',
+    price: 110,
+    quantity: Infinity,
+    volume: '270/250 / 30г',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Ассорти мяса гриль',
+    id: 'lr-mbbq-8',
+    price: 350,
+    quantity: Infinity,
+    volume: '1500г',
+    image: 'le-rock-meat',
+    summary: 'стейк из говядины, стейк свиной, куриное филе, колбаски, картофель печеный, 2 соусы'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Соленый арахис с семенами тыквы',
+    id: 'lr-mbbq-9',
+    price: 30,
+    quantity: Infinity,
+    volume: '100г',
+    image: 'le-rock-meat',
+    summary: 'Моцарелла, филе курицы, бекон, помидоры черри, пармезан, микс-салат, сливочный соус'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Крылья фри',
+    id: 'lr-mbbq-10',
+    price: 60,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-meat',
+    summary: 'острые / с горчичным соусом'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Сырные палочки',
+    id: 'lr-mbbq-11',
+    price: 50,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-meat',
+    summary: 'соус из клюквы / чесночный'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Хрустящие уши в соевом соусе',
+    id: 'lr-mbbq-12',
+    price: 45,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'le-rock-meat',
+    summary: 'острые / не острые'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Колбаски в беконе',
+    id: 'lr-mbbq-13',
+    price: 60,
+    quantity: Infinity,
+    volume: '300 / 30г',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Креветки к пиву',
+    id: 'lr-mbbq-14',
+    price: 80,
+    quantity: Infinity,
+    volume: '100 / 30г',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Копченые свиные ребра BBQ',
+    id: 'lr-mbbq-15',
+    price: 90,
+    quantity: Infinity,
+    volume: '300 / 30г',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Колбаски собственного приготовления с картофельными крокетами',
+    id: 'lr-mbbq-16',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/130/30 / 50г',
+    image: 'le-rock-meat',
+    summary: 'куриные / свиные'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Ребра на компанию',
+    id: 'lr-mbbq-17',
+    price: 250,
+    quantity: Infinity,
+    volume: '800/300 / 100г',
+    image: 'le-rock-meat',
+    summary: 'куриные / свиные'
+  },
+
+  // Le Rock Rock Dogs
+
+  {
+    category: 'le-rock-rock-dogs',
+    name: 'С свининой',
+    id: 'lr-rd-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/100 / 30г',
+    image: 'le-rock-rock-dogs',
+    summary: 'картофель фри, и соус'
+  },
+  {
+    category: 'le-rock-rock-dogs',
+    name: 'С курицей',
+    id: 'lr-rd-2',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/100 / 30г',
+    image: 'le-rock-rock-dogs',
+    summary: 'картофель фри, и соус'
+  },
+  {
+    category: 'le-rock-rock-dogs',
+    name: 'С сосиской и беконом',
+    id: 'lr-rd-3',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/100 / 30г',
+    image: 'le-rock-rock-dogs',
+    summary: 'картофель фри, и соус'
+  },
+
+  // Le Rock Frying Pan
+
+  {
+    category: 'le-rock-fry-pan',
+    name: '- С картошкой и курицей',
+    id: 'lr-fp-1',
+    price: 65,
+    quantity: Infinity,
+    volume: '600г',
+    image: 'barbarescoMlinty',
+    summary: '+ салат из капусты'
+  },
+  {
+    category: 'le-rock-fry-pan',
+    name: '- С картошкой и свининой',
+    id: 'lr-fp-2',
+    price: 65,
+    quantity: Infinity,
+    volume: '600г',
+    image: 'barbarescoMlinty',
+    summary: '+ маринованный огурец'
+  },
+  {
+    category: 'le-rock-fry-pan',
+    name: '- С картофелем, колбаской и беконом',
+    id: 'lr-fp-3',
+    price: 50,
+    quantity: Infinity,
+    volume: '600г',
+    image: 'barbarescoMlinty',
+    summary: '+ маринованный огурец'
+  },
+
+  // Le Rock Deserts
+
+  {
+    category: 'le-rock-deserts',
+    name: 'НАПОЛЕОН',
+    id: 'lr-d-1',
+    price: 45,
+    quantity: Infinity,
+    volume: '160г',
+    image: 'barbarescoDesert',
+    summary: ''
+  },
+  {
+    category: 'le-rock-deserts',
+    name: 'Чизкейк',
+    id: 'lr-d-2',
+    price: 55,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'barbarescoDesert',
+    summary: ''
+  },
+  {
+    category: 'le-rock-deserts',
+    name: 'Морковно-пряный торт',
+    id: 'lr-d-3',
+    price: 55,
+    quantity: Infinity,
+    volume: '200г',
+    image: 'barbarescoDesert',
+    summary: 'Вишнево-мятный, Персиковый, Карамель'
+  },
+  {
+    category: 'le-rock-deserts',
+    name: 'Шоколадный торт',
+    id: 'lr-d-4',
+    price: 55,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'barbarescoDesert',
+    summary: ''
+  },
+  {
+    category: 'le-rock-deserts',
+    name: 'Персиковое компоте',
+    id: 'lr-d-5',
+    price: 55,
+    quantity: Infinity,
+    volume: '170г',
+    image: 'barbarescoDesert',
+    summary: ''
+  },
+
+  // Le Rock First Courses
+
+  {
+    category: 'le-rock-firstCourses',
+    name: 'Куриный бульон',
+    id: 'lr-fc-1',
+    price: 35,
+    quantity: Infinity,
+    volume: '300г',
+    image: 'le-rock-first-course',
+    summary: 'с кусочками курицы и домашней пасты'
+  },
+  {
+    category: 'le-rock-firstCourses',
+    name: 'Кукурузный суп чаудер',
+    id: 'lr-fc-2',
+    price: 35,
+    quantity: Infinity,
+    volume: '300г',
+    image: 'le-rock-first-course',
+    summary: ''
+  },
+
+  // Le Rock Main Meals
+
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Котлета Кордон-блю',
+    id: 'lr-mm-1',
+    price: 80,
+    quantity: Infinity,
+    volume: '345/150 / 30г',
+    image: 'barbarescoHits',
+    summary: 'подается с картофельным пюре'
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Куриное филе на шпинатной подушке под сливочным соусом',
+    id: 'lr-mm-2',
+    price: 80,
+    quantity: Infinity,
+    volume: '350г',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Креветки с устричным соусом, и салатом Чука',
+    id: 'lr-mm-3',
+    price: 120,
+    quantity: Infinity,
+    volume: '80 / 60 / 15г',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Лосось гриль',
+    id: 'lr-mm-4',
+    price: 170,
+    quantity: Infinity,
+    volume: '150/100 / 30г',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Яичница с колбасой и беконом',
+    id: 'lr-mm-5',
+    price: 55,
+    quantity: Infinity,
+    volume: '380г',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Яичница с ветчиной и томатами',
+    id: 'lr-mm-6',
+    price: 55,
+    quantity: Infinity,
+    volume: '400г',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Гриль лаваш с сыром, томатами и зеленью',
+    id: 'lr-mm-7',
+    price: 55,
+    quantity: Infinity,
+    volume: '330г',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Блины с курицей на шпинатную соусе',
+    id: 'lr-mm-8',
+    price: 55,
+    quantity: Infinity,
+    volume: '300 / 100г',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  // Le Rock Coffee
+
+  {
+    category: 'le-rock-coffee',
+    name: 'ЭСПРЕССО',
+    id: 'lr-c-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'АМЕРИКАНО',
+    id: 'lr-c-2',
+    price: 25,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'КАПУЧИНО',
+    id: 'lr-c-3',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Латте',
+    id: 'lr-c-4',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Латте фисташковое',
+    id: 'lr-c-5',
+    price: 40,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Латте кокосовое',
+    id: 'lr-c-6',
+    price: 40,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'ежевичный какао',
+    id: 'lr-c-7',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Flat White',
+    id: 'lr-c-8',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+
+  // Le Rock Tea
+  {
+    category: 'le-rock-tea',
+    name: 'Чай заварной черный',
+    id: 'lr-tea-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '600мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай заварной зелени',
+    id: 'lr-tea-1-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '600мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай заварной фруктовый',
+    id: 'lr-tea-1-2',
+    price: 25,
+    quantity: Infinity,
+    volume: '600мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай жасмин-черника',
+    id: 'lr-tea-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '600мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай розмарин-яблоко',
+    id: 'lr-tea-3',
+    price: 30,
+    quantity: Infinity,
+    volume: '600мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай облепиха-манго с курагой',
+    id: 'lr-tea-4',
+    price: 30,
+    quantity: Infinity,
+    volume: '250мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Чай мята-лайм',
+    id: 'lr-tea-5',
+    price: 30,
+    quantity: Infinity,
+    volume: '250мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Вишня-ваниль',
+    id: 'lr-tea-6',
+    price: 40,
+    quantity: Infinity,
+    volume: '300мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Попкорн-корица',
+    id: 'lr-tea-7',
+    price: 40,
+    quantity: Infinity,
+    volume: '300мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Соленая карамель',
+    id: 'lr-tea-8',
+    price: 40,
+    quantity: Infinity,
+    volume: '300мл',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  // Le Rock Appetizer
+
+  {
+    category: 'le-rock-appetizers',
+    name: 'Brusketi',
+    id: 'lr-app-1',
+    price: 55,
+    quantity: Infinity,
+    volume: '3шт',
+    image: 'le-rock-appetizer',
+    summary: 'с чоризо, с телятиной, с овощами'
+  },
+  {
+    category: 'le-rock-appetizers',
+    name: 'Куриный паштет',
+    id: 'lr-app-2',
+    price: 55,
+    quantity: Infinity,
+    volume: '200г',
+    image: 'le-rock-appetizer',
+    summary: 'подается с гренками'
+  },
+  {
+    category: 'le-rock-appetizers',
+    name: 'Маринованные овощи',
+    id: 'lr-app-3',
+    price: 50,
+    quantity: Infinity,
+    volume: '400г',
+    image: 'le-rock-appetizer',
+    summary: ''
+  },
+  {
+    category: 'le-rock-appetizers',
+    name: 'Сырное плато',
+    id: 'lr-app-4',
+    price: 70,
+    quantity: Infinity,
+    volume: '170г',
+    image: 'le-rock-appetizer',
+    summary: ''
+  },
+  {
+    category: 'le-rock-appetizers',
+    name: 'Mьясне плато',
+    id: 'lr-app-5',
+    price: 70,
+    quantity: Infinity,
+    volume: '170г',
+    image: 'le-rock-appetizer',
+    summary: ''
+  },
+
+  // Le Rock Appetizer For Bear
+
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Пивная тарелка',
+    id: 'lr-app-f-b-1',
+    price: 55,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'le-rock-appetizer',
+    summary: 'ржаные сухарики, вяленое мясо, чесночный соус'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Соленик',
+    id: 'lr-app-f-b-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '100 / 30г',
+    image: 'le-rock-appetizer',
+    summary: 'подается с гренками'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Ржаные сухарики',
+    id: 'lr-app-f-b-3',
+    price: 30,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'le-rock-appetizer',
+    summary: 'с чесночным соусом'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Куриный попкорн',
+    id: 'lr-app-f-b-4',
+    price: 55,
+    quantity: Infinity,
+    volume: '200г',
+    image: 'le-rock-appetizer',
+    summary: 'с чесночным соусом'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Пивная доска на компанию',
+    id: 'lr-app-f-b-5',
+    price: 150,
+    quantity: Infinity,
+    volume: '600г',
+    image: 'le-rock-appetizer',
+    summary: 'сырные палочки, наггетсы, колбаски в беконе, снеки, грисини, соус тартар'
+  },
+
+  // Le Rock Garnishes
+
+  {
+    category: 'le-rock-garnishes',
+    name: 'ОВОЩИ-ГРИЛЬ',
+    id: 'lr-gar-1',
+    price: 50,
+    quantity: Infinity,
+    volume: '300г',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'Овощи в тайском стиле',
+    id: 'lr-gar-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '250г',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'Рис с овощами гриль',
+    id: 'lr-gar-3',
+    price: 25,
+    quantity: Infinity,
+    volume: '210г',
+    image: 'le-rock-side-dishes',
+    summary: 'С розмарином и беконом'
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'КАРТОФЕЛЬ ФРИ (с соусом)',
+    id: 'lr-gar-4',
+    price: 35,
+    quantity: Infinity,
+    volume: '150г',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'Картофельное пюре',
+    id: 'lr-gar-5',
+    price: 20,
+    quantity: Infinity,
+    volume: '200г',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'Чиабата',
+    id: 'lr-gar-6',
+    price: 15,
+    quantity: Infinity,
+    volume: '1шт',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  }
 ]

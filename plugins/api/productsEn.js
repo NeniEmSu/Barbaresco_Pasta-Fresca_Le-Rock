@@ -5727,6 +5727,819 @@ export default [
 
     summary: ''
 
-  }
+  },
 
+  // Le Rock Starts Here
+
+  // Le Rock Salads
+  {
+    category: 'le-rock-salads',
+    name: 'Caesar with chicken',
+    id: 'lr-sal-1',
+    price: 65,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-salad',
+    summary: 'chicken fillet, bacon, lettuce, tomato, quail eggs, caesar sauce'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Rhodes',
+    id: 'lr-sal-2',
+    prices: 60,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-salad',
+    summary: 'fresh tomato, cucumber, bell pepper, mousse dor blue, arugula sauce'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Grilled Veal Salad',
+    id: 'lr-sal-3',
+    price: 75,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-salad',
+    summary: 'grilled veal, tomato, bell peppers, zucchini, mushrooms, signature sauce'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Rococo',
+    id: 'lr-sal-4',
+    price: 70,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-salad',
+    summary: 'chicken meat with chicken, broccoli, mushrooms, zucchini, green beans, carrots, cheese sauce'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Salmon salad',
+    id: 'lr-sal-5',
+    price: 80,
+    quantity: Infinity,
+    volume: '300g',
+    image: 'le-rock-salad',
+    summary: 'salted salmon, tomato, lettuce, broccoli, Philadelphia cheese, honey-mustard sauce'
+  },
+  {
+    category: 'le-rock-salads',
+    name: 'Liver salad',
+    id: 'lr-sal-6',
+    price: 65,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-salad',
+    summary: 'salad leaves, caramelized apple, arugula, grilled peppers, tomatoes, chicken liver, olive oil, balsamic vinegar'
+  },
+
+  // Le Rock Meat BBQ
+
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'New York Steak',
+    id: 'lr-mbbq-1',
+    price: 125,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-meat',
+    summary: 'juicy meat from the lumbar part'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Ribeye Steak',
+    id: 'lr-mbbq-2',
+    price: 135,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-meat',
+    summary: 'meat from the subclavian part of the carcass, has a large amount of fat'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Filet Mignon',
+    id: 'lr-mbbq-3',
+    price: 145,
+    quantity: Infinity,
+    volume: '200g',
+    image: 'le-rock-meat',
+    summary: 'the most delicate and lean part of the beef'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Pork steak',
+    id: 'lr-mbbq-4',
+    prices: 100,
+    quantity: Infinity,
+    volume: '200/140 / 30g',
+    image: 'le-rock-meat',
+    summary: 'with string beans and pesto'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Half chicken',
+    id: 'lr-mbbq-5',
+    prices: 100,
+    quantity: Infinity,
+    volume: '300/120 / 30g',
+    image: 'le-rock-meat',
+    summary: 'with grilled mushrooms and mustard sauce'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Pork leg with mashed potatoes',
+    id: 'lr-mbbq-6',
+    prices: 100,
+    quantity: Infinity,
+    volume: '380 / 150g',
+    image: 'le-rock-meat',
+    summary: '(Grouse) (Served with Roquefort puree)'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Pork on a bone with baked potatoes',
+    id: 'lr-mbbq-7',
+    prices: 110,
+    quantity: Infinity,
+    volume: '270/250 / 30g',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Assorted Grilled Meat',
+    id: 'lr-mbbq-8',
+    price: 350,
+    quantity: Infinity,
+    volume: '1500g',
+    image: 'le-rock-meat',
+    summary: 'beef steak, pork steak, chicken fillet, sausages, baked potatoes, 2 sauces'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Salted peanut with pumpkin seeds',
+    id: 'lr-mbbq-9',
+    price: 30,
+    quantity: Infinity,
+    volume: '100g',
+    image: 'le-rock-meat',
+    summary: 'mozzarella, chicken fillet, bacon, cherry tomatoes, parmesan, mix salad, cream sauce'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'French Wings',
+    id: 'lr-mbbq-10',
+    prices: 60,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-meat',
+    summary: 'spicy / mustard sauce'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Cheese sticks',
+    id: 'lr-mbbq-11',
+    prices: 50,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-meat',
+    summary: 'cranberry sauce / garlic'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Crispy Ears in Soy Sauce',
+    id: 'lr-mbbq-12',
+    price: 45,
+    quantity: Infinity,
+    volume: '150g',
+    image: 'le-rock-meat',
+    summary: 'sharp / not sharp'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Sausages in Bacon',
+    id: 'lr-mbbq-13',
+    prices: 60,
+    quantity: Infinity,
+    volume: '300 / 30g',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Shrimp to beer',
+    id: 'lr-mbbq-14',
+    price: 80,
+    quantity: Infinity,
+    volume: '100 / 30g',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Smoked Pork Ribs BBQ',
+    id: 'lr-mbbq-15',
+    price: 90,
+    quantity: Infinity,
+    volume: '300 / 30g',
+    image: 'le-rock-meat',
+    summary: ''
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Potato croquettes',
+    id: 'lr-mbbq-16',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/130/30 / 50g',
+    image: 'le-rock-meat',
+    summary: 'chicken / pig'
+  },
+  {
+    category: 'le-rock-meat-bbq',
+    name: 'Company Ribs',
+    id: 'lr-mbbq-17',
+    prices: 250,
+    quantity: Infinity,
+    volume: '800/300 / 100g',
+    image: 'le-rock-meat',
+    summary: 'chicken / pig'
+  },
+
+  // Le Rock Rock Dogs
+
+  {
+    category: 'le-rock-rock-dogs',
+    name: 'With pork',
+    id: 'lr-rd-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/100 / 30g',
+    image: 'le-rock-rock-dogs',
+    summary: '+ french fries and sauce'
+  },
+  {
+    category: 'le-rock-rock-dogs',
+    name: 'With chicken',
+    id: 'lr-rd-2',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/100 / 30g',
+    image: 'le-rock-rock-dogs',
+    summary: '+ french fries and sauce'
+  },
+  {
+    category: 'le-rock-rock-dogs',
+    name: 'With sausage and bacon',
+    id: 'lr-rd-3',
+    price: 70,
+    quantity: Infinity,
+    volume: '200/100 / 30g',
+    image: 'le-rock-rock-dogs',
+    summary: '+ french fries and sauce'
+  },
+
+  // Le Rock Frying Pan
+
+  {
+    category: 'le-rock-fry-pan',
+    name: '- With potatoes and chicken',
+    id: 'lr-fp-1',
+    price: 65,
+    quantity: Infinity,
+    volume: '600g',
+    image: 'barbarescoMlinty',
+    summary: '+ cabbage salad'
+  },
+  {
+    category: 'le-rock-fry-pan',
+    name: '- With potatoes and pork',
+    id: 'lr-fp-2',
+    price: 65,
+    quantity: Infinity,
+    volume: '600g',
+    image: 'barbarescoMlinty',
+    summary: '+ pickled cucumber'
+  },
+  {
+    category: 'le-rock-fry-pan',
+    name: '- With potatoes, sausage and bacon',
+    id: 'lr-fp-3',
+    prices: 50,
+    quantity: Infinity,
+    volume: '600g',
+    image: 'barbarescoMlinty',
+    summary: '+ pickled cucumber'
+  },
+
+  // Le Rock Deserts
+
+  {
+    category: 'le-rock-deserts',
+    name: 'NAPOLEON',
+    id: 'lr-d-1',
+    price: 45,
+    quantity: Infinity,
+    volume: '160g',
+    image: 'barbarescoDesert',
+    summary: ''
+  },
+  {
+    category: 'le-rock-deserts',
+    name: 'Cheesecake',
+    id: 'lr-d-2',
+    price: 55,
+    quantity: Infinity,
+    volume: '150g',
+    image: 'barbarescoDesert',
+    summary: ''
+  },
+  {
+    category: 'le-rock-deserts',
+    name: 'Carrot Spicy Cake',
+    id: 'lr-d-3',
+    price: 55,
+    quantity: Infinity,
+    volume: '200g',
+    image: 'barbarescoDesert',
+    summary: 'Cherry Mint, Peach, Caramel'
+  },
+  {
+    category: 'le-rock-deserts',
+    name: 'Chocolate Cake',
+    id: 'lr-d-4',
+    price: 55,
+    quantity: Infinity,
+    volume: '150g',
+    image: 'barbarescoDesert',
+    summary: ''
+  },
+  {
+    category: 'le-rock-deserts',
+    name: 'Peach compote',
+    id: 'lr-d-5',
+    price: 55,
+    quantity: Infinity,
+    volume: '170g',
+    image: 'barbarescoDesert',
+    summary: ''
+  },
+
+  // Le Rock First Courses
+
+  {
+    category: 'le-rock-firstCourses',
+    name: 'CHICKEN BULLION',
+    id: 'lr-fc-1',
+    price: 35,
+    quantity: Infinity,
+    volume: '300g',
+    image: 'le-rock-first-course',
+    summary: 'with pieces of chicken and homemade paste'
+  },
+  {
+    category: 'le-rock-firstCourses',
+    name: 'Chowder Corn Soup',
+    id: 'lr-fc-2',
+    price: 35,
+    quantity: Infinity,
+    volume: '300g',
+    image: 'le-rock-first-course',
+    summary: ''
+  },
+
+  // Le Rock Main Meals
+
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Cutlet Cordon Blue',
+    id: 'lr-mm-1',
+    price: 80,
+    quantity: Infinity,
+    volume: '345/150 / 30g',
+    image: 'barbarescoHits',
+    summary: 'served with mashed potatoes'
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Chicken fillet on spinach pillow under cream sauce',
+    id: 'lr-mm-2',
+    price: 80,
+    quantity: Infinity,
+    volume: '350g',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Shrimps with oyster sauce and Chuka salad',
+    id: 'lr-mm-3',
+    price: 120,
+    quantity: Infinity,
+    volume: '80 / 60 / 15g ',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Grilled Salmon',
+    id: 'lr-mm-4',
+    price: 170,
+    quantity: Infinity,
+    volume: '150/100 / 30g',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Egg with sausage and bacon',
+    id: 'lr-mm-5',
+    price: 55,
+    quantity: Infinity,
+    volume: '380g',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Egg with ham and tomatoes',
+    id: 'lr-mm-6',
+    price: 55,
+    quantity: Infinity,
+    volume: '400g',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Grilled lavash with cheese, tomatoes and herbs',
+    id: 'lr-mm-7',
+    price: 55,
+    quantity: Infinity,
+    volume: '330g',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  {
+    category: 'le-rock-mainMeals',
+    name: 'Chicken pancakes with spinach sauce',
+    id: 'lr-mm-8',
+    price: 55,
+    quantity: Infinity,
+    volume: '300 / 100g',
+    image: 'barbarescoHits',
+    summary: ''
+  },
+  // Le Rock Coffee
+
+  {
+    category: 'le-rock-coffee',
+    name: 'ESPRESSO',
+    id: 'lr-c-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'AMERICAN',
+    id: 'lr-c-2',
+    price: 25,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Cappuccino',
+    id: 'lr-c-3',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Late',
+    id: 'lr-c-4',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Pistachio latte',
+    id: 'lr-c-5',
+    price: 40,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Late Coconuts',
+    id: 'lr-c-6',
+    price: 40,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Cocoa Blackberries',
+    id: 'lr-c-7',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Flat White',
+    id: 'lr-c-8',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+
+  // Le Rock Tea
+  {
+    category: 'le-rock-tea',
+    name: 'Black Tea',
+    id: 'lr-tea-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '600ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Green Tea',
+    id: 'lr-tea-1-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '600ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Brewed Tea',
+    id: 'lr-tea-1-2',
+    price: 25,
+    quantity: Infinity,
+    volume: '600ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Jasmine Blueberry Tea',
+    id: 'lr-tea-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '600ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Rosemary-Tea',
+    id: 'lr-tea-3',
+    price: 30,
+    quantity: Infinity,
+    volume: '600ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Mango tea with dried apricots',
+    id: 'lr-tea-4',
+    price: 30,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Mint Lime Tea',
+    id: 'lr-tea-5',
+    price: 30,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Vanilla Cherry',
+    id: 'lr-tea-6',
+    price: 40,
+    quantity: Infinity,
+    volume: '300ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Popcorn Cinnamon',
+    id: 'lr-tea-7',
+    price: 40,
+    quantity: Infinity,
+    volume: '300ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Caramel Salon',
+    id: 'lr-tea-8',
+    price: 40,
+    quantity: Infinity,
+    volume: '300ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  // Le Rock Appetizer
+
+  {
+    category: 'le-rock-appetizers',
+    name: 'Bruschetti',
+    id: 'lr-app-1',
+    price: 55,
+    quantity: Infinity,
+    volume: '3pcs',
+    image: 'le-rock-appetizer',
+    summary: 'with chorizo, with veal, with vegetables'
+  },
+  {
+    category: 'le-rock-appetizers',
+    name: 'Chicken pate',
+    id: 'lr-app-2',
+    price: 55,
+    quantity: Infinity,
+    volume: '200g',
+    image: 'le-rock-appetizer',
+    summary: 'served with croutons'
+  },
+  {
+    category: 'le-rock-appetizers',
+    name: 'Pickled vegetables',
+    id: 'lr-app-3',
+    prices: 50,
+    quantity: Infinity,
+    volume: '400g',
+    image: 'le-rock-appetizer',
+    summary: ''
+  },
+  {
+    category: 'le-rock-appetizers',
+    name: 'Cheese Plateau',
+    id: 'lr-app-4',
+    price: 70,
+    quantity: Infinity,
+    volume: '170g',
+    image: 'le-rock-appetizer',
+    summary: ''
+  },
+  {
+    category: 'le-rock-appetizers',
+    name: 'Meat Plateau',
+    id: 'lr-app-5',
+    price: 70,
+    quantity: Infinity,
+    volume: '170g',
+    image: 'le-rock-appetizer',
+    summary: ''
+  },
+
+  // Le Rock Appetizer For Bear
+
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Beer Plate',
+    id: 'lr-app-f-b-1',
+    price: 55,
+    quantity: Infinity,
+    volume: '150g',
+    image: 'le-rock-appetizer',
+    summary: 'rye croutons, cured meats, garlic sauce'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Pickles',
+    id: 'lr-app-f-b-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '100 / 30g',
+    image: 'le-rock-appetizer',
+    summary: 'served with croutons'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Rye croutons',
+    id: 'lr-app-f-b-3',
+    price: 30,
+    quantity: Infinity,
+    volume: '150g',
+    image: 'le-rock-appetizer',
+    summary: 'with garlic sauce'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Chicken Popcorn',
+    id: 'lr-app-f-b-4',
+    price: 55,
+    quantity: Infinity,
+    volume: '200g',
+    image: 'le-rock-appetizer',
+    summary: 'with garlic sauce'
+  },
+  {
+    category: 'le-rock-appetizers-for-bear',
+    name: 'Beer board for the company',
+    id: 'lr-app-f-b-5',
+    price: 150,
+    quantity: Infinity,
+    volume: '600g',
+    image: 'le-rock-appetizer',
+    summary: 'cheese sticks, nuggets, bacon sausages, snacks, grissini, tartar sauce'
+  },
+
+  // Le Rock Garnishes
+
+  {
+    category: 'le-rock-garnishes',
+    name: 'GRILLED VEGETABLES',
+    id: 'lr-gar-1',
+    prices: 50,
+    quantity: Infinity,
+    volume: '300g',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'Thai Style Vegetables',
+    id: 'lr-gar-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '250g',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'Grilled Rice',
+    id: 'lr-gar-3',
+    price: 25,
+    quantity: Infinity,
+    volume: '210g',
+    image: 'le-rock-side-dishes',
+    summary: 'With rosemary and bacon'
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'French fries (with sauce)',
+    id: 'lr-gar-4',
+    price: 35,
+    quantity: Infinity,
+    volume: '150g',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'POTATOES',
+    id: 'lr-gar-5',
+    price: 20,
+    quantity: Infinity,
+    volume: '200g',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  {
+    category: 'le-rock-garnishes',
+    name: 'Ciabata',
+    id: 'lr-gar-6',
+    price: 15,
+    quantity: Infinity,
+    volume: '1pc',
+    image: 'le-rock-side-dishes',
+    summary: ''
+  }
 ]

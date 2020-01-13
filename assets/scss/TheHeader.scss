@@ -604,6 +604,12 @@ header {
         }
     }
 
+    .close-hamburger,
+    .close-navbar-hamburger {
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+
     #show-total {
         span {
             padding: 0.5px 5px;

@@ -115,7 +115,14 @@ body {
       transform: translateX(-50%);
     }
 
-    @media screen and (min-height: 685px) and (max-height: 820px) and (max-width: 1000px) {
+    @media screen and (min-height: 685px) and (max-height: 745px) and (max-width: 1000px) {
+      position: absolute;
+      top: 92vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media screen and (min-height: 750px) and (max-height: 820px) and (max-width: 1000px) {
       position: absolute;
       top: 89vh;
       left: 50%;
