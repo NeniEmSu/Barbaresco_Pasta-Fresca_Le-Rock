@@ -6,11 +6,18 @@
     mix-blend-mode: normal;
 }
 
+
 section {
     border-bottom: 1px solid $darkColor;
     opacity: 1;
     overflow: hidden;
 }
+
+#imaged-Products-Navigation-le-rock section,
+#imaged-Products-Navigation-pasta-fresca section {
+    border-bottom: 1px solid $lightColor;
+}
+
 
 .column {
     float: left;

@@ -40,7 +40,7 @@
 </i18n>
 
 <template>
-  <div id="imageed-Products-Navigation">
+  <div id="imaged-Products-Navigation-pasta-fresca">
     <section class="container text-center ">
       <button
         class="column "

@@ -189,11 +189,11 @@
           class=" theHeader-nav-brand mx-auto"
           :to="localePath({name:'barbaresco'},$i18n.locale)"
         >
-          <b-img-lazy
+          <img
             class=""
             src="~/assets/img/barbaresco-logo.svg"
             alt="logo barbaresco"
-          />
+          >
         </b-navbar-brand>
 
         <div
@@ -214,10 +214,10 @@
           style="cursor: pointer;"
           @click="cartOpen = !cartOpen"
         >
-          <b-img-lazy
+          <img
             src="~/assets/img/Корзина.png"
             alt="Cart Icon"
-          />
+          >
 
           <div
             id="show-total"

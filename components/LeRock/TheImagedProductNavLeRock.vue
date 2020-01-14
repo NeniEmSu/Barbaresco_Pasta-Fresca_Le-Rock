@@ -43,7 +43,7 @@
 </i18n>
 
 <template>
-  <div id="imageed-Products-Navigation">
+  <div id="imaged-Products-Navigation-le-rock">
     <section class="container text-center ">
       <button
         class="column text-center "
