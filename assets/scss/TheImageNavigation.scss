@@ -77,7 +77,8 @@
 
     @media (max-width: 750px) {
         width: calc(100vw / 2);
-        background-size: scale-down !important;
+        background-position: inherit;
+        background-size: auto;
     }
 }
 

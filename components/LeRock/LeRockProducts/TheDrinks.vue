@@ -1277,7 +1277,7 @@
           </div>
         </div>
       </div>
-<!-- 
+      <!--
       <div
         v-else-if="$i18n.locale === 'ru'"
         class="row"
