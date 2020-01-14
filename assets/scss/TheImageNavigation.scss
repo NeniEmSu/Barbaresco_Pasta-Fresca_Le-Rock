@@ -29,6 +29,58 @@
     }
 }
 
+.grid figure .imageHolder {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+    height: 150px;
+
+    width: calc(100vw / 3);
+
+    &.home {
+        background-image: url(~assets/img/navHome.jpg);
+    }
+
+    &.menu {
+        background-image: url(~assets/img/navMenu.jpg);
+    }
+
+    &.pf-menu {
+        background-image: url(~assets/img/pasta-fresca-menu.jpg);
+    }
+
+    &.food-delivery {
+        background-image: url(~assets/img/navDelivery.jpg);
+    }
+
+    &.about {
+        background-image: url(~assets/img/navAboutUs.jpg);
+    }
+
+    &.pf-about {
+        background-image: url(~assets/img/pasta-fresca-about-us.jpg);
+    }
+
+    &.atmosphere {
+        background-image: url(~assets/img/navAtmosphere.jpg);
+    }
+
+    &.contact {
+        background-image: url(~assets/img/navContact.jpg);
+    }
+
+    &.pf-contact {
+        background-image: url(~assets/img/pasta-fresca-nav-contact.jpg);
+    }
+
+    @media (max-width: 750px) {
+        width: calc(100vw / 2);
+        background-size: scale-down !important;
+    }
+}
+
 .grid figure figcaption {
     color: #fff;
     -webkit-backface-visibility: hidden;

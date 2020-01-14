@@ -3,7 +3,7 @@
   "uk": {
     "coffee": "КАВА",
     "tea": "ЧАЙ",
-    "coldDrinks": "ХОЛОДНІ НАПОЇ",
+    "coldDrinks": "НАПОЇ",
     "lemonade": "ЛИМОНАДИ",
     "smoothy": "СМУЗІ",
     "milkShake": "МІЛКШЕЙКИ",
@@ -13,7 +13,7 @@
   "en": {
    "coffee": "COFFEE",
    "tea": "Tea",
-   "coldDrinks": "Cold Drinks",
+   "coldDrinks": "Drinks",
    "lemonade": "Lemonade",
    "smoothy": "Smoothies",
     "milkShake": "MILKSHAKES",
@@ -23,7 +23,7 @@
   "ru": {
     "coffee": "КОФЕ",
     "tea": "ЧАЙ",
-    "coldDrinks": "ХОЛОДНЫЕ НАПИТКИ",
+    "coldDrinks": "НАПИТКИ",
     "lemonade": "ЛИМОНАД",
     "smoothy": "ПОЛОСЕ",
     "milkShake": "Милкшейк",
@@ -1277,7 +1277,7 @@
           </div>
         </div>
       </div>
-
+<!-- 
       <div
         v-else-if="$i18n.locale === 'ru'"
         class="row"
@@ -1663,7 +1663,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -1723,25 +1723,25 @@ export default {
     },
     extractedProductsSmoothyRu () {
       return productDataRu.filter(el => el.category === 'le-rock-smoothy')
-    },
-    extractedProductsMilkshake () {
-      return productData.filter(el => el.category === 'le-rock-milkshake')
-    },
-    extractedProductsMilkshakeEn () {
-      return productDataEn.filter(el => el.category === 'le-rock-milkshake')
-    },
-    extractedProductsMilkshakeRu () {
-      return productDataRu.filter(el => el.category === 'le-rock-milkshake')
-    },
-    extractedProductsNonAlcoholicDrinks () {
-      return productData.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
-    },
-    extractedProductsNonAlcoholicDrinksEn () {
-      return productDataEn.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
-    },
-    extractedProductsNonAlcoholicDrinksRu () {
-      return productDataRu.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
     }
+    // extractedProductsMilkshake () {
+    //   return productData.filter(el => el.category === 'le-rock-milkshake')
+    // },
+    // extractedProductsMilkshakeEn () {
+    //   return productDataEn.filter(el => el.category === 'le-rock-milkshake')
+    // },
+    // extractedProductsMilkshakeRu () {
+    //   return productDataRu.filter(el => el.category === 'le-rock-milkshake')
+    // },
+    // extractedProductsNonAlcoholicDrinks () {
+    //   return productData.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
+    // },
+    // extractedProductsNonAlcoholicDrinksEn () {
+    //   return productDataEn.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
+    // },
+    // extractedProductsNonAlcoholicDrinksRu () {
+    //   return productDataRu.filter(el => el.category === 'le-rock-nonAlcoholicDrinks')
+    // }
   },
 
   methods: {

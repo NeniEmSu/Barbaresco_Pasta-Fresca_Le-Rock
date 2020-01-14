@@ -6,7 +6,14 @@
     "wine": "ВИНА",
     "sparklingWine": "ІГРИСТІ ВИНА",
     "alcoholicDrinks": "Алкогольні напої",
-    "bear": "ПИВО",
+    "whisky": "віскі",
+    "rom": "Ром",
+    "gin": "ДжиH",
+    "vodka": "Горілка",
+    "aperitifs": "аперетиви",
+    "brandy": "коньяк і бренді",
+    "diva": "діджестиви",
+    "takila": "текіла",
     "order": "Замовити"
   },
   "en": {
@@ -15,7 +22,14 @@
    "wine": "Wine",
    "sparklingWine": "SPARKLING WINES",
    "alcoholicDrinks": "Alcoholic Drinks",
-    "bear": "Bear",
+    "whisky": "Whiskey",
+    "rom": "Rum",
+    "gin": "Gin",
+    "vodka": "Vodka",
+    "aperitifs": "aperitifs",
+    "brandy": "brandy",
+    "diva": "Diva",
+    "takila": "tequila",
     "order": "Order"
   },
   "ru": {
@@ -24,7 +38,14 @@
     "wine": "ВИНА",
     "sparklingWine": "игристые вина",
     "alcoholicDrinks": "Алкогольные напитки",
-    "bear": "ПИВО",
+    "whisky": "виски",
+    "rom": "Ром",
+    "gin": "ДжиH",
+    "vodka": "водка",
+    "aperitifs": "Аперитивы",
+    "brandy": "коньяк и бренди",
+    "diva": "диджестивы",
+    "takila": "текила",
     "order": "Заказать"
   }
 }
@@ -1213,7 +1234,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                {{ $t('bear') }}
+                {{ $t('rom') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -1227,7 +1248,7 @@
         <div class="col-sm-9">
           <div class="row">
             <div
-              v-for="product in extractedProductsBearEn"
+              v-for="product in extractedProductsRomEn"
               :key="product.id"
               class="card"
             >
@@ -1290,7 +1311,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                {{ $t('bear') }}
+                {{ $t('rom') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -1304,7 +1325,7 @@
         <div class="col-sm-9">
           <div class="row">
             <div
-              v-for="product in extractedProductsBearRu"
+              v-for="product in extractedProductsRomRu"
               :key="product.id"
               class="card"
             >
@@ -1367,7 +1388,7 @@
                 style="height:25px;"
               >
               <h2 class="text-center m-auto d-inline-block">
-                {{ $t('bear') }}
+                {{ $t('rom') }}
               </h2>
               <b-img-lazy
                 src="~/assets/img/barbarescoDrinksFreshIcon.png"
@@ -1381,7 +1402,1638 @@
         <div class="col-sm-9">
           <div class="row">
             <div
-              v-for="product in extractedProductsBear"
+              v-for="product in extractedProductsRom"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div
+        v-if="$i18n.locale === 'en'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('vodka') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsVodkaEn"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else-if="$i18n.locale === 'ru'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('vodka') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsVodkaRu"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('vodka') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsVodka"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div
+        v-if="$i18n.locale === 'en'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('gin') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsGinEn"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else-if="$i18n.locale === 'ru'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('gin') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsGinRu"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('gin') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsGin"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div
+        v-if="$i18n.locale === 'en'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('whisky') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsWhiskyEn"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else-if="$i18n.locale === 'ru'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('whisky') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsWhiskyRu"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('whisky') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsWhisky"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div
+        v-if="$i18n.locale === 'en'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('takila') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsTakilaEn"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else-if="$i18n.locale === 'ru'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('takila') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsTakilaRu"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('takila') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsTakila"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div
+        v-if="$i18n.locale === 'en'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('diva') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsDivaEn"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else-if="$i18n.locale === 'ru'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('diva') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsDivaRu"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('diva') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsDiva"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div
+        v-if="$i18n.locale === 'en'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('brandy') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsKonbrandEn"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else-if="$i18n.locale === 'ru'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('brandy') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsKonbrandRu"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('brandy') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsKonbrand"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div
+        v-if="$i18n.locale === 'en'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('aperitifs') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsAperitifsEn"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else-if="$i18n.locale === 'ru'"
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('aperitifs') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsAperitifsRu"
+              :key="product.id"
+              class="card"
+            >
+              <img
+                class="card-img-top mx-auto"
+                :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :alt="product.name"
+              >
+              <div class="card-body">
+                <h5
+                  v-b-tooltip.hover
+                  class="card-title mx-auto text-center crop"
+                  style="cursor:context-menu"
+                  :title="product.name"
+                >
+                  {{ product.name }}
+                </h5>
+                <p
+                  v-b-tooltip.hover
+                  class="card-text text-left ingredients d-none d-md-block"
+                  style="cursor: context-menu;"
+                  :title="product.summary"
+                >
+                  {{ (product.summary).slice(0, 25) }}...<span class="card-text quantity">{{ product.volume }}</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+                    <p class="card-text cost my-auto">
+                      <span class="card-text d-inline d-sm-none">{{ product.volume }}</span> {{ product.price | currency }}
+                    </p>
+                  </div>
+                  <div class="col-sm-7 p-0 text-center  my-auto">
+                    <button
+                      class="btn my-auto mr-auto center"
+                      @click.prevent="addToCart(product.id)"
+                    >
+                      {{ $t('order') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-else
+        class="row"
+      >
+        <div class="col-sm-3">
+          <div class="card card-cat mx-auto">
+            <div class="m-auto text-center">
+              <img
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="d-inline-block d-sm-none m-auto text-center"
+                align="left"
+                style="height:25px;"
+              >
+              <h2 class="text-center m-auto d-inline-block">
+                {{ $t('aperitifs') }}
+              </h2>
+              <b-img-lazy
+                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                alt="icon"
+                class="m-auto d-none d-sm-block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div
+              v-for="product in extractedProductsAperitifs"
               :key="product.id"
               class="card"
             >
@@ -1489,14 +3141,77 @@ export default {
     extractedProductsAlcoholicDrinksRu () {
       return productDataRu.filter(el => el.category === 'le-rock-drinks')
     },
-    extractedProductsBear () {
+    extractedProductsRom () {
+      return productData.filter(el => el.category === 'le-rock-rom')
+    },
+    extractedProductsRomEn () {
+      return productDataEn.filter(el => el.category === 'le-rock-rom')
+    },
+    extractedProductsRomRu () {
+      return productDataRu.filter(el => el.category === 'le-rock-rom')
+    },
+    extractedProductsVodka () {
+      return productData.filter(el => el.category === 'le-rock-vodka')
+    },
+    extractedProductsVodkaEn () {
+      return productDataEn.filter(el => el.category === 'le-rock-vodka')
+    },
+    extractedProductsVodkaRu () {
+      return productDataRu.filter(el => el.category === 'le-rock-vodka')
+    },
+    extractedProductsGin () {
       return productData.filter(el => el.category === 'le-rock-gin')
     },
-    extractedProductsBearEn () {
+    extractedProductsGinEn () {
       return productDataEn.filter(el => el.category === 'le-rock-gin')
     },
-    extractedProductsBearRu () {
+    extractedProductsGinRu () {
       return productDataRu.filter(el => el.category === 'le-rock-gin')
+    },
+    extractedProductsWhisky () {
+      return productData.filter(el => el.category === 'le-rock-whisky')
+    },
+    extractedProductsWhiskyEn () {
+      return productDataEn.filter(el => el.category === 'le-rock-whisky')
+    },
+    extractedProductsWhiskyRu () {
+      return productDataRu.filter(el => el.category === 'le-rock-whisky')
+    },
+    extractedProductsTakila () {
+      return productData.filter(el => el.category === 'le-rock-takila')
+    },
+    extractedProductsTakilaEn () {
+      return productDataEn.filter(el => el.category === 'le-rock-takila')
+    },
+    extractedProductsTakilaRu () {
+      return productDataRu.filter(el => el.category === 'le-rock-takila')
+    },
+    extractedProductsDiva () {
+      return productData.filter(el => el.category === 'le-rock-diva')
+    },
+    extractedProductsDivaEn () {
+      return productDataEn.filter(el => el.category === 'le-rock-diva')
+    },
+    extractedProductsDivaRu () {
+      return productDataRu.filter(el => el.category === 'le-rock-diva')
+    },
+    extractedProductsKonbrand () {
+      return productData.filter(el => el.category === 'le-rock-konbrand')
+    },
+    extractedProductsKonbrandEn () {
+      return productDataEn.filter(el => el.category === 'le-rock-konbrand')
+    },
+    extractedProductsKonbrandRu () {
+      return productDataRu.filter(el => el.category === 'le-rock-konbrand')
+    },
+    extractedProductsAperitifs () {
+      return productData.filter(el => el.category === 'le-rock-aperitifs')
+    },
+    extractedProductsAperitifsEn () {
+      return productDataEn.filter(el => el.category === 'le-rock-aperitifs')
+    },
+    extractedProductsAperitifsRu () {
+      return productDataRu.filter(el => el.category === 'le-rock-aperitifs')
     }
   },
 

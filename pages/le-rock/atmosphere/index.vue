@@ -120,7 +120,7 @@ export default {
 
 <style lang="scss" scoped>
 .block1 .left-image {
-  background: url(~assets/img/barbarescoAtmosphere.jpg);
+  background: url(~assets/img/leRockAtmosphere.jpg);
 }
 
 @import "~assets/scss/subPagesStylesNew.scss";

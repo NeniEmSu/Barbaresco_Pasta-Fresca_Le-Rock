@@ -64,7 +64,7 @@
         #botttom-carousel .owl-carousel .owl-nav button.owl-prev,
         #botttom-carousel .owl-carousel .owl-nav button.owl-next {
           background: none;
-          color: inherit;
+          color: #ffffff;
           border: none;
           padding: 0 !important;
           font-size: 80px !important;

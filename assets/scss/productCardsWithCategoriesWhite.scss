@@ -4,6 +4,10 @@
   text-overflow: ellipsis;
 }
 
+hr {
+  border: 1px solid $lightColor;
+}
+
 .content {
   margin: 20px 0;
 }

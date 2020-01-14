@@ -3933,7 +3933,7 @@ export default [
   {
     category: 'le-rock-fresh',
     name: 'СІК ПАКЕТОВАНИЙ',
-    id: 'l-r-fre-1',
+    id: 'l-r-fre-3',
     price: 17,
     quantity: Infinity,
     volume: '250мл',
@@ -4062,7 +4062,7 @@ export default [
   {
     category: 'le-rock-alcoholicCocktail',
     name: 'Bloody Mary n/a',
-    id: 'l-r-alcc-3',
+    id: 'l-r-alcc-3-a',
     price: 40,
     quantity: Infinity,
     volume: '250мл',
@@ -4319,7 +4319,7 @@ export default [
   {
     category: 'le-rock-sparklingWine',
     name: 'Salute',
-    id: 'l-r-swine-3-1',
+    id: 'l-r-swine-3',
     price: 150,
     quantity: Infinity,
     volume: '750мл',
@@ -4335,6 +4335,302 @@ export default [
     volume: '750мл',
     image: 'barbarescoAlcohol',
     summary: 'рожеве н/c'
-  }
+  },
 
+  // Le Rock Alcoholic Set
+
+  {
+    category: 'le-rock-alcoholicSet',
+    name: 'Фісташковий',
+    id: 'l-r-als-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '210мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-alcoholicSet',
+    name: 'Ожиновий',
+    id: 'l-r-als-2',
+    price: 70,
+    quantity: Infinity,
+    volume: '210мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-alcoholicSet',
+    name: 'Вишневий',
+    id: 'l-r-als-3',
+    price: 70,
+    quantity: Infinity,
+    volume: '210мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Gin
+
+  {
+    category: 'le-rock-gin',
+    name: 'Bombay Sapphire',
+    id: 'l-r-gin-1',
+    price: 65,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: 'БОМБЕЙ Сапфір'
+  },
+  {
+    category: 'le-rock-gin',
+    name: 'Beefeater',
+    id: 'l-r-gin-2',
+    price: 55,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: 'Біфітер'
+  },
+
+  // Le Rock Rom
+
+  {
+    category: 'le-rock-rom',
+    name: 'Captain Morgan Black',
+    id: 'l-r-rom-1',
+    price: 50,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: 'Капітан Морган темний'
+  },
+  {
+    category: 'le-rock-rom',
+    name: 'Captain Morgan Gold',
+    id: 'l-r-rom-2',
+    price: 50,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: 'Капітан Морган золотий'
+  },
+  {
+    category: 'le-rock-rom',
+    name: 'Bacardі Оаkhеart',
+    id: 'l-r-rom-3',
+    price: 45,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: 'Бакарді Oакхарт'
+  },
+
+  // Le Rock Vodka
+
+  {
+    category: 'le-rock-vodka',
+    name: 'Фінляндія',
+    id: 'l-r-vodka-1',
+    price: 40,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: 'класична , журавлина'
+  },
+  {
+    category: 'le-rock-vodka',
+    name: 'Зубрiвка',
+    id: 'l-r-vodka-2',
+    price: 25,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-vodka',
+    name: 'Козацька рада класична',
+    id: 'l-r-vodka-3',
+    price: 20,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Takila
+
+  {
+    category: 'le-rock-takila',
+    name: 'Есполон',
+    id: 'l-r-vodka-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: 'бланко/репосадо'
+  },
+
+  // Le Rock Diva
+
+  {
+    category: 'le-rock-diva',
+    name: 'Бехеровка',
+    id: 'l-r-diva-1',
+    price: 40,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-diva',
+    name: 'Єгермейстер',
+    id: 'l-r-diva-2',
+    price: 55,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Konyak and Brandy
+
+  {
+    category: 'le-rock-konbrand',
+    name: 'Бехеровка',
+    id: 'l-r-konbrand-1',
+    price: 100,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-konbrand',
+    name: 'Азнаурі',
+    id: 'l-r-konbrand-2',
+    price: 40,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Aperitifs
+
+  {
+    category: 'le-rock-aperitifs',
+    name: 'Кампарі',
+    id: 'l-r-aperitifs-1',
+    price: 40,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-aperitifs',
+    name: 'Cinzano bianCo, Rosso',
+    id: 'l-r-aperitifs-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-aperitifs',
+    name: 'амаро аверна',
+    id: 'l-r-aperitifs-3',
+    price: 35,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-aperitifs',
+    name: 'чінар',
+    id: 'l-r-aperitifs-4',
+    price: 45,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Whisky
+
+  {
+    category: 'le-rock-whisky',
+    name: 'Уайльд Тьоркі 81',
+    id: 'l-r-whisky-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Уайльд Тьоркі 101',
+    id: 'l-r-whisky-2',
+    price: 75,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Уайльд Тьоркі Рай',
+    id: 'l-r-whisky-3',
+    price: 85,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Джек Деніелс',
+    id: 'l-r-whisky-4',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Джек Деніелс Хані',
+    id: 'l-r-whisky-5',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Джеймсон',
+    id: 'l-r-whisky-6',
+    price: 70,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'томатін талісман',
+    id: 'l-r-whisky-7',
+    price: 40,
+    quantity: Infinity,
+    volume: '50мл',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  }
 ]

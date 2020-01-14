@@ -2081,7 +2081,7 @@ export default [
 
     category: 'barbaresco-alcoholicCocktail',
 
-    name: 'grapefruit whiskey sour',
+    name: 'grapefruit whisky sour',
 
     id: 'b-alcc-8',
 
@@ -2093,7 +2093,7 @@ export default [
 
     image: 'barbarescoAlcohol',
 
-    summary: 'whiskey, lemon juice, grapefruit, protein'
+    summary: 'whisky, lemon juice, grapefruit, protein'
 
   },
 
@@ -6190,190 +6190,7 @@ export default [
     image: 'barbarescoHits',
     summary: ''
   },
-  // Le Rock Coffee
 
-  {
-    category: 'le-rock-coffee',
-    name: 'ESPRESSO',
-    id: 'lr-c-1',
-    price: 25,
-    quantity: Infinity,
-    volume: '',
-    image: 'barbarescoDrinksCoffe',
-    summary: ''
-  },
-  {
-    category: 'le-rock-coffee',
-    name: 'AMERICAN',
-    id: 'lr-c-2',
-    price: 25,
-    quantity: Infinity,
-    volume: '',
-    image: 'barbarescoDrinksCoffe',
-    summary: ''
-  },
-  {
-    category: 'le-rock-coffee',
-    name: 'Cappuccino',
-    id: 'lr-c-3',
-    price: 35,
-    quantity: Infinity,
-    volume: '',
-    image: 'barbarescoDrinksCoffe',
-    summary: ''
-  },
-  {
-    category: 'le-rock-coffee',
-    name: 'Late',
-    id: 'lr-c-4',
-    price: 35,
-    quantity: Infinity,
-    volume: '',
-    image: 'barbarescoDrinksCoffe',
-    summary: ''
-  },
-  {
-    category: 'le-rock-coffee',
-    name: 'Pistachio latte',
-    id: 'lr-c-5',
-    price: 40,
-    quantity: Infinity,
-    volume: '',
-    image: 'barbarescoDrinksCoffe',
-    summary: ''
-  },
-  {
-    category: 'le-rock-coffee',
-    name: 'Late Coconuts',
-    id: 'lr-c-6',
-    price: 40,
-    quantity: Infinity,
-    volume: '',
-    image: 'barbarescoDrinksCoffe',
-    summary: ''
-  },
-  {
-    category: 'le-rock-coffee',
-    name: 'Cocoa Blackberries',
-    id: 'lr-c-7',
-    price: 35,
-    quantity: Infinity,
-    volume: '',
-    image: 'barbarescoDrinksCoffe',
-    summary: ''
-  },
-  {
-    category: 'le-rock-coffee',
-    name: 'Flat White',
-    id: 'lr-c-8',
-    price: 35,
-    quantity: Infinity,
-    volume: '',
-    image: 'barbarescoDrinksCoffe',
-    summary: ''
-  },
-
-  // Le Rock Tea
-  {
-    category: 'le-rock-tea',
-    name: 'Black Tea',
-    id: 'lr-tea-1',
-    price: 25,
-    quantity: Infinity,
-    volume: '600ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Green Tea',
-    id: 'lr-tea-1-1',
-    price: 25,
-    quantity: Infinity,
-    volume: '600ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Brewed Tea',
-    id: 'lr-tea-1-2',
-    price: 25,
-    quantity: Infinity,
-    volume: '600ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Jasmine Blueberry Tea',
-    id: 'lr-tea-2',
-    price: 30,
-    quantity: Infinity,
-    volume: '600ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Rosemary-Tea',
-    id: 'lr-tea-3',
-    price: 30,
-    quantity: Infinity,
-    volume: '600ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Mango tea with dried apricots',
-    id: 'lr-tea-4',
-    price: 30,
-    quantity: Infinity,
-    volume: '250ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Mint Lime Tea',
-    id: 'lr-tea-5',
-    price: 30,
-    quantity: Infinity,
-    volume: '250ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Vanilla Cherry',
-    id: 'lr-tea-6',
-    price: 40,
-    quantity: Infinity,
-    volume: '300ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Popcorn Cinnamon',
-    id: 'lr-tea-7',
-    price: 40,
-    quantity: Infinity,
-    volume: '300ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
-  {
-    category: 'le-rock-tea',
-    name: 'Caramel Salon',
-    id: 'lr-tea-8',
-    price: 40,
-    quantity: Infinity,
-    volume: '300ml',
-    image: 'barbarescoDrinksTea',
-    summary: ''
-  },
   // Le Rock Appetizer
 
   {
@@ -6540,6 +6357,947 @@ export default [
     quantity: Infinity,
     volume: '1pc',
     image: 'le-rock-side-dishes',
+    summary: ''
+  },
+  // Le Rock Coffee
+
+  {
+    category: 'le-rock-coffee',
+    name: 'Espresso',
+    id: 'l-r-c-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'AMERICAN',
+    id: 'l-r-c-2',
+    price: 25,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Cappuccino',
+    id: 'l-r-c-3',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'LATE',
+    id: 'l-r-c-4',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Pistachio latte',
+    id: 'l-r-c-5',
+    price: 40,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Late Coconuts',
+    id: 'l-r-c-6',
+    price: 40,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Cocoa Blackberries',
+    id: 'l-r-c-7',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+  {
+    category: 'le-rock-coffee',
+    name: 'Flat White',
+    id: 'l-r-c-8',
+    price: 35,
+    quantity: Infinity,
+    volume: '',
+    image: 'barbarescoDrinksCoffe',
+    summary: ''
+  },
+
+  // Barbaresco Tea
+  {
+    category: 'le-rock-tea',
+    name: 'Brewed Tea',
+    id: 'l-r-tea-1',
+    price: 25,
+    quantity: Infinity,
+    volume: '600ml',
+    image: 'barbarescoDrinksTea',
+    summary: 'black / green / fruity'
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Jasmine Blueberry Tea',
+    id: 'l-r-tea-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '600ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Rosemary-Tea',
+    id: 'l-r-tea-3',
+    price: 30,
+    quantity: Infinity,
+    volume: '600ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Mango tea with dried apricots',
+    id: 'l-r-tea-4',
+    price: 30,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Mint Lime Tea',
+    id: 'l-r-tea-5',
+    price: 30,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  {
+    category: 'le-rock-tea',
+    name: 'Vanilla Cherry',
+    id: 'l-r-tea-6',
+    price: 40,
+    quantity: Infinity,
+    volume: '300ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  }, {
+    category: 'le-rock-tea',
+    name: 'Popcorn Cinnamon',
+    id: 'l-r-tea-7',
+    price: 40,
+    quantity: Infinity,
+    volume: '300ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  }, {
+    category: 'le-rock-tea',
+    name: 'Caramel Salon',
+    id: 'l-r-tea-8',
+    price: 40,
+    quantity: Infinity,
+    volume: '300ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+  // Le Rock Hot Drinks
+
+  {
+    category: 'le-rock-drinks',
+    name: 'Devices',
+    id: 'l-r-d-1',
+    price: 27,
+    quantity: Infinity,
+    volume: '500ml',
+    image: 'barbarescoDrinksTea',
+    summary: 'weak gas / not gas.'
+  },
+  {
+    category: 'le-rock-drinks',
+    name: 'Borjomi',
+    id: 'l-r-d-2',
+    price: 45,
+    quantity: Infinity,
+    volume: '500ml',
+    image: 'barbarescoDrinksTea',
+    summary: ''
+  },
+
+  {
+    category: 'le-rock-drinks',
+    name: 'Tonic Evervess',
+    id: 'l-r-d-3',
+    price: 35,
+    quantity: Infinity,
+    volume: '330ml',
+    image: 'barbarescoDrinksTea',
+    summary: 'weak gas / not gas.'
+  },
+  {
+    category: 'le-rock-drinks',
+    name: 'Pepsi',
+    id: 'l-r-d-4',
+    price: 20,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksTea',
+    summary: 'spill'
+  },
+  {
+    category: 'le-rock-drinks',
+    name: 'Berry Sea',
+    id: 'l-r-d-5',
+    price: 15,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksTea',
+    summary: 'own cooking'
+  },
+
+  // Le Rock Fresh
+
+  {
+    category: 'le-rock-fresh',
+    name: 'Orange',
+    id: 'l-r-fre-1',
+    price: 65,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-fresh',
+    name: 'Grapefruit',
+    id: 'l-r-fre-2',
+    price: 65,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-fresh',
+    name: 'PACKAGED JUICE',
+    id: 'l-r-fre-3',
+    price: 17,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksFresh',
+    summary: 'Orange, pineapple, peach, cherry, apple, tomato, grapefruit'
+  },
+
+  // Le Rock Lemonade
+
+  {
+    category: 'le-rock-lemonade',
+    name: 'Jasmine Raspberry',
+    id: 'b-lem-1',
+    price: 40,
+    quantity: Infinity,
+    volume: '350ml',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-lemonade',
+    name: 'Pineapple Basil',
+    id: 'b-lem-2',
+    price: 40,
+    quantity: Infinity,
+    volume: '350ml',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-lemonade',
+    name: 'Apple Kiwi',
+    id: 'b-lem-3',
+    price: 40,
+    quantity: Infinity,
+    volume: '350ml',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-lemonade',
+    name: 'Grapefruit',
+    id: 'b-lem-4',
+    price: 40,
+    quantity: Infinity,
+    volume: '350ml',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+  {
+    category: 'le-rock-lemonade',
+    name: 'Litchi Coconut',
+    id: 'b-lem-5',
+    price: 40,
+    quantity: Infinity,
+    volume: '350ml',
+    image: 'barbarescoDrinksFresh',
+    summary: ''
+  },
+
+  // Le Rock Smoothy
+
+  {
+    category: 'le-rock-smoothy',
+    name: 'Avocado kiwi with parsley',
+    id: 'l-r-we-1',
+    price: 45,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksFresh',
+    summary: 'melon, passion fruit and peach puree'
+  },
+  {
+    category: 'le-rock-smoothy',
+    name: 'Melon Mango',
+    id: 'l-r-we-2',
+    price: 45,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoDrinksFresh',
+    summary: 'spinach, banana, apple juice, passion fruit puree'
+  },
+
+  // Le Rock Alcolholic Cocktails
+
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Mojito Kiwi',
+    id: 'l-r-alcc-1',
+    price: 75,
+    quantity: Infinity,
+    volume: '300ml',
+    image: 'barbarescoAlcohol',
+    summary: 'captain morgan spice, monin kiwi puree, mint, lime, soda, kiwi'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Mojito n / a',
+    id: 'l-r-alcc-1-a',
+    price: 40,
+    quantity: Infinity,
+    volume: '300ml',
+    image: 'barbarescoAlcohol',
+    summary: 'Cane sugar, lime, mint, soda'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Aperol Spritz',
+    id: 'l-r-alcc-2',
+    price: 75,
+    quantity: Infinity,
+    volume: '200ml',
+    image: 'barbarescoAlcohol',
+    summary: 'beefeater pink, aperol, elderberry syrup, lemon juice, sparkling wine, soda'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Bloody Mary',
+    id: 'l-r-alcc-3',
+    prices: 60,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoAlcohol',
+    summary: 'Vodka, Tabasco & Worcester Sauces, Spice Mix, Lemon Fresh, Tomato Juice'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Bloody Mary',
+    id: 'l-r-alcc-3-a',
+    price: 40,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoAlcohol',
+    summary: 'Tomato juice, tabasco and worcester sauces, spice mix, lemon fresh'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Negroni',
+    id: 'l-r-alcc-4',
+    price: 90,
+    quantity: Infinity,
+    volume: '120ml',
+    image: 'barbarescoAlcohol',
+    summary: 'Gin Bombay Sapphire, Campari, Cinzano Antica'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Yummy Kiss Fizz',
+    id: 'l-r-alcc-5',
+    price: 90,
+    quantity: Infinity,
+    volume: '200ml',
+    image: 'barbarescoAlcohol',
+    summary: 'captain morgan black, passion fruit passion fruit Monin, amaro di angostura, lemon fresh, protein, soda'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Maple Old Fashioned',
+    id: 'l-r-alcc-6',
+    price: 80,
+    quantity: Infinity,
+    volume: '100ml',
+    image: 'barbarescoAlcohol',
+    summary: 'wild turkey 101, maple syrup, cynar, angostura'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Wild Pinelime',
+    id: 'l-r-alcc-7',
+    price: 80,
+    quantity: Infinity,
+    volume: '150ml',
+    image: 'barbarescoAlcohol',
+    summary: 'espolon reposado, pineapple puree, basil, lime'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Purple Gin Tonic',
+    id: 'l-r-alcc-8',
+    price: 80,
+    quantity: Infinity,
+    volume: '200ml',
+    image: 'barbarescoAlcohol',
+    summary: "gordon's, yuzu monin puree, fresh lime, tonic, blue tea concentrate"
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Basil Smash',
+    id: 'l-r-alcc-9',
+    price: 90,
+    quantity: Infinity,
+    volume: '120ml',
+    image: 'barbarescoAlcohol',
+    summary: "gordon's, basil, sugar syrup, lime"
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Snow White',
+    id: 'l-r-alcc-10',
+    price: 90,
+    quantity: Infinity,
+    volume: '200ml',
+    image: 'barbarescoAlcohol',
+    summary: 'finlandia original, passion fruit puree and yuzu Monin, pineapple juice, protein'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Aperol Ramos gin fizz',
+    id: 'l-r-alcc-11',
+    price: 90,
+    quantity: Infinity,
+    volume: '200ml',
+    image: 'barbarescoAlcohol',
+    summary: "gordon's, aperol, fresh lime, sugar syrup, cream, protein, soda"
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Beetroot',
+    id: 'l-r-alcc-12',
+    price: 90,
+    quantity: Infinity,
+    volume: '200ml',
+    image: 'barbarescoAlcohol',
+    summary: 'finlandia original, monin agave syrup, grapefruit fresh, beet puree'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Strawberry french',
+    id: 'l-r-alcc-13',
+    price: 75,
+    quantity: Infinity,
+    volume: '150ml',
+    image: 'barbarescoAlcohol',
+    summary: 'beefeater pink, sparkling wine, strawberry syrup Monin'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Knickerboker',
+    id: 'l-r-alcc-14',
+    price: 80,
+    quantity: Infinity,
+    volume: '150ml',
+    image: 'barbarescoAlcohol',
+    summary: 'captain morgan black, triple sec, spicy mango monin syrup, lemon fresh'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'Cheese Gin Garden',
+    id: 'l-r-alcc-15',
+    price: 90,
+    quantity: Infinity,
+    volume: '150ml',
+    image: 'barbarescoAlcohol',
+    summary: "gordon's, elder syrup and cucumber Monin, lemon fresh, Philadelphia cheese"
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: 'The Walking Dead',
+    id: 'l-r-alcc-16',
+    price: 120,
+    quantity: Infinity,
+    volume: '250ml',
+    image: 'barbarescoAlcohol',
+    summary: 'bacardi oakheart, captain morgan black, plantation overproot, apricot Brandy, Luxardo Maraschino, lychee Monin puree, fresh lime, grapefruit juice, cinnamon'
+  },
+  {
+    category: 'le-rock-alcoholicCocktail',
+    name: "Papa on the Rock's",
+    id: 'l-r-alcc-17',
+    price: 90,
+    quantity: Infinity,
+    volume: '150ml',
+    image: 'barbarescoAlcohol',
+    summary: 'bacardi oakheart, grapefruit syrup Monin, falerum, fresh lime'
+  },
+
+  // Le Rock Wine
+
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden Tierra Eden',
+    id: 'l-r-wine-1',
+    price: 34,
+    quantity: Infinity,
+    volume: '100ml',
+    image: 'barbarescoAlcohol',
+    summary: 'white n / s. red n / c. '
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden Tierra Eden',
+    id: 'l-r-wine-1-a',
+    prices: 250,
+    quantity: Infinity,
+    volume: '750ml',
+    image: 'barbarescoAlcohol',
+    summary: 'white n / s. red n / c. '
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden Tierra Eden',
+    id: 'l-r-wine-1-1',
+    price: 34,
+    quantity: Infinity,
+    volume: '100ml',
+    image: 'barbarescoAlcohol',
+    summary: 'red dry / white dry'
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Tierra Eden Tierra Eden',
+    id: 'l-r-wine-1-1-a',
+    prices: 250,
+    quantity: Infinity,
+    volume: '750ml',
+    image: 'barbarescoAlcohol',
+    summary: 'red dry / white dry'
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'Casa Verde Merlot Casa Verde Merlot',
+    id: 'l-r-wine-2',
+    price: 44,
+    quantity: Infinity,
+    volume: '100ml',
+    image: 'barbarescoAlcohol',
+    summary: 'red dry / white dry'
+  },
+
+  {
+    category: 'le-rock-wine',
+    name: 'Casa Verde Merlot Casa Verde Merlot',
+    id: 'l-r-wine-2-1',
+    price: 330,
+    quantity: Infinity,
+    volume: '750ml',
+    image: 'barbarescoAlcohol',
+    summary: 'red dry / white dry'
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'J.P. Chenet Jean Paul Schanet ',
+    id: 'l-r-wine-3',
+    price: 44,
+    quantity: Infinity,
+    volume: '100ml',
+    image: 'barbarescoAlcohol',
+    summary: 'pink ns'
+  },
+  {
+    category: 'le-rock-wine',
+    name: 'J.P. Chenet Jean Paul Schanet ',
+    id: 'l-r-wine-3-1',
+    price: 330,
+    quantity: Infinity,
+    volume: '750ml',
+    image: 'barbarescoAlcohol',
+    summary: 'pink ns'
+  },
+
+  // Le Rock Sparkling Wine
+
+  {
+    category: 'le-rock-sparklingWine',
+    name: 'Asti Mondoro',
+    id: 'l-r-swine-1',
+    price: 450,
+    quantity: Infinity,
+    volume: '750ml',
+    image: 'barbarescoAlcohol',
+    summary: 'Asti Mondoro'
+  },
+  {
+    category: 'le-rock-sparklingWine',
+    name: 'Fragolino Rosso',
+    id: 'l-r-swine-2',
+    prices: 180,
+    quantity: Infinity,
+    volume: '750ml',
+    image: 'barbarescoAlcohol',
+    summary: 'Fragolino'
+  },
+  {
+    category: 'le-rock-sparklingWine',
+    name: 'Salute',
+    id: 'l-r-swine-3',
+    price: 150,
+    quantity: Infinity,
+    volume: '750ml',
+    image: 'barbarescoAlcohol',
+    summary: 'pink'
+  },
+  {
+    category: 'le-rock-sparklingWine',
+    name: 'Salute',
+    id: 'l-r-swine-3-1',
+    price: 150,
+    quantity: Infinity,
+    volume: '750ml',
+    image: 'barbarescoAlcohol',
+    summary: 'pink n / c'
+  },
+
+  // Le Rock Alcoholic Set
+
+  {
+    category: 'le-rock-alcoholicSet',
+    name: 'Pistachio',
+    id: 'l-r-als-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '210ml',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-alcoholicSet',
+    name: 'Blackberry',
+    id: 'l-r-als-2',
+    price: 70,
+    quantity: Infinity,
+    volume: '210ml',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-alcoholicSet',
+    name: 'Cherry',
+    id: 'l-r-als-3',
+    price: 70,
+    quantity: Infinity,
+    volume: '210ml',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Gin
+
+  {
+    category: 'le-rock-gin',
+    name: 'Bombay Sapphire',
+    id: 'l-r-gin-1',
+    price: 65,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: 'Bombay Sapphire'
+  },
+  {
+    category: 'le-rock-gin',
+    name: 'Beefeater',
+    id: 'l-r-gin-2',
+    price: 55,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: 'Beafeater'
+  },
+
+  // Le Rock Rom
+
+  {
+    category: 'le-rock-rom',
+    name: 'Captain Morgan Black',
+    id: 'l-r-rom-1',
+    prices: 50,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: 'Captain Morgan is dark'
+  },
+  {
+    category: 'le-rock-rom',
+    name: 'Captain Morgan Gold',
+    id: 'l-r-rom-2',
+    prices: 50,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: 'Captain Morgan is golden'
+  },
+  {
+    category: 'le-rock-rom',
+    name: 'Bacardi Oakhead',
+    id: 'l-r-rom-3',
+    price: 45,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: 'Bacardi Oakhart'
+  },
+
+  // Le Rock Vodka
+
+  {
+    category: 'le-rock-vodka',
+    name: 'Finland',
+    id: 'l-r-vodka-1',
+    price: 40,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: 'classic, cranberry'
+  },
+  {
+    category: 'le-rock-vodka',
+    name: 'Won',
+    id: 'l-r-vodka-2',
+    price: 25,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-vodka',
+    name: 'Cossack Board Classic',
+    id: 'l-r-vodka-3',
+    price: 20,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Takila
+
+  {
+    category: 'le-rock-takila',
+    name: 'Espolon',
+    id: 'l-r-vodka-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: 'blank / reposado'
+  },
+
+  // Le Rock Diva
+
+  {
+    category: 'le-rock-diva',
+    name: 'Becherovka',
+    id: 'l-r-diva-1',
+    price: 40,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-diva',
+    name: 'Yegermeister',
+    id: 'l-r-diva-2',
+    price: 55,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Konyak and Brandy
+
+  {
+    category: 'le-rock-konbrand',
+    name: 'Becherovka',
+    id: 'l-r-konbrand-1',
+    prices: 100,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-konbrand',
+    name: 'Aznauri',
+    id: 'l-r-konbrand-2',
+    price: 40,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Aperitifs
+
+  {
+    category: 'le-rock-aperitifs',
+    name: 'Campari',
+    id: 'l-r-aperitifs-1',
+    price: 40,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-aperitifs',
+    name: 'Cinzano bianCo, Rosso',
+    id: 'l-r-aperitifs-2',
+    price: 30,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-aperitifs',
+    name: 'amara avern',
+    id: 'l-r-aperitifs-3',
+    price: 35,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-aperitifs',
+    name: 'conifer',
+    id: 'l-r-aperitifs-4',
+    price: 45,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+
+  // Le Rock Whiskey
+
+  {
+    category: 'le-rock-whisky',
+    name: 'Wilde Tork 81',
+    id: 'l-r-whisky-1',
+    price: 70,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Wilde Torky 101',
+    id: 'l-r-whisky-2',
+    price: 75,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Wilde Thorkee Paradise',
+    id: 'l-r-whisky-3',
+    price: 85,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Jack Daniels',
+    id: 'l-r-whisky-4',
+    price: 70,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Jack Daniels Hani',
+    id: 'l-r-whisky-5',
+    price: 70,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'Jameson',
+    id: 'l-r-whisky-6',
+    price: 70,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
+    summary: ''
+  },
+  {
+    category: 'le-rock-whisky',
+    name: 'tomato mascot',
+    id: 'l-r-whisky-7',
+    price: 40,
+    quantity: Infinity,
+    volume: '50 ml ',
+    image: 'barbarescoAlcohol',
     summary: ''
   }
 ]
