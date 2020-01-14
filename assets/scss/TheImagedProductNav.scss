@@ -1,4 +1,6 @@
-#imageed-Products-Navigation {
+#imageed-Products-Navigation,
+#imaged-Products-Navigation-le-rock,
+#imaged-Products-Navigation-pasta-fresca {
     background-color: $darkColor;
 }
 
@@ -7,16 +9,14 @@
 }
 
 
+
 section {
     border-bottom: 1px solid $darkColor;
     opacity: 1;
     overflow: hidden;
 }
 
-#imaged-Products-Navigation-le-rock section,
-#imaged-Products-Navigation-pasta-fresca section {
-    border-bottom: 1px solid $lightColor;
-}
+
 
 
 .column {
@@ -188,8 +188,16 @@ section {
 }
 
 @media (max-width: 1200px) {
-    #imageed-Products-Navigation {
+
+    #imageed-Products-Navigation,
+    #imaged-Products-Navigation-le-rock,
+    #imaged-Products-Navigation-pasta-fresca {
         background-color: transparent;
+    }
+
+    #imaged-Products-Navigation-le-rock section,
+    #imaged-Products-Navigation-pasta-fresca section {
+        border-bottom: 1px solid $lightColor;
     }
 
     section {
