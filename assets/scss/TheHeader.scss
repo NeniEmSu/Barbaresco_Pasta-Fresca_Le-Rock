@@ -99,7 +99,7 @@ input {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    @include cubicBezier;
+    @include easeInOut;
 
     color: $lightColor;
     padding: 14px 48px;
@@ -131,7 +131,7 @@ button:disabled {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    @include cubicBezier;
+    @include easeInOut;
 
     color: $blackColor;
     padding: 14px 48px;
@@ -252,7 +252,7 @@ header {
     outline-color: rgba(255, 255, 255, 0.5);
     outline-offset: 0px;
     text-shadow: none;
-    @include cubicBezier;
+    @include easeInOut;
 
     border-radius: 0;
     box-sizing: border-box;

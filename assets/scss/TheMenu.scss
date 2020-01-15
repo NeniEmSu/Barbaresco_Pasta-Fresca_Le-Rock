@@ -51,7 +51,7 @@ input {
     margin-top: 20px;
     margin-bottom: 50px;
 
-    @include cubicBezier;
+    @include easeInOut;
 
     &:hover {
         color: $darkColor;

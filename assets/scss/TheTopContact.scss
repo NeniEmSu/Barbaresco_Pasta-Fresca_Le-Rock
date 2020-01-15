@@ -20,16 +20,17 @@
         font-size: 14px;
         line-height: 16px;
 
-        color: #FFFFFF;
+        color: $lightColor;
 
         opacity: 0.5;
     }
 
     .breadcrumb a {
         text-decoration: none;
+        color: $lightColor;
 
         &:hover {
-            color: $goldColor;
+            color: $headingsFontColor;
         }
     }
 
@@ -65,17 +66,33 @@
         padding: 0;
         margin: 0;
         @include easeInOut;
+
+        &:hover {
+            color: $headingsFontColor;
+        }
     }
 
-    img {
+    img,
+    svg {
         padding: 0;
         margin: 0;
         @include easeInOut;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        color: $lightColor;
+        fill: $lightColor;
+
+        &:hover{
+            fill: $headingsFontColor;
+        }
+
     }
 }
 
 @include mediaMenu {
-    #top-contact img {
+    #top-contact img,
+    #top-contact svg {
         height: auto;
         max-width: 25px;
     }

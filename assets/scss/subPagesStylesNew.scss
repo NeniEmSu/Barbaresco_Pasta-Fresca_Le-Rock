@@ -6,11 +6,10 @@ h1 {
   font-family: $segoeFont;
   font-style: normal;
   font-weight: bold;
-  font-size: 80px;
-  line-height: 106px;
+  font-size: 40px;
+  line-height: 53px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-top: 0;
 
   color: $blackColor;
 }
@@ -96,8 +95,8 @@ a {
 @media (max-width: 1280px) {
 
   h1 {
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 36px;
+    line-height: 45px;
   }
 
   p {
@@ -131,8 +130,8 @@ a {
 
 @media (max-width: 992px) {
   h1 {
-    font-size: 55px;
-    line-height: 70px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   p {
@@ -148,8 +147,8 @@ a {
 
 @media (max-width: 767px) {
   h1 {
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   p {

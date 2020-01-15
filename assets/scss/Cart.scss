@@ -57,7 +57,7 @@ input {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    @include cubicBezier;
+    @include easeInOut;
 
     color: $lightColor;
     padding: 14px 48px;

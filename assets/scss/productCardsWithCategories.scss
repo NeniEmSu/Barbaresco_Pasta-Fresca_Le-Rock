@@ -77,7 +77,7 @@ button.btn {
   line-height: 21px;
 
   padding: 5px 8px;
-  @include cubicBezier;
+  @include easeInOut;
 
   box-shadow: inset 0 0 0 2px $darkColor;
   color: $darkColor;

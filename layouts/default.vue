@@ -79,7 +79,7 @@ body {
     outline-color: rgba(255, 255, 255, 0.5);
     outline-offset: 0px;
     text-shadow: none;
-    @include cubicBezier;
+    @include easeInOut;
 
     border-radius: 0;
     box-sizing: border-box;
