@@ -185,7 +185,10 @@
 </template>
 
 <script>
-import { productData, productDataEn, productDataRu } from '~/plugins/api/index'
+// import { productData, productDataEn, productDataRu } from '~/plugins/api/index'
+import barbarescoEnCollection from '~/gql/barbarescoEn'
+import barbarescoUkCollection from '~/gql/barbarescoUk'
+import barbarescoRuCollection from '~/gql/barbarescoRu'
 
 export default {
   name: 'TheBurgers',
@@ -195,15 +198,30 @@ export default {
     }
   },
 
+  apollo: {
+    barbarescoEnCollection: {
+      prefetch: true,
+      query: barbarescoEnCollection
+    },
+    barbarescoUkCollection: {
+      prefetch: true,
+      query: barbarescoUkCollection
+    },
+    barbarescoRuCollection: {
+      prefetch: true,
+      query: barbarescoRuCollection
+    }
+  },
+
   computed: {
     extractedProductsBurgers () {
-      return productData.filter(el => el.category === 'barbaresco-burgers')
+      return this.$apolloData.data.barbarescoUkCollection.filter(el => el.category === 'barbaresco-burgers')
     },
     extractedProductsBurgersEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-burgers')
+      return this.$apolloData.data.barbarescoEnCollection.filter(el => el.category === 'barbaresco-burgers')
     },
     extractedProductsBurgersRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-burgers')
+      return this.$apolloData.data.barbarescoRuCollection.filter(el => el.category === 'barbaresco-burgers')
     }
   },
 

@@ -164,7 +164,10 @@
 </template>
 
 <script>
-import { productData, productDataEn, productDataRu } from '~/plugins/api/index'
+import barbarescoEnCollection from '~/gql/barbarescoEn'
+import barbarescoUkCollection from '~/gql/barbarescoUk'
+import barbarescoRuCollection from '~/gql/barbarescoRu'
+// import { productData, productDataEn, productDataRu } from '~/plugins/api/index'
 
 export default {
   name: 'ThePizza',
@@ -173,15 +176,31 @@ export default {
 
     }
   },
+
+  apollo: {
+    barbarescoEnCollection: {
+      prefetch: true,
+      query: barbarescoEnCollection
+    },
+    barbarescoUkCollection: {
+      prefetch: true,
+      query: barbarescoUkCollection
+    },
+    barbarescoRuCollection: {
+      prefetch: true,
+      query: barbarescoRuCollection
+    }
+  },
+
   computed: {
     extractedProductsPizza () {
-      return productData.filter(el => el.category === 'barbaresco-pizzas')
+      return this.$apolloData.data.barbarescoUkCollection.filter(el => el.category === 'barbaresco-pizzas')
     },
     extractedProductsPizzaEn () {
-      return productDataEn.filter(el => el.category === 'barbaresco-pizzas')
+      return this.$apolloData.data.barbarescoEnCollection.filter(el => el.category === 'barbaresco-pizzas')
     },
     extractedProductsPizzaRu () {
-      return productDataRu.filter(el => el.category === 'barbaresco-pizzas')
+      return this.$apolloData.data.barbarescoRuCollection.filter(el => el.category === 'barbaresco-pizzas')
     }
   },
   methods: {

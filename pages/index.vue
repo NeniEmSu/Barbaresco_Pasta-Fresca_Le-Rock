@@ -93,8 +93,8 @@
             <div
               data-aos="fade-up"
               data-aos-easing="ease"
-              data-aos-delay="500"
-              data-aos-duration="750"
+              data-aos-delay="400"
+              data-aos-duration="500"
               class=" col-4 "
             >
               <b-card
@@ -156,8 +156,8 @@
             <div
               data-aos="fade-up"
               data-aos-easing="ease"
-              data-aos-delay="1000"
-              data-aos-duration="750"
+              data-aos-delay="800"
+              data-aos-duration="500"
               class=" col-4 "
             >
               <b-card
@@ -218,8 +218,8 @@
             <div
               data-aos="fade-up"
               data-aos-easing="ease"
-              data-aos-delay="1500"
-              data-aos-duration="750"
+              data-aos-delay="1200"
+              data-aos-duration="500"
               class=" col-4 "
             >
               <b-card

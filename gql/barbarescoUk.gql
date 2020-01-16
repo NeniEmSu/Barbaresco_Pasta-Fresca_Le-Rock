@@ -1,0 +1,13 @@
+
+{
+  barbarescoUkCollection {
+    name_slug
+    name
+    category
+    price
+    image
+    quantity
+    volume
+    summary
+  }
+}

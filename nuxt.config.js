@@ -131,6 +131,7 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-polyfill',
+    '@nuxtjs/apollo',
     ['nuxt-gmaps', {
       key: 'AIzaSyDKJciVrAvST8C9SJzwkjmHFnoPM8FwooY'
     }],
@@ -249,6 +250,14 @@ export default {
         }
 
       }
+    }
+  },
+
+  apollo: {
+    includeNodeModules: true, // optional, default: false (this includes graphql-tag for node_modules folder)
+    errorHandler: '~/apollo/customErrorHandler',
+    clientConfigs: {
+      default: '~/apollo/clientConfig.js'
     }
   },
 

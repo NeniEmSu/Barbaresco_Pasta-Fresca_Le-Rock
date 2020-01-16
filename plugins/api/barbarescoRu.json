@@ -1,0 +1,1692 @@
+[
+    {
+        "category": "barbaresco-salads",
+        "name": "Салат из кальмаров",
+        "id": "b-sal-1",
+        "price": 60,
+        "quantity": 100,
+        "volume": "190г",
+        "image": "barbarescoSalad",
+        "summary": "Микс-салат, кальмар маринованный, помидоры черри, маслины, огурец, икра тобико, лимон, заправляется фирменным соусом"
+    },
+    {
+        "category": "barbaresco-salads",
+        "name": "Цезарь С КУРИЦЕЙ",
+        "id": "b-sal-2",
+        "price": 60,
+        "quantity": 100,
+        "volume": "240г",
+        "image": "barbarescoSalad",
+        "summary": "Филе курицы, бекон, микс-салат, яйцо перепелиное, чипсы из белого хлеба соус цезарь"
+    },
+    {
+        "category": "barbaresco-salads",
+        "name": "ЛАЙТ ЛАЙФ",
+        "id": "b-sal-3",
+        "price": 50,
+        "quantity": 100,
+        "volume": "250г",
+        "image": "barbarescoSalad",
+        "summary": "Легкий овощной салат из помидоров, болгарского перца, микс-салата, огурцов, сыра фета, оливковое масло"
+    },
+    {
+        "category": "barbaresco-salads",
+        "name": "ГРИЛЬ САЛАТ С телятиной",
+        "id": "b-sal-4",
+        "price": 65,
+        "quantity": 100,
+        "volume": "280г",
+        "image": "barbarescoSalad",
+        "summary": "Филе телятины гриль в сочетании с печеными овощами, заправляется зеленым соусом"
+    },
+    {
+        "category": "barbaresco-salads",
+        "name": "Салат из индейки",
+        "id": "b-sal-5",
+        "price": 80,
+        "quantity": 100,
+        "volume": "250г",
+        "image": "barbarescoSalad",
+        "summary": "Филе индейки, помидоры черри, микс-салат, сыр филадельфия, заправляется фирменным остро-сладким соусом"
+    },
+    {
+        "category": "barbaresco-salads",
+        "name": "CHICK BASILIK",
+        "id": "b-sal-6",
+        "price": 65,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoSalad",
+        "summary": "Курица sous vide, спаржевая фасоль, мини-моцарелла, помидоры черри, жареная цветная капуста и картофель, заправляется базиликовое соусом"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "гавайской",
+        "id": "bp-1",
+        "price": 70,
+        "quantity": 100,
+        "volume": "500г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, курица копченая, ананас, оливки, фирменный соус"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "ГГГГОСТРА",
+        "id": "bp-2",
+        "price": 70,
+        "quantity": 100,
+        "volume": "400г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, салями, перец чили, фирменный соус"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "Капричоза",
+        "id": "bp-3",
+        "price": 70,
+        "quantity": 100,
+        "volume": "480г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, ветчина, шампиньоны, маслины, фирменный соус"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "Маргарита",
+        "id": "bp-4",
+        "price": 70,
+        "quantity": 100,
+        "volume": "380г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, фирменный соус, базилик"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "САЛЯМИ",
+        "id": "bp-5",
+        "price": 70,
+        "quantity": 100,
+        "volume": "420г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, салями, помидоры, фирменный соус"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "ЧЕТЫРЕ СЕЗОНА",
+        "id": "bp-6",
+        "price": 70,
+        "quantity": 100,
+        "volume": "520г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, ветчина, салями, шампиньоны, помидоры, фирменный соус"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "QUATTRO FORMAGGI",
+        "id": "bp-7",
+        "price": 70,
+        "quantity": 100,
+        "volume": "400г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, королевский, горгондзола, пармезан, фирменный соус"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "Al Tonno",
+        "id": "bp-8",
+        "price": 70,
+        "quantity": 100,
+        "volume": "460г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, тунец, лук, фирменный соус, помидоры"
+    },
+    {
+        "category": "barbaresco-pizzas",
+        "name": "Цезарио",
+        "id": "bp-9",
+        "price": 70,
+        "quantity": 100,
+        "volume": "470г",
+        "image": "barbarescoPizza",
+        "summary": "Моцарелла, филе курицы, бекон, помидоры черри, пармезан, микс-салат, сливочный соус"
+    },
+    {
+        "category": "barbaresco-burgers",
+        "name": "БУРГЕР С КУРИЦЕЙ",
+        "id": "bb-1",
+        "price": 75,
+        "quantity": 100,
+        "volume": "380г",
+        "image": "barbarescoChickenBuger",
+        "summary": "Булка, куриная котлета, помидор, микс-салат, соус барбекю, соус рокфор"
+    },
+    {
+        "category": "barbaresco-burgers",
+        "name": "БУРГЕР с бужениной",
+        "id": "bb-2",
+        "price": 75,
+        "quantity": 100,
+        "volume": "380г",
+        "image": "barbarescoChickenBuger",
+        "summary": "Оригинальное сочетание: булка, печеный свиная шея, ананас гриль, карамелизированный лук, микс-салат, соус барбекю"
+    },
+    {
+        "category": "barbaresco-burgers",
+        "name": "НЬЮ-ЙОРК БУРГЕР из телятины",
+        "id": "bb-3",
+        "price": 75,
+        "quantity": 100,
+        "volume": "380г",
+        "image": "barbarescoChickenBuger",
+        "summary": "Настоящий Нью-Йоркский бургер: булка, телячья котлета, огурец консервированный, помидор, бекон, микс-салат, соус барбекю"
+    },
+    {
+        "category": "barbaresco-burgers",
+        "name": "чизбургер С СВИНИНОЙ",
+        "id": "bb-4",
+        "price": 75,
+        "quantity": 100,
+        "volume": "380г",
+        "image": "barbarescoChickenBuger",
+        "summary": "Булка, свиная котлета, огурец, сыр чеддер, помидор, микс-салат, карамелизированный лук, соус барбекю"
+    },
+    {
+        "category": "barbaresco-burgers",
+        "name": "чизбургер из телятины",
+        "id": "bb-5",
+        "price": 75,
+        "quantity": 100,
+        "volume": "380г",
+        "image": "barbarescoChickenBuger",
+        "summary": "Булка, телячья котлета, огурец, сыр чеддер, помидор, микс-салат, соус барбекю"
+    },
+    {
+        "category": "barbaresco-burgers",
+        "name": "CHICKEN DRON",
+        "id": "bb-6",
+        "price": 75,
+        "quantity": 100,
+        "volume": "380г",
+        "image": "barbarescoChickenBuger",
+        "summary": "Булка, куриная филе, овощи гриль, микс салат, сыр Филадельфия, тостерный сыр, соус big tasty"
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "С ветчиной и сыром",
+        "id": "b-pc-1",
+        "price": 50,
+        "quantity": 100,
+        "volume": "260г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "С шпинатом и сыром",
+        "id": "b-pc-2",
+        "price": 50,
+        "quantity": 100,
+        "volume": "260г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "Помидоры и моцарелла",
+        "id": "b-pc-3",
+        "price": 50,
+        "quantity": 100,
+        "volume": "235г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "С шоколадно-ореховый",
+        "id": "b-pc-4",
+        "price": 50,
+        "quantity": 100,
+        "volume": "235г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "ПАСТОЙ И маршмеллоу",
+        "id": "b-pc-5",
+        "price": 50,
+        "quantity": 100,
+        "volume": "250г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "С ЯБЛОКАМИ",
+        "id": "b-pc-6",
+        "price": 50,
+        "quantity": 100,
+        "volume": "250г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "И ванильным соусом",
+        "id": "b-pc-7",
+        "price": 50,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "ГРИЛЬ САЛАТ С телятиной",
+        "id": "b-pc-8",
+        "price": 65,
+        "quantity": 100,
+        "volume": "280г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "Сезонный-ягодные",
+        "id": "b-pc-9",
+        "price": 50,
+        "quantity": 100,
+        "volume": "250г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-pancakes",
+        "name": "С тихоокеанские лососи И листья шпината",
+        "id": "b-pc-10",
+        "price": 65,
+        "quantity": 100,
+        "volume": "270г",
+        "image": "barbarescoMlinty",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-deserts",
+        "name": "НАПОЛЕОН",
+        "id": "bd-1",
+        "price": 45,
+        "quantity": 100,
+        "volume": "150 / 40г",
+        "image": "barbarescoDesert",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-deserts",
+        "name": "Чизкейк",
+        "id": "bd-2",
+        "price": 50,
+        "quantity": 100,
+        "volume": "150г",
+        "image": "barbarescoDesert",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-deserts",
+        "name": "МОРОЖЕНОЕ С СОУСОМ НА ВЫБОР",
+        "id": "bd-3",
+        "price": 40,
+        "quantity": 100,
+        "volume": "150г",
+        "image": "barbarescoDesert",
+        "summary": "Вишнево-мятный, Персиковый, Карамель"
+    },
+    {
+        "category": "barbaresco-deserts",
+        "name": "тоффи ПУДИНГ",
+        "id": "bd-4",
+        "price": 40,
+        "quantity": 100,
+        "volume": "170г",
+        "image": "barbarescoDesert",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-deserts",
+        "name": "Трюфельный торт",
+        "id": "bd-5",
+        "price": 45,
+        "quantity": 100,
+        "volume": "170г",
+        "image": "barbarescoDesert",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-firstCourses",
+        "name": "Куриный бульон",
+        "id": "b-fc-1",
+        "price": 33,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoFirstCourse",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-firstCourses",
+        "name": "ЛАГМАН",
+        "id": "b-fc-2",
+        "price": 35,
+        "quantity": 100,
+        "volume": "350г",
+        "image": "barbarescoFirstCourse",
+        "summary": "Традиционное блюдо средней Азии, подается с домашней лапшой"
+    },
+    {
+        "category": "barbaresco-firstCourses",
+        "name": "Суп-пюре из шампиньонов",
+        "id": "b-fc-3",
+        "price": 35,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoFirstCourse",
+        "summary": "Шампиньоны, сливки"
+    },
+    {
+        "category": "barbaresco-firstCourses",
+        "name": "КРЕМ-СУП чаудера",
+        "id": "b-fc-4",
+        "price": 50,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoFirstCourse",
+        "summary": "Сырный суп на рыбном бульоне с креветками"
+    },
+    {
+        "category": "barbaresco-mainMeals",
+        "name": "КУРИЦА стирать ФРАЙ",
+        "id": "b-mm-1",
+        "price": 65,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoHits",
+        "summary": "Филе курицы, цуккини, морковь, перец болгарский, брокколи, кунжут, зеленый лук, соус терияки"
+    },
+    {
+        "category": "barbaresco-mainMeals",
+        "name": "ПЕЧЕНА БУЖЕНИНА С РОКФОРНИМ ПЮРЕ",
+        "id": "b-mm-2",
+        "price": 100,
+        "quantity": 100,
+        "volume": "350г",
+        "image": "barbarescoHits",
+        "summary": "Печеный свиная шея подается с картофельно-рокфорним пюре"
+    },
+    {
+        "category": "barbaresco-mainMeals",
+        "name": "Лосось терияки",
+        "id": "b-mm-3",
+        "price": 120,
+        "quantity": 100,
+        "volume": "250г",
+        "image": "barbarescoHits",
+        "summary": "Филе лосося, фасоль спаржевая, морковь, перец болгарский, кабачок, шампиньоны, соус терияки"
+    },
+    {
+        "category": "barbaresco-mainMeals",
+        "name": "телятина под соусом Демиглас",
+        "id": "b-mm-4",
+        "price": 100,
+        "quantity": 100,
+        "volume": "400г",
+        "image": "barbarescoHits",
+        "summary": "Подается с рисом с овощами-гриль"
+    },
+    {
+        "category": "barbaresco-mainMeals",
+        "name": "хрустящие КУРИЦА с печеным картофелем",
+        "id": "b-mm-5",
+        "price": 65,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoHits",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-coffee",
+        "name": "ЭСПРЕССО",
+        "id": "bc-1",
+        "price": 20,
+        "quantity": 100,
+        "volume": "",
+        "image": "barbarescoDrinksCoffe",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-coffee",
+        "name": "АМЕРИКАНО",
+        "id": "bc-2",
+        "price": 20,
+        "quantity": 100,
+        "volume": "",
+        "image": "barbarescoDrinksCoffe",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-coffee",
+        "name": "КАПУЧИНО",
+        "id": "bc-3",
+        "price": 35,
+        "quantity": 100,
+        "volume": "",
+        "image": "barbarescoDrinksCoffe",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-coffee",
+        "name": "ФЛЕТ ВАЙТ",
+        "id": "bc-4",
+        "price": 35,
+        "quantity": 100,
+        "volume": "",
+        "image": "barbarescoDrinksCoffe",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-coffee",
+        "name": "латте",
+        "id": "bc-5",
+        "price": 30,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoDrinksCoffe",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-coffee",
+        "name": "фраппе",
+        "id": "bc-6",
+        "price": 35,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "barbarescoDrinksCoffe",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-coffee",
+        "name": "МОЛОКО",
+        "id": "bc-7",
+        "price": 5,
+        "quantity": 100,
+        "volume": "",
+        "image": "barbarescoDrinksCoffe",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-tea",
+        "name": "ЧЕРНЫЙ",
+        "id": "b-tea-1",
+        "price": 30,
+        "quantity": 100,
+        "volume": "0,6л",
+        "image": "barbarescoDrinksTea",
+        "summary": "а сам средне листовой пряный с медовыми нотками"
+    },
+    {
+        "category": "barbaresco-tea",
+        "name": "ЗЕЛЕНЫЙ",
+        "id": "b-tea-2",
+        "price": 30,
+        "quantity": 100,
+        "volume": "0,6л",
+        "image": "barbarescoDrinksTea",
+        "summary": "классический китайский чай"
+    },
+    {
+        "category": "barbaresco-tea",
+        "name": "Фруктовый",
+        "id": "b-tea-3",
+        "price": 30,
+        "quantity": 100,
+        "volume": "0,6л",
+        "image": "barbarescoDrinksTea",
+        "summary": "смесь из кусочков папайи, манго, ананаса и цветов гибискуса"
+    },
+    {
+        "category": "barbaresco-tea",
+        "name": "ТРАВЯНОЙ",
+        "id": "b-tea-4",
+        "price": 30,
+        "quantity": 100,
+        "volume": "0,6л",
+        "image": "barbarescoDrinksTea",
+        "summary": "смесь лимонной травы, мелиссы, мяты, ромашки и цедры апельсина"
+    },
+    {
+        "category": "barbaresco-hotDrinks",
+        "name": "Облепиховый чай из маракуйи",
+        "id": "b-hd-1",
+        "price": 30,
+        "quantity": 100,
+        "volume": "0,30л",
+        "image": "barbarescoDrinksTea",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-hotDrinks",
+        "name": "имбирный чай с медом И МЯТОЙ",
+        "id": "b-hd-2",
+        "price": 30,
+        "quantity": 100,
+        "volume": "0,30л",
+        "image": "barbarescoDrinksTea",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-fresh",
+        "name": "АПЕЛЬСИНОВЫЙ",
+        "id": "b-fre-1",
+        "price": 60,
+        "quantity": 100,
+        "volume": "0,25",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-fresh",
+        "name": "имбирный чай с медом И МЯТОЙ",
+        "id": "b-fre-2",
+        "price": 60,
+        "quantity": 100,
+        "volume": "0,25",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-lemonade",
+        "name": "ЯБЛОКО-БАЗИЛИК",
+        "id": "b-lem-1",
+        "price": 35,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": "сок яблока и сироп, базилик, имбирь, лимонный фреш, содовая"
+    },
+    {
+        "category": "barbaresco-lemonade",
+        "name": "Ананасовый-имбирным",
+        "id": "b-lem-2",
+        "price": 35,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": "ананасовый сок, имбирный сироп, лимонный фреш и содовая"
+    },
+    {
+        "category": "barbaresco-lemonade",
+        "name": "С ТЕМНЫМ Квас",
+        "id": "b-lem-3",
+        "price": 35,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": "темный квас, сироп корица-карамель, лимонный фреш"
+    },
+    {
+        "category": "barbaresco-lemonade",
+        "name": "ГРЕЙПФРУТ",
+        "id": "b-lem-4",
+        "price": 35,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": "грейпфрутовый сок и сироп, лимонный фреш, содовая"
+    },
+    {
+        "category": "barbaresco-lemonade",
+        "name": "ЗЕЛЕНЫЙ банан-КИВИ",
+        "id": "b-lem-5",
+        "price": 35,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": "сироп зеленый банан, киви, лимонный фреш, содовая"
+    },
+    {
+        "category": "barbaresco-smoothy",
+        "name": "ДЫНЯ-МАРАКУЙЯ",
+        "id": "b-smo-1",
+        "price": 40,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": "пюре дыни, маракуйи и персика"
+    },
+    {
+        "category": "barbaresco-smoothy",
+        "name": "шпинатную",
+        "id": "b-smo-2",
+        "price": 40,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": "шпинат, банан, сок яблока, пюре маракуйи"
+    },
+    {
+        "category": "barbaresco-milkshake",
+        "name": "БАНАНОВЫЙ",
+        "id": "b-ms-1",
+        "price": 40,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-milkshake",
+        "name": "ШОКОЛАДНЫЙ",
+        "id": "b-ms-2",
+        "price": 40,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-milkshake",
+        "name": "черничный",
+        "id": "b-ms-3",
+        "price": 40,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-nonAlcoholicDrinks",
+        "name": "морс из клюквы",
+        "id": "b-nad-1",
+        "price": 16,
+        "quantity": 100,
+        "volume": "0,25",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-nonAlcoholicDrinks",
+        "name": "СОК В АССОРТИМЕНТЕ",
+        "id": "b-nad-2",
+        "price": 18,
+        "quantity": 100,
+        "volume": "0,25",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-nonAlcoholicDrinks",
+        "name": "Пепси",
+        "id": "b-nad-3",
+        "price": 15,
+        "quantity": 100,
+        "volume": "0,25",
+        "image": "barbarescoDrinksFresh",
+        "summary": "разлив"
+    },
+    {
+        "category": "barbaresco-nonAlcoholicDrinks",
+        "name": "7UP",
+        "id": "b-nad-3-1",
+        "price": 15,
+        "quantity": 100,
+        "volume": "0,25",
+        "image": "barbarescoDrinksFresh",
+        "summary": "разлив"
+    },
+    {
+        "category": "barbaresco-nonAlcoholicDrinks",
+        "name": "Миринда",
+        "id": "b-nad-3-2",
+        "price": 15,
+        "quantity": 100,
+        "volume": "0,25",
+        "image": "barbarescoDrinksFresh",
+        "summary": "разлив"
+    },
+    {
+        "category": "barbaresco-nonAlcoholicDrinks",
+        "name": "ТОНИК",
+        "id": "b-nad-4",
+        "price": 25,
+        "quantity": 100,
+        "volume": "0,5л",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-nonAlcoholicDrinks",
+        "name": "БОРЖОМИ",
+        "id": "b-nad-5",
+        "price": 40,
+        "quantity": 100,
+        "volume": "0,5л",
+        "image": "barbarescoDrinksFresh",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-nonAlcoholicDrinks",
+        "name": "ДЕВАЙТИС",
+        "id": "b-nad-6",
+        "price": 27,
+        "quantity": 100,
+        "volume": "0,5л",
+        "image": "barbarescoDrinksFresh",
+        "summary": "слабогаз. / негаз"
+    },
+    {
+        "category": "barbaresco-makiRoll",
+        "name": "Сякэ МАКИ",
+        "id": "b-mr-1",
+        "price": 55,
+        "quantity": 100,
+        "volume": "120/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "филе лосося, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-makiRoll",
+        "name": "Сякэ-Кунс МАКИ",
+        "id": "b-mr-2",
+        "price": 60,
+        "quantity": 100,
+        "volume": "120/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "лосось копченый, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-makiRoll",
+        "name": "ЧУКА МАКИ",
+        "id": "b-mr-3",
+        "price": 40,
+        "quantity": 100,
+        "volume": "130/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "салат чука, ореховый соус, кунжут, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-futoMakiRoll",
+        "name": "Сякэ Футомаки",
+        "id": "b-pmr-1",
+        "price": 70,
+        "quantity": 100,
+        "volume": "190/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "филе лосося, сыр филадельфия, зеленый лук, японский омлет, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-futoMakiRoll",
+        "name": "ОВОЩНОЙ Футомаки",
+        "id": "b-pmr-2",
+        "price": 50,
+        "quantity": 100,
+        "volume": "195/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "сыр фета, помидор, перец болгарский, огурец, кунжут, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-futoMakiRoll",
+        "name": "МУРУКАИ Футомаки",
+        "id": "b-pmr-3",
+        "price": 60,
+        "quantity": 100,
+        "volume": "130/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "мясо мидии, сыр филадельфия, сыр тостерный, салат чука, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "ХАКО суши с лососем",
+        "id": "b-or-1",
+        "price": 80,
+        "quantity": 100,
+        "volume": "200/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "филе лосося, яблоко, рис, сыр филадельфия, водоросли нори, соевый бумагу, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "РОЛ АКАУРО",
+        "id": "b-or-2",
+        "price": 80,
+        "quantity": 100,
+        "volume": "220/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "морской окунь, чука, икра тобико, черный кунжут, сыр тостерный, рис, сыр филадельфия, водоросли нори, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "СЫРНЫЙ",
+        "id": "b-or-3",
+        "price": 60,
+        "quantity": 100,
+        "volume": "200/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "сыр филадельфия, сыр тостерный, сыр пармезан, кунжут, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "ФИРМЕННЫЙ",
+        "id": "b-or-4",
+        "price": 80,
+        "quantity": 100,
+        "volume": "210/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "окунь-унаги, филе лосося, майонез японский, огурец, икра тобико, водоросли нори, рис, васаби, соус унаги, кунжут, имбирь"
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "С окунем-унаги в кунжуте",
+        "id": "b-or-5",
+        "price": 70,
+        "quantity": 100,
+        "volume": "205/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "окунь-унаги, авокадо, огурец, сыр филадельфия, кунжут, соус унаги, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "ЛОСОСЬ фламбе",
+        "id": "b-or-6",
+        "price": 110,
+        "quantity": 100,
+        "volume": "235/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "филе лососся, сыр филадельфия, салат чука, окунь темпура, соус Тонкатцу, молекулярная икра, водоросли нори, рис, имбирь, васаби"
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "ГРИН РОЛ с креветками ТЕМПУРА",
+        "id": "b-or-7",
+        "price": 75,
+        "quantity": 100,
+        "volume": "220/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "креветка темпура, омлет томаго, сыр филадельфия, японский майонез, икра тобико, шпинат свежий, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "Урамаки",
+        "id": "b-or-8",
+        "price": 135,
+        "quantity": 100,
+        "volume": "255/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "тунец, сыр филадельфия. креветка темпура, икра тобико, авокадо, кунжут белый и черный, соус Тонкатцу, ореховый соус, молекулярная икра, водоросли нори, рис, имбирь, васаби "
+    },
+    {
+        "category": "barbaresco-originalRoll",
+        "name": "Ролл Унаги",
+        "id": "b-or-9",
+        "price": 135,
+        "quantity": 100,
+        "volume": "240/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "угорь, омлет томаго, сыр филадельфия, соус унаги, кунжут, пищевое золото, молекулярная икра, водоросли нори, рис, имбирь, васаби"
+    },
+    {
+        "category": "barbaresco-californiaRoll",
+        "name": "С ЛОСОСЕМ",
+        "id": "b-cr-1",
+        "price": 90,
+        "quantity": 100,
+        "volume": "210/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "филе лосося, авокадо, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-californiaRoll",
+        "name": "с копченым лососем",
+        "id": "b-cr-2",
+        "price": 90,
+        "quantity": 100,
+        "volume": "210/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "лосось копченый, авокадо, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-californiaRoll",
+        "name": "С тунцом",
+        "id": "b-cr-3",
+        "price": 95,
+        "quantity": 100,
+        "volume": "210/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "тунец, авокадо, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-californiaRoll",
+        "name": "Унаги",
+        "id": "b-cr-4",
+        "price": 95,
+        "quantity": 100,
+        "volume": "220/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "угорь, окунь унаги, авокадо, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, соус унаги, кунжут, имбирь"
+    },
+    {
+        "category": "barbaresco-PhiladelphiaRoll",
+        "name": "С ЛОСОСЕМ",
+        "id": "b-phir-1",
+        "price": 100,
+        "quantity": 100,
+        "volume": "220/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "филе лосося, сыр филадельфия, зеленый лук, огурец, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-PhiladelphiaRoll",
+        "name": "с копченым лососем",
+        "id": "b-phir-2",
+        "price": 100,
+        "quantity": 100,
+        "volume": "220/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "лосось копченый, сыр филадельфия, зеленый лук, огурец, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-PhiladelphiaRoll",
+        "name": "С тунцом",
+        "id": "b-phir-3",
+        "price": 100,
+        "quantity": 100,
+        "volume": "210/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "тунец, сыр филадельфия, авокадо, огурец, икра тобико, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-PhiladelphiaRoll",
+        "name": "Унаги",
+        "id": "b-phir-4",
+        "price": 100,
+        "quantity": 100,
+        "volume": "220/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "угорь, окунь-унаги, сыр филадельфия, авокадо, огурец, икра тобико, водоросли нори, рис, васаби, соус унаги, кунжут, имбирь"
+    },
+    {
+        "category": "barbaresco-PhiladelphiaRoll",
+        "name": "КРЕВЕТКА фламбе",
+        "id": "b-phir-5",
+        "price": 95,
+        "quantity": 100,
+        "volume": "220/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "сыр филадельфия, авокадо, икра тобико, креветка, молекулярная икра, водоросли нори, рис, имбирь, васаби"
+    },
+    {
+        "category": "barbaresco-drakoniRoll",
+        "name": "ЗЕЛЕНЫЙ ДРАКОН",
+        "id": "b-drr-1",
+        "price": 110,
+        "quantity": 100,
+        "volume": "235/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "филе лосося, авокадо, огурец, сыр филадельфия, кунжут, соус унаги, икра тобико, молекулярная икра, водоросли нори, рис, имбирь, васаби"
+    },
+    {
+        "category": "barbaresco-drakoniRoll",
+        "name": "ЗОЛОТОЙ ДРАКОН",
+        "id": "b-drr-2",
+        "price": 140,
+        "quantity": 100,
+        "volume": "245/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "угорь, окунь-унаги. огурец, майонез японский, икра тобико, соус унаги, кунжут, пищевое золото, молекулярная икра, водоросли нори, рис, имбирь, васаби "
+    },
+    {
+        "category": "barbaresco-drakoniRoll",
+        "name": "КРАСНЫЙ ДРАКОН",
+        "id": "b-drr-3",
+        "price": 140,
+        "quantity": 100,
+        "volume": "235/7 / 15г",
+        "image": "barbarescoSushi",
+        "summary": "филе лосося, угорь, окунь-унаги, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, имбирь"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "BLOODY MARY (NA)",
+        "id": "b-alcc-1",
+        "price": 40,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoAlcohol",
+        "summary": "водка, соусы тобаско и ворчестер, микс специй, лимонный фреш, сахарный сироп, томатный сок"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "BLOODY MARY (ALC)",
+        "id": "b-alcc-2",
+        "price": 70,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoAlcohol",
+        "summary": "водка, соусы тобаско и ворчестер, микс специй, лимонный фреш, сахарный сироп, томатный сок"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "LONG ISLAND ICE TEA",
+        "id": "b-alcc-3",
+        "price": 70,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoAlcohol",
+        "summary": "водка, джин, текила, ром, апельсиновый ликер, лимонный фреш, пепси"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "APEROL SPRITZ",
+        "id": "b-alcc-4",
+        "price": 65,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoAlcohol",
+        "summary": "Апероль, игристое вино, содовая, апельсин, оливки"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "APEROL berry",
+        "id": "b-alcc-5",
+        "price": 70,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoAlcohol",
+        "summary": "Апероль, пюре Monin смородины и черники, игристое вино, содовая"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "green aplle MOJITO",
+        "id": "b-alcc-6",
+        "price": 60,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoAlcohol",
+        "summary": "мята, лайм, пюре зеленое яблоко Monin, содовая, тростниковый сахар"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "aplle grape sangria",
+        "id": "b-alcc-7",
+        "price": 60,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoAlcohol",
+        "summary": "белое сухое вино, винограндний сок, пюре зеленое яблоко Monin, розмарин"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "grapefruit whiskey sour",
+        "id": "b-alcc-8",
+        "price": 80,
+        "quantity": 100,
+        "volume": "150мл",
+        "image": "barbarescoAlcohol",
+        "summary": "виски, лимонный фреш, грейпфрутовый ликер, белок"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "MAI TAI",
+        "id": "b-alcc-9",
+        "price": 70,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoAlcohol",
+        "summary": "пряный ром, апельсиновый ликер, миндальный сироп, лимонный фреш, пюре маракуйя, апельсиновый сок"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "PASSION FRUIT COLADA",
+        "id": "b-alcc-10",
+        "price": 70,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoAlcohol",
+        "summary": "пряный ром, ананасовый сок, кокосовое молоко, пюре маракуя"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "MOJITO (NA)",
+        "id": "b-alcc-11",
+        "price": 35,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoAlcohol",
+        "summary": "темный и золотой ром, мята, лайм, содовая, тростниковый сахар"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "MOJITO (ALC)",
+        "id": "b-alcc-12",
+        "price": 70,
+        "quantity": 100,
+        "volume": "250мл",
+        "image": "barbarescoAlcohol",
+        "summary": "темный и золотой ром, мята, лайм, содовая, тростниковый сахар"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "Blueberry Gin Tonic",
+        "id": "b-alcc-13",
+        "price": 65,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoAlcohol",
+        "summary": "джин, тоник, лимонный фреш, сиропы черника и бузина, ягоды"
+    },
+    {
+        "category": "barbaresco-alcoholicCocktail",
+        "name": "TIKI TIKI",
+        "id": "b-alcc-14",
+        "price": 70,
+        "quantity": 100,
+        "volume": "300мл",
+        "image": "barbarescoAlcohol",
+        "summary": "водка, биттер, кокосовое пюре, сок ананаса, фреш лимонный"
+    },
+    {
+        "category": "barbaresco-alcoholicSet",
+        "name": "имбирный",
+        "id": "b-als-1",
+        "price": 60,
+        "quantity": 100,
+        "volume": "210мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicSet",
+        "name": "МАЛИНОВЫЙ",
+        "id": "b-als-2",
+        "price": 60,
+        "quantity": 100,
+        "volume": "210мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicSet",
+        "name": "МАНГО",
+        "id": "b-als-3",
+        "price": 60,
+        "quantity": 100,
+        "volume": "210мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicSet",
+        "name": "цитрусовым-МЯТНЫЙ",
+        "id": "b-als-4",
+        "price": 60,
+        "quantity": 100,
+        "volume": "210мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Cavaleria Bianco",
+        "id": "b-wine-1",
+        "price": 28,
+        "quantity": 100,
+        "volume": "100мл",
+        "image": "barbarescoAlcohol",
+        "summary": "белое сухое"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Cavaleria Bianco",
+        "id": "b-wine-1-1",
+        "price": 210,
+        "quantity": 100,
+        "volume": "750мл",
+        "image": "barbarescoAlcohol",
+        "summary": "белое сухое"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Cavaleria Bianco",
+        "id": "b-wine-2",
+        "price": 28,
+        "quantity": 100,
+        "volume": "100мл",
+        "image": "barbarescoAlcohol",
+        "summary": "п / сл белое"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Cavaleria Bianco",
+        "id": "b-wine-2-1",
+        "price": 210,
+        "quantity": 100,
+        "volume": "750мл",
+        "image": "barbarescoAlcohol",
+        "summary": "п / сл белое"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Cavaleria Rosso",
+        "id": "b-wine-3",
+        "price": 28,
+        "quantity": 100,
+        "volume": "100мл",
+        "image": "barbarescoAlcohol",
+        "summary": "сухое красное"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Cavaleria Rosso",
+        "id": "b-wine-3-1",
+        "price": 210,
+        "quantity": 100,
+        "volume": "750мл",
+        "image": "barbarescoAlcohol",
+        "summary": "сухое красное"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Cavaleria Rosso",
+        "id": "b-wine-4",
+        "price": 28,
+        "quantity": 100,
+        "volume": "100мл",
+        "image": "barbarescoAlcohol",
+        "summary": "н / с красными"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Cavaleria Rosso",
+        "id": "b-wine-4-1",
+        "price": 210,
+        "quantity": 100,
+        "volume": "750мл",
+        "image": "barbarescoAlcohol",
+        "summary": "н / с красными"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Casa Verde Merlot",
+        "id": "b-wine-5",
+        "price": 44,
+        "quantity": 100,
+        "volume": "100мл",
+        "image": "barbarescoAlcohol",
+        "summary": "красное сухое / белое сухое"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Casa Verde Merlot",
+        "id": "b-wine-5-1",
+        "price": 330,
+        "quantity": 100,
+        "volume": "375мл",
+        "image": "barbarescoAlcohol",
+        "summary": "красное сухое / белое сухое"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Casa Verde Merlot",
+        "id": "b-wine-6",
+        "price": 24,
+        "quantity": 100,
+        "volume": "100мл",
+        "image": "barbarescoAlcohol",
+        "summary": "сливовое СОЛ / роз / БИЛ"
+    },
+    {
+        "category": "barbaresco-wine",
+        "name": "Casa Verde Merlot",
+        "id": "b-wine-6-1",
+        "price": 90,
+        "quantity": 100,
+        "volume": "375мл",
+        "image": "barbarescoAlcohol",
+        "summary": "сливовое СОЛ / роз / БИЛ"
+    },
+    {
+        "category": "barbaresco-sparklingWine",
+        "name": "Мартини Асти",
+        "id": "b-swine-1",
+        "price": 400,
+        "quantity": 100,
+        "volume": "750мл",
+        "image": "barbarescoAlcohol",
+        "summary": "СЛАДКОЕ"
+    },
+    {
+        "category": "barbaresco-sparklingWine",
+        "name": "ЗЕБО",
+        "id": "b-swine-2",
+        "price": 350,
+        "quantity": 100,
+        "volume": "750мл",
+        "image": "barbarescoAlcohol",
+        "summary": "СЛАДКОЕ"
+    },
+    {
+        "category": "barbaresco-sparklingWine",
+        "name": "Коктебель",
+        "id": "b-swine-3",
+        "price": 130,
+        "quantity": 100,
+        "volume": "750мл",
+        "image": "barbarescoAlcohol",
+        "summary": "БРЮТ \\ полусладкое \\ розовое"
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "CINZANO",
+        "id": "b-aldr-1",
+        "price": 20,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": "БЕЛЫЙ, КРАСНЫЙ"
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "BECHEROVKA",
+        "id": "b-aldr-2",
+        "price": 35,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "JAGERMEISTER",
+        "id": "b-aldr-3",
+        "price": 45,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "AZNAURI 5 *",
+        "id": "b-aldr-4",
+        "price": 35,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "REMY MARTIN VS",
+        "id": "b-aldr-5",
+        "price": 110,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "ЗУБРОВКА",
+        "id": "b-aldr-6",
+        "price": 25,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "ФИНЛЯНДИЯ",
+        "id": "b-aldr-7",
+        "price": 40,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "Казацкая рада",
+        "id": "b-aldr-8",
+        "price": 20,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "ESPOLON",
+        "id": "b-aldr-9",
+        "price": 50,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "CAPTAIN MORGAN",
+        "id": "b-aldr-10",
+        "price": 50,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": "ЗОЛОТОЙ, ТЕМНЫЙ"
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "WILD TURKEY",
+        "id": "b-aldr-11",
+        "price": 70,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": "RYE, 101, 81"
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "Джемесон",
+        "id": "b-aldr-12",
+        "price": 70,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-alcoholicDrinks",
+        "name": "Джек Дениелс ОЛД №7",
+        "id": "b-aldr-13",
+        "price": 70,
+        "quantity": 100,
+        "volume": "50 мл",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-bear",
+        "name": "Черниговское светлое",
+        "id": "b-bear-1",
+        "price": 30,
+        "quantity": 100,
+        "volume": "0,5л",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-bear",
+        "name": "БАД Б / А",
+        "id": "b-bear-2",
+        "price": 35,
+        "quantity": 100,
+        "volume": "0,5л",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-bear",
+        "name": "Хугарден",
+        "id": "b-bear-3",
+        "price": 45,
+        "quantity": 100,
+        "volume": "0,3 л",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-bear",
+        "name": "Хугарден",
+        "id": "b-bear-3-1",
+        "price": 70,
+        "quantity": 100,
+        "volume": "0,5л",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-bear",
+        "name": "БЕЛАЯ НОЧЬ",
+        "id": "b-bear-4",
+        "price": 23,
+        "quantity": 100,
+        "volume": "0,3 л",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-bear",
+        "name": "БЕЛАЯ НОЧЬ",
+        "id": "b-bear-4-1",
+        "price": "35",
+        "quantity": 100,
+        "volume": "0,5л",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-bear",
+        "name": "ХМЕЛЕВУС",
+        "id": "b-bear-5",
+        "price": 26,
+        "quantity": 100,
+        "volume": "0,3 л",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-bear",
+        "name": "ХМЕЛЕВУС",
+        "id": "b-bear-5-1",
+        "price": 40,
+        "quantity": 100,
+        "volume": "0,5л",
+        "image": "barbarescoAlcohol",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-appetizers",
+        "name": "ТАРЕЛКА« ПОД ВИНО »",
+        "id": "b-app-1",
+        "price": 120,
+        "quantity": 100,
+        "volume": "220г",
+        "image": "pasta-presca-appetizer",
+        "summary": "Багет, итальянский сыровяленая колбаса, сыр Бри, сыр Дор Блю, сыр Эдем, маслины, палочки BBQ с рокфорним соусом и медом"
+    },
+    {
+        "category": "barbaresco-appetizers",
+        "name": "ПИВНОЙ СЕТ",
+        "id": "b-app-2",
+        "price": 80,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "pasta-presca-appetizer",
+        "summary": "курица янтарная, бастурма, чипсы картофельные, сыр фри, пикантные колбаски, соус тар-тар"
+    },
+    {
+        "category": "barbaresco-appetizers",
+        "name": "КУРИНЫЕ КРЫЛЬЯ BBQ",
+        "id": "b-app-3",
+        "price": 60,
+        "quantity": 100,
+        "volume": "300г",
+        "image": "pasta-presca-appetizer",
+        "summary": "Приготовленные в пикантном соусе и подаются с соусом тар-тар"
+    },
+    {
+        "category": "barbaresco-garnishes",
+        "name": "ОВОЩИ-ГРИЛЬ",
+        "id": "b-gar-1",
+        "price": 55,
+        "quantity": 100,
+        "volume": "250г",
+        "image": "le-rock-side-dishes",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-garnishes",
+        "name": "Рис с овощами-ГРИЛЬ",
+        "id": "b-gar-2",
+        "price": 30,
+        "quantity": 100,
+        "volume": "220г",
+        "image": "le-rock-side-dishes",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-garnishes",
+        "name": "картошка по-селянски",
+        "id": "b-gar-3",
+        "price": 30,
+        "quantity": 100,
+        "volume": "250г",
+        "image": "le-rock-side-dishes",
+        "summary": "С розмарином и беконом"
+    },
+    {
+        "category": "barbaresco-garnishes",
+        "name": "КАРТОФЕЛЬ ФРИ",
+        "id": "b-gar-4",
+        "price": 35,
+        "quantity": 100,
+        "volume": "150 / 30г",
+        "image": "le-rock-side-dishes",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-garnishes",
+        "name": "Картофельное пюре",
+        "id": "b-gar-5",
+        "price": 20,
+        "quantity": 100,
+        "volume": "200г",
+        "image": "le-rock-side-dishes",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-garnishes",
+        "name": "ХЛЕБ БЕЛЫЙ",
+        "id": "b-gar-6-1",
+        "price": 3,
+        "quantity": 100,
+        "volume": "1 кусочек",
+        "image": "le-rock-side-dishes",
+        "summary": ""
+    },
+    {
+        "category": "barbaresco-garnishes",
+        "name": "ХЛЕБ СЕРЫЙ",
+        "id": "b-gar-6-2",
+        "price": 3,
+        "quantity": 100,
+        "volume": "1 кусочек",
+        "image": "le-rock-side-dishes",
+        "summary": ""
+    }
+]
