@@ -1,4 +1,5 @@
-import myApi from '~/plugins/api/myApi.js'
+import gql from 'graphql-tag'
+// import myApi from '~/plugins/api/myApi.js'
 
 export const state = () => ({
   animation: 'fade-in-up',
@@ -13,172 +14,193 @@ export const state = () => ({
 })
 
 export const getters = {
-  // pizzas: state => state.arrayedStoreData.filter(el => el.category === "pizzas"),
-
-  cartSize (state) {
+  cartSize(state) {
     return state.cart.length
   },
 
-  leRockCartSize (state) {
+  leRockCartSize(state) {
     return state.leRockCart.length
   },
 
-  pastaFrescaCartSize (state) {
+  pastaFrescaCartSize(state) {
     return state.pastaFrescaCart.length
   },
 
-  cartTotalAmount (state) {
+  cartTotalAmount(state) {
     return state.cart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
 
-  leRockCartTotalAmount (state) {
+  leRockCartTotalAmount(state) {
     return state.leRockCart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
-  pastaFrescaCartTotalAmount (state) {
+  pastaFrescaCartTotalAmount(state) {
     return state.pastaFrescaCart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
 
-  toast (state) {
+  toast(state) {
     return state.toast
   }
 }
 
 export const actions = {
-  fetchProducts ({
+  // fetchProducts ({
+  //   commit
+  // }) {
+  //   myApi.getProducts().then((products) => {
+  //     commit('setUpProducts', products)
+  //     commit('showToast', 'Продукти завантажені')
+  //   })
+  // },
+
+  async fetchProducts({
     commit
   }) {
-    myApi.getProducts().then((products) => {
-      commit('setUpProducts', products)
-      commit('showToast', 'Продукти завантажені')
-    })
+    const client = this.app.apolloProvider.defaultClient
+    if (this.$i18n.locale === 'en') {
+      await client.query({
+        query: gql `{
+        barbarescoEnCollection {
+          _id
+          name
+          category
+          price
+          image
+          quantity
+          volume
+          summary
+        }
+      }`
+      }).then((products) => {
+        commit('setUpProducts', products.data.barbarescoEnCollection)
+        commit('showToast', 'Продукти завантажені')
+      })
+    } else if (this.$i18n.locale === 'ru') {
+      await client.query({
+        query: gql `{
+        barbarescoRuCollection {
+          _id
+          name
+          category
+          price
+          image
+          quantity
+          volume
+          summary
+        }
+      }`
+      }).then((products) => {
+        commit('setUpProducts', products.data.barbarescoRuCollection)
+        commit('showToast', 'Продукти завантажені')
+      })
+    } else {
+      await client.query({
+        query: gql `{
+        barbarescoUkCollection {
+          _id
+          name
+          category
+          price
+          image
+          quantity
+          volume
+          summary
+        }
+      }`
+      }).then((products) => {
+        commit('setUpProducts', products.data.barbarescoUkCollection)
+        commit('showToast', 'Продукти завантажені')
+      })
+    }
   },
 
-  addToCart ({
+  addToCart({
     commit
   }, productId) {
-    myApi.products('add', productId).then((productId) => {
-      commit('addToCart', productId)
-      commit('showToast', 'Додано з кошика')
-    })
+    commit('addToCart', productId)
+    commit('showToast', 'Додано з кошика')
   },
 
-  addToleRockCart ({
+  addToleRockCart({
     commit
   }, productId) {
-    myApi.products('add', productId).then((productId) => {
-      commit('addToleRockCart', productId)
-      commit('showToast', 'Додано з кошика')
-    })
+    commit('addToleRockCart', productId)
+    commit('showToast', 'Додано з кошика')
   },
 
-  addTopastaFrescaCart ({
+  addTopastaFrescaCart({
     commit
   }, productId) {
-    myApi.products('add', productId).then((productId) => {
-      commit('addTopastaFrescaCart', productId)
-      commit('showToast', 'Додано з кошика')
-    })
+    commit('addTopastaFrescaCart', productId)
+    commit('showToast', 'Додано з кошика')
   },
 
-  removeFromCart ({
+  removeFromCart({
     commit
   }, productId) {
-    myApi.products('remove', productId).then((productId) => {
-      commit('removeFromCart', productId)
-      commit('showToast', 'Видалено з кошика')
-    })
+    commit('removeFromCart', productId)
+    commit('showToast', 'Видалено з кошика')
   },
 
-  removeFromleRockCart ({
+  removeFromleRockCart({
     commit
   }, productId) {
-    myApi.products('remove', productId).then((productId) => {
-      commit('removeFromleRockCart', productId)
-      commit('showToast', 'Видалено з кошика')
-    })
+    commit('removeFromleRockCart', productId)
+    commit('showToast', 'Видалено з кошика')
   },
 
-  removeFrompastaFrescaCart ({
+  removeFrompastaFrescaCart({
     commit
   }, productId) {
-    myApi.products('remove', productId).then((productId) => {
-      commit('removeFrompastaFrescaCart', productId)
-      commit('showToast', 'Видалено з кошика')
-    })
+    commit('removeFrompastaFrescaCart', productId)
+    commit('showToast', 'Видалено з кошика')
   },
 
-  deleteFromCart ({
+  deleteFromCart({
     commit
   }, productId) {
-    myApi.products('delete', productId).then((productId) => {
-      commit('deleteFromCart', productId)
-      commit('showToast', 'Видалено з кошика')
-    })
+    commit('deleteFromCart', productId)
+    commit('showToast', 'Видалено з кошика')
   },
 
-  deleteFromleRockCart ({
+  deleteFromleRockCart({
     commit
   }, productId) {
-    myApi.products('delete', productId).then((productId) => {
-      commit('deleteFromleRockCart', productId)
-      commit('showToast', 'Видалено з кошика')
-    })
+    commit('deleteFromleRockCart', productId)
+    commit('showToast', 'Видалено з кошика')
   },
 
-  deleteFrompastaFrescaCart ({
+  deleteFrompastaFrescaCart({
     commit
   }, productId) {
-    myApi.products('delete', productId).then((productId) => {
-      commit('deleteFrompastaFrescaCart', productId)
-      commit('showToast', 'Видалено з кошика')
-    })
+    commit('deleteFrompastaFrescaCart', productId)
+    commit('showToast', 'Видалено з кошика')
   }
-  // checkout: ({
-  //   state,
-  //   commit
-  // }) => {
-  //   myApi.buyProducts(
-  //     state.cart,
-  //     () => {
-  //       commit('emptyCart')
-  //       commit('setCheckoutStatus', 'Successful')
-  //     },
-  //     () => {
-  //       commit('setCheckoutStatus', 'Failled')
-  //     }
-  //   )
-  // }
 }
 
 export const mutations = {
-  pizzasAction: state => state.products.filter(el => el.category === 'pizzas'),
-
-  setUpProducts (state, productsPayload) {
+  setUpProducts(state, productsPayload) {
     state.products = productsPayload
   },
 
-  addToCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  addToCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
-    const cartProduct = state.cart.find(product => product.id === productId)
+    const cartProduct = state.cart.find(product => product._id === productId)
 
     if (cartProduct) {
       cartProduct.quantity++
     } else {
       state.cart.push({
-        // ...product,
-        id: product.id,
+        _id: product._id,
         name: product.name,
         price: product.price,
         image: product.image,
-
-        // stock: product.quantity,
         quantity: 1
       })
     }
@@ -186,21 +208,21 @@ export const mutations = {
     product.quantity--
   },
 
-  removeFromCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  removeFromCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
-    const cartProduct = state.cart.find(product => product.id === productId)
+    const cartProduct = state.cart.find(product => product._id === productId)
 
     cartProduct.quantity--
 
     product.quantity++
   },
 
-  deleteFromCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  deleteFromCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
     const cartProductIndex = state.cart.findIndex(
-      product => product.id === productId
+      product => product._id === productId
     )
 
     product.quantity = state.cart[cartProductIndex].stock
@@ -208,22 +230,19 @@ export const mutations = {
     state.cart.splice(cartProductIndex, 1)
   },
 
-  addToleRockCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  addToleRockCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
-    const cartProduct = state.leRockCart.find(product => product.id === productId)
+    const cartProduct = state.leRockCart.find(product => product._id === productId)
 
     if (cartProduct) {
       cartProduct.quantity++
     } else {
       state.leRockCart.push({
-        // ...product,
-        id: product.id,
+        _id: product._id,
         name: product.name,
         price: product.price,
         image: product.image,
-
-        // stock: product.quantity,
         quantity: 1
       })
     }
@@ -231,21 +250,21 @@ export const mutations = {
     product.quantity--
   },
 
-  removeFromleRockCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  removeFromleRockCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
-    const cartProduct = state.leRockCart.find(product => product.id === productId)
+    const cartProduct = state.leRockCart.find(product => product._id === productId)
 
     cartProduct.quantity--
 
     product.quantity++
   },
 
-  deleteFromleRockCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  deleteFromleRockCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
     const cartProductIndex = state.leRockCart.findIndex(
-      product => product.id === productId
+      product => product._id === productId
     )
 
     product.quantity = state.leRockCart[cartProductIndex].stock
@@ -253,22 +272,19 @@ export const mutations = {
     state.leRockCart.splice(cartProductIndex, 1)
   },
 
-  addTopastaFrescaCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  addTopastaFrescaCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
-    const cartProduct = state.pastaFrescaCart.find(product => product.id === productId)
+    const cartProduct = state.pastaFrescaCart.find(product => product._id === productId)
 
     if (cartProduct) {
       cartProduct.quantity++
     } else {
       state.pastaFrescaCart.push({
-        // ...product,
-        id: product.id,
+        _id: product._id,
         name: product.name,
         price: product.price,
         image: product.image,
-
-        // stock: product.quantity,
         quantity: 1
       })
     }
@@ -276,18 +292,18 @@ export const mutations = {
     product.quantity--
   },
 
-  removeFrompastaFrescaCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  removeFrompastaFrescaCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
-    const cartProduct = state.pastaFrescaCart.find(product => product.id === productId)
+    const cartProduct = state.pastaFrescaCart.find(product => product._id === productId)
 
     cartProduct.quantity--
 
     product.quantity++
   },
 
-  deleteFrompastaFrescaCart (state, productId) {
-    const product = state.products.find(product => product.id === productId)
+  deleteFrompastaFrescaCart(state, productId) {
+    const product = state.products.find(product => product._id === productId)
 
     const cartProductIndex = state.pastaFrescaCart.findIndex(
       product => product.id === productId
@@ -298,36 +314,32 @@ export const mutations = {
     state.pastaFrescaCart.splice(cartProductIndex, 1)
   },
 
-  showToast (state, toastText) {
+  showToast(state, toastText) {
     state.toast.show = true
     state.toast.text = toastText
   },
 
-  hideToast (state) {
+  hideToast(state) {
     state.toast.show = false
     state.toast.text = ''
   },
 
-  // setCheckoutStatus (state, status) {
-  //   state.checkoutStatus = status
-  // },
-
-  emptyCart (state) {
+  emptyCart(state) {
     state.cart = []
     state.cartCount = 0
   },
 
-  emptyleRockCart (state) {
+  emptyleRockCart(state) {
     state.leRockCart = []
     state.leRockCartCount = 0
   },
 
-  emptypastaFrescaCart (state) {
+  emptypastaFrescaCart(state) {
     state.pastaFrescaCart = []
     state.pastaFrescaCartCount = 0
   },
 
-  SET_ANIMATION (state, animation) {
+  SET_ANIMATION(state, animation) {
     state.animation = animation
   }
 }

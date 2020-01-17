@@ -1,7 +1,7 @@
 
 {
   barbarescoUkCollection {
-    name_slug
+    _id
     name
     category
     price

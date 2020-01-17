@@ -10,7 +10,7 @@
       >
         <div
           v-for="product in extractedProductsPizzaEn"
-          :key="product.id"
+          :key="product._id"
           class="card"
         >
           <img
@@ -46,7 +46,7 @@
               <div class="col-sm-7 p-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto center"
-                  @click.prevent="addToCart(product.id)"
+                  @click.prevent="addToCart(product._id)"
                 >
                   {{ $t('order') }}
                 </button>
@@ -62,7 +62,7 @@
       >
         <div
           v-for="product in extractedProductsPizzaRu"
-          :key="product.id"
+          :key="product._id"
           class="card"
         >
           <img
@@ -98,7 +98,7 @@
               <div class="col-sm-7 p-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto center"
-                  @click.prevent="addToCart(product.id)"
+                  @click.prevent="addToCart(product._id)"
                 >
                   {{ $t('order') }}
                 </button>
@@ -114,7 +114,7 @@
       >
         <div
           v-for="product in extractedProductsPizza"
-          :key="product.id"
+          :key="product._id"
           class="card"
         >
           <img
@@ -150,7 +150,7 @@
               <div class="col-sm-7 p-0 text-center my-auto">
                 <button
                   class="btn my-auto mr-auto center"
-                  @click.prevent="addToCart(product.id)"
+                  @click.prevent="addToCart(product._id)"
                 >
                   {{ $t('order') }}
                 </button>
@@ -164,6 +164,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import barbarescoEnCollection from '~/gql/barbarescoEn'
 import barbarescoUkCollection from '~/gql/barbarescoUk'
 import barbarescoRuCollection from '~/gql/barbarescoRu'
@@ -193,6 +194,9 @@ export default {
   },
 
   computed: {
+    ...mapState([
+      'products'
+    ]),
     extractedProductsPizza () {
       return this.$apolloData.data.barbarescoUkCollection.filter(el => el.category === 'barbaresco-pizzas')
     },
