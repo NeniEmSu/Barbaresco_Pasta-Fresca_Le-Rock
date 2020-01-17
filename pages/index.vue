@@ -139,11 +139,13 @@
                     <b-button
                       class="socialButtons facebook mx-auto"
                       target="_blank"
+                      rel="noopener noreferrer"
                       :href="variants[0].facebLink"
                     >
                       <b-img
                         class="inButtonImg "
                         target="_blank"
+                        rel="noopener noreferrer"
                         src="~assets/img/facebook.svg"
                         alt="facebook text"
                       />
@@ -201,11 +203,13 @@
                     <b-button
                       class="socialButtons facebook mx-auto"
                       target="_blank"
+                      rel="noopener noreferrer"
                       :href="variants[1].facebLink"
                     >
                       <b-img
                         class="inButtonImg "
                         target="_blank"
+                        rel="noopener noreferrer"
                         src="~assets/img/facebook.svg"
                         alt="facebook text"
                       />
@@ -263,11 +267,13 @@
                     <b-button
                       class="socialButtons facebook mx-auto"
                       target="_blank"
+                      rel="noopener noreferrer"
                       :href="variants[2].facebLink"
                     >
                       <b-img
                         class="inButtonImg "
                         target="_blank"
+                        rel="noopener noreferrer"
                         src="~assets/img/facebook.svg"
                         alt="facebook text"
                       />

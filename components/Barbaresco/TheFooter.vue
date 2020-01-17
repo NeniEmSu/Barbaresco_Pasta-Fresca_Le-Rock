@@ -59,7 +59,7 @@
             <a
               href="#"
               target="_blank"
-              rel="noopener"
+              rel="noopener nofollow noreferrer"
             >
 
               <!-- <img
@@ -84,7 +84,7 @@
             <a
               href="https://www.instagram.com/barbaresco.citycafe/?hl=ru"
               target="_blank"
-              rel="noopener"
+              rel="noopener nofollow noreferrer"
             >
 
               <!-- <img
