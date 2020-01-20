@@ -1,0 +1,18 @@
+{
+  barbarescoCollection {
+    _id
+    published
+    nameEn
+    nameUk
+    nameRu
+    price
+    image
+    quantity
+    volumeEn
+    volumeUk
+    volumeRu
+    summaryEn
+    summaryUk
+    summaryRu
+  }
+}
