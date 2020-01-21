@@ -1,12 +1,16 @@
 {
   barbarescoCollection {
     _id
-    published
+    category
+    _id
     nameEn
     nameUk
     nameRu
     price
     image
+    imageUri {
+      path
+    }
     quantity
     volumeEn
     volumeUk

@@ -373,10 +373,25 @@
                     <div class="col-12 p-0 m-auto">
                       <div class="row m-auto">
                         <h6
+                          v-if="$i18n.locale === 'en'"
                           id="cart-item-title"
                           class="col-12 m-auto text-center py-2 crop"
                         >
-                          {{ product.name }}
+                          {{ product.nameEn || product.nameUk || product.nameRu }}
+                        </h6>
+                        <h6
+                          v-else-if="$i18n.locale === 'uk'"
+                          id="cart-item-title"
+                          class="col-12 m-auto text-center py-2 crop"
+                        >
+                          {{ product.nameUk || product.nameRu || product.nameEn }}
+                        </h6>
+                        <h6
+                          v-else-if="$i18n.locale === 'ru'"
+                          id="cart-item-title"
+                          class="col-12 m-auto text-center py-2 crop"
+                        >
+                          {{ product.nameRu || product.nameUk || product.nameEn }}
                         </h6>
                         <div class="toggle-quantity col-12 m-auto ">
                           <button
