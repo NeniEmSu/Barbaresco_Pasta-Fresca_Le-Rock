@@ -128,10 +128,7 @@
 
       <hr>
 
-      <div
-        v-if="$i18n.locale === 'en'"
-        class="row"
-      >
+      <div class="row">
         <div class="col-sm-3">
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
