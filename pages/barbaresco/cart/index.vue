@@ -394,7 +394,7 @@
                   class="form-check-input"
                   type="radio"
                   name="exampleRadios"
-                  :value="$t('form.pay-carrier')"
+                  value="готівкою"
                 >
                 <label
                   class="form-check-label"
@@ -412,9 +412,10 @@
                   id="exampleRadios2"
                   v-model="modeOfPayment"
                   class="form-check-input"
+                  disabled
                   type="radio"
                   name="exampleRadios"
-                  :value="$t('form.pay-card')"
+                  value="картка"
                 >
                 <label
                   class="form-check-label"
@@ -631,7 +632,7 @@ export default {
       code: null,
       apartment: null,
       comment: null,
-      modeOfPayment: null,
+      modeOfPayment: 'готівкою',
       loading: false,
       errors: [],
       success: false
@@ -808,15 +809,13 @@ export default {
     },
 
     sendOrder () {
-      // const orderedProducts = JSON.stringify(this.cart)
-
-      let data = this.cart.map(item => ({ [item.nameUk]: [`${item.quantity}шт, ${item.price}₴`] }))
+      let data = this.cart.map(item => ({ [item.nameUk]: [`${item.quantity}шт, ${item.price}₴ %0A`] }))
       data = Object.assign({}, ...data)
 
       axios
         .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я : ${this.name}, %0AТелефон : ${this.phone}, %0AМісто/село : ${this.city}, %0AВулиця : ${this.street}, %0AБуд : ${this.house}, %0AКод : ${this.code}, %0AКв./офіс : ${this.apartment}, %0AКоментар до замовлення : ${this.comment}, %0Aспосіб оплати : ${this.modeOfPayment}, %0AВсього : ${this.cartTotalAmount}₴, %0A${this.$t('cart.heading')} : %0A${JSON.stringify(data)} `)
-      // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
-      this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
+      this.code = this.apartment = this.comment = this.house = ''
+      this.modeOfPayment = 'готівкою'
       this.$store.commit('emptyCart')
       this.success = true
       if (process.client) {

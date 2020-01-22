@@ -1,0 +1,1232 @@
+[
+    {
+        "category": "pasta-fresca-salads",
+        "nameUk": "Салат «ФРЕСКА ІТАЛІЯ»",
+        "id": "pf-sal-1",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "0,320",
+        "image": "pasta-fresca-salad",
+        "summaryUk": "Листя салату, помідор, огірок,  м’який сир, оливки, заправляється соусом з руколи"
+    },
+    {
+        "category": "pasta-fresca-salads",
+        "nameUk": "Панцанела",
+        "id": "pf-sal-2",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "0,280",
+        "image": "pasta-fresca-salad",
+        "summaryUk": "Традиційний італійський салат з грильованими овочами, хрусткою чіабатою, маринованими анчоусами, заправляється медово-гірчичним соусом"
+    },
+    {
+        "category": "pasta-fresca-salads",
+        "nameUk": "Салат з телятиною та болгарським перцем",
+        "id": "pf-sal-3",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "0,230",
+        "image": "pasta-fresca-salad",
+        "summaryUk": "Листя салату,  філе телятини, болгарський перець, опеньки, помідори  рукола"
+    },
+    {
+        "category": "pasta-fresca-salads",
+        "nameUk": "салат з равіолі",
+        "id": "pf-sal-4",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "0,395",
+        "image": "pasta-fresca-salad",
+        "summaryUk": "листя салату, равіолі з сиром, огірок, кабачок, каперси, заправляється медово-гірчичним соусом"
+    },
+    {
+        "category": "pasta-fresca-salads",
+        "nameUk": "Салат з курячою грудинкою",
+        "id": "pf-sal-5",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "0,300",
+        "image": "pasta-fresca-salad",
+        "summaryUk": "Листя салату, куряче філе гриль, помідор, гриби, яйця, пармезан, базиліковий соус"
+    },
+    {
+        "category": "pasta-fresca-salads",
+        "nameUk": "Салат з норвезьким лососем",
+        "id": "pf-sal-6",
+        "price": 85,
+        "quantity": 100,
+        "volumeUk": "0,250",
+        "image": "pasta-fresca-salad",
+        "summaryUk": "філе лосося, листя салату, броколі, помідор, каперси, заправляється метанно-гірчичним соусом"
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "Тальятеллі «Quatro Formaggi»",
+        "id": "pf-pasta-1",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "0,250",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "Тальятеллі з куркою під томатним соусом",
+        "id": "pf-pasta-2",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "0,350",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "Шпинатні тальятеллі з в‘яленими помідорами та куркою",
+        "id": "pf-pasta-3",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "0,330",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "тальятеллі з морепродуктами під вершковим соусом",
+        "id": "pf-pasta-4",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "0,300",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "шпинатні тальятеллі з куркою та грибами",
+        "id": "pf-pasta-5",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "0,300",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "Спагеті адіоліо з креветками",
+        "id": "pf-pasta-6",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "0,330",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "CПАГЕТІ БОЛОНЬЄЗЕ",
+        "id": "pf-pasta-7",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "0,300",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "Спагеті «Маргарита»",
+        "id": "pf-pasta-8",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "0,370",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "Спагеті карбонара",
+        "id": "pf-pasta-9",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "0,300",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "Равіолі з куркою та горіховим соусом",
+        "id": "pf-pasta-10",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "0,260",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "равіолі з лососем та рікоттою",
+        "id": "pf-pasta-11",
+        "price": 85,
+        "quantity": 100,
+        "volumeUk": "0,250",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-pasta",
+        "nameUk": "равіолі з м’ясом та соусом прімавера",
+        "id": "pf-pasta-12",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "0,280",
+        "image": "pasta-fresca-pasta",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-garnishes",
+        "nameUk": "КАРТОПЛЯНЕ ПЮРЕ",
+        "id": "pf-gar-1",
+        "price": 20,
+        "quantity": 100,
+        "volumeUk": "0,220",
+        "image": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-garnishes",
+        "nameUk": "РИС З ОВОЧАМИ-ГРИЛЬ",
+        "id": "pf-gar-2",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "0,200",
+        "image": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-garnishes",
+        "nameUk": "Чіабата  біла",
+        "id": "pf-gar-3-1",
+        "price": 16,
+        "quantity": 100,
+        "volumeUk": "1шт.",
+        "image": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-garnishes",
+        "nameUk": "Чіабата  сіра",
+        "id": "pf-gar-3-2",
+        "price": 16,
+        "quantity": 100,
+        "volumeUk": "1шт.",
+        "image": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Лимонний тарт",
+        "id": "pf-d-1",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "0,150",
+        "image": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Десерт «Павлова»",
+        "id": "pf-d-2",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "0,220",
+        "image": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Десерт «Буко»",
+        "id": "pf-d-3",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "0,200",
+        "image": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Чізкейк",
+        "id": "pf-d-4",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "0,170",
+        "image": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Шоколадно-ромовий фондан з морозивом",
+        "id": "pf-d-5",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "0,210",
+        "image": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Пана котта",
+        "id": "pf-d-6",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "0,180",
+        "image": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Тірамісу",
+        "id": "pf-d-7",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "0,200",
+        "image": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Морозиво",
+        "id": "pf-d-8",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "0,170",
+        "image": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-deserts",
+        "nameUk": "Круасан з соусом на вибір",
+        "id": "pf-d-9",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "1шт",
+        "image": "barbarescoDesert",
+        "summaryUk": "Шоколад, малина"
+    },
+    {
+        "category": "pasta-fresca-appetizers",
+        "nameUk": "Брускети",
+        "id": "pf-app-1",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "4 шт",
+        "image": "pasta-presca-appetizer",
+        "summaryUk": "прошутто, лосось, гриби,помідори з моцарелою"
+    },
+    {
+        "category": "pasta-fresca-appetizers",
+        "nameUk": "мідії у вершковому соусі під вино",
+        "id": "pf-app-2",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "0,285",
+        "image": "pasta-presca-appetizer",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-appetizers",
+        "nameUk": "Карпачо з лосося",
+        "id": "pf-app-3",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "0,075",
+        "image": "pasta-presca-appetizer",
+        "summaryUk": "рукола, пармезан, каперси"
+    },
+    {
+        "category": "pasta-fresca-appetizers",
+        "nameUk": "італійські сири",
+        "id": "pf-app-4",
+        "price": 75,
+        "quantity": 100,
+        "volumeUk": "0,150",
+        "image": "pasta-presca-appetizer",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-appetizers",
+        "nameUk": "Антипасто",
+        "id": "pf-app-5",
+        "price": 230,
+        "quantity": 100,
+        "volumeUk": "0,600",
+        "image": "pasta-presca-appetizer",
+        "summaryUk": "Щедра порція італійських делікатесів"
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "філе тріски з червоним рисом",
+        "id": "pf-mm-1",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "300г",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "Біфштекс з моцарелою НА КАРТОПЛЯНІЙ ПОДУШЦІ",
+        "id": "pf-mm-2",
+        "price": 85,
+        "quantity": 100,
+        "volumeUk": "0,400",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "Куряче філе фаршироване шпинатом",
+        "id": "pf-mm-3",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "0,200г",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "шарлотт з лососем та моцарелою",
+        "id": "pf-mm-4",
+        "price": 125,
+        "quantity": 100,
+        "volumeUk": "0,300г",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "курКА «ПАРМЕЗАН»",
+        "id": "pf-mm-5",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "0,380г",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "соте з морепродуктами",
+        "id": "pf-mm-6",
+        "price": 120,
+        "quantity": 100,
+        "volumeUk": "0,420г",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "МЕДАЛЬЙОНИ   Зі  СВИНИНИ З  ОВОЧАМИ   ГРИЛЬ",
+        "id": "pf-mm-7",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "0,300г",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "стейк з телятини з соусом сальса",
+        "id": "pf-mm-8",
+        "price": 115,
+        "quantity": 100,
+        "volumeUk": "0,250г",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-mainMeals",
+        "nameUk": "сет з морепродуктів",
+        "id": "pf-mm-9",
+        "price": 350,
+        "quantity": 100,
+        "volumeUk": "0,900г",
+        "image": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-firstCourses",
+        "nameUk": "Мінестроне",
+        "id": "pf-fc-1",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "0,300",
+        "image": "barbarescoFirstCourse",
+        "summaryUk": "Традиційний італійський суп з помідорів"
+    },
+    {
+        "category": "pasta-fresca-firstCourses",
+        "nameUk": "Курячий  бульйон  зі шматочками курки",
+        "id": "pf-fc-2",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "0,350",
+        "image": "barbarescoFirstCourse",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-firstCourses",
+        "nameUk": "СУП-ПЮРЕ З ПЕЧЕРИЦЬ",
+        "id": "pf-fc-3",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "0,250",
+        "image": "barbarescoFirstCourse",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicCocktail",
+        "nameUk": "Bellini ",
+        "id": "pf-alcc-1",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "персикове пюре, ігристе вино"
+    },
+    {
+        "category": "pasta-fresca-alcoholicCocktail",
+        "nameUk": "Martini Royale",
+        "id": "pf-alcc-2",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "білий вермут, ігристе вино, содова, лайм, м’ята"
+    },
+    {
+        "category": "pasta-fresca-alcoholicCocktail",
+        "nameUk": "Aperol Spritz",
+        "id": "pf-alcc-3",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Апероль, ігристе вино, содова, апельсин, зелені оливки"
+    },
+    {
+        "category": "pasta-fresca-alcoholicCocktail",
+        "nameUk": "Mojito",
+        "id": "pf-alcc-4",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "золотий ром, тростинний цукор, м’ята, лайм, содова"
+    },
+    {
+        "category": "pasta-fresca-alcoholicCocktail",
+        "nameUk": "strawberry basil smash",
+        "id": "pf-alcc-5",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "джин, полуничне пюре, базилік, лайм, цукровий сироп"
+    },
+    {
+        "category": "pasta-fresca-alcoholicCocktail",
+        "nameUk": "amaretto sour",
+        "id": "pf-alcc-6",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "200мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "ром, лікер Disaronno, лимонний фреш, альбумін"
+    },
+    {
+        "category": "pasta-fresca-alcoholicCocktail",
+        "nameUk": "pink lady",
+        "id": "pf-alcc-7",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "200мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "текіла, апельсиновий фреш, сироп гібіскус, лимонний фреш"
+    },
+    {
+        "category": "pasta-fresca-alcoholicCocktail",
+        "nameUk": "violet gin sour",
+        "id": "pf-alcc-8",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "джин, лимонний фреш, сироп фіалки, цукровий сироп, ангостура"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Cavaleria Bianco (Cavaleria) біле сухе",
+        "id": "pf-wine-1",
+        "price": 18,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Приємний, свіжий смак з нотками фруктів"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Cavaleria Bianco (Cavaleria) біле сухе",
+        "id": "pf-wine-1-1",
+        "price": 270,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Приємний, свіжий смак з нотками фруктів"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Cavaleria Bianco (Cavaleria) н/сол біле",
+        "id": "pf-wine-2",
+        "price": 18,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Чудовий насичений смак з фруктовими нотками"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Cavaleria Bianco (Cavaleria) н/сол біле",
+        "id": "pf-wine-2-1",
+        "price": 270,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Чудовий насичений смак з фруктовими нотками"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Cavaleria Rosato (Cavaleria) н/сол рожеве",
+        "id": "pf-wine-3",
+        "price": 18,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Вино з нотками свіжих фруктів, ягід та легким квітковими ароматом"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Cavaleria Rosato (Cavaleria) н/сол рожеве",
+        "id": "pf-wine-3-1",
+        "price": 270,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Вино з нотками свіжих фруктів, ягід та легким квітковими ароматом"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Cavaleria Rosso (Cavaleria) сухе червоне",
+        "id": "pf-wine-4",
+        "price": 18,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Сухий та свіжий смак, з приємним виноградним ароматом"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Cavaleria Rosso (Cavaleria) сухе червоне",
+        "id": "pf-wine-4-1",
+        "price": 270,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Сухий та свіжий смак, з приємним виноградним ароматом"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Сavaleria Rosso (Cavaleria) н/сол червоне",
+        "id": "pf-wine-5",
+        "price": 44,
+        "quantity": 100,
+        "volumeUk": "100мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Вино за смаком оксамитове, з нотками ягід, та легкою терпкістю"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Сavaleria Rosso (Cavaleria) н/сол червоне",
+        "id": "pf-wine-5-1",
+        "price": 330,
+        "quantity": 100,
+        "volumeUk": "375мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Вино за смаком оксамитове, з нотками ягід, та легкою терпкістю"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Soave (Sizarini) сухе біле",
+        "id": "pf-wine-6",
+        "price": 300,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Освіжний легкий смак з м’яким ароматом цитрусових та персика"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Сhardonnay (Sizarini) сухе біле",
+        "id": "pf-wine-7",
+        "price": 300,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Вино з ароматом тропічних фруктів, з нотами персика та нектарина"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Gavi DOC (Moranera) сухе біле",
+        "id": "pf-wine-8",
+        "price": 320,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Свіжий смак з нотами меду і цукатів, та легким мигдальним післясмаком"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Merlot Rosato (Castelmarco) сухе рожеве",
+        "id": "pf-wine-9",
+        "price": 300,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Сухий насичений смак з фруктово-ягідним ароматом"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Chianti (Castelmarco)  сухе червоне",
+        "id": "pf-wine-10",
+        "price": 300,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Тонкий фруктовий, квітковий аромат з нотами вишні та ожини"
+    },
+    {
+        "category": "pasta-fresca-wine",
+        "nameUk": "Sangiovese Rubicone (Sizarini) сухе червоне",
+        "id": "pf-wine-11",
+        "price": 300,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": "Має елегантний аромат червоних яблук і чорних слив, з тонкими відтінками ванілі"
+    },
+    {
+        "category": "pasta-fresca-sparklingWine",
+        "nameUk": "Fragolino Bianco (Novellina )солодке біле",
+        "id": "pf-swine-1",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-sparklingWine",
+        "nameUk": "Fragolino Bianco (Novellina )солодке біле",
+        "id": "pf-swine-1-1",
+        "price": 200,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-sparklingWine",
+        "nameUk": "Fragolino Rosso (Novellina) солодке червоне",
+        "id": "pf-swine-2",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-sparklingWine",
+        "nameUk": "Fragolino Rosso (Novellina) солодке червоне",
+        "id": "pf-swine-2-1",
+        "price": 200,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-italianWine",
+        "nameUk": "червоне напівсолодке",
+        "id": "b-mitwine-1",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-italianWine",
+        "nameUk": "біле напівслолодке",
+        "id": "b-mitwine-1-1",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Горілка Zubrowka",
+        "id": "b-aldr-1",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Горілка Finlandia класична",
+        "id": "b-aldr-2",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Горілка Finlandia журавлина",
+        "id": "b-aldr-2-1",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Ром Captain Morgan золотий",
+        "id": "b-aldr-3",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Ром Captain Morgan темний",
+        "id": "b-aldr-3-1",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Коньяк Remy Martin VS",
+        "id": "b-aldr-4",
+        "price": 120,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Бурбон Wild Turkey Rye",
+        "id": "b-aldr-5",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Бурбон Wild Turkey101",
+        "id": "b-aldr-5-1",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Бурбон Wild Turkey 81",
+        "id": "b-aldr-5-2",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Віскі Jameson",
+        "id": "b-aldr-6",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Віскі Jack Daniel’s Old № 7",
+        "id": "b-aldr-7",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Настоянка Becherovka",
+        "id": "b-aldr-8",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Вермут Cinzano bianco",
+        "id": "b-aldr-9",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Вермут Cinzano rosso",
+        "id": "b-aldr-9-1",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-alcoholicDrinks",
+        "nameUk": "Бренді Aznauri",
+        "id": "b-aldr-10",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-bear",
+        "nameUk": "ірландський ель",
+        "id": "pf-bear-1",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "400мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-bear",
+        "nameUk": "Hoegaarden",
+        "id": "pf-bear-2",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "330мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-bear",
+        "nameUk": "Hoegaarden",
+        "id": "pf-bear-3",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "image": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-coffee",
+        "nameUk": "ЕСПРЕССО",
+        "id": "pf-c-1",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-coffee",
+        "nameUk": "АМЕРИКАНО",
+        "id": "pf-c-2",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-coffee",
+        "nameUk": "КАПУЧІНО",
+        "id": "pf-c-3",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-coffee",
+        "nameUk": "рістрето",
+        "id": "pf-c-4",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-coffee",
+        "nameUk": "ЛАТЕ",
+        "id": "pf-c-5",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-coffee",
+        "nameUk": "мигдально -черешневе фраппе",
+        "id": "pf-c-6",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-coffee",
+        "nameUk": "МОЛОКО",
+        "id": "pf-c-7",
+        "price": 5,
+        "quantity": 100,
+        "volumeUk": "",
+        "image": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-tea",
+        "nameUk": "чорний/зелений/фруктовий/ трав’яний",
+        "id": "pf-tea-1",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "600мл",
+        "image": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-tea",
+        "nameUk": "чеський",
+        "id": "pf-tea-2",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "image": "barbarescoDrinksTea",
+        "summaryUk": "м‘ятний чай з додаванням лайму та кориці"
+    },
+    {
+        "category": "pasta-fresca-tea",
+        "nameUk": "обліпихово-грушевий",
+        "id": "pf-tea-3",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "image": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-fresh",
+        "nameUk": "АПЕЛЬСИНОВИЙ",
+        "id": "pf-fre-1",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "0,25л",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-fresh",
+        "nameUk": "Грейпфрутовий",
+        "id": "pf-fre-2",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "0,25л",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-lemonade",
+        "nameUk": "полуниця-лічі",
+        "id": "pf-lem-1",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-lemonade",
+        "nameUk": "гуава-гранат",
+        "id": "pf-lem-2",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-lemonade",
+        "nameUk": "ківі",
+        "id": "pf-lem-3",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-lemonade",
+        "nameUk": "ананас-базилік",
+        "id": "pf-lem-4",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "мохіто б/а",
+        "id": "b-nad-1",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "мілкшейк чорниця",
+        "id": "b-nad-2",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "мілкшейк банан",
+        "id": "b-nad-2-1",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "Морс",
+        "id": "b-nad-3",
+        "price": 15,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": "з журавлини"
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "Сік Sandora",
+        "id": "b-nad-4",
+        "price": 18,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": "в асортименті"
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "Pepsi",
+        "id": "b-nad-5",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "330мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "7UP",
+        "id": "b-nad-6",
+        "price": 27,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "Tonic Water",
+        "id": "b-nad-7",
+        "price": 27,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "девайтіс слабо газ.",
+        "id": "b-nad-8a",
+        "price": 27,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "девайтіс н. газ.",
+        "id": "b-nad-8b",
+        "price": 27,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "pasta-fresca-nonAlcoholicDrinks",
+        "nameUk": "Borjomi",
+        "id": "b-nad-9",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "image": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    }
+]

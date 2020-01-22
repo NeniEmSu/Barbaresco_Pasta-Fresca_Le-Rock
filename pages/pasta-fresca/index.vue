@@ -137,10 +137,6 @@
 
       <TheAppetizers v-if="currentProductsDisplayed === 2" />
 
-      <!-- <TheSushi v-if="currentProductsDisplayed === 3" /> -->
-
-      <!-- <TheMlinty v-if="currentProductsDisplayed === 4" /> -->
-
       <TheDesert v-if="currentProductsDisplayed === 5" />
 
       <TheSalad v-if="currentProductsDisplayed === 6" />
@@ -170,9 +166,7 @@ import TheImageNavigation from '~/components/PastaFresca/TheImageNavigationPasta
 import TheImagedProductNav from '~/components/PastaFresca/TheImagedProductNavPastaFresca'
 import TheMapComponent from '~/components/PastaFresca/TheMapComponentPastaFresca'
 import ThePasta from '~/components/PastaFresca/PastaFrescaProducts/ThePasta'
-// import TheSushi from '~/components/Barbaresco/BarbarescoProducts/TheSushi'
 import TheDrinks from '~/components/PastaFresca/PastaFrescaProducts/TheDrinks'
-// import TheMlinty from '~/components/Barbaresco/BarbarescoProducts/TheMlinty'
 import TheDesert from '~/components/PastaFresca/PastaFrescaProducts/TheDesert'
 import TheSalad from '~/components/PastaFresca/PastaFrescaProducts/TheSalad'
 import TheFirstCourse from '~/components/PastaFresca/PastaFrescaProducts/TheFirstCourse'
@@ -198,8 +192,6 @@ export default {
     TheImagedProductNav,
     TheMapComponent,
     ThePasta,
-    // TheSushi,
-    // TheMlinty,
     TheDesert,
     TheSalad,
     TheFirstCourse,
@@ -231,8 +223,7 @@ export default {
           active: true
         }
       ],
-      currentProductsDisplayed: // Math.floor((Math.random() * 10) + 1)
-        1,
+      currentProductsDisplayed: 1,
       loading: false
 
     }
@@ -255,6 +246,9 @@ export default {
     },
     phone (newPhone) {
       localStorage.phone = newPhone
+    },
+    currentProductsDisplayed (newCurrentProductsDisplayed) {
+      localStorage.currentProductsDisplayed = newCurrentProductsDisplayed
     }
   },
 
@@ -267,6 +261,10 @@ export default {
 
     if (localStorage.phone) {
       this.phone = localStorage.phone
+    }
+
+    if (localStorage.currentProductsDisplayed) {
+      this.currentProductsDisplayed = parseInt(localStorage.currentProductsDisplayed)
     }
   },
 

@@ -45,6 +45,11 @@ input {
     color: $darkColor;
 
     padding: 14px 10px 14px 10px;
+
+    &:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+    }
 }
 
 .order {
@@ -194,7 +199,13 @@ textarea.form-control {
 
 input[type="radio"] {
     cursor: pointer;
+
+    &:disabled {
+        opacity: 0.65;
+        cursor: not-allowed;
+    }
 }
+
 
 .form-check-label {
     cursor: pointer;

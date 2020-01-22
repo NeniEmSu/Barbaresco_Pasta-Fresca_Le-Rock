@@ -146,8 +146,6 @@
 
         <TheFirstCourse v-if="currentProductsDisplayed === 7" />
 
-        <!-- <TheHits v-if="currentProductsDisplayed === 8" /> -->
-
         <TheDrinks v-if="currentProductsDisplayed === 9" />
 
         <TheAlcohol v-if="currentProductsDisplayed === 10" />
@@ -203,7 +201,6 @@ export default {
     TheDesert,
     TheSalad,
     TheFirstCourse,
-    // TheHits,
     TheDrinks,
     TheAlcohol,
     TheMainMeal,
@@ -230,8 +227,7 @@ export default {
           active: true
         }
       ],
-      currentProductsDisplayed: // Math.floor((Math.random() * 10) + 1)
-        2,
+      currentProductsDisplayed: 2,
       loading: false
 
     }
@@ -254,6 +250,9 @@ export default {
     },
     phone (newPhone) {
       localStorage.phone = newPhone
+    },
+    currentProductsDisplayed (newCurrentProductsDisplayed) {
+      localStorage.currentProductsDisplayed = newCurrentProductsDisplayed
     }
   },
 
@@ -266,6 +265,10 @@ export default {
 
     if (localStorage.phone) {
       this.phone = localStorage.phone
+    }
+
+    if (localStorage.currentProductsDisplayed) {
+      this.currentProductsDisplayed = parseInt(localStorage.currentProductsDisplayed)
     }
   },
 

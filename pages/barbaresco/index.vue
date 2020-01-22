@@ -224,8 +224,7 @@ export default {
           active: true
         }
       ],
-      currentProductsDisplayed: // Math.floor((Math.random() * 10) + 1)
-        1,
+      currentProductsDisplayed: 1,
       loading: false
 
     }
@@ -252,6 +251,9 @@ export default {
     },
     phone (newPhone) {
       localStorage.phone = newPhone
+    },
+    currentProductsDisplayed (newCurrentProductsDisplayed) {
+      localStorage.currentProductsDisplayed = newCurrentProductsDisplayed
     }
   },
 
@@ -264,6 +266,10 @@ export default {
 
     if (localStorage.phone) {
       this.phone = localStorage.phone
+    }
+
+    if (localStorage.currentProductsDisplayed) {
+      this.currentProductsDisplayed = parseInt(localStorage.currentProductsDisplayed)
     }
   },
 
