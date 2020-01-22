@@ -17,7 +17,7 @@
           v-b-tooltip.hover
           class="card-title mx-auto text-center crop"
           style="cursor:context-menu"
-          :title="product.nameEn || product.nameUk || product.nameRu"
+          :title="product.nameEn.length > 19 ? product.nameEn || product.nameUk || product.nameRu : ''"
         >
           {{ product.nameEn || product.nameUk || product.nameRu }}
         </h5>
@@ -26,7 +26,7 @@
           v-b-tooltip.hover
           class="card-title mx-auto text-center crop"
           style="cursor:context-menu"
-          :title="product.nameUk || product.nameRu || product.nameEn"
+          :title="product.nameUk.length > 19 ? product.nameUk || product.nameRu || product.nameEn : ''"
         >
           {{ product.nameUk || product.nameRu || product.nameEn }}
         </h5>
@@ -35,7 +35,7 @@
           v-b-tooltip.hover
           class="card-title mx-auto text-center crop"
           style="cursor:context-menu"
-          :title="product.nameRu || product.nameUk || product.nameEn"
+          :title="product.nameRu.length > 19 ? product.nameRu || product.nameUk || product.nameEn : ''"
         >
           {{ product.nameRu || product.nameUk || product.nameEn }}
         </h5>
@@ -46,7 +46,7 @@
           style="cursor: context-menu;"
           :title="product.summaryEn || product.summaryUk || product.summaryRu"
         >
-          {{ (product.summaryEn || product.summaryUk || product.summaryRu).slice(0, 35) }}... <span class="card-text quantity">{{ product.volumeEn || product.volumeUk || product.volumeRu }}</span>
+          {{ (product.summaryEn || product.summaryUk || product.summaryRu).slice(0, 35) }}<span v-if="product.summaryEn.length > 30">...</span><span class="card-text quantity">{{ product.volumeEn || product.volumeUk || product.volumeRu }}</span>
         </p>
 
         <p
@@ -54,9 +54,9 @@
           v-b-tooltip.hover
           class="card-text text-left d-none d-sm-block ingredients"
           style="cursor: context-menu;"
-          :title="product.summaryRu || product.summaryUk || product.summaryEn"
+          :title="product.summaryRu.length > 30 ? product.summaryRu || product.summaryUk || product.summaryEn : ''"
         >
-          {{ (product.summaryRu || product.summaryUk || product.summaryEn).slice(0, 35) }}... <span class="card-text quantity">{{ product.volumeRu || product.volumeUk || product.volumeEn }}</span>
+          {{ (product.summaryRu || product.summaryUk || product.summaryEn).slice(0, 30) }}<span v-if="product.summaryRu.length > 30">...</span><span class="card-text quantity">{{ product.volumeRu || product.volumeUk || product.volumeEn }}</span>
         </p>
 
         <p
@@ -64,9 +64,9 @@
           v-b-tooltip.hover
           class="card-text text-left d-none d-sm-block ingredients"
           style="cursor: context-menu;"
-          :title="product.summaryUk || product.summaryRu || product.summaryEn"
+          :title="product.summaryUk.length > 30 ? product.summaryUk || product.summaryRu || product.summaryUk : ''"
         >
-          {{ (product.summaryUk || product.summaryRu || product.summaryEn).slice(0, 35) }}... <span class="card-text quantity">{{ product.volumeUk || product.volumeRu || product.volumeEn }}</span>
+          {{ (product.summaryUk || product.summaryRu || product.summaryEn).slice(0, 30) }}<span v-if="product.summaryUk.length > 30">...</span> <span class="card-text quantity">{{ product.volumeUk || product.volumeRu || product.volumeEn }}</span>
         </p>
 
         <div class="row">
