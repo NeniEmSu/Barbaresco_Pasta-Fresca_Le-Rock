@@ -1,0 +1,75 @@
+{
+  appetizers: pastaFrescaCollection(filter: {category: "pasta-fresca-appetizers", published: true}) {
+    ...pastaFrescsFields
+  }
+  salads: pastaFrescaCollection(filter: {category: "pasta-fresca-salads", published: true}) {
+    ...pastaFrescsFields
+  }
+  pasta: pastaFrescaCollection(filter: {category: "pasta-fresca-pasta", published: true}) {
+    ...pastaFrescsFields
+  }
+  garnishes: pastaFrescaCollection(filter: {category: "pasta-fresca-garnishes", published: true}) {
+    ...pastaFrescsFields
+  }
+  deserts: pastaFrescaCollection(filter: {category: "pasta-fresca-deserts", published: true}) {
+    ...pastaFrescsFields
+  }
+  mainMeals: pastaFrescaCollection(filter: {category: "pasta-fresca-mainMeals", published: true}) {
+    ...pastaFrescsFields
+  }
+  firstCourses: pastaFrescaCollection(filter: {category: "pasta-fresca-firstCourses", published: true}) {
+    ...pastaFrescsFields
+  }
+  alcoholicCocktail: pastaFrescaCollection(filter: {category: "pasta-fresca-alcoholicCocktail", published: true}) {
+    ...pastaFrescsFields
+  }
+  wine: pastaFrescaCollection(filter: {category: "pasta-fresca-wine", published: true}) {
+    ...pastaFrescsFields
+  }
+  sparklingWine: pastaFrescaCollection(filter: {category: "pasta-fresca-sparklingWine", published: true}) {
+    ...pastaFrescsFields
+  }
+  italianWine: pastaFrescaCollection(filter: {category: "pasta-fresca-italianWine", published: true}) {
+    ...pastaFrescsFields
+  }
+  alcoholicDrinks: pastaFrescaCollection(filter: {category: "pasta-fresca-alcoholicDrinks", published: true}) {
+    ...pastaFrescsFields
+  }
+  bear: pastaFrescaCollection(filter: {category: "pasta-fresca-bear", published: true}) {
+    ...pastaFrescsFields
+  }
+  coffee: pastaFrescaCollection(filter: {category: "pasta-fresca-coffee", published: true}) {
+    ...pastaFrescsFields
+  }
+  tea: pastaFrescaCollection(filter: {category: "pasta-fresca-tea", published: true}) {
+    ...pastaFrescsFields
+  }
+  lemonade: pastaFrescaCollection(filter: {category: "pasta-fresca-lemonade", published: true}) {
+    ...pastaFrescsFields
+  }
+  nonAlcoholicDrinks: pastaFrescaCollection(filter: {category: "pasta-fresca-nonAlcoholicDrinks", published: true}) {
+    ...pastaFrescsFields
+  }
+  fresh: pastaFrescaCollection(filter: {category: "pasta-fresca-fresh", published: true}) {
+    ...pastaFrescsFields
+  }
+}
+
+fragment pastaFrescsFields on pastaFrescaCollection {
+  _id
+  nameEn
+  nameUk
+  nameRu
+  price
+  image
+  imageUri {
+    path
+  }
+  quantity
+  volumeEn
+  volumeUk
+  volumeRu
+  summaryEn
+  summaryUk
+  summaryRu
+}

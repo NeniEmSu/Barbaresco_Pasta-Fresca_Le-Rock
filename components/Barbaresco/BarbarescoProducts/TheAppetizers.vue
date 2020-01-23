@@ -4,13 +4,13 @@
     class="container "
   >
     <div class="content">
-      <productCard :products="extractedProductsAppetizers" />
+      <productCard :products="appetizers" />
     </div>
   </div>
 </template>
 
 <script>
-import barbarescoCollection from '~/gql/barbaresco'
+import appetizers from '~/gql/barbaresco'
 import productCard from '~/components/Barbaresco/TheProductsCard'
 
 export default {
@@ -26,15 +26,9 @@ export default {
   },
 
   apollo: {
-    barbarescoCollection: {
+    appetizers: {
       prefetch: true,
-      query: barbarescoCollection
-    }
-  },
-
-  computed: {
-    extractedProductsAppetizers () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-appetizers')
+      query: appetizers
     }
   }
 }

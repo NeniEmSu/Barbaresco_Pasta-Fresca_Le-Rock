@@ -19,4 +19,26 @@
     summaryUk
     summaryRu
   }
+  appetizers: barbarescoCollection(filter: {category: "barbaresco-appetizers", published: true}) {
+    ...barbarescoFields
+  }
+}
+
+fragment barbarescoFields on barbarescoCollection {
+  _id
+  nameEn
+  nameUk
+  nameRu
+  price
+  image
+  imageUri {
+    path
+  }
+  quantity
+  volumeEn
+  volumeUk
+  volumeRu
+  summaryEn
+  summaryUk
+  summaryRu
 }
