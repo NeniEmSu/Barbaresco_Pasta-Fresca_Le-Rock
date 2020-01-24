@@ -60,7 +60,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsAlcoholicCocktail" />
+          <productCard :products="alcoholicCocktail" />
         </div>
       </div>
 
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="col-sm-9">
-          <productCard :products="extractedProductsAlcoholicSet" />
+          <productCard :products="alcoholicSet" />
         </div>
       </div>
 
@@ -119,7 +119,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsWine" />
+          <productCard :products="wine" />
         </div>
       </div>
 
@@ -149,7 +149,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsSparklingWine" />
+          <productCard :products="sparklingWine" />
         </div>
       </div>
 
@@ -179,7 +179,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsAlcoholicDrinks" />
+          <productCard :products="alcoholicDrinks" />
         </div>
       </div>
 
@@ -209,7 +209,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsBear" />
+          <productCard :products="bear" />
         </div>
       </div>
     </div>
@@ -217,7 +217,14 @@
 </template>
 
 <script>
-import barbarescoCollection from '~/gql/barbaresco'
+import {
+  alcoholicCocktail,
+  wine,
+  sparklingWine,
+  alcoholicDrinks,
+  bear,
+  alcoholicSet
+} from '~/gql/barbarescoAlcohol'
 import productCard from '~/components/Barbaresco/TheProductsCardCategories'
 
 export default {
@@ -227,36 +234,30 @@ export default {
   },
 
   apollo: {
-    barbarescoCollection: {
+    alcoholicCocktail: {
       prefetch: true,
-      query: barbarescoCollection
+      query: alcoholicCocktail
+    },
+    wine: {
+      prefetch: true,
+      query: wine
+    },
+    sparklingWine: {
+      prefetch: true,
+      query: sparklingWine
+    },
+    alcoholicSet: {
+      prefetch: true,
+      query: alcoholicSet
+    },
+    alcoholicDrinks: {
+      prefetch: true,
+      query: alcoholicDrinks
+    },
+    bear: {
+      prefetch: true,
+      query: bear
     }
-  },
-
-  computed: {
-    extractedProductsAlcoholicCocktail () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-alcoholicCocktail')
-    },
-    extractedProductsAlcoholicSet () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-alcoholicSet')
-    },
-
-    extractedProductsWine () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-wine')
-    },
-
-    extractedProductsSparklingWine () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-sparklingWine')
-    },
-
-    extractedProductsAlcoholicDrinks () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-alcoholicDrinks')
-    },
-
-    extractedProductsBear () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-bear')
-    }
-
   }
 }
 </script>

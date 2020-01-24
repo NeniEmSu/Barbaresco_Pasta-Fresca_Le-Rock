@@ -66,7 +66,16 @@ export const actions = {
       query: gql`{
         barbarescoCollection {
           _id
-          category
+          nameEn
+          nameUk
+          nameRu
+          price
+          image
+          imageUri {
+            path
+          }
+        }
+        pastaFrescaCollection {
           _id
           nameEn
           nameUk
@@ -76,17 +85,10 @@ export const actions = {
           imageUri {
             path
           }
-          quantity
-          volumeEn
-          volumeUk
-          volumeRu
-          summaryEn
-          summaryUk
-          summaryRu
         }
       }`
     }).then((products) => {
-      commit('setUpProducts', products.data.barbarescoCollection)
+      commit('setUpProducts', products.data.barbarescoCollection.concat(products.data.pastaFrescaCollection))
       commit('showToast', 'Продукти завантажені')
     })
   },

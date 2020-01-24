@@ -267,7 +267,6 @@ export default {
     if (localStorage.phone) {
       this.phone = localStorage.phone
     }
-
     if (localStorage.currentProductsDisplayed) {
       this.currentProductsDisplayed = parseInt(localStorage.currentProductsDisplayed)
     }

@@ -63,7 +63,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsCoffee" />
+          <productCard :products="coffee" />
         </div>
       </div>
 
@@ -92,7 +92,7 @@
           </div>
         </div>
         <div class="col-sm-9">
-          <productCard :products="extractedProductsTea" />
+          <productCard :products="tea" />
         </div>
       </div>
 
@@ -122,7 +122,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsFresh" />
+          <productCard :products="fresh" />
         </div>
       </div>
 
@@ -152,7 +152,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsLemonade" />
+          <productCard :products="lemonade" />
         </div>
       </div>
 
@@ -182,7 +182,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsSmoothy" />
+          <productCard :products="smoothy" />
         </div>
       </div>
 
@@ -212,7 +212,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsMilkshake" />
+          <productCard :products="milkshake" />
         </div>
       </div>
 
@@ -242,7 +242,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsNonAlcoholicDrinks" />
+          <productCard :products="nonAlcoholicDrinks" />
         </div>
       </div>
     </div>
@@ -250,7 +250,15 @@
 </template>
 
 <script>
-import barbarescoCollection from '~/gql/barbaresco'
+import {
+  coffee,
+  lemonade,
+  nonAlcoholicDrinks,
+  fresh,
+  tea,
+  milkshake,
+  smoothy
+} from '~/gql/barbarescoDrinks'
 import productCard from '~/components/Barbaresco/TheProductsCardCategories'
 export default {
   name: 'TheDrinks',
@@ -260,39 +268,33 @@ export default {
   },
 
   apollo: {
-    barbarescoCollection: {
+    coffee: {
       prefetch: true,
-      query: barbarescoCollection
-    }
-  },
-
-  computed: {
-    extractedProductsCoffee () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-coffee')
+      query: coffee
     },
-
-    extractedProductsTea () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-tea')
+    lemonade: {
+      prefetch: true,
+      query: lemonade
     },
-
-    extractedProductsFresh () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-fresh')
+    nonAlcoholicDrinks: {
+      prefetch: true,
+      query: nonAlcoholicDrinks
     },
-
-    extractedProductsLemonade () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-lemonade')
+    fresh: {
+      prefetch: true,
+      query: fresh
     },
-
-    extractedProductsSmoothy () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-smoothy')
+    tea: {
+      prefetch: true,
+      query: tea
     },
-
-    extractedProductsMilkshake () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-milkshake')
+    milkshake: {
+      prefetch: true,
+      query: milkshake
     },
-
-    extractedProductsNonAlcoholicDrinks () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-nonAlcoholicDrinks')
+    smoothy: {
+      prefetch: true,
+      query: smoothy
     }
   }
 }

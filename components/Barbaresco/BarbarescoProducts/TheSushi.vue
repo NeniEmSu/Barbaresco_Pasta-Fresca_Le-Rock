@@ -60,7 +60,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsMakiRolls" />
+          <productCard :products="makiRoll" />
         </div>
       </div>
 
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="col-sm-9">
-          <productCard :products="extractedProductsPhotoMakiRolls" />
+          <productCard :products="futoMakiRoll" />
         </div>
       </div>
 
@@ -119,7 +119,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsOriginalRoll" />
+          <productCard :products="originalRoll" />
         </div>
       </div>
 
@@ -149,7 +149,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsCaliforniaRoll" />
+          <productCard :products="californiaRoll" />
         </div>
       </div>
 
@@ -179,7 +179,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsPhiladelphiaRoll" />
+          <productCard :products="philadelphiaRoll" />
         </div>
       </div>
 
@@ -209,7 +209,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="extractedProductsDrakoniRoll" />
+          <productCard :products="drakoniRoll" />
         </div>
       </div>
     </div>
@@ -217,7 +217,7 @@
 </template>
 
 <script>
-import barbarescoCollection from '~/gql/barbaresco'
+import { makiRoll, drakoniRoll, futoMakiRoll, originalRoll, californiaRoll, PhiladelphiaRoll } from '~/gql/barbarescoSushi.js'
 import productCard from '~/components/Barbaresco/TheProductsCardCategories'
 
 export default {
@@ -228,9 +228,29 @@ export default {
   },
 
   apollo: {
-    barbarescoCollection: {
+    makiRoll: {
       prefetch: true,
-      query: barbarescoCollection
+      query: makiRoll
+    },
+    drakoniRoll: {
+      prefetch: true,
+      query: drakoniRoll
+    },
+    futoMakiRoll: {
+      prefetch: true,
+      query: futoMakiRoll
+    },
+    originalRoll: {
+      prefetch: true,
+      query: originalRoll
+    },
+    californiaRoll: {
+      prefetch: true,
+      query: californiaRoll
+    },
+    PhiladelphiaRoll: {
+      prefetch: true,
+      query: PhiladelphiaRoll
     }
   },
 

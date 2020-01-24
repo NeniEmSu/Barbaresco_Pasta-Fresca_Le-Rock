@@ -47,7 +47,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksCoffeIcon.png"
+                src="~/assets/img/barbarescoDrinksCoffeIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -57,7 +57,7 @@
                 {{ $t('coffee') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksCoffeIcon.png"
+                src="~/assets/img/barbarescoDrinksCoffeIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -124,7 +124,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksCoffeIcon.png"
+                src="~/assets/img/barbarescoDrinksCoffeIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -134,7 +134,7 @@
                 {{ $t('coffee') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksCoffeIcon.png"
+                src="~/assets/img/barbarescoDrinksCoffeIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -201,7 +201,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksCoffeIcon.png"
+                src="~/assets/img/barbarescoDrinksCoffeIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -211,7 +211,7 @@
                 {{ $t('coffee') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksCoffeIcon.png"
+                src="~/assets/img/barbarescoDrinksCoffeIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -280,7 +280,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
+                src="~/assets/img/barbarescoDrinksTeaLeafIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -290,7 +290,7 @@
                 {{ $t('tea') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
+                src="~/assets/img/barbarescoDrinksTeaLeafIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -356,7 +356,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
+                src="~/assets/img/barbarescoDrinksTeaLeafIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -366,7 +366,7 @@
                 {{ $t('tea') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
+                src="~/assets/img/barbarescoDrinksTeaLeafIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -432,7 +432,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
+                src="~/assets/img/barbarescoDrinksTeaLeafIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -442,7 +442,7 @@
                 {{ $t('tea') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksTeaLeafIcon.png"
+                src="~/assets/img/barbarescoDrinksTeaLeafIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -510,7 +510,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -520,7 +520,7 @@
                 {{ $t('coldDrinks') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -587,7 +587,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -597,7 +597,7 @@
                 {{ $t('coldDrinks') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -664,7 +664,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -674,7 +674,7 @@
                 {{ $t('coldDrinks') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -743,7 +743,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -753,7 +753,7 @@
                 {{ $t('lemonade') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -820,7 +820,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -830,7 +830,7 @@
                 {{ $t('lemonade') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -897,7 +897,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -907,7 +907,7 @@
                 {{ $t('lemonade') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -976,7 +976,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -986,7 +986,7 @@
                 {{ $t('smoothy') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -1053,7 +1053,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -1063,7 +1063,7 @@
                 {{ $t('smoothy') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -1130,7 +1130,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -1140,7 +1140,7 @@
                 {{ $t('smoothy') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -1209,7 +1209,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -1219,7 +1219,7 @@
                 {{ $t('milkShake') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -1286,7 +1286,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -1296,7 +1296,7 @@
                 {{ $t('milkShake') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -1363,7 +1363,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -1373,7 +1373,7 @@
                 {{ $t('milkShake') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -1442,7 +1442,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -1452,7 +1452,7 @@
                 {{ $t('noneAlcoholicDrinks') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -1519,7 +1519,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -1529,7 +1529,7 @@
                 {{ $t('noneAlcoholicDrinks') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
@@ -1596,7 +1596,7 @@
           <div class="card card-cat mx-auto">
             <div class="m-auto text-center">
               <img
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="d-inline-block d-sm-none m-auto text-center"
                 align="left"
@@ -1606,7 +1606,7 @@
                 {{ $t('noneAlcoholicDrinks') }}
               </h2>
               <b-img-lazy
-                src="~/assets/img/barbarescoDrinksFreshIcon.png"
+                src="~/assets/img/barbarescoDrinksFreshIconWhite.png"
                 alt="icon"
                 class="m-auto d-none d-sm-block"
               />
