@@ -1,896 +1,151 @@
 [
-    {
-        "nameEn": "Caesar with chicken",
-        "id": "lr-sal-1",
-        "volumeEn": "250g",
-        "summaryEn": "chicken fillet, bacon, lettuce, tomato, quail eggs, caesar sauce"
-    },
-    {
-        "nameEn": "Rhodes",
-        "id": "lr-sal-2",
-        "volumeEn": "250g",
-        "summaryEn": "fresh tomato, cucumber, bell pepper, mousse dor blue, arugula sauce"
-    },
-    {
-        "nameEn": "Grilled Veal Salad",
-        "id": "lr-sal-3",
-        "volumeEn": "250g",
-        "summaryEn": "grilled veal, tomato, bell peppers, zucchini, mushrooms, signature sauce"
-    },
-    {
-        "nameEn": "Rococo",
-        "id": "lr-sal-4",
-        "volumeEn": "250g",
-        "summaryEn": "chicken meat with chicken, broccoli, mushrooms, zucchini, green beans, carrots, cheese sauce"
-    },
-    {
-        "nameEn": "Salmon salad",
-        "id": "lr-sal-5",
-        "volumeEn": "300g",
-        "summaryEn": "salted salmon, tomato, lettuce, broccoli, Philadelphia cheese, honey-mustard sauce"
-    },
-    {
-        "nameEn": "Liver salad",
-        "id": "lr-sal-6",
-        "volumeEn": "250g",
-        "summaryEn": "salad leaves, caramelized apple, arugula, grilled peppers, tomatoes, chicken liver, olive oil, balsamic vinegar"
-    },
-    {
-        "nameEn": "New York Steak",
-        "id": "lr-mbbq-1",
-        "volumeEn": "250g",
-        "summaryEn": "juicy meat from the lumbar part"
-    },
-    {
-        "nameEn": "Ribeye Steak",
-        "id": "lr-mbbq-2",
-        "volumeEn": "250g",
-        "summaryEn": "meat from the subclavian part of the carcass, has a large amount of fat"
-    },
-    {
-        "nameEn": "Filet Mignon",
-        "id": "lr-mbbq-3",
-        "volumeEn": "200g",
-        "summaryEn": "the most delicate and lean part of the beef"
-    },
-    {
-        "nameEn": "Pork steak",
-        "id": "lr-mbbq-4",
-        "volumeEn": "200/140 / 30g",
-        "summaryEn": "with string beans and pesto"
-    },
-    {
-        "nameEn": "Half chicken",
-        "id": "lr-mbbq-5",
-        "volumeEn": "300/120 / 30g",
-        "summaryEn": "with grilled mushrooms and mustard sauce"
-    },
-    {
-        "nameEn": "Pork leg with mashed potatoes",
-        "id": "lr-mbbq-6",
-        "volumeEn": "380 / 150g",
-        "summaryEn": "(Grouse) (Served with Roquefort puree)"
-    },
-    {
-        "nameEn": "Pork on a bone with baked potatoes",
-        "id": "lr-mbbq-7",
-        "volumeEn": "270/250 / 30g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Assorted Grilled Meat",
-        "id": "lr-mbbq-8",
-        "volumeEn": "1500g",
-        "summaryEn": "beef steak, pork steak, chicken fillet, sausages, baked potatoes, 2 sauces"
-    },
-    {
-        "nameEn": "Salted peanut with pumpkin seeds",
-        "id": "lr-mbbq-9",
-        "volumeEn": "100g",
-        "summaryEn": "mozzarella, chicken fillet, bacon, cherry tomatoes, parmesan, mix salad, cream sauce"
-    },
-    {
-        "nameEn": "French Wings",
-        "id": "lr-mbbq-10",
-        "volumeEn": "250g",
-        "summaryEn": "spicy / mustard sauce"
-    },
-    {
-        "nameEn": "Cheese sticks",
-        "id": "lr-mbbq-11",
-        "volumeEn": "250g",
-        "summaryEn": "cranberry sauce / garlic"
-    },
-    {
-        "nameEn": "Crispy Ears in Soy Sauce",
-        "id": "lr-mbbq-12",
-        "volumeEn": "150g",
-        "summaryEn": "sharp / not sharp"
-    },
-    {
-        "nameEn": "Sausages in Bacon",
-        "id": "lr-mbbq-13",
-        "volumeEn": "300 / 30g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Shrimp to beer",
-        "id": "lr-mbbq-14",
-        "volumeEn": "100 / 30g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Smoked Pork Ribs BBQ",
-        "id": "lr-mbbq-15",
-        "volumeEn": "300 / 30g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Potato croquettes",
-        "id": "lr-mbbq-16",
-        "volumeEn": "200/130/30 / 50g",
-        "summaryEn": "chicken / pig"
-    },
-    {
-        "nameEn": "Company Ribs",
-        "id": "lr-mbbq-17",
-        "volumeEn": "800/300 / 100g",
-        "summaryEn": "chicken / pig"
-    },
-    {
-        "nameEn": "With pork",
-        "id": "lr-rd-1",
-        "volumeEn": "200/100 / 30g",
-        "summaryEn": "+ french fries and sauce"
-    },
-    {
-        "nameEn": "With chicken",
-        "id": "lr-rd-2",
-        "volumeEn": "200/100 / 30g",
-        "summaryEn": "+ french fries and sauce"
-    },
-    {
-        "nameEn": "With sausage and bacon",
-        "id": "lr-rd-3",
-        "volumeEn": "200/100 / 30g",
-        "summaryEn": "+ french fries and sauce"
-    },
-    {
-        "nameEn": "- With potatoes and chicken",
-        "id": "lr-fp-1",
-        "volumeEn": "600g",
-        "summaryEn": "+ cabbage salad"
-    },
-    {
-        "nameEn": "- With potatoes and pork",
-        "id": "lr-fp-2",
-        "volumeEn": "600g",
-        "summaryEn": "+ pickled cucumber"
-    },
-    {
-        "nameEn": "- With potatoes, sausage and bacon",
-        "id": "lr-fp-3",
-        "volumeEn": "600g",
-        "summaryEn": "+ pickled cucumber"
-    },
-    {
-        "nameEn": "NAPOLEON",
-        "id": "lr-d-1",
-        "volumeEn": "160g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Cheesecake",
-        "id": "lr-d-2",
-        "volumeEn": "150g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Carrot Spicy Cake",
-        "id": "lr-d-3",
-        "volumeEn": "200g",
-        "summaryEn": "Cherry Mint, Peach, Caramel"
-    },
-    {
-        "nameEn": "Chocolate Cake",
-        "id": "lr-d-4",
-        "volumeEn": "150g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Peach compote",
-        "id": "lr-d-5",
-        "volumeEn": "170g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "CHICKEN BULLION",
-        "id": "lr-fc-1",
-        "volumeEn": "300g",
-        "summaryEn": "with pieces of chicken and homemade paste"
-    },
-    {
-        "nameEn": "Chowder Corn Soup",
-        "id": "lr-fc-2",
-        "volumeEn": "300g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Cutlet Cordon Blue",
-        "id": "lr-mm-1",
-        "volumeEn": "345/150 / 30g",
-        "summaryEn": "served with mashed potatoes"
-    },
-    {
-        "nameEn": "Chicken fillet on spinach pillow under cream sauce",
-        "id": "lr-mm-2",
-        "volumeEn": "350g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Shrimps with oyster sauce and Chuka salad",
-        "id": "lr-mm-3",
-        "volumeEn": "80 / 60 / 15g ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Grilled Salmon",
-        "id": "lr-mm-4",
-        "volumeEn": "150/100 / 30g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Egg with sausage and bacon",
-        "id": "lr-mm-5",
-        "volumeEn": "380g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Egg with ham and tomatoes",
-        "id": "lr-mm-6",
-        "volumeEn": "400g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Grilled lavash with cheese, tomatoes and herbs",
-        "id": "lr-mm-7",
-        "volumeEn": "330g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Chicken pancakes with spinach sauce",
-        "id": "lr-mm-8",
-        "volumeEn": "300 / 100g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Bruschetti",
-        "id": "lr-app-1",
-        "volumeEn": "3pcs",
-        "summaryEn": "with chorizo, with veal, with vegetables"
-    },
-    {
-        "nameEn": "Chicken pate",
-        "id": "lr-app-2",
-        "volumeEn": "200g",
-        "summaryEn": "served with croutons"
-    },
-    {
-        "nameEn": "Pickled vegetables",
-        "id": "lr-app-3",
-        "volumeEn": "400g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Cheese Plateau",
-        "id": "lr-app-4",
-        "volumeEn": "170g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Meat Plateau",
-        "id": "lr-app-5",
-        "volumeEn": "170g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Beer Plate",
-        "id": "lr-app-f-b-1",
-        "volumeEn": "150g",
-        "summaryEn": "rye croutons, cured meats, garlic sauce"
-    },
-    {
-        "nameEn": "Pickles",
-        "id": "lr-app-f-b-2",
-        "volumeEn": "100 / 30g",
-        "summaryEn": "served with croutons"
-    },
-    {
-        "nameEn": "Rye croutons",
-        "id": "lr-app-f-b-3",
-        "volumeEn": "150g",
-        "summaryEn": "with garlic sauce"
-    },
-    {
-        "nameEn": "Chicken Popcorn",
-        "id": "lr-app-f-b-4",
-        "volumeEn": "200g",
-        "summaryEn": "with garlic sauce"
-    },
-    {
-        "nameEn": "Beer board for the company",
-        "id": "lr-app-f-b-5",
-        "volumeEn": "600g",
-        "summaryEn": "cheese sticks, nuggets, bacon sausages, snacks, grissini, tartar sauce"
-    },
-    {
-        "nameEn": "GRILLED VEGETABLES",
-        "id": "lr-gar-1",
-        "volumeEn": "300g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Thai Style Vegetables",
-        "id": "lr-gar-2",
-        "volumeEn": "250g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Grilled Rice",
-        "id": "lr-gar-3",
-        "volumeEn": "210g",
-        "summaryEn": "With rosemary and bacon"
-    },
-    {
-        "nameEn": "French fries (with sauce)",
-        "id": "lr-gar-4",
-        "volumeEn": "150g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "POTATOES",
-        "id": "lr-gar-5",
-        "volumeEn": "200g",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Ciabata",
-        "id": "lr-gar-6",
-        "volumeEn": "1pc",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Espresso",
-        "id": "l-r-c-1",
-        "volumeEn": "",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "AMERICAN",
-        "id": "l-r-c-2",
-        "volumeEn": "",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Cappuccino",
-        "id": "l-r-c-3",
-        "volumeEn": "",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "LATE",
-        "id": "l-r-c-4",
-        "volumeEn": "",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Pistachio latte",
-        "id": "l-r-c-5",
-        "volumeEn": "",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Late Coconuts",
-        "id": "l-r-c-6",
-        "volumeEn": "",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Cocoa Blackberries",
-        "id": "l-r-c-7",
-        "volumeEn": "",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Flat White",
-        "id": "l-r-c-8",
-        "volumeEn": "",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Brewed Tea",
-        "id": "l-r-tea-1",
-        "volumeEn": "600ml",
-        "summaryEn": "black / green / fruity"
-    },
-    {
-        "nameEn": "Jasmine Blueberry Tea",
-        "id": "l-r-tea-2",
-        "volumeEn": "600ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Rosemary-Tea",
-        "id": "l-r-tea-3",
-        "volumeEn": "600ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Mango tea with dried apricots",
-        "id": "l-r-tea-4",
-        "volumeEn": "250ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Mint Lime Tea",
-        "id": "l-r-tea-5",
-        "volumeEn": "250ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Vanilla Cherry",
-        "id": "l-r-tea-6",
-        "volumeEn": "300ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Popcorn Cinnamon",
-        "id": "l-r-tea-7",
-        "volumeEn": "300ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Caramel Salon",
-        "id": "l-r-tea-8",
-        "volumeEn": "300ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Devices",
-        "id": "l-r-d-1",
-        "volumeEn": "500ml",
-        "summaryEn": "weak gas / not gas."
-    },
-    {
-        "nameEn": "Borjomi",
-        "id": "l-r-d-2",
-        "volumeEn": "500ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Tonic Evervess",
-        "id": "l-r-d-3",
-        "volumeEn": "330ml",
-        "summaryEn": "weak gas / not gas."
-    },
-    {
-        "nameEn": "Pepsi",
-        "id": "l-r-d-4",
-        "volumeEn": "250ml",
-        "summaryEn": "spill"
-    },
-    {
-        "nameEn": "Berry Sea",
-        "id": "l-r-d-5",
-        "volumeEn": "250ml",
-        "summaryEn": "own cooking"
-    },
-    {
-        "nameEn": "Orange",
-        "id": "l-r-fre-1",
-        "volumeEn": "250ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Grapefruit",
-        "id": "l-r-fre-2",
-        "volumeEn": "250ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "PACKAGED JUICE",
-        "id": "l-r-fre-3",
-        "volumeEn": "250ml",
-        "summaryEn": "Orange, pineapple, peach, cherry, apple, tomato, grapefruit"
-    },
-    {
-        "nameEn": "Jasmine Raspberry",
-        "id": "b-lem-1",
-        "volumeEn": "350ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Pineapple Basil",
-        "id": "b-lem-2",
-        "volumeEn": "350ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Apple Kiwi",
-        "id": "b-lem-3",
-        "volumeEn": "350ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Grapefruit",
-        "id": "b-lem-4",
-        "volumeEn": "350ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Litchi Coconut",
-        "id": "b-lem-5",
-        "volumeEn": "350ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Avocado kiwi with parsley",
-        "id": "l-r-we-1",
-        "volumeEn": "250ml",
-        "summaryEn": "melon, passion fruit and peach puree"
-    },
-    {
-        "nameEn": "Melon Mango",
-        "id": "l-r-we-2",
-        "volumeEn": "250ml",
-        "summaryEn": "spinach, banana, apple juice, passion fruit puree"
-    },
-    {
-        "nameEn": "Mojito Kiwi",
-        "id": "l-r-alcc-1",
-        "volumeEn": "300ml",
-        "summaryEn": "captain morgan spice, monin kiwi puree, mint, lime, soda, kiwi"
-    },
-    {
-        "nameEn": "Mojito n / a",
-        "id": "l-r-alcc-1-a",
-        "volumeEn": "300ml",
-        "summaryEn": "Cane sugar, lime, mint, soda"
-    },
-    {
-        "nameEn": "Aperol Spritz",
-        "id": "l-r-alcc-2",
-        "volumeEn": "200ml",
-        "summaryEn": "beefeater pink, aperol, elderberry syrup, lemon juice, sparkling wine, soda"
-    },
-    {
-        "nameEn": "Bloody Mary",
-        "id": "l-r-alcc-3",
-        "volumeEn": "250ml",
-        "summaryEn": "Vodka, Tabasco & Worcester Sauces, Spice Mix, Lemon Fresh, Tomato Juice"
-    },
-    {
-        "nameEn": "Bloody Mary",
-        "id": "l-r-alcc-3-a",
-        "volumeEn": "250ml",
-        "summaryEn": "Tomato juice, tabasco and worcester sauces, spice mix, lemon fresh"
-    },
-    {
-        "nameEn": "Negroni",
-        "id": "l-r-alcc-4",
-        "volumeEn": "120ml",
-        "summaryEn": "Gin Bombay Sapphire, Campari, Cinzano Antica"
-    },
-    {
-        "nameEn": "Yummy Kiss Fizz",
-        "id": "l-r-alcc-5",
-        "volumeEn": "200ml",
-        "summaryEn": "captain morgan black, passion fruit passion fruit Monin, amaro di angostura, lemon fresh, protein, soda"
-    },
-    {
-        "nameEn": "Maple Old Fashioned",
-        "id": "l-r-alcc-6",
-        "volumeEn": "100ml",
-        "summaryEn": "wild turkey 101, maple syrup, cynar, angostura"
-    },
-    {
-        "nameEn": "Wild Pinelime",
-        "id": "l-r-alcc-7",
-        "volumeEn": "150ml",
-        "summaryEn": "espolon reposado, pineapple puree, basil, lime"
-    },
-    {
-        "nameEn": "Purple Gin Tonic",
-        "id": "l-r-alcc-8",
-        "volumeEn": "200ml",
-        "summaryEn": "gordon's, yuzu monin puree, fresh lime, tonic, blue tea concentrate"
-    },
-    {
-        "nameEn": "Basil Smash",
-        "id": "l-r-alcc-9",
-        "volumeEn": "120ml",
-        "summaryEn": "gordon's, basil, sugar syrup, lime"
-    },
-    {
-        "nameEn": "Snow White",
-        "id": "l-r-alcc-10",
-        "volumeEn": "200ml",
-        "summaryEn": "finlandia original, passion fruit puree and yuzu Monin, pineapple juice, protein"
-    },
-    {
-        "nameEn": "Aperol Ramos gin fizz",
-        "id": "l-r-alcc-11",
-        "volumeEn": "200ml",
-        "summaryEn": "gordon's, aperol, fresh lime, sugar syrup, cream, protein, soda"
-    },
-    {
-        "nameEn": "Beetroot",
-        "id": "l-r-alcc-12",
-        "volumeEn": "200ml",
-        "summaryEn": "finlandia original, monin agave syrup, grapefruit fresh, beet puree"
-    },
-    {
-        "nameEn": "Strawberry french",
-        "id": "l-r-alcc-13",
-        "volumeEn": "150ml",
-        "summaryEn": "beefeater pink, sparkling wine, strawberry syrup Monin"
-    },
-    {
-        "nameEn": "Knickerboker",
-        "id": "l-r-alcc-14",
-        "volumeEn": "150ml",
-        "summaryEn": "captain morgan black, triple sec, spicy mango monin syrup, lemon fresh"
-    },
-    {
-        "nameEn": "Cheese Gin Garden",
-        "id": "l-r-alcc-15",
-        "volumeEn": "150ml",
-        "summaryEn": "gordon's, elder syrup and cucumber Monin, lemon fresh, Philadelphia cheese"
-    },
-    {
-        "nameEn": "The Walking Dead",
-        "id": "l-r-alcc-16",
-        "volumeEn": "250ml",
-        "summaryEn": "bacardi oakheart, captain morgan black, plantation overproot, apricot Brandy, Luxardo Maraschino, lychee Monin puree, fresh lime, grapefruit juice, cinnamon"
-    },
-    {
-        "nameEn": "Papa on the Rock's",
-        "id": "l-r-alcc-17",
-        "volumeEn": "150ml",
-        "summaryEn": "bacardi oakheart, grapefruit syrup Monin, falerum, fresh lime"
-    },
-    {
-        "nameEn": "Tierra Eden Tierra Eden",
-        "id": "l-r-wine-1",
-        "volumeEn": "100ml",
-        "summaryEn": "white n / s. red n / c. "
-    },
-    {
-        "nameEn": "Tierra Eden Tierra Eden",
-        "id": "l-r-wine-1-a",
-        "volumeEn": "750ml",
-        "summaryEn": "white n / s. red n / c. "
-    },
-    {
-        "nameEn": "Tierra Eden Tierra Eden",
-        "id": "l-r-wine-1-1",
-        "volumeEn": "100ml",
-        "summaryEn": "red dry / white dry"
-    },
-    {
-        "nameEn": "Tierra Eden Tierra Eden",
-        "id": "l-r-wine-1-1-a",
-        "volumeEn": "750ml",
-        "summaryEn": "red dry / white dry"
-    },
-    {
-        "nameEn": "Casa Verde Merlot Casa Verde Merlot",
-        "id": "l-r-wine-2",
-        "volumeEn": "100ml",
-        "summaryEn": "red dry / white dry"
-    },
-    {
-        "nameEn": "Casa Verde Merlot Casa Verde Merlot",
-        "id": "l-r-wine-2-1",
-        "volumeEn": "750ml",
-        "summaryEn": "red dry / white dry"
-    },
-    {
-        "nameEn": "J.P. Chenet Jean Paul Schanet ",
-        "id": "l-r-wine-3",
-        "volumeEn": "100ml",
-        "summaryEn": "pink ns"
-    },
-    {
-        "nameEn": "J.P. Chenet Jean Paul Schanet ",
-        "id": "l-r-wine-3-1",
-        "volumeEn": "750ml",
-        "summaryEn": "pink ns"
-    },
-    {
-        "nameEn": "Asti Mondoro",
-        "id": "l-r-swine-1",
-        "volumeEn": "750ml",
-        "summaryEn": "Asti Mondoro"
-    },
-    {
-        "nameEn": "Fragolino Rosso",
-        "id": "l-r-swine-2",
-        "volumeEn": "750ml",
-        "summaryEn": "Fragolino"
-    },
-    {
-        "nameEn": "Salute",
-        "id": "l-r-swine-3",
-        "volumeEn": "750ml",
-        "summaryEn": "pink"
-    },
-    {
-        "nameEn": "Salute",
-        "id": "l-r-swine-3-1",
-        "volumeEn": "750ml",
-        "summaryEn": "pink n / c"
-    },
-    {
-        "nameEn": "Pistachio",
-        "id": "l-r-als-1",
-        "volumeEn": "210ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Blackberry",
-        "id": "l-r-als-2",
-        "volumeEn": "210ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Cherry",
-        "id": "l-r-als-3",
-        "volumeEn": "210ml",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Bombay Sapphire",
-        "id": "l-r-gin-1",
-        "volumeEn": "50 ml ",
-        "summaryEn": "Bombay Sapphire"
-    },
-    {
-        "nameEn": "Beefeater",
-        "id": "l-r-gin-2",
-        "volumeEn": "50 ml ",
-        "summaryEn": "Beafeater"
-    },
-    {
-        "nameEn": "Captain Morgan Black",
-        "id": "l-r-rom-1",
-        "volumeEn": "50 ml ",
-        "summaryEn": "Captain Morgan is dark"
-    },
-    {
-        "nameEn": "Captain Morgan Gold",
-        "id": "l-r-rom-2",
-        "volumeEn": "50 ml ",
-        "summaryEn": "Captain Morgan is golden"
-    },
-    {
-        "nameEn": "Bacardi Oakhead",
-        "id": "l-r-rom-3",
-        "volumeEn": "50 ml ",
-        "summaryEn": "Bacardi Oakhart"
-    },
-    {
-        "nameEn": "Finland",
-        "id": "l-r-vodka-1",
-        "volumeEn": "50 ml ",
-        "summaryEn": "classic, cranberry"
-    },
-    {
-        "nameEn": "Won",
-        "id": "l-r-vodka-2",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Cossack Board Classic",
-        "id": "l-r-vodka-3",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Espolon",
-        "id": "l-r-vodka-1",
-        "volumeEn": "50 ml ",
-        "summaryEn": "blank / reposado"
-    },
-    {
-        "nameEn": "Becherovka",
-        "id": "l-r-diva-1",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Yegermeister",
-        "id": "l-r-diva-2",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Becherovka",
-        "id": "l-r-konbrand-1",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Aznauri",
-        "id": "l-r-konbrand-2",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Campari",
-        "id": "l-r-aperitifs-1",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Cinzano bianCo, Rosso",
-        "id": "l-r-aperitifs-2",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "amara avern",
-        "id": "l-r-aperitifs-3",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "conifer",
-        "id": "l-r-aperitifs-4",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Wilde Tork 81",
-        "id": "l-r-whisky-1",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Wilde Torky 101",
-        "id": "l-r-whisky-2",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Wilde Thorkee Paradise",
-        "id": "l-r-whisky-3",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Jack Daniels",
-        "id": "l-r-whisky-4",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Jack Daniels Hani",
-        "id": "l-r-whisky-5",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "Jameson",
-        "id": "l-r-whisky-6",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    },
-    {
-        "nameEn": "tomato mascot",
-        "id": "l-r-whisky-7",
-        "volumeEn": "50 ml ",
-        "summaryEn": ""
-    }
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
 ]

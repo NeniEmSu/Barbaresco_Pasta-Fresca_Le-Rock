@@ -1,896 +1,151 @@
 [
-    {
-        "nameRu": "Цезарь с курицей",
-        "id": "lr-sal-1",
-        "volumeRu": "250г",
-        "summaryRu": "филе курицы, бекон, листья салата, помидор, перепелиные яйца, соус цезарь"
-    },
-    {
-        "nameRu": "Родос",
-        "id": "lr-sal-2",
-        "volumeRu": "250г",
-        "summaryRu": "свежий помидор, огурец, перец болгарский, мусс дор блю, соус из рукколы"
-    },
-    {
-        "nameRu": "Гриль салат с телятиной",
-        "id": "lr-sal-3",
-        "volumeRu": "250г",
-        "summaryRu": "телятина гриль, помидор, перец болгарский, кабачок, грибы, фирменный соус"
-    },
-    {
-        "nameRu": "Rokoko",
-        "id": "lr-sal-4",
-        "volumeRu": "250г",
-        "summaryRu": "мясо с бедра курицы, брокколи, грибы, кабачок, стручковая фасоль, морковь, заправляется сырным соусом"
-    },
-    {
-        "nameRu": "Салат с лососем",
-        "id": "lr-sal-5",
-        "volumeRu": "300г",
-        "summaryRu": "слабосоленая лосось, помидор, лист салата, брокколи, сыр филадельфия, соус медово-горчичный"
-    },
-    {
-        "nameRu": "Салат из печени",
-        "id": "lr-sal-6",
-        "volumeRu": "250г",
-        "summaryRu": "листья салата, карамелизированное яблоко, рукула, перец гриль, помидоры, куриная печень, оливковое масло, уксус бальзамик"
-    },
-    {
-        "nameRu": "Стейк New York",
-        "id": "lr-mbbq-1",
-        "volumeRu": "250г",
-        "summaryRu": "сочное мясо с поясничной части"
-    },
-    {
-        "nameRu": "Стейк Рибай",
-        "id": "lr-mbbq-2",
-        "volumeRu": "250г",
-        "summaryRu": "мясо из подлопаточной части туши, имеет большое количество жировых прожилок"
-    },
-    {
-        "nameRu": "Филе Миньон",
-        "id": "lr-mbbq-3",
-        "volumeRu": "200г",
-        "summaryRu": "самая нежная, и постная часть говядины"
-    },
-    {
-        "nameRu": "Стейк свиной",
-        "id": "lr-mbbq-4",
-        "volumeRu": "200/140 / 30г",
-        "summaryRu": "со стручковой фасолью и песто"
-    },
-    {
-        "nameRu": "Half chicken",
-        "id": "lr-mbbq-5",
-        "volumeRu": "300/120 / 30г",
-        "summaryRu": "с грибами гриль и горчичным соусом"
-    },
-    {
-        "nameRu": "Свиная голень с картофельным пюре",
-        "id": "lr-mbbq-6",
-        "volumeRu": "380 / 150г",
-        "summaryRu": "(Рябчик) (подается с рокфорним пюре)"
-    },
-    {
-        "nameRu": "Свинина на кости с печеным картофелем",
-        "id": "lr-mbbq-7",
-        "volumeRu": "270/250 / 30г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Ассорти мяса гриль",
-        "id": "lr-mbbq-8",
-        "volumeRu": "1500г",
-        "summaryRu": "стейк из говядины, стейк свиной, куриное филе, колбаски, картофель печеный, 2 соусы"
-    },
-    {
-        "nameRu": "Соленый арахис с семенами тыквы",
-        "id": "lr-mbbq-9",
-        "volumeRu": "100г",
-        "summaryRu": "Моцарелла, филе курицы, бекон, помидоры черри, пармезан, микс-салат, сливочный соус"
-    },
-    {
-        "nameRu": "Крылья фри",
-        "id": "lr-mbbq-10",
-        "volumeRu": "250г",
-        "summaryRu": "острые / с горчичным соусом"
-    },
-    {
-        "nameRu": "Сырные палочки",
-        "id": "lr-mbbq-11",
-        "volumeRu": "250г",
-        "summaryRu": "соус из клюквы / чесночный"
-    },
-    {
-        "nameRu": "Хрустящие уши в соевом соусе",
-        "id": "lr-mbbq-12",
-        "volumeRu": "150г",
-        "summaryRu": "острые / не острые"
-    },
-    {
-        "nameRu": "Колбаски в беконе",
-        "id": "lr-mbbq-13",
-        "volumeRu": "300 / 30г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Креветки к пиву",
-        "id": "lr-mbbq-14",
-        "volumeRu": "100 / 30г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Копченые свиные ребра BBQ",
-        "id": "lr-mbbq-15",
-        "volumeRu": "300 / 30г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Колбаски собственного приготовления с картофельными крокетами",
-        "id": "lr-mbbq-16",
-        "volumeRu": "200/130/30 / 50г",
-        "summaryRu": "куриные / свиные"
-    },
-    {
-        "nameRu": "Ребра на компанию",
-        "id": "lr-mbbq-17",
-        "volumeRu": "800/300 / 100г",
-        "summaryRu": "куриные / свиные"
-    },
-    {
-        "nameRu": "С свининой",
-        "id": "lr-rd-1",
-        "volumeRu": "200/100 / 30г",
-        "summaryRu": "картофель фри, и соус"
-    },
-    {
-        "nameRu": "С курицей",
-        "id": "lr-rd-2",
-        "volumeRu": "200/100 / 30г",
-        "summaryRu": "картофель фри, и соус"
-    },
-    {
-        "nameRu": "С сосиской и беконом",
-        "id": "lr-rd-3",
-        "volumeRu": "200/100 / 30г",
-        "summaryRu": "картофель фри, и соус"
-    },
-    {
-        "nameRu": "- С картошкой и курицей",
-        "id": "lr-fp-1",
-        "volumeRu": "600г",
-        "summaryRu": "+ салат из капусты"
-    },
-    {
-        "nameRu": "- С картошкой и свининой",
-        "id": "lr-fp-2",
-        "volumeRu": "600г",
-        "summaryRu": "+ маринованный огурец"
-    },
-    {
-        "nameRu": "- С картофелем, колбаской и беконом",
-        "id": "lr-fp-3",
-        "volumeRu": "600г",
-        "summaryRu": "+ маринованный огурец"
-    },
-    {
-        "nameRu": "НАПОЛЕОН",
-        "id": "lr-d-1",
-        "volumeRu": "160г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Чизкейк",
-        "id": "lr-d-2",
-        "volumeRu": "150г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Морковно-пряный торт",
-        "id": "lr-d-3",
-        "volumeRu": "200г",
-        "summaryRu": "Вишнево-мятный, Персиковый, Карамель"
-    },
-    {
-        "nameRu": "Шоколадный торт",
-        "id": "lr-d-4",
-        "volumeRu": "150г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Персиковое компоте",
-        "id": "lr-d-5",
-        "volumeRu": "170г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Куриный бульон",
-        "id": "lr-fc-1",
-        "volumeRu": "300г",
-        "summaryRu": "с кусочками курицы и домашней пасты"
-    },
-    {
-        "nameRu": "Кукурузный суп чаудер",
-        "id": "lr-fc-2",
-        "volumeRu": "300г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Котлета Кордон-блю",
-        "id": "lr-mm-1",
-        "volumeRu": "345/150 / 30г",
-        "summaryRu": "подается с картофельным пюре"
-    },
-    {
-        "nameRu": "Куриное филе на шпинатной подушке под сливочным соусом",
-        "id": "lr-mm-2",
-        "volumeRu": "350г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Креветки с устричным соусом, и салатом Чука",
-        "id": "lr-mm-3",
-        "volumeRu": "80 / 60 / 15г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Лосось гриль",
-        "id": "lr-mm-4",
-        "volumeRu": "150/100 / 30г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Яичница с колбасой и беконом",
-        "id": "lr-mm-5",
-        "volumeRu": "380г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Яичница с ветчиной и томатами",
-        "id": "lr-mm-6",
-        "volumeRu": "400г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Гриль лаваш с сыром, томатами и зеленью",
-        "id": "lr-mm-7",
-        "volumeRu": "330г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Блины с курицей на шпинатную соусе",
-        "id": "lr-mm-8",
-        "volumeRu": "300 / 100г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Brusketi",
-        "id": "lr-app-1",
-        "volumeRu": "3шт",
-        "summaryRu": "с чоризо, с телятиной, с овощами"
-    },
-    {
-        "nameRu": "Куриный паштет",
-        "id": "lr-app-2",
-        "volumeRu": "200г",
-        "summaryRu": "подается с гренками"
-    },
-    {
-        "nameRu": "Маринованные овощи",
-        "id": "lr-app-3",
-        "volumeRu": "400г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Сырное плато",
-        "id": "lr-app-4",
-        "volumeRu": "170г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Mьясне плато",
-        "id": "lr-app-5",
-        "volumeRu": "170г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Пивная тарелка",
-        "id": "lr-app-f-b-1",
-        "volumeRu": "150г",
-        "summaryRu": "ржаные сухарики, вяленое мясо, чесночный соус"
-    },
-    {
-        "nameRu": "Соленик",
-        "id": "lr-app-f-b-2",
-        "volumeRu": "100 / 30г",
-        "summaryRu": "подается с гренками"
-    },
-    {
-        "nameRu": "Ржаные сухарики",
-        "id": "lr-app-f-b-3",
-        "volumeRu": "150г",
-        "summaryRu": "с чесночным соусом"
-    },
-    {
-        "nameRu": "Куриный попкорн",
-        "id": "lr-app-f-b-4",
-        "volumeRu": "200г",
-        "summaryRu": "с чесночным соусом"
-    },
-    {
-        "nameRu": "Пивная доска на компанию",
-        "id": "lr-app-f-b-5",
-        "volumeRu": "600г",
-        "summaryRu": "сырные палочки, наггетсы, колбаски в беконе, снеки, грисини, соус тартар"
-    },
-    {
-        "nameRu": "ОВОЩИ-ГРИЛЬ",
-        "id": "lr-gar-1",
-        "volumeRu": "300г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Овощи в тайском стиле",
-        "id": "lr-gar-2",
-        "volumeRu": "250г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Рис с овощами гриль",
-        "id": "lr-gar-3",
-        "volumeRu": "210г",
-        "summaryRu": "С розмарином и беконом"
-    },
-    {
-        "nameRu": "КАРТОФЕЛЬ ФРИ (с соусом)",
-        "id": "lr-gar-4",
-        "volumeRu": "150г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Картофельное пюре",
-        "id": "lr-gar-5",
-        "volumeRu": "200г",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Чиабата",
-        "id": "lr-gar-6",
-        "volumeRu": "1шт",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Эспрессо",
-        "id": "l-r-c-1",
-        "volumeRu": "",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "АМЕРИКАНО",
-        "id": "l-r-c-2",
-        "volumeRu": "",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "КАПУЧИНО",
-        "id": "l-r-c-3",
-        "volumeRu": "",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "латте",
-        "id": "l-r-c-4",
-        "volumeRu": "",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Латте фисташковое",
-        "id": "l-r-c-5",
-        "volumeRu": "",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Латте кокосовое",
-        "id": "l-r-c-6",
-        "volumeRu": "",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "ежевичный какао",
-        "id": "l-r-c-7",
-        "volumeRu": "",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Flat White",
-        "id": "l-r-c-8",
-        "volumeRu": "",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Чай заварной",
-        "id": "l-r-tea-1",
-        "volumeRu": "600мл",
-        "summaryRu": "черный / зелени / фруктовый"
-    },
-    {
-        "nameRu": "Чай жасмин-черника",
-        "id": "l-r-tea-2",
-        "volumeRu": "600мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Чай розмарин-яблоко",
-        "id": "l-r-tea-3",
-        "volumeRu": "600мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Чай облепиха-манго с курагой",
-        "id": "l-r-tea-4",
-        "volumeRu": "250мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Чай мята-лайм",
-        "id": "l-r-tea-5",
-        "volumeRu": "250мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Вишня-ваниль",
-        "id": "l-r-tea-6",
-        "volumeRu": "300мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Попкорн-корица",
-        "id": "l-r-tea-7",
-        "volumeRu": "300мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Соленая карамель",
-        "id": "l-r-tea-8",
-        "volumeRu": "300мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Девайтис",
-        "id": "l-r-d-1",
-        "volumeRu": "500мл",
-        "summaryRu": "слабо газ. / не газ."
-    },
-    {
-        "nameRu": "Боржоми",
-        "id": "l-r-d-2",
-        "volumeRu": "500мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Тоник Evervess",
-        "id": "l-r-d-3",
-        "volumeRu": "330мл",
-        "summaryRu": "слабо газ. / не газ."
-    },
-    {
-        "nameRu": "Pepsi",
-        "id": "l-r-d-4",
-        "volumeRu": "250мл",
-        "summaryRu": "разлив"
-    },
-    {
-        "nameRu": "Ягодный морс",
-        "id": "l-r-d-5",
-        "volumeRu": "250мл",
-        "summaryRu": "собственного приготовления"
-    },
-    {
-        "nameRu": "Апельсиновый",
-        "id": "l-r-fre-1",
-        "volumeRu": "250мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Грейпфрутовый",
-        "id": "l-r-fre-2",
-        "volumeRu": "250мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "СОК пакетированный",
-        "id": "l-r-fre-3",
-        "volumeRu": "250мл",
-        "summaryRu": "Апельсиновый, ананасовый, персиковый, вишневый, яблочный, томатный, грейпфрутовый"
-    },
-    {
-        "nameRu": "Малина-жасмин",
-        "id": "b-lem-1",
-        "volumeRu": "350мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Ананас-базилик",
-        "id": "b-lem-2",
-        "volumeRu": "350мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Яблоко-киви",
-        "id": "b-lem-3",
-        "volumeRu": "350мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Грейпфрутовый",
-        "id": "b-lem-4",
-        "volumeRu": "350мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Личи-кокос",
-        "id": "b-lem-5",
-        "volumeRu": "350мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Авокадо-киви с петрушкой",
-        "id": "l-r-smo-1",
-        "volumeRu": "250мл",
-        "summaryRu": "пюре дыни, маракуйи и персика"
-    },
-    {
-        "nameRu": "Дыня-манго",
-        "id": "l-r-smo-2",
-        "volumeRu": "250мл",
-        "summaryRu": "шпинат, банан, сок яблока, пюре маракуйи"
-    },
-    {
-        "nameRu": "Mojito Kiwi",
-        "id": "l-r-alcc-1",
-        "volumeRu": "300мл",
-        "summaryRu": "captain morgan spice, пюре киви Monin, мята, лайм, содовая, киви"
-    },
-    {
-        "nameRu": "Mojito n / а",
-        "id": "l-r-alcc-1-a",
-        "volumeRu": "300мл",
-        "summaryRu": "Тростниковый сахар, лайм, мята, содовая"
-    },
-    {
-        "nameRu": "Aperol Spritz",
-        "id": "l-r-alcc-2",
-        "volumeRu": "200мл",
-        "summaryRu": "beefeater pink, aperol, сироп бузина, лимонный фреш, игристое вино, содовая"
-    },
-    {
-        "nameRu": "Bloody Mаry",
-        "id": "l-r-alcc-3",
-        "volumeRu": "250мл",
-        "summaryRu": "Водка, соусы табаско и ворчестер, микс специй, лимонный фреш, томатный сок"
-    },
-    {
-        "nameRu": "Bloody Mary n / a",
-        "id": "l-r-alcc-3-a",
-        "volumeRu": "250мл",
-        "summaryRu": "Томатный сок, соусы табаско и ворчестер, микс специй, лимонный фреш"
-    },
-    {
-        "nameRu": "Negroni",
-        "id": "l-r-alcc-4",
-        "volumeRu": "120мл",
-        "summaryRu": "Джин Bombay Sapphire, Campari, Cinzano Antica"
-    },
-    {
-        "nameRu": "Yummy Kiss Fizz",
-        "id": "l-r-alcc-5",
-        "volumeRu": "200мл",
-        "summaryRu": "captain morgan black, пюре маракуйя Monin, amaro di angostura, лимонный фреш, белок, содовая"
-    },
-    {
-        "nameRu": "Maple Old fashioned",
-        "id": "l-r-alcc-6",
-        "volumeRu": "100мл",
-        "summaryRu": "wild turkey 101, кленовый сироп, cynar, ангостура"
-    },
-    {
-        "nameRu": "Wild Pinelime",
-        "id": "l-r-alcc-7",
-        "volumeRu": "150мл",
-        "summaryRu": "espolon reposado, пюре ананаса, базилик, лайм"
-    },
-    {
-        "nameRu": "Purple Gin Tonic",
-        "id": "l-r-alcc-8",
-        "volumeRu": "200мл",
-        "summaryRu": "gordon's, пюре юдзу Monin фреш лайма, тоник, концентрат синего чая"
-    },
-    {
-        "nameRu": "Basil Smash",
-        "id": "l-r-alcc-9",
-        "volumeRu": "120мл",
-        "summaryRu": "gordon's, базилик, сахарный сироп, лайм"
-    },
-    {
-        "nameRu": "Snow White",
-        "id": "l-r-alcc-10",
-        "volumeRu": "200мл",
-        "summaryRu": "finlandia original, пюре маракуйи и юдзу Monin, ананасовый сок, белок"
-    },
-    {
-        "nameRu": "Aperol Ramos gin fizz",
-        "id": "l-r-alcc-11",
-        "volumeRu": "200мл",
-        "summaryRu": "gordon's, aperol фреш лайма, сахарный сироп, сливки, белок, содовая"
-    },
-    {
-        "nameRu": "Beetroot",
-        "id": "l-r-alcc-12",
-        "volumeRu": "200мл",
-        "summaryRu": "finlandia original, сироп агавы Monin, грейпфрутовый фреш, пюре свеклы"
-    },
-    {
-        "nameRu": "Strawberry french",
-        "id": "l-r-alcc-13",
-        "volumeRu": "150мл",
-        "summaryRu": "beefeater pink, игристое вино, земляничный сироп Monin"
-    },
-    {
-        "nameRu": "Knickerboker",
-        "id": "l-r-alcc-14",
-        "volumeRu": "150мл",
-        "summaryRu": "captain morgan black, трипл сек, сироп острый манго Monin, лимонный фреш"
-    },
-    {
-        "nameRu": "Cheese gin garden",
-        "id": "l-r-alcc-15",
-        "volumeRu": "150мл",
-        "summaryRu": "gordon's, сироп бузина и огурец Monin, лимонный фреш, сыр Philadelphia"
-    },
-    {
-        "nameRu": "The Walking Dead",
-        "id": "l-r-alcc-16",
-        "volumeRu": "250мл",
-        "summaryRu": "bacardi oakheart, captain morgan black, plantation overproot, apricot Brandy, Luxardo Maraschino, пюре личи Monin фреш лайма, грейпфрутовый сок, корица"
-    },
-    {
-        "nameRu": "Papa on the Rock's",
-        "id": "l-r-alcc-17",
-        "volumeRu": "150мл",
-        "summaryRu": "bacardi oakheart, сироп грейпфрут Monin, фалернум фреш лайма"
-    },
-    {
-        "nameRu": "Tierra Eden Тиерра Эден",
-        "id": "l-r-wine-1",
-        "volumeRu": "100мл",
-        "summaryRu": "белое п / с. красное н / c. "
-    },
-    {
-        "nameRu": "Tierra Eden Тиерра Эден",
-        "id": "l-r-wine-1-a",
-        "volumeRu": "750мл",
-        "summaryRu": "белое п / с. красное н / c. "
-    },
-    {
-        "nameRu": "Tierra Eden Тиерра Эден",
-        "id": "l-r-wine-1-1",
-        "volumeRu": "100мл",
-        "summaryRu": "красное сухое / белое сухое"
-    },
-    {
-        "nameRu": "Tierra Eden Тиерра Эден",
-        "id": "l-r-wine-1-1-a",
-        "volumeRu": "750мл",
-        "summaryRu": "красное сухое / белое сухое"
-    },
-    {
-        "nameRu": "Casa Verde Merlot Касса Верде Мерло",
-        "id": "l-r-wine-2",
-        "volumeRu": "100мл",
-        "summaryRu": "красное сухое / белое сухое"
-    },
-    {
-        "nameRu": "Casa Verde Merlot Касса Верде Мерло",
-        "id": "l-r-wine-2-1",
-        "volumeRu": "750мл",
-        "summaryRu": "красное сухое / белое сухое"
-    },
-    {
-        "nameRu": "J.P. Chenet Жан Поль Шанет",
-        "id": "l-r-wine-3",
-        "volumeRu": "100мл",
-        "summaryRu": "розовое н.с"
-    },
-    {
-        "nameRu": "J.P. Chenet Жан Поль Шанет",
-        "id": "l-r-wine-3-1",
-        "volumeRu": "750мл",
-        "summaryRu": "розовое н.с"
-    },
-    {
-        "nameRu": "Asti Mondoro",
-        "id": "l-r-swine-1",
-        "volumeRu": "750мл",
-        "summaryRu": "Асти Мондоро"
-    },
-    {
-        "nameRu": "Fragolino Rosso",
-        "id": "l-r-swine-2",
-        "volumeRu": "750мл",
-        "summaryRu": "Фраголино"
-    },
-    {
-        "nameRu": "Salute",
-        "id": "l-r-swine-3",
-        "volumeRu": "750мл",
-        "summaryRu": "roze"
-    },
-    {
-        "nameRu": "Салюте",
-        "id": "l-r-swine-3-1",
-        "volumeRu": "750мл",
-        "summaryRu": "розовое н / c"
-    },
-    {
-        "nameRu": "Фисташковый",
-        "id": "l-r-als-1",
-        "volumeRu": "210мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Ежевичный",
-        "id": "l-r-als-2",
-        "volumeRu": "210мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Вишневый",
-        "id": "l-r-als-3",
-        "volumeRu": "210мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Bombay Sapphire",
-        "id": "l-r-gin-1",
-        "volumeRu": "50 мл",
-        "summaryRu": "Бомбей Сапфир"
-    },
-    {
-        "nameRu": "Beefeater",
-        "id": "l-r-gin-2",
-        "volumeRu": "50 мл",
-        "summaryRu": "Бифитер"
-    },
-    {
-        "nameRu": "Captain Morgan Black",
-        "id": "l-r-rom-1",
-        "volumeRu": "50 мл",
-        "summaryRu": "Капитан Морган темный"
-    },
-    {
-        "nameRu": "Captain Morgan Gold",
-        "id": "l-r-rom-2",
-        "volumeRu": "50 мл",
-        "summaryRu": "Капитан Морган золотой"
-    },
-    {
-        "nameRu": "Bacardи Оаkhеart",
-        "id": "l-r-rom-3",
-        "volumeRu": "50 мл",
-        "summaryRu": "Бакарди Oакхарт"
-    },
-    {
-        "nameRu": "Финляндия",
-        "id": "l-r-vodka-1",
-        "volumeRu": "50 мл",
-        "summaryRu": "классическая, клюква"
-    },
-    {
-        "nameRu": "Зубрiвка",
-        "id": "l-r-vodka-2",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Казацкая рада классическая",
-        "id": "l-r-vodka-3",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Эсполон",
-        "id": "l-r-vodka-1",
-        "volumeRu": "50 мл",
-        "summaryRu": "Бланки / репосадо"
-    },
-    {
-        "nameRu": "Бехеровка",
-        "id": "l-r-diva-1",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Егермейстер",
-        "id": "l-r-diva-2",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Бехеровка",
-        "id": "l-r-konbrand-1",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "азнауры",
-        "id": "l-r-konbrand-2",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Кампари",
-        "id": "l-r-aperitifs-1",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Cinzano bianCo, Rosso",
-        "id": "l-r-aperitifs-2",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Амаро Аверно",
-        "id": "l-r-aperitifs-3",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "чинар",
-        "id": "l-r-aperitifs-4",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Уайльд терки 81",
-        "id": "l-r-whisky-1",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Уайльд терки 101",
-        "id": "l-r-whisky-2",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Уайльд терки Рай",
-        "id": "l-r-whisky-3",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Джек Дэниелс",
-        "id": "l-r-whisky-4",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Джек Дэниелс Хани",
-        "id": "l-r-whisky-5",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Джеймсон",
-        "id": "l-r-whisky-6",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    },
-    {
-        "nameRu": "Томатина талисман",
-        "id": "l-r-whisky-7",
-        "volumeRu": "50 мл",
-        "summaryRu": ""
-    }
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
 ]
