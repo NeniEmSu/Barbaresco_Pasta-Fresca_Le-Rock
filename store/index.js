@@ -14,36 +14,36 @@ export const state = () => ({
 })
 
 export const getters = {
-  cartSize (state) {
+  cartSize(state) {
     return state.cart.length
   },
 
-  leRockCartSize (state) {
+  leRockCartSize(state) {
     return state.leRockCart.length
   },
 
-  pastaFrescaCartSize (state) {
+  pastaFrescaCartSize(state) {
     return state.pastaFrescaCart.length
   },
 
-  cartTotalAmount (state) {
+  cartTotalAmount(state) {
     return state.cart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
 
-  leRockCartTotalAmount (state) {
+  leRockCartTotalAmount(state) {
     return state.leRockCart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
-  pastaFrescaCartTotalAmount (state) {
+  pastaFrescaCartTotalAmount(state) {
     return state.pastaFrescaCart.reduce((total, product) => {
       return total + product.price * product.quantity
     }, 0)
   },
 
-  toast (state) {
+  toast(state) {
     return state.toast
   }
 }
@@ -58,12 +58,12 @@ export const actions = {
   //   })
   // },
 
-  async fetchProducts ({
+  async fetchProducts({
     commit
   }) {
     const client = this.app.apolloProvider.defaultClient
     await client.query({
-      query: gql`{
+      query: gql `{
         barbarescoCollection {
           _id
           nameEn
@@ -86,70 +86,81 @@ export const actions = {
             path
           }
         }
+        leRockCollection {
+          _id
+          nameEn
+          nameUk
+          nameRu
+          price
+          image
+          imageUri {
+            path
+          }
+        }
       }`
     }).then((products) => {
-      commit('setUpProducts', products.data.barbarescoCollection.concat(products.data.pastaFrescaCollection))
+      commit('setUpProducts', products.data.barbarescoCollection.concat(products.data.pastaFrescaCollection).concat(products.data.leRockCollection))
       commit('showToast', 'Продукти завантажені')
     })
   },
 
-  addToCart ({
+  addToCart({
     commit
   }, productId) {
     commit('addToCart', productId)
     commit('showToast', 'Додано з кошика')
   },
 
-  addToleRockCart ({
+  addToleRockCart({
     commit
   }, productId) {
     commit('addToleRockCart', productId)
     commit('showToast', 'Додано з кошика')
   },
 
-  addTopastaFrescaCart ({
+  addTopastaFrescaCart({
     commit
   }, productId) {
     commit('addTopastaFrescaCart', productId)
     commit('showToast', 'Додано з кошика')
   },
 
-  removeFromCart ({
+  removeFromCart({
     commit
   }, productId) {
     commit('removeFromCart', productId)
     commit('showToast', 'Видалено з кошика')
   },
 
-  removeFromleRockCart ({
+  removeFromleRockCart({
     commit
   }, productId) {
     commit('removeFromleRockCart', productId)
     commit('showToast', 'Видалено з кошика')
   },
 
-  removeFrompastaFrescaCart ({
+  removeFrompastaFrescaCart({
     commit
   }, productId) {
     commit('removeFrompastaFrescaCart', productId)
     commit('showToast', 'Видалено з кошика')
   },
 
-  deleteFromCart ({
+  deleteFromCart({
     commit
   }, productId) {
     commit('deleteFromCart', productId)
     commit('showToast', 'Видалено з кошика')
   },
 
-  deleteFromleRockCart ({
+  deleteFromleRockCart({
     commit
   }, productId) {
     commit('deleteFromleRockCart', productId)
     commit('showToast', 'Видалено з кошика')
   },
 
-  deleteFrompastaFrescaCart ({
+  deleteFrompastaFrescaCart({
     commit
   }, productId) {
     commit('deleteFrompastaFrescaCart', productId)
@@ -158,11 +169,11 @@ export const actions = {
 }
 
 export const mutations = {
-  setUpProducts (state, productsPayload) {
+  setUpProducts(state, productsPayload) {
     state.products = productsPayload
   },
 
-  addToCart (state, productId) {
+  addToCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProduct = state.cart.find(product => product._id === productId)
@@ -184,7 +195,7 @@ export const mutations = {
     product.quantity--
   },
 
-  removeFromCart (state, productId) {
+  removeFromCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProduct = state.cart.find(product => product._id === productId)
@@ -194,7 +205,7 @@ export const mutations = {
     product.quantity++
   },
 
-  deleteFromCart (state, productId) {
+  deleteFromCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProductIndex = state.cart.findIndex(
@@ -206,7 +217,7 @@ export const mutations = {
     state.cart.splice(cartProductIndex, 1)
   },
 
-  addToleRockCart (state, productId) {
+  addToleRockCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProduct = state.leRockCart.find(product => product._id === productId)
@@ -226,7 +237,7 @@ export const mutations = {
     product.quantity--
   },
 
-  removeFromleRockCart (state, productId) {
+  removeFromleRockCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProduct = state.leRockCart.find(product => product._id === productId)
@@ -236,7 +247,7 @@ export const mutations = {
     product.quantity++
   },
 
-  deleteFromleRockCart (state, productId) {
+  deleteFromleRockCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProductIndex = state.leRockCart.findIndex(
@@ -248,7 +259,7 @@ export const mutations = {
     state.leRockCart.splice(cartProductIndex, 1)
   },
 
-  addTopastaFrescaCart (state, productId) {
+  addTopastaFrescaCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProduct = state.pastaFrescaCart.find(product => product._id === productId)
@@ -268,7 +279,7 @@ export const mutations = {
     product.quantity--
   },
 
-  removeFrompastaFrescaCart (state, productId) {
+  removeFrompastaFrescaCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProduct = state.pastaFrescaCart.find(product => product._id === productId)
@@ -278,7 +289,7 @@ export const mutations = {
     product.quantity++
   },
 
-  deleteFrompastaFrescaCart (state, productId) {
+  deleteFrompastaFrescaCart(state, productId) {
     const product = state.products.find(product => product._id === productId)
 
     const cartProductIndex = state.pastaFrescaCart.findIndex(
@@ -290,32 +301,32 @@ export const mutations = {
     state.pastaFrescaCart.splice(cartProductIndex, 1)
   },
 
-  showToast (state, toastText) {
+  showToast(state, toastText) {
     state.toast.show = true
     state.toast.text = toastText
   },
 
-  hideToast (state) {
+  hideToast(state) {
     state.toast.show = false
     state.toast.text = ''
   },
 
-  emptyCart (state) {
+  emptyCart(state) {
     state.cart = []
     state.cartCount = 0
   },
 
-  emptyleRockCart (state) {
+  emptyleRockCart(state) {
     state.leRockCart = []
     state.leRockCartCount = 0
   },
 
-  emptypastaFrescaCart (state) {
+  emptypastaFrescaCart(state) {
     state.pastaFrescaCart = []
     state.pastaFrescaCartCount = 0
   },
 
-  SET_ANIMATION (state, animation) {
+  SET_ANIMATION(state, animation) {
     state.animation = animation
   }
 }
