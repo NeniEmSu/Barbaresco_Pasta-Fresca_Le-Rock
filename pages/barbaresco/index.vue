@@ -4,6 +4,7 @@
     "title": "Меню",
     "tooltip": "Передзвонимо за 1 хв.",
     "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас",
+    "instruction": "Будь ласка, виберіть категорію продуктів зверху!",
     "call":{
       "name": "Ім’я",
       "phone": "Телефон",
@@ -14,6 +15,7 @@
    "title": "Menu",
    "tooltip": "Call back in 1 minute",
    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us",
+   "instruction": "Please Select a Food Category Above!",
    "call":{
       "name": "Name",
       "phone": "Phone",
@@ -24,6 +26,7 @@
     "title": "Меню",
     "tooltip": "Перезвоним за 1 мин.",
     "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас",
+    "instruction": "Пожалуйста, выберите категорию продуктов выше!",
     "call":{
       "name": "название",
       "phone": "Телефон",
@@ -129,6 +132,16 @@
     </b-tooltip>
 
     <vue-page-transition name="fade">
+      <div
+        v-if="currentProductsDisplayed === 0"
+        class="container"
+        style="height: 300px;"
+      >
+        <h2 class="text-center pt-5 ">
+          {{ $t('instruction') }}
+        </h2>
+      </div>
+
       <ThePizza v-if="currentProductsDisplayed === 1" />
 
       <TheBugers v-if="currentProductsDisplayed === 2" />
@@ -224,7 +237,7 @@ export default {
           active: true
         }
       ],
-      currentProductsDisplayed: 1,
+      currentProductsDisplayed: 0,
       loading: false
 
     }
@@ -253,7 +266,7 @@ export default {
       localStorage.phone = newPhone
     },
     currentProductsDisplayed (newCurrentProductsDisplayed) {
-      localStorage.currentProductsDisplayed = newCurrentProductsDisplayed
+      sessionStorage.currentProductsDisplayed = newCurrentProductsDisplayed
     }
   },
 
@@ -267,8 +280,9 @@ export default {
     if (localStorage.phone) {
       this.phone = localStorage.phone
     }
-    if (localStorage.currentProductsDisplayed) {
-      this.currentProductsDisplayed = parseInt(localStorage.currentProductsDisplayed)
+
+    if (sessionStorage.currentProductsDisplayed) {
+      this.currentProductsDisplayed = parseInt(sessionStorage.currentProductsDisplayed)
     }
   },
 

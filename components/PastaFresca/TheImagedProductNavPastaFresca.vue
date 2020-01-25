@@ -149,7 +149,7 @@ export default {
   props: {
     currentProductsDisplayed: {
       type: Number,
-      default: 1,
+      default: 0,
       required: true
     }
   },

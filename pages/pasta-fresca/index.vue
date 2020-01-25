@@ -5,6 +5,7 @@
     "title": "Меню",
     "tooltip": "Передзвонимо за 1 хв.",
     "description": "Відкриваємо суперздібності від смаку нашої пасти Приходьте та спробуйте самі",
+    "instruction": "Будь ласка, виберіть категорію продуктів зверху!",
     "call":{
       "name": "Ім’я",
       "phone": "Телефон",
@@ -16,6 +17,7 @@
    "title": "Menu",
    "tooltip": "Call back in 1 minute",
    "description": "Компанія друзів, смачне меню і відмінна атмосфера - тільки в Le Rock!",
+   "instruction": "Please Select a Food Category Above!",
    "call":{
       "name": "Name",
       "phone": "Phone",
@@ -27,6 +29,7 @@
     "title": "Меню",
     "tooltip": "Перезвоним за 1 мин.",
     "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас",
+    "instruction": "Пожалуйста, выберите категорию продуктов выше!",
     "call":{
       "name": "название",
       "phone": "Телефон",
@@ -133,6 +136,15 @@
     </b-tooltip>
 
     <vue-page-transition name="fade">
+      <div
+        v-if="currentProductsDisplayed === 0"
+        class="container"
+        style="height: 300px;"
+      >
+        <h2 class="text-center pt-5 text-white">
+          {{ $t('instruction') }}
+        </h2>
+      </div>
       <ThePasta v-if="currentProductsDisplayed === 1" />
 
       <TheAppetizers v-if="currentProductsDisplayed === 2" />
@@ -223,7 +235,7 @@ export default {
           active: true
         }
       ],
-      currentProductsDisplayed: 1,
+      currentProductsDisplayed: 0,
       loading: false
 
     }
@@ -248,7 +260,7 @@ export default {
       localStorage.phone = newPhone
     },
     currentProductsDisplayed (newCurrentProductsDisplayed) {
-      localStorage.currentProductsDisplayed = newCurrentProductsDisplayed
+      sessionStorage.currentProductsDisplayedPF = newCurrentProductsDisplayed
     }
   },
 
@@ -263,8 +275,8 @@ export default {
       this.phone = localStorage.phone
     }
 
-    if (localStorage.currentProductsDisplayed) {
-      this.currentProductsDisplayed = parseInt(localStorage.currentProductsDisplayed)
+    if (sessionStorage.currentProductsDisplayed) {
+      this.currentProductsDisplayed = parseInt(sessionStorage.currentProductsDisplayedPF)
     }
   },
 

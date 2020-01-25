@@ -1,0 +1,1492 @@
+[
+    {
+        "category": "le-rock-salads",
+        "nameUk": "Цезар з куркою",
+        "id": "lr-sal-1",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-salad",
+        "summaryUk": "філе курки, бекон,  листя салату,  помідор,  перепелині яйця, соус цезар"
+    },
+    {
+        "category": "le-rock-salads",
+        "nameUk": "Родос",
+        "id": "lr-sal-2",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-salad",
+        "summaryUk": "свіжий помідор,  огірок,  перець болгарський, мусс дор блю,  соус з руколи"
+    },
+    {
+        "category": "le-rock-salads",
+        "nameUk": "Гриль салат з телятиною",
+        "id": "lr-sal-3",
+        "price": 75,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-salad",
+        "summaryUk": "телятина гриль,  помідор,  перець болгарський,  кабачок,  гриби,фірмовий соус"
+    },
+    {
+        "category": "le-rock-salads",
+        "nameUk": "Rokoko",
+        "id": "lr-sal-4",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-salad",
+        "summaryUk": "м’ясо зі стегна курки, броколі, гриби, кабачок, стручкова квасоля, морква, заправляється сирним соусом"
+    },
+    {
+        "category": "le-rock-salads",
+        "nameUk": "Салат з лососем",
+        "id": "lr-sal-5",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "300г",
+        "imageUk": "le-rock-salad",
+        "summaryUk": "слабосолений лосось, помідор, лист салату, броколі, сир філадельфія, соус медово-гірчичний"
+    },
+    {
+        "category": "le-rock-salads",
+        "nameUk": "Салат з печінки",
+        "id": "lr-sal-6",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-salad",
+        "summaryUk": "листя салату, карамелізоване яблуко, рукула, перець гриль, помідори, куряча печінка, оливкова олія, оцет бальзамік"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Стейк New York",
+        "id": "lr-mbbq-1",
+        "price": 125,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "соковите м’ясо з поясничної частини"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Стейк Рібай",
+        "id": "lr-mbbq-2",
+        "price": 135,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "м’ясо з підлопаткової частини туші, має велику кількість жирових прожилок"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Філе Міньйон",
+        "id": "lr-mbbq-3",
+        "price": 145,
+        "quantity": 100,
+        "volumeUk": "200г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "сама ніжна, та пісна частина гов’ядини"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Стейк свинний",
+        "id": "lr-mbbq-4",
+        "price": 100,
+        "quantity": 100,
+        "volumeUk": "200/140/30г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "з стручковою квасолею та песто"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Half chicken",
+        "id": "lr-mbbq-5",
+        "price": 100,
+        "quantity": 100,
+        "volumeUk": "300/120/30г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "з грибами гриль та гірчичним соусом"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Свинна гомілка з картопляним пюре",
+        "id": "lr-mbbq-6",
+        "price": 100,
+        "quantity": 100,
+        "volumeUk": "380/150г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "(Рябчик) (подається з рокфорним пюре)"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Свинина на кістці з печеною картоплею",
+        "id": "lr-mbbq-7",
+        "price": 110,
+        "quantity": 100,
+        "volumeUk": "270/250/30г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Асорті М’яса гриль",
+        "id": "lr-mbbq-8",
+        "price": 350,
+        "quantity": 100,
+        "volumeUk": "1500г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "стейк з говядини, стейк свинний, куряче філе, ковбаски, картопля печена, 2 соуси"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Солоний арахіс з насінням гарбуза",
+        "id": "lr-mbbq-9",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "100г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "Моцарела, філе курки, бекон, помідори чері, пармезан, мікс-салат, вершковий соус"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Крила фрі",
+        "id": "lr-mbbq-10",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "гострі/з гірчичним соусом"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Сирні палички",
+        "id": "lr-mbbq-11",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "соус з журавлини/часниковий"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Хрумкі вуха в соєвому соусі",
+        "id": "lr-mbbq-12",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "150г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "гострі/не гострі"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Ковбаски в беконі",
+        "id": "lr-mbbq-13",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "300/30г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Креветки до пива",
+        "id": "lr-mbbq-14",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "100/30г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Копчені свинні ребра BBQ",
+        "id": "lr-mbbq-15",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "300/30г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Ковбаски власного приготування з картопляними крокетами",
+        "id": "lr-mbbq-16",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "200/130/30/50г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "курячі / свинні"
+    },
+    {
+        "category": "le-rock-meat-bbq",
+        "nameUk": "Ребра на компанію",
+        "id": "lr-mbbq-17",
+        "price": 250,
+        "quantity": 100,
+        "volumeUk": "800/300/100г",
+        "imageUk": "le-rock-meat",
+        "summaryUk": "курячі / свинні"
+    },
+    {
+        "category": "le-rock-rock-dogs",
+        "nameUk": "З свининою",
+        "id": "lr-rd-1",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "200/100/30г",
+        "imageUk": "le-rock-rock-dogs",
+        "summaryUk": "+картопля фрі, та соус"
+    },
+    {
+        "category": "le-rock-rock-dogs",
+        "nameUk": "З куркою",
+        "id": "lr-rd-2",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "200/100/30г",
+        "imageUk": "le-rock-rock-dogs",
+        "summaryUk": "+картопля фрі, та соус"
+    },
+    {
+        "category": "le-rock-rock-dogs",
+        "nameUk": "З сосискою і беконом",
+        "id": "lr-rd-3",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "200/100/30г",
+        "imageUk": "le-rock-rock-dogs",
+        "summaryUk": "+картопля фрі, та соус"
+    },
+    {
+        "category": "le-rock-fry-pan",
+        "nameUk": "- З картоплею і куркою",
+        "id": "lr-fp-1",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "600г",
+        "imageUk": "barbarescoMlinty",
+        "summaryUk": "+ салат з капусти"
+    },
+    {
+        "category": "le-rock-fry-pan",
+        "nameUk": "- З картоплею і свининою",
+        "id": "lr-fp-2",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "600г",
+        "imageUk": "barbarescoMlinty",
+        "summaryUk": "+ маринований огірок"
+    },
+    {
+        "category": "le-rock-fry-pan",
+        "nameUk": "- З картоплею, ковбаскою та беконом",
+        "id": "lr-fp-3",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "600г",
+        "imageUk": "barbarescoMlinty",
+        "summaryUk": "+ маринований огірок"
+    },
+    {
+        "category": "le-rock-deserts",
+        "nameUk": "НАПОЛЕОН",
+        "id": "lr-d-1",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "160г",
+        "imageUk": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-deserts",
+        "nameUk": "ЧІЗКЕЙК",
+        "id": "lr-d-2",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "150г",
+        "imageUk": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-deserts",
+        "nameUk": "Морквяно-пряний торт",
+        "id": "lr-d-3",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "200г",
+        "imageUk": "barbarescoDesert",
+        "summaryUk": "Вишнево-м’ятний, Персиковий, Карамель"
+    },
+    {
+        "category": "le-rock-deserts",
+        "nameUk": "Шоколадний торт",
+        "id": "lr-d-4",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "150г",
+        "imageUk": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-deserts",
+        "nameUk": "Персикове компоте",
+        "id": "lr-d-5",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "170г",
+        "imageUk": "barbarescoDesert",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-firstCourses",
+        "nameUk": "КУРЯЧИЙ БУЛЬЙОН",
+        "id": "lr-fc-1",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "300г",
+        "imageUk": "le-rock-first-course",
+        "summaryUk": "з шматочками курки і домашньої пасти"
+    },
+    {
+        "category": "le-rock-firstCourses",
+        "nameUk": "Кукурудзяний суп Чаудер",
+        "id": "lr-fc-2",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "300г",
+        "imageUk": "le-rock-first-course",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-mainMeals",
+        "nameUk": "Котлета Кордон-блю",
+        "id": "lr-mm-1",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "345/150/30г",
+        "imageUk": "barbarescoHits",
+        "summaryUk": "подається з картопляним пюре"
+    },
+    {
+        "category": "le-rock-mainMeals",
+        "nameUk": "Куряче філе на шпинатній подушці під вершковим соусом",
+        "id": "lr-mm-2",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "350г",
+        "imageUk": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-mainMeals",
+        "nameUk": "Креветки з устричним соусом, та салатом Чука",
+        "id": "lr-mm-3",
+        "price": 120,
+        "quantity": 100,
+        "volumeUk": "80/60/15г",
+        "imageUk": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-mainMeals",
+        "nameUk": "Лосось гриль",
+        "id": "lr-mm-4",
+        "price": 170,
+        "quantity": 100,
+        "volumeUk": "150/100/30г",
+        "imageUk": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-mainMeals",
+        "nameUk": "Яєшня з ковбасою і беконом",
+        "id": "lr-mm-5",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "380г",
+        "imageUk": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-mainMeals",
+        "nameUk": "Яєшня з шинкою і томатами",
+        "id": "lr-mm-6",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "400г",
+        "imageUk": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-mainMeals",
+        "nameUk": "Гриль лаваш з сиром, томатами та зеленню",
+        "id": "lr-mm-7",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "330г",
+        "imageUk": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-mainMeals",
+        "nameUk": "Млинці з куркою на шпинатнім соусі",
+        "id": "lr-mm-8",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "300/100г",
+        "imageUk": "barbarescoHits",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-appetizers",
+        "nameUk": "Brusketi",
+        "id": "lr-app-1",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "3шт",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": "з чорізо, з телятиною, з овочами"
+    },
+    {
+        "category": "le-rock-appetizers",
+        "nameUk": "Курячий паштет",
+        "id": "lr-app-2",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "200г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": "подається з грінками"
+    },
+    {
+        "category": "le-rock-appetizers",
+        "nameUk": "Мариновані овочі",
+        "id": "lr-app-3",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "400г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-appetizers",
+        "nameUk": "Сирне плато",
+        "id": "lr-app-4",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "170г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-appetizers",
+        "nameUk": "M’ясне плато",
+        "id": "lr-app-5",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "170г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-appetizers-for-bear",
+        "nameUk": "Пивна тарілка",
+        "id": "lr-app-f-b-1",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "150г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": "житні сухарики, в’ялене м’ясо, часниковий  соус"
+    },
+    {
+        "category": "le-rock-appetizers-for-bear",
+        "nameUk": "Соленики",
+        "id": "lr-app-f-b-2",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "100/30г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": "подається з грінками"
+    },
+    {
+        "category": "le-rock-appetizers-for-bear",
+        "nameUk": "Житні сухарики",
+        "id": "lr-app-f-b-3",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "150г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": "з часниковим соусом"
+    },
+    {
+        "category": "le-rock-appetizers-for-bear",
+        "nameUk": "Курячий попкорн",
+        "id": "lr-app-f-b-4",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "200г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": "з часниковим соусом"
+    },
+    {
+        "category": "le-rock-appetizers-for-bear",
+        "nameUk": "Пивна дошка на компанію",
+        "id": "lr-app-f-b-5",
+        "price": 150,
+        "quantity": 100,
+        "volumeUk": "600г",
+        "imageUk": "le-rock-appetizer",
+        "summaryUk": "сирні палички, нагетси, ковбаски в беконі, снеки, грісіні, соус тартар"
+    },
+    {
+        "category": "le-rock-garnishes",
+        "nameUk": "ОВОЧІ-ГРИЛЬ",
+        "id": "lr-gar-1",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "300г",
+        "imageUk": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-garnishes",
+        "nameUk": "Овочі в тайському стилі",
+        "id": "lr-gar-2",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "250г",
+        "imageUk": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-garnishes",
+        "nameUk": "Рис з овочами гриль",
+        "id": "lr-gar-3",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "210г",
+        "imageUk": "le-rock-side-dishes",
+        "summaryUk": "З розмарином і беконом"
+    },
+    {
+        "category": "le-rock-garnishes",
+        "nameUk": "КАРТОПЛЯ ФРІ (з соусом)",
+        "id": "lr-gar-4",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "150г",
+        "imageUk": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-garnishes",
+        "nameUk": "КАРТОПЛЯНЕ ПЮРЕ",
+        "id": "lr-gar-5",
+        "price": 20,
+        "quantity": 100,
+        "volumeUk": "200г",
+        "imageUk": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-garnishes",
+        "nameUk": "Чіабата",
+        "id": "lr-gar-6",
+        "price": 15,
+        "quantity": 100,
+        "volumeUk": "1шт",
+        "imageUk": "le-rock-side-dishes",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-coffee",
+        "nameUk": "Еспресо",
+        "id": "l-r-c-1",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "",
+        "imageUk": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-coffee",
+        "nameUk": "АМЕРИКАНО",
+        "id": "l-r-c-2",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "",
+        "imageUk": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-coffee",
+        "nameUk": "КАПУЧІНО",
+        "id": "l-r-c-3",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "",
+        "imageUk": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-coffee",
+        "nameUk": "ЛАТЕ",
+        "id": "l-r-c-4",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "",
+        "imageUk": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-coffee",
+        "nameUk": "Лате фісташкове",
+        "id": "l-r-c-5",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "",
+        "imageUk": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-coffee",
+        "nameUk": "Лате кокосове",
+        "id": "l-r-c-6",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "",
+        "imageUk": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-coffee",
+        "nameUk": "Ожинове какао",
+        "id": "l-r-c-7",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "",
+        "imageUk": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-coffee",
+        "nameUk": "Flat White",
+        "id": "l-r-c-8",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "",
+        "imageUk": "barbarescoDrinksCoffe",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-tea",
+        "nameUk": "Чай заварний",
+        "id": "l-r-tea-1",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "600мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": "чорний/зелени/ фруктовий"
+    },
+    {
+        "category": "le-rock-tea",
+        "nameUk": "Чай жасмин-чорниця",
+        "id": "l-r-tea-2",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "600мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-tea",
+        "nameUk": "Чай розмарин-яблуко",
+        "id": "l-r-tea-3",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "600мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-tea",
+        "nameUk": "Чай обліпиха-манго з курагою",
+        "id": "l-r-tea-4",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-tea",
+        "nameUk": "Чай м’ята-лайм",
+        "id": "l-r-tea-5",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-tea",
+        "nameUk": "Вишня-ваніль",
+        "id": "l-r-tea-6",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-tea",
+        "nameUk": "Попкорн-кориця",
+        "id": "l-r-tea-7",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-tea",
+        "nameUk": "Солона карамель",
+        "id": "l-r-tea-8",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-drinks",
+        "nameUk": "Девайтіс",
+        "id": "l-r-d-1",
+        "price": 27,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": "слабо газ./не газ."
+    },
+    {
+        "category": "le-rock-drinks",
+        "nameUk": "Боржомі",
+        "id": "l-r-d-2",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "500мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-drinks",
+        "nameUk": "Тонік Evervess",
+        "id": "l-r-d-3",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "330мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": "слабо газ./не газ."
+    },
+    {
+        "category": "le-rock-drinks",
+        "nameUk": "Pepsi",
+        "id": "l-r-d-4",
+        "price": 20,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": "розлив"
+    },
+    {
+        "category": "le-rock-drinks",
+        "nameUk": "Ягідний морс",
+        "id": "l-r-d-5",
+        "price": 15,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksTea",
+        "summaryUk": "власного приготування"
+    },
+    {
+        "category": "le-rock-fresh",
+        "nameUk": "Апельсиновий",
+        "id": "l-r-fre-1",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-fresh",
+        "nameUk": "Грейпфрутовий",
+        "id": "l-r-fre-2",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-fresh",
+        "nameUk": "СІК ПАКЕТОВАНИЙ",
+        "id": "l-r-fre-3",
+        "price": 17,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": "Апельсиновий, ананасовий, персиковий, вишневий, яблучний, томатний, грейпфрутовий"
+    },
+    {
+        "category": "le-rock-lemonade",
+        "nameUk": "Малина-жасмин",
+        "id": "b-lem-1",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "350мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-lemonade",
+        "nameUk": "Ананас-базилік",
+        "id": "b-lem-2",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "350мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-lemonade",
+        "nameUk": "Яблуко-ківі",
+        "id": "b-lem-3",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "350мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-lemonade",
+        "nameUk": "Грейпфрутовий",
+        "id": "b-lem-4",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "350мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-lemonade",
+        "nameUk": "Лічі-кокос",
+        "id": "b-lem-5",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "350мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-smoothy",
+        "nameUk": "Авокадо-ківі з петрушкою",
+        "id": "l-r-smo-1",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": "пюре дині, маракуйї та персика"
+    },
+    {
+        "category": "le-rock-smoothy",
+        "nameUk": "Диня-манго",
+        "id": "l-r-smo-2",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoDrinksFresh",
+        "summaryUk": "шпинат, банан, сік яблука, пюре маракуйї"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Mojito Kiwi",
+        "id": "l-r-alcc-1",
+        "price": 75,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "captain morgan spice, пюре ківі Monin, м‘ята, лайм, содова, ківі"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Mojito n/а",
+        "id": "l-r-alcc-1-a",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "300мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Тростинний цукор, лайм, м’ята, содова"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Aperol Spritz",
+        "id": "l-r-alcc-2",
+        "price": 75,
+        "quantity": 100,
+        "volumeUk": "200мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "beefeater pink, aperol, сироп бузина, лимонний фреш, ігристе вино, содова"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Bloody Mаry",
+        "id": "l-r-alcc-3",
+        "price": 60,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Горілка, соуси табаско та ворчестер, мікс спецій, лимонний фреш, томатний сік"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Bloody Mary n/a",
+        "id": "l-r-alcc-3-a",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Томатний сік, соуси табаско та ворчестер, мікс спецій, лимонний фреш"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Negroni",
+        "id": "l-r-alcc-4",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "120мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Джин Bombay Sapphire, Campari, Cinzano Antica"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Yummy Kiss Fizz",
+        "id": "l-r-alcc-5",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "200мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "captain morgan black, пюре маракуйя Monin, amaro di angostura, лимонний фреш, білок, содова"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Maple Old fashioned",
+        "id": "l-r-alcc-6",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "100мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "wild turkey 101, кленовий сироп, cynar, ангостура"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Wild Pinelime",
+        "id": "l-r-alcc-7",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "espolon reposado, пюре ананаса, базилік, лайм"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Purple Gin Tonic",
+        "id": "l-r-alcc-8",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "200мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "gordon’s, пюре юдзу Monin, фреш лайма, тонік, концентрат синього чаю"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Basil Smash",
+        "id": "l-r-alcc-9",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "120мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "gordon’s, базилік, цукровий сироп, лайм"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Snow White",
+        "id": "l-r-alcc-10",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "200мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "finlandia original, пюре маракуйї та юдзу Monin, ананасовий сік, білок"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Aperol Ramos gin fizz",
+        "id": "l-r-alcc-11",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "200мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "gordon’s, aperol, фреш лайма, цукровий сироп, вершки, білок, содова"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Beetroot",
+        "id": "l-r-alcc-12",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "200мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "finlandia original, сироп агава Monin, грейпфрутовий фреш, пюре буряка"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Strawberry french",
+        "id": "l-r-alcc-13",
+        "price": 75,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "beefeater pink, ігристе вино, суничний сироп Monin"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Knickerboker",
+        "id": "l-r-alcc-14",
+        "price": 80,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "captain morgan black, тріпл сек, сироп гострий манго Monin, лимонний фреш"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Cheese gin garden",
+        "id": "l-r-alcc-15",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "gordon’s, сироп бузина та огірок Monin, лимонний фреш, сир Philadelphia"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "The Walking Dead",
+        "id": "l-r-alcc-16",
+        "price": 120,
+        "quantity": 100,
+        "volumeUk": "250мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "bacardi oakheart, captain morgan black, plantation overproot, apricot Brandy, Luxardo Maraschino, пюре лічі Monin, фреш лайма, грейпфрутовий сік, кориця"
+    },
+    {
+        "category": "le-rock-alcoholicCocktail",
+        "nameUk": "Papa on the Rock’s",
+        "id": "l-r-alcc-17",
+        "price": 90,
+        "quantity": 100,
+        "volumeUk": "150мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "bacardi oakheart, сироп грейпфрут  Monin, фалернум, фреш лайма"
+    },
+    {
+        "category": "le-rock-wine",
+        "nameUk": "Tierra Eden ТієрРа Еден",
+        "id": "l-r-wine-1",
+        "price": 34,
+        "quantity": 100,
+        "volumeUk": "100мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "біле н/с. червоне н/c."
+    },
+    {
+        "category": "le-rock-wine",
+        "nameUk": "Tierra Eden ТієрРа Еден",
+        "id": "l-r-wine-1-a",
+        "price": 250,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "біле н/с. червоне н/c."
+    },
+    {
+        "category": "le-rock-wine",
+        "nameUk": "Tierra Eden ТієрРа Еден",
+        "id": "l-r-wine-1-1",
+        "price": 34,
+        "quantity": 100,
+        "volumeUk": "100мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "червоне сухе /біле сухе"
+    },
+    {
+        "category": "le-rock-wine",
+        "nameUk": "Tierra Eden ТієрРа Еден",
+        "id": "l-r-wine-1-1-a",
+        "price": 250,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "червоне сухе /біле сухе"
+    },
+    {
+        "category": "le-rock-wine",
+        "nameUk": "Casa Verde Merlot Каса Верде Мерло",
+        "id": "l-r-wine-2",
+        "price": 44,
+        "quantity": 100,
+        "volumeUk": "100мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "червоне сухе/біле сухе"
+    },
+    {
+        "category": "le-rock-wine",
+        "nameUk": "Casa Verde Merlot Каса Верде Мерло",
+        "id": "l-r-wine-2-1",
+        "price": 330,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "червоне сухе/біле сухе"
+    },
+    {
+        "category": "le-rock-wine",
+        "nameUk": "J.P. Chenet Жан поль Шанет",
+        "id": "l-r-wine-3",
+        "price": 44,
+        "quantity": 100,
+        "volumeUk": "100мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "рожеве н.с"
+    },
+    {
+        "category": "le-rock-wine",
+        "nameUk": "J.P. Chenet Жан поль Шанет",
+        "id": "l-r-wine-3-1",
+        "price": 330,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "рожеве н.с"
+    },
+    {
+        "category": "le-rock-sparklingWine",
+        "nameUk": "Asti Mondoro",
+        "id": "l-r-swine-1",
+        "price": 450,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Асті мондоро"
+    },
+    {
+        "category": "le-rock-sparklingWine",
+        "nameUk": "Fragolino Rosso",
+        "id": "l-r-swine-2",
+        "price": 180,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Фраголіно"
+    },
+    {
+        "category": "le-rock-sparklingWine",
+        "nameUk": "Salute",
+        "id": "l-r-swine-3",
+        "price": 150,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "roze"
+    },
+    {
+        "category": "le-rock-sparklingWine",
+        "nameUk": "Салюте",
+        "id": "l-r-swine-3-1",
+        "price": 150,
+        "quantity": 100,
+        "volumeUk": "750мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "рожеве н/c"
+    },
+    {
+        "category": "le-rock-alcoholicSet",
+        "nameUk": "Фісташковий",
+        "id": "l-r-als-1",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "210мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-alcoholicSet",
+        "nameUk": "Ожиновий",
+        "id": "l-r-als-2",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "210мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-alcoholicSet",
+        "nameUk": "Вишневий",
+        "id": "l-r-als-3",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "210мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-gin",
+        "nameUk": "Bombay Sapphire",
+        "id": "l-r-gin-1",
+        "price": 65,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "БОМБЕЙ Сапфір"
+    },
+    {
+        "category": "le-rock-gin",
+        "nameUk": "Beefeater",
+        "id": "l-r-gin-2",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Біфітер"
+    },
+    {
+        "category": "le-rock-rom",
+        "nameUk": "Captain Morgan Black",
+        "id": "l-r-rom-1",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Капітан Морган темний"
+    },
+    {
+        "category": "le-rock-rom",
+        "nameUk": "Captain Morgan Gold",
+        "id": "l-r-rom-2",
+        "price": 50,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Капітан Морган золотий"
+    },
+    {
+        "category": "le-rock-rom",
+        "nameUk": "Bacardі Оаkhеart",
+        "id": "l-r-rom-3",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "Бакарді Oакхарт"
+    },
+    {
+        "category": "le-rock-vodka",
+        "nameUk": "Фінляндія",
+        "id": "l-r-vodka-1",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "класична , журавлина"
+    },
+    {
+        "category": "le-rock-vodka",
+        "nameUk": "Зубрiвка",
+        "id": "l-r-vodka-2",
+        "price": 25,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-vodka",
+        "nameUk": "Козацька рада класична",
+        "id": "l-r-vodka-3",
+        "price": 20,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-takila",
+        "nameUk": "Есполон",
+        "id": "l-r-vodka-1",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": "бланко/репосадо"
+    },
+    {
+        "category": "le-rock-diva",
+        "nameUk": "Бехеровка",
+        "id": "l-r-diva-1",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-diva",
+        "nameUk": "Єгермейстер",
+        "id": "l-r-diva-2",
+        "price": 55,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-konbrand",
+        "nameUk": "Бехеровка",
+        "id": "l-r-konbrand-1",
+        "price": 100,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-konbrand",
+        "nameUk": "Азнаурі",
+        "id": "l-r-konbrand-2",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-aperitifs",
+        "nameUk": "Кампарі",
+        "id": "l-r-aperitifs-1",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-aperitifs",
+        "nameUk": "Cinzano bianCo, Rosso",
+        "id": "l-r-aperitifs-2",
+        "price": 30,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-aperitifs",
+        "nameUk": "амаро аверна",
+        "id": "l-r-aperitifs-3",
+        "price": 35,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-aperitifs",
+        "nameUk": "чінар",
+        "id": "l-r-aperitifs-4",
+        "price": 45,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-whisky",
+        "nameUk": "Уайльд Тьоркі 81",
+        "id": "l-r-whisky-1",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-whisky",
+        "nameUk": "Уайльд Тьоркі 101",
+        "id": "l-r-whisky-2",
+        "price": 75,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-whisky",
+        "nameUk": "Уайльд Тьоркі Рай",
+        "id": "l-r-whisky-3",
+        "price": 85,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-whisky",
+        "nameUk": "Джек Деніелс",
+        "id": "l-r-whisky-4",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-whisky",
+        "nameUk": "Джек Деніелс Хані",
+        "id": "l-r-whisky-5",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-whisky",
+        "nameUk": "Джеймсон",
+        "id": "l-r-whisky-6",
+        "price": 70,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    },
+    {
+        "category": "le-rock-whisky",
+        "nameUk": "томатін талісман",
+        "id": "l-r-whisky-7",
+        "price": 40,
+        "quantity": 100,
+        "volumeUk": "50мл",
+        "imageUk": "barbarescoAlcohol",
+        "summaryUk": ""
+    }
+]
