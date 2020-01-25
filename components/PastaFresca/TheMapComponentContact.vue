@@ -347,13 +347,13 @@ code {
 
 .vue-map-container {
   width: 100%;
-  height: 429px;
+  height: 489px;
 }
 
 @media (min-width: 1400px) {
   .vue-map-container {
     width: 100%;
-    height: 429px;
+    height: 489px;
   }
 }
 

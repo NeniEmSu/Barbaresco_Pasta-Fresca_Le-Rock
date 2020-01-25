@@ -80,6 +80,7 @@
   rockDog: leRockCollection(filter: {category: "le-rock-rock-dogs", published: true}) {
     ...leRockFields
   }
+  
 }
 
 fragment leRockFields on leRockCollection {
