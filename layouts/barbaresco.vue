@@ -73,12 +73,6 @@ export default {
         // ...i18nSeo.meta
       ],
       link: [
-        {
-          rel: 'icon',
-          type: 'image/png',
-          href: 'barbaresco-logo.png'
-        }
-
         // ...i18nSeo.link
       ]
     }

@@ -7,6 +7,8 @@
     >
       <img
         loading="lazy"
+        width="200"
+        height="200"
         class="card-img-top mx-auto"
         :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
         :alt="product.nameUk || product.nameRu || product.nameEn"

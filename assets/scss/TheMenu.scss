@@ -90,6 +90,10 @@ input {
         width: 100px;
         height: 100px;
     }
+
+    .elaboraSpacing {
+        margin-top: 45px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -102,6 +106,10 @@ input {
     img.feedBack {
         width: 100px;
         height: 100px;
+    }
+
+    .elaboraSpacing {
+        margin-top: 20px;
     }
 }
 

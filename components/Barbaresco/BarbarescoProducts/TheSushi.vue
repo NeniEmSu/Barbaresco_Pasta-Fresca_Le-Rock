@@ -179,7 +179,7 @@
         </div>
 
         <div class="col-sm-9">
-          <productCard :products="philadelphiaRoll" />
+          <productCard :products="philly" />
         </div>
       </div>
 
@@ -217,7 +217,7 @@
 </template>
 
 <script>
-import { makiRoll, drakoniRoll, futoMakiRoll, originalRoll, californiaRoll, PhiladelphiaRoll } from '~/gql/barbarescoSushi.js'
+import { makiRoll, drakoniRoll, futoMakiRoll, originalRoll, californiaRoll, philly } from '~/gql/barbarescoSushi.js'
 import productCard from '~/components/Barbaresco/TheProductsCardCategories'
 
 export default {
@@ -248,34 +248,9 @@ export default {
       prefetch: true,
       query: californiaRoll
     },
-    PhiladelphiaRoll: {
+    philly: {
       prefetch: true,
-      query: PhiladelphiaRoll
-    }
-  },
-
-  computed: {
-    extractedProductsMakiRolls () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-makiRoll')
-    },
-    extractedProductsPhotoMakiRolls () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-futoMakiRoll')
-    },
-
-    extractedProductsOriginalRoll () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-originalRoll')
-    },
-
-    extractedProductsCaliforniaRoll () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-californiaRoll')
-    },
-
-    extractedProductsPhiladelphiaRoll () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-PhiladelphiaRoll')
-    },
-
-    extractedProductsDrakoniRoll () {
-      return this.$apolloData.data.barbarescoCollection.filter(el => el.category === 'barbaresco-drakoniRoll')
+      query: philly
     }
   }
 }

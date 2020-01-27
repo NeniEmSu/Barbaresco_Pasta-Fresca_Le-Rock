@@ -724,6 +724,12 @@ export default {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  .col-3 {
+    margin: auto;
+  }
+}
+
 @include mediaMenu {
   .homePageHeading {
     margin-top: 7%;
@@ -773,6 +779,36 @@ export default {
   .cardContent {
     padding: 20px 20px;
   }
+
+  .goToSiteBtn {
+    width: 210px;
+    height: 48px;
+    padding: 12px 5px;
+  }
+
+  .socialButtons {
+    &.instagram {
+      width: 100px;
+      height: 48px;
+      padding: 12px 0px;
+
+      .inButtonImg {
+        width: 65px;
+        height: 24px;
+      }
+    }
+
+    &.facebook {
+      width: 100px;
+      height: 48px;
+      padding: 14px 0px;
+
+      .inButtonImg {
+        width: 65px;
+        height: 15px;
+      }
+    }
+  }
 }
 
 @include mediaXXSm {
@@ -808,7 +844,6 @@ export default {
   }
 
   .cardDescription {
-    height: px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -824,12 +859,16 @@ export default {
   }
 
   .goToSiteBtn {
-    padding: 12px 25px;
+    width: 210px;
+    height: 48px;
+    padding: 12px 5px;
   }
 
   .socialButtons {
     &.instagram {
-      padding: 7.5px 18px;
+      width: 100px;
+      height: 48px;
+      padding: 12px 0px;
 
       .inButtonImg {
         width: 65px;
@@ -838,10 +877,12 @@ export default {
     }
 
     &.facebook {
-      padding: 14px 18px;
+      width: 100px;
+      height: 48px;
+      padding: 14px 0px;
 
       .inButtonImg {
-        width: 65px;
+        width: 70px;
         height: 15px;
       }
     }
@@ -1048,12 +1089,6 @@ export default {
       border: 2px solid transparent;
       background-color: #395795;
     }
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .col-3 {
-    margin: auto;
   }
 }
 </style>

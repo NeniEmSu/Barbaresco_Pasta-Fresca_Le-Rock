@@ -4,7 +4,6 @@
   text-overflow: ellipsis;
 }
 
-
 .ingredients {
   height: 32px;
 }
@@ -31,6 +30,43 @@
     max-height: 150px;
 
     margin-bottom: 5px;
+  }
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  font-family: $robotoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-transform: uppercase;
+
+  color: $blackColor;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-family: $robotoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $blackColor;
+
+  margin-bottom: 10px;
+
+  &.cost {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
   }
 }
 
@@ -133,47 +169,14 @@ button.btn {
   }
 }
 
-.card-body {
-  padding: 0;
-}
-
-.card-title {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-
-  text-transform: uppercase;
-
-  color: $blackColor;
-
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.card-text {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: $blackColor;
-
-  margin-bottom: 10px;
-
-  &.cost {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-  }
-}
-
 
 @media screen and (max-width: 330px) {
   .card {
     width: calc(100% / 2);
+
+    button.btn {
+      width: 130px;
+    }
 
   }
 }

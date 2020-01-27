@@ -41,7 +41,7 @@
   californiaRoll: barbarescoCollection(filter: {category: "barbaresco-californiaRoll", published: true}) {
     ...barbarescoFields
   }
-  PhiladelphiaRoll: barbarescoCollection(filter: {category: "barbaresco-PhiladelphiaRoll", published: true}) {
+  philly: barbarescoCollection(filter: {category: "barbaresco-PhiladelphiaRoll", published: true}) {
     ...barbarescoFields
   }
   alcoholicCocktail: barbarescoCollection(filter: {category: "barbaresco-alcoholicCocktail", published: true}) {

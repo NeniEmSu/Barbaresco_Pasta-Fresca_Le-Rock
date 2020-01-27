@@ -67,7 +67,7 @@
 </template>
 
 <script>
-import '~/assets/scss/TheTopContact.scss'
+// import '~/assets/scss/TheTopContact.scss'
 export default {
   props: {
     // eslint-disable-next-line vue/require-default-prop
@@ -82,3 +82,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import "~assets/scss/TheTopContact.scss";
+</style>

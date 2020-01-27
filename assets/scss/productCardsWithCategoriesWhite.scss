@@ -63,6 +63,43 @@ img.d-sm-block.d-none {
   }
 }
 
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  font-family: $robotoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-transform: uppercase;
+
+  color: $lightColor;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-family: $robotoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $lightColor;
+
+  margin-bottom: 10px;
+
+  &.cost {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
 .quantity {
   float: right;
   margin-right: 15px;
@@ -124,9 +161,6 @@ img.d-sm-block.d-none {
   .card {
     width: calc(100% / 3);
 
-
-
-
     .card-img-top {
 
       max-width: 100px;
@@ -166,90 +200,7 @@ img.d-sm-block.d-none {
   }
 
   .btn {
-    font-size: 14px;
-    line-height: 16px;
-
-  }
-}
-
-.card-body {
-  padding: 0;
-}
-
-.card-title {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-
-  text-transform: uppercase;
-
-  color: $lightColor;
-
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.card-text {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: $lightColor;
-
-  margin-bottom: 10px;
-
-  &.cost {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .card {
-    width: calc(100% / 2);
-
-  }
-}
-
-.card-body {
-  padding: 0;
-}
-
-.card-title {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-
-  text-transform: uppercase;
-
-  color: $lightColor;
-
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.card-text {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: $lightColor;
-
-  margin-bottom: 10px;
-
-  &.cost {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    width: 110px;
   }
 }
 
@@ -262,5 +213,13 @@ img.d-sm-block.d-none {
       font-size: 14px;
       line-height: 16px;
     }
+  }
+}
+
+
+@media screen and (max-width: 330px) {
+  .card {
+    width: calc(100% / 2);
+
   }
 }

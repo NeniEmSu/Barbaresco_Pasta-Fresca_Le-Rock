@@ -4,7 +4,7 @@ import drakoniRoll from '~/gql/barbaresco'
 import futoMakiRoll from '~/gql/barbaresco'
 import originalRoll from '~/gql/barbaresco'
 import californiaRoll from '~/gql/barbaresco'
-import PhiladelphiaRoll from '~/gql/barbaresco'
+import philly from '~/gql/barbaresco'
 
 export {
   makiRoll,
@@ -12,5 +12,5 @@ export {
   futoMakiRoll,
   originalRoll,
   californiaRoll,
-  PhiladelphiaRoll
+  philly
 }

@@ -59,6 +59,43 @@ img.d-sm-block.d-none {
   }
 }
 
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  font-family: $robotoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-transform: uppercase;
+
+  color: $blackColor;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-family: $robotoFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $blackColor;
+
+  margin-bottom: 10px;
+
+  &.cost {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
 .quantity {
   float: right;
   margin-right: 15px;
@@ -182,87 +219,6 @@ button.btn {
   }
 }
 
-.card-body {
-  padding: 0;
-}
-
-.card-title {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-
-  text-transform: uppercase;
-
-  color: $blackColor;
-
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.card-text {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: $blackColor;
-
-  margin-bottom: 10px;
-
-  &.cost {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .card {
-    width: calc(100% / 2);
-
-  }
-}
-
-.card-body {
-  padding: 0;
-}
-
-.card-title {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-
-  text-transform: uppercase;
-
-  color: $blackColor;
-
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.card-text {
-  font-family: $robotoFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: $blackColor;
-
-  margin-bottom: 10px;
-
-  &.cost {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .card.card-cat {
     height: 25px;
@@ -273,5 +229,17 @@ button.btn {
       font-size: 14px;
       line-height: 16px;
     }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .card {
+    width: calc(100% / 2);
+
+  }
+
+  button.btn {
+    width: 130px;
+
   }
 }

@@ -3,6 +3,8 @@
   "uk": {
     "title": "Замовлення",
     "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас",
+    "required": "обов'язково і має містити не менше",
+    "words": "символів",
     "cart":{
       "heading": "Замовлення",
       "emptyCart": "Ви ще нічого не додали до замовлення",
@@ -52,6 +54,8 @@
   "en": {
    "title": "Order",
    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us",
+   "required": "is required and should contain at least",
+    "words": "characters",
    "cart":{
       "heading": "Order",
       "emptyCart": "You haven't added anything to your order yet",
@@ -101,6 +105,8 @@
   "ru": {
     "title": "Замовлення",
     "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас",
+    "required": "обязательно и должен содержать не менее",
+    "words": "символов",
     "cart":{
       "heading": "Заказ",
       "emptyCart": "Вы еще ничего не добавили к заказу",
@@ -250,13 +256,13 @@
                   v-if="!$v.name.minLength"
                   class="error text-danger text-left"
                 >
-                  Ім'я обов'язково і має містити не менше {{ $v.name.$params.minLength.min }} символів.
+                  {{ $t('form.name') }} {{ $t('required') }} {{ $v.name.$params.minLength.min }} {{ $t('words') }}.
                 </div>
                 <div
                   v-if="!$v.phone.minLength"
                   class="text-danger text-left"
                 >
-                  Номер телефону обов'язковий і повинен містити 10 символів
+                  {{ $t('form.phone') }} {{ $t('required') }} 10 {{ $t('words') }}.
                 </div>
               </div>
               <div class="col-6">
@@ -294,13 +300,13 @@
                   v-if="!$v.city.minLength"
                   class="error text-danger text-left"
                 >
-                  {{ $t('form.city') }} обов'язково і має містити не менше {{ $v.city.$params.minLength.min }} символів.
+                  {{ $t('form.city') }} {{ $t('required') }} {{ $v.city.$params.minLength.min }} {{ $t('words') }}.
                 </div>
                 <div
                   v-if="!$v.street.minLength"
                   class="error text-danger text-left"
                 >
-                  {{ $t('form.street') }} обов'язково і має містити не менше {{ $v.street.$params.minLength.min }} символів.
+                  {{ $t('form.street') }} {{ $t('required') }} {{ $v.street.$params.minLength.min }} {{ $t('words') }}.
                 </div>
               </div>
               <div class="col-6">
@@ -796,8 +802,8 @@ export default {
 
       axios
         .post(`https://api.telegram.org/bot1029393497:AAH-v0VHLmNK6cURI38Ro5-Bvxb2ba73xRU/sendMessage?chat_id=-1001498927317&text= замовлення %0AІм’я : ${this.name}, %0AТелефон : ${this.phone}, %0AМісто/село : ${this.city}, %0AВулиця : ${this.street}, %0AБуд : ${this.house}, %0AКод : ${this.code}, %0AКв./офіс : ${this.apartment}, %0AКоментар до замовлення : ${this.comment}, %0Aспосіб оплати : ${this.modeOfPayment}, %0AВсього : ${this.pastaFrescaCartTotalAmount}₴, %0A${this.$t('cart.heading')} : %0A${JSON.stringify(data)} `)
-      // this.name = this.phone = this.city = this.code = this.apartment = this.comment = this.street = this.house = this.modeOfPayment = ''
-      this.code = this.apartment = this.comment = this.house = this.modeOfPayment = ''
+      this.code = this.apartment = this.comment = this.house = ''
+      this.modeOfPayment = 'готівкою'
       this.$store.commit('emptypastaFrescaCart')
       this.success = true
       if (process.client) {

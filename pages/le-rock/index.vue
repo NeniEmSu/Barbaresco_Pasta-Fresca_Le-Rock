@@ -280,19 +280,8 @@ export default {
     }
 
     if (sessionStorage.currentProductsDisplayed) {
-      this.currentProductsDisplayed = parseInt(sessionStorage.currentProductsDisplayedLR)
+      this.currentProductsDisplayed = parseInt(sessionStorage.currentProductsDisplayedLR) || 0
     }
-  },
-
-  created (append = false) {
-    this.loading = true
-    this.$store.dispatch('fetchProducts').then(() => (this.loading = false))
-    this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
-      title: 'Увага!',
-      autoHideDelay: 5000,
-      toaster: 'b-toaster-bottom-right',
-      appendToast: append
-    })
   },
 
   methods: {
