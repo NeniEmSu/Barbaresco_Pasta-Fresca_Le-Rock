@@ -1,6 +1,6 @@
 .language-nav {
     position: absolute;
-    bottom: 6.25rem;
+    bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -66,6 +66,8 @@
     color: white;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .language-nav {
         position: absolute;
@@ -98,5 +100,12 @@
 @media screen and (max-height: 320px) {
     .language-nav {
         display: none;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .language-nav {
+        position: absolute;
+        bottom: 6.25rem;
     }
 }

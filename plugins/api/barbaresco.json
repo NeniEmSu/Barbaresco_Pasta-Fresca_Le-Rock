@@ -590,27 +590,6 @@
     {
         "published": true,
         "category": "barbaresco-pancakes",
-        "nameEn": "Grilled Veal Salad",
-        "nameRu": "ГРИЛЬ САЛАТ С телятиной",
-        "nameUk": "ГРИЛЬ САЛАТ З ТЕЛЯТИНОЮ",
-        "_id": "b-pc-8",
-        "volumeUk": "280г",
-        "summaryUk": "",
-        "volumeRu": "280г",
-        "summaryRu": "",
-        "price": 65,
-        "imageUri": {
-            "path": null,
-            "meta": null
-        },
-        "quantity": 100,
-        "volumeEn": "280g",
-        "image": "barbarescoMlinty",
-        "summaryEn": ""
-    },
-    {
-        "published": true,
-        "category": "barbaresco-pancakes",
         "nameEn": "SEASONAL AND FRUIT",
         "nameRu": "Сезонный-ягодные",
         "nameUk": "СЕЗОННО-ЯГІДНІ",
