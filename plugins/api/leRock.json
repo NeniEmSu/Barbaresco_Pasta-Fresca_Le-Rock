@@ -11,6 +11,10 @@
         "volumeRu": "250г",
         "summaryRu": "филе курицы, бекон, листья салата, помидор, перепелиные яйца, соус цезарь",
         "price": 65,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-salad",
@@ -28,6 +32,10 @@
         "volumeRu": "250г",
         "summaryRu": "свежий помидор, огурец, перец болгарский, мусс дор блю, соус из рукколы",
         "price": 60,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-salad",
@@ -45,6 +53,10 @@
         "volumeRu": "250г",
         "summaryRu": "телятина гриль, помидор, перец болгарский, кабачок, грибы, фирменный соус",
         "price": 75,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-salad",
@@ -62,6 +74,10 @@
         "volumeRu": "250г",
         "summaryRu": "мясо с бедра курицы, брокколи, грибы, кабачок, стручковая фасоль, морковь, заправляется сырным соусом",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-salad",
@@ -79,6 +95,10 @@
         "volumeRu": "300г",
         "summaryRu": "слабосоленая лосось, помидор, лист салата, брокколи, сыр филадельфия, соус медово-горчичный",
         "price": 80,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300г",
         "image": "le-rock-salad",
@@ -96,6 +116,10 @@
         "volumeRu": "250г",
         "summaryRu": "листья салата, карамелизированное яблоко, рукула, перец гриль, помидоры, куриная печень, оливковое масло, уксус бальзамик",
         "price": 65,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-salad",
@@ -113,6 +137,10 @@
         "volumeRu": "250г",
         "summaryRu": "сочное мясо с поясничной части",
         "price": 125,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-meat",
@@ -130,6 +158,10 @@
         "volumeRu": "250г",
         "summaryRu": "мясо из подлопаточной части туши, имеет большое количество жировых прожилок",
         "price": 135,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-meat",
@@ -147,6 +179,10 @@
         "volumeRu": "200г",
         "summaryRu": "самая нежная, и постная часть говядины",
         "price": 145,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200г",
         "image": "le-rock-meat",
@@ -164,6 +200,10 @@
         "volumeRu": "200/140 / 30г",
         "summaryRu": "со стручковой фасолью и песто",
         "price": 100,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200/140/30г",
         "image": "le-rock-meat",
@@ -181,6 +221,10 @@
         "volumeRu": "300/120 / 30г",
         "summaryRu": "с грибами гриль и горчичным соусом",
         "price": 100,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300/120/30г",
         "image": "le-rock-meat",
@@ -198,6 +242,10 @@
         "volumeRu": "380 / 150г",
         "summaryRu": "(Рябчик) (подается с рокфорним пюре)",
         "price": 100,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "380/150г",
         "image": "le-rock-meat",
@@ -215,6 +263,10 @@
         "volumeRu": "270/250 / 30г",
         "summaryRu": "",
         "price": 110,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "270/250/30г",
         "image": "le-rock-meat",
@@ -232,6 +284,10 @@
         "volumeRu": "1500г",
         "summaryRu": "стейк из говядины, стейк свиной, куриное филе, колбаски, картофель печеный, 2 соусы",
         "price": 350,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "1500г",
         "image": "le-rock-meat",
@@ -249,6 +305,10 @@
         "volumeRu": "100г",
         "summaryRu": "Моцарелла, филе курицы, бекон, помидоры черри, пармезан, микс-салат, сливочный соус",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "100г",
         "image": "le-rock-meat",
@@ -266,6 +326,10 @@
         "volumeRu": "250г",
         "summaryRu": "острые / с горчичным соусом",
         "price": 60,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-meat",
@@ -283,6 +347,10 @@
         "volumeRu": "250г",
         "summaryRu": "соус из клюквы / чесночный",
         "price": 50,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-meat",
@@ -300,6 +368,10 @@
         "volumeRu": "150г",
         "summaryRu": "острые / не острые",
         "price": 45,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150г",
         "image": "le-rock-meat",
@@ -317,6 +389,10 @@
         "volumeRu": "300 / 30г",
         "summaryRu": "",
         "price": 60,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300/30г",
         "image": "le-rock-meat",
@@ -334,6 +410,10 @@
         "volumeRu": "100 / 30г",
         "summaryRu": "",
         "price": 80,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "100/30г",
         "image": "le-rock-meat",
@@ -351,6 +431,10 @@
         "volumeRu": "300 / 30г",
         "summaryRu": "",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300/30г",
         "image": "le-rock-meat",
@@ -368,6 +452,10 @@
         "volumeRu": "200/130/30 / 50г",
         "summaryRu": "куриные / свиные",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200/130/30/50г",
         "image": "le-rock-meat",
@@ -385,6 +473,10 @@
         "volumeRu": "800/300 / 100г",
         "summaryRu": "куриные / свиные",
         "price": 250,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "800/300/100г",
         "image": "le-rock-meat",
@@ -402,6 +494,10 @@
         "volumeRu": "200/100 / 30г",
         "summaryRu": "картофель фри, и соус",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200/100/30г",
         "image": "le-rock-rock-dogs",
@@ -419,6 +515,10 @@
         "volumeRu": "200/100 / 30г",
         "summaryRu": "картофель фри, и соус",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200/100/30г",
         "image": "le-rock-rock-dogs",
@@ -436,6 +536,10 @@
         "volumeRu": "200/100 / 30г",
         "summaryRu": "картофель фри, и соус",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200/100/30г",
         "image": "le-rock-rock-dogs",
@@ -453,6 +557,10 @@
         "volumeRu": "600г",
         "summaryRu": "+ салат из капусты",
         "price": 65,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "600г",
         "image": "barbarescoMlinty",
@@ -470,6 +578,10 @@
         "volumeRu": "600г",
         "summaryRu": "+ маринованный огурец",
         "price": 65,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "600г",
         "image": "barbarescoMlinty",
@@ -487,6 +599,10 @@
         "volumeRu": "600г",
         "summaryRu": "+ маринованный огурец",
         "price": 50,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "600г",
         "image": "barbarescoMlinty",
@@ -504,6 +620,10 @@
         "volumeRu": "160г",
         "summaryRu": "",
         "price": 45,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "160г",
         "image": "barbarescoDesert",
@@ -521,6 +641,10 @@
         "volumeRu": "150г",
         "summaryRu": "",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150г",
         "image": "barbarescoDesert",
@@ -538,6 +662,10 @@
         "volumeRu": "200г",
         "summaryRu": "Вишнево-мятный, Персиковый, Карамель",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200г",
         "image": "barbarescoDesert",
@@ -555,6 +683,10 @@
         "volumeRu": "150г",
         "summaryRu": "",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150г",
         "image": "barbarescoDesert",
@@ -572,6 +704,10 @@
         "volumeRu": "170г",
         "summaryRu": "",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "170г",
         "image": "barbarescoDesert",
@@ -589,6 +725,10 @@
         "volumeRu": "300г",
         "summaryRu": "с кусочками курицы и домашней пасты",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300г",
         "image": "le-rock-first-course",
@@ -606,6 +746,10 @@
         "volumeRu": "300г",
         "summaryRu": "",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300г",
         "image": "le-rock-first-course",
@@ -623,6 +767,10 @@
         "volumeRu": "345/150 / 30г",
         "summaryRu": "подается с картофельным пюре",
         "price": 80,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "345/150/30г",
         "image": "barbarescoHits",
@@ -640,6 +788,10 @@
         "volumeRu": "350г",
         "summaryRu": "",
         "price": 80,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "350г",
         "image": "barbarescoHits",
@@ -657,6 +809,10 @@
         "volumeRu": "80 / 60 / 15г",
         "summaryRu": "",
         "price": 120,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "80/60/15г",
         "image": "barbarescoHits",
@@ -674,6 +830,10 @@
         "volumeRu": "150/100 / 30г",
         "summaryRu": "",
         "price": 170,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150/100/30г",
         "image": "barbarescoHits",
@@ -691,6 +851,10 @@
         "volumeRu": "380г",
         "summaryRu": "",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "380г",
         "image": "barbarescoHits",
@@ -708,6 +872,10 @@
         "volumeRu": "400г",
         "summaryRu": "",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "400г",
         "image": "barbarescoHits",
@@ -725,6 +893,10 @@
         "volumeRu": "330г",
         "summaryRu": "",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "330г",
         "image": "barbarescoHits",
@@ -742,6 +914,10 @@
         "volumeRu": "300 / 100г",
         "summaryRu": "",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300/100г",
         "image": "barbarescoHits",
@@ -759,6 +935,10 @@
         "volumeRu": "3шт",
         "summaryRu": "с чоризо, с телятиной, с овощами",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "3шт",
         "image": "le-rock-appetizer",
@@ -776,6 +956,10 @@
         "volumeRu": "200г",
         "summaryRu": "подается с гренками",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200г",
         "image": "le-rock-appetizer",
@@ -793,6 +977,10 @@
         "volumeRu": "400г",
         "summaryRu": "",
         "price": 50,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "400г",
         "image": "le-rock-appetizer",
@@ -810,6 +998,10 @@
         "volumeRu": "170г",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "170г",
         "image": "le-rock-appetizer",
@@ -827,6 +1019,10 @@
         "volumeRu": "170г",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "170г",
         "image": "le-rock-appetizer",
@@ -844,6 +1040,10 @@
         "volumeRu": "150г",
         "summaryRu": "ржаные сухарики, вяленое мясо, чесночный соус",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150г",
         "image": "le-rock-appetizer",
@@ -861,6 +1061,10 @@
         "volumeRu": "100 / 30г",
         "summaryRu": "подается с гренками",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "100/30г",
         "image": "le-rock-appetizer",
@@ -878,6 +1082,10 @@
         "volumeRu": "150г",
         "summaryRu": "с чесночным соусом",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150г",
         "image": "le-rock-appetizer",
@@ -895,6 +1103,10 @@
         "volumeRu": "200г",
         "summaryRu": "с чесночным соусом",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200г",
         "image": "le-rock-appetizer",
@@ -912,6 +1124,10 @@
         "volumeRu": "600г",
         "summaryRu": "сырные палочки, наггетсы, колбаски в беконе, снеки, грисини, соус тартар",
         "price": 150,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "600г",
         "image": "le-rock-appetizer",
@@ -929,6 +1145,10 @@
         "volumeRu": "300г",
         "summaryRu": "",
         "price": 50,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300г",
         "image": "le-rock-side-dishes",
@@ -946,6 +1166,10 @@
         "volumeRu": "250г",
         "summaryRu": "",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-side-dishes",
@@ -963,6 +1187,10 @@
         "volumeRu": "210г",
         "summaryRu": "С розмарином и беконом",
         "price": 25,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "210г",
         "image": "le-rock-side-dishes",
@@ -980,6 +1208,10 @@
         "volumeRu": "150г",
         "summaryRu": "",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150г",
         "image": "le-rock-side-dishes",
@@ -997,6 +1229,10 @@
         "volumeRu": "200г",
         "summaryRu": "",
         "price": 20,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200г",
         "image": "le-rock-side-dishes",
@@ -1014,6 +1250,10 @@
         "volumeRu": "1шт",
         "summaryRu": "",
         "price": 15,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "1шт",
         "image": "le-rock-side-dishes",
@@ -1031,6 +1271,10 @@
         "volumeRu": "",
         "summaryRu": "",
         "price": 25,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "",
         "image": "barbarescoDrinksCoffe",
@@ -1048,6 +1292,10 @@
         "volumeRu": "",
         "summaryRu": "",
         "price": 25,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "",
         "image": "barbarescoDrinksCoffe",
@@ -1065,6 +1313,10 @@
         "volumeRu": "",
         "summaryRu": "",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "",
         "image": "barbarescoDrinksCoffe",
@@ -1082,6 +1334,10 @@
         "volumeRu": "",
         "summaryRu": "",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "",
         "image": "barbarescoDrinksCoffe",
@@ -1099,6 +1355,10 @@
         "volumeRu": "",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "",
         "image": "barbarescoDrinksCoffe",
@@ -1116,6 +1376,10 @@
         "volumeRu": "",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "",
         "image": "barbarescoDrinksCoffe",
@@ -1133,6 +1397,10 @@
         "volumeRu": "",
         "summaryRu": "",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "",
         "image": "barbarescoDrinksCoffe",
@@ -1150,6 +1418,10 @@
         "volumeRu": "",
         "summaryRu": "",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "",
         "image": "barbarescoDrinksCoffe",
@@ -1167,6 +1439,10 @@
         "volumeRu": "600мл",
         "summaryRu": "черный / зелени / фруктовый",
         "price": 25,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "600мл",
         "image": "barbarescoDrinksTea",
@@ -1184,6 +1460,10 @@
         "volumeRu": "600мл",
         "summaryRu": "",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "600мл",
         "image": "barbarescoDrinksTea",
@@ -1201,6 +1481,10 @@
         "volumeRu": "600мл",
         "summaryRu": "",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "600мл",
         "image": "barbarescoDrinksTea",
@@ -1218,6 +1502,10 @@
         "volumeRu": "250мл",
         "summaryRu": "",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksTea",
@@ -1235,6 +1523,10 @@
         "volumeRu": "250мл",
         "summaryRu": "",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksTea",
@@ -1252,6 +1544,10 @@
         "volumeRu": "300мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300мл",
         "image": "barbarescoDrinksTea",
@@ -1269,6 +1565,10 @@
         "volumeRu": "300мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300мл",
         "image": "barbarescoDrinksTea",
@@ -1286,6 +1586,10 @@
         "volumeRu": "300мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300мл",
         "image": "barbarescoDrinksTea",
@@ -1303,6 +1607,10 @@
         "volumeRu": "500мл",
         "summaryRu": "слабо газ. / не газ.",
         "price": 27,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "500мл",
         "image": "barbarescoDrinksTea",
@@ -1320,6 +1628,10 @@
         "volumeRu": "500мл",
         "summaryRu": "",
         "price": 45,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "500мл",
         "image": "barbarescoDrinksTea",
@@ -1337,6 +1649,10 @@
         "volumeRu": "330мл",
         "summaryRu": "слабо газ. / не газ.",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "330мл",
         "image": "barbarescoDrinksTea",
@@ -1354,6 +1670,10 @@
         "volumeRu": "250мл",
         "summaryRu": "разлив",
         "price": 20,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksTea",
@@ -1371,6 +1691,10 @@
         "volumeRu": "250мл",
         "summaryRu": "собственного приготовления",
         "price": 15,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksTea",
@@ -1388,6 +1712,10 @@
         "volumeRu": "250мл",
         "summaryRu": "",
         "price": 65,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksFresh",
@@ -1405,6 +1733,10 @@
         "volumeRu": "250мл",
         "summaryRu": "",
         "price": 65,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksFresh",
@@ -1422,6 +1754,10 @@
         "volumeRu": "250мл",
         "summaryRu": "Апельсиновый, ананасовый, персиковый, вишневый, яблочный, томатный, грейпфрутовый",
         "price": 17,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksFresh",
@@ -1439,6 +1775,10 @@
         "volumeRu": "350мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "350мл",
         "image": "barbarescoDrinksFresh",
@@ -1456,6 +1796,10 @@
         "volumeRu": "350мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "350мл",
         "image": "barbarescoDrinksFresh",
@@ -1473,6 +1817,10 @@
         "volumeRu": "350мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "350мл",
         "image": "barbarescoDrinksFresh",
@@ -1490,6 +1838,10 @@
         "volumeRu": "350мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "350мл",
         "image": "barbarescoDrinksFresh",
@@ -1507,6 +1859,10 @@
         "volumeRu": "350мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "350мл",
         "image": "barbarescoDrinksFresh",
@@ -1524,6 +1880,10 @@
         "volumeRu": "250мл",
         "summaryRu": "пюре дыни, маракуйи и персика",
         "price": 45,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksFresh",
@@ -1541,6 +1901,10 @@
         "volumeRu": "250мл",
         "summaryRu": "шпинат, банан, сок яблока, пюре маракуйи",
         "price": 45,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoDrinksFresh",
@@ -1558,6 +1922,10 @@
         "volumeRu": "300мл",
         "summaryRu": "captain morgan spice, пюре киви Monin, мята, лайм, содовая, киви",
         "price": 75,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300мл",
         "image": "barbarescoAlcohol",
@@ -1575,6 +1943,10 @@
         "volumeRu": "300мл",
         "summaryRu": "Тростниковый сахар, лайм, мята, содовая",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "300мл",
         "image": "barbarescoAlcohol",
@@ -1592,6 +1964,10 @@
         "volumeRu": "200мл",
         "summaryRu": "beefeater pink, aperol, сироп бузина, лимонный фреш, игристое вино, содовая",
         "price": 75,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200мл",
         "image": "barbarescoAlcohol",
@@ -1609,6 +1985,10 @@
         "volumeRu": "250мл",
         "summaryRu": "Водка, соусы табаско и ворчестер, микс специй, лимонный фреш, томатный сок",
         "price": 60,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoAlcohol",
@@ -1626,6 +2006,10 @@
         "volumeRu": "250мл",
         "summaryRu": "Томатный сок, соусы табаско и ворчестер, микс специй, лимонный фреш",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoAlcohol",
@@ -1643,6 +2027,10 @@
         "volumeRu": "120мл",
         "summaryRu": "Джин Bombay Sapphire, Campari, Cinzano Antica",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "120мл",
         "image": "barbarescoAlcohol",
@@ -1660,6 +2048,10 @@
         "volumeRu": "200мл",
         "summaryRu": "captain morgan black, пюре маракуйя Monin, amaro di angostura, лимонный фреш, белок, содовая",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200мл",
         "image": "barbarescoAlcohol",
@@ -1677,6 +2069,10 @@
         "volumeRu": "100мл",
         "summaryRu": "wild turkey 101, кленовый сироп, cynar, ангостура",
         "price": 80,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "100мл",
         "image": "barbarescoAlcohol",
@@ -1694,6 +2090,10 @@
         "volumeRu": "150мл",
         "summaryRu": "espolon reposado, пюре ананаса, базилик, лайм",
         "price": 80,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150мл",
         "image": "barbarescoAlcohol",
@@ -1711,6 +2111,10 @@
         "volumeRu": "200мл",
         "summaryRu": "gordon's, пюре юдзу Monin фреш лайма, тоник, концентрат синего чая",
         "price": 80,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200мл",
         "image": "barbarescoAlcohol",
@@ -1728,6 +2132,10 @@
         "volumeRu": "120мл",
         "summaryRu": "gordon's, базилик, сахарный сироп, лайм",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "120мл",
         "image": "barbarescoAlcohol",
@@ -1745,6 +2153,10 @@
         "volumeRu": "200мл",
         "summaryRu": "finlandia original, пюре маракуйи и юдзу Monin, ананасовый сок, белок",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200мл",
         "image": "barbarescoAlcohol",
@@ -1762,6 +2174,10 @@
         "volumeRu": "200мл",
         "summaryRu": "gordon's, aperol фреш лайма, сахарный сироп, сливки, белок, содовая",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200мл",
         "image": "barbarescoAlcohol",
@@ -1779,6 +2195,10 @@
         "volumeRu": "200мл",
         "summaryRu": "finlandia original, сироп агавы Monin, грейпфрутовый фреш, пюре свеклы",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "200мл",
         "image": "barbarescoAlcohol",
@@ -1796,6 +2216,10 @@
         "volumeRu": "150мл",
         "summaryRu": "beefeater pink, игристое вино, земляничный сироп Monin",
         "price": 75,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150мл",
         "image": "barbarescoAlcohol",
@@ -1813,6 +2237,10 @@
         "volumeRu": "150мл",
         "summaryRu": "captain morgan black, трипл сек, сироп острый манго Monin, лимонный фреш",
         "price": 80,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150мл",
         "image": "barbarescoAlcohol",
@@ -1830,6 +2258,10 @@
         "volumeRu": "150мл",
         "summaryRu": "gordon's, сироп бузина и огурец Monin, лимонный фреш, сыр Philadelphia",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150мл",
         "image": "barbarescoAlcohol",
@@ -1847,6 +2279,10 @@
         "volumeRu": "250мл",
         "summaryRu": "bacardi oakheart, captain morgan black, plantation overproot, apricot Brandy, Luxardo Maraschino, пюре личи Monin фреш лайма, грейпфрутовый сок, корица",
         "price": 120,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "250мл",
         "image": "barbarescoAlcohol",
@@ -1864,6 +2300,10 @@
         "volumeRu": "150мл",
         "summaryRu": "bacardi oakheart, сироп грейпфрут Monin, фалернум фреш лайма",
         "price": 90,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "150мл",
         "image": "barbarescoAlcohol",
@@ -1881,6 +2321,10 @@
         "volumeRu": "100мл",
         "summaryRu": "белое п / с. красное н / c. ",
         "price": 34,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "100мл",
         "image": "barbarescoAlcohol",
@@ -1898,6 +2342,10 @@
         "volumeRu": "750мл",
         "summaryRu": "белое п / с. красное н / c. ",
         "price": 250,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "750мл",
         "image": "barbarescoAlcohol",
@@ -1915,6 +2363,10 @@
         "volumeRu": "100мл",
         "summaryRu": "красное сухое / белое сухое",
         "price": 34,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "100мл",
         "image": "barbarescoAlcohol",
@@ -1932,6 +2384,10 @@
         "volumeRu": "750мл",
         "summaryRu": "красное сухое / белое сухое",
         "price": 250,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "750мл",
         "image": "barbarescoAlcohol",
@@ -1949,6 +2405,10 @@
         "volumeRu": "100мл",
         "summaryRu": "красное сухое / белое сухое",
         "price": 44,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "100мл",
         "image": "barbarescoAlcohol",
@@ -1966,6 +2426,10 @@
         "volumeRu": "750мл",
         "summaryRu": "красное сухое / белое сухое",
         "price": 330,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "750мл",
         "image": "barbarescoAlcohol",
@@ -1983,6 +2447,10 @@
         "volumeRu": "100мл",
         "summaryRu": "розовое н.с",
         "price": 44,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "100мл",
         "image": "barbarescoAlcohol",
@@ -2000,6 +2468,10 @@
         "volumeRu": "750мл",
         "summaryRu": "розовое н.с",
         "price": 330,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "750мл",
         "image": "barbarescoAlcohol",
@@ -2017,6 +2489,10 @@
         "volumeRu": "750мл",
         "summaryRu": "Асти Мондоро",
         "price": 450,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "750мл",
         "image": "barbarescoAlcohol",
@@ -2034,6 +2510,10 @@
         "volumeRu": "750мл",
         "summaryRu": "Фраголино",
         "price": 180,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "750мл",
         "image": "barbarescoAlcohol",
@@ -2051,6 +2531,10 @@
         "volumeRu": "750мл",
         "summaryRu": "roze",
         "price": 150,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "750мл",
         "image": "barbarescoAlcohol",
@@ -2068,6 +2552,10 @@
         "volumeRu": "750мл",
         "summaryRu": "розовое н / c",
         "price": 150,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "750мл",
         "image": "barbarescoAlcohol",
@@ -2085,6 +2573,10 @@
         "volumeRu": "210мл",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "210мл",
         "image": "barbarescoAlcohol",
@@ -2102,6 +2594,10 @@
         "volumeRu": "210мл",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "210мл",
         "image": "barbarescoAlcohol",
@@ -2119,6 +2615,10 @@
         "volumeRu": "210мл",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "210мл",
         "image": "barbarescoAlcohol",
@@ -2136,6 +2636,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "Бомбей Сапфир",
         "price": 65,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2153,6 +2657,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "Бифитер",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2170,6 +2678,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "Капитан Морган темный",
         "price": 50,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2187,6 +2699,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "Капитан Морган золотой",
         "price": 50,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2204,6 +2720,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "Бакарди Oакхарт",
         "price": 45,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2221,6 +2741,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "классическая, клюква",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2238,6 +2762,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 25,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2255,6 +2783,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 20,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2272,6 +2804,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "Бланки / репосадо",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2289,6 +2825,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2306,6 +2846,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 55,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2323,6 +2867,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 100,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2340,6 +2888,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2357,6 +2909,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2374,6 +2930,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 30,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2391,6 +2951,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 35,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2408,6 +2972,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 45,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2425,6 +2993,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2442,6 +3014,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 75,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2459,6 +3035,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 85,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2476,6 +3056,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2493,6 +3077,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2510,6 +3098,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 70,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
@@ -2527,6 +3119,10 @@
         "volumeRu": "50 мл",
         "summaryRu": "",
         "price": 40,
+        "imageUri": {
+            "path": null,
+            "meta": null
+        },
         "quantity": 100,
         "volumeUk": "50мл",
         "image": "barbarescoAlcohol",
