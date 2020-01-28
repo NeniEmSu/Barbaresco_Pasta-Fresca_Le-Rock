@@ -6,11 +6,21 @@
       class="card"
     >
       <img
+        v-if="product.imageUri.path !== null"
         loading="lazy"
         width="200"
         height="200"
         class="card-img-top mx-auto"
-        :src="require(`~/assets/img/${product.image + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+        :src="`https://barbaresco-admin.w-start.com.ua/api/cockpit/image?token=ffb42583d5425c6231d7655b44e497&w=200&h=200&f[brighten]=0&o=true&src=${product.imageUri.path}`"
+        :alt="product.nameUk || product.nameRu || product.nameEn"
+      >
+      <img
+        v-else
+        loading="lazy"
+        width="200"
+        height="200"
+        class="card-img-top mx-auto"
+        :src="require(`~/assets/img/${product.image + '.jpg'}`)"
         :alt="product.nameUk || product.nameRu || product.nameEn"
       >
       <div class="card-body">

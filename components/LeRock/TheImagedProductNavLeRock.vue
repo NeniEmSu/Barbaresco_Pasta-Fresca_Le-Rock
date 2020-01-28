@@ -247,7 +247,7 @@ export default {
 }
 
 .navFive {
-  background-image: url("~assets/img/barbarescoDesert.png");
+  background-image: url("~assets/img/barbarescoDesert.jpg");
 }
 
 .navSix {
@@ -255,7 +255,7 @@ export default {
 }
 
 .navSeven {
-  background-image: url("~assets/img/barbarescoFirstCourse.png");
+  background-image: url("~assets/img/barbarescoFirstCourse.jpg");
 }
 
 .navFirstCourse {
@@ -263,7 +263,7 @@ export default {
 }
 
 .navEight {
-  background-image: url("~assets/img/barbarescoHits.png");
+  background-image: url("~assets/img/barbarescoHits.jpg");
 }
 
 .navNine {

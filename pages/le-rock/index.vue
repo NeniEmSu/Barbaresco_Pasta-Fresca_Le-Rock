@@ -144,6 +144,7 @@
             {{ $t('instruction') }}
           </h2>
         </div>
+
         <TheAppetizers v-if="currentProductsDisplayed === 1" />
 
         <TheRockDogs v-if="currentProductsDisplayed === 2" />

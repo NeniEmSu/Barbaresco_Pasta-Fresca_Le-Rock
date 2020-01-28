@@ -254,31 +254,31 @@ export default {
 }
 
 .navOne {
-  background-image: url("~assets/img/barbarescoPizza.png");
+  background-image: url("~assets/img/barbarescoPizza.jpg");
 }
 
 .navTwo {
-  background-image: url("~assets/img/barbarescoBurger.png");
+  background-image: url("~assets/img/barbarescoBurger.jpg");
 }
 
 .navThree {
-  background-image: url("~assets/img/barbarescoSushi.png");
+  background-image: url("~assets/img/barbarescoSushi.jpg");
 }
 
 .navFour {
-  background-image: url("~assets/img/barbarescoMlinty.png");
+  background-image: url("~assets/img/barbarescoMlinty.jpg");
 }
 
 .navFive {
-  background-image: url("~assets/img/barbarescoDesert.png");
+  background-image: url("~assets/img/barbarescoDesert.jpg");
 }
 
 .navSix {
-  background-image: url("~assets/img/barbarescoSalad.png");
+  background-image: url("~assets/img/barbarescoSalad.jpg");
 }
 
 .navSeven {
-  background-image: url("~assets/img/barbarescoFirstCourse.png");
+  background-image: url("~assets/img/barbarescoFirstCourse.jpg");
 }
 
 .navEight {
@@ -286,15 +286,15 @@ export default {
 }
 
 .navNine {
-  background-image: url("~assets/img/barbarescoHotDrinks.png");
+  background-image: url("~assets/img/barbarescoHotDrinks.jpg");
 }
 
 .navTen {
-  background-image: url("~assets/img/barbarescoAlcohol.png");
+  background-image: url("~assets/img/barbarescoAlcohol.jpg");
 }
 
 .navMainMeal {
-  background-image: url("~assets/img/barbarescoHits.png");
+  background-image: url("~assets/img/barbarescoHits.jpg");
 }
 
 .navGarnishes {

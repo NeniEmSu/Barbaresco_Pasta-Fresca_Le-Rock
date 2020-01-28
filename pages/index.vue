@@ -98,7 +98,7 @@
               class=" col-4 "
             >
               <b-card
-                :img-src="require(`~/assets/img/${variants[0].imageShowcase + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :img-src="require(`~/assets/img/${variants[0].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[0].showcaseAlt"
                 img-top
                 tag="article"
@@ -163,7 +163,7 @@
               class=" col-4 "
             >
               <b-card
-                :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :img-src="require(`~/assets/img/${variants[1].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[1].showcaseAlt"
                 img-top
                 tag="article"
@@ -227,7 +227,7 @@
               class=" col-4 "
             >
               <b-card
-                :img-src="require(`~/assets/img/${variants[2].imageShowcase + '.jpg'}`) || require(`~/assets/img/barbarescoBurger.png`)"
+                :img-src="require(`~/assets/img/${variants[2].imageShowcase + '.jpg'}`)"
                 :img-alt="variants[2].showcaseAlt"
                 img-top
                 tag="article"
