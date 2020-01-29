@@ -229,10 +229,7 @@
       </div>
       <hr>
 
-      <form
-        class="row"
-        @submit.prevent="checkForm"
-      >
+      <form class="row">
         <div class="col-lg-6">
           <div class="col-12">
             <div
@@ -450,7 +447,7 @@
             <div class="cart-items">
               <div
                 v-for="(product, index) in cart"
-                :key="product.id"
+                :key="product._id"
                 class="cart-item"
               >
                 <div class="row my-auto">
@@ -458,10 +455,24 @@
                     {{ index+=1 }}
                   </p>
                   <img
+                    v-if="product.path !== null"
+                    loading="lazy"
+                    width="200"
+                    height="200"
                     style="border-radius: 50%;"
-                    :src="require(`~/assets/img/${product.image + '.jpg'}`)"
-                    alt=""
                     class="col-2 m-auto"
+                    :src="`https://barbaresco-admin.w-start.com.ua/api/cockpit/image?token=ffb42583d5425c6231d7655b44e497&w=200&h=200&f[brighten]=0&o=true&src=${product.path}`"
+                    :alt="product.nameUk || product.nameRu || product.nameEn"
+                  >
+                  <img
+                    v-else
+                    loading="lazy"
+                    width="200"
+                    height="200"
+                    style="border-radius: 50%;"
+                    class="col-2 m-auto"
+                    :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                    :alt="product.image"
                   >
                   <div class="col-5 p-0">
                     <div class="col-12 p-0 m-auto">
@@ -491,14 +502,14 @@
                         <div class="toggle-quantity col-12 m-auto ">
                           <button
                             :disabled="product.quantity === 1"
-                            @click="removeFromCart(product.id)"
+                            @click.prevent="removeFromCart(product._id)"
                           >
                             &minus;
                           </button>
                           <p>{{ product.quantity }}</p>
                           <button
                             :disabled="product.quantity === product.stock"
-                            @click="addToCart(product.id)"
+                            @click.prevent="addToCart(product._id)"
                           >
                             &plus;
                           </button>
@@ -512,7 +523,7 @@
                         <div class="remove-from-chart col-12 m-auto text-right">
                           <span
                             class="close text-right"
-                            @click="deleteFromCart(product.id)"
+                            @click.prevent="deleteFromCart(product._id)"
                           >&times;
                           </span>
                         </div>
@@ -551,6 +562,7 @@
                     type="submit"
                     aria-label="submit"
                     name="submit"
+                    @click.prevent="checkForm"
                   >
                     {{ $t('cart.order') }}
                   </button>
@@ -582,7 +594,11 @@
         </div>
         <h5>{{ $t('toast.title') }}</h5>
         <p>{{ $t('toast.info') }}</p>
-        <b-button class="backToHome" :to="localePath({name: 'barbaresco'},$i18n.locale)" @click="success = false">
+        <b-button
+          class="backToHome"
+          :to="localePath({name: 'barbaresco'},$i18n.locale)"
+          @click.prevent="success = false"
+        >
           {{ $t('toast.btn') }}
         </b-button>
       </div>
@@ -742,6 +758,11 @@ export default {
     if (sessionStorage.comment) {
       this.comment = sessionStorage.comment
     }
+  },
+
+  created () {
+    this.loading = true
+    this.$store.dispatch('fetchProducts').then(() => (this.loading = false))
   },
 
   methods: {

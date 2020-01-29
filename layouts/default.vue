@@ -51,6 +51,9 @@
 export default {
   head () {
     return this.$nuxtI18nSeo()
+  },
+  meta: {
+    animation: 'fade'
   }
 
 }

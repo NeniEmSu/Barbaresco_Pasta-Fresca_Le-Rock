@@ -280,6 +280,11 @@ export default {
     }
   },
 
+  created () {
+    this.loading = true
+    this.$store.dispatch('fetchProductsPF').then(() => (this.loading = false))
+  },
+
   methods: {
     updateView (updatedView) {
       this.currentProductsDisplayed = updatedView

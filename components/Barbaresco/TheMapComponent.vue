@@ -29,7 +29,7 @@
         v-for="location in locations"
         :key="location.id"
         :position="{lat: location.lat, lng: location.lng}"
-        @click="currentLocation = location"
+        @click.prevent="currentLocation = location"
       >
         <GmapInfoWindow>
           <code>

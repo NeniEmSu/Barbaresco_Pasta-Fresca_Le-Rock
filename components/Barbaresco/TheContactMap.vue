@@ -21,7 +21,7 @@
         :key="location.id"
         :position="{lat: location.lat, lng: location.lng}"
         :options="{icon: location === currentLocation ? pins.selected : pins.notSelected}"
-        @click="currentLocation = location"
+        @click.prevent="currentLocation = location"
       >
         <GmapInfoWindow>
           <code>

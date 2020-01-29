@@ -177,7 +177,7 @@
       <div class="row">
         <div
           class="btn-hamburger"
-          @click="mobileNavOpen = !mobileNavOpen"
+          @click.prevent="mobileNavOpen = !mobileNavOpen"
         >
           <img
             src="~/assets/img/menu.svg"
@@ -203,7 +203,7 @@
           <button
             class="btn reservation-btn d-none"
             variant="outline-primary"
-            @click="reservationOpen = !reservationOpen"
+            @click.prevent="reservationOpen = !reservationOpen"
           >
             {{ $t('links.reservation') }}
           </button>
@@ -212,7 +212,7 @@
         <div
           class="border-0 theHead-nav-toggle cart"
           style="cursor: pointer;"
-          @click="cartOpen = !cartOpen"
+          @click.prevent="cartOpen = !cartOpen"
         >
           <img
             src="~/assets/img/Корзина.png"
@@ -361,36 +361,65 @@
               </h3>
               <div
                 v-for="product in leRockCart"
-                :key="product.id"
+                :key="product._id"
                 class="cart-item"
               >
                 <div class="row my-auto">
                   <img
+                    v-if="product.path !== null"
+                    loading="lazy"
+                    width="200"
+                    height="200"
                     style="border-radius: 50%;"
-                    :src="require(`~/assets/img/${product.image + '.jpg'}`)"
-                    alt=""
                     class="col-3 m-auto cart-product-img"
+                    :src="`https://barbaresco-admin.w-start.com.ua/api/cockpit/image?token=ffb42583d5425c6231d7655b44e497&w=200&h=200&f[brighten]=0&o=true&src=${product.path}`"
+                    :alt="product.nameUk || product.nameRu || product.nameEn"
+                  >
+                  <img
+                    v-else
+                    loading="lazy"
+                    width="200"
+                    height="200"
+                    style="border-radius: 50%;"
+                    class="col-3 m-auto cart-product-img"
+                    :src="require(`~/assets/img/${product.image + '.jpg'}`)"
+                    :alt="product.image"
                   >
                   <div class="col-5 p-0">
                     <div class="col-12 p-0 m-auto">
                       <div class="row m-auto">
                         <h6
+                          v-if="$i18n.locale === 'en'"
                           id="cart-item-title"
                           class="col-12 m-auto text-center py-2 crop"
                         >
-                          {{ product.name }}
+                          {{ product.nameEn || product.nameUk || product.nameRu }}
+                        </h6>
+                        <h6
+                          v-else-if="$i18n.locale === 'uk'"
+                          id="cart-item-title"
+                          class="col-12 m-auto text-center py-2 crop"
+                        >
+                          {{ product.nameUk || product.nameRu || product.nameEn }}
+                        </h6>
+                        <h6
+                          v-else-if="$i18n.locale === 'ru'"
+                          id="cart-item-title"
+                          class="col-12 m-auto text-center py-2 crop"
+                        >
+                          {{ product.nameRu || product.nameUk || product.nameEn }}
                         </h6>
                         <div class="toggle-quantity col-12 m-auto ">
                           <button
                             :disabled="product.quantity === 1"
-                            @click="removeFromCart(product.id)"
+                            @click.prevent="removeFromCart(product._id)"
                           >
                             &minus;
                           </button>
                           <p>{{ product.quantity }}</p>
                           <button
                             :disabled="product.quantity === product.stock"
-                            @click="addToCart(product.id)"
+                            @click.prevent="addToCart(product._id)"
                           >
                             &plus;
                           </button>
@@ -404,7 +433,7 @@
                         <div class="remove-from-chart col-12 m-auto text-right">
                           <span
                             class="close text-right"
-                            @click="deleteFromCart(product.id)"
+                            @click.prevent="deleteFromCart(product._id)"
                           >&times;
                           </span>
                         </div>
@@ -445,7 +474,7 @@
                     <b-button
                       :disabled="!leRockCartSize"
                       class="order d-block d-lg-none"
-                      @click="showCartForm()"
+                      @click.prevent="showCartForm()"
                     >
                       {{ $t('cart.order') }}
                     </b-button>
@@ -456,7 +485,7 @@
               <div class="clearAll mt-5 mx-auto text-center">
                 <button
                   :disabled="!leRockCartSize"
-                  @click="emptycart()"
+                  @click.prevent="emptycart()"
                 >
                   {{ $t('cart.clear') }}
                 </button>
@@ -613,7 +642,11 @@
               </div>
               <h5>{{ $t('toast.title') }}</h5>
               <p>{{ $t('toast.info') }}</p>
-              <b-button class="backToHome" :to="localePath({name: 'le-rock'},$i18n.locale)" @click="success = false">
+              <b-button
+                class="backToHome"
+                :to="localePath({name: 'le-rock'},$i18n.locale)"
+                @click.prevent="success = false"
+              >
                 {{ $t('toast.btn') }}
               </b-button>
             </div>

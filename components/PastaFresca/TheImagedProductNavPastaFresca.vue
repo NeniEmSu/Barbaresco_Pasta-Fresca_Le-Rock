@@ -45,7 +45,7 @@
       <button
         class="column "
         :class="{ active: currentProductsDisplayed === 6}"
-        @click="Show6"
+        @click.prevent="Show6"
       >
         <div class="nav-image  spin circle navSix" />
         <div class="text-center nav-text">
@@ -56,7 +56,7 @@
       <button
         class="column text-center "
         :class="{ active: currentProductsDisplayed === 1}"
-        @click="Show1"
+        @click.prevent="Show1"
       >
         <div class="nav-image  spin circle navOne text-center" />
         <div class="text-center nav-text">
@@ -67,7 +67,7 @@
       <button
         class="column "
         :class="{ active: currentProductsDisplayed === 8}"
-        @click="Show8"
+        @click.prevent="Show8"
       >
         <div class="nav-image  spin circle navEight" />
         <div class="text-center nav-text">
@@ -78,7 +78,7 @@
       <button
         class="column"
         :class="{ active: currentProductsDisplayed === 2}"
-        @click="Show2"
+        @click.prevent="Show2"
       >
         <div class="nav-image  spin circle navTwo" />
         <div class="text-center nav-text">
@@ -111,7 +111,7 @@
       <button
         class="column "
         :class="{ active: currentProductsDisplayed === 5}"
-        @click="Show5"
+        @click.prevent="Show5"
       >
         <div class="nav-image  spin circle navFive" />
         <div class="text-center nav-text">

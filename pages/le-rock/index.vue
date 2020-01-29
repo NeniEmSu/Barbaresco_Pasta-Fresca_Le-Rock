@@ -284,6 +284,10 @@ export default {
       this.currentProductsDisplayed = parseInt(sessionStorage.currentProductsDisplayedLR) || 0
     }
   },
+  created () {
+    this.loading = true
+    this.$store.dispatch('fetchProductsLR').then(() => (this.loading = false))
+  },
 
   methods: {
     updateView (updatedView) {

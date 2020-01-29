@@ -21,7 +21,7 @@
         height="200"
         class="card-img-top mx-auto"
         :src="require(`~/assets/img/${product.image + '.jpg'}`)"
-        :alt="product.nameUk || product.nameRu || product.nameEn"
+        :alt="product.image"
       >
       <div class="card-body">
         <h5

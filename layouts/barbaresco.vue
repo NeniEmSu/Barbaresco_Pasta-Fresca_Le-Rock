@@ -48,6 +48,7 @@ export default {
     TheMobileFooter
 
   },
+
   head () {
     const i18nSeo = this.$nuxtI18nSeo()
     return {
