@@ -93,17 +93,6 @@
 
       <button
         class="column"
-        :class="{ active: currentProductsDisplayed === 5}"
-        @click.prevent="Show5"
-      >
-        <div class="nav-image navFive spin circle" />
-        <div class="text-center nav-text">
-          {{ $t('deserts') }}
-        </div>
-      </button>
-
-      <button
-        class="column"
         :class="{ active: currentProductsDisplayed === 6}"
         @click.prevent="Show6"
       >
@@ -126,12 +115,45 @@
 
       <button
         class="column"
+        :class="{ active: currentProductsDisplayed === 11}"
+        @click.prevent="Show11"
+      >
+        <div class="nav-image navMainMeal spin circle" />
+        <div class="text-center nav-text">
+          {{ $t('mainMeal') }}
+        </div>
+      </button>
+
+      <button
+        class="column"
         :class="{ active: currentProductsDisplayed === 8}"
         @click.prevent="Show8"
       >
         <div class="nav-image navEight spin circle" />
         <div class="text-center nav-text">
           {{ $t('appetizers') }}
+        </div>
+      </button>
+
+      <button
+        class="column"
+        :class="{ active: currentProductsDisplayed === 12}"
+        @click.prevent="Show12"
+      >
+        <div class="nav-image navGarnishes spin circle" />
+        <div class="text-center nav-text">
+          {{ $t('garnishes') }}
+        </div>
+      </button>
+
+      <button
+        class="column"
+        :class="{ active: currentProductsDisplayed === 5}"
+        @click.prevent="Show5"
+      >
+        <div class="nav-image navFive spin circle" />
+        <div class="text-center nav-text">
+          {{ $t('deserts') }}
         </div>
       </button>
 
@@ -154,28 +176,6 @@
         <div class="nav-image navTen spin circle" />
         <div class="text-center nav-text">
           {{ $t('alcohol') }}
-        </div>
-      </button>
-
-      <button
-        class="column"
-        :class="{ active: currentProductsDisplayed === 11}"
-        @click.prevent="Show11"
-      >
-        <div class="nav-image navMainMeal spin circle" />
-        <div class="text-center nav-text">
-          {{ $t('mainMeal') }}
-        </div>
-      </button>
-
-      <button
-        class="column"
-        :class="{ active: currentProductsDisplayed === 12}"
-        @click.prevent="Show12"
-      >
-        <div class="nav-image navGarnishes spin circle" />
-        <div class="text-center nav-text">
-          {{ $t('garnishes') }}
         </div>
       </button>
     </section>

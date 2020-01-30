@@ -158,13 +158,13 @@
 
       <TheAppetizers v-if="currentProductsDisplayed === 8" />
 
-      <TheDrinks v-if="currentProductsDisplayed === 9" />
-
-      <TheAlcohol v-if="currentProductsDisplayed === 10" />
-
       <TheMainMeal v-if="currentProductsDisplayed === 11" />
 
       <TheGarnishes v-if="currentProductsDisplayed === 12" />
+
+      <TheDrinks v-if="currentProductsDisplayed === 9" />
+
+      <TheAlcohol v-if="currentProductsDisplayed === 10" />
     </vue-page-transition>
 
     <TheBottomCarousel class="elaboraSpacing" />

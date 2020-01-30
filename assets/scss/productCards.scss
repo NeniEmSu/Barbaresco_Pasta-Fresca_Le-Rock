@@ -70,6 +70,12 @@
   }
 }
 
+.curency {
+  font-size: 12px !important;
+  line-height: 14px !important;
+  font-weight: normal;
+}
+
 .quantity {
   float: right;
   margin-right: 15px;
@@ -152,6 +158,9 @@ button.btn {
 
   .card-text {
 
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
 
     &.cost {
       font-size: 18px;

@@ -43,17 +43,6 @@
   <div id="imaged-Products-Navigation-pasta-fresca">
     <section class="container text-center ">
       <button
-        class="column "
-        :class="{ active: currentProductsDisplayed === 6}"
-        @click.prevent="Show6"
-      >
-        <div class="nav-image  spin circle navSix" />
-        <div class="text-center nav-text">
-          {{ $t('salads') }}
-        </div>
-      </button>
-
-      <button
         class="column text-center "
         :class="{ active: currentProductsDisplayed === 1}"
         @click.prevent="Show1"
@@ -61,6 +50,17 @@
         <div class="nav-image  spin circle navOne text-center" />
         <div class="text-center nav-text">
           {{ $t('pasta') }}
+        </div>
+      </button>
+
+      <button
+        class="column "
+        :class="{ active: currentProductsDisplayed === 6}"
+        @click.prevent="Show6"
+      >
+        <div class="nav-image  spin circle navSix" />
+        <div class="text-center nav-text">
+          {{ $t('salads') }}
         </div>
       </button>
 

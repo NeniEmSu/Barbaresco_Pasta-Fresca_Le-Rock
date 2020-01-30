@@ -125,7 +125,7 @@ export default {
 
 <style lang="scss" scoped>
 .block1 .left-image {
-  background: url(~assets/img/pasta-fresca-kitchen.jpg);
+  background: url(~assets/img/le-rock-kitchen.jpg);
 }
 @import "~assets/scss/subPagesStylesNew.scss";
 </style>
