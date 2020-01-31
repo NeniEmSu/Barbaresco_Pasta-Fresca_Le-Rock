@@ -233,7 +233,8 @@ export default {
           to: this.localePath({ name: 'index' }, this.$i18n.locale)
         },
         {
-          text: this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2),
+          // text: this.$route.fullPath.charAt(1).toUpperCase() + this.$route.fullPath.slice(2),
+          text: this.$t('links.menu'),
           active: true
         }
       ],

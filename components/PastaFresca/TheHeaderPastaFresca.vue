@@ -28,7 +28,7 @@
         "reservation": "Резервація",
         "aboutUs": "Про нас",
         "atmosphere": "Інтер’єр",
-        "vacancy": "Ваканції",
+        "vacancy": "Вакансії",
         "contact": "Контакти",
         "kitchen": "Кухня"
       },

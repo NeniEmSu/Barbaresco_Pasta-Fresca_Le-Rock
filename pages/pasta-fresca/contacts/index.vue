@@ -124,7 +124,7 @@ export default {
           to: this.localePath({ name: 'pasta-fresca' }, this.$i18n.locale)
         },
         {
-          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          text: this.$t('links.contact'),
           active: true
         }
       ]

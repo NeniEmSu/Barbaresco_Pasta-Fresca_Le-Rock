@@ -9,15 +9,15 @@
   "en": {
     "name": "Pasta Fresca",
    "title": "Kitchen",
-   "description": "We specialize in making handmade, original pizza",
-   "description1": "roles and burgers. The main goal for us is first and foremost to prepare delicious food with quality and fresh products with pleasure and soul. Not only does our food saturate, it charges the energy and joy we put into it. Every day we refine and grow for you so that you always feel special and unique. After all, every guest who came to us is important without exception, so our team will do everything to make your stay with us an unforgettable holiday of taste and pleasure."
+   "description": "We specialize in making handmade pizzas, original rolls and burgers. The main goal for us is first and foremost to prepare delicious food with quality and fresh products with pleasure and soul. Not only does our food saturate, it charges the energy and joy that we put into it.",
+   "description1": "Every day we refine and grow for you so that you always feel special and unique. After all, every guest who came to us is important without exception, so our team will do everything to make your stay with us an unforgettable holiday of taste and pleasure."
 
   },
   "ru": {
     "name": "Паста фреска",
     "title": "Кухня",
-    "description": "Мы специализируемся на приготовлении ручной пиццы, оригинальных",
-    "description1": "роллов и бургеров. Главная цель для нас - это в первую очередь готовить вкусную еду из качественных и свежих продуктов с удовольствием и душой. Каждая наша блюдо не просто насыщает, она заряжает энергией и радостью, которую мы вкладываем в нее. Ежедневно мы совершенствуемся и растем для вас, чтобы вы всегда чувствовали себя особенным и уникальным. Ведь каждый гость который к нам пришел - важно без исключения, поэтому наша команда сделает все, чтобы ваше гостил у нас стало незабываемым праздником вкуса и удовольствия."
+    "description": "Мы специализируемся на приготовлении ручной пиццы, оригинальных роллов и бургеров. Главная цель для нас - это в первую очередь готовить вкусную еду из качественных и свежих продуктов с удовольствием и душой. Каждая наша блюдо не просто насыщает, она заряжает энергией и радостью, которую мы вкладываем в нее.",
+    "description1": "Ежедневно мы совершенствуемся и растем для вас, чтобы вы всегда чувствовали себя особенным и уникальным. Ведь каждый гость который к нам пришел - важно без исключения, поэтому наша команда сделает все, чтобы ваше гостил у нас стало незабываемым праздником вкуса и удовольствия."
   }
 }
 </i18n>
@@ -28,13 +28,23 @@
       :items="items"
       class="d-none d-md-flex w-100"
     />
-    <section id="section2" class="panel overview" data-section-name="overview">
-      <div id="transcroller-body" class="block1 aos-all">
+    <section
+      id="section2"
+      class="panel overview"
+      data-section-name="overview"
+    >
+      <div
+        id="transcroller-body"
+        class="block1 aos-all"
+      >
         <div class="row mx-0">
           <div class="col-sm-6 p-0 col-xs-12 left-image" />
 
           <div class="col-sm-6 p-0 col-xs-12 left-content verticalcenter">
-            <div class="block1-left" style="top: auto; transform: none;">
+            <div
+              class="block1-left"
+              style="top: auto; transform: none;"
+            >
               <div
                 class="aos-item aos-init"
                 data-aos="fade-left"
@@ -45,7 +55,13 @@
                 <div class="aos-item__inner">
                   <h1>{{ $t('title') }}</h1>
                   <p>
-                    {{ $t('description') }} <br>
+                    {{ $t('description') }}
+                    <!-- <br>
+                    {{ $t('description1') }} -->
+                  </p>
+                  <p>
+                    <!-- {{ $t('description') }}
+                    <br> -->
                     {{ $t('description1') }}
                   </p>
                 </div>
@@ -89,7 +105,8 @@ export default {
           to: this.localePath({ name: 'barbaresco' }, this.$i18n.locale)
         },
         {
-          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          // text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          text: this.$t('links.kitchen'),
           active: true
         }
       ]
@@ -118,7 +135,7 @@ export default {
 
 <style lang="scss" scoped>
 .block1 .left-image {
-    background: url(~assets/img/barbaresco-kitchen.jpg);
-  }
+  background: url(~assets/img/barbaresco-kitchen.jpg);
+}
 @import "~assets/scss/subPagesStylesNew.scss";
 </style>

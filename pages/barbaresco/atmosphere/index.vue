@@ -24,13 +24,23 @@
       class="d-none d-md-flex w-100"
     />
 
-    <section id="section2" class="panel overview" data-section-name="overview">
-      <div id="transcroller-body" class="block1 aos-all">
+    <section
+      id="section2"
+      class="panel overview"
+      data-section-name="overview"
+    >
+      <div
+        id="transcroller-body"
+        class="block1 aos-all"
+      >
         <div class="row mx-0">
           <div class="col-sm-6 p-0 col-xs-12 left-image" />
 
           <div class="col-sm-6 p-0 col-xs-12 left-content verticalcenter">
-            <div class="block1-left" style="top: auto; transform: none;">
+            <div
+              class="block1-left"
+              style="top: auto; transform: none;"
+            >
               <div
                 class="aos-item aos-init"
                 data-aos="fade-left"
@@ -82,7 +92,7 @@ export default {
           to: this.localePath({ name: 'barbaresco' }, this.$i18n.locale)
         },
         {
-          text: this.$route.name.charAt(0).toUpperCase() + this.$route.name.slice(1),
+          text: this.$t('links.atmosphere'),
           active: true
         }
       ]
@@ -110,10 +120,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .block1 .left-image {
-    background: url(~assets/img/barbarescoAtmosphere.jpg);
-  }
+  background: url(~assets/img/barbarescoAtmosphere.jpg);
+}
 
-  @import "~assets/scss/subPagesStylesNew.scss";
+@import "~assets/scss/subPagesStylesNew.scss";
 </style>
