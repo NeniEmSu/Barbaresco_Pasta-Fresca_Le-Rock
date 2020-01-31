@@ -211,7 +211,7 @@ hr {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition-duration: 1500ms;
+  transition-duration: 500ms;
   transition-property: opacity;
   transition-timing-function: ease;
 }

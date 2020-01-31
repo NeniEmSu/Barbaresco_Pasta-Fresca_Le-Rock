@@ -1,3 +1,22 @@
+<i18n>
+{
+  "uk": {
+     "order": "Замовити",
+      "currencyValue": "грн"
+
+  },
+  "en": {
+      "order": "Order",
+      "currencyValue": "Uah"
+
+  },
+  "ru": {
+      "order": "Заказать",
+      "currencyValue": "грн"
+    }
+}
+</i18n>
+
 <template>
   <div class="row">
     <div
@@ -82,18 +101,18 @@
         </p>
 
         <div class="row">
-          <div class="col-sm-5 pr-4 pr-md-0 my-auto">
+          <div class="col-sm-5 pr-md-0 my-auto">
             <p
               v-if="$i18n.locale === 'en'"
               class="card-text cost my-auto"
             >
-              <span class="card-text d-inline d-sm-none">{{ product.volumeEn || product.volumeUk || product.volumeRu }}</span> {{ product.price | currency }}
+              <span class="card-text d-inline d-sm-none">{{ product.volumeEn || product.volumeUk || product.volumeRu }}</span> {{ product.price | currency }} <span class="curency">{{ $t('currencyValue') }}</span>
             </p>
             <p
               v-else
               class="card-text cost my-auto"
             >
-              <span class="card-text d-inline d-sm-none">{{ product.volumeUk || product.volumeRu || product.volumeEn }}</span> {{ product.price | currency }}
+              <span class="card-text d-inline d-sm-none">{{ product.volumeUk || product.volumeRu || product.volumeEn }}</span> {{ product.price | currency }} <span class="curency">{{ $t('currencyValue') }}</span>
             </p>
           </div>
           <div class="col-sm-7 p-0 text-center my-auto">

@@ -96,6 +96,12 @@ img.d-sm-block.d-none {
   }
 }
 
+.curency {
+  font-size: 12px !important;
+  line-height: 14px !important;
+  font-weight: normal;
+}
+
 .quantity {
   float: right;
   margin-right: 15px;
@@ -232,14 +238,13 @@ button.btn {
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 408px) {
   .card {
     width: calc(100% / 2);
 
-  }
-
-  button.btn {
-    width: 130px;
+    button.btn {
+      width: 130px;
+    }
 
   }
 }
