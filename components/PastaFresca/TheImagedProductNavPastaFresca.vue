@@ -91,7 +91,7 @@
         :class="{ active: currentProductsDisplayed === 7}"
         @click.prevent="Show7"
       >
-        <div class="nav-image  spin circle navSeven" />
+        <div class="nav-image  spin circle navFirstCourse" />
         <div class="text-center nav-text">
           {{ $t('firstCourse') }}
         </div>
@@ -232,10 +232,13 @@ export default {
   background-image: url("~assets/img/pasta-fresca-salad.jpg");
 }
 
-.navSeven {
+.navFirstCourse {
   background-image: url("~assets/img/barbarescoFirstCourse.jpg");
 }
 
+.navSeven {
+  background-image: url("~assets/img/barbarescoHits.jpg");
+}
 .navEight {
   background-image: url("~assets/img/le-rock-side-dishes.jpg");
 }
