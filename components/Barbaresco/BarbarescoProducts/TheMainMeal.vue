@@ -4,7 +4,18 @@
     class="container "
   >
     <div class="content">
-      <productCard :products="mainMeals" />
+      <vue-page-transition name="fade">
+        <div
+          v-if="$apollo.queries.mainMeals.loading"
+          class="mx-auto text-center"
+        >
+          <Loading />
+        </div>
+        <productCard
+          v-else
+          :products="mainMeals"
+        />
+      </vue-page-transition>
     </div>
   </div>
 </template>

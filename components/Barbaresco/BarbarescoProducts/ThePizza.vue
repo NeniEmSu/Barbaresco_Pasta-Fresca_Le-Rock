@@ -4,7 +4,18 @@
     class="container "
   >
     <div class="content">
-      <productCard :products="pizzas" />
+      <vue-page-transition name="fade">
+        <div
+          v-if="$apollo.queries.pizzas.loading"
+          class="mx-auto text-center"
+        >
+          <Loading />
+        </div>
+        <productCard
+          v-else
+          :products="pizzas"
+        />
+      </vue-page-transition>
     </div>
   </div>
 </template>
@@ -19,6 +30,7 @@ export default {
   components: {
     productCard
   },
+
   data () {
     return {
 
@@ -43,5 +55,9 @@ export default {
 <style lang="scss" scoped>
 .content {
   margin: 20px 0;
+}
+
+img {
+  width: 100px;
 }
 </style>
