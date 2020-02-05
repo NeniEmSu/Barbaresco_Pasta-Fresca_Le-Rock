@@ -12,8 +12,8 @@
         "summaryRu": "филе курицы, бекон, листья салата, помидор, перепелиные яйца, соус цезарь",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Caesar-with-chicken.jpg",
+            "meta": "Caesar with chicken"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -33,8 +33,8 @@
         "summaryRu": "свежий помидор, огурец, перец болгарский, мусс дор блю, соус из рукколы",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Rhodes.jpg",
+            "meta": "Rhodes"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -54,13 +54,13 @@
         "summaryRu": "телятина гриль, помидор, перец болгарский, кабачок, грибы, фирменный соус",
         "price": 75,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Grilled-Veal-Salad.jpg",
+            "meta": "Grilled Veal Salad"
         },
         "quantity": 100,
         "volumeUk": "250г",
         "image": "le-rock-salad",
-        "summaryUk": "телятина гриль,  помідор,  перець болгарський,  кабачок,  гриби,фірмовий соус"
+        "summaryUk": "телятина гриль, помідор, перець болгарський, кабачок, гриби, фірмовий соус"
     },
     {
         "published": true,
@@ -75,8 +75,8 @@
         "summaryRu": "мясо с бедра курицы, брокколи, грибы, кабачок, стручковая фасоль, морковь, заправляется сырным соусом",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Rococo.jpg",
+            "meta": "Rococo"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -96,8 +96,8 @@
         "summaryRu": "слабосоленая лосось, помидор, лист салата, брокколи, сыр филадельфия, соус медово-горчичный",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Salmon-salad.jpg",
+            "meta": "Salmon salad"
         },
         "quantity": 100,
         "volumeUk": "300г",
@@ -117,8 +117,8 @@
         "summaryRu": "листья салата, карамелизированное яблоко, рукула, перец гриль, помидоры, куриная печень, оливковое масло, уксус бальзамик",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Liver-salad.jpg",
+            "meta": "Liver salad"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -138,8 +138,8 @@
         "summaryRu": "сочное мясо с поясничной части",
         "price": 125,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/New-York-Steak.jpg",
+            "meta": "New York Steak"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -159,8 +159,8 @@
         "summaryRu": "мясо из подлопаточной части туши, имеет большое количество жировых прожилок",
         "price": 135,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Ribeye-Steak.jpg",
+            "meta": "Ribeye Steak"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -180,8 +180,8 @@
         "summaryRu": "самая нежная, и постная часть говядины",
         "price": 145,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Filet-Mignon.jpg",
+            "meta": "Filet Mignon"
         },
         "quantity": 100,
         "volumeUk": "200г",
@@ -201,8 +201,8 @@
         "summaryRu": "со стручковой фасолью и песто",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Pork-steak.jpg",
+            "meta": "Pork steak"
         },
         "quantity": 100,
         "volumeUk": "200/140/30г",
@@ -222,8 +222,8 @@
         "summaryRu": "с грибами гриль и горчичным соусом",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Half-chicken.jpg",
+            "meta": "Half chicken"
         },
         "quantity": 100,
         "volumeUk": "300/120/30г",
@@ -243,8 +243,8 @@
         "summaryRu": "(Рябчик) (подается с рокфорним пюре)",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Pork-leg-with-mashed-potatoes.jpg",
+            "meta": "Pork leg with mashed potatoes"
         },
         "quantity": 100,
         "volumeUk": "380/150г",
@@ -264,8 +264,8 @@
         "summaryRu": "",
         "price": 110,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Pork-on-a-bone-with-baked-potatoes.jpg",
+            "meta": "Pork on a bone with baked potatoes"
         },
         "quantity": 100,
         "volumeUk": "270/250/30г",
@@ -285,8 +285,8 @@
         "summaryRu": "стейк из говядины, стейк свиной, куриное филе, колбаски, картофель печеный, 2 соусы",
         "price": 350,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Assorted-Grilled-Meat.jpg",
+            "meta": "Assorted Grilled Meat"
         },
         "quantity": 100,
         "volumeUk": "1500г",
@@ -306,8 +306,8 @@
         "summaryRu": "Моцарелла, филе курицы, бекон, помидоры черри, пармезан, микс-салат, сливочный соус",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Salted-peanut-with-pumpkin-seeds.jpg",
+            "meta": "Salted peanut with pumpkin seeds"
         },
         "quantity": 100,
         "volumeUk": "100г",
@@ -327,8 +327,8 @@
         "summaryRu": "острые / с горчичным соусом",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/French-Wings.jpg",
+            "meta": "French Wings"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -348,8 +348,8 @@
         "summaryRu": "соус из клюквы / чесночный",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Cheese-sticks.jpg",
+            "meta": "Cheese sticks"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -369,8 +369,8 @@
         "summaryRu": "острые / не острые",
         "price": 45,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Crispy-Ears-in-Soy-Sauce.jpg",
+            "meta": "Crispy Ears in Soy Sauce"
         },
         "quantity": 100,
         "volumeUk": "150г",
@@ -390,8 +390,8 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Sausages-in-Bacon.jpg",
+            "meta": "Sausages in Bacon"
         },
         "quantity": 100,
         "volumeUk": "300/30г",
@@ -411,8 +411,8 @@
         "summaryRu": "",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Shrimp-to-beer.jpg",
+            "meta": "Shrimp to beer"
         },
         "quantity": 100,
         "volumeUk": "100/30г",
@@ -432,8 +432,8 @@
         "summaryRu": "",
         "price": 90,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Smoked-Pork-Ribs-BBQ.jpg",
+            "meta": "Smoked Pork Ribs BBQ"
         },
         "quantity": 100,
         "volumeUk": "300/30г",
@@ -453,8 +453,8 @@
         "summaryRu": "куриные / свиные",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Potato-croquettes.jpg",
+            "meta": "Potato croquettes"
         },
         "quantity": 100,
         "volumeUk": "200/130/30/50г",
@@ -474,8 +474,8 @@
         "summaryRu": "куриные / свиные",
         "price": 250,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Company-Ribs.jpg",
+            "meta": "Company Ribs"
         },
         "quantity": 100,
         "volumeUk": "800/300/100г",
@@ -495,8 +495,8 @@
         "summaryRu": "картофель фри, и соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/With-pork.jpg",
+            "meta": "With pork"
         },
         "quantity": 100,
         "volumeUk": "200/100/30г",
@@ -516,8 +516,8 @@
         "summaryRu": "картофель фри, и соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/With-chicken.jpg",
+            "meta": "With chicken"
         },
         "quantity": 100,
         "volumeUk": "200/100/30г",
@@ -537,8 +537,8 @@
         "summaryRu": "картофель фри, и соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/With-sausage-and-bacon.jpg",
+            "meta": "With sausage and bacon"
         },
         "quantity": 100,
         "volumeUk": "200/100/30г",
@@ -548,9 +548,9 @@
     {
         "published": true,
         "category": "le-rock-fry-pan",
-        "nameUk": "- З картоплею і куркою",
-        "nameRu": "- С картошкой и курицей",
-        "nameEn": "- With potatoes and chicken",
+        "nameUk": "З картоплею і куркою",
+        "nameRu": "С картошкой и курицей",
+        "nameEn": "With potatoes and chicken",
         "_id": "lr-fp-1",
         "volumeEn": "600g",
         "summaryEn": "+ cabbage salad",
@@ -558,8 +558,8 @@
         "summaryRu": "+ салат из капусты",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/With-potatoes-and-chicken.jpg",
+            "meta": "With potatoes and chicken"
         },
         "quantity": 100,
         "volumeUk": "600г",
@@ -569,9 +569,9 @@
     {
         "published": true,
         "category": "le-rock-fry-pan",
-        "nameUk": "- З картоплею і свининою",
-        "nameRu": "- С картошкой и свининой",
-        "nameEn": "- With potatoes and pork",
+        "nameUk": "З картоплею і свининою",
+        "nameRu": "С картошкой и свининой",
+        "nameEn": "With potatoes and pork",
         "_id": "lr-fp-2",
         "volumeEn": "600g",
         "summaryEn": "+ pickled cucumber",
@@ -579,8 +579,8 @@
         "summaryRu": "+ маринованный огурец",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/With-potatoes-and-pork.jpg",
+            "meta": "With potatoes and pork"
         },
         "quantity": 100,
         "volumeUk": "600г",
@@ -590,9 +590,9 @@
     {
         "published": true,
         "category": "le-rock-fry-pan",
-        "nameUk": "- З картоплею, ковбаскою та беконом",
-        "nameRu": "- С картофелем, колбаской и беконом",
-        "nameEn": "- With potatoes, sausage and bacon",
+        "nameUk": "З картоплею, ковбаскою та беконом",
+        "nameRu": "С картофелем, колбаской и беконом",
+        "nameEn": "With potatoes, sausage and bacon",
         "_id": "lr-fp-3",
         "volumeEn": "600g",
         "summaryEn": "+ pickled cucumber",
@@ -600,8 +600,8 @@
         "summaryRu": "+ маринованный огурец",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/With-potatoes,-sausage-and-bacon.jpg",
+            "meta": "With potatoes, sausage and bacon"
         },
         "quantity": 100,
         "volumeUk": "600г",
@@ -621,8 +621,8 @@
         "summaryRu": "",
         "price": 45,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/NAPOLEON.jpg",
+            "meta": "NAPOLEON"
         },
         "quantity": 100,
         "volumeUk": "160г",
@@ -642,8 +642,8 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Cheesecake.jpg",
+            "meta": "Cheesecake"
         },
         "quantity": 100,
         "volumeUk": "150г",
@@ -663,8 +663,8 @@
         "summaryRu": "Вишнево-мятный, Персиковый, Карамель",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Carrot-Spicy-Cake.jpg",
+            "meta": "Carrot Spicy Cake"
         },
         "quantity": 100,
         "volumeUk": "200г",
@@ -684,8 +684,8 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Chocolate-Cake.jpg",
+            "meta": "Chocolate Cake"
         },
         "quantity": 100,
         "volumeUk": "150г",
@@ -705,8 +705,8 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Peach-compote.jpg",
+            "meta": "Peach compote"
         },
         "quantity": 100,
         "volumeUk": "170г",
@@ -726,8 +726,8 @@
         "summaryRu": "с кусочками курицы и домашней пасты",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/CHICKEN-BULLION.jpg",
+            "meta": "CHICKEN BULLION"
         },
         "quantity": 100,
         "volumeUk": "300г",
@@ -747,8 +747,8 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Chowder-Corn-Soup.jpg",
+            "meta": "Chowder Corn Soup"
         },
         "quantity": 100,
         "volumeUk": "300г",
@@ -768,8 +768,8 @@
         "summaryRu": "подается с картофельным пюре",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Cutlet-Cordon-Blue.jpg",
+            "meta": "Cutlet Cordon Blue"
         },
         "quantity": 100,
         "volumeUk": "345/150/30г",
@@ -789,8 +789,8 @@
         "summaryRu": "",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Chicken-fillet-on-spinach-pillow-under-cream-sauce.jpg",
+            "meta": "Chicken fillet on spinach pillow under cream sauce"
         },
         "quantity": 100,
         "volumeUk": "350г",
@@ -810,8 +810,8 @@
         "summaryRu": "",
         "price": 120,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Shrimps-with-oyster-sauce-and-Chuka-salad.jpg",
+            "meta": "Shrimps with oyster sauce and Chuka salad"
         },
         "quantity": 100,
         "volumeUk": "80/60/15г",
@@ -831,8 +831,8 @@
         "summaryRu": "",
         "price": 170,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Grilled-Salmon.jpg",
+            "meta": "Grilled Salmon"
         },
         "quantity": 100,
         "volumeUk": "150/100/30г",
@@ -852,8 +852,8 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Egg-with-sausage-and-bacon.jpg",
+            "meta": "Egg with sausage and bacon"
         },
         "quantity": 100,
         "volumeUk": "380г",
@@ -873,8 +873,8 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Egg-with-ham-and-tomatoes.jpg",
+            "meta": "Egg with ham and tomatoes"
         },
         "quantity": 100,
         "volumeUk": "400г",
@@ -894,8 +894,8 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Grilled-lavash-with-cheese,-tomatoes-and-herbs.jpg",
+            "meta": "Grilled lavash with cheese, tomatoes and herbs"
         },
         "quantity": 100,
         "volumeUk": "330г",
@@ -915,8 +915,8 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Chicken-pancakes-with-spinach-sauce.jpg",
+            "meta": "Chicken pancakes with spinach sauce"
         },
         "quantity": 100,
         "volumeUk": "300/100г",
@@ -936,8 +936,8 @@
         "summaryRu": "с чоризо, с телятиной, с овощами",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Bruschetti.jpg",
+            "meta": "Bruschetti"
         },
         "quantity": 100,
         "volumeUk": "3шт",
@@ -957,8 +957,8 @@
         "summaryRu": "подается с гренками",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Chicken-pate.jpg",
+            "meta": "Chicken pate"
         },
         "quantity": 100,
         "volumeUk": "200г",
@@ -978,8 +978,8 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Pickled-vegetables.jpg",
+            "meta": "Pickled vegetables"
         },
         "quantity": 100,
         "volumeUk": "400г",
@@ -999,8 +999,8 @@
         "summaryRu": "",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Cheese-Plateau.jpg",
+            "meta": "Cheese Plateau"
         },
         "quantity": 100,
         "volumeUk": "170г",
@@ -1020,8 +1020,8 @@
         "summaryRu": "",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Meat-Plateau.jpg",
+            "meta": "Meat Plateau"
         },
         "quantity": 100,
         "volumeUk": "170г",
@@ -1041,8 +1041,8 @@
         "summaryRu": "ржаные сухарики, вяленое мясо, чесночный соус",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Beer-Plate.jpg",
+            "meta": "Beer Plate"
         },
         "quantity": 100,
         "volumeUk": "150г",
@@ -1062,8 +1062,8 @@
         "summaryRu": "подается с гренками",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Pickles.jpg",
+            "meta": "Pickles"
         },
         "quantity": 100,
         "volumeUk": "100/30г",
@@ -1083,8 +1083,8 @@
         "summaryRu": "с чесночным соусом",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Rye-croutons.jpg",
+            "meta": "Rye croutons"
         },
         "quantity": 100,
         "volumeUk": "150г",
@@ -1104,8 +1104,8 @@
         "summaryRu": "с чесночным соусом",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Chicken-Popcorn.jpg",
+            "meta": "Chicken Popcorn"
         },
         "quantity": 100,
         "volumeUk": "200г",
@@ -1125,8 +1125,8 @@
         "summaryRu": "сырные палочки, наггетсы, колбаски в беконе, снеки, грисини, соус тартар",
         "price": 150,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Beer-board-for-the-company.jpg",
+            "meta": "Beer board for the company"
         },
         "quantity": 100,
         "volumeUk": "600г",
@@ -1146,8 +1146,8 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/GRILLED-VEGETABLES.jpg",
+            "meta": "GRILLED VEGETABLES"
         },
         "quantity": 100,
         "volumeUk": "300г",
@@ -1167,8 +1167,8 @@
         "summaryRu": "",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Thai-Style-Vegetables.jpg",
+            "meta": "Thai Style Vegetables"
         },
         "quantity": 100,
         "volumeUk": "250г",
@@ -1188,8 +1188,8 @@
         "summaryRu": "С розмарином и беконом",
         "price": 25,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Grilled-Rice.jpg",
+            "meta": "Grilled Rice"
         },
         "quantity": 100,
         "volumeUk": "210г",
@@ -1209,8 +1209,8 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/French-fries-(with-sauce).jpg",
+            "meta": "French fries (with sauce)"
         },
         "quantity": 100,
         "volumeUk": "150г",
@@ -1222,7 +1222,7 @@
         "category": "le-rock-garnishes",
         "nameUk": "КАРТОПЛЯНЕ ПЮРЕ",
         "nameRu": "Картофельное пюре",
-        "nameEn": "POTATOES",
+        "nameEn": "POTATOE Puree",
         "_id": "lr-gar-5",
         "volumeEn": "200g",
         "summaryEn": "",
@@ -1230,8 +1230,8 @@
         "summaryRu": "",
         "price": 20,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/POTATOE-Puree.jpg",
+            "meta": "POTATOE Puree"
         },
         "quantity": 100,
         "volumeUk": "200г",
@@ -1251,8 +1251,8 @@
         "summaryRu": "",
         "price": 15,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "le-Rock/Ciabata.jpg",
+            "meta": "Ciabata"
         },
         "quantity": 100,
         "volumeUk": "1шт",

@@ -12,7 +12,7 @@
         "summaryRu": "Традиционный итальянский салат с грилированная овощами, хрустящей Чиабата, маринованными анчоусами, заправляется медово-горчичным соусом",
         "price": 70,
         "imageUri": {
-            "path": "Pasta Fresca/Pancannella.jpg",
+            "path": "pasta-Fresca/Pancannella.jpg",
             "meta": "Pancannella"
         },
         "quantity": 100,
@@ -33,7 +33,7 @@
         "summaryRu": "Листья салата, помидор, огурец, мягкий сыр, оливки, заправляется соусом из рукколы",
         "price": 65,
         "imageUri": {
-            "path": "Pasta Fresca/FRESH-ITALY-salad.jpg",
+            "path": "pasta-Fresca/FRESH-ITALY-salad.jpg",
             "meta": "FRESH ITALY salad"
         },
         "quantity": 100,
@@ -54,7 +54,7 @@
         "summaryRu": "Листья салата, филе телятины, болгарский перец, опята, помидоры руккола",
         "price": 70,
         "imageUri": {
-            "path": "Pasta Fresca/Veal-salad-with-bell-peppers.jpg",
+            "path": "pasta-Fresca/Veal-salad-with-bell-peppers.jpg",
             "meta": "Veal salad with bell peppers"
         },
         "quantity": 100,
@@ -75,7 +75,7 @@
         "summaryRu": "листья салата, равиоли с сыром, огурец, кабачок, каперсы, заправляется медово-горчичным соусом",
         "price": 70,
         "imageUri": {
-            "path": "Pasta Fresca/Ravioli-salad.jpg",
+            "path": "pasta-Fresca/Ravioli-salad.jpg",
             "meta": "Ravioli salad"
         },
         "quantity": 100,
@@ -96,7 +96,7 @@
         "summaryRu": "Листья салата, куриное филе гриль, помидор, грибы, яйца, пармезан, базиликовый соус",
         "price": 70,
         "imageUri": {
-            "path": "Pasta Fresca/Chicken-breast-salad.jpg",
+            "path": "pasta-Fresca/Chicken-breast-salad.jpg",
             "meta": "Chicken breast salad"
         },
         "quantity": 100,
@@ -117,7 +117,7 @@
         "summaryRu": "филе лосося, листья салата, брокколи, помидор, каперсы, заправляется метанию-горчичным соусом",
         "price": 85,
         "imageUri": {
-            "path": "Pasta Fresca/Norwegian-salmon-salad.jpg",
+            "path": "pasta-Fresca/Norwegian-salmon-salad.jpg",
             "meta": "Norwegian salmon salad"
         },
         "quantity": 100,
@@ -138,7 +138,7 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": "Pasta Fresca/Tagliatelli-Quatro-Formaggi.jpg",
+            "path": "pasta-Fresca/Tagliatelli-Quatro-Formaggi.jpg",
             "meta": "Tagliatelli Quatro Formaggi"
         },
         "quantity": 100,
@@ -159,7 +159,7 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": "Pasta Fresca/Tagliatelli-with-chicken-under-tomato-sauce.jpg",
+            "path": "pasta-Fresca/Tagliatelli-with-chicken-under-tomato-sauce.jpg",
             "meta": "Tagliatelli with chicken under tomato sauce"
         },
         "quantity": 100,
@@ -180,7 +180,7 @@
         "summaryRu": "",
         "price": 65,
         "imageUri": {
-            "path": "Pasta Fresca/Spinach-tagliatelle-with-sun-dried-tomatoes-and-chicken.jpg",
+            "path": "pasta-Fresca/Spinach-tagliatelle-with-sun-dried-tomatoes-and-chicken.jpg",
             "meta": "Spinach tagliatelle with sun-dried tomatoes and chicken"
         },
         "quantity": 100,
@@ -201,7 +201,7 @@
         "summaryRu": "",
         "price": 80,
         "imageUri": {
-            "path": "Pasta Fresca/seafood-tagliatelle-under-cream-sauce.jpg",
+            "path": "pasta-Fresca/seafood-tagliatelle-under-cream-sauce.jpg",
             "meta": "seafood tagliatelle under cream sauce"
         },
         "quantity": 100,
@@ -222,7 +222,7 @@
         "summaryRu": "",
         "price": 65,
         "imageUri": {
-            "path": "Pasta Fresca/Spinach-tagliatelle-with-chicken-and-mushrooms.jpg",
+            "path": "pasta-Fresca/Spinach-tagliatelle-with-chicken-and-mushrooms.jpg",
             "meta": "Spinach tagliatelle with chicken and mushrooms"
         },
         "quantity": 100,
@@ -243,7 +243,7 @@
         "summaryRu": "",
         "price": 70,
         "imageUri": {
-            "path": "Pasta Fresca/Spaghetti-adiolio-with-prawns.jpg",
+            "path": "pasta-Fresca/Spaghetti-adiolio-with-prawns.jpg",
             "meta": "Spaghetti adiolio with prawns"
         },
         "quantity": 100,
@@ -264,7 +264,7 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": "Pasta Fresca/SPAGHETTI-BOLOGNESE.jpg",
+            "path": "pasta-Fresca/SPAGHETTI-BOLOGNESE.jpg",
             "meta": "SPAGHETTI BOLOGNESE"
         },
         "quantity": 100,
@@ -285,7 +285,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": "Pasta Fresca/Margarita-Spaghetti.jpg",
+            "path": "pasta-Fresca/Margarita-Spaghetti.jpg",
             "meta": "Margarita Spaghetti"
         },
         "quantity": 100,
@@ -306,7 +306,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": "Pasta Fresca/Spaghetti-Carbonara.jpg",
+            "path": "pasta-Fresca/Spaghetti-Carbonara.jpg",
             "meta": "Spaghetti Carbonara"
         },
         "quantity": 100,
@@ -327,7 +327,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": "Pasta Fresca/Ravioli-with-Chicken-and-Nut-Sauce.jpg",
+            "path": "pasta-Fresca/Ravioli-with-Chicken-and-Nut-Sauce.jpg",
             "meta": "Ravioli with Chicken and Nut Sauce"
         },
         "quantity": 100,
@@ -348,7 +348,7 @@
         "summaryRu": "",
         "price": 85,
         "imageUri": {
-            "path": "Pasta Fresca/salmon-and-ricotta-ravioli.jpg",
+            "path": "pasta-Fresca/salmon-and-ricotta-ravioli.jpg",
             "meta": "salmon and ricotta ravioli"
         },
         "quantity": 100,
@@ -369,7 +369,7 @@
         "summaryRu": "",
         "price": 65,
         "imageUri": {
-            "path": "Pasta Fresca/Ravioli-with-meat-and-sauce.jpg",
+            "path": "pasta-Fresca/Ravioli-with-meat-and-sauce.jpg",
             "meta": "Ravioli with meat and sauce"
         },
         "quantity": 100,
@@ -390,7 +390,7 @@
         "summaryRu": "",
         "price": 20,
         "imageUri": {
-            "path": "Pasta Fresca/Potato-puree.jpg",
+            "path": "pasta-Fresca/Potato-puree.jpg",
             "meta": "Potato puree"
         },
         "quantity": 100,
@@ -411,7 +411,7 @@
         "summaryRu": "",
         "price": 25,
         "imageUri": {
-            "path": "Pasta Fresca/RICE-WITH-GRILLED-VEGETABLES.jpg",
+            "path": "pasta-Fresca/RICE-WITH-GRILLED-VEGETABLES.jpg",
             "meta": "RICE WITH GRILLED VEGETABLES"
         },
         "quantity": 100,
@@ -432,7 +432,7 @@
         "summaryRu": "",
         "price": 16,
         "imageUri": {
-            "path": "Pasta Fresca/Ciabatta-White.jpg",
+            "path": "pasta-Fresca/Ciabatta-White.jpg",
             "meta": "Ciabatta White"
         },
         "quantity": 100,
@@ -453,7 +453,7 @@
         "summaryRu": "",
         "price": 16,
         "imageUri": {
-            "path": "Pasta Fresca/Ciabatta-Gray.jpg",
+            "path": "pasta-Fresca/Ciabatta-Gray.jpg",
             "meta": "Ciabatta Gray"
         },
         "quantity": 100,
@@ -474,7 +474,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": "Pasta Fresca/Lemon-Cake.jpg",
+            "path": "pasta-Fresca/Lemon-Cake.jpg",
             "meta": "Lemon Cake"
         },
         "quantity": 100,
@@ -495,7 +495,7 @@
         "summaryRu": "",
         "price": 45,
         "imageUri": {
-            "path": "Pasta Fresca/Pavlova-Dessert.jpg",
+            "path": "pasta-Fresca/Pavlova-Dessert.jpg",
             "meta": "Pavlova Dessert"
         },
         "quantity": 100,
@@ -516,7 +516,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": "Pasta Fresca/Buko-Dessert.jpg",
+            "path": "pasta-Fresca/Buko-Dessert.jpg",
             "meta": "Buko Dessert"
         },
         "quantity": 100,
@@ -537,7 +537,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": "Pasta Fresca/Cheesecake.jpg",
+            "path": "pasta-Fresca/Cheesecake.jpg",
             "meta": "Cheesecake"
         },
         "quantity": 100,
@@ -558,7 +558,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": "Pasta Fresca/Chocolate-rum-fondue-with-ice-cream.jpg",
+            "path": "pasta-Fresca/Chocolate-rum-fondue-with-ice-cream.jpg",
             "meta": "Chocolate rum fondue with ice cream"
         },
         "quantity": 100,
@@ -579,7 +579,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": "Pasta Fresca/Mr-Cotta.jpg",
+            "path": "pasta-Fresca/Mr-Cotta.jpg",
             "meta": "Mr Cotta"
         },
         "quantity": 100,
@@ -600,7 +600,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": "Pasta Fresca/Tiramisu.jpg",
+            "path": "pasta-Fresca/Tiramisu.jpg",
             "meta": "Tiramisu"
         },
         "quantity": 100,
@@ -621,7 +621,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": "Pasta Fresca/Ice-Cream.jpg",
+            "path": "pasta-Fresca/Ice-Cream.jpg",
             "meta": "Ice Cream"
         },
         "quantity": 100,
@@ -642,7 +642,7 @@
         "summaryRu": "Шоколад, малина",
         "price": 30,
         "imageUri": {
-            "path": "Pasta Fresca/Croissant-with-choice-sauce.jpg",
+            "path": "pasta-Fresca/Croissant-with-choice-sauce.jpg",
             "meta": "Croissant with choice sauce"
         },
         "quantity": 100,
@@ -663,7 +663,7 @@
         "summaryRu": "прошутто, лосось, грибы, помидоры с моцареллой",
         "price": 70,
         "imageUri": {
-            "path": "Pasta Fresca/Bruschetta.jpg",
+            "path": "pasta-Fresca/Bruschetta.jpg",
             "meta": "Bruschetta"
         },
         "quantity": 100,
@@ -684,7 +684,7 @@
         "summaryRu": "",
         "price": 80,
         "imageUri": {
-            "path": "Pasta Fresca/Mussels-in-cream-sauce.jpg",
+            "path": "pasta-Fresca/Mussels-in-cream-sauce.jpg",
             "meta": "Mussels in cream sauce"
         },
         "quantity": 100,
@@ -705,7 +705,7 @@
         "summaryRu": "руккола, пармезан, каперсы",
         "price": 90,
         "imageUri": {
-            "path": "Pasta Fresca/Salmon-Carpaccio.jpg",
+            "path": "pasta-Fresca/Salmon-Carpaccio.jpg",
             "meta": "Salmon Carpaccio"
         },
         "quantity": 100,
@@ -726,7 +726,7 @@
         "summaryRu": "",
         "price": 75,
         "imageUri": {
-            "path": "Pasta Fresca/Italian-cheeses.jpg",
+            "path": "pasta-Fresca/Italian-cheeses.jpg",
             "meta": "Italian cheeses"
         },
         "quantity": 100,
@@ -747,7 +747,7 @@
         "summaryRu": "Щедрая порция итальянских деликатесов",
         "price": 230,
         "imageUri": {
-            "path": "Pasta Fresca/Antipasto.jpg",
+            "path": "pasta-Fresca/Antipasto.jpg",
             "meta": "Antipasto"
         },
         "quantity": 100,
@@ -768,7 +768,7 @@
         "summaryRu": "",
         "price": 90,
         "imageUri": {
-            "path": "Pasta Fresca/Red-Rice-Cod-Fillet.jpg",
+            "path": "pasta-Fresca/Red-Rice-Cod-Fillet.jpg",
             "meta": "Red Rice Cod Fillet"
         },
         "quantity": 100,
@@ -789,7 +789,7 @@
         "summaryRu": "",
         "price": 85,
         "imageUri": {
-            "path": "Pasta Fresca/Mozzarella-Steak-with-Potato-Stew.jpg",
+            "path": "pasta-Fresca/Mozzarella-Steak-with-Potato-Stew.jpg",
             "meta": "Mozzarella Steak with Potato Stew"
         },
         "quantity": 100,
@@ -810,7 +810,7 @@
         "summaryRu": "",
         "price": 65,
         "imageUri": {
-            "path": "Pasta Fresca/Chicken-fillet-stuffed-with-spinach.jpg",
+            "path": "pasta-Fresca/Chicken-fillet-stuffed-with-spinach.jpg",
             "meta": "Chicken fillet stuffed with spinach"
         },
         "quantity": 100,
@@ -831,7 +831,7 @@
         "summaryRu": "",
         "price": 125,
         "imageUri": {
-            "path": "Pasta Fresca/charlotte-with-salmon-and-mozzarella.jpg",
+            "path": "pasta-Fresca/charlotte-with-salmon-and-mozzarella.jpg",
             "meta": "charlotte with salmon and mozzarella"
         },
         "quantity": 100,
@@ -852,7 +852,7 @@
         "summaryRu": "",
         "price": 80,
         "imageUri": {
-            "path": "Pasta Fresca/Chicken-Parmesan.jpg",
+            "path": "pasta-Fresca/Chicken-Parmesan.jpg",
             "meta": "Chicken Parmesan"
         },
         "quantity": 100,
@@ -873,7 +873,7 @@
         "summaryRu": "",
         "price": 120,
         "imageUri": {
-            "path": "Pasta Fresca/seafood-saute.jpg",
+            "path": "pasta-Fresca/seafood-saute.jpg",
             "meta": "seafood saute"
         },
         "quantity": 100,
@@ -894,7 +894,7 @@
         "summaryRu": "",
         "price": 90,
         "imageUri": {
-            "path": "Pasta Fresca/Pork-medallions-with-grilled-vegetables.jpg",
+            "path": "pasta-Fresca/Pork-medallions-with-grilled-vegetables.jpg",
             "meta": "Pork medallions with grilled vegetables"
         },
         "quantity": 100,
@@ -915,7 +915,7 @@
         "summaryRu": "",
         "price": 115,
         "imageUri": {
-            "path": "Pasta Fresca/Veal-steak-with-salsa-sauce.jpg",
+            "path": "pasta-Fresca/Veal-steak-with-salsa-sauce.jpg",
             "meta": "Veal steak with salsa sauce"
         },
         "quantity": 100,
@@ -936,7 +936,7 @@
         "summaryRu": "",
         "price": 350,
         "imageUri": {
-            "path": "Pasta Fresca/Seafood-set.jpg",
+            "path": "pasta-Fresca/seafood-set.jpg",
             "meta": "Seafood set"
         },
         "quantity": 100,
@@ -957,7 +957,7 @@
         "summaryRu": "Традиционный итальянский суп из помидоров",
         "price": 35,
         "imageUri": {
-            "path": "Pasta Fresca/Minestrone.jpg",
+            "path": "pasta-Fresca/Minestrone.jpg",
             "meta": "Minestrone"
         },
         "quantity": 100,
@@ -978,7 +978,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": "Pasta Fresca/Chicken-broth-with-chicken-pieces.jpg",
+            "path": "pasta-Fresca/Chicken-broth-with-chicken-pieces.jpg",
             "meta": "Chicken broth with chicken pieces"
         },
         "quantity": 100,
@@ -999,7 +999,7 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": "Pasta Fresca/MUSHROOM-Soup.jpg",
+            "path": "pasta-Fresca/MUSHROOM-Soup.jpg",
             "meta": "MUSHROOM Soup"
         },
         "quantity": 100,
