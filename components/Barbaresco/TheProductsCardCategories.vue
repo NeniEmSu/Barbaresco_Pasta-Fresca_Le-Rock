@@ -101,7 +101,7 @@
         </p>
 
         <div class="row">
-          <div class="col-sm-5 pr-md-0 my-auto">
+          <div class="col-sm-6 pr-md-0 my-auto">
             <p
               v-if="$i18n.locale === 'en'"
               class="card-text cost my-auto"
@@ -115,9 +115,9 @@
               <span class="card-text d-inline d-sm-none">{{ product.volumeUk || product.volumeRu || product.volumeEn }}</span> {{ product.price | currency }} <span class="curency">{{ $t('currencyValue') }}</span>
             </p>
           </div>
-          <div class="col-sm-7 p-0 text-center my-auto">
+          <div class="col-sm-6 p-0 text-center my-auto">
             <button
-              class="btn my-auto mr-auto center"
+              class="btn my-auto m-auto center"
               @click.prevent="addToCart(product._id)"
             >
               {{ $t('order') }}

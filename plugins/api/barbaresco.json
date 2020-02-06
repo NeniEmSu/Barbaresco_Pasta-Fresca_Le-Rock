@@ -12,8 +12,7 @@
         "summaryUk": "Мікс-салат, кальмар маринований, помідори чері, маслини, огірок, ікра тобіко, лимон, заправляється фірмовим соусом",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "190g",
@@ -33,8 +32,7 @@
         "summaryUk": "Філе курки, бекон, мікс-салат, яйце перепелине, чіпси з білого хліба соус цезар",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/Caesar-with-Chicken.jpg"
         },
         "quantity": 100,
         "volumeEn": "240g",
@@ -54,8 +52,7 @@
         "summaryUk": "Легкий овочевий салат з помідорів, болгарського перцю, мікс-салату, огірків, сиру фета, оливкова олія",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/LIGHT-LIFE.jpg"
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -75,8 +72,7 @@
         "summaryUk": "Філе телятини гриль в поєднанні з печеними овочами, заправляється зеленим соусом",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "280g",
@@ -96,8 +92,7 @@
         "summaryUk": "Філе індички, помідори чері, мікс-салат, сир філадельфія, заправляється фірмовим гостро-солодким соусом",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -117,8 +112,7 @@
         "summaryUk": "Курка sous vide, спаржева квасоля, міні-моцарела, помідори чері, смажена цвітна капуста та картопля, заправляється базиліковим соусом",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -138,8 +132,7 @@
         "summaryUk": "Моцарела, курка копчена, ананас, оливки, фірмовий соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/Hawaiian.jpg"
         },
         "quantity": 100,
         "volumeEn": "500g",
@@ -159,8 +152,7 @@
         "summaryUk": "Моцарела, салямі, перець чілі, фірмовий соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/HHHHOT.jpg"
         },
         "quantity": 100,
         "volumeEn": "400g",
@@ -180,8 +172,7 @@
         "summaryUk": "Моцарела, шинка, печериці, маслини, фірмовий соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/capricciosa.jpg"
         },
         "quantity": 100,
         "volumeEn": "480g",
@@ -201,8 +192,7 @@
         "summaryRu": "Моцарелла, фирменный соус, базилик",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/MARGARITA.jpg"
         },
         "quantity": 100,
         "volumeEn": "380g",
@@ -222,8 +212,7 @@
         "summaryRu": "Моцарелла, салями, помидоры, фирменный соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/SALAMI.jpg"
         },
         "quantity": 100,
         "volumeEn": "420g",
@@ -243,8 +232,7 @@
         "summaryRu": "Моцарелла, ветчина, салями, шампиньоны, помидоры, фирменный соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/FOUR-SEASONS.jpg"
         },
         "quantity": 100,
         "volumeEn": "520g",
@@ -264,8 +252,7 @@
         "summaryRu": "Моцарелла, королевский, горгондзола, пармезан, фирменный соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/QUATTRO-FORMAGGI.jpg"
         },
         "quantity": 100,
         "volumeEn": "400g",
@@ -285,8 +272,7 @@
         "summaryRu": "Моцарелла, тунец, лук, фирменный соус, помидоры",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/Al-Tonno.jpg"
         },
         "quantity": 100,
         "volumeEn": "460g",
@@ -306,8 +292,7 @@
         "summaryRu": "Моцарелла, филе курицы, бекон, помидоры черри, пармезан, микс-салат, сливочный соус",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/Caesar.jpg"
         },
         "quantity": 100,
         "volumeEn": "470g",
@@ -327,8 +312,7 @@
         "summaryRu": "Булка, куриная котлета, помидор, микс-салат, соус барбекю, соус рокфор",
         "price": 75,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/BURGER-WITH-CHICKEN.jpg"
         },
         "quantity": 100,
         "volumeEn": "380g",
@@ -348,8 +332,7 @@
         "summaryRu": "Оригинальное сочетание: булка, печеный свиная шея, ананас гриль, карамелизированный лук, микс-салат, соус барбекю",
         "price": 75,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/BURGER-WITH-Pork.jpg"
         },
         "quantity": 100,
         "volumeEn": "380g",
@@ -369,8 +352,7 @@
         "summaryRu": "Настоящий Нью-Йоркский бургер: булка, телячья котлета, огурец консервированный, помидор, бекон, микс-салат, соус барбекю",
         "price": 75,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/NEW-YORK-BURGER-WITH-VEAL.jpg"
         },
         "quantity": 100,
         "volumeEn": "380g",
@@ -390,8 +372,7 @@
         "summaryRu": "Булка, свиная котлета, огурец, сыр чеддер, помидор, микс-салат, карамелизированный лук, соус барбекю",
         "price": 75,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/CHEESEBURGER-WITH-Pork.jpg"
         },
         "quantity": 100,
         "volumeEn": "380g",
@@ -411,8 +392,7 @@
         "summaryRu": "Булка, телячья котлета, огурец, сыр чеддер, помидор, микс-салат, соус барбекю",
         "price": 75,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/CHEESEBURGER-WITH-VEAL.jpg"
         },
         "quantity": 100,
         "volumeEn": "380g",
@@ -432,8 +412,7 @@
         "summaryRu": "Булка, куриная филе, овощи гриль, микс салат, сыр Филадельфия, тостерный сыр, соус big tasty",
         "price": 75,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/CHICKEN-DRON.jpg"
         },
         "quantity": 100,
         "volumeEn": "380g",
@@ -453,8 +432,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": "barbaresco/WITH-HAM-&-CHEESE.jpg"
         },
         "quantity": 100,
         "volumeEn": "260g",
@@ -474,8 +452,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "260g",
@@ -495,8 +472,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "235g",
@@ -516,8 +492,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "235g",
@@ -537,8 +512,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -558,8 +532,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -579,8 +552,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -600,8 +572,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -621,8 +592,7 @@
         "summaryRu": "",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "270g",
@@ -642,8 +612,7 @@
         "summaryRu": "",
         "price": 45,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "150 / 40g",
@@ -663,8 +632,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "150g",
@@ -684,8 +652,7 @@
         "summaryRu": "Вишнево-мятный, Персиковый, Карамель",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "150g",
@@ -705,8 +672,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "170g",
@@ -726,8 +692,7 @@
         "summaryRu": "",
         "price": 45,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "170g",
@@ -747,8 +712,7 @@
         "summaryRu": "",
         "price": 33,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -768,8 +732,7 @@
         "summaryRu": "Традиционное блюдо средней Азии, подается с домашней лапшой",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "350g",
@@ -789,8 +752,7 @@
         "summaryRu": "Шампиньоны, сливки",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -810,8 +772,7 @@
         "summaryRu": "Сырный суп на рыбном бульоне с креветками",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -831,8 +792,7 @@
         "summaryRu": "Филе курицы, цуккини, морковь, перец болгарский, брокколи, кунжут, зеленый лук, соус терияки",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -852,8 +812,7 @@
         "summaryRu": "Печеный свиная шея подается с картофельно-рокфорним пюре",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "350g",
@@ -873,8 +832,7 @@
         "summaryRu": "Филе лосося, фасоль спаржевая, морковь, перец болгарский, кабачок, шампиньоны, соус терияки",
         "price": 120,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -894,8 +852,7 @@
         "summaryRu": "Подается с рисом с овощами-гриль",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "400g",
@@ -915,8 +872,7 @@
         "summaryRu": "",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -936,8 +892,7 @@
         "summaryRu": "",
         "price": 20,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "",
@@ -957,8 +912,7 @@
         "summaryRu": "",
         "price": 20,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "",
@@ -978,8 +932,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "",
@@ -999,8 +952,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "",
@@ -1020,8 +972,7 @@
         "summaryRu": "",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -1041,8 +992,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -1062,8 +1012,7 @@
         "summaryRu": "",
         "price": 5,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "",
@@ -1083,8 +1032,7 @@
         "summaryRu": "а сам средне листовой пряный с медовыми нотками",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,6l",
@@ -1104,8 +1052,7 @@
         "summaryRu": "классический китайский чай",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,6l",
@@ -1125,8 +1072,7 @@
         "summaryRu": "смесь из кусочков папайи, манго, ананаса и цветов гибискуса",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,6l",
@@ -1146,8 +1092,7 @@
         "summaryRu": "смесь лимонной травы, мелиссы, мяты, ромашки и цедры апельсина",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,6l",
@@ -1167,8 +1112,7 @@
         "summaryRu": "",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,30l",
@@ -1188,8 +1132,7 @@
         "summaryRu": "",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,30l",
@@ -1209,8 +1152,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.25l",
@@ -1230,8 +1172,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.25l",
@@ -1251,8 +1192,7 @@
         "summaryRu": "сок яблока и сироп, базилик, имбирь, лимонный фреш, содовая",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -1272,8 +1212,7 @@
         "summaryRu": "ананасовый сок, имбирный сироп, лимонный фреш и содовая",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -1293,8 +1232,7 @@
         "summaryRu": "темный квас, сироп корица-карамель, лимонный фреш",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -1314,8 +1252,7 @@
         "summaryRu": "грейпфрутовый сок и сироп, лимонный фреш, содовая",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -1335,8 +1272,7 @@
         "summaryRu": "сироп зеленый банан, киви, лимонный фреш, содовая",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -1356,8 +1292,7 @@
         "summaryRu": "пюре дыни, маракуйи и персика",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -1377,8 +1312,7 @@
         "summaryRu": "шпинат, банан, сок яблока, пюре маракуйи",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -1398,8 +1332,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -1419,8 +1352,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -1440,8 +1372,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -1461,8 +1392,7 @@
         "summaryRu": "",
         "price": 16,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.25l",
@@ -1482,8 +1412,7 @@
         "summaryRu": "",
         "price": 18,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.25l",
@@ -1503,8 +1432,7 @@
         "summaryRu": "разлив",
         "price": 15,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.25l",
@@ -1524,8 +1452,7 @@
         "summaryRu": "разлив",
         "price": 15,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.25l",
@@ -1545,8 +1472,7 @@
         "summaryRu": "разлив",
         "price": 15,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.25l",
@@ -1566,8 +1492,7 @@
         "summaryRu": "",
         "price": 25,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.5l",
@@ -1587,8 +1512,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.5l",
@@ -1608,8 +1532,7 @@
         "summaryRu": "слабогаз./негаз",
         "price": 27,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.5l",
@@ -1629,8 +1552,7 @@
         "summaryRu": "филе лосося, водоросли нори, рис, васаби, имбирь",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "120/7/15g",
@@ -1650,8 +1572,7 @@
         "summaryRu": "лосось копченый, водоросли нори, рис, васаби, имбирь",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "120/7 / 15g",
@@ -1671,8 +1592,7 @@
         "summaryRu": "салат чука, ореховый соус, кунжут, водоросли нори, рис, васаби, имбирь",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "130/7/15g",
@@ -1692,8 +1612,7 @@
         "summaryRu": "филе лосося, сыр филадельфия, зеленый лук, японский омлет, водоросли нори, рис, васаби, имбирь",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "190/7/15g",
@@ -1713,8 +1632,7 @@
         "summaryRu": "сыр фета, помидор, перец болгарский, огурец, кунжут, водоросли нори, рис, васаби, имбирь",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "195/7/15g",
@@ -1734,8 +1652,7 @@
         "summaryRu": "мясо мидии, сыр филадельфия, сыр тостерный, салат чука, водоросли нори, рис, васаби, имбирь",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "130/7/15g",
@@ -1755,8 +1672,7 @@
         "summaryRu": "филе лосося, яблоко, рис, сыр филадельфия, водоросли нори, соевый бумагу, васаби, имбирь",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "200/7/15g",
@@ -1776,8 +1692,7 @@
         "summaryRu": "морской окунь, чука, икра тобико, черный кунжут, сыр тостерный, рис, сыр филадельфия, водоросли нори, васаби, имбирь",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220/7/15g",
@@ -1797,8 +1712,7 @@
         "summaryRu": "сыр филадельфия, сыр тостерный, сыр пармезан, кунжут, водоросли нори, рис, васаби, имбирь",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "200/7/15g",
@@ -1818,8 +1732,7 @@
         "summaryRu": "окунь-унаги, филе лосося, майонез японский, огурец, икра тобико, водоросли нори, рис, васаби, соус унаги, кунжут, имбирь",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210/7/15g",
@@ -1839,8 +1752,7 @@
         "summaryRu": "окунь-унаги, авокадо, огурец, сыр филадельфия, кунжут, соус унаги, водоросли нори, рис, васаби, имбирь",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "205/7/15g",
@@ -1860,8 +1772,7 @@
         "summaryRu": "филе лососся, сыр филадельфия, салат чука, окунь темпура, соус Тонкатцу, молекулярная икра, водоросли нори, рис, имбирь, васаби",
         "price": 110,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "235/7/15g",
@@ -1881,8 +1792,7 @@
         "summaryRu": "креветка темпура, омлет томаго, сыр филадельфия, японский майонез, икра тобико, шпинат свежий, водоросли нори, рис, васаби, имбирь",
         "price": 75,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220/7/15g",
@@ -1902,8 +1812,7 @@
         "summaryRu": "тунец, сыр филадельфия. креветка темпура, икра тобико, авокадо, кунжут белый и черный, соус Тонкатцу, ореховый соус, молекулярная икра, водоросли нори, рис, имбирь, васаби",
         "price": 135,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "255/7/15g",
@@ -1923,8 +1832,7 @@
         "summaryRu": "угорь, омлет томаго, сыр филадельфия, соус унаги, кунжут, пищевое золото, молекулярная икра, водоросли нори, рис, имбирь, васаби",
         "price": 135,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "240/7 / 15g",
@@ -1944,8 +1852,7 @@
         "summaryRu": "филе лосося, авокадо, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, имбирь",
         "price": 90,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210/7/15g",
@@ -1965,8 +1872,7 @@
         "summaryRu": "лосось копченый, авокадо, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, имбирь",
         "price": 90,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210/7/15g",
@@ -1986,8 +1892,7 @@
         "summaryRu": "тунец, авокадо, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, имбирь",
         "price": 95,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210/7 / 15g",
@@ -2007,8 +1912,7 @@
         "summaryRu": "угорь, окунь унаги, авокадо, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, соус унаги, кунжут, имбирь",
         "price": 95,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220/7 / 15g",
@@ -2028,8 +1932,7 @@
         "summaryRu": "филе лосося, сыр филадельфия, зеленый лук, огурец, водоросли нори, рис, васаби, имбирь",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220/7 / 15g",
@@ -2049,8 +1952,7 @@
         "summaryRu": "лосось копченый, сыр филадельфия, зеленый лук, огурец, водоросли нори, рис, васаби, имбирь",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220/7 / 15g",
@@ -2070,8 +1972,7 @@
         "summaryRu": "тунец, сыр филадельфия, авокадо, огурец, икра тобико, водоросли нори, рис, васаби, имбирь",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210/7 / 15g",
@@ -2091,8 +1992,7 @@
         "summaryRu": "угорь, окунь-унаги, сыр филадельфия, авокадо, огурец, икра тобико, водоросли нори, рис, васаби, соус унаги, кунжут, имбирь",
         "price": 100,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220/7 / 15g",
@@ -2112,8 +2012,7 @@
         "summaryRu": "сыр филадельфия, авокадо, икра тобико, креветка, молекулярная икра, водоросли нори, рис, имбирь, васаби",
         "price": 95,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220/7 / 15g",
@@ -2133,8 +2032,7 @@
         "summaryRu": "филе лосося, авокадо, огурец, сыр филадельфия, кунжут, соус унаги, икра тобико, молекулярная икра, водоросли нори, рис, имбирь, васаби",
         "price": 110,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "235/7 / 15g",
@@ -2154,8 +2052,7 @@
         "summaryRu": "угорь, окунь-унаги. огурец, майонез японский, икра тобико, соус унаги, кунжут, пищевое золото, молекулярная икра, водоросли нори, рис, имбирь, васаби ",
         "price": 140,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "245/7 / 15y",
@@ -2175,8 +2072,7 @@
         "summaryRu": "филе лосося, угорь, окунь-унаги, огурец, майонез японский, икра тобико, водоросли нори, рис, васаби, имбирь",
         "price": 140,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "235/7 / 15g",
@@ -2196,8 +2092,7 @@
         "summaryRu": "водка, соусы тобаско и ворчестер, микс специй, лимонный фреш, сахарный сироп, томатный сок",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -2217,8 +2112,7 @@
         "summaryRu": "водка, соусы тобаско и ворчестер, микс специй, лимонный фреш, сахарный сироп, томатный сок",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -2238,8 +2132,7 @@
         "summaryRu": "водка, джин, текила, ром, апельсиновый ликер, лимонный фреш, пепси",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -2259,8 +2152,7 @@
         "summaryRu": "Апероль, игристое вино, содовая, апельсин, оливки",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -2280,8 +2172,7 @@
         "summaryRu": "Апероль, пюре Monin смородины и черники, игристое вино, содовая",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -2301,8 +2192,7 @@
         "summaryRu": "мята, лайм, пюре зеленое яблоко Monin, содовая, тростниковый сахар",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -2322,8 +2212,7 @@
         "summaryRu": "белое сухое вино, винограндний сок, пюре зеленое яблоко Monin, розмарин",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -2343,8 +2232,7 @@
         "summaryRu": "виски, лимонный фреш, грейпфрутовый ликер, белок",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "150ml",
@@ -2364,8 +2252,7 @@
         "summaryRu": "пряный ром, апельсиновый ликер, миндальный сироп, лимонный фреш, пюре маракуйя, апельсиновый сок",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -2385,8 +2272,7 @@
         "summaryRu": "пряный ром, ананасовый сок, кокосовое молоко, пюре маракуя",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -2406,8 +2292,7 @@
         "summaryRu": "темный и золотой ром, мята, лайм, содовая, тростниковый сахар",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -2427,8 +2312,7 @@
         "summaryRu": "темный и золотой ром, мята, лайм, содовая, тростниковый сахар",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250ml",
@@ -2448,8 +2332,7 @@
         "summaryRu": "джин, тоник, лимонный фреш, сиропы черника и бузина, ягоды",
         "price": 65,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -2469,8 +2352,7 @@
         "summaryRu": "водка, биттер, кокосовое пюре, сок ананаса, фреш лимонный",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300ml",
@@ -2490,8 +2372,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210ml",
@@ -2511,8 +2392,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210ml",
@@ -2532,8 +2412,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210ml",
@@ -2553,8 +2432,7 @@
         "summaryRu": "",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "210ml",
@@ -2574,8 +2452,7 @@
         "summaryRu": "белое сухое",
         "price": 28,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "100ml",
@@ -2595,8 +2472,7 @@
         "summaryRu": "белое сухое",
         "price": 210,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "750ml",
@@ -2616,8 +2492,7 @@
         "summaryRu": "п / сл белое",
         "price": 28,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "100ml",
@@ -2637,8 +2512,7 @@
         "summaryRu": "п / сл белое",
         "price": 210,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "750ml",
@@ -2658,8 +2532,7 @@
         "summaryRu": "сухое красное",
         "price": 28,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "100ml",
@@ -2679,8 +2552,7 @@
         "summaryRu": "сухое красное",
         "price": 210,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "750ml",
@@ -2700,8 +2572,7 @@
         "summaryRu": "н  красными",
         "price": 28,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "100ml",
@@ -2721,8 +2592,7 @@
         "summaryRu": "н/с красными",
         "price": 210,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "750ml",
@@ -2742,8 +2612,7 @@
         "summaryRu": "красное сухое / белое сухое",
         "price": 44,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "100ml",
@@ -2763,8 +2632,7 @@
         "summaryRu": "красное сухое / белое сухое",
         "price": 330,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "375ml",
@@ -2784,8 +2652,7 @@
         "summaryRu": "сливовое СОЛ / роз / БИЛ",
         "price": 24,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "100ml",
@@ -2805,8 +2672,7 @@
         "summaryRu": "сливовое СОЛ / роз / БИЛ",
         "price": 90,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "375ml",
@@ -2826,8 +2692,7 @@
         "summaryRu": "СЛАДКОЕ",
         "price": 400,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "750ml",
@@ -2847,8 +2712,7 @@
         "summaryRu": "СЛАДКОЕ",
         "price": 350,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "750ml",
@@ -2868,8 +2732,7 @@
         "summaryRu": "БРЮТ \\ полусладкое \\ розовое",
         "price": 130,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "750ml",
@@ -2889,8 +2752,7 @@
         "summaryRu": "БЕЛЫЙ, КРАСНЫЙ",
         "price": 20,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -2910,8 +2772,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -2931,8 +2792,7 @@
         "summaryRu": "",
         "price": 45,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -2952,8 +2812,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -2973,8 +2832,7 @@
         "summaryRu": "",
         "price": 110,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -2994,8 +2852,7 @@
         "summaryRu": "",
         "price": 25,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -3015,8 +2872,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -3036,8 +2892,7 @@
         "summaryRu": "",
         "price": 20,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -3057,8 +2912,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -3078,8 +2932,7 @@
         "summaryRu": "ЗОЛОТОЙ, ТЕМНЫЙ",
         "price": 50,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -3099,8 +2952,7 @@
         "summaryRu": "RYE, 101, 81",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -3120,8 +2972,7 @@
         "summaryRu": "",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -3141,8 +2992,7 @@
         "summaryRu": "",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "50 ml ",
@@ -3162,8 +3012,7 @@
         "summaryRu": "",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.5l",
@@ -3183,8 +3032,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.5l",
@@ -3204,8 +3052,7 @@
         "summaryRu": "",
         "price": 45,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,3l",
@@ -3225,8 +3072,7 @@
         "summaryRu": "",
         "price": 70,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.5l",
@@ -3246,8 +3092,7 @@
         "summaryRu": "",
         "price": 23,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,3l",
@@ -3267,8 +3112,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.5l",
@@ -3288,8 +3132,7 @@
         "summaryRu": "",
         "price": 26,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0,3l",
@@ -3309,8 +3152,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "0.5l",
@@ -3330,8 +3172,7 @@
         "summaryRu": "Багет, итальянский сыровяленая колбаса, сыр Бри, сыр Дор Блю, сыр Эдем, маслины, палочки BBQ с рокфорним соусом и медом",
         "price": 120,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220g",
@@ -3351,8 +3192,7 @@
         "summaryRu": "курица янтарная, бастурма, чипсы картофельные, сыр фри, пикантные колбаски, соус тар-тар",
         "price": 80,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -3372,8 +3212,7 @@
         "summaryRu": "Приготовленные в пикантном соусе и подаются с соусом тар-тар",
         "price": 60,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -3393,8 +3232,7 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -3414,8 +3252,7 @@
         "summaryRu": "",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "220g",
@@ -3435,8 +3272,7 @@
         "summaryRu": "С розмарином и беконом",
         "price": 30,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -3456,8 +3292,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "150 / 30g",
@@ -3477,8 +3312,7 @@
         "summaryRu": "",
         "price": 20,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "200g",
@@ -3498,8 +3332,7 @@
         "summaryRu": "",
         "price": 3,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "1 piece",
@@ -3519,8 +3352,7 @@
         "summaryRu": "",
         "price": 3,
         "imageUri": {
-            "path": null,
-            "meta": null
+            "path": null
         },
         "quantity": 100,
         "volumeEn": "1 piece",

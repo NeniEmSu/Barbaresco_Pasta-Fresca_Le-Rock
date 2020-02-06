@@ -495,7 +495,7 @@
         "summaryRu": "картофель фри, и соус",
         "price": 70,
         "imageUri": {
-            "path": "le-Rock/With-pork.jpg",
+            "path": "le-Rock/Rock-Dog-With-potatoes-and-pork.jpg",
             "meta": "With pork"
         },
         "quantity": 100,
@@ -516,7 +516,7 @@
         "summaryRu": "картофель фри, и соус",
         "price": 70,
         "imageUri": {
-            "path": "le-Rock/With-chicken.jpg",
+            "path": "le-Rock/Rock-Dog-With-potatoes-and-chicken.jpg",
             "meta": "With chicken"
         },
         "quantity": 100,
@@ -537,7 +537,7 @@
         "summaryRu": "картофель фри, и соус",
         "price": 70,
         "imageUri": {
-            "path": "le-Rock/With-sausage-and-bacon.jpg",
+            "path": "le-Rock/Rock-Dog-With-sausage-and-bacon.jpg",
             "meta": "With sausage and bacon"
         },
         "quantity": 100,
@@ -547,7 +547,7 @@
     },
     {
         "published": true,
-        "category": "le-rock-fry-pan",
+        "category": "le-rock-mainMeals",
         "nameUk": "З картоплею і куркою",
         "nameRu": "С картошкой и курицей",
         "nameEn": "With potatoes and chicken",
@@ -568,7 +568,7 @@
     },
     {
         "published": true,
-        "category": "le-rock-fry-pan",
+        "category": "le-rock-mainMeals",
         "nameUk": "З картоплею і свининою",
         "nameRu": "С картошкой и свининой",
         "nameEn": "With potatoes and pork",
@@ -589,7 +589,7 @@
     },
     {
         "published": true,
-        "category": "le-rock-fry-pan",
+        "category": "le-rock-mainMeals",
         "nameUk": "З картоплею, ковбаскою та беконом",
         "nameRu": "С картофелем, колбаской и беконом",
         "nameEn": "With potatoes, sausage and bacon",
@@ -600,7 +600,7 @@
         "summaryRu": "+ маринованный огурец",
         "price": 50,
         "imageUri": {
-            "path": "le-Rock/With-potatoes,-sausage-and-bacon.jpg",
+            "path": "le-Rock/With-potatoes-sausage-and-bacon.jpg",
             "meta": "With potatoes, sausage and bacon"
         },
         "quantity": 100,
@@ -894,7 +894,7 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": "le-Rock/Grilled-lavash-with-cheese,-tomatoes-and-herbs.jpg",
+            "path": "le-Rock/Grilled-lavash-with-cheese-tomatoes-and-herbs.jpg",
             "meta": "Grilled lavash with cheese, tomatoes and herbs"
         },
         "quantity": 100,
@@ -1209,7 +1209,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": "le-Rock/French-fries-(with-sauce).jpg",
+            "path": "le-Rock/French-fries-with-sauce.jpg",
             "meta": "French fries (with sauce)"
         },
         "quantity": 100,
@@ -1243,7 +1243,7 @@
         "category": "le-rock-garnishes",
         "nameUk": "Чіабата",
         "nameRu": "Чиабата",
-        "nameEn": "Ciabata",
+        "nameEn": "Ciabatta",
         "_id": "lr-gar-6",
         "volumeEn": "1pc",
         "summaryEn": "",
@@ -1251,7 +1251,7 @@
         "summaryRu": "",
         "price": 15,
         "imageUri": {
-            "path": "le-Rock/Ciabata.jpg",
+            "path": "le-Rock/Ciabatta.jpg",
             "meta": "Ciabata"
         },
         "quantity": 100,
