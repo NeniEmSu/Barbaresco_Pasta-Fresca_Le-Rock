@@ -9,7 +9,7 @@
     "salads": "Салати",
     "firstCourse": "Супи",
     "hits": "Хіти",
-    "drinks": "Гарячі напої",
+    "drinks": "напої",
     "alcohol":"Алкоголь",
     "mainMeal": "Страви"
   },
@@ -22,7 +22,7 @@
     "salads": "Salads",
     "firstCourse": "Soups",
     "hits": "Hits",
-    "drinks": "Hot Drinks",
+    "drinks": "Drinks",
     "alcohol":"Alcohol",
     "mainMeal": "Dishes"
   },
@@ -35,7 +35,7 @@
     "salads": "Салаты",
     "firstCourse": "Супы",
     "hits": "Хиты",
-    "drinks": "Горячие Напитки",
+    "drinks": "Напитки",
     "alcohol":"Алкоголь",
     "mainMeal": "Страви"
   }
@@ -47,7 +47,7 @@
     <section class="container text-center ">
       <button
         class="column text-center "
-        :class="{ active: currentProductsDisplayed === 1}"
+        :class="{ active: currentProductsDisplayed === 1 || currentProductsDisplayed === 0}"
         @click.prevent="Show1"
       >
         <div class="nav-image spin circle navOne text-center" />
@@ -58,7 +58,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 3}"
+        :class="{ active: currentProductsDisplayed === 3 || currentProductsDisplayed === 0}"
         @click.prevent="Show3"
       >
         <div class="nav-image spin circle navThree" />
@@ -69,7 +69,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 6}"
+        :class="{ active: currentProductsDisplayed === 6 || currentProductsDisplayed === 0}"
         @click.prevent="Show6"
       >
         <div class="nav-image spin circle navSix" />
@@ -80,7 +80,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 11}"
+        :class="{ active: currentProductsDisplayed === 11 || currentProductsDisplayed === 0}"
         @click.prevent="Show11"
       >
         <div class="nav-image spin circle navEight" />
@@ -91,7 +91,7 @@
 
       <button
         class="column"
-        :class="{ active: currentProductsDisplayed === 2}"
+        :class="{ active: currentProductsDisplayed === 2 || currentProductsDisplayed === 0}"
         @click.prevent="Show2"
       >
         <div class="nav-image spin circle navTwo" />
@@ -102,7 +102,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 7}"
+        :class="{ active: currentProductsDisplayed === 7 || currentProductsDisplayed === 0}"
         @click.prevent="Show7"
       >
         <div class="nav-image spin circle navFirstCourse" />
@@ -113,7 +113,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 4}"
+        :class="{ active: currentProductsDisplayed === 4 || currentProductsDisplayed === 0}"
         @click.prevent="Show4"
       >
         <div class="nav-image spin circle navFour" />
@@ -124,7 +124,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 5}"
+        :class="{ active: currentProductsDisplayed === 5 || currentProductsDisplayed === 0}"
         @click.prevent="Show5"
       >
         <div class="nav-image spin circle navFive" />
@@ -135,7 +135,7 @@
 
       <button
         class="column"
-        :class="{ active: currentProductsDisplayed === 9}"
+        :class="{ active: currentProductsDisplayed === 9 || currentProductsDisplayed === 0}"
         @click.prevent="Show9"
       >
         <div class="nav-image spin circle navNine " />
@@ -144,16 +144,16 @@
         </div>
       </button>
 
-      <button
+      <!-- <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 10}"
+        :class="{ active: currentProductsDisplayed === 10 || currentProductsDisplayed === 0}"
         @click.prevent="Show10"
       >
         <div class="nav-image spin circle navTen" />
         <div class="text-center nav-text">
           {{ $t('alcohol') }}
         </div>
-      </button>
+      </button> -->
     </section>
   </div>
 </template>
@@ -215,7 +215,7 @@ export default {
 @import "~assets/scss/TheImagedProductNav.scss";
 
 .column {
-  width: calc(100% / 10);
+  width: calc(100% / 9);
 
   @media (max-width: 1200px) {
     width: calc(100% / 5);
@@ -247,7 +247,7 @@ export default {
 }
 
 .navFive {
-  background-image: url("~assets/img/barbarescoDesert.jpg");
+  background-image: url("~assets/img/le-rock-side-deserts.jpg");
 }
 
 .navSix {
@@ -255,19 +255,19 @@ export default {
 }
 
 .navSeven {
-  background-image: url("~assets/img/barbarescoFirstCourse.jpg");
+  background-image: url("~assets/img/le-rock-soups.jpg");
 }
 
 .navFirstCourse {
-  background-image: url("~assets/img/le-rock-first-course.jpg");
+  background-image: url("~assets/img/le-rock-soups.jpg");
 }
 
 .navEight {
-  background-image: url("~assets/img/barbarescoHits.jpg");
+  background-image: url("~assets/img/le-rock-dishes.jpg");
 }
 
 .navNine {
-  background-image: url("~assets/img/le-rock-hot-drinks.jpg");
+  background-image: url("~assets/img/le-rock-drinks.jpg");
 }
 
 .navTen {

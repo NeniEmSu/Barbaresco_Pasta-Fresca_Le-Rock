@@ -67,12 +67,20 @@
         background-image: url(~assets/img/pasta-fresca-about-us.jpg);
     }
 
+    &.lr-about {
+        background-image: url(~assets/img/le-rock-fresca-about-us.jpg);
+    }
+
     &.atmosphere {
         background-image: url(~assets/img/navAtmosphere.jpg);
     }
 
     &.pf-Atmosphere {
         background-image: url(~assets/img/pasta-navAtmosphere.jpg);
+    }
+
+    &.lr-Atmosphere {
+        background-image: url(~assets/img/le-rock-navAtmosphere.jpg);
     }
 
     &.contact {

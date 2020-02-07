@@ -14,6 +14,7 @@
         <productCard
           v-else
           :products="pizzas"
+          :image="barbarescoPizza"
         />
       </vue-page-transition>
     </div>
@@ -33,7 +34,7 @@ export default {
 
   data () {
     return {
-
+      barbarescoPizza: 'barbarescoPizza'
     }
   },
 

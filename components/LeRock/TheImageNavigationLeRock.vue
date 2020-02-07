@@ -66,7 +66,7 @@
               src="~assets/img/navAboutUs.jpg"
               alt="img02"
             > -->
-            <div class="imageHolder about" />
+            <div class="imageHolder lr-about" />
             <figcaption>
               <h2>{{ $t('links.aboutUs') }}</h2>
               <span />
@@ -83,7 +83,7 @@
               src="~assets/img/navAtmosphere.jpg"
               alt="img14"
             > -->
-            <div class="imageHolder atmosphere" />
+            <div class="imageHolder lr-Atmosphere" />
             <figcaption>
               <h2>{{ $t('links.atmosphere') }}</h2>
               <span />

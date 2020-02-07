@@ -44,7 +44,7 @@
     <section class="container text-center ">
       <button
         class="column text-center "
-        :class="{ active: currentProductsDisplayed === 1}"
+        :class="{ active: currentProductsDisplayed === 1 || currentProductsDisplayed === 0}"
         @click.prevent="Show1"
       >
         <div class="nav-image  spin circle navOne text-center" />
@@ -55,7 +55,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 6}"
+        :class="{ active: currentProductsDisplayed === 6 || currentProductsDisplayed === 0}"
         @click.prevent="Show6"
       >
         <div class="nav-image  spin circle navSix" />
@@ -66,7 +66,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 8}"
+        :class="{ active: currentProductsDisplayed === 8 || currentProductsDisplayed === 0}"
         @click.prevent="Show8"
       >
         <div class="nav-image  spin circle navEight" />
@@ -77,7 +77,7 @@
 
       <button
         class="column"
-        :class="{ active: currentProductsDisplayed === 2}"
+        :class="{ active: currentProductsDisplayed === 2 || currentProductsDisplayed === 0}"
         @click.prevent="Show2"
       >
         <div class="nav-image  spin circle navTwo" />
@@ -88,7 +88,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 7}"
+        :class="{ active: currentProductsDisplayed === 7 || currentProductsDisplayed === 0}"
         @click.prevent="Show7"
       >
         <div class="nav-image  spin circle navFirstCourse" />
@@ -99,7 +99,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 11}"
+        :class="{ active: currentProductsDisplayed === 11 || currentProductsDisplayed === 0}"
         @click.prevent="Show11"
       >
         <div class="nav-image  spin circle navSeven" />
@@ -110,7 +110,7 @@
 
       <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 5}"
+        :class="{ active: currentProductsDisplayed === 5 || currentProductsDisplayed === 0}"
         @click.prevent="Show5"
       >
         <div class="nav-image  spin circle navFive" />
@@ -121,7 +121,7 @@
 
       <button
         class="column"
-        :class="{ active: currentProductsDisplayed === 9}"
+        :class="{ active: currentProductsDisplayed === 9 || currentProductsDisplayed === 0}"
         @click.prevent="Show9"
       >
         <div class="nav-image  spin circle navNine " />
@@ -132,7 +132,7 @@
 
       <!-- <button
         class="column "
-        :class="{ active: currentProductsDisplayed === 10}"
+        :class="{ active: currentProductsDisplayed === 10 || currentProductsDisplayed === 0}"
         @click.prevent="Show10"
       >
         <div class="nav-image  spin circle navTen" />
