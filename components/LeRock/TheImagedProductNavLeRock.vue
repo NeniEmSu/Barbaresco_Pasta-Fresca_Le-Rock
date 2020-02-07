@@ -7,11 +7,11 @@
     "side-dishes": "Гарніри",
     "deserts": "Десерти",
     "salads": "Салати",
-    "firstCourse": "Перші страви",
+    "firstCourse": "Супи",
     "hits": "Хіти",
     "drinks": "Гарячі напої",
     "alcohol":"Алкоголь",
-    "mainMeal": "Основні страви"
+    "mainMeal": "Страви"
   },
   "en": {
    "appetizer": "Appetizer",
@@ -20,11 +20,11 @@
     "side-dishes": "Side dishes",
     "deserts": "Deserts",
     "salads": "Salads",
-    "firstCourse": "First Course",
+    "firstCourse": "Soups",
     "hits": "Hits",
     "drinks": "Hot Drinks",
     "alcohol":"Alcohol",
-    "mainMeal": "Main dishes"
+    "mainMeal": "Dishes"
   },
   "ru": {
     "appetizer": "Закуски",
@@ -33,11 +33,11 @@
     "side-dishes": "Гарниры",
     "deserts": "Десерты",
     "salads": "Салаты",
-    "firstCourse": "Первые блюда",
+    "firstCourse": "Супы",
     "hits": "Хиты",
     "drinks": "Горячие Напитки",
     "alcohol":"Алкоголь",
-    "mainMeal": "Основні страви"
+    "mainMeal": "Страви"
   }
 }
 </i18n>

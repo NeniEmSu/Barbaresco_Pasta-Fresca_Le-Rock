@@ -29,7 +29,7 @@
         v-for="location in locations"
         :key="location.id"
         :position="{lat: location.lat, lng: location.lng}"
-        @click.prevent="currentLocation = location"
+        @click="currentLocation = location"
       >
         <GmapInfoWindow>
           <code>
@@ -49,8 +49,8 @@ export default {
       locations: [
         {
           id: 2,
-          lat: 49.5529,
-          lng: 25.594399,
+          lat: 49.5529819,
+          lng: 25.5953185,
           name: this.$t('location')
         }
 
@@ -60,7 +60,7 @@ export default {
       },
       clusterStyle: [
         {
-          url: 'https://googlemaps.github.io/js-marker-clusterer/images/m2.png',
+          // url: 'https://googlemaps.github.io/js-marker-clusterer/images/m2.png',
           width: 56,
           height: 56,
           textColor: '#0A0A0A'

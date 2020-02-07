@@ -7,12 +7,12 @@
     "panCakes": "Млинці",
     "deserts": "Десерти",
     "salads": "Салати",
-    "firstCourse": "Перші страви",
+    "firstCourse": "Супи",
     "appetizers": "Закуски",
     "garnishes": "Гарніри",
     "drinks": "Напої",
     "alcohol":"Алкоголь",
-    "mainMeal": "Основні страви"
+    "mainMeal": "Страви"
   },
   "en": {
    "pizza": "Pizzas",
@@ -21,12 +21,12 @@
     "panCakes": "PanCakes",
     "deserts": "Deserts",
     "salads": "Salads",
-    "firstCourse": "First Course",
+    "firstCourse": "Soups",
     "appetizers": "Appetizers",
     "garnishes": "Garnishes",
     "drinks": "Drinks",
     "alcohol":"Alcohol",
-    "mainMeal": "Main dishes"
+    "mainMeal": "Dishes"
   },
   "ru": {
     "pizza": "Пицца",
@@ -35,12 +35,12 @@
     "panCakes": "Блины",
     "deserts": "Десерты",
     "salads": "Салаты",
-    "firstCourse": "Первые блюда",
+    "firstCourse": "Супы",
     "appetizers": "Закуски",
     "garnishes": "гарниры",
     "drinks": "Напитки",
     "alcohol":"Алкоголь",
-    "mainMeal": "Основні страви"
+    "mainMeal": "Страви"
   }
 }
 </i18n>

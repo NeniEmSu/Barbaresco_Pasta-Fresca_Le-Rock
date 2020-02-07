@@ -732,7 +732,7 @@ export default [
 
   },
 
-  // Barbaresco First Courses
+  // Barbaresco Soupss
 
   {
 
@@ -4353,7 +4353,7 @@ export default [
 
   },
 
-  // Barbaresco First Courses
+  // Barbaresco Soupss
 
   {
 
@@ -6292,7 +6292,7 @@ export default [
     summary: ''
   },
 
-  // Le Rock First Courses
+  // Le Rock Soupss
 
   {
     category: 'le-rock-firstCourses',

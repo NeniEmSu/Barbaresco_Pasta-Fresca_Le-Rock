@@ -375,7 +375,7 @@ export default [
     summary: ''
   },
 
-  // Barbaresco First Courses
+  // Barbaresco Soupss
 
   {
     category: 'barbaresco-firstCourses',
@@ -2245,7 +2245,7 @@ export default [
     summary: ''
   },
 
-  // Barbaresco First Courses
+  // Barbaresco Soupss
 
   {
     category: 'pasta-fresca-firstCourses',
@@ -3417,7 +3417,7 @@ export default [
     summary: ''
   },
 
-  // Le Rock First Courses
+  // Le Rock Soupss
 
   {
     category: 'le-rock-firstCourses',

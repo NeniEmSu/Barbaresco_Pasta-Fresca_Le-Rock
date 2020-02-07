@@ -378,7 +378,7 @@ export default {
 @import "~assets/scss/TheMenu.scss";
 
 #le-rock {
-  background: url("~assets/img/le-rock-bg.jpg") no-repeat center center fixed;
+  background: url("~assets/img/le-rock-bg-2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -386,20 +386,20 @@ export default {
   position: relative;
   background-color: $headingsFontColor;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 50px;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 50px;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
 
-    background-image: linear-gradient(
-      to bottom right,
-      $blackColor,
-      $blackColor
-    );
-    opacity: 0.4;
-  }
+  //   background-image: linear-gradient(
+  //     to bottom right,
+  //     $blackColor,
+  //     $blackColor
+  //   );
+  //   opacity: 0.4;
+  // }
 }
 </style>

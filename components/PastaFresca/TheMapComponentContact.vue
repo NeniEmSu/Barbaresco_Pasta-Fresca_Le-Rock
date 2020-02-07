@@ -29,7 +29,7 @@
         v-for="location in locations"
         :key="location.id"
         :position="{lat: location.lat, lng: location.lng}"
-        @click.prevent="currentLocation = location"
+        @click="currentLocation = location"
       >
         <GmapInfoWindow>
           <code>
@@ -48,8 +48,9 @@ export default {
       currentLocation: {},
       locations: [
         {
-          lat: 49.552314,
-          lng: 25.596150,
+          id: 2,
+          lat: 49.5529819,
+          lng: 25.5953185,
           name: this.$t('location')
         }
       ],

@@ -7,10 +7,10 @@
     "deserts": "Десерти",
     "salads": "Салати",
     "alcohol":"Алкоголь",
-    "firstCourse": "Перші страви",
+    "firstCourse": "Супи",
     "drinks": "Напої",
     "tea":"Чай",
-    "mainMeal": "Основні страви"
+    "mainMeal": "Страви"
   },
   "en": {
    "pasta": "Pasta",
@@ -19,10 +19,10 @@
     "deserts": "Deserts",
     "salads": "Salads",
     "alcohol":"Alcohol",
-    "firstCourse": "First Course",
+    "firstCourse": "Soups",
     "drinks": "Drinks",
     "tea":"Tea",
-    "mainMeal": "Main dishes"
+    "mainMeal": "Dishes"
   },
   "ru": {
     "pasta": "Паста",
@@ -31,10 +31,10 @@
     "deserts": "Десерты",
     "salads": "Салаты",
     "alcohol":"Алкоголь",
-    "firstCourse": "Первые блюда",
+    "firstCourse": "Супы",
     "drinks": "Напитки",
     "tea":"Чай",
-    "mainMeal": "Основні страви"
+    "mainMeal": "Страви"
   }
 }
 </i18n>
@@ -130,7 +130,7 @@
         </div>
       </button>
 
-      <button
+      <!-- <button
         class="column "
         :class="{ active: currentProductsDisplayed === 10}"
         @click.prevent="Show10"
@@ -139,7 +139,7 @@
         <div class="text-center nav-text">
           {{ $t('alcohol') }}
         </div>
-      </button>
+      </button> -->
     </section>
   </div>
 </template>
@@ -201,10 +201,10 @@ export default {
 @import "~assets/scss/TheImagedProductNav.scss";
 
 .column {
-  width: calc(100% / 9);
+  width: calc(100% / 8);
 
   @media (max-width: 1200px) {
-    width: calc(100% / 5);
+    width: calc(100% / 4);
 
     .nav-text {
       color: $lightColor;
@@ -225,7 +225,7 @@ export default {
 }
 
 .navFive {
-  background-image: url("~assets/img/barbarescoDesert.jpg");
+  background-image: url("~assets/img/pasta-fresca-Desert.jpg");
 }
 
 .navSix {
@@ -233,14 +233,14 @@ export default {
 }
 
 .navFirstCourse {
-  background-image: url("~assets/img/barbarescoFirstCourse.jpg");
+  background-image: url("~assets/img/pasta-fresca-firstCourse.jpg");
 }
 
 .navSeven {
-  background-image: url("~assets/img/barbarescoHits.jpg");
+  background-image: url("~assets/img/pasta-fresca-main-meal.jpg");
 }
 .navEight {
-  background-image: url("~assets/img/le-rock-side-dishes.jpg");
+  background-image: url("~assets/img/pasta-fresca-side-dishes.jpg");
 }
 
 .navNine {

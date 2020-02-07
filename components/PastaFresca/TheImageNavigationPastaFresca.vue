@@ -48,7 +48,7 @@
               src="~assets/img/navDelivery.jpg"
               alt="img02"
             /> -->
-            <div class="imageHolder food-delivery" />
+            <div class="imageHolder pf-food-delivery" />
             <figcaption>
               <h2>{{ $t('links.delivery') }}</h2>
               <span />
@@ -82,7 +82,7 @@
               src="~assets/img/navAtmosphere.jpg"
               alt="img14"
             /> -->
-            <div class="imageHolder atmosphere" />
+            <div class="imageHolder pf-Atmosphere" />
             <figcaption>
               <h2>{{ $t('links.atmosphere') }}</h2>
               <span />
