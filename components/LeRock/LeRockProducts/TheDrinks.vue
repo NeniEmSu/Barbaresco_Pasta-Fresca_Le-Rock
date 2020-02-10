@@ -5,17 +5,17 @@
   >
     <div class="content row">
       <img
-        class="col-md-6 p-sm-0"
+        class="col-md-6"
         src="~assets/img/le-rock-drinks-menu-1.jpg"
         alt="le-rock-drinks-menu-1"
       >
       <img
-        class="col-md-6 p-md-0"
+        class="col-md-6"
         src="~assets/img/le-rock-drinks-menu-2.jpg"
         alt="le-rock-drinks-menu-2"
       >
       <img
-        class="col-md-6 p-md-0"
+        class="col-md-6"
         src="~assets/img/le-rock-drinks-menu-3.jpg"
         alt="le-rock-drinks-menu-3"
       >
