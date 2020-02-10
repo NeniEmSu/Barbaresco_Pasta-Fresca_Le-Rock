@@ -159,7 +159,7 @@
 
       <TheDrinks v-if="currentProductsDisplayed === 9" />
 
-      <TheAlcohol v-if="currentProductsDisplayed === 10" />
+      <!-- <TheAlcohol v-if="currentProductsDisplayed === 10" /> -->
 
       <TheMainMeal v-if="currentProductsDisplayed === 11" />
     </vue-page-transition>
@@ -184,7 +184,7 @@ import TheSalad from '~/components/PastaFresca/PastaFrescaProducts/TheSalad'
 import TheFirstCourse from '~/components/PastaFresca/PastaFrescaProducts/TheFirstCourse'
 import TheGarnishes from '~/components/PastaFresca/PastaFrescaProducts/TheGarnishes'
 import TheAppetizers from '~/components/PastaFresca/PastaFrescaProducts/TheAppetizers'
-import TheAlcohol from '~/components/PastaFresca/PastaFrescaProducts/TheAlcohol'
+// import TheAlcohol from '~/components/PastaFresca/PastaFrescaProducts/TheAlcohol'
 import TheMainMeal from '~/components/PastaFresca/PastaFrescaProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/PastaFresca/TheBottomCarouselOwl'
 
@@ -210,7 +210,7 @@ export default {
     TheGarnishes,
     TheAppetizers,
     TheDrinks,
-    TheAlcohol,
+    // TheAlcohol,
     TheMainMeal,
     TheBottomCarousel
   },

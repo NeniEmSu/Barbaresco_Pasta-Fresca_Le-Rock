@@ -9,7 +9,7 @@
           v-if="$apollo.queries.salads.loading"
           class="mx-auto text-center"
         >
-          <Loading />
+          <LoadingWhite />
         </div>
         <productCard
           v-else

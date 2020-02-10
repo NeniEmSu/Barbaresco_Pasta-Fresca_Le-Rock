@@ -17,70 +17,69 @@
   firstCourses: leRockCollection(filter: {category: "le-rock-firstCourses", published: true}) {
     ...leRockFields
   }
-  alcoholicCocktail: leRockCollection(filter: {category: "le-rock-alcoholicCocktail", published: true}) {
-    ...leRockFields
-  }
-  wine: leRockCollection(filter: {category: "le-rock-wine", published: true}) {
-    ...leRockFields
-  }
-  sparklingWine: leRockCollection(filter: {category: "le-rock-sparklingWine", published: true}) {
-    ...leRockFields
-  }
-  alcoholicSet: leRockCollection(filter: {category: "le-rock-alcoholicSet", published: true}) {
-    ...leRockFields
-  }
-  coffee: leRockCollection(filter: {category: "le-rock-coffee", published: true}) {
-    ...leRockFields
-  }
-  tea: leRockCollection(filter: {category: "le-rock-tea", published: true}) {
-    ...leRockFields
-  }
-  lemonade: leRockCollection(filter: {category: "le-rock-lemonade", published: true}) {
-    ...leRockFields
-  }
-  drinks: leRockCollection(filter: {category: "le-rock-drinks", published: true}) {
-    ...leRockFields
-  }
-  fresh: leRockCollection(filter: {category: "le-rock-fresh", published: true}) {
-    ...leRockFields
-  }
-  rom: leRockCollection(filter: {category: "le-rock-rom", published: true}) {
-    ...leRockFields
-  }
-  whisky: leRockCollection(filter: {category: "le-rock-whisky", published: true}) {
-    ...leRockFields
-  }
-  aperitifs: leRockCollection(filter: {category: "le-rock-aperitifs", published: true}) {
-    ...leRockFields
-  }
-  konbrand: leRockCollection(filter: {category: "le-rock-konbrand", published: true}) {
-    ...leRockFields
-  }
-  diva: leRockCollection(filter: {category: "le-rock-diva", published: true}) {
-    ...leRockFields
-  }
-  takila: leRockCollection(filter: {category: "le-rock-takila", published: true}) {
-    ...leRockFields
-  }
-  vodka: leRockCollection(filter: {category: "le-rock-vodka", published: true}) {
-    ...leRockFields
-  }
-  gin: leRockCollection(filter: {category: "le-rock-gin", published: true}) {
-    ...leRockFields
-  }
-  smoothy: leRockCollection(filter: {category: "le-rock-smoothy", published: true}) {
-    ...leRockFields
-  }
-  appetizersForBear: leRockCollection(filter: {category: "le-rock-appetizers-for-bear", published: true}) {
-    ...leRockFields
-  }
   meat: leRockCollection(filter: {category: "le-rock-meat-bbq", published: true}) {
     ...leRockFields
   }
   rockDog: leRockCollection(filter: {category: "le-rock-rock-dogs", published: true}) {
     ...leRockFields
   }
-  
+  # alcoholicCocktail: leRockCollection(filter: {category: "le-rock-alcoholicCocktail", published: true}) {
+  #   ...leRockFields
+  # }
+  # wine: leRockCollection(filter: {category: "le-rock-wine", published: true}) {
+  #   ...leRockFields
+  # }
+  # sparklingWine: leRockCollection(filter: {category: "le-rock-sparklingWine", published: true}) {
+  #   ...leRockFields
+  # }
+  # alcoholicSet: leRockCollection(filter: {category: "le-rock-alcoholicSet", published: true}) {
+  #   ...leRockFields
+  # }
+  # coffee: leRockCollection(filter: {category: "le-rock-coffee", published: true}) {
+  #   ...leRockFields
+  # }
+  # tea: leRockCollection(filter: {category: "le-rock-tea", published: true}) {
+  #   ...leRockFields
+  # }
+  # lemonade: leRockCollection(filter: {category: "le-rock-lemonade", published: true}) {
+  #   ...leRockFields
+  # }
+  # drinks: leRockCollection(filter: {category: "le-rock-drinks", published: true}) {
+  #   ...leRockFields
+  # }
+  # fresh: leRockCollection(filter: {category: "le-rock-fresh", published: true}) {
+  #   ...leRockFields
+  # }
+  # rom: leRockCollection(filter: {category: "le-rock-rom", published: true}) {
+  #   ...leRockFields
+  # }
+  # whisky: leRockCollection(filter: {category: "le-rock-whisky", published: true}) {
+  #   ...leRockFields
+  # }
+  # aperitifs: leRockCollection(filter: {category: "le-rock-aperitifs", published: true}) {
+  #   ...leRockFields
+  # }
+  # konbrand: leRockCollection(filter: {category: "le-rock-konbrand", published: true}) {
+  #   ...leRockFields
+  # }
+  # diva: leRockCollection(filter: {category: "le-rock-diva", published: true}) {
+  #   ...leRockFields
+  # }
+  # takila: leRockCollection(filter: {category: "le-rock-takila", published: true}) {
+  #   ...leRockFields
+  # }
+  # vodka: leRockCollection(filter: {category: "le-rock-vodka", published: true}) {
+  #   ...leRockFields
+  # }
+  # gin: leRockCollection(filter: {category: "le-rock-gin", published: true}) {
+  #   ...leRockFields
+  # }
+  # smoothy: leRockCollection(filter: {category: "le-rock-smoothy", published: true}) {
+  #   ...leRockFields
+  # }
+  # appetizersForBear: leRockCollection(filter: {category: "le-rock-appetizers-for-bear", published: true}) {
+  #   ...leRockFields
+  # }  
 }
 
 fragment leRockFields on leRockCollection {

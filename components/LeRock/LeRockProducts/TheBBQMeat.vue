@@ -4,7 +4,10 @@
     class="container "
   >
     <div class="content">
-      <productCard :products="meat" />
+      <productCard
+        v-cloak
+        :products="meat"
+      />
     </div>
   </div>
 </template>

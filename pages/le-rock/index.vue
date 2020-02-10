@@ -161,7 +161,7 @@
 
         <TheDrinks v-if="currentProductsDisplayed === 9" />
 
-        <TheAlcohol v-if="currentProductsDisplayed === 10" />
+        <!-- <TheAlcohol v-if="currentProductsDisplayed === 10" /> -->
 
         <TheMainMeal v-if="currentProductsDisplayed === 11" />
       </vue-page-transition>
@@ -188,7 +188,7 @@ import TheGarnishes from '~/components/LeRock/LeRockProducts/TheGarnishes'
 import TheDesert from '~/components/LeRock/LeRockProducts/TheDeserts'
 import TheSalad from '~/components/LeRock/LeRockProducts/TheSalad'
 import TheFirstCourse from '~/components/LeRock/LeRockProducts/TheFirstCourse'
-import TheAlcohol from '~/components/LeRock/LeRockProducts/TheAlcohol'
+// import TheAlcohol from '~/components/LeRock/LeRockProducts/TheAlcohol'
 import TheMainMeal from '~/components/LeRock/LeRockProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/LeRock/TheBottomCarouselOwl'
 
@@ -215,7 +215,7 @@ export default {
     TheSalad,
     TheFirstCourse,
     TheDrinks,
-    TheAlcohol,
+    // TheAlcohol,
     TheMainMeal,
     TheBottomCarousel
   },

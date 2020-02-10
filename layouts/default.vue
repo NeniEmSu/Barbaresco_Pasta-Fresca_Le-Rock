@@ -161,6 +161,13 @@ body {
   }
 }
 
+[v-cloak] > * {
+  display: none;
+}
+[v-cloak]::before {
+  content: "loading...";
+}
+
 .overlay-left,
 .overlay-right,
 .overlay-top,

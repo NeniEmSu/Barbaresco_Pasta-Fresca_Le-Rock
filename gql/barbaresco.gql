@@ -44,43 +44,43 @@
   philly: barbarescoCollection(filter: {category: "barbaresco-PhiladelphiaRoll", published: true}) {
     ...barbarescoFields
   }
-  alcoholicCocktail: barbarescoCollection(filter: {category: "barbaresco-alcoholicCocktail", published: true}) {
-    ...barbarescoFields
-  }alcoholicSet: barbarescoCollection(filter: {category: "barbaresco-alcoholicSet", published: true}) {
-    ...barbarescoFields
-  }
-  wine: barbarescoCollection(filter: {category: "barbaresco-wine", published: true}) {
-    ...barbarescoFields
-  }
-  sparklingWine: barbarescoCollection(filter: {category: "barbaresco-sparklingWine", published: true}) {
-    ...barbarescoFields
-  }
-  alcoholicDrinks: barbarescoCollection(filter: {category: "barbaresco-alcoholicDrinks", published: true}) {
-    ...barbarescoFields
-  }
-  bear: barbarescoCollection(filter: {category: "barbaresco-bear", published: true}) {
-    ...barbarescoFields
-  }
-  coffee: barbarescoCollection(filter: {category: "barbaresco-coffee", published: true}) {
-    ...barbarescoFields
-  }
-  tea: barbarescoCollection(filter: {category: "barbaresco-tea", published: true}) {
-    ...barbarescoFields
-  }
-  lemonade: barbarescoCollection(filter: {category: "barbaresco-lemonade", published: true}) {
-    ...barbarescoFields
-  }
-  smoothy: barbarescoCollection(filter: {category: "barbaresco-smoothy", published: true}) {
-    ...barbarescoFields
-  }
-  nonAlcoholicDrinks: barbarescoCollection(filter: {category: "barbaresco-nonAlcoholicDrinks", published: true}) {
-    ...barbarescoFields
-  }
-  fresh: barbarescoCollection(filter: {category: "barbaresco-fresh", published: true}) {
-    ...barbarescoFields
-  }milkshake: barbarescoCollection(filter: {category: "barbaresco-milkshake", published: true}) {
-    ...barbarescoFields
-  }
+  # alcoholicCocktail: barbarescoCollection(filter: {category: "barbaresco-alcoholicCocktail", published: true}) {
+  #   ...barbarescoFields
+  # }alcoholicSet: barbarescoCollection(filter: {category: "barbaresco-alcoholicSet", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # wine: barbarescoCollection(filter: {category: "barbaresco-wine", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # sparklingWine: barbarescoCollection(filter: {category: "barbaresco-sparklingWine", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # alcoholicDrinks: barbarescoCollection(filter: {category: "barbaresco-alcoholicDrinks", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # bear: barbarescoCollection(filter: {category: "barbaresco-bear", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # coffee: barbarescoCollection(filter: {category: "barbaresco-coffee", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # tea: barbarescoCollection(filter: {category: "barbaresco-tea", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # lemonade: barbarescoCollection(filter: {category: "barbaresco-lemonade", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # smoothy: barbarescoCollection(filter: {category: "barbaresco-smoothy", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # nonAlcoholicDrinks: barbarescoCollection(filter: {category: "barbaresco-nonAlcoholicDrinks", published: true}) {
+  #   ...barbarescoFields
+  # }
+  # fresh: barbarescoCollection(filter: {category: "barbaresco-fresh", published: true}) {
+  #   ...barbarescoFields
+  # }milkshake: barbarescoCollection(filter: {category: "barbaresco-milkshake", published: true}) {
+  #   ...barbarescoFields
+  # }
 }
 
 fragment barbarescoFields on barbarescoCollection {
