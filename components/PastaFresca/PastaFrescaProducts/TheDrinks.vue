@@ -5,18 +5,18 @@
   >
     <div class="content row">
       <img
-        class="col-md-6 p-sm-0"
+        class="col-md-6"
         src="~assets/img/pasta-fresca-drinks-menu-1.jpg"
         alt="pasta-fresca-drinks-menu-1"
       >
       <img
-        class="col-md-6 p-md-0"
+        class="col-md-6"
         src="~assets/img/pasta-fresca-drinks-menu-2.jpg"
         alt="pasta-fresca-drinks-menu-2"
       >
       <img
-        class="col-md-6 p-md-0"
-        src="~assets/img/pasta-fresca-drinks-menu-1.jpg"
+        class="col-md-6"
+        src="~assets/img/pasta-fresca-drinks-menu-3.jpg"
         alt="pasta-fresca-drinks-menu-3"
       >
     </div>

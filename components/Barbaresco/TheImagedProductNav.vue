@@ -168,7 +168,7 @@
         </div>
       </button>
 
-      <button
+      <!-- <button
         class="column"
         :class="{ active: currentProductsDisplayed === 10 || currentProductsDisplayed === 0}"
         @click.prevent="Show10"
@@ -177,7 +177,7 @@
         <div class="text-center nav-text">
           {{ $t('alcohol') }}
         </div>
-      </button>
+      </button> -->
     </section>
   </div>
 </template>
@@ -242,7 +242,7 @@ export default {
 @import "~assets/scss/TheImagedProductNav.scss";
 
 .column {
-  width: calc(100% / 12);
+  width: calc(100% / 11);
 
   @media (max-width: 1200px) {
     width: calc(100% / 6);

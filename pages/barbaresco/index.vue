@@ -164,7 +164,7 @@
 
       <TheDrinks v-if="currentProductsDisplayed === 9" />
 
-      <TheAlcohol v-if="currentProductsDisplayed === 10" />
+      <!-- <TheAlcohol v-if="currentProductsDisplayed === 10" /> -->
     </vue-page-transition>
 
     <TheBottomCarousel class="elaboraSpacing" />
@@ -190,7 +190,7 @@ import TheSalad from '~/components/Barbaresco/BarbarescoProducts/TheSalad'
 import TheFirstCourse from '~/components/Barbaresco/BarbarescoProducts/TheFirstCourse'
 import TheAppetizers from '~/components/Barbaresco/BarbarescoProducts/TheAppetizers'
 import TheGarnishes from '~/components/Barbaresco/BarbarescoProducts/TheGarnishes'
-import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
+// import TheAlcohol from '~/components/Barbaresco/BarbarescoProducts/TheAlcohol'
 import TheMainMeal from '~/components/Barbaresco/BarbarescoProducts/TheMainMeal'
 import TheBottomCarousel from '~/components/Barbaresco/TheBottomCarouselOwl'
 
@@ -212,7 +212,7 @@ export default {
     TheAppetizers,
     TheGarnishes,
     TheDrinks,
-    TheAlcohol,
+    // TheAlcohol,
     TheMainMeal,
     TheBottomCarousel
   },
