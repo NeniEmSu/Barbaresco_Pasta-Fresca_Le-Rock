@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import Header from '~/components/PastaFresca/TheHeaderPastaFresca'
 import TheFooter from '@/components/PastaFresca/TheFooterPastaFresca.vue'
 import TheMobileFooter from '@/components/PastaFresca/TheMobileFooterPastaFresca.vue'
+import Header from '~/components/PastaFresca/TheHeaderPastaFresca'
 
 export default {
   name: 'PastaFrescaLayout',

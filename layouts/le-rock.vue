@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import Header from '~/components/LeRock/TheHeaderLeRock'
 import TheFooter from '@/components/LeRock/TheFooterLeRock'
 import TheMobileFooter from '@/components/LeRock/TheMobileFooter'
+import Header from '~/components/LeRock/TheHeaderLeRock'
 
 export default {
   name: 'BarbarescoLayout',

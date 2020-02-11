@@ -35,10 +35,10 @@
 </template>
 
 <script>
-import Header from '~/components/Barbaresco/TheHeader'
 
 import TheFooter from '@/components/Barbaresco/TheFooter.vue'
 import TheMobileFooter from '@/components/Barbaresco/TheMobileFooter.vue'
+import Header from '~/components/Barbaresco/TheHeader'
 
 export default {
   name: 'BarbarescoLayout',
