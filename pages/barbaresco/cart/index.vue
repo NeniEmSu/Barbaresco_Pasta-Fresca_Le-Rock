@@ -463,6 +463,7 @@
                     class="col-2 m-auto"
                     :src="`https://barbaresco-admin.w-start.com.ua/api/cockpit/image?token=ffb42583d5425c6231d7655b44e497&w=200&h=200&f[brighten]=0&o=true&src=${product.path}`"
                     :alt="product.nameUk || product.nameRu || product.nameEn"
+                    @error="setFallbackImageUrl"
                   >
                   <img
                     v-else
@@ -473,6 +474,7 @@
                     class="col-2 m-auto"
                     :src="require(`~/assets/img/${product.image + '.jpg'}`)"
                     :alt="product.image"
+                    @error="setFallbackImageUrl"
                   >
                   <div class="col-5 p-0">
                     <div class="col-12 p-0 m-auto">
@@ -766,6 +768,12 @@ export default {
   },
 
   methods: {
+    setFallbackImageUrl (event) {
+      // eslint-disable-next-line no-console
+      console.log('Image failed to load, setting fallback.')
+      event.target.src = 'https://via.placeholder.com/200x200'
+      // event.target.src = require(`~/assets/img/${'barbarescoPizza' + '.jpg'}`)
+    },
 
     addToCart (id, append = false) {
       this.$store.dispatch('addToCart', id)
