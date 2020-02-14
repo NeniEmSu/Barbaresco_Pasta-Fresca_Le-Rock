@@ -71,6 +71,10 @@ export default {
     '~/plugins/vue-scrollto.js',
     '~/plugins/vue-lazyload.js',
     {
+      src: '@/plugins/vue-expandable-image',
+      mode: 'client'
+    },
+    {
       src: '@/plugins/aos',
       mode: 'client'
     },

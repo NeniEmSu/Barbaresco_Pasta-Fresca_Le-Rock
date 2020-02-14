@@ -12,7 +12,7 @@
         "summaryUk": "Мікс-салат, кальмар маринований, помідори чері, маслини, огірок, ікра тобіко, лимон, заправляється фірмовим соусом",
         "price": 60,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Squid-salad.jpg"
         },
         "quantity": 100,
         "volumeEn": "190g",
@@ -422,9 +422,9 @@
     {
         "published": true,
         "category": "barbaresco-pancakes",
-        "nameEn": "WITH HAM & CHEESE",
-        "nameRu": "С ветчиной и сыром",
-        "nameUk": "З ШИНКОЮ І СИРОМ",
+        "nameEn": "Pancakes WITH HAM & CHEESE",
+        "nameRu": "Блины С ветчиной и сыром",
+        "nameUk": "Млинці З ШИНКОЮ І СИРОМ",
         "_id": "b-pc-1",
         "volumeUk": "260г",
         "summaryUk": "",
@@ -442,9 +442,9 @@
     {
         "published": true,
         "category": "barbaresco-pancakes",
-        "nameEn": "WITH SPINACH AND CHEESE",
-        "nameRu": "С шпинатом и сыром",
-        "nameUk": "З ШПИНАТОМ І СИРОМ",
+        "nameEn": "Pancakes WITH SPINACH AND CHEESE",
+        "nameRu": "Блины С шпинатом и сыром",
+        "nameUk": "Млинці З ШПИНАТОМ І СИРОМ",
         "_id": "b-pc-2",
         "volumeUk": "260г",
         "summaryUk": "",
@@ -452,7 +452,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Pancakes-WITH-SPINACH-AND-CHEESE.jpg"
         },
         "quantity": 100,
         "volumeEn": "260g",
@@ -482,9 +482,9 @@
     {
         "published": true,
         "category": "barbaresco-pancakes",
-        "nameEn": "WITH CHOCOLATE-NUT",
-        "nameRu": "С шоколадно-ореховый",
-        "nameUk": "З ШОКОЛАДНО-ГОРІХОВОЮ",
+        "nameEn": "Pancakes WITH CHOCOLATE-NUT",
+        "nameRu": "Блины С шоколадно-ореховый",
+        "nameUk": "Млинці З ШОКОЛАДНО-ГОРІХОВОЮ",
         "_id": "b-pc-4",
         "volumeUk": "235г",
         "summaryUk": "",
@@ -512,7 +512,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/PASTA-AND-MARSHMELLOW.jpg"
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -522,9 +522,9 @@
     {
         "published": true,
         "category": "barbaresco-pancakes",
-        "nameEn": "WITH APPLE",
-        "nameRu": "С ЯБЛОКАМИ",
-        "nameUk": "З ЯБЛУКАМИ",
+        "nameEn": "Pancakes WITH APPLE",
+        "nameRu": "Блины С ЯБЛОКАМИ",
+        "nameUk": "Млинці З ЯБЛУКАМИ",
         "_id": "b-pc-6",
         "volumeUk": "250г",
         "summaryUk": "",
@@ -532,7 +532,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Pancakes-WITH-APPLE.jpg"
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -542,9 +542,9 @@
     {
         "published": true,
         "category": "barbaresco-pancakes",
-        "nameEn": "AND Vanilla Sauce",
-        "nameRu": "И ванильным соусом",
-        "nameUk": "ТА ВАНІЛЬНИМ СОУСОМ",
+        "nameEn": "Pancakes AND Vanilla Sauce",
+        "nameRu": "Блины И ванильным соусом",
+        "nameUk": "Млинці ТА ВАНІЛЬНИМ СОУСОМ",
         "_id": "b-pc-7",
         "volumeUk": "300г",
         "summaryUk": "",
@@ -562,7 +562,7 @@
     {
         "published": true,
         "category": "barbaresco-pancakes",
-        "nameEn": "SEASONAL AND FRUIT",
+        "nameEn": "SEASONAL FRUITS",
         "nameRu": "Сезонный-ягодные",
         "nameUk": "СЕЗОННО-ЯГІДНІ",
         "_id": "b-pc-9",
@@ -572,7 +572,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/SEASONAL-FRUITS.jpg"
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -582,9 +582,9 @@
     {
         "published": true,
         "category": "barbaresco-pancakes",
-        "nameEn": "WITH Pacific Salmon and Spinach Leaves",
-        "nameRu": "С тихоокеанские лососи И листья шпината",
-        "nameUk": "З ТИХООКЕАНСЬКИМ ЛОСОСЕМ ТА ЛИСТЯМ ШПИНАТУ",
+        "nameEn": "Pancakes WITH Pacific Salmon and Spinach Leaves",
+        "nameRu": "Блины С тихоокеанские лососи И листья шпината",
+        "nameUk": "Млинці З ТИХООКЕАНСЬКИМ ЛОСОСЕМ ТА ЛИСТЯМ ШПИНАТУ",
         "_id": "b-pc-10",
         "volumeUk": "270г",
         "summaryUk": "",
@@ -592,7 +592,7 @@
         "summaryRu": "",
         "price": 65,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Pancakes-WITH-Pacific-Salmon-and-Spinach-Leaves.jpg"
         },
         "quantity": 100,
         "volumeEn": "270g",
@@ -712,7 +712,7 @@
         "summaryRu": "",
         "price": 33,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/CHICKEN-BULLION.jpg"
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -732,7 +732,7 @@
         "summaryRu": "Традиционное блюдо средней Азии, подается с домашней лапшой",
         "price": 35,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/LAGMAN.jpg"
         },
         "quantity": 100,
         "volumeEn": "350g",
@@ -742,7 +742,7 @@
     {
         "published": true,
         "category": "barbaresco-firstCourses",
-        "nameEn": "MUSHROOM Soup",
+        "nameEn": "Mushroom soup puree",
         "nameRu": "Суп-пюре из шампиньонов",
         "nameUk": "СУП-ПЮРЕ З ПЕЧЕРИЦЬ",
         "_id": "b-fc-3",
@@ -752,7 +752,7 @@
         "summaryRu": "Шампиньоны, сливки",
         "price": 35,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Mushroom-soup-puree.jpg"
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -772,7 +772,7 @@
         "summaryRu": "Сырный суп на рыбном бульоне с креветками",
         "price": 50,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/CHAUDER-CREAM-SOUP.jpg"
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -782,7 +782,7 @@
     {
         "published": true,
         "category": "barbaresco-mainMeals",
-        "nameEn": "CHICKEN STYLE FRI",
+        "nameEn": "CHICKEN STIR FRI",
         "nameRu": "КУРИЦА стирать ФРАЙ",
         "nameUk": "КУРКА СТІР ФРАЙ",
         "_id": "b-mm-1",
@@ -792,7 +792,7 @@
         "summaryRu": "Филе курицы, цуккини, морковь, перец болгарский, брокколи, кунжут, зеленый лук, соус терияки",
         "price": 65,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/CHICKEN-STIR-FRI.jpg"
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -802,7 +802,7 @@
     {
         "published": true,
         "category": "barbaresco-mainMeals",
-        "nameEn": "Roast Roast Pork Roast",
+        "nameEn": "Baked Ham With Roquefort puree",
         "nameRu": "ПЕЧЕНА БУЖЕНИНА С РОКФОРНИМ ПЮРЕ",
         "nameUk": "ПЕЧЕНА БУЖЕНИНА З РОКФОРНИМ ПЮРЕ",
         "_id": "b-mm-2",
@@ -812,7 +812,7 @@
         "summaryRu": "Печеный свиная шея подается с картофельно-рокфорним пюре",
         "price": 100,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Baked-Ham-With-Roquefort-puree.jpg"
         },
         "quantity": 100,
         "volumeEn": "350g",
@@ -832,7 +832,7 @@
         "summaryRu": "Филе лосося, фасоль спаржевая, морковь, перец болгарский, кабачок, шампиньоны, соус терияки",
         "price": 120,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Teriyaki-salmon.jpg"
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -852,7 +852,7 @@
         "summaryRu": "Подается с рисом с овощами-гриль",
         "price": 100,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/veal-under-Demiglas-sauce.jpg"
         },
         "quantity": 100,
         "volumeEn": "400g",
@@ -872,7 +872,7 @@
         "summaryRu": "",
         "price": 65,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/CREAM-CHICKEN-WITH-BAKED-POTATOES.jpg"
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -1422,8 +1422,8 @@
     {
         "published": true,
         "category": "barbaresco-appetizers",
-        "nameEn": "UNDER THE WINE",
-        "nameRu": "ТАРЕЛКА« ПОД ВИНО »",
+        "nameEn": "DISH «UNDER THE WINE»",
+        "nameRu": "ТАРЕЛКА «ПОД ВИНО»",
         "nameUk": "ТАРІЛКА «ПІД ВИНО»",
         "_id": "b-app-1",
         "volumeUk": "220г",
@@ -1432,7 +1432,7 @@
         "summaryRu": "Багет, итальянский сыровяленая колбаса, сыр Бри, сыр Дор Блю, сыр Эдем, маслины, палочки BBQ с рокфорним соусом и медом",
         "price": 120,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/DISH-UNDER-THE-WINE.jpg"
         },
         "quantity": 100,
         "volumeEn": "220g",
@@ -1452,7 +1452,7 @@
         "summaryRu": "курица янтарная, бастурма, чипсы картофельные, сыр фри, пикантные колбаски, соус тар-тар",
         "price": 80,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/BEER-SET.jpg"
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -1472,7 +1472,7 @@
         "summaryRu": "Приготовленные в пикантном соусе и подаются с соусом тар-тар",
         "price": 60,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/BBQ-CHICKEN-WINGS.jpg"
         },
         "quantity": 100,
         "volumeEn": "300g",
@@ -1532,7 +1532,7 @@
         "summaryRu": "С розмарином и беконом",
         "price": 30,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/POTATOES-IN-THE-VILLAGE.jpg"
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -1552,7 +1552,7 @@
         "summaryRu": "",
         "price": 35,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/French-Fries.jpg"
         },
         "quantity": 100,
         "volumeEn": "150 / 30g",
@@ -1562,7 +1562,7 @@
     {
         "published": true,
         "category": "barbaresco-garnishes",
-        "nameEn": "POTATOES",
+        "nameEn": "POTATOE PURE",
         "nameRu": "Картофельное пюре",
         "nameUk": "КАРТОПЛЯНЕ ПЮРЕ",
         "_id": "b-gar-5",
@@ -1572,7 +1572,7 @@
         "summaryRu": "",
         "price": 20,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/POTATOE-PURE.jpg"
         },
         "quantity": 100,
         "volumeEn": "200g",
@@ -1592,7 +1592,7 @@
         "summaryRu": "",
         "price": 3,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/WHITE-BREAD.jpg"
         },
         "quantity": 100,
         "volumeEn": "1 piece",
@@ -1602,7 +1602,7 @@
     {
         "published": true,
         "category": "barbaresco-garnishes",
-        "nameEn": "BREAD",
+        "nameEn": "GRAY BREAD",
         "nameRu": "ХЛЕБ СЕРЫЙ",
         "nameUk": "ХЛІБ СІРИЙ",
         "_id": "b-gar-6-2",
@@ -1612,7 +1612,7 @@
         "summaryRu": "",
         "price": 3,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/GRAY-BREAD.jpg"
         },
         "quantity": 100,
         "volumeEn": "1 piece",

@@ -68,7 +68,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
   line-height: 1.5;
 }
