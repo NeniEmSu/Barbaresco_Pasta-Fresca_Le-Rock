@@ -24,19 +24,19 @@
       <expandable-image
         :close-on-background-click="true"
         class="col-md-6"
-        src="~assets/img/le-rock-drinks-menu-1.jpg"
+        :src="img1"
         alt="le-rock-drinks-menu-1"
       />
       <expandable-image
         :close-on-background-click="true"
         class="col-md-6"
-        src="~assets/img/le-rock-drinks-menu-2.jpg"
+        :src="img2"
         alt="le-rock-drinks-menu-2"
       />
       <expandable-image
         :close-on-background-click="true"
         class="col-md-6"
-        src="~assets/img/le-rock-drinks-menu-3.jpg"
+        :src="img3"
         alt="le-rock-drinks-menu-3"
       />
     </div>

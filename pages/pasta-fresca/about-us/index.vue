@@ -122,7 +122,7 @@ export default {
 
 <style lang="scss" scoped>
 .block1 .left-image {
-  background: url(~assets/img/barbarescoAboutUs.jpg);
+  background: url(~assets/img/pastaFrescaAboutUs.jpg);
 }
 @import "~assets/scss/subPagesStylesNew.scss";
 </style>
