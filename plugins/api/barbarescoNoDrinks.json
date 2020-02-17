@@ -612,7 +612,7 @@
         "summaryRu": "",
         "price": 45,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/NAPOLEON.jpg"
         },
         "quantity": 100,
         "volumeEn": "150 / 40g",
@@ -632,7 +632,7 @@
         "summaryRu": "",
         "price": 50,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Cheesecake.jpg"
         },
         "quantity": 100,
         "volumeEn": "150g",
@@ -652,7 +652,7 @@
         "summaryRu": "Вишнево-мятный, Персиковый, Карамель",
         "price": 40,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Ice-Cream-with-Choice-Sauce.jpg"
         },
         "quantity": 100,
         "volumeEn": "150g",
@@ -672,7 +672,7 @@
         "summaryRu": "",
         "price": 40,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/TOFFY-PUDDING.jpg"
         },
         "quantity": 100,
         "volumeEn": "170g",
@@ -692,7 +692,7 @@
         "summaryRu": "",
         "price": 45,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/Truffle-Cake.jpg"
         },
         "quantity": 100,
         "volumeEn": "170g",
@@ -1492,7 +1492,7 @@
         "summaryRu": "",
         "price": 55,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/GRILLED-VEGETABLES.jpg"
         },
         "quantity": 100,
         "volumeEn": "250g",
@@ -1512,7 +1512,7 @@
         "summaryRu": "",
         "price": 30,
         "imageUri": {
-            "path": null
+            "path": "barbaresco/RICE-WITH-GRILLED-VEGETABLES.jpg"
         },
         "quantity": 100,
         "volumeEn": "220g",

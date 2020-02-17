@@ -1,24 +1,44 @@
 <template>
   <div
     id="drinks"
-    class="container "
+    class="container"
   >
+    <style>
+    body>.expandable-image.expanded {
+      max-width: 100% !important;
+    }
+
+    .expandable-image img {
+      margin-bottom: 30px;
+    }
+
+    body>.expandable-image.expanded>img {
+      object-fit: scale-down;
+    }
+
+    .expand-button svg path {
+      fill: black;
+    }
+    </style>
     <div class="content row">
-      <img
+      <expandable-image
         class="col-md-6"
-        src="~assets/img/pasta-fresca-drinks-menu-1.jpg"
+        :close-on-background-click="true"
+        :src="img1"
         alt="pasta-fresca-drinks-menu-1"
-      >
-      <img
+      />
+      <expandable-image
         class="col-md-6"
-        src="~assets/img/pasta-fresca-drinks-menu-2.jpg"
+        :close-on-background-click="true"
+        :src="img2"
         alt="pasta-fresca-drinks-menu-2"
-      >
-      <img
+      />
+      <expandable-image
         class="col-md-6"
-        src="~assets/img/pasta-fresca-drinks-menu-3.jpg"
+        :close-on-background-click="true"
+        :src="img3"
         alt="pasta-fresca-drinks-menu-3"
-      >
+      />
     </div>
   </div>
 </template>
@@ -28,6 +48,13 @@ export default {
   name: 'TheDrinks',
   components: {
 
+  },
+  data () {
+    return {
+      img1: require('~/assets/img/pasta-fresca-drinks-menu-1.jpg'),
+      img2: require('~/assets/img/pasta-fresca-drinks-menu-2.jpg'),
+      img3: require('~/assets/img/pasta-fresca-drinks-menu-3.jpg')
+    }
   }
 }
 </script>
