@@ -5,21 +5,21 @@
     class="container"
   >
     <style>
-    body>.expandable-image.expanded {
+      body>.expandable-image.expanded {
       max-width: 100% !important;
-    }
+      }
 
-    .expandable-image img {
+      .expandable-image img {
       margin-bottom: 30px;
-    }
+      }
 
-    body>.expandable-image.expanded>img {
+      body>.expandable-image.expanded>img {
       object-fit: scale-down;
-    }
+      }
 
-    .expand-button svg path {
+      .expand-button svg path {
       fill: black;
-    }
+      }
     </style>
     <div class="content row">
       <expandable-image

@@ -25,19 +25,19 @@
       class="card"
     >
       <style>
-      body>.expandable-image.expanded {
+        body>.expandable-image.expanded {
         background: rgba(0, 0, 0, 0.9) !important;
-      }
+        }
 
-      body>.expandable-image.expanded>img {
+        body>.expandable-image.expanded>img {
         max-width: 500px !important;
         border-radius: 0;
         object-fit: scale-down;
-      }
+        }
 
-      .expandable-image img {
+        .expandable-image img {
         border-radius: 50%;
-      }
+        }
       </style>
       <expandable-image
         v-if="product.imageUri.path !== null"
