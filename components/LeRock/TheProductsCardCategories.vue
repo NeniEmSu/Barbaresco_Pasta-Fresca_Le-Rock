@@ -50,17 +50,16 @@
         :alt="product.nameUk || product.nameRu || product.nameEn"
         @error="setFallbackImageUrl"
       />
-      <expandable-image
+      <img
         v-else
         loading="lazy"
         width="200"
         height="200"
         class="card-img-top mx-auto"
-        :close-on-background-click="true"
         :src="require(`~/assets/img/${product.image + '.jpg'}`)"
         :alt="product.image"
         @error="setFallbackImageUrl"
-      />
+      >
       <div class="card-body">
         <h5
           v-if="$i18n.locale === 'en'"

@@ -27,7 +27,7 @@
 </i18n>
 
 <template>
-  <div id="about-us">
+  <div id="contact">
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"
@@ -68,7 +68,7 @@
                       >
                         <span>+38 050 6 700 400</span>
                       </a>
-                      <span> | </span>
+                      <span>|</span>
                       <a
                         href="tel:+380686700400"
                         class="col-12 m-auto"

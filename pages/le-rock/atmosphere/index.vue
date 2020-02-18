@@ -18,7 +18,10 @@
 </i18n>
 
 <template>
-  <div id="atmosphere">
+  <div
+    v-once
+    id="atmosphere"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"

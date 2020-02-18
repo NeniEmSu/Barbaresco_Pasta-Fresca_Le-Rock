@@ -27,7 +27,10 @@
 </i18n>
 
 <template>
-  <div id="about-us">
+  <div
+    v-once
+    id="about-us"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"

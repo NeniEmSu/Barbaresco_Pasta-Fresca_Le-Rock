@@ -21,7 +21,10 @@
 </i18n>
 
 <template>
-  <div id="le-rock-kitchen">
+  <div
+    v-once
+    id="le-rock-kitchen"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"

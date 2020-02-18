@@ -156,7 +156,10 @@
 </i18n>
 
 <template>
-  <div id="cart">
+  <div
+    v-once
+    id="cart"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"

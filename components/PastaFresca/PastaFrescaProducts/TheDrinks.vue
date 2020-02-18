@@ -1,5 +1,6 @@
 <template>
   <div
+    v-once
     id="drinks"
     class="container"
   >

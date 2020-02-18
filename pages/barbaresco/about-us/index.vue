@@ -17,7 +17,10 @@
 }
 </i18n>
 <template>
-  <div id="about-us">
+  <div
+    v-once
+    id="about-us"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"
@@ -47,7 +50,9 @@
                 data-aos-duration="500"
               >
                 <div class="aos-item__inner">
-                  <h1>{{ $t('title') }}</h1>
+                  <h1>
+                    {{ $t('title') }}
+                  </h1>
                   <p>{{ $t('description') }}</p>
                 </div>
               </div>

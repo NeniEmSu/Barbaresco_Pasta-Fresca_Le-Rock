@@ -32,7 +32,10 @@
 </i18n>
 
 <template>
-  <div id="contact">
+  <div
+    v-once
+    id="contact"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"

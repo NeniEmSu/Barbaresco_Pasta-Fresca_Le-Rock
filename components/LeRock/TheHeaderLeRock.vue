@@ -171,7 +171,6 @@
     <header
       id="header"
       v-click-outside="closeMobileNavbar"
-      v-handle-scroll="closeMobileNavbar"
       class="header"
     >
       <div class="row">
@@ -813,7 +812,6 @@
 
 <script>
 import clickOutside from '@/directives/click-outside'
-import handleScroll from '@/directives/handle-scroll'
 import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
 import { en, uk, ru } from 'vuejs-datepicker/dist/locale'
@@ -852,9 +850,7 @@ export default {
   },
   layout: 'le-rock',
   directives: {
-    clickOutside,
-    handleScroll
-
+    clickOutside
   },
   data () {
     return {

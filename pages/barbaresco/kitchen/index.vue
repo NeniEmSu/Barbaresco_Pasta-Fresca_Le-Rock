@@ -23,7 +23,10 @@
 </i18n>
 
 <template>
-  <div id="barbaresco-kitchen">
+  <div
+    v-once
+    id="barbaresco-kitchen"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"

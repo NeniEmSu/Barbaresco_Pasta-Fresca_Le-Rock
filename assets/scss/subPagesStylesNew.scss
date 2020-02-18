@@ -19,7 +19,7 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 110%;
+  line-height: 140.4%;
 
   color: $blackColor;
 }
@@ -49,6 +49,13 @@ a {
 .block1 .block1-left {
   margin: auto;
   max-width: 80%;
+}
+
+#contact {
+  .block1 .block1-left {
+    margin: auto;
+    max-width: 90%;
+  }
 }
 
 .map {

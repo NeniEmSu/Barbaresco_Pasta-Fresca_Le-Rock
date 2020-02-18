@@ -21,7 +21,10 @@
 </i18n>
 
 <template>
-  <div id="pasta-fresca-kitchen">
+  <div
+    v-once
+    id="pasta-fresca-kitchen"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"

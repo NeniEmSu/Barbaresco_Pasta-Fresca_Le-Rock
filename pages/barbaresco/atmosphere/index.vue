@@ -2,23 +2,28 @@
 {
   "uk": {
     "title": "Інтер'єр",
-    "description": "Виразний індустріальний стиль лофт. Приміщення згідно обраного стилю оформлено в холодних відтінках. Просторий зал поєднує у собі декілька відпочинкових зон: столики з панорамними вікнами, м’які дивани, барна стійка та балкон. У закладі є дитяча кімната для наших найменших гостей."
+    "description": "Виразний індустріальний стиль лофт. Приміщення згідно обраного стилю оформлено в холодних відтінках.",
+    "description2": "Просторий зал поєднує у собі декілька відпочинкових зон: столики з панорамними вікнами, м’які дивани, барна стійка та балкон. У закладі є дитяча кімната для наших найменших гостей."
 
   },
   "en": {
    "title": "Interior",
-   "description": "Expressive industrial style loft. The room according to the chosen style is decorated in cool shades. The spacious hall combines several seating areas: tables with panoramic windows, soft sofas, a bar counter and a balcony. The facility has a children's room for our youngest guests."
-
+   "description": "Expressive industrial style loft. The room according to the chosen style is decorated in cool shades.",
+   "description2": "The spacious hall combines several seating areas: tables with panoramic windows, soft sofas, a bar counter and a balcony. The facility has a children's room for our youngest guests."
   },
   "ru": {
     "title": "Интерьер",
-    "description": "Выразительный индустриальный стиль лофт. Помещения согласно выбранного стиля оформлено в холодных оттенках. Просторный зал сочетает в себе несколько зон отдыха: столики с панорамными окнами, мягкие диваны, барная стойка и балкон. В заведении есть детская комната для наших маленьких гостей."
+    "description": "Выразительный индустриальный стиль лофт. Помещения согласно выбранного стиля оформлено в холодных оттенках.",
+    "description2": "Просторный зал сочетает в себе несколько зон отдыха: столики с панорамными окнами, мягкие диваны, барная стойка и балкон. В заведении есть детская комната для наших маленьких гостей."
   }
 }
 </i18n>
 
 <template>
-  <div id="atmosphere">
+  <div
+    v-once
+    id="atmosphere"
+  >
     <TheTopContact
       :items="items"
       class="d-none d-md-flex w-100"
@@ -51,6 +56,7 @@
                 <div class="aos-item__inner">
                   <h1>{{ $t('title') }}</h1>
                   <p>{{ $t('description') }}</p>
+                  <p>{{ $t('description2') }}</p>
                 </div>
               </div>
             </div>
@@ -108,7 +114,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: ('Barbaresco -' + this.$t('description')).slice(
+          content: ('Barbaresco -' + this.$t('description') + this.$t('description2')).slice(
             0,
             320
           )
