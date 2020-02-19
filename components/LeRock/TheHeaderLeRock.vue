@@ -266,7 +266,7 @@
             </b-nav-item>
             <b-nav-item
               tag="button"
-              class="fromleft"
+              class="fromleft d-none"
               @click.stop="reservationOpen = !reservationOpen"
             >
               {{ $t('links.reserveAPlace') }}
