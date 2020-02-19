@@ -583,6 +583,9 @@ export default {
   border: 2px solid $lightColor;
   border-radius: 0;
   box-sizing: border-box;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
 
   background-color: transparent;
   margin: 10px 10px 10px 10px;
@@ -603,8 +606,19 @@ export default {
     }
   }
 
-  &.instagram:hover {
-    border: 2px solid $darkColor;
+  &.instagram::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 132px;
+    height: 50px;
+    @include easeInOut;
+    opacity: 0;
+
     background-image: -moz-linear-gradient(
       69.74deg,
       #fdd276 -7.77%,
@@ -625,6 +639,13 @@ export default {
     );
   }
 
+  &.instagram:hover {
+    border: 2px solid transparent;
+    &::before {
+      opacity: 1;
+    }
+  }
+
   &.facebook {
     margin: 10px 10px 10px 9px !important;
     // padding: 10px 20px;
@@ -640,7 +661,7 @@ export default {
   }
 
   &.facebook:hover {
-    border: 2px solid transparent;
+    border: 2px solid #395795;
     background-color: #395795;
   }
 }

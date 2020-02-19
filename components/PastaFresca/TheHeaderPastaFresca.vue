@@ -816,6 +816,7 @@ import axios from 'axios'
 import { mapGetters, mapState } from 'vuex'
 import { en, uk, ru } from 'vuejs-datepicker/dist/locale'
 import { required, minLength } from 'vuelidate/lib/validators'
+import setFallbackImageUrl from '~/mixins/imageFallback-mixin'
 require('@/assets/css/TheHeader.css')
 
 let today = new Date()
@@ -852,6 +853,9 @@ export default {
     clickOutside
 
   },
+  mixins: [
+    setFallbackImageUrl
+  ],
   data () {
     return {
       success: false,
@@ -937,13 +941,6 @@ export default {
   },
 
   methods: {
-    setFallbackImageUrl (event) {
-      // eslint-disable-next-line no-console
-      console.log('Image failed to load, setting fallback.')
-      event.target.src = 'https://via.placeholder.com/200x200'
-      // event.target.src = require(`~/assets/img/${'barbarescoPizza' + '.jpg'}`)
-    },
-
     addToCart (id, append = false) {
       this.$store.dispatch('addTopastaFrescaCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {

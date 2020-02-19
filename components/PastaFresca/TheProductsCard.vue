@@ -24,40 +24,13 @@
       :key="product._id"
       class="card"
     >
-      <style>
-        body>.expandable-image.expanded {
-        background: rgba(0, 0, 0, 0.9) !important;
-        }
-
-        body>.expandable-image.expanded>img {
-        max-width: 500px !important;
-        border-radius: 0;
-        object-fit: scale-down;
-        }
-
-        .expandable-image img {
-        border-radius: 50%;
-        }
-      </style>
-      <expandable-image
-        v-if="product.imageUri.path !== null"
+      <img
         loading="lazy"
         width="200"
         height="200"
         class="card-img-top mx-auto"
-        :close-on-background-click="true"
         :src="`https://barbaresco-admin.w-start.com.ua/api/cockpit/image?token=ffb42583d5425c6231d7655b44e497&w=200&h=200&f[brighten]=0&o=true&src=${product.imageUri.path}`"
         :alt="product.nameUk || product.nameRu || product.nameEn"
-        @error="setFallbackImageUrl"
-      />
-      <img
-        v-else
-        loading="lazy"
-        width="200"
-        height="200"
-        class="card-img-top mx-auto"
-        :src="require(`~/assets/img/${product.image + '.jpg'}`)"
-        :alt="product.image"
         @error="setFallbackImageUrl"
       >
       <div class="card-body">
@@ -148,25 +121,24 @@
 </template>
 
 <script>
+import setFallbackImageUrl from '~/mixins/imageFallback-mixin'
 export default {
   name: 'ProductsCard',
+  mixins: [
+    setFallbackImageUrl
+  ],
 
   props: {
-    // eslint-disable-next-line vue/require-default-prop
     products: {
-      type: Array
+      type: Array,
+      default: [] | (() => []),
+      required: true
     }
   },
 
   methods: {
-    setFallbackImageUrl (event) {
-      // eslint-disable-next-line no-console
-      console.log('Image failed to load, setting fallback.')
-      event.target.src = 'https://via.placeholder.com/200x200'
-      // event.target.src = require(`~/assets/img/${'barbarescoPizza' + '.jpg'}`)
-    },
-    addToCart (_id, append = false) {
-      this.$store.dispatch('addTopastaFrescaCart', _id)
+    addToCart (id, toaster, append = false) {
+      this.$store.dispatch('addToCart', id)
       this.$bvToast.toast(`${this.$store.getters.toast.text}`, {
         title: 'Увага!',
         autoHideDelay: 500,
