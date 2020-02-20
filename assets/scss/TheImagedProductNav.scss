@@ -76,7 +76,8 @@ section {
     }
 
     .nav-text {
-        margin: 10px auto auto auto;
+        // margin: 10px auto auto auto; Note: used in case of multiline text to align all to center.
+        margin: 10px auto 0 auto;
         font-family: $robotoFont;
         font-style: normal;
         font-weight: normal;
