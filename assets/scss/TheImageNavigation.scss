@@ -41,54 +41,184 @@
 
     &.home {
         background-image: url(~assets/img/navHome.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navHomeMedium.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navHomeSmall.jpg);
+        }
     }
 
     &.menu {
         background-image: url(~assets/img/navMenu.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navMenuMedium.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navMenuSmall.jpg);
+        }
     }
 
     &.pf-menu {
-        background-image: url(~assets/img/pasta-fresca-menu.jpg);
+        background-image: url(~assets/img/navMenu-pasta-fresca.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navMenuMedium-pasta-fresca.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navMenuSmall-pasta-fresca.jpg);
+        }
+    }
+
+    &.lr-menu {
+        background-image: url(~assets/img/navMenu-le-rock.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navMenuMedium-le-rock.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navMenuSmall-le-rock.jpg);
+        }
     }
 
     &.food-delivery {
         background-image: url(~assets/img/navDelivery.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navDeliveryMedium.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navDeliverySmall.jpg);
+        }
     }
 
     &.pf-food-delivery {
-        background-image: url(~assets/img/pasta-navDelivery.jpg);
+        background-image: url(~assets/img/navDelivery-pasta-fresca.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navDeliveryMedium-pasta-fresca.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navDeliverySmall-pasta-fresca.jpg);
+        }
+    }
+
+    &.lr-food-delivery {
+        background-image: url(~assets/img/navDelivery-le-rock.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navDeliveryMedium-le-rock.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navDeliverySmall-le-rock.jpg);
+        }
     }
 
     &.about {
         background-image: url(~assets/img/navAboutUs.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navAboutUsMedium.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navAboutUsSmall.jpg);
+        }
     }
 
     &.pf-about {
-        background-image: url(~assets/img/pasta-fresca-about-us.jpg);
+        background-image: url(~assets/img/navAboutUs-pasta-fresca.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navAboutUsMedium-pasta-fresca.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navAboutUsSmall-pasta-fresca.jpg);
+        }
     }
 
+
     &.lr-about {
-        background-image: url(~assets/img/le-rock-fresca-about-us.jpg);
+        background-image: url(~assets/img/navAboutUs-le-rock.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navAboutUsMedium-le-rock.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navAboutUsSmall-le-rock.jpg);
+        }
     }
 
     &.atmosphere {
         background-image: url(~assets/img/navAtmosphere.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navAtmosphereMedium.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navAtmosphereSmall.jpg);
+        }
     }
 
     &.pf-Atmosphere {
-        background-image: url(~assets/img/pasta-navAtmosphere.jpg);
+        background-image: url(~assets/img/navAtmosphere-pasta-fresca.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navAtmosphereMedium-pasta-fresca.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navAtmosphereSmall-pasta-fresca.jpg);
+        }
     }
 
     &.lr-Atmosphere {
-        background-image: url(~assets/img/le-rock-navAtmosphere.jpg);
+        background-image: url(~assets/img/navAtmosphere-le-rock.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navAtmosphereMedium-le-rock.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navAtmosphereSmall-le-rock.jpg);
+        }
     }
+
 
     &.contact {
         background-image: url(~assets/img/navContact.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navContactMedium.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navContactSmall.jpg);
+        }
     }
 
     &.pf-contact {
-        background-image: url(~assets/img/pasta-fresca-nav-contact.jpg);
+        background-image: url(~assets/img/navContact-pasta-fresca.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(~assets/img/navContactMedium-pasta-fresca.jpg);
+        }
+
+        @media (max-width: 440px) {
+            background-image: url(~assets/img/navContactSmall-pasta-fresca.jpg);
+        }
     }
 
     @media (max-width: 750px) {
@@ -302,7 +432,7 @@ section {
     }
 
     .grid figure {
-        max-height: 66px;
+        max-height: 90px;
     }
 
     figure.saddleEffect figcaption::before {
@@ -371,4 +501,12 @@ section {
         background: #000000;
         opacity: 0;
     }
+}
+
+@media (max-width: 440px) {
+
+    .grid figure {
+        max-height: 66px;
+    }
+
 }

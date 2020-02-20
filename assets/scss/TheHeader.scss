@@ -568,7 +568,8 @@ header {
     }
 }
 
-@include mediaSm {
+// @include mediaSm {
+@media (max-width: 400px) {
     header {
         background-size: cover;
         background-color: $darkColor;

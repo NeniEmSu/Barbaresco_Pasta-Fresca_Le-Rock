@@ -31,7 +31,7 @@
               src="~assets/img/navMenu.jpg"
               alt="img14"
             > -->
-            <div class="imageHolder menu" />
+            <div class="imageHolder lr-menu" />
             <figcaption>
               <h1>{{ $t('links.menu') }}</h1>
               <span />
@@ -49,7 +49,7 @@
               alt="img02"
             >
              -->
-            <div class="imageHolder food-delivery" />
+            <div class="imageHolder lr-food-delivery" />
             <figcaption>
               <h2>{{ $t('links.delivery') }}</h2>
               <span />
