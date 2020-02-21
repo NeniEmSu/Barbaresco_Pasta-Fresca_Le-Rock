@@ -458,14 +458,25 @@
                     {{ index+=1 }}
                   </p>
                   <img
+                    v-if="product.path !== null"
                     loading="lazy"
                     width="200"
                     height="200"
                     style="border-radius: 50%;"
                     class="col-2 m-auto"
-                    :src="`https://barbaresco-admin.w-start.com.ua/api/cockpit/image?token=ffb42583d5425c6231d7655b44e497&w=200&h=200&f[brighten]=0&o=true&src=${product.path}`"
+                    :src="`${url}${product.path}`"
                     :alt="product.nameUk || product.nameRu || product.nameEn"
                     @error="setFallbackImageUrl"
+                  >
+                  <img
+                    v-else
+                    loading="lazy"
+                    width="200"
+                    height="200"
+                    style="border-radius: 50%;"
+                    class="col-2 m-auto"
+                    src="~/assets/img/fallBackProductsImage.jpg"
+                    :alt="product.nameUk || product.nameRu || product.nameEn + 'Fallback image'"
                   >
                   <div class="col-5 p-0">
                     <div class="col-12 p-0 m-auto">
@@ -629,6 +640,19 @@ export default {
 
   data () {
     return {
+      url: process.env.IMAGE_LINK,
+      name: null,
+      phone: null,
+      city: null,
+      street: null,
+      house: null,
+      code: null,
+      apartment: null,
+      comment: null,
+      modeOfPayment: 'готівкою',
+      loading: false,
+      errors: [],
+      success: false,
       items: [
         {
           text: this.$t('links.home'),
@@ -642,20 +666,8 @@ export default {
           text: this.$t('links.cart'),
           active: true
         }
-      ],
-      currentProductsDisplayed: 1,
-      name: null,
-      phone: null,
-      city: null,
-      street: null,
-      house: null,
-      code: null,
-      apartment: null,
-      comment: null,
-      modeOfPayment: 'готівкою',
-      loading: false,
-      errors: [],
-      success: false
+      ]
+
     }
   },
 

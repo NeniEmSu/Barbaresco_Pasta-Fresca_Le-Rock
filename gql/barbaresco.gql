@@ -89,7 +89,6 @@ fragment barbarescoFields on barbarescoCollection {
   nameUk
   nameRu
   price
-  image
   imageUri {
     path
   }

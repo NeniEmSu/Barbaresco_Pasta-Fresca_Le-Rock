@@ -641,8 +641,8 @@ export default {
 
   &.instagram:hover {
     border: 2px solid transparent;
-    width: 132px !important;
-    height: 50px !important;
+    width: 131px !important;
+    height: 48px !important;
     &::before {
       opacity: 1;
     }

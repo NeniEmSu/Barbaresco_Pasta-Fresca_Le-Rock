@@ -61,7 +61,6 @@ fragment pastaFrescaFields on pastaFrescaCollection {
   nameUk
   nameRu
   price
-  image
   imageUri {
     path
   }

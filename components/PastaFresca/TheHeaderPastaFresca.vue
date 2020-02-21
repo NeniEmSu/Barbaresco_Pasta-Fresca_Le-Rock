@@ -370,7 +370,7 @@
                     height="200"
                     style="border-radius: 50%;"
                     class="col-2 m-auto"
-                    :src="`https://barbaresco-admin.w-start.com.ua/api/cockpit/image?token=ffb42583d5425c6231d7655b44e497&w=200&h=200&f[brighten]=0&o=true&src=${product.path}`"
+                    :src="`${url}${product.path}`"
                     :alt="product.nameUk || product.nameRu || product.nameEn"
                     @error="setFallbackImageUrl"
                   >
@@ -381,9 +381,8 @@
                     height="200"
                     style="border-radius: 50%;"
                     class="col-2 m-auto"
-                    :src="require(`~/assets/img/${product.image + '.jpg'}`)"
-                    :alt="product.image"
-                    @error="setFallbackImageUrl"
+                    src="~/assets/img/fallBackProductsImage.jpg"
+                    :alt="product.nameUk || product.nameRu || product.nameEn + 'Fallback image'"
                   >
                   <div class="col-5 p-0">
                     <div class="col-12 p-0 m-auto">
@@ -858,6 +857,7 @@ export default {
   ],
   data () {
     return {
+      url: process.env.IMAGE_LINK,
       success: false,
       loading: false,
       error: [],

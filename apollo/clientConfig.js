@@ -5,7 +5,7 @@ import {
 export default function (context) {
   return {
     httpLinkOptions: {
-      uri: 'https://barbaresco-admin.w-start.com.ua/api/graphql/query?token=d5993d83d44040c37de0414695e82e',
+      uri: context.env.API_GQL_LINK,
       credentials: 'same-origin'
     },
     cache: new InMemoryCache(),

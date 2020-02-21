@@ -16,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.0-rc9",
     "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/google-analytics": "^2.2.3",
     "@nuxtjs/manifest": "^3.0.0-beta.16",
     "@nuxtjs/netlify-files": "^1.0.0",
@@ -35,7 +36,6 @@
     "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.11.0",
-    "nuxt-env": "^0.1.0",
     "nuxt-gmaps": "^1.1.7",
     "nuxt-i18n": "^6.5.0",
     "nuxt-polyfill": "^1.0.3",
