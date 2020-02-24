@@ -15,9 +15,7 @@
             "path": "pasta-Fresca/Pancannella.jpg",
             "meta": "Pancannella"
         },
-        "quantity": 100,
         "volumeUk": "0,280",
-        "image": "pasta-fresca-salad",
         "summaryUk": "Традиційний італійський салат з грильованими овочами, хрусткою чіабатою, маринованими анчоусами, заправляється медово-гірчичним соусом"
     },
     {
@@ -36,9 +34,7 @@
             "path": "pasta-Fresca/FRESH-ITALY-salad.jpg",
             "meta": "FRESH ITALY salad"
         },
-        "quantity": 100,
         "volumeUk": "0,320",
-        "image": "pasta-fresca-salad",
         "summaryUk": "Листя салату, помідор, огірок,  м’який сир, оливки, заправляється соусом з руколи"
     },
     {
@@ -57,9 +53,7 @@
             "path": "pasta-Fresca/Veal-salad-with-bell-peppers.jpg",
             "meta": "Veal salad with bell peppers"
         },
-        "quantity": 100,
         "volumeUk": "0,230",
-        "image": "pasta-fresca-salad",
         "summaryUk": "Листя салату,  філе телятини, болгарський перець, опеньки, помідори  рукола"
     },
     {
@@ -78,9 +72,7 @@
             "path": "pasta-Fresca/Ravioli-salad.jpg",
             "meta": "Ravioli salad"
         },
-        "quantity": 100,
         "volumeUk": "0,395",
-        "image": "pasta-fresca-salad",
         "summaryUk": "листя салату, равіолі з сиром, огірок, кабачок, каперси, заправляється медово-гірчичним соусом"
     },
     {
@@ -99,9 +91,7 @@
             "path": "pasta-Fresca/Chicken-breast-salad.jpg",
             "meta": "Chicken breast salad"
         },
-        "quantity": 100,
         "volumeUk": "0,300",
-        "image": "pasta-fresca-salad",
         "summaryUk": "Листя салату, куряче філе гриль, помідор, гриби, яйця, пармезан, базиліковий соус"
     },
     {
@@ -120,9 +110,7 @@
             "path": "pasta-Fresca/Norwegian-salmon-salad.jpg",
             "meta": "Norwegian salmon salad"
         },
-        "quantity": 100,
         "volumeUk": "0,250",
-        "image": "pasta-fresca-salad",
         "summaryUk": "філе лосося, листя салату, броколі, помідор, каперси, заправляється метанно-гірчичним соусом"
     },
     {
@@ -141,9 +129,7 @@
             "path": "pasta-Fresca/Tagliatelli-Quatro-Formaggi.jpg",
             "meta": "Tagliatelli Quatro Formaggi"
         },
-        "quantity": 100,
         "volumeUk": "0,250",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -162,9 +148,7 @@
             "path": "pasta-Fresca/Tagliatelli-with-chicken-under-tomato-sauce.jpg",
             "meta": "Tagliatelli with chicken under tomato sauce"
         },
-        "quantity": 100,
         "volumeUk": "0,350",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -183,9 +167,7 @@
             "path": "pasta-Fresca/Spinach-tagliatelle-with-sun-dried-tomatoes-and-chicken.jpg",
             "meta": "Spinach tagliatelle with sun-dried tomatoes and chicken"
         },
-        "quantity": 100,
         "volumeUk": "0,330",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -204,9 +186,7 @@
             "path": "pasta-Fresca/seafood-tagliatelle-under-cream-sauce.jpg",
             "meta": "seafood tagliatelle under cream sauce"
         },
-        "quantity": 100,
         "volumeUk": "0,300",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -225,9 +205,7 @@
             "path": "pasta-Fresca/Spinach-tagliatelle-with-chicken-and-mushrooms.jpg",
             "meta": "Spinach tagliatelle with chicken and mushrooms"
         },
-        "quantity": 100,
         "volumeUk": "0,300",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -246,9 +224,7 @@
             "path": "pasta-Fresca/Spaghetti-adiolio-with-prawns.jpg",
             "meta": "Spaghetti adiolio with prawns"
         },
-        "quantity": 100,
         "volumeUk": "0,330",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -267,9 +243,7 @@
             "path": "pasta-Fresca/SPAGHETTI-BOLOGNESE.jpg",
             "meta": "SPAGHETTI BOLOGNESE"
         },
-        "quantity": 100,
         "volumeUk": "0,300",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -288,9 +262,7 @@
             "path": "pasta-Fresca/Margarita-Spaghetti.jpg",
             "meta": "Margarita Spaghetti"
         },
-        "quantity": 100,
         "volumeUk": "0,370",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -309,9 +281,7 @@
             "path": "pasta-Fresca/Spaghetti-Carbonara.jpg",
             "meta": "Spaghetti Carbonara"
         },
-        "quantity": 100,
         "volumeUk": "0,300",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -330,9 +300,7 @@
             "path": "pasta-Fresca/Ravioli-with-Chicken-and-Nut-Sauce.jpg",
             "meta": "Ravioli with Chicken and Nut Sauce"
         },
-        "quantity": 100,
         "volumeUk": "0,260",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -351,9 +319,7 @@
             "path": "pasta-Fresca/salmon-and-ricotta-ravioli.jpg",
             "meta": "salmon and ricotta ravioli"
         },
-        "quantity": 100,
         "volumeUk": "0,250",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -372,9 +338,7 @@
             "path": "pasta-Fresca/Ravioli-with-meat-and-sauce.jpg",
             "meta": "Ravioli with meat and sauce"
         },
-        "quantity": 100,
         "volumeUk": "0,280",
-        "image": "pasta-fresca-pasta",
         "summaryUk": ""
     },
     {
@@ -393,9 +357,7 @@
             "path": "pasta-Fresca/Potato-puree.jpg",
             "meta": "Potato puree"
         },
-        "quantity": 100,
         "volumeUk": "0,220",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     },
     {
@@ -414,9 +376,7 @@
             "path": "pasta-Fresca/RICE-WITH-GRILLED-VEGETABLES.jpg",
             "meta": "RICE WITH GRILLED VEGETABLES"
         },
-        "quantity": 100,
         "volumeUk": "0,200",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     },
     {
@@ -435,9 +395,7 @@
             "path": "pasta-Fresca/Ciabatta-White.jpg",
             "meta": "Ciabatta White"
         },
-        "quantity": 100,
         "volumeUk": "1шт.",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     },
     {
@@ -456,9 +414,7 @@
             "path": "pasta-Fresca/Ciabatta-Gray.jpg",
             "meta": "Ciabatta Gray"
         },
-        "quantity": 100,
         "volumeUk": "1шт.",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     },
     {
@@ -477,9 +433,7 @@
             "path": "pasta-Fresca/Lemon-Cake.jpg",
             "meta": "Lemon Cake"
         },
-        "quantity": 100,
         "volumeUk": "0,150",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -498,9 +452,7 @@
             "path": "pasta-Fresca/Pavlova-Dessert.jpg",
             "meta": "Pavlova Dessert"
         },
-        "quantity": 100,
         "volumeUk": "0,220",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -519,9 +471,7 @@
             "path": "pasta-Fresca/Buko-Dessert.jpg",
             "meta": "Buko Dessert"
         },
-        "quantity": 100,
         "volumeUk": "0,200",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -540,9 +490,7 @@
             "path": "pasta-Fresca/Cheesecake.jpg",
             "meta": "Cheesecake"
         },
-        "quantity": 100,
         "volumeUk": "0,170",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -561,9 +509,7 @@
             "path": "pasta-Fresca/Chocolate-rum-fondue-with-ice-cream.jpg",
             "meta": "Chocolate rum fondue with ice cream"
         },
-        "quantity": 100,
         "volumeUk": "0,210",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -582,9 +528,7 @@
             "path": "pasta-Fresca/Mr-Cotta.jpg",
             "meta": "Mr Cotta"
         },
-        "quantity": 100,
         "volumeUk": "0,180",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -603,9 +547,7 @@
             "path": "pasta-Fresca/Tiramisu.jpg",
             "meta": "Tiramisu"
         },
-        "quantity": 100,
         "volumeUk": "0,200",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -624,9 +566,7 @@
             "path": "pasta-Fresca/Ice-Cream.jpg",
             "meta": "Ice Cream"
         },
-        "quantity": 100,
         "volumeUk": "0,170",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -645,9 +585,7 @@
             "path": "pasta-Fresca/Croissant-with-choice-sauce.jpg",
             "meta": "Croissant with choice sauce"
         },
-        "quantity": 100,
         "volumeUk": "1шт",
-        "image": "barbarescoDesert",
         "summaryUk": "Шоколад, малина"
     },
     {
@@ -666,9 +604,7 @@
             "path": "pasta-Fresca/Bruschetta.jpg",
             "meta": "Bruschetta"
         },
-        "quantity": 100,
         "volumeUk": "4 шт",
-        "image": "pasta-presca-appetizer",
         "summaryUk": "прошутто, лосось, гриби,помідори з моцарелою"
     },
     {
@@ -687,9 +623,7 @@
             "path": "pasta-Fresca/Mussels-in-cream-sauce.jpg",
             "meta": "Mussels in cream sauce"
         },
-        "quantity": 100,
         "volumeUk": "0,285",
-        "image": "pasta-presca-appetizer",
         "summaryUk": ""
     },
     {
@@ -708,9 +642,7 @@
             "path": "pasta-Fresca/Salmon-Carpaccio.jpg",
             "meta": "Salmon Carpaccio"
         },
-        "quantity": 100,
         "volumeUk": "0,075",
-        "image": "pasta-presca-appetizer",
         "summaryUk": "рукола, пармезан, каперси"
     },
     {
@@ -729,9 +661,7 @@
             "path": "pasta-Fresca/Italian-cheeses.jpg",
             "meta": "Italian cheeses"
         },
-        "quantity": 100,
         "volumeUk": "0,150",
-        "image": "pasta-presca-appetizer",
         "summaryUk": ""
     },
     {
@@ -750,9 +680,7 @@
             "path": "pasta-Fresca/Antipasto.jpg",
             "meta": "Antipasto"
         },
-        "quantity": 100,
         "volumeUk": "0,600",
-        "image": "pasta-presca-appetizer",
         "summaryUk": "Щедра порція італійських делікатесів"
     },
     {
@@ -771,9 +699,7 @@
             "path": "pasta-Fresca/Red-Rice-Cod-Fillet.jpg",
             "meta": "Red Rice Cod Fillet"
         },
-        "quantity": 100,
         "volumeUk": "300г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -792,9 +718,7 @@
             "path": "pasta-Fresca/Mozzarella-Steak-with-Potato-Stew.jpg",
             "meta": "Mozzarella Steak with Potato Stew"
         },
-        "quantity": 100,
         "volumeUk": "0,400",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -813,9 +737,7 @@
             "path": "pasta-Fresca/Chicken-fillet-stuffed-with-spinach.jpg",
             "meta": "Chicken fillet stuffed with spinach"
         },
-        "quantity": 100,
         "volumeUk": "0,200г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -834,9 +756,7 @@
             "path": "pasta-Fresca/charlotte-with-salmon-and-mozzarella.jpg",
             "meta": "charlotte with salmon and mozzarella"
         },
-        "quantity": 100,
         "volumeUk": "0,300г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -855,9 +775,7 @@
             "path": "pasta-Fresca/Chicken-Parmesan.jpg",
             "meta": "Chicken Parmesan"
         },
-        "quantity": 100,
         "volumeUk": "0,380г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -876,9 +794,7 @@
             "path": "pasta-Fresca/seafood-saute.jpg",
             "meta": "seafood saute"
         },
-        "quantity": 100,
         "volumeUk": "0,420г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -897,9 +813,7 @@
             "path": "pasta-Fresca/Pork-medallions-with-grilled-vegetables.jpg",
             "meta": "Pork medallions with grilled vegetables"
         },
-        "quantity": 100,
         "volumeUk": "0,300г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -918,9 +832,7 @@
             "path": "pasta-Fresca/Veal-steak-with-salsa-sauce.jpg",
             "meta": "Veal steak with salsa sauce"
         },
-        "quantity": 100,
         "volumeUk": "0,250г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -939,9 +851,7 @@
             "path": "pasta-Fresca/seafood-set.jpg",
             "meta": "Seafood set"
         },
-        "quantity": 100,
         "volumeUk": "0,900г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -960,9 +870,7 @@
             "path": "pasta-Fresca/Minestrone.jpg",
             "meta": "Minestrone"
         },
-        "quantity": 100,
         "volumeUk": "0,300",
-        "image": "barbarescoFirstCourse",
         "summaryUk": "Традиційний італійський суп з помідорів"
     },
     {
@@ -981,9 +889,7 @@
             "path": "pasta-Fresca/Chicken-broth-with-chicken-pieces.jpg",
             "meta": "Chicken broth with chicken pieces"
         },
-        "quantity": 100,
         "volumeUk": "0,350",
-        "image": "barbarescoFirstCourse",
         "summaryUk": ""
     },
     {
@@ -1002,9 +908,7 @@
             "path": "pasta-Fresca/MUSHROOM-Soup.jpg",
             "meta": "MUSHROOM Soup"
         },
-        "quantity": 100,
         "volumeUk": "0,250",
-        "image": "barbarescoFirstCourse",
         "summaryUk": ""
     }
 ]

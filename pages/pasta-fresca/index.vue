@@ -375,7 +375,7 @@ export default {
 @import "~assets/scss/TheMenu.scss";
 
 #pasta-fresca {
-  background: url("~assets/img/pasta-fresca-background-2.jpg") no-repeat center
+  background: url("~assets/img/pasta-fresca-background.jpg") no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

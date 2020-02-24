@@ -14,9 +14,7 @@
         "imageUri": {
             "path": "barbaresco/Squid-salad.jpg"
         },
-        "quantity": 100,
         "volumeEn": "190g",
-        "image": "barbarescoSalad",
         "summaryEn": "Mixed salad, marinated squid, cherry tomatoes, olives, cucumber, tobiko caviar, lemon, seasoned with signature sauce"
     },
     {
@@ -34,9 +32,7 @@
         "imageUri": {
             "path": "barbaresco/Caesar-with-Chicken.jpg"
         },
-        "quantity": 100,
         "volumeEn": "240g",
-        "image": "barbarescoSalad",
         "summaryEn": "Chicken fillet, bacon, mix salad, quail egg, white bread chips caesar sauce"
     },
     {
@@ -54,9 +50,7 @@
         "imageUri": {
             "path": "barbaresco/LIGHT-LIFE.jpg"
         },
-        "quantity": 100,
         "volumeEn": "250g",
-        "image": "barbarescoSalad",
         "summaryEn": "Light vegetable salad of tomatoes, bell peppers, mix salad, cucumbers, feta cheese, olive oil"
     },
     {
@@ -74,9 +68,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "280g",
-        "image": "barbarescoSalad",
         "summaryEn": "Grilled veal fillet in combination with roasted vegetables, seasoned with green sauce"
     },
     {
@@ -94,9 +86,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "250g",
-        "image": "barbarescoSalad",
         "summaryEn": "Turkey fillet, cherry tomatoes, mix salad, Philadelphia cheese, seasoned with savory hot and savory sauce"
     },
     {
@@ -114,9 +104,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "barbarescoSalad",
         "summaryEn": "Chicken sous vide, asparagus beans, mini mozzarella, cherry tomatoes, roasted cauliflower and potatoes, seasoned with basil sauce"
     },
     {
@@ -134,9 +122,7 @@
         "imageUri": {
             "path": "barbaresco/Hawaiian.jpg"
         },
-        "quantity": 100,
         "volumeEn": "500g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, smoked chicken, pineapple, olives, signature sauce"
     },
     {
@@ -154,9 +140,7 @@
         "imageUri": {
             "path": "barbaresco/HHHHOT.jpg"
         },
-        "quantity": 100,
         "volumeEn": "400g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, salami, chilli, signature sauce"
     },
     {
@@ -174,9 +158,7 @@
         "imageUri": {
             "path": "barbaresco/capricciosa.jpg"
         },
-        "quantity": 100,
         "volumeEn": "480g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, ham, mushrooms, olives, signature sauce"
     },
     {
@@ -194,9 +176,7 @@
         "imageUri": {
             "path": "barbaresco/MARGARITA.jpg"
         },
-        "quantity": 100,
         "volumeEn": "380g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, special sauce, basil"
     },
     {
@@ -214,9 +194,7 @@
         "imageUri": {
             "path": "barbaresco/SALAMI.jpg"
         },
-        "quantity": 100,
         "volumeEn": "420g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, salami, tomatoes, signature sauce"
     },
     {
@@ -234,9 +212,7 @@
         "imageUri": {
             "path": "barbaresco/FOUR-SEASONS.jpg"
         },
-        "quantity": 100,
         "volumeEn": "520g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, ham, salami, mushrooms, tomatoes, signature sauce"
     },
     {
@@ -254,9 +230,7 @@
         "imageUri": {
             "path": "barbaresco/QUATTRO-FORMAGGI.jpg"
         },
-        "quantity": 100,
         "volumeEn": "400g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, royal, gorgonzola, parmesan, signature sauce"
     },
     {
@@ -274,9 +248,7 @@
         "imageUri": {
             "path": "barbaresco/Al-Tonno.jpg"
         },
-        "quantity": 100,
         "volumeEn": "460g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, tuna, onion, signature sauce, tomatoes"
     },
     {
@@ -294,9 +266,7 @@
         "imageUri": {
             "path": "barbaresco/Caesar.jpg"
         },
-        "quantity": 100,
         "volumeEn": "470g",
-        "image": "barbarescoPizza",
         "summaryEn": "Mozzarella, chicken fillet, bacon, cherry tomatoes, parmesan, mix salad, cream sauce"
     },
     {
@@ -314,9 +284,7 @@
         "imageUri": {
             "path": "barbaresco/BURGER-WITH-CHICKEN.jpg"
         },
-        "quantity": 100,
         "volumeEn": "380g",
-        "image": "barbarescoChickenBuger",
         "summaryEn": "Bun, chicken cutlet, tomato, mix salad, barbecue sauce, rockfor sauce"
     },
     {
@@ -334,9 +302,7 @@
         "imageUri": {
             "path": "barbaresco/BURGER-WITH-Pork.jpg"
         },
-        "quantity": 100,
         "volumeEn": "380g",
-        "image": "barbarescoChickenBuger",
         "summaryEn": "Original combination: roll, baked pork neck, grilled pineapple, caramelized onion, mix salad, barbecue sauce"
     },
     {
@@ -354,9 +320,7 @@
         "imageUri": {
             "path": "barbaresco/NEW-YORK-BURGER-WITH-VEAL.jpg"
         },
-        "quantity": 100,
         "volumeEn": "380g",
-        "image": "barbarescoChickenBuger",
         "summaryEn": "Real New York burger: roll, veal cutlet, canned cucumber, tomato, bacon, mix salad, barbecue sauce"
     },
     {
@@ -374,9 +338,7 @@
         "imageUri": {
             "path": "barbaresco/CHEESEBURGER-WITH-Pork.jpg"
         },
-        "quantity": 100,
         "volumeEn": "380g",
-        "image": "barbarescoChickenBuger",
         "summaryEn": "Rolls, pork cutlet, cucumber, cheddar cheese, tomato, mix salad, caramelized onions, barbecue sauce"
     },
     {
@@ -394,9 +356,7 @@
         "imageUri": {
             "path": "barbaresco/CHEESEBURGER-WITH-VEAL.jpg"
         },
-        "quantity": 100,
         "volumeEn": "380g",
-        "image": "barbarescoChickenBuger",
         "summaryEn": "Bun, veal cutlet, cucumber, cheddar cheese, tomato, mix salad, barbecue sauce"
     },
     {
@@ -414,9 +374,7 @@
         "imageUri": {
             "path": "barbaresco/CHICKEN-DRON.jpg"
         },
-        "quantity": 100,
         "volumeEn": "380g",
-        "image": "barbarescoChickenBuger",
         "summaryEn": "Bun, chicken fillet, grilled vegetables, mix salad, Philadelphia cheese, toaster cheese, big tasty sauce"
     },
     {
@@ -434,9 +392,7 @@
         "imageUri": {
             "path": "barbaresco/WITH-HAM-&-CHEESE.jpg"
         },
-        "quantity": 100,
         "volumeEn": "260g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -454,9 +410,7 @@
         "imageUri": {
             "path": "barbaresco/Pancakes-WITH-SPINACH-AND-CHEESE.jpg"
         },
-        "quantity": 100,
         "volumeEn": "260g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -474,9 +428,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "235g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -494,9 +446,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "235g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -514,9 +464,7 @@
         "imageUri": {
             "path": "barbaresco/PASTA-AND-MARSHMELLOW.jpg"
         },
-        "quantity": 100,
         "volumeEn": "250g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -534,9 +482,7 @@
         "imageUri": {
             "path": "barbaresco/Pancakes-WITH-APPLE.jpg"
         },
-        "quantity": 100,
         "volumeEn": "250g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -554,9 +500,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -574,9 +518,7 @@
         "imageUri": {
             "path": "barbaresco/SEASONAL-FRUITS.jpg"
         },
-        "quantity": 100,
         "volumeEn": "250g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -594,9 +536,7 @@
         "imageUri": {
             "path": "barbaresco/Pancakes-WITH-Pacific-Salmon-and-Spinach-Leaves.jpg"
         },
-        "quantity": 100,
         "volumeEn": "270g",
-        "image": "barbarescoMlinty",
         "summaryEn": ""
     },
     {
@@ -614,9 +554,7 @@
         "imageUri": {
             "path": "barbaresco/NAPOLEON.jpg"
         },
-        "quantity": 100,
         "volumeEn": "150 / 40g",
-        "image": "barbarescoDesert",
         "summaryEn": ""
     },
     {
@@ -634,9 +572,7 @@
         "imageUri": {
             "path": "barbaresco/Cheesecake.jpg"
         },
-        "quantity": 100,
         "volumeEn": "150g",
-        "image": "barbarescoDesert",
         "summaryEn": ""
     },
     {
@@ -654,9 +590,7 @@
         "imageUri": {
             "path": "barbaresco/Ice-Cream-with-Choice-Sauce.jpg"
         },
-        "quantity": 100,
         "volumeEn": "150g",
-        "image": "barbarescoDesert",
         "summaryEn": "Cherry Mint, Peach, Caramel"
     },
     {
@@ -674,9 +608,7 @@
         "imageUri": {
             "path": "barbaresco/TOFFY-PUDDING.jpg"
         },
-        "quantity": 100,
         "volumeEn": "170g",
-        "image": "barbarescoDesert",
         "summaryEn": ""
     },
     {
@@ -694,9 +626,7 @@
         "imageUri": {
             "path": "barbaresco/Truffle-Cake.jpg"
         },
-        "quantity": 100,
         "volumeEn": "170g",
-        "image": "barbarescoDesert",
         "summaryEn": ""
     },
     {
@@ -714,9 +644,7 @@
         "imageUri": {
             "path": "barbaresco/CHICKEN-BULLION.jpg"
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "barbarescoFirstCourse",
         "summaryEn": ""
     },
     {
@@ -734,9 +662,7 @@
         "imageUri": {
             "path": "barbaresco/LAGMAN.jpg"
         },
-        "quantity": 100,
         "volumeEn": "350g",
-        "image": "barbarescoFirstCourse",
         "summaryEn": "Traditional Central Asian dish served with homemade noodles"
     },
     {
@@ -754,9 +680,7 @@
         "imageUri": {
             "path": "barbaresco/Mushroom-soup-puree.jpg"
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "barbarescoFirstCourse",
         "summaryEn": "Mushrooms, cream"
     },
     {
@@ -774,9 +698,7 @@
         "imageUri": {
             "path": "barbaresco/CHAUDER-CREAM-SOUP.jpg"
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "barbarescoFirstCourse",
         "summaryEn": "Cheese soup, on shrimp fish broth"
     },
     {
@@ -794,9 +716,7 @@
         "imageUri": {
             "path": "barbaresco/CHICKEN-STIR-FRI.jpg"
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "barbarescoHits",
         "summaryEn": "Chicken fillet, zucchini, carrots, bell peppers, broccoli, sesame, green onions, teriyaki sauce"
     },
     {
@@ -814,9 +734,7 @@
         "imageUri": {
             "path": "barbaresco/Baked-Ham-With-Roquefort-puree.jpg"
         },
-        "quantity": 100,
         "volumeEn": "350g",
-        "image": "barbarescoHits",
         "summaryEn": "Roasted pork neck served with mashed potato-roquefort"
     },
     {
@@ -834,9 +752,7 @@
         "imageUri": {
             "path": "barbaresco/Teriyaki-salmon.jpg"
         },
-        "quantity": 100,
         "volumeEn": "250g",
-        "image": "barbarescoHits",
         "summaryEn": "Salmon fillet, asparagus beans, carrots, bell peppers, zucchini, mushrooms, teriyaki sauce"
     },
     {
@@ -854,9 +770,7 @@
         "imageUri": {
             "path": "barbaresco/veal-under-Demiglas-sauce.jpg"
         },
-        "quantity": 100,
         "volumeEn": "400g",
-        "image": "barbarescoHits",
         "summaryEn": "Served with grilled vegetables"
     },
     {
@@ -874,9 +788,7 @@
         "imageUri": {
             "path": "barbaresco/CREAM-CHICKEN-WITH-BAKED-POTATOES.jpg"
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "barbarescoHits",
         "summaryEn": ""
     },
     {
@@ -894,9 +806,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "120/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "salmon fillet, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -914,9 +824,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "120/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "smoked salmon, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -934,9 +842,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "130/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "ham salad, nut sauce, sesame, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -954,9 +860,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "190/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "salmon fillet, Philadelphia cheese, green onion, Japanese omelet, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -974,9 +878,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "195/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "feta cheese, tomato, bell pepper, cucumber, sesame, nori, rice, wasabi, ginger"
     },
     {
@@ -994,9 +896,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "130/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "mussel meat, Philadelphia cheese, toaster cheese, ham salad, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1014,9 +914,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "200/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "salmon fillet, apple, rice, Philadelphia cheese, nori seaweed, soy paper, wasabi, ginger"
     },
     {
@@ -1034,9 +932,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "220/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "sea bass, ham, tobiko caviar, black sesame, toaster cheese, rice, Philadelphia cheese, nori seaweed, wasabi, ginger"
     },
     {
@@ -1054,9 +950,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "200/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "Philadelphia cheese, toaster cheese, parmesan cheese, sesame seeds, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1074,9 +968,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "210/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "unaki salmon, salmon fillet, japanese mayonnaise, cucumber, tobiko caviar, nori seaweed, rice, wasabi, unagi sauce, sesame, ginger"
     },
     {
@@ -1094,9 +986,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "205/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "perch-unagi, avocado, cucumber, Philadelphia cheese, sesame, unagi sauce, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1114,9 +1004,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "235/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "salmon fillet, Philadelphia cheese, ham salad, tempura perch, Tonkatsu sauce, molecular caviar, nori seaweed, rice, ginger, wasabi"
     },
     {
@@ -1134,9 +1022,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "220/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "tempura shrimp, tomago omelette, Philadelphia cheese, Japanese mayonnaise, tobiko caviar, fresh spinach, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1154,9 +1040,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "255/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "tuna, Philadelphia cheese. tempura shrimp, tobiko caviar, avocado, sesame white and black, tonkatsu sauce, nut sauce, molecular caviar, nori algae, rice, ginger, wasabi "
     },
     {
@@ -1174,9 +1058,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "240/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "eel, tomago omelette, Philadelphia cheese, unagi sauce, sesame, edible gold, molecular caviar, nori seaweed, rice, ginger, wasabi"
     },
     {
@@ -1194,9 +1076,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "210/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "salmon fillet, avocado, cucumber, japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1214,9 +1094,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "210/7/15g",
-        "image": "barbarescoSushi",
         "summaryEn": "smoked salmon, avocado, cucumber, japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1234,9 +1112,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "210/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "tuna, avocado, cucumber, japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1254,9 +1130,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "220/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "eel, uncle perch, avocado, cucumber, japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, unagi sauce, sesame, ginger"
     },
     {
@@ -1274,9 +1148,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "220/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "salmon fillet, Philadelphia cheese, green onion, cucumber, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1294,9 +1166,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "220/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "smoked salmon, Philadelphia cheese, green onion, cucumber, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1314,9 +1184,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "210/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "tuna, philadelphia cheese, avocado, cucumber, tobiko caviar, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1334,9 +1202,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "220/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "eel, uncle perch, Philadelphia cheese, avocado, cucumber, tobiko caviar, nori seaweed, rice, wasabi, unagi sauce, sesame, ginger"
     },
     {
@@ -1354,9 +1220,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "220/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "Philadelphia cheese, avocado, tobiko caviar, shrimp, molecular caviar, nori seaweed, rice, ginger, wasabi"
     },
     {
@@ -1374,9 +1238,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "235/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "salmon fillet, avocado, cucumber, Philadelphia cheese, sesame, unagi sauce, tobiko caviar, molecular caviar, nori seaweed, rice, ginger, wasabi"
     },
     {
@@ -1394,9 +1256,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "245/7 / 15y",
-        "image": "barbarescoSushi",
         "summaryEn": "eel, perch-unag. cucumber, japanese mayonnaise, tobiko caviar, unagi sauce, sesame, edible gold, molecular caviar, nori seaweed, rice, ginger, wasabi "
     },
     {
@@ -1414,9 +1274,7 @@
         "imageUri": {
             "path": null
         },
-        "quantity": 100,
         "volumeEn": "235/7 / 15g",
-        "image": "barbarescoSushi",
         "summaryEn": "salmon fillet, eel, perch-unaki, cucumber, Japanese mayonnaise, tobiko caviar, nori seaweed, rice, wasabi, ginger"
     },
     {
@@ -1434,9 +1292,7 @@
         "imageUri": {
             "path": "barbaresco/DISH-UNDER-THE-WINE.jpg"
         },
-        "quantity": 100,
         "volumeEn": "220g",
-        "image": "pasta-presca-appetizer",
         "summaryEn": "Baguette, Italian uncooked sausage, Brie cheese, Dor Blue cheese, Eden cheese, olives, BBQ sticks with Roquefort sauce and honey"
     },
     {
@@ -1454,9 +1310,7 @@
         "imageUri": {
             "path": "barbaresco/BEER-SET.jpg"
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "pasta-presca-appetizer",
         "summaryEn": "amber chicken, basturma, potato chips, french fries, savory sausages, tartar sauce"
     },
     {
@@ -1474,9 +1328,7 @@
         "imageUri": {
             "path": "barbaresco/BBQ-CHICKEN-WINGS.jpg"
         },
-        "quantity": 100,
         "volumeEn": "300g",
-        "image": "pasta-presca-appetizer",
         "summaryEn": "Spicy sauce and served with tar-tar sauce"
     },
     {
@@ -1494,9 +1346,7 @@
         "imageUri": {
             "path": "barbaresco/GRILLED-VEGETABLES.jpg"
         },
-        "quantity": 100,
         "volumeEn": "250g",
-        "image": "le-rock-side-dishes",
         "summaryEn": ""
     },
     {
@@ -1514,9 +1364,7 @@
         "imageUri": {
             "path": "barbaresco/RICE-WITH-GRILLED-VEGETABLES.jpg"
         },
-        "quantity": 100,
         "volumeEn": "220g",
-        "image": "le-rock-side-dishes",
         "summaryEn": ""
     },
     {
@@ -1534,9 +1382,7 @@
         "imageUri": {
             "path": "barbaresco/POTATOES-IN-THE-VILLAGE.jpg"
         },
-        "quantity": 100,
         "volumeEn": "250g",
-        "image": "le-rock-side-dishes",
         "summaryEn": "With rosemary and bacon"
     },
     {
@@ -1554,9 +1400,7 @@
         "imageUri": {
             "path": "barbaresco/French-Fries.jpg"
         },
-        "quantity": 100,
         "volumeEn": "150 / 30g",
-        "image": "le-rock-side-dishes",
         "summaryEn": ""
     },
     {
@@ -1574,9 +1418,7 @@
         "imageUri": {
             "path": "barbaresco/POTATOE-PURE.jpg"
         },
-        "quantity": 100,
         "volumeEn": "200g",
-        "image": "le-rock-side-dishes",
         "summaryEn": ""
     },
     {
@@ -1594,9 +1436,7 @@
         "imageUri": {
             "path": "barbaresco/WHITE-BREAD.jpg"
         },
-        "quantity": 100,
         "volumeEn": "1 piece",
-        "image": "le-rock-side-dishes",
         "summaryEn": ""
     },
     {
@@ -1614,9 +1454,7 @@
         "imageUri": {
             "path": "barbaresco/GRAY-BREAD.jpg"
         },
-        "quantity": 100,
         "volumeEn": "1 piece",
-        "image": "le-rock-side-dishes",
         "summaryEn": ""
     }
 ]

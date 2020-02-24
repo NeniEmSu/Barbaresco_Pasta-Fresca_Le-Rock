@@ -15,9 +15,7 @@
             "path": "le-Rock/Caesar-with-chicken.jpg",
             "meta": "Caesar with chicken"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-salad",
         "summaryUk": "філе курки, бекон,  листя салату,  помідор,  перепелині яйця, соус цезар"
     },
     {
@@ -36,9 +34,7 @@
             "path": "le-Rock/Rhodes.jpg",
             "meta": "Rhodes"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-salad",
         "summaryUk": "свіжий помідор,  огірок,  перець болгарський, мусс дор блю,  соус з руколи"
     },
     {
@@ -57,9 +53,7 @@
             "path": "le-Rock/Grilled-Veal-Salad.jpg",
             "meta": "Grilled Veal Salad"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-salad",
         "summaryUk": "телятина гриль, помідор, перець болгарський, кабачок, гриби, фірмовий соус"
     },
     {
@@ -78,9 +72,7 @@
             "path": "le-Rock/Rococo.jpg",
             "meta": "Rococo"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-salad",
         "summaryUk": "м’ясо зі стегна курки, броколі, гриби, кабачок, стручкова квасоля, морква, заправляється сирним соусом"
     },
     {
@@ -99,9 +91,7 @@
             "path": "le-Rock/Salmon-salad.jpg",
             "meta": "Salmon salad"
         },
-        "quantity": 100,
         "volumeUk": "300г",
-        "image": "le-rock-salad",
         "summaryUk": "слабосолений лосось, помідор, лист салату, броколі, сир філадельфія, соус медово-гірчичний"
     },
     {
@@ -120,9 +110,7 @@
             "path": "le-Rock/Liver-salad.jpg",
             "meta": "Liver salad"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-salad",
         "summaryUk": "листя салату, карамелізоване яблуко, рукула, перець гриль, помідори, куряча печінка, оливкова олія, оцет бальзамік"
     },
     {
@@ -141,9 +129,7 @@
             "path": "le-Rock/New-York-Steak.jpg",
             "meta": "New York Steak"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-meat",
         "summaryUk": "соковите м’ясо з поясничної частини"
     },
     {
@@ -162,9 +148,7 @@
             "path": "le-Rock/Ribeye-Steak.jpg",
             "meta": "Ribeye Steak"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-meat",
         "summaryUk": "м’ясо з підлопаткової частини туші, має велику кількість жирових прожилок"
     },
     {
@@ -183,9 +167,7 @@
             "path": "le-Rock/Filet-Mignon.jpg",
             "meta": "Filet Mignon"
         },
-        "quantity": 100,
         "volumeUk": "200г",
-        "image": "le-rock-meat",
         "summaryUk": "сама ніжна, та пісна частина гов’ядини"
     },
     {
@@ -204,9 +186,7 @@
             "path": "le-Rock/Pork-steak.jpg",
             "meta": "Pork steak"
         },
-        "quantity": 100,
         "volumeUk": "200/140/30г",
-        "image": "le-rock-meat",
         "summaryUk": "з стручковою квасолею та песто"
     },
     {
@@ -225,9 +205,7 @@
             "path": "le-Rock/Half-chicken.jpg",
             "meta": "Half chicken"
         },
-        "quantity": 100,
         "volumeUk": "300/120/30г",
-        "image": "le-rock-meat",
         "summaryUk": "з грибами гриль та гірчичним соусом"
     },
     {
@@ -246,9 +224,7 @@
             "path": "le-Rock/Pork-leg-with-mashed-potatoes.jpg",
             "meta": "Pork leg with mashed potatoes"
         },
-        "quantity": 100,
         "volumeUk": "380/150г",
-        "image": "le-rock-meat",
         "summaryUk": "(Рябчик) (подається з рокфорним пюре)"
     },
     {
@@ -267,9 +243,7 @@
             "path": "le-Rock/Pork-on-a-bone-with-baked-potatoes.jpg",
             "meta": "Pork on a bone with baked potatoes"
         },
-        "quantity": 100,
         "volumeUk": "270/250/30г",
-        "image": "le-rock-meat",
         "summaryUk": ""
     },
     {
@@ -288,9 +262,7 @@
             "path": "le-Rock/Assorted-Grilled-Meat.jpg",
             "meta": "Assorted Grilled Meat"
         },
-        "quantity": 100,
         "volumeUk": "1500г",
-        "image": "le-rock-meat",
         "summaryUk": "стейк з говядини, стейк свинний, куряче філе, ковбаски, картопля печена, 2 соуси"
     },
     {
@@ -309,9 +281,7 @@
             "path": "le-Rock/Salted-peanut-with-pumpkin-seeds.jpg",
             "meta": "Salted peanut with pumpkin seeds"
         },
-        "quantity": 100,
         "volumeUk": "100г",
-        "image": "le-rock-meat",
         "summaryUk": "Моцарела, філе курки, бекон, помідори чері, пармезан, мікс-салат, вершковий соус"
     },
     {
@@ -330,9 +300,7 @@
             "path": "le-Rock/French-Wings.jpg",
             "meta": "French Wings"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-meat",
         "summaryUk": "гострі/з гірчичним соусом"
     },
     {
@@ -351,9 +319,7 @@
             "path": "le-Rock/Cheese-sticks.jpg",
             "meta": "Cheese sticks"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-meat",
         "summaryUk": "соус з журавлини/часниковий"
     },
     {
@@ -372,9 +338,7 @@
             "path": "le-Rock/Crispy-Ears-in-Soy-Sauce.jpg",
             "meta": "Crispy Ears in Soy Sauce"
         },
-        "quantity": 100,
         "volumeUk": "150г",
-        "image": "le-rock-meat",
         "summaryUk": "гострі/не гострі"
     },
     {
@@ -393,9 +357,7 @@
             "path": "le-Rock/Sausages-in-Bacon.jpg",
             "meta": "Sausages in Bacon"
         },
-        "quantity": 100,
         "volumeUk": "300/30г",
-        "image": "le-rock-meat",
         "summaryUk": ""
     },
     {
@@ -414,9 +376,7 @@
             "path": "le-Rock/Shrimp-to-beer.jpg",
             "meta": "Shrimp to beer"
         },
-        "quantity": 100,
         "volumeUk": "100/30г",
-        "image": "le-rock-meat",
         "summaryUk": ""
     },
     {
@@ -435,9 +395,7 @@
             "path": "le-Rock/Smoked-Pork-Ribs-BBQ.jpg",
             "meta": "Smoked Pork Ribs BBQ"
         },
-        "quantity": 100,
         "volumeUk": "300/30г",
-        "image": "le-rock-meat",
         "summaryUk": ""
     },
     {
@@ -456,9 +414,7 @@
             "path": "le-Rock/Potato-croquettes.jpg",
             "meta": "Potato croquettes"
         },
-        "quantity": 100,
         "volumeUk": "200/130/30/50г",
-        "image": "le-rock-meat",
         "summaryUk": "курячі / свинні"
     },
     {
@@ -477,9 +433,7 @@
             "path": "le-Rock/Company-Ribs.jpg",
             "meta": "Company Ribs"
         },
-        "quantity": 100,
         "volumeUk": "800/300/100г",
-        "image": "le-rock-meat",
         "summaryUk": "курячі / свинні"
     },
     {
@@ -498,9 +452,7 @@
             "path": "le-Rock/Rock-Dog-With-potatoes-and-pork.jpg",
             "meta": "With pork"
         },
-        "quantity": 100,
         "volumeUk": "200/100/30г",
-        "image": "le-rock-rock-dogs",
         "summaryUk": "+картопля фрі, та соус"
     },
     {
@@ -519,9 +471,7 @@
             "path": "le-Rock/Rock-Dog-With-potatoes-and-chicken.jpg",
             "meta": "With chicken"
         },
-        "quantity": 100,
         "volumeUk": "200/100/30г",
-        "image": "le-rock-rock-dogs",
         "summaryUk": "+картопля фрі, та соус"
     },
     {
@@ -540,9 +490,7 @@
             "path": "le-Rock/Rock-Dog-With-sausage-and-bacon.jpg",
             "meta": "With sausage and bacon"
         },
-        "quantity": 100,
         "volumeUk": "200/100/30г",
-        "image": "le-rock-rock-dogs",
         "summaryUk": "+картопля фрі, та соус"
     },
     {
@@ -561,9 +509,7 @@
             "path": "le-Rock/With-potatoes-and-chicken.jpg",
             "meta": "With potatoes and chicken"
         },
-        "quantity": 100,
         "volumeUk": "600г",
-        "image": "barbarescoMlinty",
         "summaryUk": "+ салат з капусти"
     },
     {
@@ -582,9 +528,7 @@
             "path": "le-Rock/With-potatoes-and-pork.jpg",
             "meta": "With potatoes and pork"
         },
-        "quantity": 100,
         "volumeUk": "600г",
-        "image": "barbarescoMlinty",
         "summaryUk": "+ маринований огірок"
     },
     {
@@ -603,9 +547,7 @@
             "path": "le-Rock/With-potatoes-sausage-and-bacon.jpg",
             "meta": "With potatoes, sausage and bacon"
         },
-        "quantity": 100,
         "volumeUk": "600г",
-        "image": "barbarescoMlinty",
         "summaryUk": "+ маринований огірок"
     },
     {
@@ -624,9 +566,7 @@
             "path": "le-Rock/NAPOLEON.jpg",
             "meta": "NAPOLEON"
         },
-        "quantity": 100,
         "volumeUk": "160г",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -645,9 +585,7 @@
             "path": "le-Rock/Cheesecake.jpg",
             "meta": "Cheesecake"
         },
-        "quantity": 100,
         "volumeUk": "150г",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -666,9 +604,7 @@
             "path": "le-Rock/Carrot-Spicy-Cake.jpg",
             "meta": "Carrot Spicy Cake"
         },
-        "quantity": 100,
         "volumeUk": "200г",
-        "image": "barbarescoDesert",
         "summaryUk": "Вишнево-м’ятний, Персиковий, Карамель"
     },
     {
@@ -687,9 +623,7 @@
             "path": "le-Rock/Chocolate-Cake.jpg",
             "meta": "Chocolate Cake"
         },
-        "quantity": 100,
         "volumeUk": "150г",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -708,9 +642,7 @@
             "path": "le-Rock/Peach-compote.jpg",
             "meta": "Peach compote"
         },
-        "quantity": 100,
         "volumeUk": "170г",
-        "image": "barbarescoDesert",
         "summaryUk": ""
     },
     {
@@ -729,9 +661,7 @@
             "path": "le-Rock/CHICKEN-BULLION.jpg",
             "meta": "CHICKEN BULLION"
         },
-        "quantity": 100,
         "volumeUk": "300г",
-        "image": "le-rock-first-course",
         "summaryUk": "з шматочками курки і домашньої пасти"
     },
     {
@@ -750,9 +680,7 @@
             "path": "le-Rock/Chowder-Corn-Soup.jpg",
             "meta": "Chowder Corn Soup"
         },
-        "quantity": 100,
         "volumeUk": "300г",
-        "image": "le-rock-first-course",
         "summaryUk": ""
     },
     {
@@ -771,9 +699,7 @@
             "path": "le-Rock/Cutlet-Cordon-Blue.jpg",
             "meta": "Cutlet Cordon Blue"
         },
-        "quantity": 100,
         "volumeUk": "345/150/30г",
-        "image": "barbarescoHits",
         "summaryUk": "подається з картопляним пюре"
     },
     {
@@ -792,9 +718,7 @@
             "path": "le-Rock/Chicken-fillet-on-spinach-pillow-under-cream-sauce.jpg",
             "meta": "Chicken fillet on spinach pillow under cream sauce"
         },
-        "quantity": 100,
         "volumeUk": "350г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -813,9 +737,7 @@
             "path": "le-Rock/Shrimps-with-oyster-sauce-and-Chuka-salad.jpg",
             "meta": "Shrimps with oyster sauce and Chuka salad"
         },
-        "quantity": 100,
         "volumeUk": "80/60/15г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -834,9 +756,7 @@
             "path": "le-Rock/Grilled-Salmon.jpg",
             "meta": "Grilled Salmon"
         },
-        "quantity": 100,
         "volumeUk": "150/100/30г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -855,9 +775,7 @@
             "path": "le-Rock/Egg-with-sausage-and-bacon.jpg",
             "meta": "Egg with sausage and bacon"
         },
-        "quantity": 100,
         "volumeUk": "380г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -876,9 +794,7 @@
             "path": "le-Rock/Egg-with-ham-and-tomatoes.jpg",
             "meta": "Egg with ham and tomatoes"
         },
-        "quantity": 100,
         "volumeUk": "400г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -897,9 +813,7 @@
             "path": "le-Rock/Grilled-lavash-with-cheese-tomatoes-and-herbs.jpg",
             "meta": "Grilled lavash with cheese, tomatoes and herbs"
         },
-        "quantity": 100,
         "volumeUk": "330г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -918,9 +832,7 @@
             "path": "le-Rock/Chicken-pancakes-with-spinach-sauce.jpg",
             "meta": "Chicken pancakes with spinach sauce"
         },
-        "quantity": 100,
         "volumeUk": "300/100г",
-        "image": "barbarescoHits",
         "summaryUk": ""
     },
     {
@@ -939,9 +851,7 @@
             "path": "le-Rock/Bruschetti.jpg",
             "meta": "Bruschetti"
         },
-        "quantity": 100,
         "volumeUk": "3шт",
-        "image": "le-rock-appetizer",
         "summaryUk": "з чорізо, з телятиною, з овочами"
     },
     {
@@ -960,9 +870,7 @@
             "path": "le-Rock/Chicken-pate.jpg",
             "meta": "Chicken pate"
         },
-        "quantity": 100,
         "volumeUk": "200г",
-        "image": "le-rock-appetizer",
         "summaryUk": "подається з грінками"
     },
     {
@@ -981,9 +889,7 @@
             "path": "le-Rock/Pickled-vegetables.jpg",
             "meta": "Pickled vegetables"
         },
-        "quantity": 100,
         "volumeUk": "400г",
-        "image": "le-rock-appetizer",
         "summaryUk": ""
     },
     {
@@ -1002,9 +908,7 @@
             "path": "le-Rock/Cheese-Plateau.jpg",
             "meta": "Cheese Plateau"
         },
-        "quantity": 100,
         "volumeUk": "170г",
-        "image": "le-rock-appetizer",
         "summaryUk": ""
     },
     {
@@ -1023,9 +927,7 @@
             "path": "le-Rock/Meat-Plateau.jpg",
             "meta": "Meat Plateau"
         },
-        "quantity": 100,
         "volumeUk": "170г",
-        "image": "le-rock-appetizer",
         "summaryUk": ""
     },
     {
@@ -1044,9 +946,7 @@
             "path": "le-Rock/Beer-Plate.jpg",
             "meta": "Beer Plate"
         },
-        "quantity": 100,
         "volumeUk": "150г",
-        "image": "le-rock-appetizer",
         "summaryUk": "житні сухарики, в’ялене м’ясо, часниковий  соус"
     },
     {
@@ -1065,9 +965,7 @@
             "path": "le-Rock/Pickles.jpg",
             "meta": "Pickles"
         },
-        "quantity": 100,
         "volumeUk": "100/30г",
-        "image": "le-rock-appetizer",
         "summaryUk": "подається з грінками"
     },
     {
@@ -1086,9 +984,7 @@
             "path": "le-Rock/Rye-croutons.jpg",
             "meta": "Rye croutons"
         },
-        "quantity": 100,
         "volumeUk": "150г",
-        "image": "le-rock-appetizer",
         "summaryUk": "з часниковим соусом"
     },
     {
@@ -1107,9 +1003,7 @@
             "path": "le-Rock/Chicken-Popcorn.jpg",
             "meta": "Chicken Popcorn"
         },
-        "quantity": 100,
         "volumeUk": "200г",
-        "image": "le-rock-appetizer",
         "summaryUk": "з часниковим соусом"
     },
     {
@@ -1128,9 +1022,7 @@
             "path": "le-Rock/Beer-board-for-the-company.jpg",
             "meta": "Beer board for the company"
         },
-        "quantity": 100,
         "volumeUk": "600г",
-        "image": "le-rock-appetizer",
         "summaryUk": "сирні палички, нагетси, ковбаски в беконі, снеки, грісіні, соус тартар"
     },
     {
@@ -1149,9 +1041,7 @@
             "path": "le-Rock/GRILLED-VEGETABLES.jpg",
             "meta": "GRILLED VEGETABLES"
         },
-        "quantity": 100,
         "volumeUk": "300г",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     },
     {
@@ -1170,9 +1060,7 @@
             "path": "le-Rock/Thai-Style-Vegetables.jpg",
             "meta": "Thai Style Vegetables"
         },
-        "quantity": 100,
         "volumeUk": "250г",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     },
     {
@@ -1191,9 +1079,7 @@
             "path": "le-Rock/Grilled-Rice.jpg",
             "meta": "Grilled Rice"
         },
-        "quantity": 100,
         "volumeUk": "210г",
-        "image": "le-rock-side-dishes",
         "summaryUk": "З розмарином і беконом"
     },
     {
@@ -1212,9 +1098,7 @@
             "path": "le-Rock/French-fries-with-sauce.jpg",
             "meta": "French fries (with sauce)"
         },
-        "quantity": 100,
         "volumeUk": "150г",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     },
     {
@@ -1233,9 +1117,7 @@
             "path": "le-Rock/POTATOE-Puree.jpg",
             "meta": "POTATOE Puree"
         },
-        "quantity": 100,
         "volumeUk": "200г",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     },
     {
@@ -1254,9 +1136,7 @@
             "path": "le-Rock/Ciabatta.jpg",
             "meta": "Ciabata"
         },
-        "quantity": 100,
         "volumeUk": "1шт",
-        "image": "le-rock-side-dishes",
         "summaryUk": ""
     }
 ]

@@ -214,7 +214,7 @@
           @click.prevent="cartOpen = !cartOpen"
         >
           <img
-            src="~/assets/img/Корзина.png"
+            src="~/assets/img/Корзина.svg"
             alt="Cart Icon"
           >
 
