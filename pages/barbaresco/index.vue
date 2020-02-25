@@ -5,6 +5,7 @@
     "tooltip": "Передзвонимо за 1 хв.",
     "description": "Затишна атмосфера, приємна музика, смачна кухня та привітний персонал - все це Ви знайдете у Нас",
     "instruction": "Будь ласка, виберіть категорію продуктів зверху!",
+    "offline": "Ви зараз офлайн. Перевірте підключення до Інтернету.",
     "call":{
       "name": "Ім’я",
       "phone": "Телефон",
@@ -16,6 +17,7 @@
    "tooltip": "Call back in 1 minute",
    "description": "Cozy atmosphere, nice music, delicious cuisine and friendly staff - all of which you will find in Us",
    "instruction": "Please Select a Food Category Above!",
+   "offline": "You are currently offline, Please check your internet connection.",
    "call":{
       "name": "Name",
       "phone": "Phone",
@@ -27,6 +29,7 @@
     "tooltip": "Перезвоним за 1 мин.",
     "description": "Уютная атмосфера, приятная музыка, вкусная кухня и приветливый персонал - все это Вы найдете у Нас",
     "instruction": "Пожалуйста, выберите категорию продуктов выше!",
+    "offline": "Вы в настоящее время не в сети, пожалуйста, проверьте подключение к интернету.",
     "call":{
       "name": "название",
       "phone": "Телефон",
@@ -143,7 +146,9 @@
       </div>
 
       <div v-if="$nuxt.isOffline">
-        You are offline
+        <h3 class="text-center pt-5 ">
+          {{ $t('offline') }}
+        </h3>
       </div>
 
       <ThePizza v-if="currentProductsDisplayed === 1" />
