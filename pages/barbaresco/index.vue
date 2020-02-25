@@ -142,6 +142,10 @@
         </h2>
       </div>
 
+      <div v-if="$nuxt.isOffline">
+        You are offline
+      </div>
+
       <ThePizza v-if="currentProductsDisplayed === 1" />
 
       <TheBugers v-if="currentProductsDisplayed === 2" />
