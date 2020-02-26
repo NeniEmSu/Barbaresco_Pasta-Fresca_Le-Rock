@@ -129,6 +129,7 @@
                     <b-button
                       class="socialButtons instagram mx-auto"
                       :href="variants[0].instaLink"
+                      target="_blank"
                     >
                       <b-img
                         class="inButtonImg "
@@ -193,6 +194,7 @@
                     <b-button
                       class="socialButtons instagram mx-auto"
                       :href="variants[1].instaLink"
+                      target="_blank"
                     >
                       <b-img
                         class="inButtonImg "
@@ -257,6 +259,7 @@
                     <b-button
                       class="socialButtons instagram mx-auto"
                       :href="variants[2].instaLink"
+                      target="_blank"
                     >
                       <b-img
                         class="inButtonImg "

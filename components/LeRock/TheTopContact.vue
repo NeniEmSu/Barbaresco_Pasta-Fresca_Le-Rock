@@ -35,15 +35,10 @@
 
         <li class="facebook contact">
           <a
-            href="https://www.facebook.com/virus.te.ua/"
+            href="https://www.facebook.com/lerockpab/"
             target="_blank"
             rel="noopener noreferrer"
           >
-
-            <!-- <img
-              src="~/assets/img/facebookSocialLogo.png"
-              alt="icons facebook filled"
-            > -->
 
             <svg
               id="Capa_1"

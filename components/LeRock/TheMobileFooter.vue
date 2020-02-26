@@ -53,11 +53,6 @@
           rel="noopener noreferrer"
         >
 
-          <!-- <img
-            src="~/assets/img/facebookSocialLogo.png"
-            alt="icons facebook filled"
-          > -->
-
           <svg
             id="Capa_1"
             style="enable-background:new 0 0 90 90;"
@@ -86,11 +81,6 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-
-          <!-- <img
-            src="~/assets/img/instagramSocialLogo.png"
-            alt="icons instagram filled"
-          > -->
 
           <svg
             viewBox="0 0 512 512"
