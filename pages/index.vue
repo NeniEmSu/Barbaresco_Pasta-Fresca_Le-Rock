@@ -85,9 +85,10 @@
             :auto-width="350"
             :responsive="{
               0: { items: 1, center: true, dots: true, autoWidth: 280 },
-              600: { items: 1, center: false, margin: 0},
-              1440: { items: 3, center: false, margin: 60},
-              1800: { items: 3, center: false, margin: 0}
+              600: { items: 1, center: false, margin: 0, dots: true },
+              800: { items: 1, center: false, margin: 0 },
+              1440: { items: 3, center: false, margin: 60 },
+              1800: { items: 3, center: false, margin: 0 }
             }"
           >
             <div
@@ -413,6 +414,19 @@ export default {
   }
 }
 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  #homePage .owl-theme .owl-dots .owl-dot span {
+    min-width: 25px;
+    max-width: 25px;
+    width: 100%;
+    min-height: 25px;
+    max-height: 25px;
+    height: 100%;
+    background-color: black !important;
+    border: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #homePage {
     .owl-theme .owl-dots button:nth-child(1) span {
@@ -468,7 +482,7 @@ export default {
   right: 0;
   left: 0;
   bottom: 0;
-  overflow: hidden;
+  overflow: hidden !important;
   background: url("~assets/img/home-page-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1040,7 +1054,7 @@ export default {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 35px;
+    line-height: 19px;
 
     color: $lightColor;
 
@@ -1070,7 +1084,7 @@ export default {
 
       .inButtonImg {
         width: 80px;
-        height: 35px;
+        height: 34px;
         margin: auto;
       }
     }
@@ -1106,7 +1120,7 @@ export default {
 
       .inButtonImg {
         width: 80px;
-        height: 30px;
+        height: 18px;
         margin: auto;
       }
     }

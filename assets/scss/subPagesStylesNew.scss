@@ -2,6 +2,24 @@
   vertical-align: middle;
 }
 
+#contact {
+
+  h1 {
+    font-family: $segoeFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $blackColor;
+
+    margin-top: 45px;
+  }
+
+}
+
 h1 {
   font-family: $segoeFont;
   font-style: normal;
@@ -59,7 +77,7 @@ a {
 }
 
 .map {
-  margin-top: 100px;
+  margin-top: 81px;
 
 }
 

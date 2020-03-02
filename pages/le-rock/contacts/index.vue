@@ -29,7 +29,7 @@
 <template>
   <div
     v-once
-    id="about-us"
+    id="contact"
   >
     <TheTopContact
       :items="items"
