@@ -4,10 +4,19 @@
     class="container "
   >
     <div class="content">
-      <productCard
-        v-cloak
-        :products="meat"
-      />
+      <vue-page-transition name="fade">
+        <div
+          v-if="$apollo.queries.meat.loading"
+          class="mx-auto text-center"
+        >
+          <Loading />
+        </div>
+        <productCard
+          v-else
+          v-cloak
+          :products="meat"
+        />
+      </vue-page-transition>
     </div>
   </div>
 </template>

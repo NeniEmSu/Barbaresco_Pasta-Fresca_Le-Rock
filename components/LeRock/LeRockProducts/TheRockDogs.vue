@@ -4,7 +4,19 @@
     class="container "
   >
     <div class="content">
-      <productCard :products="rockDog" />
+      <vue-page-transition name="fade">
+        <div
+          v-if="$apollo.queries.rockDog.loading"
+          class="mx-auto text-center"
+        >
+          <Loading />
+        </div>
+        <productCard
+          v-else
+          v-cloak
+          :products="rockDog"
+        />
+      </vue-page-transition>
     </div>
   </div>
 </template>

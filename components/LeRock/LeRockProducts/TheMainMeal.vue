@@ -3,7 +3,21 @@
     id="theFirsteCourseLeRock"
     class="container "
   >
-    <productCard :products="mainMeals" />
+    <div class="content">
+      <vue-page-transition name="fade">
+        <div
+          v-if="$apollo.queries.mainMeals.loading"
+          class="mx-auto text-center"
+        >
+          <Loading />
+        </div>
+        <productCard
+          v-else
+          v-cloak
+          :products="mainMeals"
+        />
+      </vue-page-transition>
+    </div>
   </div>
 </template>
 
