@@ -33,7 +33,7 @@
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.3",
     "intersection-observer": "^0.7.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.11.0",
     "nuxt-gmaps": "^1.1.8",
