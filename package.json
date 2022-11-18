@@ -35,7 +35,7 @@
     "intersection-observer": "^0.7.0",
     "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.15.8",
     "nuxt-gmaps": "^1.1.8",
     "nuxt-i18n": "^6.6.0",
     "nuxt-polyfill": "^1.0.3",
